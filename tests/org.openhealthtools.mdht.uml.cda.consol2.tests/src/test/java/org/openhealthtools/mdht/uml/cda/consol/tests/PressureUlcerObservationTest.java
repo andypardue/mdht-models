@@ -6,32 +6,22 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PressureUlcerObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CR;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CV;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -98,27 +88,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationHasTextReference() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationHasTextReferenceTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+				target.init();
 
 			}
 
@@ -136,28 +123,27 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTextReferenceValue() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTextReferenceValueTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -175,37 +161,27 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationHasTextReferenceValue() {
-		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationHasTextReferenceValueTestCase = new NarrativeReferenceTestCase<PressureUlcerObservation>(
+		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationHasTextReferenceValueTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
+				target.init();
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -223,24 +199,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationValueNullFlavor() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationValueNullFlavorTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationValueNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getValues().get(0).setNullFlavor(NullFlavor.NA);
+				target.init();
 
 			}
 
@@ -258,28 +234,25 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTargetSiteQualifier() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteQualifierTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteQualifier",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getTargetSiteCodes().clear();
+				target.init();
 
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
 			}
 
 			@Override
@@ -296,33 +269,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTargetSiteQualifierName() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteQualifierNameTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteQualifierName",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getTargetSiteCodes().clear();
-
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				qual.setName(DatatypesFactory.eINSTANCE.createCV());
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+				target.init();
 
 			}
 
@@ -340,36 +304,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTargetSiteQualifierNameCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteQualifierNameCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteQualifierNameCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getTargetSiteCodes().clear();
-
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CV name = DatatypesFactory.eINSTANCE.createCV();
-				name.setCode("272741003");
-				name.setCodeSystem("2.16.840.1.113883.6.96");
-				qual.setName(name);
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+				target.init();
 
 			}
 
@@ -387,34 +339,27 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTargetSiteQualifierValue() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteQualifierValueTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteQualifierValue",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getTargetSiteCodes().clear();
+				target.init();
 
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CD value = DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.96", "", "");
-				qual.setValue(value);
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -432,34 +377,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTargetSiteQualifierValueCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteQualifierValueCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteQualifierValueCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getTargetSiteCodes().clear();
-
-				CD tc = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CD value = DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.96", "", "");
-				qual.setValue(value);
-				tc.getQualifiers().add(qual);
-				target.getTargetSiteCodes().add(tc);
+				target.init();
 
 			}
 
@@ -482,8 +417,8 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePressureUlcerObservationTemplateId() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTemplateIdTestCase = new OperationsTestCase<PressureUlcerObservation>(
-			"validatePressureUlcerObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePressureUlcerObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -516,8 +451,8 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePressureUlcerObservationClassCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationClassCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
-			"validatePressureUlcerObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePressureUlcerObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -550,8 +485,8 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePressureUlcerObservationMoodCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationMoodCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
-			"validatePressureUlcerObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePressureUlcerObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -579,13 +514,13 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationNegationInd() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationNegationIndTestCase = new OperationsTestCase<PressureUlcerObservation>(
-			"validatePressureUlcerObservationNegationInd",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePressureUlcerObservationNegationInd", operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -596,7 +531,7 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-				target.setNegationInd(true);
+
 			}
 
 			@Override
@@ -684,7 +619,7 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationCode() {
@@ -702,9 +637,16 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4", "", "");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(PressureUlcerObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationCodeP", passToken);
 			}
 
 			@Override
@@ -763,8 +705,8 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePressureUlcerObservationStatusCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationStatusCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
-			"validatePressureUlcerObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePressureUlcerObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -800,8 +742,8 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePressureUlcerObservationEffectiveTime() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEffectiveTimeTestCase = new OperationsTestCase<PressureUlcerObservation>(
-			"validatePressureUlcerObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePressureUlcerObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -832,7 +774,7 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationValue() {
@@ -850,7 +792,7 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("421076008", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}
@@ -869,7 +811,7 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationValueP() {
@@ -886,7 +828,7 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.96", "", ""));
+
 			}
 
 			@Override
@@ -903,26 +845,32 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationTargetSiteCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-				target.getTargetSiteCodes().clear();
-				target.getTargetSiteCodes().add(
-					DatatypesFactory.eINSTANCE.createCD("79951008", "2.16.840.1.113883.6.96", "", ""));
+
+			}
+
+			@Override
+			protected void setDependency(PressureUlcerObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservationTargetSiteCodeP", passToken);
 			}
 
 			@Override
@@ -945,7 +893,8 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 	public void testValidatePressureUlcerObservationTargetSiteCodeP() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationTargetSiteCodePTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationTargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -973,13 +922,14 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationshipTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -990,14 +940,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1015,13 +957,14 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2TestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1032,14 +975,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1057,13 +992,14 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3TestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1074,14 +1010,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1099,37 +1027,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1Observation1ClassCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1Observation1ClassCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1Observation1ClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.setClassCode(ActClassObservation.OBS);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1147,37 +1062,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1Observation1MoodCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1Observation1MoodCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1Observation1MoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1195,41 +1097,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1Observation1CodeP() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1Observation1CodePTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1Observation1CodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1247,37 +1132,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1Observation1Code() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1Observation1CodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1Observation1Code",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "2.16.840.1.113883.6.96", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1295,37 +1167,27 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1Observation1Value() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1Observation1ValueTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1Observation1Value",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
+				target.init();
 
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -1343,18 +1205,15 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1TypeCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1TypeCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1TypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
@@ -1364,14 +1223,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1389,18 +1240,15 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship1Observation1() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship1Observation1TestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship1Observation1",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
@@ -1410,14 +1258,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401238003", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1435,37 +1275,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2Observation2ClassCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2Observation2ClassCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2Observation2ClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.setClassCode(ActClassObservation.OBS);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1483,37 +1310,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2Observation2MoodCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2Observation2MoodCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2Observation2MoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1531,41 +1345,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2Observation2CodeP() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2Observation2CodePTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2Observation2CodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1583,37 +1380,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2Observation2Code() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2Observation2CodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2Observation2Code",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "2.16.840.1.113883.6.96", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1631,37 +1415,27 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2Observation2Value() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2Observation2ValueTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2Observation2Value",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
+				target.init();
 
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -1679,18 +1453,15 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2TypeCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2TypeCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2TypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
@@ -1700,14 +1471,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1725,18 +1488,15 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship2Observation2() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship2Observation2TestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship2Observation2",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
@@ -1746,14 +1506,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("401239006", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -1771,37 +1523,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3Observation3ClassCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3Observation3ClassCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3Observation3ClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.setClassCode(ActClassObservation.OBS);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1819,37 +1558,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3Observation3MoodCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3Observation3MoodCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3Observation3MoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1867,41 +1593,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3Observation3CodeP() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3Observation3CodePTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3Observation3CodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1919,37 +1628,24 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3Observation3Code() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3Observation3CodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3Observation3Code",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "2.16.840.1.113883.6.96", "", ""));
-				obs.setMoodCode(x_ActMoodDocumentObservation.EVN);
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -1967,37 +1663,27 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3Observation3Value() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3Observation3ValueTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3Observation3Value",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
-				target.getEntryRelationships().clear();
+				target.init();
 
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -2015,18 +1701,15 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3TypeCode() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3TypeCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3TypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
@@ -2036,14 +1719,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 
@@ -2061,18 +1736,15 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePressureUlcerObservationEntryRelationship3Observation3() {
 		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEntryRelationship3Observation3TestCase = new OperationsTestCase<PressureUlcerObservation>(
 			"validatePressureUlcerObservationEntryRelationship3Observation3",
-			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PressureUlcerObservation target) {
@@ -2082,14 +1754,6 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PressureUlcerObservation target) {
 				target.init();
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				Observation obs = CDAFactory.eINSTANCE.createObservation();
-				obs.setCode(DatatypesFactory.eINSTANCE.createCD("425094009", "", "", ""));
-				obs.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
-				er.setObservation(obs);
-				target.getEntryRelationships().add(er);
 
 			}
 

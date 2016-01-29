@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUse2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +49,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUse2Id() {
@@ -66,7 +65,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TobaccoUse2 target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -82,7 +81,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUse2AuthorParticipation() {
@@ -99,7 +98,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TobaccoUse2 target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -116,7 +115,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUse2IVLTSHigh() {
@@ -127,15 +126,13 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(TobaccoUse2 target) {
-				target.init();
-				IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(et);
+
 			}
 
 			@Override
 			protected void updateToPass(TobaccoUse2 target) {
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				target.getEffectiveTime().setHigh(high);
+				target.init();
+
 			}
 
 			@Override
@@ -223,13 +220,14 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUseCodeP() {
 		OperationsTestCase<TobaccoUse2> validateTobaccoUseCodePTestCase = new OperationsTestCase<TobaccoUse2>(
 			"validateTobaccoUseCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(TobaccoUse2 target) {
@@ -239,7 +237,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TobaccoUse2 target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
@@ -255,7 +253,7 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUseCode() {
@@ -265,13 +263,13 @@ public class TobaccoUse2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(TobaccoUse2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(TobaccoUse2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("11367-0", LOINC_ID));
+				target.init();
+
 			}
 
 			@Override

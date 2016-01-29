@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getContinuityOfCareDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ContinuityOfCareDocumentCode ContinuityOfCareDocumentCodeP ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor' templateId.root='2.16.840.1.113883.10.20.22.1.2' code.code='34133-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Summarization of Episode Note' constraints.validation.dependOn.ContinuityOfCareDocumentCode='ContinuityOfCareDocumentCodeP' constraints.validation.info='ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentImmunizationsSectionEntriesOptional ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentVitalSignsSectionEntriesOptional ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventPerformer ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor' constraints.validation.warning='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ContinuityOfCareDocumentCode ContinuityOfCareDocumentCodeP ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentComponent26 ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor ContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29 ContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31 ContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33 ContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35 ContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37 ContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28 ContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30 ContinuityOfCareDocumentComponentStructuredBodyProblemSection32 ContinuityOfCareDocumentComponentStructuredBodyProceduresSection34 ContinuityOfCareDocumentComponentStructuredBodyResultsSection36 ContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38 ContinuityOfCareDocumentComponentStructuredBodyEncountersSection40 ContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42 ContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44 ContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46 ContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48 ContinuityOfCareDocumentComponentStructuredBodyPayersSection50 ContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52 ContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54 ContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56 ContinuityOfCareDocumentComponentStructuredBody27' templateId.root='2.16.840.1.113883.10.20.22.1.2' code.code='34133-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Summarization of Episode Note' constraints.validation.dependOn.ContinuityOfCareDocumentCode='ContinuityOfCareDocumentCodeP' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventPerformer ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization ContinuityOfCareDocumentAuthorAssignedAuthor ContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29 ContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31 ContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33 ContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35 ContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37 ContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39 ContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41 ContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43 ContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45 ContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47 ContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49 ContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51 ContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53 ContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55 ContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57 ContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28 ContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30 ContinuityOfCareDocumentComponentStructuredBodyProblemSection32 ContinuityOfCareDocumentComponentStructuredBodyProceduresSection34 ContinuityOfCareDocumentComponentStructuredBodyResultsSection36 ContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38 ContinuityOfCareDocumentComponentStructuredBodyEncountersSection40 ContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42 ContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44 ContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46 ContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48 ContinuityOfCareDocumentComponentStructuredBodyPayersSection50 ContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52 ContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54 ContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56 ContinuityOfCareDocumentComponentStructuredBody27' constraints.validation.warning='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformer' constraints.validation.info='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39 ContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41 ContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43 ContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45 ContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47 ContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49 ContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51 ContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53 ContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55 ContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOf constraints.validation.error='ContinuityOfCareDocumentDocumentationOfServiceEvent'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow' constraints.validation.warning='ContinuityOfCareDocumentDocumentationOfServiceEventPerformer' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode' constraints.validation.info='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity'"
@@ -38,6 +38,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime constraints.validation.error='ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentAuthor constraints.validation.error='ContinuityOfCareDocumentAuthorAssignedAuthor'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentAuthorAssignedAuthor constraints.validation.error='ContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentComponent constraints.validation.error='ContinuityOfCareDocumentComponentStructuredBody27 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37 ComponentContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28 ComponentContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30 ComponentContinuityOfCareDocumentComponentStructuredBodyProblemSection32 ComponentContinuityOfCareDocumentComponentStructuredBodyProceduresSection34 ComponentContinuityOfCareDocumentComponentStructuredBodyResultsSection36 ComponentContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38 ComponentContinuityOfCareDocumentComponentStructuredBodyEncountersSection40 ComponentContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42 ComponentContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44 ComponentContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46 ComponentContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48 ComponentContinuityOfCareDocumentComponentStructuredBodyPayersSection50 ComponentContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52 ComponentContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54 ComponentContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56' constraints.validation.query='ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57 ComponentContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28 ComponentContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30 ComponentContinuityOfCareDocumentComponentStructuredBodyProblemSection32 ComponentContinuityOfCareDocumentComponentStructuredBodyProceduresSection34 ComponentContinuityOfCareDocumentComponentStructuredBodyResultsSection36 ComponentContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38 ComponentContinuityOfCareDocumentComponentStructuredBodyEncountersSection40 ComponentContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42 ComponentContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44 ComponentContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46 ComponentContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48 ComponentContinuityOfCareDocumentComponentStructuredBodyPayersSection50 ComponentContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52 ComponentContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54 ComponentContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56' constraints.validation.info='ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55 ComponentStructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentComponentStructuredBody constraints.validation.error='ContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28 ContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30 ContinuityOfCareDocumentComponentStructuredBodyProblemSection32 ContinuityOfCareDocumentComponentStructuredBodyProceduresSection34 ContinuityOfCareDocumentComponentStructuredBodyResultsSection36 ContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38 ContinuityOfCareDocumentComponentStructuredBodyEncountersSection40 ContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42 ContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44 ContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46 ContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48 ContinuityOfCareDocumentComponentStructuredBodyPayersSection50 ContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52 ContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54 ContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37' constraints.validation.query='StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57' constraints.validation.info='StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55 StructuredBodyContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentComponentStructuredBodyComponent constraints.validation.error='ContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37' constraints.validation.info='ContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57'"
  * @generated
  */
 public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
@@ -60,7 +63,7 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'34133-9\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'34133-9\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -108,122 +111,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentAdvanceDirectivesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentAllergiesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentEncountersSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentPayersSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentFamilyHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentSocialHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateContinuityOfCareDocumentVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentComponent26(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,7 +162,7 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
@@ -414,10 +305,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection)))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,11 +317,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection)))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentMedicalEquipmentSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -439,11 +329,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection)))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentFunctionalStatusSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -452,11 +341,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection)))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentImmunizationsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,145 +353,322 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection)))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(consol::AdvanceDirectivesSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection)))'"
 	 * @generated
 	 */
-	AdvanceDirectivesSection getAdvanceDirectivesSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection)))'"
 	 * @generated
 	 */
-	AllergiesSection getAllergiesSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->any(true).oclAsType(consol::EncountersSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection)))'"
 	 * @generated
 	 */
-	EncountersSection getEncountersSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection))->asSequence()->any(true).oclAsType(consol::PayersSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection)))'"
 	 * @generated
 	 */
-	PayersSection getPayersSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	MedicationsSection getMedicationsSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection)))'"
 	 * @generated
 	 */
-	PlanOfCareSection getPlanOfCareSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->any(true).oclAsType(consol::ProceduresSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection)))'"
 	 * @generated
 	 */
-	ProceduresSection getProceduresSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)))'"
 	 * @generated
 	 */
-	FamilyHistorySection getFamilyHistorySection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection)))'"
 	 * @generated
 	 */
-	SocialHistorySection getSocialHistorySection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->any(true).oclAsType(consol::ResultsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
 	 * @generated
 	 */
-	ResultsSection getResultsSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(consol::MedicalEquipmentSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
 	 * @generated
 	 */
-	MedicalEquipmentSection getMedicalEquipmentSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
 	 * @generated
 	 */
-	FunctionalStatusSection getFunctionalStatusSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyProblemSection32(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
 	 * @generated
 	 */
-	ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyProceduresSection34(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
 	 * @generated
 	 */
-	ProblemSection getProblemSection();
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyResultsSection36(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyEncountersSection40(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyPayersSection50(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->reject(structuredBody->one(structuredBody : cda::StructuredBody | not structuredBody.oclIsUndefined() and structuredBody.oclIsKindOf(cda::StructuredBody)))'"
+	 * @generated
+	 */
+	boolean validateContinuityOfCareDocumentComponentStructuredBody27(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -614,10 +679,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	public ContinuityOfCareDocument init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ContinuityOfCareDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ContinuityOfCareDocument

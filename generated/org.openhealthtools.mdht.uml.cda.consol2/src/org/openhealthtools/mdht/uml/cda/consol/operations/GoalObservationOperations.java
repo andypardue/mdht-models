@@ -52,20 +52,20 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationActReferenceER(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Act Reference ER</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationHealthConcernActER(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Health Concern Act ER</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPlannedERs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned ERs</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryRelationship624(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship624</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryRelationship626(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship626</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryRelationship628(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship628</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryRelationship630(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship630</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryRelationship632(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship632</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Reference Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Reference External Document Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getGoalObservations() <em>Get Goal Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getActReferenceERs() <em>Get Act Reference ERs</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getHealthConcernActERs() <em>Get Health Concern Act ERs</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPriorityPreference() <em>Get Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#getPlannedERss() <em>Get Planned ERss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Health Concern Act ER625</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryReferenceEntryRelationshipPlannedERs627(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Planned ERs627</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference Entry Relationship Priority Preference629</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationGoalObservationEntryRelationshipGoalObservation631(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation Entry Relationship Goal Observation631</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalObservation#validateGoalObservationEntryReferenceEntryRelationshipActReferenceER633(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Act Reference ER633</em>}</li>
  * </ul>
  * </p>
  *
@@ -115,26 +115,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationTemplateId(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationTemplateId"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationTemplateId"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -174,26 +176,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationClassCode(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationClassCode"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationClassCode"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -233,26 +237,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationMoodCode(GoalObservation goalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationMoodCode"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationMoodCode"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -266,7 +272,7 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGoalObservationId(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Id</em>}' invariant operation.
@@ -292,25 +298,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationId(GoalObservation goalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationId"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ID,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationId"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -350,26 +359,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationCodeP(GoalObservation goalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCodeP"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCodeP"),
+						 new Object [] { goalObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -381,7 +392,7 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(goalObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -395,9 +406,9 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGoalObservationCode(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Code</em>}' invariant operation.
@@ -423,33 +434,34 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationCode(GoalObservation goalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.GoalObservationCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.GoalObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(goalObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCode"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCode"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -463,8 +475,9 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGoalObservationStatusCode(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Status Code</em>}' invariant operation.
@@ -490,26 +503,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationStatusCode(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationStatusCode"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationStatusCode"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -549,26 +564,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationStatusCodeP(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationStatusCodeP"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationStatusCodeP"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -608,26 +625,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationEffectiveTime(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEffectiveTime"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEffectiveTime"),
+						 new Object [] { goalObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -641,7 +660,7 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
+	protected static final String VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGoalObservationValue(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Value</em>}' invariant operation.
@@ -667,144 +686,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationValue(GoalObservation goalObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationValue"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationValue"),
+						 new Object [] { goalObservation }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGoalObservationGoalObservation(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationGoalObservation(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::GoalObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGoalObservationGoalObservation(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationGoalObservation(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateGoalObservationGoalObservation(GoalObservation goalObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
-			try {
-				VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationGoalObservation"),
-					new Object[] { goalObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGoalObservationActReferenceER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Act Reference ER</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationActReferenceER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGoalObservationActReferenceER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Act Reference ER</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationActReferenceER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateGoalObservationActReferenceER(GoalObservation goalObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
-			try {
-				VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ACT_REFERENCE_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ACT_REFERENCE_ER,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationActReferenceER"),
-					new Object[] { goalObservation }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -844,203 +747,28 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationAuthorParticipation(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationAuthorParticipation"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationAuthorParticipation"),
+						 new Object [] { goalObservation }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGoalObservationHealthConcernActER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Health Concern Act ER</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationHealthConcernActER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGoalObservationHealthConcernActER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Health Concern Act ER</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationHealthConcernActER(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateGoalObservationHealthConcernActER(GoalObservation goalObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
-			try {
-				VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationHealthConcernActER"),
-					new Object[] { goalObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGoalObservationPriorityPreference(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationPriorityPreference(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGoalObservationPriorityPreference(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationPriorityPreference(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateGoalObservationPriorityPreference(GoalObservation goalObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
-			try {
-				VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPriorityPreference"),
-					new Object[] { goalObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGoalObservationPlannedERs(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned ERs</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationPlannedERs(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGoalObservationPlannedERs(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Planned ERs</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGoalObservationPlannedERs(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateGoalObservationPlannedERs(GoalObservation goalObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
-			try {
-				VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_PLANNED_ERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_ERS,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedERs"),
-					new Object[] { goalObservation }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1080,26 +808,328 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateGoalObservationReference(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				VALIDATE_GOAL_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			goalObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReference"),
-					new Object[] { goalObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReference"),
+						 new Object [] { goalObservation }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryRelationship624(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship624</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship624(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP624__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryRelationship624(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship624</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship624(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP624__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateGoalObservationEntryRelationship624(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP624__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
+			try {
+				VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP624__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP624__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP624__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_RELATIONSHIP624,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryRelationship624"),
+						 new Object [] { goalObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryRelationship626(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship626</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship626(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP626__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryRelationship626(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship626</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship626(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP626__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateGoalObservationEntryRelationship626(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP626__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
+			try {
+				VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP626__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP626__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP626__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_RELATIONSHIP626,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryRelationship626"),
+						 new Object [] { goalObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryRelationship628(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship628</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship628(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP628__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryRelationship628(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship628</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship628(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP628__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateGoalObservationEntryRelationship628(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP628__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
+			try {
+				VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP628__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP628__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP628__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_RELATIONSHIP628,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryRelationship628"),
+						 new Object [] { goalObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryRelationship630(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship630</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship630(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP630__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryRelationship630(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship630</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship630(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP630__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateGoalObservationEntryRelationship630(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP630__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
+			try {
+				VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP630__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP630__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP630__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_RELATIONSHIP630,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryRelationship630"),
+						 new Object [] { goalObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryRelationship632(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship632</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship632(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP632__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryRelationship632(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Relationship632</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGoalObservationEntryRelationship632(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP632__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateGoalObservationEntryRelationship632(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP632__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
+			try {
+				VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP632__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP632__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_RELATIONSHIP632__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(goalObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_RELATIONSHIP632,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryRelationship632"),
+						 new Object [] { goalObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -1139,30 +1169,33 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateGoalObservationReferenceTypeCode(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GOAL_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_GOAL_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReferenceTypeCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReferenceTypeCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1203,31 +1236,33 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateGoalObservationReferenceExternalDocumentReference(GoalObservation goalObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReferenceExternalDocumentReference"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReferenceExternalDocumentReference"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1235,221 +1270,333 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getGoalObservations(GoalObservation) <em>Get Goal Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Health Concern Act ER625</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGoalObservations(GoalObservation)
+	 * @see #validateGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_GOAL_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::GoalObservation)).oclAsType(consol::GoalObservation)";
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getGoalObservations(GoalObservation) <em>Get Goal Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Health Concern Act ER625</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGoalObservations(GoalObservation)
+	 * @see #validateGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_GOAL_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<GoalObservation> getGoalObservations(GoalObservation goalObservation) {
-		if (GET_GOAL_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(70));
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
-				GET_GOAL_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GOAL_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GOAL_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<GoalObservation> result = (Collection<GoalObservation>) query.evaluate(goalObservation);
-		return new BasicEList.UnmodifiableEList<GoalObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_HEALTH_CONCERN_ACT_ER625,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryReferenceEntryRelationshipHealthConcernActER625"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getActReferenceERs(GoalObservation) <em>Get Act Reference ERs</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryReferenceEntryRelationshipPlannedERs627(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Planned ERs627</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActReferenceERs(GoalObservation)
+	 * @see #validateGoalObservationEntryReferenceEntryRelationshipPlannedERs627(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ACT_REFERENCE_ERS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getActReferenceERs(GoalObservation) <em>Get Act Reference ERs</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryReferenceEntryRelationshipPlannedERs627(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Planned ERs627</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActReferenceERs(GoalObservation)
+	 * @see #validateGoalObservationEntryReferenceEntryRelationshipPlannedERs627(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ACT_REFERENCE_ERS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<EntryReference> getActReferenceERs(GoalObservation goalObservation) {
-		if (GET_ACT_REFERENCE_ERS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateGoalObservationEntryReferenceEntryRelationshipPlannedERs627(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(71));
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
-				GET_ACT_REFERENCE_ERS__EOCL_QRY = helper.createQuery(GET_ACT_REFERENCE_ERS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ACT_REFERENCE_ERS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(goalObservation);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_PLANNED_ERS627,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryReferenceEntryRelationshipPlannedERs627"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHealthConcernActERs(GoalObservation) <em>Get Health Concern Act ERs</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference Entry Relationship Priority Preference629</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHealthConcernActERs(GoalObservation)
+	 * @see #validateGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEALTH_CONCERN_ACT_ERS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
+	protected static final String VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getHealthConcernActERs(GoalObservation) <em>Get Health Concern Act ERs</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Priority Preference Entry Relationship Priority Preference629</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHealthConcernActERs(GoalObservation)
+	 * @see #validateGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_HEALTH_CONCERN_ACT_ERS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<EntryReference> getHealthConcernActERs(GoalObservation goalObservation) {
-		if (GET_HEALTH_CONCERN_ACT_ERS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(72));
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
-				GET_HEALTH_CONCERN_ACT_ERS__EOCL_QRY = helper.createQuery(GET_HEALTH_CONCERN_ACT_ERS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_CONCERN_ACT_ERS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(goalObservation);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE629,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPriorityPreferenceEntryRelationshipPriorityPreference629"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPriorityPreference(GoalObservation) <em>Get Priority Preference</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateGoalObservationGoalObservationEntryRelationshipGoalObservation631(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation Entry Relationship Goal Observation631</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPriorityPreference(GoalObservation)
+	 * @see #validateGoalObservationGoalObservationEntryRelationshipGoalObservation631(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRIORITY_PREFERENCE__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference))->asSequence()->any(true).oclAsType(consol::PriorityPreference)";
+	protected static final String VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::GoalObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPriorityPreference(GoalObservation) <em>Get Priority Preference</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateGoalObservationGoalObservationEntryRelationshipGoalObservation631(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Goal Observation Entry Relationship Goal Observation631</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPriorityPreference(GoalObservation)
+	 * @see #validateGoalObservationGoalObservationEntryRelationshipGoalObservation631(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PRIORITY_PREFERENCE__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static PriorityPreference getPriorityPreference(GoalObservation goalObservation) {
-		if (GET_PRIORITY_PREFERENCE__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateGoalObservationGoalObservationEntryRelationshipGoalObservation631(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(73));
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
-				GET_PRIORITY_PREFERENCE__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCE__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCE__EOCL_QRY);
-		return (PriorityPreference) query.evaluate(goalObservation);
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_GOAL_OBSERVATION631,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationGoalObservationEntryRelationshipGoalObservation631"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedERss(GoalObservation) <em>Get Planned ERss</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateGoalObservationEntryReferenceEntryRelationshipActReferenceER633(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Act Reference ER633</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedERss(GoalObservation)
+	 * @see #validateGoalObservationEntryReferenceEntryRelationshipActReferenceER633(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_ERSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
+	protected static final String VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedERss(GoalObservation) <em>Get Planned ERss</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateGoalObservationEntryReferenceEntryRelationshipActReferenceER633(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goal Observation Entry Reference Entry Relationship Act Reference ER633</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedERss(GoalObservation)
+	 * @see #validateGoalObservationEntryReferenceEntryRelationshipActReferenceER633(GoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_ERSS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param goalObservation The receiving '<em><b>Goal Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<EntryReference> getPlannedERss(GoalObservation goalObservation) {
-		if (GET_PLANNED_ERSS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateGoalObservationEntryReferenceEntryRelationshipActReferenceER633(GoalObservation goalObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.GOAL_OBSERVATION,
-				ConsolPackage.Literals.GOAL_OBSERVATION.getEAllOperations().get(74));
+			helper.setContext(ConsolPackage.Literals.GOAL_OBSERVATION);
 			try {
-				GET_PLANNED_ERSS__EOCL_QRY = helper.createQuery(GET_PLANNED_ERSS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_ERSS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(goalObservation);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(goalObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ACT_REFERENCE_ER633,
+						 ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEntryReferenceEntryRelationshipActReferenceER633"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // GoalObservationOperations

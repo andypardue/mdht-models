@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -57,8 +58,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationTemplateId() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,8 +92,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationClassCode() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationClassCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -125,8 +126,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationMoodCode() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationMoodCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -188,7 +189,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationCode() {
@@ -206,9 +207,16 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4", "", "");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(SmokingStatusObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservationCodeP", passToken);
 			}
 
 			@Override
@@ -226,14 +234,14 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	/**
 	*
 	* @generated
-	* 
+	*
 	* Note: This is being treated as a TS instead of an IVL_TS via nested constraints and custom messages.
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationEffectiveTime() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationEffectiveTimeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -269,8 +277,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationStatusCodeP() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationStatusCodePTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -303,8 +311,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationStatusCode() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationStatusCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -335,7 +343,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationValueP() {
@@ -353,9 +361,6 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", "2.16.840.1.113883.6.96", "", "");
-				target.getValues().add(value);
-
 			}
 
 			@Override
@@ -372,25 +377,24 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSCenter() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSCenterTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSCenter",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSCenter", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SmokingStatusObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				target.getEffectiveTime().setCenter(DatatypesFactory.eINSTANCE.createIVXB_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusObservation target) {
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -407,25 +411,24 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSHigh() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSHighTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SmokingStatusObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusObservation target) {
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -442,25 +445,24 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSLow() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSLowTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSLow", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SmokingStatusObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusObservation target) {
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -477,25 +479,24 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSWidth() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSWidthTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSWidth",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSWidth", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SmokingStatusObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				target.getEffectiveTime().setWidth((DatatypesFactory.eINSTANCE.createPQ()));
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusObservation target) {
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -512,7 +513,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationValue() {
@@ -530,7 +531,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}

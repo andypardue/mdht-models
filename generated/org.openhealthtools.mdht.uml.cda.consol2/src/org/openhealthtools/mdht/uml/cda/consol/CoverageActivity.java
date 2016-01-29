@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCoverageActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityClassCode CoverageActivityMoodCode CoverageActivityId CoverageActivityCode CoverageActivityStatusCode CoverageActivityPolicyActivity' templateId.root='2.16.840.1.113883.10.20.22.4.60' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber' classCode='ACT' moodCode='EVN' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityClassCode CoverageActivityMoodCode CoverageActivityId CoverageActivityCode CoverageActivityStatusCode CoverageActivityEntryRelationship236 CoverageActivityPolicyActivityEntryRelationshipPolicyActivity237' templateId.root='2.16.840.1.113883.10.20.22.4.60' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber' classCode='ACT' moodCode='EVN' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' statusCode.code='completed' constraints.validation.query='CoverageActivityPolicyActivityEntryRelationshipPolicyActivity237'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCoverageActivityPolicyActivityEntryRelationship constraints.validation.error='CoverageActivityPolicyActivityEntryRelationshipPolicyActivity237'"
  * @generated
  */
 public interface CoverageActivity extends Act {
@@ -74,7 +75,7 @@ public interface CoverageActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'48768-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'48768-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateCoverageActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -86,7 +87,7 @@ public interface CoverageActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateCoverageActivityId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -110,7 +111,7 @@ public interface CoverageActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateCoverageActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -122,19 +123,22 @@ public interface CoverageActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PolicyActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCoverageActivityPolicyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCoverageActivityEntryRelationship236(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity)).oclAsType(consol::PolicyActivity)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity)))'"
 	 * @generated
 	 */
-	EList<PolicyActivity> getPolicyActivities();
+	boolean validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,9 +148,9 @@ public interface CoverageActivity extends Act {
 	public CoverageActivity init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoverageActivity

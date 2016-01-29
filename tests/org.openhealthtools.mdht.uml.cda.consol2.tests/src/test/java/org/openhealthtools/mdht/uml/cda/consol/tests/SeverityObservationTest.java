@@ -17,13 +17,10 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SeverityObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
@@ -57,26 +54,24 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationTextReference() {
 		OperationsTestCase<SeverityObservation> validateSeverityObservationTextReferenceTestCase = new OperationsTestCase<SeverityObservation>(
-			"validateSeverityObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SeverityObservation target) {
-				target.init();
-				target.setText(DatatypesFactory.eINSTANCE.createED("test"));
+
 			}
 
 			@Override
 			protected void updateToPass(SeverityObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
 			}
 
 			@Override
@@ -93,28 +88,27 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationTextReferenceValue() {
 		OperationsTestCase<SeverityObservation> validateSeverityObservationTextReferenceValueTestCase = new OperationsTestCase<SeverityObservation>(
-			"validateSeverityObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SeverityObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(SeverityObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -131,39 +125,27 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationReferenceValue() {
-		OperationsTestCase<SeverityObservation> validateSeverityObservationReferenceValueTestCase = new NarrativeReferenceTestCase<SeverityObservation>(
-			"validateSeverityObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<SeverityObservation> validateSeverityObservationReferenceValueTestCase = new OperationsTestCase<SeverityObservation>(
+			"validateSeverityObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SeverityObservation target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"Not a particularly severe reaction.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 
 			}
 
 			@Override
 			protected void updateToPass(SeverityObservation target) {
+				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "Not a particularly severe reaction.");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
@@ -282,7 +264,7 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationCode() {
@@ -299,10 +281,10 @@ public class SeverityObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeverityObservation target) {
 				target.init();
-				CE cd = DatatypesFactory.eINSTANCE.createCE();
-				cd.setCode("SEV");
-				cd.setCodeSystem("2.16.840.1.113883.5.4");
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
+
 			}
 
 			@Override
@@ -319,7 +301,7 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationText() {
@@ -336,7 +318,9 @@ public class SeverityObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeverityObservation target) {
 				target.init();
-				target.setText(DatatypesFactory.eINSTANCE.createED());
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
 
 			}
 
@@ -391,7 +375,7 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationValue() {
@@ -402,18 +386,16 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SeverityObservation target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
 			protected void updateToPass(SeverityObservation target) {
-				target.getValues().clear();
+				target.init();
+
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("255604002");
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -430,7 +412,7 @@ public class SeverityObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationValueP() {
@@ -447,8 +429,7 @@ public class SeverityObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeverityObservation target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override

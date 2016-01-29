@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mental Status Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -141,8 +139,7 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 */
 	@Override
 	public boolean validateMentalStatusObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusObservationOperations.validateMentalStatusObservationEffectiveTime(
-			this, diagnostics, context);
+		return MentalStatusObservationOperations.validateMentalStatusObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -171,22 +168,9 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * @generated
 	 */
 	@Override
-	public boolean validateMentalStatusObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusObservationOperations.validateMentalStatusObservationAssessmentScaleObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateMentalStatusObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservationOperations.validateMentalStatusObservationAuthorParticipation(
-			this, diagnostics, context);
+		return MentalStatusObservationOperations.validateMentalStatusObservationAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -194,9 +178,17 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
-		return MentalStatusObservationOperations.getAssessmentScaleObservations(this);
+	public boolean validateMentalStatusObservationEntryRelationship600(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusObservationOperations.validateMentalStatusObservationEntryRelationship600(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusObservationOperations.validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601(this, diagnostics, context);
 	}
 
 	/**
@@ -206,17 +198,17 @@ public class MentalStatusObservationImpl extends ObservationImpl implements Ment
 	 */
 	@Override
 	public MentalStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MentalStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MentalStatusObservationImpl

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionEntriesO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Results Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,9 +57,17 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ResultOrganizer2> getConsolResultOrganizer2s() {
-		return ResultsSectionEntriesOptional2Operations.getConsolResultOrganizer2s(this);
+	public boolean validateResultsSectionEntriesOptional2Entry1158(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptional2Entry1158(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultsSectionEntriesOptional2ResultOrganizer2EntryResultOrganizer21159(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptional2ResultOrganizer2EntryResultOrganizer21159(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +78,7 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +88,7 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,20 +98,7 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalResultOrganizer(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptional2Operations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -117,17 +108,17 @@ public class ResultsSectionEntriesOptional2Impl extends ResultsSectionEntriesOpt
 	 */
 	@Override
 	public ResultsSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultsSectionEntriesOptional2Impl

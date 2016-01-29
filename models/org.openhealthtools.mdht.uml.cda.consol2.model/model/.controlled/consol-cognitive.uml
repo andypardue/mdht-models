@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_jfoCUOZbEeGINOJ_SD9_dA" name="CognitiveStatusResultOrganizer">
     <ownedComment xmi:id="_67cIUOZiEeGINOJ_SD9_dA">
       <body>This clinical statement identifies a set of cognitive status result observations. It contains information applicable to all of the contained cognitive status result observations. A result organizer may be used to group questions in a Patient Health Questionaire (PHQ). &#xD;
@@ -44,12 +44,23 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="consol-results.uml#_2JzoshSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_0aKXMOZjEeGINOJ_SD9_dA" name="cognitiveStatusResultObservation" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2AElEeZjEeGINOJ_SD9_dA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2AElEOZjEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_6pEc4ca_EeWGb6ppo-ygHg" name="entryRelationship574" type="_6pDOwMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pEc4sa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pEc48a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6pEc4Ma_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6pDOwMa_EeWGb6ppo-ygHg" name="CognitiveStatusResultObservationEntryRelationship">
+      <generalization xmi:id="_6pDOwca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6pFrAca_EeWGb6ppo-ygHg" name="cognitiveStatusResultObservation575" type="_gkBM0OZbEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pFrAsa_EeWGb6ppo-ygHg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pFrA8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6pFrAMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_0aKXMuZjEeGINOJ_SD9_dA" memberEnd="_0aKXMOZjEeGINOJ_SD9_dA _0aKXM-ZjEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_0aKXMuZjEeGINOJ_SD9_dA" memberEnd="_0aKXM-ZjEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_0aKXM-ZjEeGINOJ_SD9_dA" type="_jfoCUOZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_SABeQOZjEeGINOJ_SD9_dA" base_Class="_jfoCUOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.75">
@@ -180,22 +191,24 @@ This is different from a cognitive status problem observation, which is a clinic
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0MFYOZhEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_1Rt8MOZhEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_1R3GIOZhEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-FamcOZhEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-FRcgOZhEeGINOJ_SD9_dA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2p8TYOZhEeGINOJ_SD9_dA" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" association="_2qFdUOZhEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-YnPQeZhEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-YnPQOZhEeGINOJ_SD9_dA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_5l_NwOZhEeGINOJ_SD9_dA" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_5mI-weZhEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vhTYOZhEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vXiYOZhEeGINOJ_SD9_dA" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_8m8dUOZhEeGINOJ_SD9_dA" name="referenceRange" type="_SJCs0OZiEeGINOJ_SD9_dA" association="_8m8dUuZhEeGINOJ_SD9_dA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QHdPkeZiEeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QHdPkOZiEeGINOJ_SD9_dA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6o7S8ca_EeWGb6ppo-ygHg" name="entryRelationship568" type="_6o6r4Ma_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o76AMa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o76Aca_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6o7S8Ma_EeWGb6ppo-ygHg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6o-WQca_EeWGb6ppo-ygHg" name="entryRelationship570" type="_6o9IJMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o-WQsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o-WQ8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6o-WQMa_EeWGb6ppo-ygHg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6pBZkca_EeWGb6ppo-ygHg" name="entryRelationship572" type="_6pALcMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pBZksa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pBZk8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6pBZkMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_SJCs0OZiEeGINOJ_SD9_dA" name="ReferenceRange">
       <ownedComment xmi:id="_ybOakOiuEeGJjcpkERLI4g">
@@ -224,17 +237,48 @@ This is different from a cognitive status problem observation, which is a clinic
         </generalization>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6o6r4Ma_EeWGb6ppo-ygHg" name="NonMedicinalSupplyActivityEntryRelationship">
+      <generalization xmi:id="_6o6r4ca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6o8hEca_EeWGb6ppo-ygHg" name="nonMedicinalSupplyActivity569" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o8hEsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o8hE8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6o8hEMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6o9IJMa_EeWGb6ppo-ygHg" name="CaregiverCharacteristicsEntryRelationship">
+      <generalization xmi:id="_6o9IJca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6o_kYca_EeWGb6ppo-ygHg" name="caregiverCharacteristics571" type="__pNCUOY-EeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o_kYsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o_kY8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6o_kYMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6pALcMa_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_6pALcca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6pCnsca_EeWGb6ppo-ygHg" name="assessmentScaleObservation573" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pCnssa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pCns8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6pCnsMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_rPamTeZgEeGINOJ_SD9_dA" memberEnd="_rPamSuZgEeGINOJ_SD9_dA _rPamTuZgEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_rPamTuZgEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_rPamTeZgEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_1R3GIOZhEeGINOJ_SD9_dA" memberEnd="_1Rt8MOZhEeGINOJ_SD9_dA _1R3GIeZhEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_1R3GIOZhEeGINOJ_SD9_dA" memberEnd="_1R3GIeZhEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_1R3GIeZhEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_1R3GIOZhEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_2qFdUOZhEeGINOJ_SD9_dA" memberEnd="_2p8TYOZhEeGINOJ_SD9_dA _2qFdUeZhEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_2qFdUOZhEeGINOJ_SD9_dA" memberEnd="_2qFdUeZhEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_2qFdUeZhEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_2qFdUOZhEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_5mI-weZhEeGINOJ_SD9_dA" memberEnd="_5l_NwOZhEeGINOJ_SD9_dA _5mI-wuZhEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_5mI-weZhEeGINOJ_SD9_dA" memberEnd="_5mI-wuZhEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_5mI-wuZhEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_5mI-weZhEeGINOJ_SD9_dA"/>
   </uml:Association>
   <uml:Association xmi:id="_8m8dUuZhEeGINOJ_SD9_dA" memberEnd="_8m8dUOZhEeGINOJ_SD9_dA _8m8dU-ZhEeGINOJ_SD9_dA">
@@ -453,27 +497,60 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGb3MSAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_FvvKoOZeEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_FvvKouZeEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LDPEkeZeEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LDPEkOZeEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_6oywEca_EeWGb6ppo-ygHg" name="entryRelationship562" type="_6oxh8Ma_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6oywEsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6oywE8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6oywEMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_GxfikOZeEeGINOJ_SD9_dA" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" association="_GxfikuZeEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f7esoWsiEeKMLasV-rp2QA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f7esoGsiEeKMLasV-rp2QA" value="*"/>
+    <ownedAttribute xmi:id="_6o1MUca_EeWGb6ppo-ygHg" name="entryRelationship564" type="_6o0lQMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o1MUsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o1MU8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6o1MUMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_IM1fMOZeEeGINOJ_SD9_dA" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_IM1fMuZeEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1oFIWsiEeKMLasV-rp2QA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1oFIGsiEeKMLasV-rp2QA" value="*"/>
+    <ownedAttribute xmi:id="_6o4Poca_EeWGb6ppo-ygHg" name="entryRelationship566" type="_6o3Bgca_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o4Posa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o4Po8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6o4PoMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6oxh8Ma_EeWGb6ppo-ygHg" name="NonMedicinalSupplyActivityEntryRelationship">
+      <generalization xmi:id="_6oxh8ca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6oz-Mca_EeWGb6ppo-ygHg" name="nonMedicinalSupplyActivity563" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6oz-Msa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6oz-M8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6oz-MMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6o0lQMa_EeWGb6ppo-ygHg" name="CaregiverCharacteristicsEntryRelationship">
+      <generalization xmi:id="_6o0lQca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6o2acca_EeWGb6ppo-ygHg" name="caregiverCharacteristics565" type="__pNCUOY-EeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o2acsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o2ac8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6o2acMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6o3Bgca_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_6o3Bgsa_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6o5dwca_EeWGb6ppo-ygHg" name="assessmentScaleObservation567" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6o5dwsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6o5dw8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6o5dwMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_FvvKouZeEeGINOJ_SD9_dA" memberEnd="_FvvKoOZeEeGINOJ_SD9_dA _Fv4UkOZeEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_FvvKouZeEeGINOJ_SD9_dA" memberEnd="_Fv4UkOZeEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_Fv4UkOZeEeGINOJ_SD9_dA" type="_dXKPQOZbEeGINOJ_SD9_dA" association="_FvvKouZeEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_GxfikuZeEeGINOJ_SD9_dA" memberEnd="_GxfikOZeEeGINOJ_SD9_dA _Gxfik-ZeEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_GxfikuZeEeGINOJ_SD9_dA" memberEnd="_Gxfik-ZeEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_Gxfik-ZeEeGINOJ_SD9_dA" type="_dXKPQOZbEeGINOJ_SD9_dA" association="_GxfikuZeEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_IM1fMuZeEeGINOJ_SD9_dA" memberEnd="_IM1fMOZeEeGINOJ_SD9_dA _IM1fM-ZeEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_IM1fMuZeEeGINOJ_SD9_dA" memberEnd="_IM1fM-ZeEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_IM1fM-ZeEeGINOJ_SD9_dA" type="_dXKPQOZbEeGINOJ_SD9_dA" association="_IM1fMuZeEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_rHy4IOZcEeGINOJ_SD9_dA" base_Class="_dXKPQOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.73">
@@ -528,9 +605,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
   <CDA:PropertyValidation xmi:id="_r7wPMOZdEeGINOJ_SD9_dA" severity="INFO" base_Property="_aFueTuZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14693</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aF4PROZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14349</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_P7LgYOZdEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA"/>
   <CDA:EntryRelationship xmi:id="_OZw7gOZeEeGINOJ_SD9_dA" severity="INFO" base_Association="_FvvKouZeEeGINOJ_SD9_dA" typeCode="REFR">
@@ -727,9 +804,10 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXkRkOY1EeGINOJ_SD9_dA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXjqgOY1EeGINOJ_SD9_dA" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_JN3eMOY5EeGINOJ_SD9_dA" name="assessmentScaleSupportingObservation" type="_1ZKPgOY2EeGINOJ_SD9_dA" association="_JN4sUOY5EeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PD3oQOY5EeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PD3BMOY5EeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_6ovFsca_EeWGb6ppo-ygHg" name="entryRelationship560" type="_6oueoMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6ovFssa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6ovswMa_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6ovFsMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_0N8rgOY0EeGINOJ_SD9_dA" name="ReferenceRange">
       <ownedComment xmi:id="_Dlx7sOY2EeGINOJ_SD9_dA">
@@ -783,6 +861,16 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6oueoMa_EeWGb6ppo-ygHg" name="AssessmentScaleSupportingObservationEntryRelationship">
+      <generalization xmi:id="_6oueoca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6owT0ca_EeWGb6ppo-ygHg" name="assessmentScaleSupportingObservation561" type="_1ZKPgOY2EeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6owT0sa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6owT08a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6owT0Ma_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_hvJ8YuYxEeGINOJ_SD9_dA" memberEnd="_hvJ8X-YxEeGINOJ_SD9_dA _hvJ8Y-YxEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_hvJ8Y-YxEeGINOJ_SD9_dA" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_hvJ8YuYxEeGINOJ_SD9_dA"/>
@@ -790,7 +878,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
   <uml:Association xmi:id="_y4psgOY0EeGINOJ_SD9_dA" memberEnd="_y4n3UOY0EeGINOJ_SD9_dA _y4psgeY0EeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_y4psgeY0EeGINOJ_SD9_dA" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_y4psgOY0EeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_JN4sUOY5EeGINOJ_SD9_dA" memberEnd="_JN3eMOY5EeGINOJ_SD9_dA _JN4sUeY5EeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_JN4sUOY5EeGINOJ_SD9_dA" memberEnd="_JN4sUeY5EeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_JN4sUeY5EeGINOJ_SD9_dA" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_JN4sUOY5EeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_iPVmUOYzEeGINOJ_SD9_dA" base_Class="_Zi33YOYxEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.69">
@@ -1067,10 +1155,21 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7sowQKvCEeOEkquDecUlEw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7sowQavCEeOEkquDecUlEw" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DkTwUIoHEeOoMZgUoTghIg" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_DkUXYIoHEeOoMZgUoTghIg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DkTwUYoHEeOoMZgUoTghIg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DkTwUooHEeOoMZgUoTghIg" value="*"/>
+    <ownedAttribute xmi:id="_6pnPcca_EeWGb6ppo-ygHg" name="entryRelationship594" type="_6pmBUMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pnPcsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pnPc8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6pnPcMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6pmBUMa_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_6pmBUca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6podkca_EeWGb6ppo-ygHg" name="assessmentScaleObservation595" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6podksa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6podk8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6podkMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_JguTIIoBEeOoMZgUoTghIg" base_Class="_Y_oGkIoAEeOoMZgUoTghIg" templateId="2.16.840.1.113883.10.20.22.4.126">
     <ruleId>CONF:29248</ruleId>
@@ -1086,9 +1185,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29250</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ac3QgIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fGUUYoAEeOoMZgUoTghIg">
     <ruleId>CONF:29251</ruleId>
+    <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fNoPAIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHidIoAEeOoMZgUoTghIg">
     <ruleId>CONF:29252</ruleId>
@@ -1104,7 +1203,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29258</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AVRI0IoEEeOoMZgUoTghIg" base_Property="_9fHid4oAEeOoMZgUoTghIg"/>
-  <uml:Association xmi:id="_DkUXYIoHEeOoMZgUoTghIg" memberEnd="_DkTwUIoHEeOoMZgUoTghIg _DkUXYYoHEeOoMZgUoTghIg">
+  <uml:Association xmi:id="_DkUXYIoHEeOoMZgUoTghIg" memberEnd="_DkUXYYoHEeOoMZgUoTghIg">
     <ownedEnd xmi:id="_DkUXYYoHEeOoMZgUoTghIg" type="_Y_oGkIoAEeOoMZgUoTghIg" association="_DkUXYIoHEeOoMZgUoTghIg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_qyOhUIoHEeOoMZgUoTghIg" severity="INFO" base_Association="_DkUXYIoHEeOoMZgUoTghIg" typeCode="COMP">
@@ -1112,9 +1211,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29267</ruleId>
     <ruleId>CONF:29268</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" base_Property="_9fHid4oAEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHid4oAEeOoMZgUoTghIg">
     <ruleId>CONF:29264</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_-lJmEI0kEeOB0eBUISUB4Q" name="MentalStatusObservation">
     <ownedComment xmi:id="_WTRLwI0mEeOB0eBUISUB4Q">
@@ -1166,10 +1265,21 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pMbca4hEeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pMbcq4hEeORf5eJaKt1KQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Prt9EI0zEeOB0eBUISUB4Q" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_PrukII0zEeOB0eBUISUB4Q">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Prt9EY0zEeOB0eBUISUB4Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Prt9Eo0zEeOB0eBUISUB4Q" value="*"/>
+    <ownedAttribute xmi:id="_6pxAcca_EeWGb6ppo-ygHg" name="entryRelationship600" type="_6pvyUMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pxAcsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pxAc8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6pxAcMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6pvyUMa_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_6pvyUca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6pyOkca_EeWGb6ppo-ygHg" name="assessmentScaleObservation601" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pyOksa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pyOk8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6pyOkMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="__KlY8I0lEeOB0eBUISUB4Q" base_Property="_vnbNEI0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29182</ruleId>
@@ -1195,15 +1305,15 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29195</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" base_Property="_vnbNEY0lEeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
+  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vnbNEY0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29189</ruleId>
+    <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" base_Property="_vncbNI0lEeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vncbNI0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29202</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
-  <uml:Association xmi:id="_PrukII0zEeOB0eBUISUB4Q" memberEnd="_Prt9EI0zEeOB0eBUISUB4Q _PrukIY0zEeOB0eBUISUB4Q">
+  <uml:Association xmi:id="_PrukII0zEeOB0eBUISUB4Q" memberEnd="_PrukIY0zEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_PrukIY0zEeOB0eBUISUB4Q" type="_-lJmEI0kEeOB0eBUISUB4Q" association="_PrukII0zEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_eiNQMI0zEeOB0eBUISUB4Q" severity="INFO" base_Association="_PrukII0zEeOB0eBUISUB4Q" typeCode="COMP">
@@ -1252,9 +1362,10 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y-IEcQPsEeWlspDC_8d7eg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y-IEcAPsEeWlspDC_8d7eg" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_6SCMoJm9EeOLJeQez13EkQ" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_6SDawJm9EeOLJeQez13EkQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6SCzsJm9EeOLJeQez13EkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6SCzsZm9EeOLJeQez13EkQ" value="*"/>
+    <ownedAttribute xmi:id="_6tRAYca_EeWGb6ppo-ygHg" name="entryRelationship736" type="_6tPyQMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6tRAYsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6tRAY8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6tRAYMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ZFOAYAPrEeWlspDC_8d7eg" name="IVLTS">
       <ownedComment xmi:id="_bMOJIAPrEeWlspDC_8d7eg">
@@ -1282,6 +1393,16 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6tPyQMa_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_6tPyQca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6tSOgca_EeWGb6ppo-ygHg" name="assessmentScaleObservation737" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6tSOgsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6tSOg8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6tSOgMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_PYeNIJm5EeOLJeQez13EkQ" base_Class="_kyeGAJm4EeOLJeQez13EkQ" templateId="2.16.840.1.113883.10.20.22.4.127">
     <ruleId>CONF:1098-27959</ruleId>
@@ -1301,19 +1422,19 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:1098-31437</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kURRoJm5EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ"/>
-  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
+  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSfzoZm4EeOLJeQez13EkQ">
     <ruleId>CONF:1098-27962</ruleId>
+    <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_D8_WYJm7EeOLJeQez13EkQ" code="completed" base_Property="_wSfzppm4EeOLJeQez13EkQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31438</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSgasJm4EeOLJeQez13EkQ">
     <ruleId>CONF:1098-27974</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
-  <uml:Association xmi:id="_6SDawJm9EeOLJeQez13EkQ" memberEnd="_6SCMoJm9EeOLJeQez13EkQ _6SDawZm9EeOLJeQez13EkQ">
+  <uml:Association xmi:id="_6SDawJm9EeOLJeQez13EkQ" memberEnd="_6SDawZm9EeOLJeQez13EkQ">
     <ownedEnd xmi:id="_6SDawZm9EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_6SDawJm9EeOLJeQez13EkQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_CFFSMJm-EeOLJeQez13EkQ" severity="INFO" base_Association="_6SDawJm9EeOLJeQez13EkQ" typeCode="COMP">
@@ -1360,18 +1481,51 @@ The Mental Status Section contains observations and evaluations related to a pat
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P4PdkJ2DEeORR8_YW0n_jQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_AEg8kPglEeSx6PQhw3nAUw" name="mentalStatusOrganizer2" type="_6LYrULkoEeODDJAC5t5vpw" association="_AEixwPglEeSx6PQhw3nAUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AEhjoPglEeSx6PQhw3nAUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AEhjofglEeSx6PQhw3nAUw" value="*"/>
+    <ownedAttribute xmi:id="_6tx9wca_EeWGb6ppo-ygHg" name="entry756" type="_6txWsMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6tx9wsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6tx9w8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6tx9wMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_YkEbsPglEeSx6PQhw3nAUw" name="mentalStatusObservation2" type="_ze150PitEeOXlK95I8tUew" association="_YkFp0PglEeSx6PQhw3nAUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YkEbsfglEeSx6PQhw3nAUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkEbsvglEeSx6PQhw3nAUw" value="*"/>
+    <ownedAttribute xmi:id="_6t1oIMa_EeWGb6ppo-ygHg" name="entry758" type="_6t0aAMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6t1oIca_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6t1oIsa_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6t1BEMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_A4wxEJ2EEeORR8_YW0n_jQ" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_A4xYIJ2EEeORR8_YW0n_jQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A4wxEZ2EEeORR8_YW0n_jQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A4wxEp2EEeORR8_YW0n_jQ" value="*"/>
+    <ownedAttribute xmi:id="_6t4EYca_EeWGb6ppo-ygHg" name="entry760" type="_6t3dUMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6t4rcMa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6t4rcca_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6t4EYMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6txWsMa_EeWGb6ppo-ygHg" name="MentalStatusOrganizer2Entry">
+      <generalization xmi:id="_6txWsca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6tzy8Ma_EeWGb6ppo-ygHg" name="mentalStatusOrganizer2757" type="_6LYrULkoEeODDJAC5t5vpw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6tzy8ca_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6tzy8sa_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6tzL4Ma_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6t0aAMa_EeWGb6ppo-ygHg" name="MentalStatusObservation2Entry">
+      <generalization xmi:id="_6t0aAca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6t22Qca_EeWGb6ppo-ygHg" name="mentalStatusObservation2759" type="_ze150PitEeOXlK95I8tUew" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6t22Qsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6t22Q8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6t22QMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6t3dUMa_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntry">
+      <generalization xmi:id="_6t3dUca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6t55kMa_EeWGb6ppo-ygHg" name="assessmentScaleObservation761" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6t55kca_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6t55ksa_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6t5SgMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_AIPvkJ2DEeORR8_YW0n_jQ" base_Class="_4tfOMJ2CEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.56" templateVersion="2015-08-01">
     <ruleId>CONF:1198-28293</ruleId>
@@ -1391,7 +1545,7 @@ The Mental Status Section contains observations and evaluations related to a pat
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-28296, CONF:1198-30826</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_A4xYIJ2EEeORR8_YW0n_jQ" memberEnd="_A4wxEJ2EEeORR8_YW0n_jQ _A4ymQJ2EEeORR8_YW0n_jQ">
+  <uml:Association xmi:id="_A4xYIJ2EEeORR8_YW0n_jQ" memberEnd="_A4ymQJ2EEeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_A4ymQJ2EEeORR8_YW0n_jQ" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_A4xYIJ2EEeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_BgUgUJ2EEeORR8_YW0n_jQ" severity="INFO" base_Association="_A4xYIJ2EEeORR8_YW0n_jQ">
@@ -1409,7 +1563,7 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:AssociationValidation xmi:id="_7slLEK4hEeORf5eJaKt1KQ" severity="WARNING" base_Association="_6pOQoK4hEeORf5eJaKt1KQ">
     <ruleId>CONF:31435</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" clientDependency="_dfDNQLkpEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
+  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
     <ownedComment xmi:id="_XgdH4LkpEeODDJAC5t5vpw">
       <body>The Mental Status Organizer template may be used to group related Mental Status Observations (e.g., results of mental tests) and associated Assessment Scale Observations into subcategories and/or groupings by time. Subcategories can be things such as Mood and Affect, Behavior, Thought Process, Perception, Cognition, etc.</body>
     </ownedComment>
@@ -1438,10 +1592,6 @@ The Mental Status Section contains observations and evaluations related to a pat
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EWlCMU9aEeWsIc5CMrI4GA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EWlCME9aEeWsIc5CMrI4GA" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_QW4-APjAEeOXlK95I8tUew" name="mentalStatusObservation2" type="_ze150PitEeOXlK95I8tUew" redefinedProperty="_0aKXMOZjEeGINOJ_SD9_dA" association="_QW6zMPjAEeOXlK95I8tUew">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R26mUPjAEeOXlK95I8tUew" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R25YMPjAEeOXlK95I8tUew" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_cQHRAKy1EeSB84STE1Ny6A" name="effectiveTime" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_d1mBEKy1EeSB84STE1Ny6A">
         <body>The effectiveTime is an interval that spans the effectiveTimes of the contained mental status observations. Because all contained mental status observations have a required time stamp, it is not required that this effectiveTime be populated.</body>
@@ -1450,6 +1600,11 @@ The Mental Status Section contains observations and evaluations related to a pat
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cQHRAay1EeSB84STE1Ny6A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cQHRAqy1EeSB84STE1Ny6A" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_6xnU4ca_EeWGb6ppo-ygHg" name="entryRelationship896" type="_6xmGwMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6xnU4sa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xnU48a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6xnU4Ma_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_L-lgEKyxEeSB84STE1Ny6A" name="CD">
       <ownedComment xmi:id="__ozGwKy-EeSB84STE1Ny6A">
@@ -1463,6 +1618,16 @@ The Mental Status Section contains observations and evaluations related to a pat
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RLXjUU9aEeWsIc5CMrI4GA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLXjUE9aEeWsIc5CMrI4GA" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6xmGwMa_EeWGb6ppo-ygHg" name="MentalStatusObservation2EntryRelationship">
+      <generalization xmi:id="_6xmGwca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6xpKEca_EeWGb6ppo-ygHg" name="mentalStatusObservation2897" type="_ze150PitEeOXlK95I8tUew" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6xpKEsa_EeWGb6ppo-ygHg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xpKE8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6xpKEMa_EeWGb6ppo-ygHg"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -1529,14 +1694,15 @@ The Mental Status Section contains observations and evaluations related to a pat
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nKpc8fiwEeOXlK95I8tUew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nKpc8viwEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_CPw6APi6EeOXlK95I8tUew" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_CPyIIPi6EeOXlK95I8tUew">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CPw6Afi6EeOXlK95I8tUew"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CPw6Avi6EeOXlK95I8tUew" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_QhZMkPi6EeOXlK95I8tUew" name="referenceRange" association="_QhbBwPi6EeOXlK95I8tUew">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QhZMkfi6EeOXlK95I8tUew"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QhZMkvi6EeOXlK95I8tUew" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_62DI8ca_EeWGb6ppo-ygHg" name="entryRelationship1050" type="_62B60Ma_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_62DwAMa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_62DwAca_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_62DI8Ma_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_wYem8E9XEeWsIc5CMrI4GA" name="CD">
       <ownedComment xmi:id="_yofhwE9XEeWsIc5CMrI4GA">
@@ -1550,6 +1716,16 @@ The Mental Status Section contains observations and evaluations related to a pat
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FP1QUE9YEeWsIc5CMrI4GA" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FP0CME9YEeWsIc5CMrI4GA" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_62B60Ma_EeWGb6ppo-ygHg" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_62B60ca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_62E-Ica_EeWGb6ppo-ygHg" name="assessmentScaleObservation1051" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_62E-Isa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_62E-I8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_62E-IMa_EeWGb6ppo-ygHg"/>
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
@@ -1587,7 +1763,7 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:AssociationValidation xmi:id="_nrncAPiwEeOXlK95I8tUew" severity="WARNING" base_Association="_nKrSIPiwEeOXlK95I8tUew">
     <ruleId>CONF:1198-14266</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_CPyIIPi6EeOXlK95I8tUew" memberEnd="_CPw6APi6EeOXlK95I8tUew _CPyIIfi6EeOXlK95I8tUew">
+  <uml:Association xmi:id="_CPyIIPi6EeOXlK95I8tUew" memberEnd="_CPyIIfi6EeOXlK95I8tUew">
     <ownedEnd xmi:id="_CPyIIfi6EeOXlK95I8tUew" type="_ze150PitEeOXlK95I8tUew" association="_CPyIIPi6EeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_DugI4Pi6EeOXlK95I8tUew" severity="INFO" base_Association="_CPyIIPi6EeOXlK95I8tUew" typeCode="COMP">
@@ -1609,7 +1785,7 @@ The Mental Status Section contains observations and evaluations related to a pat
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-19092</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_QW6zMPjAEeOXlK95I8tUew" memberEnd="_QW4-APjAEeOXlK95I8tUew _QW6zMfjAEeOXlK95I8tUew">
+  <uml:Association xmi:id="_QW6zMPjAEeOXlK95I8tUew" memberEnd="_QW6zMfjAEeOXlK95I8tUew">
     <ownedEnd xmi:id="_QW6zMfjAEeOXlK95I8tUew" type="_6LYrULkoEeODDJAC5t5vpw" association="_QW6zMPjAEeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_RGG0cPjAEeOXlK95I8tUew" base_Association="_QW6zMPjAEeOXlK95I8tUew">
@@ -1627,13 +1803,13 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:PropertyValidation xmi:id="_eh_NAKy1EeSB84STE1Ny6A" severity="WARNING" base_Property="_cQHRAKy1EeSB84STE1Ny6A">
     <ruleId>CONF:1198-32424</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_AEixwPglEeSx6PQhw3nAUw" memberEnd="_AEg8kPglEeSx6PQhw3nAUw _AEixwfglEeSx6PQhw3nAUw">
+  <uml:Association xmi:id="_AEixwPglEeSx6PQhw3nAUw" memberEnd="_AEixwfglEeSx6PQhw3nAUw">
     <ownedEnd xmi:id="_AEixwfglEeSx6PQhw3nAUw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_AEixwPglEeSx6PQhw3nAUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_CKkDEPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_AEixwPglEeSx6PQhw3nAUw">
     <ruleId>CONF:1198-28301, CONF:1198-28302</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_YkFp0PglEeSx6PQhw3nAUw" memberEnd="_YkEbsPglEeSx6PQhw3nAUw _YkFp0fglEeSx6PQhw3nAUw">
+  <uml:Association xmi:id="_YkFp0PglEeSx6PQhw3nAUw" memberEnd="_YkFp0fglEeSx6PQhw3nAUw">
     <ownedEnd xmi:id="_YkFp0fglEeSx6PQhw3nAUw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_YkFp0PglEeSx6PQhw3nAUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ZBQuAPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_YkFp0PglEeSx6PQhw3nAUw">
@@ -1659,4 +1835,20 @@ The Mental Status Section contains observations and evaluations related to a pat
     <ruleId>CONF:1198-32791</ruleId>
     <ruleId>CONF:1198-32792</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:Inline xmi:id="_6oueosa_EeWGb6ppo-ygHg" base_Class="_6oueoMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6oxh8sa_EeWGb6ppo-ygHg" base_Class="_6oxh8Ma_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6o0lQsa_EeWGb6ppo-ygHg" base_Class="_6o0lQMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6o3Bg8a_EeWGb6ppo-ygHg" base_Class="_6o3Bgca_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6o6r4sa_EeWGb6ppo-ygHg" base_Class="_6o6r4Ma_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6o9vMMa_EeWGb6ppo-ygHg" base_Class="_6o9IJMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6pALcsa_EeWGb6ppo-ygHg" base_Class="_6pALcMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6pDOwsa_EeWGb6ppo-ygHg" base_Class="_6pDOwMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6pmBUsa_EeWGb6ppo-ygHg" base_Class="_6pmBUMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6pvyUsa_EeWGb6ppo-ygHg" base_Class="_6pvyUMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6tPyQsa_EeWGb6ppo-ygHg" base_Class="_6tPyQMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6txWssa_EeWGb6ppo-ygHg" base_Class="_6txWsMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6t0aAsa_EeWGb6ppo-ygHg" base_Class="_6t0aAMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6t3dUsa_EeWGb6ppo-ygHg" base_Class="_6t3dUMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6xmGwsa_EeWGb6ppo-ygHg" base_Class="_6xmGwMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_62B60sa_EeWGb6ppo-ygHg" base_Class="_62B60Ma_EeWGb6ppo-ygHg"/>
 </xmi:XMI>

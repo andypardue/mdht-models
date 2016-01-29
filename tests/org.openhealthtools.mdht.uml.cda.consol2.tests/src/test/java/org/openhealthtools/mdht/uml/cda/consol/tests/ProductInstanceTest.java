@@ -15,14 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Device;
-import org.openhealthtools.mdht.uml.cda.Entity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProductInstanceOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,13 +113,14 @@ public class ProductInstanceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProductInstanceId() {
 		OperationsTestCase<ProductInstance> validateProductInstanceIdTestCase = new OperationsTestCase<ProductInstance>(
 			"validateProductInstanceId",
-			operationsForOCL.getOCLValue("VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProductInstance target) {
@@ -133,7 +130,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProductInstance target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -150,7 +147,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProductInstanceScopingEntity() {
@@ -167,7 +164,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProductInstance target) {
 				target.init();
-				target.setScopingEntity(CDAFactory.eINSTANCE.createEntity());
+
 			}
 
 			@Override
@@ -184,7 +181,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProductInstancePlayingDevice() {
@@ -201,7 +198,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProductInstance target) {
 				target.init();
-				target.setPlayingDevice(CDAFactory.eINSTANCE.createDevice());
+
 			}
 
 			@Override
@@ -218,7 +215,7 @@ public class ProductInstanceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProductInstanceScopingEntityId() {
@@ -229,17 +226,13 @@ public class ProductInstanceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProductInstance target) {
-				target.init();
-				Entity ent = CDAFactory.eINSTANCE.createEntity();
 
-				target.setScopingEntity(ent);
 			}
 
 			@Override
 			protected void updateToPass(ProductInstance target) {
-				Entity ent = CDAFactory.eINSTANCE.createEntity();
-				ent.getIds().add(DatatypesFactory.eINSTANCE.createII());
-				target.setScopingEntity(ent);
+				target.init();
+
 			}
 
 			@Override
@@ -256,27 +249,23 @@ public class ProductInstanceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProductInstancePlayingDeviceCode() {
 		OperationsTestCase<ProductInstance> validateProductInstancePlayingDeviceCodeTestCase = new OperationsTestCase<ProductInstance>(
-			"validateProductInstancePlayingDeviceCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProductInstancePlayingDeviceCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProductInstance target) {
-				target.init();
-				Device pd = CDAFactory.eINSTANCE.createDevice();
-				target.setPlayingDevice(pd);
+
 			}
 
 			@Override
 			protected void updateToPass(ProductInstance target) {
-				Device pd = CDAFactory.eINSTANCE.createDevice();
-				pd.setCode(DatatypesFactory.eINSTANCE.createCE());
-				target.setPlayingDevice(pd);
+				target.init();
 
 			}
 

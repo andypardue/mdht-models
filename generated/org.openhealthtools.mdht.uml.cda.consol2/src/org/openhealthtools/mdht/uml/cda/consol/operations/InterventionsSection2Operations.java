@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -41,12 +43,12 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2InterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2PlannedInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getInterventionActs() <em>Get Intervention Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getPlannedInterventionActs() <em>Get Planned Intervention Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2Entry1094(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1094</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2Entry1096(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1096</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2Entry1098(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1098</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2InterventionActEntryInterventionAct1095(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act Entry Intervention Act1095</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication Participants Entry Handoff Communication1097</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act Entry Planned Intervention Act1099</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}</li>
@@ -66,25 +68,25 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInterventionsSection2InterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateInterventionsSection2Entry1094(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1094</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSection2InterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateInterventionsSection2Entry1094(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::InterventionAct))";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInterventionsSection2InterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateInterventionsSection2Entry1094(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1094</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSection2InterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateInterventionsSection2Entry1094(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,54 +98,55 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInterventionsSection2InterventionAct(InterventionsSection2 interventionsSection2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateInterventionsSection2Entry1094(InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			interventionsSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2InterventionAct"),
-					new Object[] { interventionsSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_ENTRY1094,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2Entry1094"),
+						 new Object [] { interventionsSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInterventionsSection2HandoffCommunication(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateInterventionsSection2Entry1096(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1096</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSection2HandoffCommunication(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateInterventionsSection2Entry1096(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HandoffCommunicationParticipants))";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInterventionsSection2HandoffCommunication(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateInterventionsSection2Entry1096(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1096</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSection2HandoffCommunication(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateInterventionsSection2Entry1096(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -155,54 +158,55 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInterventionsSection2HandoffCommunication(
-			InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateInterventionsSection2Entry1096(InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			interventionsSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2HandoffCommunication"),
-					new Object[] { interventionsSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_ENTRY1096,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2Entry1096"),
+						 new Object [] { interventionsSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateInterventionsSection2PlannedInterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateInterventionsSection2Entry1098(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1098</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSection2PlannedInterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateInterventionsSection2Entry1098(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PlannedInterventionAct))";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateInterventionsSection2PlannedInterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateInterventionsSection2Entry1098(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1098</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateInterventionsSection2PlannedInterventionAct(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateInterventionsSection2Entry1098(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,167 +218,231 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInterventionsSection2PlannedInterventionAct(
-			InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateInterventionsSection2Entry1098(InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			interventionsSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2PlannedInterventionAct"),
-					new Object[] { interventionsSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_ENTRY1098,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2Entry1098"),
+						 new Object [] { interventionsSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInterventionActs(InterventionsSection2) <em>Get Intervention Acts</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateInterventionsSection2InterventionActEntryInterventionAct1095(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act Entry Intervention Act1095</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInterventionActs(InterventionsSection2)
+	 * @see #validateInterventionsSection2InterventionActEntryInterventionAct1095(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INTERVENTION_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InterventionAct)).oclAsType(consol::InterventionAct)";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::InterventionAct)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getInterventionActs(InterventionsSection2) <em>Get Intervention Acts</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateInterventionsSection2InterventionActEntryInterventionAct1095(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act Entry Intervention Act1095</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInterventionActs(InterventionsSection2)
+	 * @see #validateInterventionsSection2InterventionActEntryInterventionAct1095(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_INTERVENTION_ACTS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param interventionsSection2 The receiving '<em><b>Interventions Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<InterventionAct> getInterventionActs(InterventionsSection2 interventionsSection2) {
-		if (GET_INTERVENTION_ACTS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateInterventionsSection2InterventionActEntryInterventionAct1095(InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.INTERVENTIONS_SECTION2,
-				ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(63));
+			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				GET_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_INTERVENTION_ACTS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INTERVENTION_ACTS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<InterventionAct> result = (Collection<InterventionAct>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<InterventionAct>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(interventionsSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2InterventionActEntryInterventionAct1095"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHandoffCommunications(InterventionsSection2) <em>Get Handoff Communications</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication Participants Entry Handoff Communication1097</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHandoffCommunications(InterventionsSection2)
+	 * @see #validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HANDOFF_COMMUNICATIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)).oclAsType(consol::HandoffCommunicationParticipants)";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HandoffCommunicationParticipants)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getHandoffCommunications(InterventionsSection2) <em>Get Handoff Communications</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication Participants Entry Handoff Communication1097</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHandoffCommunications(InterventionsSection2)
+	 * @see #validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_HANDOFF_COMMUNICATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param interventionsSection2 The receiving '<em><b>Interventions Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<HandoffCommunicationParticipants> getHandoffCommunications(
-			InterventionsSection2 interventionsSection2) {
-		if (GET_HANDOFF_COMMUNICATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.INTERVENTIONS_SECTION2,
-				ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(64));
+			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				GET_HANDOFF_COMMUNICATIONS__EOCL_QRY = helper.createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HANDOFF_COMMUNICATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(interventionsSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedInterventionActs(InterventionsSection2) <em>Get Planned Intervention Acts</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act Entry Planned Intervention Act1099</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedInterventionActs(InterventionsSection2)
+	 * @see #validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_INTERVENTION_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedInterventionAct)).oclAsType(consol::PlannedInterventionAct)";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedInterventionAct)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedInterventionActs(InterventionsSection2) <em>Get Planned Intervention Acts</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act Entry Planned Intervention Act1099</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedInterventionActs(InterventionsSection2)
+	 * @see #validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param interventionsSection2 The receiving '<em><b>Interventions Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedInterventionAct> getPlannedInterventionActs(InterventionsSection2 interventionsSection2) {
-		if (GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(InterventionsSection2 interventionsSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.INTERVENTIONS_SECTION2,
-				ConsolPackage.Literals.INTERVENTIONS_SECTION2.getEAllOperations().get(65));
+			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
-				GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_PLANNED_INTERVENTION_ACTS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_INTERVENTION_ACTS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedInterventionAct> result = (Collection<PlannedInterventionAct>) query.evaluate(interventionsSection2);
-		return new BasicEList.UnmodifiableEList<PlannedInterventionAct>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(interventionsSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -411,26 +479,28 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSectionTemplateId(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
 				VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			interventionsSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionTemplateId"),
-					new Object[] { interventionsSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionTemplateId"),
+						 new Object [] { interventionsSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -470,26 +540,28 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSectionCodeP(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
 				VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			interventionsSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCodeP"),
-					new Object[] { interventionsSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCodeP"),
+						 new Object [] { interventionsSection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -501,7 +573,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 				}
 				passToken.add(interventionsSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -515,9 +587,9 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '62387-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '62387-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInterventionsSectionCode(InterventionsSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}' invariant operation.
@@ -543,34 +615,34 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 
 	public static boolean validateInterventionsSectionCode(InterventionsSection2 interventionsSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.InterventionsSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(interventionsSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION2);
 			try {
 				VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			interventionsSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(interventionsSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCode"),
-					new Object[] { interventionsSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCode"),
+						 new Object [] { interventionsSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;

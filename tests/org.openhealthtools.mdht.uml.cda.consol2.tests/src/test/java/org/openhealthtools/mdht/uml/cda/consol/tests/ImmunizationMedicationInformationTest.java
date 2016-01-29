@@ -15,16 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationMedicationInformationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,7 +55,8 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationTemplateId() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationTemplateIdTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -95,7 +90,8 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationClassCode() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationClassCodeTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -123,23 +119,23 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationId() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationIdTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
-			"validateImmunizationMedicationInformationId",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateImmunizationMedicationInformationId", operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ImmunizationMedicationInformation target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -157,23 +153,24 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationManufacturerOrganization() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationManufacturerOrganizationTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationManufacturerOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ImmunizationMedicationInformation target) {
-				target.setManufacturerOrganization(CDAFactory.eINSTANCE.createOrganization());
+				target.init();
 
 			}
 
@@ -191,23 +188,24 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationManufacturedMaterial() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationManufacturedMaterialTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationManufacturedMaterial",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ImmunizationMedicationInformation target) {
-				target.setManufacturedMaterial(CDAFactory.eINSTANCE.createMaterial());
+				target.init();
 
 			}
 
@@ -231,33 +229,31 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalTextTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation target) {
+				target.init();
+
+				// ED text = DatatypesFactory.eINSTANCE.createED();
+				// target.setText(text );
+				//
+				//
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				mm.setCode(code);
-				target.setManufacturedMaterial(mm);
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationMedicationInformation target) {
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				code.setOriginalText(DatatypesFactory.eINSTANCE.createED());
-				mm.setCode(code);
-				target.setManufacturedMaterial(mm);
-
 			}
 
 		};
@@ -267,43 +263,32 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation target) {
+				target.init();
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				ED orig = DatatypesFactory.eINSTANCE.createED();
-				code.setOriginalText(orig);
-				mm.setCode(code);
-				target.setManufacturedMaterial(mm);
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationMedicationInformation target) {
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				ED orig = DatatypesFactory.eINSTANCE.createED();
-				orig.setReference(DatatypesFactory.eINSTANCE.createTEL("ref1"));
-				code.setOriginalText(orig);
-				mm.setCode(code);
-				target.setManufacturedMaterial(mm);
-
 			}
 
 		};
@@ -319,42 +304,30 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValueTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation target) {
+				target.init();
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+				//
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue(
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
-				Material material = CDAFactory.eINSTANCE.createMaterial();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				CE ce = DatatypesFactory.eINSTANCE.createCE();
-				ce.setOriginalText(text);
-				TEL tel = DatatypesFactory.eINSTANCE.createTEL();
-				text.setReference(tel);
-				material.setCode(ce);
-				target.setManufacturedMaterial(material);
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationMedicationInformation target) {
-				target.init();
-				Material material = CDAFactory.eINSTANCE.createMaterial();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				CE ce = DatatypesFactory.eINSTANCE.createCE();
-				ce.setOriginalText(text);
-				TEL tel = DatatypesFactory.eINSTANCE.createTEL();
-				tel.setValue("aaaaaaaaaaaaaaaaaaaaa");
-				text.setReference(tel);
-				material.setCode(ce);
-				target.setManufacturedMaterial(material);
-
 			}
 
 		};
@@ -364,39 +337,32 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslationTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation target) {
+				target.init();
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				mm.setCode(code);
-				target.setManufacturedMaterial(mm);
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationMedicationInformation target) {
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				CE code = DatatypesFactory.eINSTANCE.createCE();
-				code.getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
-				mm.setCode(code);
-				target.setManufacturedMaterial(mm);
-
 			}
 
 		};
@@ -406,64 +372,32 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation target) {
+				target.init();
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
-			}
-
-			private final String VACCINES_ADMINISTERED_CVX = "2.16.840.1.113883.12.292";
-
-			@Override
-			public void addFailTests() {
-
-				// no code
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ImmunizationMedicationInformation target) {
-						target.init();
-						Material mm = CDAFactory.eINSTANCE.createMaterial();
-						target.setManufacturedMaterial(mm);
-					}
-				});
-
-				// bad code
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ImmunizationMedicationInformation target) {
-						target.init();
-						Material mm = CDAFactory.eINSTANCE.createMaterial();
-						mm.setCode(DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, VACCINES_ADMINISTERED_CVX));
-						target.setManufacturedMaterial(mm);
-					}
-				});
-
-			}
-
-			@Override
-			public void addPassTests() {
-				final String[] VACCINE_CODES_ADDED = { "143", "150", "163" };
-				for (final String code : VACCINE_CODES_ADDED) {
-					addPassTest(new PassTest() {
-						@Override
-						public void updateToPass(ImmunizationMedicationInformation target) {
-							target.init();
-							Material mm = CDAFactory.eINSTANCE.createMaterial();
-							mm.setCode(DatatypesFactory.eINSTANCE.createCE(code, VACCINES_ADMINISTERED_CVX));
-							target.setManufacturedMaterial(mm);
-						}
-					});
-				}
 			}
 
 		};
@@ -479,30 +413,30 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText() {
 		OperationsTestCase<ImmunizationMedicationInformation> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberTextTestCase = new OperationsTestCase<ImmunizationMedicationInformation>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationMedicationInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationMedicationInformation target) {
+				target.init();
+
+				// ED text = DatatypesFactory.eINSTANCE.createED();
+				// target.setText(text );
+				//
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				target.setManufacturedMaterial(mm);
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationMedicationInformation target) {
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-
-				mm.setLotNumberText(DatatypesFactory.eINSTANCE.createST());
-				target.setManufacturedMaterial(mm);
-
 			}
 
 		};

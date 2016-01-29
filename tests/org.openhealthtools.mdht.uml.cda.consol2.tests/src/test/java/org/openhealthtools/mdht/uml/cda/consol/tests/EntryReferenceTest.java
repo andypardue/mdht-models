@@ -20,11 +20,8 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EntryReferenceOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
@@ -156,13 +153,14 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateEntryReferenceId() {
 		OperationsTestCase<EntryReference> validateEntryReferenceIdTestCase = new OperationsTestCase<EntryReference>(
 			"validateEntryReferenceId",
-			operationsForOCL.getOCLValue("VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(EntryReference target) {
@@ -172,8 +170,6 @@ public class EntryReferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(EntryReference target) {
 				target.init();
-				II idII = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(idII);
 
 			}
 
@@ -191,7 +187,7 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateEntryReferenceCode() {
@@ -208,8 +204,6 @@ public class EntryReferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(EntryReference target) {
 				target.init();
-				CD codeCD = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(codeCD);
 
 			}
 
@@ -227,7 +221,7 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateEntryReferenceStatusCode() {
@@ -243,13 +237,11 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(EntryReference target) {
-				final String ACT_STATUS_CODESYSTEM_ID = "2.16.840.1.113883.5.14";
-				final String CURRENT_CODESYSTEM_NAME = "ActStatus";
 				target.init();
+
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-				cs.setCodeSystem(ACT_STATUS_CODESYSTEM_ID);
-				cs.setCodeSystemName(CURRENT_CODESYSTEM_NAME);
 				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -300,8 +292,8 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	* Note: modified OCL for VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP 
+	* @generated
+	* Note: modified OCL for VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
 	* due to OCL generation issue for a 0..0 situation
 	*/
 	@Test
@@ -313,15 +305,13 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(EntryReference target) {
-				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU);
-				target.getIds().add(id);
+
 			}
 
 			@Override
 			protected void updateToPass(EntryReference target) {
-				target.getIds().clear();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -338,7 +328,7 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateEntryReferenceCDNullFlavor() {
@@ -349,16 +339,12 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(EntryReference target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(code);
-				target.setNullFlavor(NullFlavor.ASKU);
+
 			}
 
 			@Override
 			protected void updateToPass(EntryReference target) {
-				// A specific code of NP is required
-				target.getCode().setNullFlavor(NullFlavor.NP);
+				target.init();
 
 			}
 
@@ -376,7 +362,7 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateEntryReferenceCDNullFlavorP() {
@@ -387,16 +373,13 @@ public class EntryReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(EntryReference target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(code);
+
 			}
 
 			@Override
 			protected void updateToPass(EntryReference target) {
-				// For this test, a specific code is not required, only that nullFlavor exists.
-				// This is why we are checking ASKU instead of NP as it should still pass
-				target.getCode().setNullFlavor(NullFlavor.ASKU);
+				target.init();
+
 			}
 
 			@Override

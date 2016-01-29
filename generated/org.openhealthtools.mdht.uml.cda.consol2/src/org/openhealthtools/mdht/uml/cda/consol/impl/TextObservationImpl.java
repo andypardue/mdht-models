@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Text Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -159,10 +157,8 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateTextObservationSOPInstanceObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return TextObservationOperations.validateTextObservationSOPInstanceObservation(this, diagnostics, context);
+	public boolean validateTextObservationEntryRelationship548(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TextObservationOperations.validateTextObservationEntryRelationship548(this, diagnostics, context);
 	}
 
 	/**
@@ -170,11 +166,8 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateTextObservationQuantityMeasurementObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(
-			this, diagnostics, context);
+	public boolean validateTextObservationEntryRelationship550(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TextObservationOperations.validateTextObservationEntryRelationship550(this, diagnostics, context);
 	}
 
 	/**
@@ -182,9 +175,8 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
-		return TextObservationOperations.getSOPInstanceObservations(this);
+	public boolean validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TextObservationOperations.validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549(this, diagnostics, context);
 	}
 
 	/**
@@ -192,9 +184,8 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<QuantityMeasurementObservation> getQuantityMeasurementObservations() {
-		return TextObservationOperations.getQuantityMeasurementObservations(this);
+	public boolean validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TextObservationOperations.validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551(this, diagnostics, context);
 	}
 
 	/**
@@ -204,17 +195,17 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 */
 	@Override
 	public TextObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public TextObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // TextObservationImpl

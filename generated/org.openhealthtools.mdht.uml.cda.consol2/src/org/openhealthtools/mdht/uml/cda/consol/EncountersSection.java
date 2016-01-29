@@ -29,7 +29,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncountersSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSectionEntriesOptionalText EncountersSectionEntriesOptionalTitle EncountersSectionEncounterActivities' templateId.root='2.16.840.1.113883.10.20.22.2.22.1' code.code='46240-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Encounters' constraints.validation.dependOn.EncountersSectionEntriesOptionalCode='EncountersSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalCodeP EncountersSectionEntriesOptionalText EncountersSectionEntriesOptionalTitle EncountersSectionEntry110 EncountersSectionEncounterActivitiesEntryEncounterActivities111' templateId.root='2.16.840.1.113883.10.20.22.2.22.1' code.code='46240-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Encounters' constraints.validation.dependOn.EncountersSectionEntriesOptionalCode='EncountersSectionEntriesOptionalCodeP' constraints.validation.query='EncountersSectionEncounterActivitiesEntryEncounterActivities111'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolEncountersSectionEncounterActivitiesEntry constraints.validation.error='EncountersSectionEncounterActivitiesEntryEncounterActivities111'"
  * @generated
  */
 public interface EncountersSection extends EncountersSectionEntriesOptional {
@@ -40,19 +41,22 @@ public interface EncountersSection extends EncountersSectionEntriesOptional {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::EncounterActivities))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEncountersSectionEntry110(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities)).oclAsType(consol::EncounterActivities)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(encounter->exists(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities)))'"
 	 * @generated
 	 */
-	EList<EncounterActivities> getConsolEncounterActivitiess();
+	boolean validateEncountersSectionEncounterActivitiesEntryEncounterActivities111(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,10 +67,10 @@ public interface EncountersSection extends EncountersSectionEntriesOptional {
 	public EncountersSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncountersSection

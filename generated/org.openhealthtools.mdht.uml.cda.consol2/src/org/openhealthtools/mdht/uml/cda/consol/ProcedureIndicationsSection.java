@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureIndicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionCodeP ProcedureIndicationsSectionTitle ProcedureIndicationsSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.29' code.code='59768-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Procedure Indications' constraints.validation.info='ProcedureIndicationsSectionIndication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionCodeP ProcedureIndicationsSectionTitle ProcedureIndicationsSectionText ProcedureIndicationsSectionEntry306' templateId.root='2.16.840.1.113883.10.20.22.2.29' code.code='59768-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Procedure Indications' constraints.validation.info='ProcedureIndicationsSectionIndicationEntryIndication307' constraints.validation.query='ProcedureIndicationsSectionIndicationEntryIndication307'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureIndicationsSectionIndicationEntry constraints.validation.info='ProcedureIndicationsSectionIndicationEntryIndication307'"
  * @generated
  */
 public interface ProcedureIndicationsSection extends Section {
@@ -49,7 +50,7 @@ public interface ProcedureIndicationsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'59768-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'59768-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateProcedureIndicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -85,10 +86,10 @@ public interface ProcedureIndicationsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateProcedureIndicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureIndicationsSectionEntry306(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,19 +98,22 @@ public interface ProcedureIndicationsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::Indication))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)))'"
 	 * @generated
 	 */
-	boolean validateProcedureIndicationsSectionIndication(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureIndicationsSectionIndicationEntryIndication307(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication)).oclAsType(consol::Indication)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
 	 * @generated
 	 */
-	EList<Indication> getIndications();
+	boolean validateProcedureIndicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,9 +123,9 @@ public interface ProcedureIndicationsSection extends Section {
 	public ProcedureIndicationsSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProcedureIndicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureIndicationsSection

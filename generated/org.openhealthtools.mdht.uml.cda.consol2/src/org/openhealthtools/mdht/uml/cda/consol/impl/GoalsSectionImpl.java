@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Goals Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -119,9 +117,8 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateGoalsSectionGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GoalsSectionOperations.validateGoalsSectionGoalObservation(this, diagnostics, context);
+	public boolean validateGoalsSectionEntry746(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalsSectionOperations.validateGoalsSectionEntry746(this, diagnostics, context);
 	}
 
 	/**
@@ -129,9 +126,8 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<GoalObservation> getGoalObservations() {
-		return GoalsSectionOperations.getGoalObservations(this);
+	public boolean validateGoalsSectionGoalObservationEntryGoalObservation747(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GoalsSectionOperations.validateGoalsSectionGoalObservationEntryGoalObservation747(this, diagnostics, context);
 	}
 
 	/**
@@ -141,17 +137,17 @@ public class GoalsSectionImpl extends SectionImpl implements GoalsSection {
 	 */
 	@Override
 	public GoalsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public GoalsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // GoalsSectionImpl

@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSectionOp
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunizations Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -97,9 +95,8 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateImmunizationsSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionImmunization(this, diagnostics, context);
+	public boolean validateImmunizationsSectionEntry116(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntry116(this, diagnostics, context);
 	}
 
 	/**
@@ -107,9 +104,8 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ImmunizationActivity> getImmunizations() {
-		return ImmunizationsSectionOperations.getImmunizations(this);
+	public boolean validateImmunizationsSectionImmunizationActivityEntryImmunization117(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationsSectionOperations.validateImmunizationsSectionImmunizationActivityEntryImmunization117(this, diagnostics, context);
 	}
 
 	/**
@@ -120,8 +116,7 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -131,17 +126,17 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 */
 	@Override
 	public ImmunizationsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ImmunizationsSectionImpl

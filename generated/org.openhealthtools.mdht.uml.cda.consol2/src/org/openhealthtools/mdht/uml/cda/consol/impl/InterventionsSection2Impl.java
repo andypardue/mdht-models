@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionsSection2O
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Interventions Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,9 +58,8 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateInterventionsSection2InterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InterventionsSection2Operations.validateInterventionsSection2InterventionAct(this, diagnostics, context);
+	public boolean validateInterventionsSection2Entry1094(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2Entry1094(this, diagnostics, context);
 	}
 
 	/**
@@ -70,10 +67,8 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInterventionsSection2HandoffCommunication(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunication(
-			this, diagnostics, context);
+	public boolean validateInterventionsSection2Entry1096(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2Entry1096(this, diagnostics, context);
 	}
 
 	/**
@@ -81,10 +76,8 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInterventionsSection2PlannedInterventionAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionAct(
-			this, diagnostics, context);
+	public boolean validateInterventionsSection2Entry1098(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2Entry1098(this, diagnostics, context);
 	}
 
 	/**
@@ -92,9 +85,8 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<InterventionAct> getInterventionActs() {
-		return InterventionsSection2Operations.getInterventionActs(this);
+	public boolean validateInterventionsSection2InterventionActEntryInterventionAct1095(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2InterventionActEntryInterventionAct1095(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +94,8 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<HandoffCommunicationParticipants> getHandoffCommunications() {
-		return InterventionsSection2Operations.getHandoffCommunications(this);
+	public boolean validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +103,8 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedInterventionAct> getPlannedInterventionActs() {
-		return InterventionsSection2Operations.getPlannedInterventionActs(this);
+	public boolean validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(this, diagnostics, context);
 	}
 
 	/**
@@ -152,17 +144,17 @@ public class InterventionsSection2Impl extends InterventionsSectionImpl implemen
 	 */
 	@Override
 	public InterventionsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public InterventionsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // InterventionsSection2Impl

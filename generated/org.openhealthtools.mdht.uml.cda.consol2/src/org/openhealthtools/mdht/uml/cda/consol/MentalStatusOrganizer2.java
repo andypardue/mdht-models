@@ -20,8 +20,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMentalStatusOrganizer2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId MentalStatusOrganizer2HasCodeOrEffectiveTime ResultOrganizerCode CognitiveStatusResultOrganizerCognitiveStatusResultObservation MentalStatusOrganizer2CDCode' templateId.root='2.16.840.1.113883.10.20.22.4.75' templateId.extension='2015-08-01' constraints.validation.warning='CognitiveStatusResultOrganizerCodeCodeSystem MentalStatusOrganizer2EffectiveTime' constraints.validation.query='MentalStatusOrganizer2CDCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId MentalStatusOrganizer2HasCodeOrEffectiveTime ResultOrganizerCode MentalStatusOrganizer2CDCode MentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897' templateId.root='2.16.840.1.113883.10.20.22.4.75' templateId.extension='2015-08-01' constraints.validation.warning='CognitiveStatusResultOrganizerCodeCodeSystem MentalStatusOrganizer2EffectiveTime' constraints.validation.query='MentalStatusOrganizer2CDCode MentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMentalStatusOrganizer2CD constraints.validation.error='MentalStatusOrganizer2CDCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMentalStatusOrganizer2MentalStatusObservation2EntryRelationship constraints.validation.error='MentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897'"
  * @generated
  */
 public interface MentalStatusOrganizer2 extends CognitiveStatusResultOrganizer {
@@ -65,11 +66,14 @@ public interface MentalStatusOrganizer2 extends CognitiveStatusResultOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation2)).oclAsType(consol::MentalStatusObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::MentalStatusObservation2)))'"
 	 * @generated
 	 */
-	EList<MentalStatusObservation2> getConsolMentalStatusObservation2s();
+	boolean validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,9 +83,9 @@ public interface MentalStatusOrganizer2 extends CognitiveStatusResultOrganizer {
 	public MentalStatusOrganizer2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MentalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MentalStatusOrganizer2

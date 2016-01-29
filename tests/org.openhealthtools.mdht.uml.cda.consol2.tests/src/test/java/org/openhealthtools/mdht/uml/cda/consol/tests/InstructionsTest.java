@@ -10,14 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InstructionsOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -53,7 +52,7 @@ public class InstructionsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateInstructionsTextReference() {
@@ -65,15 +64,11 @@ public class InstructionsTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(Instructions target) {
 
-				target.init();
-
-				target.setText(DatatypesFactory.eINSTANCE.createED());
 			}
 
 			@Override
 			protected void updateToPass(Instructions target) {
-
-				target.getText().setReference(DatatypesFactory.eINSTANCE.createTEL("aa"));
+				target.init();
 
 			}
 
@@ -102,17 +97,16 @@ public class InstructionsTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(Instructions target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(Instructions target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+				//
 
 			}
 
@@ -134,35 +128,23 @@ public class InstructionsTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateInstructionsTextReferenceValue() {
-		OperationsTestCase<Instructions> validateInstructionsTextReferenceValueTestCase = new NarrativeReferenceTestCase<Instructions>(
+		OperationsTestCase<Instructions> validateInstructionsTextReferenceValueTestCase = new OperationsTestCase<Instructions>(
 			"validateInstructionsTextReferenceValue",
 			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(Instructions target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular instructions provided.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 
 			}
 
 			@Override
 			protected void updateToPass(Instructions target) {
+				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular instructions provided.");
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
@@ -287,7 +269,8 @@ public class InstructionsTest extends CDAValidationTest {
 	public void testValidateInstructionsCodeP() {
 		OperationsTestCase<Instructions> validateInstructionsCodePTestCase = new OperationsTestCase<Instructions>(
 			"validateInstructionsCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(Instructions target) {
@@ -303,7 +286,8 @@ public class InstructionsTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InstructionsOperations.validateInstructionsCodeP((Instructions) objectToTest, diagnostician, map);
+				return InstructionsOperations.validateInstructionsCodeP(
+					(Instructions) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -313,7 +297,7 @@ public class InstructionsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateInstructionsCode() {
@@ -330,9 +314,13 @@ public class InstructionsTest extends CDAValidationTest {
 			protected void updateToPass(Instructions target) {
 				target.init();
 
-				target.setCode(DatatypesFactory.eINSTANCE.createCE(
-					"", "2.16.840.1.113883.6.96", "codeSystemName", "displayName"));
+			}
 
+			@Override
+			protected void setDependency(Instructions target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.InstructionsCodeP", passToken);
 			}
 
 			@Override
@@ -348,7 +336,7 @@ public class InstructionsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateInstructionsText() {
@@ -365,8 +353,8 @@ public class InstructionsTest extends CDAValidationTest {
 			protected void updateToPass(Instructions target) {
 				target.init();
 
-				ED value = DatatypesFactory.eINSTANCE.createED();
-				target.setText(value);
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
 
 			}
 

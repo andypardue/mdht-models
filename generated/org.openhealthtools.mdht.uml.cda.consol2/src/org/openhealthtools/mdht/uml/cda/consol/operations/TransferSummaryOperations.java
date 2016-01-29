@@ -76,35 +76,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupport(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantCallbackContact(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAdvanceDirectivesSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Advance Directives Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAllergiesSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Allergies Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryPhysicalExamSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Physical Exam Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryEncountersSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Encounters Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryFamilyHistorySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Family History Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryFunctionalStatusSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Functional Status Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryImmunizationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Immunizations Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryMedicalEquipmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medical Equipment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryMedicationsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medications Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryPayersSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Payers Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryPlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryProblemSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Problem Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryProceduresSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Procedures Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryResultsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Results Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummarySocialHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryVitalSignsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Vital Signs Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryMentalStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Mental Status Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryGeneralStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary General Status Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryNutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Nutrition Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryReasonForReferralSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Reason For Referral Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryHistoryOfPastIllnessSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Past Illness Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryHistoryOfPresentIllnessSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Present Illness Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAssessmentAndPlanSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment And Plan Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDischargeDiagnosisSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Discharge Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Admission Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryAdmissionDiagnosisSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Admission Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryCourseOfCareSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Course Of Care Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponent826(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component826</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Associated Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Class Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryParticipantSupportAssociatedEntityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Class Code</em>}</li>
@@ -127,35 +99,65 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOfServiceEventCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOfServiceEventPerformer1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Performer1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAdvanceDirectivesSection2() <em>Get Advance Directives Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAllergiesSection2() <em>Get Allergies Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getPhysicalExamSection2() <em>Get Physical Exam Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getEncountersSection2() <em>Get Encounters Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getFamilyHistorySection() <em>Get Family History Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getFunctionalStatusSection2() <em>Get Functional Status Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getImmunizationsSectionEntriesOptional2() <em>Get Immunizations Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getMedicalEquipmentSection2() <em>Get Medical Equipment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getMedicationsSection2() <em>Get Medications Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getPayersSection2() <em>Get Payers Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getPlanOfTreatmentSection2() <em>Get Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getProblemSection2() <em>Get Problem Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getProceduresSection2() <em>Get Procedures Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getResultsSection2() <em>Get Results Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getVitalSignsSection2() <em>Get Vital Signs Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getMentalStatusSection() <em>Get Mental Status Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getGeneralStatusSection() <em>Get General Status Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getNutritionSection() <em>Get Nutrition Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getReasonForReferralSection2() <em>Get Reason For Referral Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getHistoryOfPastIllnessSection2() <em>Get History Of Past Illness Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getHistoryOfPresentIllnessSection() <em>Get History Of Present Illness Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAssessmentAndPlanSection2() <em>Get Assessment And Plan Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAssessmentSection() <em>Get Assessment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getDischargeDiagnosisSection2() <em>Get Discharge Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAdmissionMedicationsSectionEntriesOptional2() <em>Get Admission Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getAdmissionDiagnosisSection2() <em>Get Admission Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#getCourseOfCareSection() <em>Get Course Of Care Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Advance Directives Section2829</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentAllergiesSection2831(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Allergies Section2831</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Physical Exam Section2833</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentEncountersSection2835(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Encounters Section2835</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Family History Section837</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Functional Status Section2839</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Discharge Diagnosis Section2841</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Immunizations Section Entries Optional2843</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Medical Equipment Section2845</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentMedicationsSection2847(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Medications Section2847</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentPayersSection2849(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Payers Section2849</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Plan Of Treatment Section2851</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentProblemSection2853(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Problem Section2853</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentProceduresSection2855(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Procedures Section2855</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentResultsSection2857(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Results Section2857</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Social History Section2859</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Vital Signs Section2861</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentMentalStatusSection863(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Mental Status Section863</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component General Status Section865</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Review Of Systems Section867</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentNutritionSection869(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Nutrition Section869</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Reason For Referral Section2871</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component History Of Past Illness Section2873</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component History Of Present Illness Section875</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Assessment And Plan Section2877</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentAssessmentSection879(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Assessment Section879</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Admission Medications Section Entries Optional2881</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Admission Diagnosis Section2883</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Course Of Care Section885</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Advance Directives Section2828</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyAllergiesSection2830(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Allergies Section2830</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyPhysicalExamSection2832(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Physical Exam Section2832</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyEncountersSection2834(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Encounters Section2834</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyFamilyHistorySection836(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Family History Section836</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyFunctionalStatusSection2838(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Functional Status Section2838</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Discharge Diagnosis Section2840</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Immunizations Section Entries Optional2842</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Medical Equipment Section2844</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyMedicationsSection2846(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Medications Section2846</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyPayersSection2848(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Payers Section2848</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Plan Of Treatment Section2850</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyProblemSection2852(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Problem Section2852</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyProceduresSection2854(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Procedures Section2854</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyResultsSection2856(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Results Section2856</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodySocialHistorySection2858(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Social History Section2858</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyVitalSignsSection2860(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Vital Signs Section2860</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyMentalStatusSection862(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Mental Status Section862</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyGeneralStatusSection864(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body General Status Section864</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyReviewOfSystemsSection866(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Review Of Systems Section866</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyNutritionSection868(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Nutrition Section868</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyReasonForReferralSection2870(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Reason For Referral Section2870</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body History Of Past Illness Section2872</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body History Of Present Illness Section874</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Assessment And Plan Section2876</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyAssessmentSection878(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Assessment Section878</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Admission Medications Section Entries Optional2880</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Admission Diagnosis Section2882</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBodyCourseOfCareSection884(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Course Of Care Section884</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateTransferSummaryComponentStructuredBody827(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body827</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TransferSummary#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -206,28 +208,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -267,28 +269,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -328,26 +330,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryCodeP(TransferSummary transferSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE_P,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCodeP"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCodeP"),
+						 new Object [] { transferSummary }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -359,7 +363,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 				}
 				passToken.add(transferSummary);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -373,9 +377,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Code</em>}' invariant operation.
@@ -401,33 +405,34 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryCode(TransferSummary transferSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(transferSummary)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCode"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCode"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -467,26 +472,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryTitle(TransferSummary transferSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_TITLE,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryTitle"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_TITLE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryTitle"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -526,26 +533,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryParticipantSupport(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupport"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupport"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -585,27 +594,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryParticipantCallbackContact(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContact"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContact"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -645,51 +655,53 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateTransferSummaryDocumentationOf(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOf"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOf"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryAdvanceDirectivesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Advance Directives Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponent826(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component826</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAdvanceDirectivesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTransferSummaryComponent826(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection2))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT826__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryAdvanceDirectivesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Advance Directives Section2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponent826(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component826</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAdvanceDirectivesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateTransferSummaryComponent826(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_TRANSFER_SUMMARY_COMPONENT826__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -701,1691 +713,30 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateTransferSummaryAdvanceDirectivesSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateTransferSummaryComponent826(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT826__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT826__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_COMPONENT826__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT826__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdvanceDirectivesSection2"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT826,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponent826"),
+						 new Object [] { transferSummary }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryAllergiesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Allergies Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAllergiesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryAllergiesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Allergies Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAllergiesSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryAllergiesSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ALLERGIES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAllergiesSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryPhysicalExamSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Physical Exam Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryPhysicalExamSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryPhysicalExamSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Physical Exam Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryPhysicalExamSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryPhysicalExamSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPhysicalExamSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryEncountersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Encounters Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryEncountersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryEncountersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Encounters Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryEncountersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryEncountersSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ENCOUNTERS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryEncountersSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryFamilyHistorySection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Family History Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryFamilyHistorySection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryFamilyHistorySection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Family History Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryFamilyHistorySection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryFamilyHistorySection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryFamilyHistorySection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryFunctionalStatusSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Functional Status Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryFunctionalStatusSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryFunctionalStatusSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Functional Status Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryFunctionalStatusSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryFunctionalStatusSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryFunctionalStatusSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryImmunizationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Immunizations Section Entries Optional2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryImmunizationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryImmunizationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Immunizations Section Entries Optional2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryImmunizationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryImmunizationsSectionEntriesOptional2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryImmunizationsSectionEntriesOptional2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryMedicalEquipmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medical Equipment Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryMedicalEquipmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryMedicalEquipmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medical Equipment Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryMedicalEquipmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryMedicalEquipmentSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMedicalEquipmentSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryMedicationsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medications Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryMedicationsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryMedicationsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Medications Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryMedicationsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryMedicationsSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMedicationsSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryPayersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Payers Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryPayersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryPayersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Payers Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryPayersSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryPayersSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PAYERS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPayersSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryPlanOfTreatmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Plan Of Treatment Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryPlanOfTreatmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryPlanOfTreatmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Plan Of Treatment Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryPlanOfTreatmentSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryPlanOfTreatmentSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPlanOfTreatmentSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryProblemSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Problem Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryProblemSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryProblemSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Problem Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryProblemSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryProblemSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PROBLEM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryProblemSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryProceduresSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Procedures Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryProceduresSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryProceduresSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Procedures Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryProceduresSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryProceduresSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PROCEDURES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryProceduresSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryResultsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Results Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryResultsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryResultsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Results Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryResultsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryResultsSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_RESULTS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryResultsSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummarySocialHistorySection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Social History Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummarySocialHistorySection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummarySocialHistorySection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Social History Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummarySocialHistorySection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummarySocialHistorySection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummarySocialHistorySection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryVitalSignsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Vital Signs Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryVitalSignsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryVitalSignsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Vital Signs Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryVitalSignsSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryVitalSignsSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryVitalSignsSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryMentalStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Mental Status Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryMentalStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MentalStatusSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryMentalStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Mental Status Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryMentalStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryMentalStatusSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MENTAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMentalStatusSection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryGeneralStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary General Status Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryGeneralStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryGeneralStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary General Status Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryGeneralStatusSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryGeneralStatusSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_GENERAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryGeneralStatusSection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryReviewOfSystemsSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Review Of Systems Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryReviewOfSystemsSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryReviewOfSystemsSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Review Of Systems Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryReviewOfSystemsSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryReviewOfSystemsSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryReviewOfSystemsSection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryNutritionSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Nutrition Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryNutritionSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NutritionSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryNutritionSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Nutrition Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryNutritionSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryNutritionSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryNutritionSection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryReasonForReferralSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Reason For Referral Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryReasonForReferralSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryReasonForReferralSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Reason For Referral Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryReasonForReferralSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryReasonForReferralSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryReasonForReferralSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryHistoryOfPastIllnessSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Past Illness Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryHistoryOfPastIllnessSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryHistoryOfPastIllnessSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Past Illness Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryHistoryOfPastIllnessSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryHistoryOfPastIllnessSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHistoryOfPastIllnessSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryHistoryOfPresentIllnessSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Present Illness Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryHistoryOfPresentIllnessSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryHistoryOfPresentIllnessSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary History Of Present Illness Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryHistoryOfPresentIllnessSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryHistoryOfPresentIllnessSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHistoryOfPresentIllnessSection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryAssessmentAndPlanSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment And Plan Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAssessmentAndPlanSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryAssessmentAndPlanSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment And Plan Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAssessmentAndPlanSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryAssessmentAndPlanSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAssessmentAndPlanSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryAssessmentSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAssessmentSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryAssessmentSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Assessment Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAssessmentSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryAssessmentSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAssessmentSection"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryDischargeDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Discharge Diagnosis Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryDischargeDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryDischargeDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Discharge Diagnosis Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryDischargeDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryDischargeDiagnosisSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDischargeDiagnosisSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Admission Medications Section Entries Optional2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationsSectionEntriesOptional2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Admission Medications Section Entries Optional2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2(
-			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdmissionMedicationsSectionEntriesOptional2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryAdmissionDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Admission Diagnosis Section2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAdmissionDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionDiagnosisSection2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryAdmissionDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Admission Diagnosis Section2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryAdmissionDiagnosisSection2(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryAdmissionDiagnosisSection2(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdmissionDiagnosisSection2"),
-					new Object[] { transferSummary }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateTransferSummaryCourseOfCareSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Course Of Care Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryCourseOfCareSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::CourseOfCareSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateTransferSummaryCourseOfCareSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Course Of Care Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateTransferSummaryCourseOfCareSection(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateTransferSummaryCourseOfCareSection(TransferSummary transferSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
-			try {
-				VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCourseOfCareSection"),
-					new Object[] { transferSummary }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -2399,7 +750,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() >= 1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Associated Person Name</em>}' invariant operation.
@@ -2425,31 +776,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2490,44 +843,44 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCodeP"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCodeP"),
+						 new Object [] { eObject }));
 				}
-
+				
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
 					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryParticipantSupportAssociatedEntityClassCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.TransferSummaryParticipantSupportAssociatedEntityClassCodeP",
-							passToken);
+						context.put("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryParticipantSupportAssociatedEntityClassCodeP", passToken);
 					}
 					passToken.addAll(oclResultSet);
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2542,9 +895,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(not classCode.oclIsUndefined() and classCode.oclIsKindOf(vocab::RoleClassAssociative) and "
-			+ "let value : vocab::RoleClassAssociative = classCode.oclAsType(vocab::RoleClassAssociative) in "
-			+ "value = vocab::RoleClassAssociative::PRS or value = vocab::RoleClassAssociative::NOK or value = vocab::RoleClassAssociative::CAREGIVER or value = vocab::RoleClassAssociative::AGNT or value = vocab::RoleClassAssociative::GUAR or value = vocab::RoleClassAssociative::ECON)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(not classCode.oclIsUndefined() and classCode.oclIsKindOf(vocab::RoleClassAssociative) and "+
+"let value : vocab::RoleClassAssociative = classCode.oclAsType(vocab::RoleClassAssociative) in "+
+"value = vocab::RoleClassAssociative::PRS or value = vocab::RoleClassAssociative::NOK or value = vocab::RoleClassAssociative::CAREGIVER or value = vocab::RoleClassAssociative::AGNT or value = vocab::RoleClassAssociative::GUAR or value = vocab::RoleClassAssociative::ECON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportAssociatedEntityClassCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Class Code</em>}' invariant operation.
@@ -2570,40 +923,40 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityClassCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			Object passFilter = (context == null)
-					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryParticipantSupportAssociatedEntityClassCodeP");
+  			
+			Object passFilter = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryParticipantSupportAssociatedEntityClassCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
 				oclResultSet.removeAll((Collection<?>) passFilter);
 			}
-
+	  		
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2644,31 +997,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2709,30 +1064,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportTypeCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportTypeCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportTypeCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2773,31 +1131,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantSupportAssociatedEntity(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntity"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportAssociatedEntity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2812,7 +1172,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() >= 1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Associated Person Name</em>}' invariant operation.
@@ -2838,31 +1198,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2903,31 +1265,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityClassCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityClassCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2942,7 +1306,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() >= 1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityId(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Id</em>}' invariant operation.
@@ -2968,31 +1332,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityId(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3033,31 +1399,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAddr"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAddr"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3072,7 +1440,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (not telecom->isEmpty()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() >= 1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Telecom</em>}' invariant operation.
@@ -3098,31 +1466,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityTelecom"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityTelecom"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3163,31 +1533,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3228,31 +1600,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3293,31 +1667,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactTypeCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactTypeCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactTypeCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3358,31 +1734,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryParticipantCallbackContactAssociatedEntity(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntity"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3423,31 +1801,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerTypeCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerTypeCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3488,44 +1868,44 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP"),
+						 new Object [] { eObject }));
 				}
-
+				
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
 					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP",
-							passToken);
+						context.put("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP", passToken);
 					}
 					passToken.addAll(oclResultSet);
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3540,9 +1920,9 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Performer Function Code</em>}' invariant operation.
@@ -3568,40 +1948,40 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode(
 			TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			Object passFilter = (context == null)
-					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP");
+  			
+			Object passFilter = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.TransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
 				oclResultSet.removeAll((Collection<?>) passFilter);
 			}
-
+	  		
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3642,31 +2022,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventClassCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventClassCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventClassCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3707,31 +2089,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventCode(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3772,31 +2156,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEventPerformer1(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformer1"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEventPerformer1"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3837,30 +2223,33 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateTransferSummaryDocumentationOfServiceEvent(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEvent"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOfServiceEvent"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3868,1223 +2257,3897 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdvanceDirectivesSection2(TransferSummary) <em>Get Advance Directives Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Advance Directives Section2829</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectivesSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADVANCE_DIRECTIVES_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection2))->asSequence()->any(true).oclAsType(consol::AdvanceDirectivesSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdvanceDirectivesSection2(TransferSummary) <em>Get Advance Directives Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Advance Directives Section2829</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectivesSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVES_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static AdvanceDirectivesSection2 getAdvanceDirectivesSection2(TransferSummary transferSummary) {
-		if (GET_ADVANCE_DIRECTIVES_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(372));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ADVANCE_DIRECTIVES_SECTION2__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVES_SECTION2__EOCL_QRY);
-		return (AdvanceDirectivesSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADVANCE_DIRECTIVES_SECTION2829,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentAdvanceDirectivesSection2829"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAllergiesSection2(TransferSummary) <em>Get Allergies Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAllergiesSection2831(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Allergies Section2831</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllergiesSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAllergiesSection2831(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ALLERGIES_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection2))->asSequence()->any(true).oclAsType(consol::AllergiesSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getAllergiesSection2(TransferSummary) <em>Get Allergies Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAllergiesSection2831(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Allergies Section2831</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAllergiesSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAllergiesSection2831(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ALLERGIES_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static AllergiesSection2 getAllergiesSection2(TransferSummary transferSummary) {
-		if (GET_ALLERGIES_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentAllergiesSection2831(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(373));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ALLERGIES_SECTION2__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ALLERGIES_SECTION2__EOCL_QRY);
-		return (AllergiesSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION2831,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentAllergiesSection2831"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPhysicalExamSection2(TransferSummary) <em>Get Physical Exam Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Physical Exam Section2833</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPhysicalExamSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection2))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPhysicalExamSection2(TransferSummary) <em>Get Physical Exam Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Physical Exam Section2833</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPhysicalExamSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static PhysicalExamSection2 getPhysicalExamSection2(TransferSummary transferSummary) {
-		if (GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(374));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY);
-		return (PhysicalExamSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION2833,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentPhysicalExamSection2833"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEncountersSection2(TransferSummary) <em>Get Encounters Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentEncountersSection2835(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Encounters Section2835</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEncountersSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentEncountersSection2835(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENCOUNTERS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection2))->asSequence()->any(true).oclAsType(consol::EncountersSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getEncountersSection2(TransferSummary) <em>Get Encounters Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentEncountersSection2835(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Encounters Section2835</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEncountersSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentEncountersSection2835(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ENCOUNTERS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EncountersSection2 getEncountersSection2(TransferSummary transferSummary) {
-		if (GET_ENCOUNTERS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentEncountersSection2835(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(375));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ENCOUNTERS_SECTION2__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTERS_SECTION2__EOCL_QRY);
-		return (EncountersSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ENCOUNTERS_SECTION2835,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentEncountersSection2835"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFamilyHistorySection(TransferSummary) <em>Get Family History Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Family History Section837</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistorySection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FAMILY_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getFamilyHistorySection(TransferSummary) <em>Get Family History Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Family History Section837</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFamilyHistorySection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_FAMILY_HISTORY_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static FamilyHistorySection getFamilyHistorySection(TransferSummary transferSummary) {
-		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(376));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_QRY);
-		return (FamilyHistorySection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION837,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentFamilyHistorySection837"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFunctionalStatusSection2(TransferSummary) <em>Get Functional Status Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Functional Status Section2839</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunctionalStatusSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FUNCTIONAL_STATUS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection2))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getFunctionalStatusSection2(TransferSummary) <em>Get Functional Status Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Functional Status Section2839</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFunctionalStatusSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static FunctionalStatusSection2 getFunctionalStatusSection2(TransferSummary transferSummary) {
-		if (GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(377));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY);
-		return (FunctionalStatusSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION2839,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentFunctionalStatusSection2839"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getImmunizationsSectionEntriesOptional2(TransferSummary) <em>Get Immunizations Section Entries Optional2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Discharge Diagnosis Section2841</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getImmunizationsSectionEntriesOptional2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional2))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getImmunizationsSectionEntriesOptional2(TransferSummary) <em>Get Immunizations Section Entries Optional2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Discharge Diagnosis Section2841</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getImmunizationsSectionEntriesOptional2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ImmunizationsSectionEntriesOptional2 getImmunizationsSectionEntriesOptional2(
-			TransferSummary transferSummary) {
-		if (GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(378));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY);
-		return (ImmunizationsSectionEntriesOptional2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION2841,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentDischargeDiagnosisSection2841"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedicalEquipmentSection2(TransferSummary) <em>Get Medical Equipment Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Immunizations Section Entries Optional2843</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipmentSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection2))->asSequence()->any(true).oclAsType(consol::MedicalEquipmentSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicalEquipmentSection2(TransferSummary) <em>Get Medical Equipment Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Immunizations Section Entries Optional2843</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipmentSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static MedicalEquipmentSection2 getMedicalEquipmentSection2(TransferSummary transferSummary) {
-		if (GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(379));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY);
-		return (MedicalEquipmentSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2843,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentImmunizationsSectionEntriesOptional2843"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedicationsSection2(TransferSummary) <em>Get Medications Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Medical Equipment Section2845</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicationsSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATIONS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection2))->asSequence()->any(true).oclAsType(consol::MedicationsSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicationsSection2(TransferSummary) <em>Get Medications Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Medical Equipment Section2845</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicationsSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_MEDICATIONS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static MedicationsSection2 getMedicationsSection2(TransferSummary transferSummary) {
-		if (GET_MEDICATIONS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(380));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_MEDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATIONS_SECTION2__EOCL_QRY);
-		return (MedicationsSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICAL_EQUIPMENT_SECTION2845,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentMedicalEquipmentSection2845"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPayersSection2(TransferSummary) <em>Get Payers Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentMedicationsSection2847(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Medications Section2847</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPayersSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentMedicationsSection2847(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PAYERS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection2))->asSequence()->any(true).oclAsType(consol::PayersSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPayersSection2(TransferSummary) <em>Get Payers Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentMedicationsSection2847(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Medications Section2847</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPayersSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentMedicationsSection2847(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PAYERS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static PayersSection2 getPayersSection2(TransferSummary transferSummary) {
-		if (GET_PAYERS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentMedicationsSection2847(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(381));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_PAYERS_SECTION2__EOCL_QRY = helper.createQuery(GET_PAYERS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PAYERS_SECTION2__EOCL_QRY);
-		return (PayersSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION2847,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentMedicationsSection2847"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfTreatmentSection2(TransferSummary) <em>Get Plan Of Treatment Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentPayersSection2849(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Payers Section2849</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfTreatmentSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentPayersSection2849(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2))->asSequence()->any(true).oclAsType(consol::PlanOfTreatmentSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfTreatmentSection2(TransferSummary) <em>Get Plan Of Treatment Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentPayersSection2849(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Payers Section2849</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfTreatmentSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentPayersSection2849(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static PlanOfTreatmentSection2 getPlanOfTreatmentSection2(TransferSummary transferSummary) {
-		if (GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentPayersSection2849(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(382));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY);
-		return (PlanOfTreatmentSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PAYERS_SECTION2849,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentPayersSection2849"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProblemSection2(TransferSummary) <em>Get Problem Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Plan Of Treatment Section2851</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection2))->asSequence()->any(true).oclAsType(consol::ProblemSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfTreatmentSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getProblemSection2(TransferSummary) <em>Get Problem Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Plan Of Treatment Section2851</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PROBLEM_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ProblemSection2 getProblemSection2(TransferSummary transferSummary) {
-		if (GET_PROBLEM_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(383));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_PROBLEM_SECTION2__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_SECTION2__EOCL_QRY);
-		return (ProblemSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION2851,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentPlanOfTreatmentSection2851"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProceduresSection2(TransferSummary) <em>Get Procedures Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentProblemSection2853(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Problem Section2853</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProceduresSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentProblemSection2853(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURES_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection2))->asSequence()->any(true).oclAsType(consol::ProceduresSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getProceduresSection2(TransferSummary) <em>Get Procedures Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentProblemSection2853(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Problem Section2853</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProceduresSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentProblemSection2853(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PROCEDURES_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ProceduresSection2 getProceduresSection2(TransferSummary transferSummary) {
-		if (GET_PROCEDURES_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentProblemSection2853(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(384));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_PROCEDURES_SECTION2__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURES_SECTION2__EOCL_QRY);
-		return (ProceduresSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION2853,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentProblemSection2853"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getResultsSection2(TransferSummary) <em>Get Results Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentProceduresSection2855(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Procedures Section2855</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultsSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentProceduresSection2855(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULTS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection2))->asSequence()->any(true).oclAsType(consol::ResultsSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getResultsSection2(TransferSummary) <em>Get Results Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentProceduresSection2855(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Procedures Section2855</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultsSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentProceduresSection2855(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_RESULTS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ResultsSection2 getResultsSection2(TransferSummary transferSummary) {
-		if (GET_RESULTS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentProceduresSection2855(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(385));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_RESULTS_SECTION2__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS_SECTION2__EOCL_QRY);
-		return (ResultsSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION2855,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentProceduresSection2855"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSocialHistorySection2(TransferSummary) <em>Get Social History Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentResultsSection2857(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Results Section2857</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSocialHistorySection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentResultsSection2857(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SOCIAL_HISTORY_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection2))->asSequence()->any(true).oclAsType(consol::SocialHistorySection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getSocialHistorySection2(TransferSummary) <em>Get Social History Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentResultsSection2857(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Results Section2857</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSocialHistorySection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentResultsSection2857(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static SocialHistorySection2 getSocialHistorySection2(TransferSummary transferSummary) {
-		if (GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentResultsSection2857(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(386));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY);
-		return (SocialHistorySection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION2857,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentResultsSection2857"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getVitalSignsSection2(TransferSummary) <em>Get Vital Signs Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Social History Section2859</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVitalSignsSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_VITAL_SIGNS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSection2))->asSequence()->any(true).oclAsType(consol::VitalSignsSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getVitalSignsSection2(TransferSummary) <em>Get Vital Signs Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Social History Section2859</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVitalSignsSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_VITAL_SIGNS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static VitalSignsSection2 getVitalSignsSection2(TransferSummary transferSummary) {
-		if (GET_VITAL_SIGNS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(387));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_VITAL_SIGNS_SECTION2__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS_SECTION2__EOCL_QRY);
-		return (VitalSignsSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION2859,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentSocialHistorySection2859"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMentalStatusSection(TransferSummary) <em>Get Mental Status Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Vital Signs Section2861</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMentalStatusSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MENTAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MentalStatusSection))->asSequence()->any(true).oclAsType(consol::MentalStatusSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getMentalStatusSection(TransferSummary) <em>Get Mental Status Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Vital Signs Section2861</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMentalStatusSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_MENTAL_STATUS_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static MentalStatusSection getMentalStatusSection(TransferSummary transferSummary) {
-		if (GET_MENTAL_STATUS_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(388));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_MENTAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MENTAL_STATUS_SECTION__EOCL_QRY);
-		return (MentalStatusSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION2861,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentVitalSignsSection2861"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getGeneralStatusSection(TransferSummary) <em>Get General Status Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentMentalStatusSection863(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Mental Status Section863</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGeneralStatusSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentMentalStatusSection863(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_GENERAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->any(true).oclAsType(consol::GeneralStatusSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MentalStatusSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getGeneralStatusSection(TransferSummary) <em>Get General Status Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentMentalStatusSection863(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Mental Status Section863</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGeneralStatusSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentMentalStatusSection863(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_GENERAL_STATUS_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static GeneralStatusSection getGeneralStatusSection(TransferSummary transferSummary) {
-		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentMentalStatusSection863(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(389));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_QRY);
-		return (GeneralStatusSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_MENTAL_STATUS_SECTION863,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentMentalStatusSection863"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getReviewOfSystemsSection(TransferSummary) <em>Get Review Of Systems Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component General Status Section865</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReviewOfSystemsSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getReviewOfSystemsSection(TransferSummary) <em>Get Review Of Systems Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component General Status Section865</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReviewOfSystemsSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ReviewOfSystemsSection getReviewOfSystemsSection(TransferSummary transferSummary) {
-		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(390));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY);
-		return (ReviewOfSystemsSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION865,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentGeneralStatusSection865"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNutritionSection(TransferSummary) <em>Get Nutrition Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Review Of Systems Section867</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NUTRITION_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NutritionSection))->asSequence()->any(true).oclAsType(consol::NutritionSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getNutritionSection(TransferSummary) <em>Get Nutrition Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Review Of Systems Section867</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NUTRITION_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static NutritionSection getNutritionSection(TransferSummary transferSummary) {
-		if (GET_NUTRITION_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(391));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_NUTRITION_SECTION__EOCL_QRY = helper.createQuery(GET_NUTRITION_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITION_SECTION__EOCL_QRY);
-		return (NutritionSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION867,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentReviewOfSystemsSection867"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getReasonForReferralSection2(TransferSummary) <em>Get Reason For Referral Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentNutritionSection869(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Nutrition Section869</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReasonForReferralSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentNutritionSection869(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_REASON_FOR_REFERRAL_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection2))->asSequence()->any(true).oclAsType(consol::ReasonForReferralSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::NutritionSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getReasonForReferralSection2(TransferSummary) <em>Get Reason For Referral Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentNutritionSection869(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Nutrition Section869</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReasonForReferralSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentNutritionSection869(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ReasonForReferralSection2 getReasonForReferralSection2(TransferSummary transferSummary) {
-		if (GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentNutritionSection869(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(392));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY);
-		return (ReasonForReferralSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION869,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentNutritionSection869"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHistoryOfPastIllnessSection2(TransferSummary) <em>Get History Of Past Illness Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Reason For Referral Section2871</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfPastIllnessSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection2))->asSequence()->any(true).oclAsType(consol::HistoryOfPastIllnessSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForReferralSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getHistoryOfPastIllnessSection2(TransferSummary) <em>Get History Of Past Illness Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Reason For Referral Section2871</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfPastIllnessSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static HistoryOfPastIllnessSection2 getHistoryOfPastIllnessSection2(TransferSummary transferSummary) {
-		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(393));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY);
-		return (HistoryOfPastIllnessSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_REFERRAL_SECTION2871,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentReasonForReferralSection2871"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getHistoryOfPresentIllnessSection(TransferSummary) <em>Get History Of Present Illness Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component History Of Past Illness Section2873</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfPresentIllnessSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPresentIllnessSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getHistoryOfPresentIllnessSection(TransferSummary) <em>Get History Of Present Illness Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component History Of Past Illness Section2873</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHistoryOfPresentIllnessSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection(TransferSummary transferSummary) {
-		if (GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(394));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY);
-		return (HistoryOfPresentIllnessSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION2873,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentHistoryOfPastIllnessSection2873"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAssessmentAndPlanSection2(TransferSummary) <em>Get Assessment And Plan Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component History Of Present Illness Section875</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAssessmentAndPlanSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getAssessmentAndPlanSection2(TransferSummary) <em>Get Assessment And Plan Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component History Of Present Illness Section875</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAssessmentAndPlanSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static AssessmentAndPlanSection2 getAssessmentAndPlanSection2(TransferSummary transferSummary) {
-		if (GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(395));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY);
-		return (AssessmentAndPlanSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION875,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentHistoryOfPresentIllnessSection875"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAssessmentSection(TransferSummary) <em>Get Assessment Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Assessment And Plan Section2877</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAssessmentSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ASSESSMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getAssessmentSection(TransferSummary) <em>Get Assessment Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Assessment And Plan Section2877</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAssessmentSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ASSESSMENT_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static AssessmentSection getAssessmentSection(TransferSummary transferSummary) {
-		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(396));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ASSESSMENT_SECTION__EOCL_QRY);
-		return (AssessmentSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION2877,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentAssessmentAndPlanSection2877"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getDischargeDiagnosisSection2(TransferSummary) <em>Get Discharge Diagnosis Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAssessmentSection879(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Assessment Section879</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDischargeDiagnosisSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAssessmentSection879(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::DischargeDiagnosisSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getDischargeDiagnosisSection2(TransferSummary) <em>Get Discharge Diagnosis Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAssessmentSection879(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Assessment Section879</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDischargeDiagnosisSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAssessmentSection879(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static DischargeDiagnosisSection2 getDischargeDiagnosisSection2(TransferSummary transferSummary) {
-		if (GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentAssessmentSection879(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(397));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_QRY);
-		return (DischargeDiagnosisSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION879,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentAssessmentSection879"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdmissionMedicationsSectionEntriesOptional2(TransferSummary) <em>Get Admission Medications Section Entries Optional2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Admission Medications Section Entries Optional2881</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdmissionMedicationsSectionEntriesOptional2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationsSectionEntriesOptional2))->asSequence()->any(true).oclAsType(consol::AdmissionMedicationsSectionEntriesOptional2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionMedicationsSectionEntriesOptional2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdmissionMedicationsSectionEntriesOptional2(TransferSummary) <em>Get Admission Medications Section Entries Optional2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Admission Medications Section Entries Optional2881</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdmissionMedicationsSectionEntriesOptional2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static AdmissionMedicationsSectionEntriesOptional2 getAdmissionMedicationsSectionEntriesOptional2(
-			TransferSummary transferSummary) {
-		if (GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(398));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY);
-		return (AdmissionMedicationsSectionEntriesOptional2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2881,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional2881"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getAdmissionDiagnosisSection2(TransferSummary) <em>Get Admission Diagnosis Section2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Admission Diagnosis Section2883</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdmissionDiagnosisSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionDiagnosisSection2))->asSequence()->any(true).oclAsType(consol::AdmissionDiagnosisSection2)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionDiagnosisSection2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdmissionDiagnosisSection2(TransferSummary) <em>Get Admission Diagnosis Section2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Admission Diagnosis Section2883</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdmissionDiagnosisSection2(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static AdmissionDiagnosisSection2 getAdmissionDiagnosisSection2(TransferSummary transferSummary) {
-		if (GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(399));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_QRY);
-		return (AdmissionDiagnosisSection2) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION2883,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentAdmissionDiagnosisSection2883"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCourseOfCareSection(TransferSummary) <em>Get Course Of Care Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Course Of Care Section885</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCourseOfCareSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_COURSE_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::CourseOfCareSection))->asSequence()->any(true).oclAsType(consol::CourseOfCareSection)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::CourseOfCareSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getCourseOfCareSection(TransferSummary) <em>Get Course Of Care Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Component Course Of Care Section885</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCourseOfCareSection(TransferSummary)
+	 * @see #validateTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_COURSE_OF_CARE_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static CourseOfCareSection getCourseOfCareSection(TransferSummary transferSummary) {
-		if (GET_COURSE_OF_CARE_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TRANSFER_SUMMARY,
-				ConsolPackage.Literals.TRANSFER_SUMMARY.getEAllOperations().get(400));
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
-				GET_COURSE_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_COURSE_OF_CARE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COURSE_OF_CARE_SECTION__EOCL_QRY);
-		return (CourseOfCareSection) query.evaluate(transferSummary);
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COMPONENT_COURSE_OF_CARE_SECTION885,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyComponentCourseOfCareSection885"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Advance Directives Section2828</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Advance Directives Section2828</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADVANCE_DIRECTIVES_SECTION2828,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyAdvanceDirectivesSection2828"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyAllergiesSection2830(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Allergies Section2830</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAllergiesSection2830(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyAllergiesSection2830(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Allergies Section2830</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAllergiesSection2830(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyAllergiesSection2830(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION2830,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyAllergiesSection2830"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyPhysicalExamSection2832(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Physical Exam Section2832</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyPhysicalExamSection2832(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyPhysicalExamSection2832(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Physical Exam Section2832</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyPhysicalExamSection2832(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyPhysicalExamSection2832(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION2832,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyPhysicalExamSection2832"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyEncountersSection2834(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Encounters Section2834</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyEncountersSection2834(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyEncountersSection2834(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Encounters Section2834</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyEncountersSection2834(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyEncountersSection2834(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ENCOUNTERS_SECTION2834,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyEncountersSection2834"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyFamilyHistorySection836(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Family History Section836</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyFamilyHistorySection836(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyFamilyHistorySection836(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Family History Section836</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyFamilyHistorySection836(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyFamilyHistorySection836(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION836,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyFamilyHistorySection836"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyFunctionalStatusSection2838(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Functional Status Section2838</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyFunctionalStatusSection2838(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyFunctionalStatusSection2838(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Functional Status Section2838</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyFunctionalStatusSection2838(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyFunctionalStatusSection2838(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION2838,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyFunctionalStatusSection2838"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Discharge Diagnosis Section2840</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Discharge Diagnosis Section2840</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION2840,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyDischargeDiagnosisSection2840"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Immunizations Section Entries Optional2842</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Immunizations Section Entries Optional2842</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2842,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyImmunizationsSectionEntriesOptional2842"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Medical Equipment Section2844</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Medical Equipment Section2844</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICAL_EQUIPMENT_SECTION2844,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyMedicalEquipmentSection2844"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyMedicationsSection2846(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Medications Section2846</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyMedicationsSection2846(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyMedicationsSection2846(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Medications Section2846</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyMedicationsSection2846(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyMedicationsSection2846(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION2846,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyMedicationsSection2846"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyPayersSection2848(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Payers Section2848</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyPayersSection2848(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyPayersSection2848(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Payers Section2848</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyPayersSection2848(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyPayersSection2848(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PAYERS_SECTION2848,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyPayersSection2848"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Plan Of Treatment Section2850</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Plan Of Treatment Section2850</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION2850,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyPlanOfTreatmentSection2850"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyProblemSection2852(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Problem Section2852</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyProblemSection2852(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyProblemSection2852(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Problem Section2852</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyProblemSection2852(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyProblemSection2852(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION2852,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyProblemSection2852"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyProceduresSection2854(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Procedures Section2854</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyProceduresSection2854(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyProceduresSection2854(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Procedures Section2854</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyProceduresSection2854(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyProceduresSection2854(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION2854,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyProceduresSection2854"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyResultsSection2856(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Results Section2856</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyResultsSection2856(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyResultsSection2856(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Results Section2856</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyResultsSection2856(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyResultsSection2856(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION2856,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyResultsSection2856"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodySocialHistorySection2858(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Social History Section2858</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodySocialHistorySection2858(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodySocialHistorySection2858(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Social History Section2858</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodySocialHistorySection2858(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodySocialHistorySection2858(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION2858,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodySocialHistorySection2858"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyVitalSignsSection2860(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Vital Signs Section2860</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyVitalSignsSection2860(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyVitalSignsSection2860(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Vital Signs Section2860</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyVitalSignsSection2860(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyVitalSignsSection2860(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION2860,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyVitalSignsSection2860"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyMentalStatusSection862(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Mental Status Section862</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyMentalStatusSection862(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyMentalStatusSection862(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Mental Status Section862</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyMentalStatusSection862(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyMentalStatusSection862(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_MENTAL_STATUS_SECTION862,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyMentalStatusSection862"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyGeneralStatusSection864(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body General Status Section864</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyGeneralStatusSection864(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyGeneralStatusSection864(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body General Status Section864</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyGeneralStatusSection864(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyGeneralStatusSection864(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION864,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyGeneralStatusSection864"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyReviewOfSystemsSection866(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Review Of Systems Section866</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyReviewOfSystemsSection866(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyReviewOfSystemsSection866(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Review Of Systems Section866</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyReviewOfSystemsSection866(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyReviewOfSystemsSection866(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION866,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyReviewOfSystemsSection866"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyNutritionSection868(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Nutrition Section868</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyNutritionSection868(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyNutritionSection868(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Nutrition Section868</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyNutritionSection868(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyNutritionSection868(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION868,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyNutritionSection868"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyReasonForReferralSection2870(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Reason For Referral Section2870</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyReasonForReferralSection2870(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyReasonForReferralSection2870(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Reason For Referral Section2870</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyReasonForReferralSection2870(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyReasonForReferralSection2870(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_REASON_FOR_REFERRAL_SECTION2870,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyReasonForReferralSection2870"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body History Of Past Illness Section2872</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body History Of Past Illness Section2872</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION2872,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyHistoryOfPastIllnessSection2872"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body History Of Present Illness Section874</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body History Of Present Illness Section874</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION874,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyHistoryOfPresentIllnessSection874"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Assessment And Plan Section2876</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Assessment And Plan Section2876</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION2876,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyAssessmentAndPlanSection2876"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyAssessmentSection878(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Assessment Section878</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAssessmentSection878(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyAssessmentSection878(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Assessment Section878</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAssessmentSection878(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyAssessmentSection878(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION878,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyAssessmentSection878"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Admission Medications Section Entries Optional2880</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Admission Medications Section Entries Optional2880</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2880,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional2880"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Admission Diagnosis Section2882</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Admission Diagnosis Section2882</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION2882,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyAdmissionDiagnosisSection2882"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBodyCourseOfCareSection884(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Course Of Care Section884</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyCourseOfCareSection884(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBodyCourseOfCareSection884(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body Course Of Care Section884</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBodyCourseOfCareSection884(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBodyCourseOfCareSection884(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY_COURSE_OF_CARE_SECTION884,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBodyCourseOfCareSection884"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTransferSummaryComponentStructuredBody827(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body827</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBody827(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null)->reject(structuredBody->one(structuredBody : cda::StructuredBody | not structuredBody.oclIsUndefined() and structuredBody.oclIsKindOf(cda::StructuredBody)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTransferSummaryComponentStructuredBody827(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Component Structured Body827</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTransferSummaryComponentStructuredBody827(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param transferSummary The receiving '<em><b>Transfer Summary</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateTransferSummaryComponentStructuredBody827(TransferSummary transferSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(transferSummary);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COMPONENT_STRUCTURED_BODY827,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryComponentStructuredBody827"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -5121,26 +6184,28 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(TransferSummary transferSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TRANSFER_SUMMARY);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			transferSummary)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(transferSummary)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TRANSFER_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TransferSummaryGeneralHeaderConstraintsTemplateId"),
-					new Object[] { transferSummary }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TRANSFER_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("TransferSummaryGeneralHeaderConstraintsTemplateId"),
+						 new Object [] { transferSummary }));
 			}
-
+			 
 			return false;
 		}
 		return true;

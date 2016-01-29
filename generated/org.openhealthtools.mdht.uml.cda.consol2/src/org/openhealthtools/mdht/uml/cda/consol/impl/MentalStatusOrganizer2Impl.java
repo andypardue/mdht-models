@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusOrganizer2
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mental Status Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,8 +54,7 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 */
 	public boolean validateMentalStatusOrganizer2HasCodeOrEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2HasCodeOrEffectiveTime(
-			this, diagnostics, context);
+		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2HasCodeOrEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +80,8 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getConsolMentalStatusObservation2s() {
-		return MentalStatusOrganizer2Operations.getConsolMentalStatusObservation2s(this);
+	public boolean validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +92,7 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	@Override
 	public boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCodeCodeSystem(
-			this, diagnostics, context);
+		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCodeCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -125,30 +121,18 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 * @generated
 	 */
 	@Override
-	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MentalStatusOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MentalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MentalStatusOrganizer2Impl

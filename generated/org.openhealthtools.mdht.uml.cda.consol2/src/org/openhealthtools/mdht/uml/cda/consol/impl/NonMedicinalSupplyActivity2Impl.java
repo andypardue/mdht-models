@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActi
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Non Medicinal Supply Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,8 +60,7 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	@Override
 	public boolean validateNonMedicinalSupplyActivity2Instruction2InversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2InversionInd(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2InversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +70,7 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 */
 	public boolean validateNonMedicinalSupplyActivityStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCodeP(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -82,11 +78,8 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateNonMedicinalSupplyActivity2Instruction2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2(
-			this, diagnostics, context);
+	public boolean validateNonMedicinalSupplyActivity2EntryRelationship956(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2EntryRelationship956(this, diagnostics, context);
 	}
 
 	/**
@@ -94,18 +87,8 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Instruction2 getInstruction2() {
-		return NonMedicinalSupplyActivity2Operations.getInstruction2(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProductInstance getConsolProductInstance() {
-		return NonMedicinalSupplyActivity2Operations.getConsolProductInstance(this);
+	public boolean validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +98,7 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityTemplateId(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +108,7 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCode(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +119,7 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	@Override
 	public boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityProductInstance(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityProductInstance(this, diagnostics, context);
 	}
 
 	/**
@@ -149,17 +129,17 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 */
 	@Override
 	public NonMedicinalSupplyActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NonMedicinalSupplyActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NonMedicinalSupplyActivity2Impl

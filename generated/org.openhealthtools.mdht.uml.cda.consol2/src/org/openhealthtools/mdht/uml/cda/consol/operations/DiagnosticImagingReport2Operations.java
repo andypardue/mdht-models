@@ -49,10 +49,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Documentation Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2RelatedDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Related Document</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2FindingsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Findings Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2DICOMObjectCatalogSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 DICOM Object Catalog Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2Component2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2Informant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Informant</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2Component1302(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component1302</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 II Root OI Ds Must Be No More Than64 Characters</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2IIRoot(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 II Root</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ParticipantAssociatedEntityPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Participant Associated Entity Person Name</em>}</li>
@@ -80,6 +79,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Physicianof Record Participant2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Subject Fetus Subject Context</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Procedure Context Entry Procedure Context1309</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text Observation Entry Text Observation1311</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code Observations Entry Code Observations1313</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Quantity Measurement Observation Entry Quantity Measurement Observation1315</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section SOP Instance Observation Entry SOP Instance Observation1317</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Sections Have Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code P</em>}</li>
@@ -87,16 +91,19 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Subject</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Author</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Procedure Context</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Quantity Measurement Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section SOP Instance Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1308</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1310</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1312</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1314</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1316</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3Section(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponent3(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBody(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#getFindingsSection() <em>Get Findings Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#getDICOMObjectCatalogSection() <em>Get DICOM Object Catalog Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component Findings Section1305</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component DICOM Object Catalog Section1307</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Findings Section1304</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body DICOM Object Catalog Section1306</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateDiagnosticImagingReport2ComponentStructuredBody1303(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body1303</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -147,26 +154,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2Id(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_ID,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Id"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_ID,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Id"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -206,26 +215,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2CodeP(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2CodeP"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2CodeP"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -237,7 +248,7 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 				}
 				passToken.add(diagnosticImagingReport2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -251,9 +262,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2Code(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Code</em>}' invariant operation.
@@ -279,34 +290,34 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2Code(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2CodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2CodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(diagnosticImagingReport2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_CODE,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Code"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_CODE,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Code"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -346,28 +357,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2InformationRecipient(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InformationRecipient"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_INFORMATION_RECIPIENT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InformationRecipient"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -407,26 +418,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2Participant(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Participant"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Participant"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -466,26 +479,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2InFulfillmentOf(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOf"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOf"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -525,26 +540,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2DocumentationOf(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOf"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOf"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -584,26 +601,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2RelatedDocument(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocument"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocument"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -643,146 +662,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2ComponentOf(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOf"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOf"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2FindingsSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Findings Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2FindingsSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2FindingsSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Findings Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2FindingsSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateDiagnosticImagingReport2FindingsSection(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
-			try {
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_FINDINGS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2FindingsSection"),
-					new Object[] { diagnosticImagingReport2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2DICOMObjectCatalogSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 DICOM Object Catalog Section</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2DICOMObjectCatalogSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DICOMObjectCatalogSection))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2DICOMObjectCatalogSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 DICOM Object Catalog Section</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2DICOMObjectCatalogSection(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateDiagnosticImagingReport2DICOMObjectCatalogSection(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
-			try {
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DICOM_OBJECT_CATALOG_SECTION,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DICOMObjectCatalogSection"),
-					new Object[] { diagnosticImagingReport2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -822,26 +723,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2Component2(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Component2"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT2,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Component2"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -881,26 +784,88 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateDiagnosticImagingReport2Informant(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_INFORMANT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Informant"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_INFORMANT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Informant"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2Component1302(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component1302</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2Component1302(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2Component1302(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component1302</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2Component1302(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateDiagnosticImagingReport2Component1302(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT1302,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2Component1302"),
+						 new Object [] { diagnosticImagingReport2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -940,31 +905,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_II_ROOT_OI_DS_MUST_BE_NO_MORE_THAN64_CHARACTERS,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2IIRootOIDsMustBeNoMoreThan64Characters"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1005,30 +972,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2IIRoot(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_II_ROOT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2IIRoot"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_II_ROOT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2IIRoot"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1069,31 +1039,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ParticipantAssociatedEntityPersonName(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntityPersonName"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntityPersonName"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1134,31 +1106,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntityAssociatedPerson"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1199,31 +1173,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ParticipantAssociatedEntity(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntity"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_PARTICIPANT_ASSOCIATED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ParticipantAssociatedEntity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1264,31 +1240,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2InFulfillmentOfOrderId(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOfOrderId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER_ID,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOfOrderId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1329,31 +1307,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2InFulfillmentOfOrder(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOfOrder"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_IN_FULFILLMENT_OF_ORDER,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2InFulfillmentOfOrder"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1394,31 +1374,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEventClassCode(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventClassCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventClassCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1459,31 +1441,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEventId(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_ID,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1524,31 +1508,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEventCode(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1589,31 +1575,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT_PHYSICIAN_READING_STUDY_PERFORMER2,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEventPhysicianReadingStudyPerformer2"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1654,31 +1642,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2DocumentationOfServiceEvent(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEvent"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_DOCUMENTATION_OF_SERVICE_EVENT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2DocumentationOfServiceEvent"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1719,31 +1709,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_II_OIDS_LENGTH,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocumentIIOidsLength"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1784,31 +1776,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2RelatedDocumentParentDocumentId(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocumentId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT_ID,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocumentId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1849,31 +1843,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2RelatedDocumentParentDocument(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocument"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_RELATED_DOCUMENT_PARENT_DOCUMENT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2RelatedDocumentParentDocument"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1914,31 +1910,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1979,31 +1977,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2044,31 +2044,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2109,31 +2111,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2174,31 +2178,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2239,31 +2245,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2278,7 +2286,7 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() >= 1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentOfEncompassingEncounterId(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Of Encompassing Encounter Id</em>}' invariant operation.
@@ -2304,31 +2312,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterId(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2369,31 +2379,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterEffectiveTime"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2434,31 +2446,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterResponsibleParty"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2499,31 +2513,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_PHYSICIANOF_RECORD_PARTICIPANT2,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounterPhysicianofRecordParticipant2"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2564,31 +2580,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentOfEncompassingEncounter(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounter"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentOfEncompassingEncounter"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2629,31 +2647,363 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT_FETUS_SUBJECT_CONTEXT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubjectFetusSubjectContext"),
+						 new Object [] { eObject }));
 				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Procedure Context Entry Procedure Context1309</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null).entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureContext)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Procedure Context Entry Procedure Context1309</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT_ENTRY_PROCEDURE_CONTEXT1309,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContextEntryProcedureContext1309"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text Observation Entry Text Observation1311</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null).entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::TextObservation)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text Observation Entry Text Observation1311</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION_ENTRY_TEXT_OBSERVATION1311,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservationEntryTextObservation1311"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code Observations Entry Code Observations1313</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null).entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CodeObservations)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code Observations Entry Code Observations1313</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS_ENTRY_CODE_OBSERVATIONS1313,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservationsEntryCodeObservations1313"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Quantity Measurement Observation Entry Quantity Measurement Observation1315</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null).entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Quantity Measurement Observation Entry Quantity Measurement Observation1315</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_QUANTITY_MEASUREMENT_OBSERVATION1315,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservationEntryQuantityMeasurementObservation1315"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section SOP Instance Observation Entry SOP Instance Observation1317</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null).entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section SOP Instance Observation Entry SOP Instance Observation1317</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION_ENTRY_SOP_INSTANCE_OBSERVATION1317,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservationEntrySOPInstanceObservation1317"),
+						 new Object [] { eObject }));
+				}
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2694,31 +3044,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SECTIONS_HAVE_TEXT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSectionsHaveText"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2733,9 +3085,9 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '1.2.840.10008.2.16.4' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = code.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '1.2.840.10008.2.16.4' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code</em>}' invariant operation.
@@ -2761,31 +3113,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2826,31 +3180,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeP"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2891,31 +3247,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTitle"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2956,31 +3314,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionText"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3021,31 +3381,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SUBJECT,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSubject"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3086,31 +3448,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_AUTHOR,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionAuthor"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3118,25 +3482,25 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Procedure Context</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1308</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProcedureContext)))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Procedure Context</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1308</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3149,33 +3513,34 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_PROCEDURE_CONTEXT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionProcedureContext"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1308,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1308"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3183,25 +3548,25 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1310</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::TextObservation)))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Text Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1310</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3214,33 +3579,34 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_TEXT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionTextObservation"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1310,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1310"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3248,25 +3614,25 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1312</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CodeObservations)))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Code Observations</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1312</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3279,33 +3645,34 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_CODE_OBSERVATIONS,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionCodeObservations"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1312,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1312"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3313,25 +3680,25 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Quantity Measurement Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1314</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::QuantityMeasurementObservation)))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Quantity Measurement Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1314</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3344,33 +3711,34 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_QUANTITY_MEASUREMENT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionQuantityMeasurementObservation"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1314,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1314"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3378,25 +3746,25 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section SOP Instance Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1316</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SOPInstanceObservation)))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null).section->excluding(null)->reject(nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry)))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section SOP Instance Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component3 Section Entry1316</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3409,33 +3777,34 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation(
-			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_SOP_INSTANCE_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionSOPInstanceObservation"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION_ENTRY1316,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3SectionEntry1316"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3476,31 +3845,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3Section(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3Section"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3_SECTION,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3Section"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3541,31 +3912,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT3,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponent3"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3606,31 +3979,33 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	@SuppressWarnings("unchecked")
 	public static boolean validateDiagnosticImagingReport2ComponentStructuredBody(
 			DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBody"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBody"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -3638,88 +4013,333 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getFindingsSection(DiagnosticImagingReport2) <em>Get Findings Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component Findings Section1305</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFindingsSection(DiagnosticImagingReport2)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FINDINGS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->any(true).oclAsType(consol::FindingsSection)";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getFindingsSection(DiagnosticImagingReport2) <em>Get Findings Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component Findings Section1305</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFindingsSection(DiagnosticImagingReport2)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_FINDINGS_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static FindingsSection getFindingsSection(DiagnosticImagingReport2 diagnosticImagingReport2) {
-		if (GET_FINDINGS_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2,
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2.getEAllOperations().get(368));
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				GET_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_FINDINGS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDINGS_SECTION__EOCL_QRY);
-		return (FindingsSection) query.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_FINDINGS_SECTION1305,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponentFindingsSection1305"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getDICOMObjectCatalogSection(DiagnosticImagingReport2) <em>Get DICOM Object Catalog Section</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component DICOM Object Catalog Section1307</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDICOMObjectCatalogSection(DiagnosticImagingReport2)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DICOMObjectCatalogSection))->asSequence()->any(true).oclAsType(consol::DICOMObjectCatalogSection)";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DICOMObjectCatalogSection)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getDICOMObjectCatalogSection(DiagnosticImagingReport2) <em>Get DICOM Object Catalog Section</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Component DICOM Object Catalog Section1307</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDICOMObjectCatalogSection(DiagnosticImagingReport2)
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static DICOMObjectCatalogSection getDICOMObjectCatalogSection(
-			DiagnosticImagingReport2 diagnosticImagingReport2) {
-		if (GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2,
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2.getEAllOperations().get(369));
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
-				GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_QRY = helper.createQuery(GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_QRY);
-		return (DICOMObjectCatalogSection) query.evaluate(diagnosticImagingReport2);
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_COMPONENT_DICOM_OBJECT_CATALOG_SECTION1307,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyComponentDICOMObjectCatalogSection1307"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Findings Section1304</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body Findings Section1304</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_FINDINGS_SECTION1304,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyFindingsSection1304"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body DICOM Object Catalog Section1306</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body DICOM Object Catalog Section1306</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY_DICOM_OBJECT_CATALOG_SECTION1306,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBodyDICOMObjectCatalogSection1306"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBody1303(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body1303</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBody1303(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null)->reject(structuredBody->one(structuredBody : cda::StructuredBody | not structuredBody.oclIsUndefined() and structuredBody.oclIsKindOf(cda::StructuredBody)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReport2ComponentStructuredBody1303(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report2 Component Structured Body1303</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDiagnosticImagingReport2ComponentStructuredBody1303(DiagnosticImagingReport2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnosticImagingReport2 The receiving '<em><b>Diagnostic Imaging Report2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDiagnosticImagingReport2ComponentStructuredBody1303(DiagnosticImagingReport2 diagnosticImagingReport2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(diagnosticImagingReport2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__DIAGNOSTIC_IMAGING_REPORT2_COMPONENT_STRUCTURED_BODY1303,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2DiagnosticImagingReport2ComponentStructuredBody1303"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -3756,26 +4376,28 @@ public class DiagnosticImagingReport2Operations extends USRealmHeader2Operations
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticImagingReport2 diagnosticImagingReport2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT2);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			diagnosticImagingReport2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(diagnosticImagingReport2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2GeneralHeaderConstraintsTemplateId"),
-					new Object[] { diagnosticImagingReport2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DIAGNOSTIC_IMAGING_REPORT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("DiagnosticImagingReport2GeneralHeaderConstraintsTemplateId"),
+						 new Object [] { diagnosticImagingReport2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;

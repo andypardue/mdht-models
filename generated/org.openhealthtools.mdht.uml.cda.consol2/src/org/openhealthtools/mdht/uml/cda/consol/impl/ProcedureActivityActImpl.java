@@ -31,8 +31,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -84,8 +82,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActOriginalTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReference(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +93,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +125,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -141,8 +136,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActInstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -253,39 +247,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityActInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActInstructions(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityActIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActIndication(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityActMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -304,11 +266,37 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureActivityActEntryRelationship272(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationship272(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationship274(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationship274(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationship276(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationship276(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -319,8 +307,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -331,8 +318,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -343,8 +329,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -355,8 +340,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -367,8 +351,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -379,8 +362,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -391,8 +373,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -403,8 +384,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntity(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -415,8 +395,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -427,8 +406,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -439,8 +417,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterId(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -451,8 +428,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEntryRelationshipInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipInversionInd(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -463,8 +439,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipTypeCode(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -475,8 +450,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	@Override
 	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounter(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -484,9 +458,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
-		return ProcedureActivityActOperations.getServiceDeliveryLocations(this);
+	public boolean validateProcedureActivityActInstructionsEntryRelationshipInstructions273(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsEntryRelationshipInstructions273(this, diagnostics, context);
 	}
 
 	/**
@@ -494,9 +467,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Instructions getInstructions() {
-		return ProcedureActivityActOperations.getInstructions(this);
+	public boolean validateProcedureActivityActIndicationEntryRelationshipIndication275(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActIndicationEntryRelationshipIndication275(this, diagnostics, context);
 	}
 
 	/**
@@ -504,19 +476,8 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication> getIndications() {
-		return ProcedureActivityActOperations.getIndications(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MedicationActivity> getMedicationActivities() {
-		return ProcedureActivityActOperations.getMedicationActivities(this);
+	public boolean validateProcedureActivityActMedicationActivityEntryRelationshipMedicationActivity277(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivityEntryRelationshipMedicationActivity277(this, diagnostics, context);
 	}
 
 	/**
@@ -526,17 +487,17 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	@Override
 	public ProcedureActivityAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureActivityActImpl

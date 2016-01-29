@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Series Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -188,19 +186,17 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSeriesActSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SeriesActOperations.validateSeriesActSOPInstanceObservation(this, diagnostics, context);
+	public boolean validateSeriesActEntryRelationship538(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActEntryRelationship538(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
-		return SeriesActOperations.getSOPInstanceObservations(this);
+	public boolean validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539(this, diagnostics, context);
 	}
 
 	/**
@@ -210,17 +206,17 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 */
 	@Override
 	public SeriesAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SeriesAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SeriesActImpl

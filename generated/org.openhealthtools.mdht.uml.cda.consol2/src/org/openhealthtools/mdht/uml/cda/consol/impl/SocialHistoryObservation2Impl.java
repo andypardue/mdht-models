@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservati
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Social History Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	public boolean validateSocialHistoryObservation2ReferenceAttribute(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2ReferenceAttribute(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2ReferenceAttribute(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	@Override
 	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	@Override
 	public boolean validateSocialHistoryObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2EffectiveTime(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +88,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	@Override
 	public boolean validateSocialHistoryObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2AuthorParticipation(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +98,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	public boolean validateSocialHistoryObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslation(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +108,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	public boolean validateSocialHistoryObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslationP(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservation2CDTranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +118,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	@Override
 	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservationTemplateId(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -167,8 +158,7 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	@Override
 	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(
-			this, diagnostics, context);
+		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -178,17 +168,17 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 */
 	@Override
 	public SocialHistoryObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SocialHistoryObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SocialHistoryObservation2Impl

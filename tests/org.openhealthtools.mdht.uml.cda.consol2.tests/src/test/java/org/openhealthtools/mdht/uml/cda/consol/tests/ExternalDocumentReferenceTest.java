@@ -20,8 +20,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ExternalDocumentReferenceOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassDocument;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,8 +51,8 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	@Test
 	public void testValidateExternalDocumentReferenceTemplateId() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceTemplateIdTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -82,24 +80,24 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateExternalDocumentReferenceClassCode() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceClassCodeTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ExternalDocumentReference target) {
-				target.init();
-				target.setClassCode(ActClassDocument.CDALVLONE);
+
 			}
 
 			@Override
 			protected void updateToPass(ExternalDocumentReference target) {
-				target.setClassCode(ActClassDocument.DOCCLIN);
+				target.init();
+
 			}
 
 			@Override
@@ -121,8 +119,8 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	@Test
 	public void testValidateExternalDocumentReferenceMoodCode() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceMoodCodeTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -150,7 +148,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateExternalDocumentReferenceId() {
@@ -161,12 +159,13 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ExternalDocumentReference target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ExternalDocumentReference target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -183,7 +182,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateExternalDocumentReferenceCode() {
@@ -194,12 +193,13 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ExternalDocumentReference target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ExternalDocumentReference target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -216,7 +216,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateExternalDocumentReferenceSetId() {
@@ -227,12 +227,13 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ExternalDocumentReference target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ExternalDocumentReference target) {
-				target.setSetId(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -249,23 +250,24 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateExternalDocumentReferenceVersionNumber() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceVersionNumberTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceVersionNumber",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceVersionNumber", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ExternalDocumentReference target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ExternalDocumentReference target) {
-				target.setVersionNumber(DatatypesFactory.eINSTANCE.createINT());
+				target.init();
+
 			}
 
 			@Override
@@ -282,7 +284,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReference() {
@@ -318,7 +320,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocumentClassCode() {
@@ -356,7 +358,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocumentMoodCode() {
@@ -394,7 +396,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocumentId() {
@@ -432,7 +434,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocumentCode() {
@@ -470,7 +472,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocumentSetId() {
@@ -508,7 +510,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocumentVersionNumber() {
@@ -547,7 +549,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceTypeCode() {
@@ -583,7 +585,7 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateExternalDocumentReferenceReferenceExternalDocument() {

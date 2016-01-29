@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -94,6 +92,24 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterDiagnosisEntryRelationship558(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterDiagnosisOperations.validateEncounterDiagnosisEntryRelationship558(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterDiagnosisProblemObservationEntryRelationshipProblemObservation559(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterDiagnosisOperations.validateEncounterDiagnosisProblemObservationEntryRelationshipProblemObservation559(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateEncounterDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisCodeP(this, diagnostics, context);
@@ -105,38 +121,18 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterDiagnosisOperations.validateEncounterDiagnosisProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProblemObservation> getProblemObservations() {
-		return EncounterDiagnosisOperations.getProblemObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EncounterDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncounterDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterDiagnosisImpl

@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Characteristics Of Home Environment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentTemplateId(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentClassCode(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +80,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentMoodCode(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +90,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentId(this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +101,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCodeP(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +111,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +122,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCode(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +133,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCodeP(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +144,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	@Override
 	public boolean validateCharacteristicsOfHomeEnvironmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValue(this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +154,7 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	public boolean validateCharacteristicsOfHomeEnvironmentValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(
-			this, diagnostics, context);
+		return CharacteristicsOfHomeEnvironmentOperations.validateCharacteristicsOfHomeEnvironmentValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -176,17 +164,17 @@ public class CharacteristicsOfHomeEnvironmentImpl extends ObservationImpl implem
 	 */
 	@Override
 	public CharacteristicsOfHomeEnvironment init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CharacteristicsOfHomeEnvironment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CharacteristicsOfHomeEnvironmentImpl

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>DICOM Object Catalog Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 */
 	@Override
 	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(
-			this, diagnostics, context);
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -89,19 +86,17 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateDICOMObjectCatalogSectionStudyAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyAct(this, diagnostics, context);
+	public boolean validateDICOMObjectCatalogSectionEntry296(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionEntry296(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<StudyAct> getStudyActs() {
-		return DICOMObjectCatalogSectionOperations.getStudyActs(this);
+	public boolean validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(this, diagnostics, context);
 	}
 
 	/**
@@ -111,17 +106,17 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 */
 	@Override
 	public DICOMObjectCatalogSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DICOMObjectCatalogSectionImpl

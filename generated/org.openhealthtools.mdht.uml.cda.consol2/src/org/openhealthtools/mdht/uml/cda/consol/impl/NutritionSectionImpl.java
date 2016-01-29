@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Nutrition Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -110,11 +108,8 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateNutritionSectionNutritionalStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservation(
-			this, diagnostics, context);
+	public boolean validateNutritionSectionEntry762(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NutritionSectionOperations.validateNutritionSectionEntry762(this, diagnostics, context);
 	}
 
 	/**
@@ -122,9 +117,8 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<NutritionalStatusObservation> getNutritionalStatusObservations() {
-		return NutritionSectionOperations.getNutritionalStatusObservations(this);
+	public boolean validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(this, diagnostics, context);
 	}
 
 	/**
@@ -134,17 +128,17 @@ public class NutritionSectionImpl extends SectionImpl implements NutritionSectio
 	 */
 	@Override
 	public NutritionSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NutritionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NutritionSectionImpl

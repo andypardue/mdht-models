@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagn
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Admission Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,9 +67,17 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return HospitalAdmissionDiagnosis2Operations.getConsolProblemObservation2s(this);
+	public boolean validateHospitalAdmissionDiagnosis2EntryRelationship922(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosis2EntryRelationship922(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2923(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2923(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +87,7 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 */
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisTemplateId(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -101,30 +106,18 @@ public class HospitalAdmissionDiagnosis2Impl extends HospitalAdmissionDiagnosisI
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalAdmissionDiagnosisProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosis2Operations.validateHospitalAdmissionDiagnosisProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public HospitalAdmissionDiagnosis2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HospitalAdmissionDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalAdmissionDiagnosis2Impl

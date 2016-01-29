@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.5' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcern'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalText ProblemSectionEntriesOptionalEntry248' templateId.root='2.16.840.1.113883.10.20.22.2.5' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249' constraints.validation.query='ProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemSectionEntriesOptionalProblemConcernActEntry constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249'"
  * @generated
  */
 public interface ProblemSectionEntriesOptional extends Section {
@@ -49,7 +50,7 @@ public interface ProblemSectionEntriesOptional extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'11450-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'11450-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,19 +98,22 @@ public interface ProblemSectionEntriesOptional extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProblemConcernAct))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemSectionEntriesOptionalEntry248(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)).oclAsType(consol::ProblemConcernAct)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct)))'"
 	 * @generated
 	 */
-	EList<ProblemConcernAct> getProblemConcerns();
+	boolean validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -119,9 +123,9 @@ public interface ProblemSectionEntriesOptional extends Section {
 	public ProblemSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSectionEntriesOptional

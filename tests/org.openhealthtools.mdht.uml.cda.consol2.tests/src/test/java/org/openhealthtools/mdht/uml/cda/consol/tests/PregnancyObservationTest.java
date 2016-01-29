@@ -11,23 +11,20 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PregnancyObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,8 +43,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#validatePregnancyObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#validatePregnancyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#validatePregnancyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#validatePregnancyObservationEstimatedDateOfDelivery(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Estimated Date Of Delivery</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#getEstimatedDateOfDelivery() <em>Get Estimated Date Of Delivery</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#validatePregnancyObservationEntryRelationship148(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Entry Relationship148</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation#validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Observation Estimated Date Of Delivery Entry Relationship Estimated Date Of Delivery149</em>}</li>
  * </ul>
  * </p>
  *
@@ -160,7 +157,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePregnancyObservationCode() {
@@ -178,11 +175,16 @@ public class PregnancyObservationTest extends CDAValidationTest {
 			protected void updateToPass(PregnancyObservation target) {
 				target.init();
 
-				CE cd = DatatypesFactory.eINSTANCE.createCE();
-				cd.setCode("ASSERTION");
-				cd.setCodeSystem("2.16.840.1.113883.5.4");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(PregnancyObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PregnancyObservationCodeP", passToken);
 			}
 
 			@Override
@@ -199,7 +201,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePregnancyObservationCodeP() {
@@ -216,7 +218,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PregnancyObservation target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
@@ -270,7 +272,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePregnancyObservationValue() {
@@ -289,8 +291,6 @@ public class PregnancyObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("77386006");
 				target.getValues().add(value);
 
 			}
@@ -309,7 +309,7 @@ public class PregnancyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePregnancyObservationValueP() {
@@ -327,9 +327,6 @@ public class PregnancyObservationTest extends CDAValidationTest {
 			protected void updateToPass(PregnancyObservation target) {
 				target.init();
 
-				// must exist as the correct type but the code value is not checked
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
 			}
 
 			@Override
@@ -351,8 +348,8 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePregnancyObservationEffectiveTime() {
 		OperationsTestCase<PregnancyObservation> validatePregnancyObservationEffectiveTimeTestCase = new OperationsTestCase<PregnancyObservation>(
-			"validatePregnancyObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePregnancyObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -383,13 +380,15 @@ public class PregnancyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidatePregnancyObservationEstimatedDateOfDelivery() {
-		OperationsTestCase<PregnancyObservation> validatePregnancyObservationEstimatedDateOfDeliveryTestCase = new OperationsTestCase<PregnancyObservation>(
-			"validatePregnancyObservationEstimatedDateOfDelivery",
-			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidatePregnancyObservationEntryRelationship148() {
+		OperationsTestCase<PregnancyObservation> validatePregnancyObservationEntryRelationship148TestCase = new OperationsTestCase<PregnancyObservation>(
+			"validatePregnancyObservationEntryRelationship148",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREGNANCY_OBSERVATION_ENTRY_RELATIONSHIP148__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -401,23 +400,18 @@ public class PregnancyObservationTest extends CDAValidationTest {
 			protected void updateToPass(PregnancyObservation target) {
 				target.init();
 
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createEstimatedDateOfDelivery().init());
-				target.getEntryRelationships().add(er);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(
+				return PregnancyObservationOperations.validatePregnancyObservationEntryRelationship148(
 					(PregnancyObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePregnancyObservationEstimatedDateOfDeliveryTestCase.doValidationTest();
+		validatePregnancyObservationEntryRelationship148TestCase.doValidationTest();
 	}
 
 	/**
@@ -425,11 +419,35 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetEstimatedDateOfDelivery() {
 
-		PregnancyObservation target = objectFactory.create();
-		target.getEstimatedDateOfDelivery();
+	public void testValidatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149() {
+		OperationsTestCase<PregnancyObservation> validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149TestCase = new OperationsTestCase<PregnancyObservation>(
+			"validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY_ENTRY_RELATIONSHIP_ESTIMATED_DATE_OF_DELIVERY149__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PregnancyObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PregnancyObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149(
+					(PregnancyObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149TestCase.doValidationTest();
 	}
 
 	/**

@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Coverage</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -159,8 +157,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActClassCode(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -215,8 +212,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCode(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -227,8 +223,7 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	@Override
 	public boolean validatePlannedCoverageEntryRelationshipActStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCodeP(
-			this, diagnostics, context);
+		return PlannedCoverageOperations.validatePlannedCoverageEntryRelationshipActStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -259,17 +254,17 @@ public class PlannedCoverageImpl extends ActImpl implements PlannedCoverage {
 	 */
 	@Override
 	public PlannedCoverage init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedCoverage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedCoverageImpl

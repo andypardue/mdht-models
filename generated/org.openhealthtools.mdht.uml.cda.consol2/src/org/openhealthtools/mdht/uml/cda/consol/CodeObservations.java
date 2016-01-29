@@ -26,7 +26,9 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCodeObservations()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodeObservationsTemplateId CodeObservationsClassCode CodeObservationsMoodCode CodeObservationsCode CodeObservationsValue' templateId.root='2.16.840.1.113883.10.20.6.2.13' classCode='OBS' moodCode='EVN' constraints.validation.warning='CodeObservationsEffectiveTime' constraints.validation.info='CodeObservationsSOPInstanceObservation CodeObservationsQuantityMeasurementObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodeObservationsTemplateId CodeObservationsClassCode CodeObservationsMoodCode CodeObservationsCode CodeObservationsValue CodeObservationsEntryRelationship554 CodeObservationsEntryRelationship556' templateId.root='2.16.840.1.113883.10.20.6.2.13' classCode='OBS' moodCode='EVN' constraints.validation.warning='CodeObservationsEffectiveTime' constraints.validation.info='CodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation555 CodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation557' constraints.validation.query='CodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation555 CodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation557'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCodeObservationsSOPInstanceObservationEntryRelationship constraints.validation.info='CodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation555'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCodeObservationsQuantityMeasurementObservationEntryRelationship constraints.validation.info='CodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation557'"
  * @generated
  */
 public interface CodeObservations extends Observation {
@@ -109,10 +111,10 @@ public interface CodeObservations extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCodeObservationsSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCodeObservationsEntryRelationship554(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,29 +123,34 @@ public interface CodeObservations extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::QuantityMeasurementObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCodeObservationsQuantityMeasurementObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateCodeObservationsEntryRelationship556(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)))'"
 	 * @generated
 	 */
-	EList<SOPInstanceObservation> getSOPInstanceObservations();
+	boolean validateCodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation555(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation)).oclAsType(consol::QuantityMeasurementObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation)))'"
 	 * @generated
 	 */
-	EList<QuantityMeasurementObservation> getQuantityMeasurementObservations();
+	boolean validateCodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation557(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -153,9 +160,9 @@ public interface CodeObservations extends Observation {
 	public CodeObservations init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CodeObservations init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CodeObservations

@@ -53,7 +53,8 @@ public class HospitalDischargePhysicalSectionTest extends CDAValidationTest {
 	public void testValidateHospitalDischargePhysicalSectionTemplateId() {
 		OperationsTestCase<HospitalDischargePhysicalSection> validateHospitalDischargePhysicalSectionTemplateIdTestCase = new OperationsTestCase<HospitalDischargePhysicalSection>(
 			"validateHospitalDischargePhysicalSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +87,8 @@ public class HospitalDischargePhysicalSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargePhysicalSectionCode() {
 		OperationsTestCase<HospitalDischargePhysicalSection> validateHospitalDischargePhysicalSectionCodeTestCase = new OperationsTestCase<HospitalDischargePhysicalSection>(
-			"validateHospitalDischargePhysicalSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargePhysicalSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +121,8 @@ public class HospitalDischargePhysicalSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargePhysicalSectionCodeP() {
 		OperationsTestCase<HospitalDischargePhysicalSection> validateHospitalDischargePhysicalSectionCodePTestCase = new OperationsTestCase<HospitalDischargePhysicalSection>(
-			"validateHospitalDischargePhysicalSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargePhysicalSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -154,8 +155,8 @@ public class HospitalDischargePhysicalSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargePhysicalSectionTitle() {
 		OperationsTestCase<HospitalDischargePhysicalSection> validateHospitalDischargePhysicalSectionTitleTestCase = new OperationsTestCase<HospitalDischargePhysicalSection>(
-			"validateHospitalDischargePhysicalSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargePhysicalSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +192,8 @@ public class HospitalDischargePhysicalSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargePhysicalSectionText() {
 		OperationsTestCase<HospitalDischargePhysicalSection> validateHospitalDischargePhysicalSectionTextTestCase = new OperationsTestCase<HospitalDischargePhysicalSection>(
-			"validateHospitalDischargePhysicalSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargePhysicalSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -6,24 +6,21 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DeceasedObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,8 +42,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#validateDeceasedObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#validateDeceasedObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#validateDeceasedObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Value P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#validateDeceasedObservationProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Problem Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#getProblemObservation() <em>Get Problem Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#validateDeceasedObservationEntryRelationship576(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Entry Relationship576</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation#validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Problem Observation Entry Relationship Problem Observation577</em>}</li>
  * </ul>
  * </p>
  *
@@ -57,25 +54,24 @@ public class DeceasedObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not 
+	* @generated
 	*/
 	@Test
 	public void testValidateDeceasedObservationEffectiveTimeLow() {
 		OperationsTestCase<DeceasedObservation> validateDeceasedObservationEffectiveTimeLowTestCase = new OperationsTestCase<DeceasedObservation>(
-			"validateDeceasedObservationEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDeceasedObservationEffectiveTimeLow", operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DeceasedObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(DeceasedObservation target) {
+				target.init();
 
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
 			}
 
 			@Override
@@ -265,7 +261,7 @@ public class DeceasedObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateDeceasedObservationCode() {
@@ -283,9 +279,16 @@ public class DeceasedObservationTest extends CDAValidationTest {
 			protected void updateToPass(DeceasedObservation target) {
 				target.init();
 
-				CE cd = DatatypesFactory.eINSTANCE.createCE("ASSERTION", "2.16.840.1.113883.5.4");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(DeceasedObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.DeceasedObservationCodeP", passToken);
 			}
 
 			@Override
@@ -378,8 +381,8 @@ public class DeceasedObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateDeceasedObservationEffectiveTime() {
 		OperationsTestCase<DeceasedObservation> validateDeceasedObservationEffectiveTimeTestCase = new OperationsTestCase<DeceasedObservation>(
-			"validateDeceasedObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDeceasedObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -410,7 +413,7 @@ public class DeceasedObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateDeceasedObservationValue() {
@@ -428,7 +431,7 @@ public class DeceasedObservationTest extends CDAValidationTest {
 			protected void updateToPass(DeceasedObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("419099009", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}
@@ -447,7 +450,7 @@ public class DeceasedObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateDeceasedObservationValueP() {
@@ -465,9 +468,6 @@ public class DeceasedObservationTest extends CDAValidationTest {
 			protected void updateToPass(DeceasedObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("419099009", "2.16.840.1.113883.6.96", "", "");
-				target.getValues().add(value);
-
 			}
 
 			@Override
@@ -484,13 +484,14 @@ public class DeceasedObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateDeceasedObservationProblemObservation() {
-		OperationsTestCase<DeceasedObservation> validateDeceasedObservationProblemObservationTestCase = new OperationsTestCase<DeceasedObservation>(
-			"validateDeceasedObservationProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateDeceasedObservationEntryRelationship576() {
+		OperationsTestCase<DeceasedObservation> validateDeceasedObservationEntryRelationship576TestCase = new OperationsTestCase<DeceasedObservation>(
+			"validateDeceasedObservationEntryRelationship576", operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_ENTRY_RELATIONSHIP576__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -501,22 +502,19 @@ public class DeceasedObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DeceasedObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
-				er.setObservation(ConsolFactory.eINSTANCE.createProblemObservation().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return DeceasedObservationOperations.validateDeceasedObservationProblemObservation(
+				return DeceasedObservationOperations.validateDeceasedObservationEntryRelationship576(
 					(DeceasedObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeceasedObservationProblemObservationTestCase.doValidationTest();
+		validateDeceasedObservationEntryRelationship576TestCase.doValidationTest();
 	}
 
 	/**
@@ -524,11 +522,35 @@ public class DeceasedObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemObservation() {
 
-		DeceasedObservation target = objectFactory.create();
-		target.getProblemObservation();
+	public void testValidateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577() {
+		OperationsTestCase<DeceasedObservation> validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577TestCase = new OperationsTestCase<DeceasedObservation>(
+			"validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION577__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DeceasedObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeceasedObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DeceasedObservationOperations.validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577(
+					(DeceasedObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577TestCase.doValidationTest();
 	}
 
 	/**

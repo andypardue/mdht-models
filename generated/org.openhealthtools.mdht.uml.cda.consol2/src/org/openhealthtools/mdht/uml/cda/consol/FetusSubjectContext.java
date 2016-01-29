@@ -45,7 +45,7 @@ public interface FetusSubjectContext extends RelatedSubject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'121026\' and value.codeSystem = \'1.2.840.10008.2.16.4\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'121026\' and value.codeSystem = \'1.2.840.10008.2.16.4\')'"
 	 * @generated
 	 */
 	boolean validateFetusSubjectContextCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -70,9 +70,9 @@ public interface FetusSubjectContext extends RelatedSubject {
 	public FetusSubjectContext init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FetusSubjectContext init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FetusSubjectContext

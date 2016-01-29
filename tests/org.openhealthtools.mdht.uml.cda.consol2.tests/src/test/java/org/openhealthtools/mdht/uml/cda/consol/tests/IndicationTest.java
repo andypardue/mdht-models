@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -23,7 +24,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,7 +54,7 @@ public class IndicationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationCodeNullFlavor() {
@@ -71,12 +71,6 @@ public class IndicationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(Indication target) {
 				target.init();
-
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-
-				cd.setNullFlavor(NullFlavor.UNK);
-
-				target.getValues().add(cd);
 
 			}
 
@@ -160,7 +154,7 @@ public class IndicationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationCode() {
@@ -177,10 +171,13 @@ public class IndicationTest extends CDAValidationTest {
 			protected void updateToPass(Indication target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD("404684003", "2.16.840.1.113883.6.96", "", "");
+			}
 
-				target.setCode(cd);
-
+			@Override
+			protected void setDependency(Indication target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.IndicationCodeP", passToken);
 			}
 
 			@Override
@@ -233,7 +230,7 @@ public class IndicationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationId() {
@@ -243,13 +240,13 @@ public class IndicationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(Indication target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(Indication target) {
+				target.init();
 
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
 			}
 
 			@Override
@@ -366,7 +363,7 @@ public class IndicationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationValue() {
@@ -377,18 +374,13 @@ public class IndicationTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(Indication target) {
 
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCS());
-
 			}
 
 			@Override
 			protected void updateToPass(Indication target) {
 				target.init();
 
-				target.getValues().clear();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD("code", "2.16.840.1.113883.6.96", "", "");
-
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}
@@ -406,30 +398,23 @@ public class IndicationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationValueP() {
 		OperationsTestCase<Indication> validateIndicationValuePTestCase = new OperationsTestCase<Indication>(
 			"validateIndicationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(Indication target) {
-
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCS());
 
 			}
 
 			@Override
 			protected void updateToPass(Indication target) {
 				target.init();
-
-				target.getValues().clear();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD("code", "2.16.840.1.113883.6.96", "", "");
-
-				target.getValues().add(value);
 
 			}
 

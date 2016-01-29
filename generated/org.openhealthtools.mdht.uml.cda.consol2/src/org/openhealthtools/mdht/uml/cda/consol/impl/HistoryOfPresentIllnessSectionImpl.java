@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History Of Present Illness Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	@Override
 	public boolean validateHistoryOfPresentIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 */
 	@Override
 	public boolean validateHistoryOfPresentIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 */
 	@Override
 	public boolean validateHistoryOfPresentIllnessSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCodeP(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +87,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 */
 	@Override
 	public boolean validateHistoryOfPresentIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +97,7 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 */
 	@Override
 	public boolean validateHistoryOfPresentIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(
-			this, diagnostics, context);
+		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -114,17 +107,17 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	 */
 	@Override
 	public HistoryOfPresentIllnessSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HistoryOfPresentIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HistoryOfPresentIllnessSectionImpl

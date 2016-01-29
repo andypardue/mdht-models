@@ -23,7 +23,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSection2Title VitalSignsSection2Text VitalSignsSectionEntriesOptionalVitalSignsOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='VitalSignsSection2NullFlavor' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionEntriesOptionalCode='VitalSignsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSection2Title VitalSignsSection2Text VitalSignsSection2Entry1212 VitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='VitalSignsSection2NullFlavor' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionEntriesOptionalCode='VitalSignsSectionEntriesOptionalCodeP' constraints.validation.query='VitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolVitalSignsSection2VitalSignsOrganizer2Entry constraints.validation.error='VitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213'"
  * @generated
  */
 public interface VitalSignsSection2 extends VitalSignsSectionEntriesOptional2 {
@@ -66,16 +67,40 @@ public interface VitalSignsSection2 extends VitalSignsSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	@Override
-	public VitalSignsSection2 init();
+	boolean validateVitalSignsSection2Entry1212(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::VitalSignsOrganizer2)))'"
+	 * @generated
+	 */
+	boolean validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public VitalSignsSection2 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	@Override
 	public VitalSignsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsSection2

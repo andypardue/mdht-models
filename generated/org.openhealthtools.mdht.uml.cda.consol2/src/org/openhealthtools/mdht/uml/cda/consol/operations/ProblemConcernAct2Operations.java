@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -41,9 +43,10 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2EntryRelationship1002(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Entry Relationship1002</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2EntryRelationship1004(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Entry Relationship1004</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Problem Observation2 Entry Relationship Problem Observation21003</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference Entry Relationship Priority Preference1005</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTimeHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Template Id</em>}</li>
@@ -51,7 +54,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2#validateProblemConcernActProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Problem Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,26 +82,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActStatusCodeP(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCodeP"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCodeP"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -111,7 +115,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 				}
 				passToken.add(problemConcernAct2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,26 +134,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernAct2AuthorParticipation(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2AuthorParticipation"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2AuthorParticipation"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -165,29 +171,30 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateProblemConcernAct2PriorityPreference(ProblemConcernAct2 problemConcernAct2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateProblemConcernAct2EntryRelationship1002(ProblemConcernAct2 problemConcernAct2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2PriorityPreference"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2EntryRelationship1002"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -196,49 +203,130 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param problemConcernAct2 The receiving '<em><b>Problem Concern Act2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PriorityPreference> getPriorityPreferences(ProblemConcernAct2 problemConcernAct2) {
-		if (GET_PRIORITY_PREFERENCES__EOCL_QRY == null) {
+	
+	public static  boolean validateProblemConcernAct2EntryRelationship1004(ProblemConcernAct2 problemConcernAct2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROBLEM_CONCERN_ACT2,
-				ConsolPackage.Literals.PROBLEM_CONCERN_ACT2.getEAllOperations().get(66));
+			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				GET_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCES__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(problemConcernAct2);
-		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2EntryRelationship1004"),
+						 new Object [] { problemConcernAct2 }));
+			}
+			 
+			return false;
+		}
+		return true;
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param problemConcernAct2 The receiving '<em><b>Problem Concern Act2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<ProblemObservation2> getConsolProblemObservation2s(ProblemConcernAct2 problemConcernAct2) {
-		if (GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(ProblemConcernAct2 problemConcernAct2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PROBLEM_CONCERN_ACT2,
-				ConsolPackage.Literals.PROBLEM_CONCERN_ACT2.getEAllOperations().get(67));
+			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(problemConcernAct2);
-		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(problemConcernAct2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param problemConcernAct2 The receiving '<em><b>Problem Concern Act2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(ProblemConcernAct2 problemConcernAct2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(problemConcernAct2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -254,26 +342,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActEffectiveTimeLow(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeLow"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeLow"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -292,26 +382,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActEffectiveTimeHigh(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeHigh"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeHigh"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -360,65 +452,88 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	protected static Constraint VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2PriorityPreference(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2EntryRelationship1002(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Entry Relationship1002</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemConcernAct2PriorityPreference(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProblemConcernAct2EntryRelationship1002(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)";
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProblemConcernAct2PriorityPreference(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateProblemConcernAct2EntryRelationship1002(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Entry Relationship1002</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemConcernAct2PriorityPreference(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProblemConcernAct2EntryRelationship1002(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * The cached OCL expression body for the '{@link #getPriorityPreferences(ProblemConcernAct2) <em>Get Priority Preferences</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPriorityPreferences(ProblemConcernAct2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_PRIORITY_PREFERENCES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)";
+	
+	protected static Constraint VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1002__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * The cached OCL query for the '{@link #getPriorityPreferences(ProblemConcernAct2) <em>Get Priority Preferences</em>}' query operation.
+	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2EntryRelationship1004(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Entry Relationship1004</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPriorityPreferences(ProblemConcernAct2)
+	 * @see #validateProblemConcernAct2EntryRelationship1004(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PRIORITY_PREFERENCES__EOCL_QRY;
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolProblemObservation2s(ProblemConcernAct2) <em>Get Consol Problem Observation2s</em>}' operation.
+	 * The cached OCL invariant for the '{@link #validateProblemConcernAct2EntryRelationship1004(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Entry Relationship1004</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProblemObservation2s(ProblemConcernAct2)
+	 * @see #validateProblemConcernAct2EntryRelationship1004(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)).oclAsType(consol::ProblemObservation2)";
+	
+	protected static Constraint VALIDATE_PROBLEM_CONCERN_ACT2_ENTRY_RELATIONSHIP1004__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolProblemObservation2s(ProblemConcernAct2) <em>Get Consol Problem Observation2s</em>}' query operation.
+	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Problem Observation2 Entry Relationship Problem Observation21003</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProblemObservation2s(ProblemConcernAct2)
+	 * @see #validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY;
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Problem Observation2 Entry Relationship Problem Observation21003</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_PROBLEM_CONCERN_ACT2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION21003__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference Entry Relationship Priority Preference1005</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act2 Priority Preference Entry Relationship Priority Preference1005</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE1005__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemConcernActEffectiveTimeLow(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Effective Time Low</em>}' operation.
@@ -496,26 +611,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActTemplateId(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActTemplateId"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActTemplateId"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -529,9 +646,9 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
-			+ "value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed')";
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemConcernActStatusCode(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code</em>}' invariant operation.
@@ -557,34 +674,34 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActStatusCode(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActStatusCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(problemConcernAct2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCode"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCode"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -624,26 +741,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActEffectiveTime(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTime"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTime"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -683,26 +802,28 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActCodeP(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCodeP"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCodeP"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -714,7 +835,7 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 				}
 				passToken.add(problemConcernAct2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -728,9 +849,9 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'CONC' and value.codeSystem = '2.16.840.1.113883.5.6')";
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'CONC' and value.codeSystem = '2.16.840.1.113883.5.6')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemConcernActCode(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Code</em>}' invariant operation.
@@ -756,93 +877,34 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 
 	public static boolean validateProblemConcernActCode(ProblemConcernAct2 problemConcernAct2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(problemConcernAct2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
 				VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCode"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE,
+						 ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCode"),
+						 new Object [] { problemConcernAct2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProblemConcernActProblemObservation(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Problem Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProblemConcernActProblemObservation(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProblemConcernActProblemObservation(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Problem Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProblemConcernActProblemObservation(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param problemConcernAct2 The receiving '<em><b>Problem Concern Act2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateProblemConcernActProblemObservation(ProblemConcernAct2 problemConcernAct2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
-			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActProblemObservation"),
-					new Object[] { problemConcernAct2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

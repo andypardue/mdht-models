@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Sensory Status</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -146,9 +144,8 @@ public class SensoryStatusImpl extends ObservationImpl implements SensoryStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSensoryStatusAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SensoryStatusOperations.validateSensoryStatusAssessmentScaleObservation(this, diagnostics, context);
+	public boolean validateSensoryStatusAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SensoryStatusOperations.validateSensoryStatusAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +153,8 @@ public class SensoryStatusImpl extends ObservationImpl implements SensoryStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSensoryStatusAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SensoryStatusOperations.validateSensoryStatusAuthorParticipation(this, diagnostics, context);
+	public boolean validateSensoryStatusEntryRelationship736(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SensoryStatusOperations.validateSensoryStatusEntryRelationship736(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +180,8 @@ public class SensoryStatusImpl extends ObservationImpl implements SensoryStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
-		return SensoryStatusOperations.getAssessmentScaleObservations(this);
+	public boolean validateSensoryStatusAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation737(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SensoryStatusOperations.validateSensoryStatusAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation737(this, diagnostics, context);
 	}
 
 	/**
@@ -193,16 +190,16 @@ public class SensoryStatusImpl extends ObservationImpl implements SensoryStatus 
 	 * @generated
 	 */
 	public SensoryStatus init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SensoryStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SensoryStatusImpl

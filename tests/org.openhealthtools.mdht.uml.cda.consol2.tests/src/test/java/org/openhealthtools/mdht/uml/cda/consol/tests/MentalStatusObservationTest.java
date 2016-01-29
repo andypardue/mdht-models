@@ -17,8 +17,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusObservationOperations;
@@ -28,7 +26,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,9 +46,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Value P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Assessment Scale Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationEntryRelationship600(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Entry Relationship600</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation#validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation Assessment Scale Observation Entry Relationship Assessment Scale Observation601</em>}</li>
  * </ul>
  * </p>
  *
@@ -67,8 +64,8 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservationTemplateId() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationTemplateIdTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -101,8 +98,8 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservationClassCode() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationClassCodeTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -135,8 +132,8 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservationMoodCode() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationMoodCodeTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -235,7 +232,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMentalStatusObservationCode() {
@@ -252,10 +249,10 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MentalStatusObservation target) {
 				target.init();
+
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("285231000");
-				cd.setCodeSystem("2.16.840.1.113883.6.96");
 				target.setCode(cd);
+
 			}
 
 			@Override
@@ -284,8 +281,8 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservationStatusCode() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationStatusCodeTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -321,8 +318,8 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservationStatusCodeP() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationStatusCodePTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -355,8 +352,8 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservationEffectiveTime() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationEffectiveTimeTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -387,7 +384,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMentalStatusObservationValue() {
@@ -404,10 +401,10 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MentalStatusObservation target) {
 				target.init();
+
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCode("11163003");
-				value.setCodeSystem("2.16.840.1.113883.6.96");
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -424,7 +421,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMentalStatusObservationValueP() {
@@ -441,8 +438,7 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MentalStatusObservation target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -459,59 +455,25 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMentalStatusObservationAssessmentScaleObservation() {
-		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationAssessmentScaleObservationTestCase = new OperationsTestCase<MentalStatusObservation>(
-			"validateMentalStatusObservationAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusObservation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setObservation(ConsolFactory.eINSTANCE.createAssessmentScaleObservation().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusObservationOperations.validateMentalStatusObservationAssessmentScaleObservation(
-					(MentalStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMentalStatusObservationAssessmentScaleObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMentalStatusObservationAuthorParticipation() {
 		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationAuthorParticipationTestCase = new OperationsTestCase<MentalStatusObservation>(
 			"validateMentalStatusObservationAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MentalStatusObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusObservation target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
+
 			}
 
 			@Override
@@ -531,11 +493,71 @@ public class MentalStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentScaleObservations() {
 
-		MentalStatusObservation target = objectFactory.create();
-		target.getAssessmentScaleObservations();
+	public void testValidateMentalStatusObservationEntryRelationship600() {
+		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationEntryRelationship600TestCase = new OperationsTestCase<MentalStatusObservation>(
+			"validateMentalStatusObservationEntryRelationship600",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_ENTRY_RELATIONSHIP600__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(MentalStatusObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusObservationOperations.validateMentalStatusObservationEntryRelationship600(
+					(MentalStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusObservationEntryRelationship600TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601() {
+		OperationsTestCase<MentalStatusObservation> validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601TestCase = new OperationsTestCase<MentalStatusObservation>(
+			"validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION_ENTRY_RELATIONSHIP_ASSESSMENT_SCALE_OBSERVATION601__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MentalStatusObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusObservationOperations.validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601(
+					(MentalStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation601TestCase.doValidationTest();
 	}
 
 	/**

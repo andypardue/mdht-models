@@ -17,13 +17,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosis2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,11 +30,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosis2EntryRelationship908(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis2 Entry Relationship908</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis2 Problem Observation2 Entry Relationship Problem Observation2909</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2#validateEncounterDiagnosisProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Diagnosis Problem Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -51,11 +48,70 @@ public class EncounterDiagnosis2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProblemObservation2s() {
 
-		EncounterDiagnosis2 target = objectFactory.create();
-		target.getConsolProblemObservation2s();
+	public void testValidateEncounterDiagnosis2EntryRelationship908() {
+		OperationsTestCase<EncounterDiagnosis2> validateEncounterDiagnosis2EntryRelationship908TestCase = new OperationsTestCase<EncounterDiagnosis2>(
+			"validateEncounterDiagnosis2EntryRelationship908", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTER_DIAGNOSIS2_ENTRY_RELATIONSHIP908__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(EncounterDiagnosis2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterDiagnosis2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterDiagnosis2Operations.validateEncounterDiagnosis2EntryRelationship908(
+					(EncounterDiagnosis2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterDiagnosis2EntryRelationship908TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909() {
+		OperationsTestCase<EncounterDiagnosis2> validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909TestCase = new OperationsTestCase<EncounterDiagnosis2>(
+			"validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTER_DIAGNOSIS2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION2909__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(EncounterDiagnosis2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncounterDiagnosis2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncounterDiagnosis2Operations.validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909(
+					(EncounterDiagnosis2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909TestCase.doValidationTest();
 	}
 
 	/**
@@ -165,43 +221,6 @@ public class EncounterDiagnosis2Test extends CDAValidationTest {
 		};
 
 		validateEncounterDiagnosisCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateEncounterDiagnosisProblemObservation() {
-		OperationsTestCase<EncounterDiagnosis2> validateEncounterDiagnosisProblemObservationTestCase = new OperationsTestCase<EncounterDiagnosis2>(
-			"validateEncounterDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(EncounterDiagnosis2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(EncounterDiagnosis2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return EncounterDiagnosis2Operations.validateEncounterDiagnosisProblemObservation(
-					(EncounterDiagnosis2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateEncounterDiagnosisProblemObservationTestCase.doValidationTest();
 	}
 
 	/**

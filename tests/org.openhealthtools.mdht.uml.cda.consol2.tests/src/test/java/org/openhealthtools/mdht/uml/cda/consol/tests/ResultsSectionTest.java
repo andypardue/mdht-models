@@ -19,7 +19,6 @@ import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -35,8 +34,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Result Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#getConsolResultOrganizers() <em>Get Consol Result Organizers</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionEntry74(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entry74</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionResultOrganizerEntryResultOrganizer75(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Result Organizer Entry Result Organizer75</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultsSection#validateResultsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Entries Optional Code</em>}</li>
@@ -88,13 +87,14 @@ public class ResultsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateResultsSectionResultOrganizer() {
-		OperationsTestCase<ResultsSection> validateResultsSectionResultOrganizerTestCase = new OperationsTestCase<ResultsSection>(
-			"validateResultsSectionResultOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateResultsSectionEntry74() {
+		OperationsTestCase<ResultsSection> validateResultsSectionEntry74TestCase = new OperationsTestCase<ResultsSection>(
+			"validateResultsSectionEntry74",
+			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_ENTRY74__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -105,20 +105,19 @@ public class ResultsSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultsSection target) {
 				target.init();
-				ResultOrganizer org = ConsolFactory.eINSTANCE.createResultOrganizer().init();
-				target.addOrganizer(org);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ResultsSectionOperations.validateResultsSectionResultOrganizer(
+				return ResultsSectionOperations.validateResultsSectionEntry74(
 					(ResultsSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateResultsSectionResultOrganizerTestCase.doValidationTest();
+		validateResultsSectionEntry74TestCase.doValidationTest();
 	}
 
 	/**
@@ -126,11 +125,35 @@ public class ResultsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolResultOrganizers() {
 
-		ResultsSection target = objectFactory.create();
-		target.getConsolResultOrganizers();
+	public void testValidateResultsSectionResultOrganizerEntryResultOrganizer75() {
+		OperationsTestCase<ResultsSection> validateResultsSectionResultOrganizerEntryResultOrganizer75TestCase = new OperationsTestCase<ResultsSection>(
+			"validateResultsSectionResultOrganizerEntryResultOrganizer75",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER_ENTRY_RESULT_ORGANIZER75__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ResultsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultsSectionOperations.validateResultsSectionResultOrganizerEntryResultOrganizer75(
+					(ResultsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultsSectionResultOrganizerEntryResultOrganizer75TestCase.doValidationTest();
 	}
 
 	/**
@@ -141,7 +164,8 @@ public class ResultsSectionTest extends CDAValidationTest {
 	public void testValidateResultsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ResultsSection> validateResultsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ResultsSection>(
 			"validateResultsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -174,8 +198,8 @@ public class ResultsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultsSectionEntriesOptionalCodeP() {
 		OperationsTestCase<ResultsSection> validateResultsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<ResultsSection>(
-			"validateResultsSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultsSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -208,8 +232,8 @@ public class ResultsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultsSectionEntriesOptionalCode() {
 		OperationsTestCase<ResultsSection> validateResultsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<ResultsSection>(
-			"validateResultsSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultsSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -249,8 +273,8 @@ public class ResultsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultsSectionEntriesOptionalTitle() {
 		OperationsTestCase<ResultsSection> validateResultsSectionEntriesOptionalTitleTestCase = new OperationsTestCase<ResultsSection>(
-			"validateResultsSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultsSectionEntriesOptionalTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

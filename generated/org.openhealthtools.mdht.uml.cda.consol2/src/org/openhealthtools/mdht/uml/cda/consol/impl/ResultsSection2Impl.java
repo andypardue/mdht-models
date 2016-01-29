@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSection2Operati
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Results Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,6 +85,24 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultsSection2Entry1210(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSection2Operations.validateResultsSection2Entry1210(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultsSection2ResultOrganizer2EntryResultOrganizer21211(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSection2Operations.validateResultsSection2ResultOrganizer2EntryResultOrganizer21211(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -119,40 +135,18 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultsSection2Operations.validateResultsSectionEntriesOptionalResultOrganizer(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ResultOrganizer2> getConsolResultOrganizer2s() {
-		return ResultsSection2Operations.getConsolResultOrganizer2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ResultsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultsSection2Impl

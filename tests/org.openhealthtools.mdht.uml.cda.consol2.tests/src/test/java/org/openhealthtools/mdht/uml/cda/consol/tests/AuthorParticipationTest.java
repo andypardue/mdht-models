@@ -16,16 +16,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AuthorParticipationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassOrganization;
 
 /**
  * <!-- begin-user-doc -->
@@ -93,7 +87,7 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationTime() {
@@ -104,12 +98,13 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.setTime(DatatypesFactory.eINSTANCE.createTS());
+				target.init();
+
 			}
 
 			@Override
@@ -126,24 +121,24 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthor() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAuthorParticipationAssignedAuthor", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
+				target.init();
+
 			}
 
 			@Override
@@ -160,27 +155,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorAssignedPersonName() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorAssignedPersonNameTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorAssignedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				aa.setAssignedPerson(ap);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getAssignedPerson().getNames().add(DatatypesFactory.eINSTANCE.createPN());
+				target.init();
+
 			}
 
 			@Override
@@ -197,27 +190,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCodeTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().setClassCode(EntityClassOrganization.ORG);
+				target.init();
+
 			}
 
 			@Override
@@ -234,28 +225,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationId() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationIdTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -272,28 +260,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationName() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationNameTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().getNames().add(
-					DatatypesFactory.eINSTANCE.createON());
+				target.init();
+
 			}
 
 			@Override
@@ -310,28 +295,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecomTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().getTelecoms().add(
-					DatatypesFactory.eINSTANCE.createTEL());
+				target.init();
+
 			}
 
 			@Override
@@ -348,28 +330,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddrTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationAddr",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().getAddrs().add(
-					DatatypesFactory.eINSTANCE.createAD());
+				target.init();
+
 			}
 
 			@Override
@@ -386,27 +365,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorCodeTerminology() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorCodeTerminologyTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorCodeTerminology",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				aa.setCode(DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", BAD_CODESYSTEM_ID));
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.6.101"));
+				target.init();
+
 			}
 
 			@Override
@@ -423,25 +400,24 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorId() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorIdTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorId",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAuthorParticipationAssignedAuthorId", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -458,25 +434,24 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorCode() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorCodeTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorCode",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAuthorParticipationAssignedAuthorCode", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -493,26 +468,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorAssignedPerson() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorAssignedPersonTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				target.getAssignedAuthor().setAssignedPerson(ap);
+				target.init();
+
 			}
 
 			@Override
@@ -529,26 +503,25 @@ public class AuthorParticipationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganization() {
 		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationTestCase = new OperationsTestCase<AuthorParticipation>(
 			"validateAuthorParticipationAssignedAuthorRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
+
 			}
 
 			@Override
 			protected void updateToPass(AuthorParticipation target) {
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				target.getAssignedAuthor().setRepresentedOrganization(repOrg);
+				target.init();
+
 			}
 
 			@Override

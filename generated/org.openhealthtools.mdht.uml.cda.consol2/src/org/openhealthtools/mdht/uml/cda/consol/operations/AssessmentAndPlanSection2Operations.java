@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -39,11 +41,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#getConsolPlannedAct2s() <em>Get Consol Planned Act2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSection2Entry1056(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Entry1056</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Planned Act2 Entry Planned Act21057</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionPlanOfCareActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Plan Of Care Activity Act</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,47 +62,129 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolPlannedAct2s(AssessmentAndPlanSection2) <em>Get Consol Planned Act2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAssessmentAndPlanSection2Entry1056(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Entry1056</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolPlannedAct2s(AssessmentAndPlanSection2)
+	 * @see #validateAssessmentAndPlanSection2Entry1056(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PLANNED_ACT2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedAct2)).oclAsType(consol::PlannedAct2)";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolPlannedAct2s(AssessmentAndPlanSection2) <em>Get Consol Planned Act2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSection2Entry1056(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Entry1056</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolPlannedAct2s(AssessmentAndPlanSection2)
+	 * @see #validateAssessmentAndPlanSection2Entry1056(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PLANNED_ACT2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param assessmentAndPlanSection2 The receiving '<em><b>Assessment And Plan Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedAct2> getConsolPlannedAct2s(AssessmentAndPlanSection2 assessmentAndPlanSection2) {
-		if (GET_CONSOL_PLANNED_ACT2S__EOCL_QRY == null) {
+	
+	public static  boolean validateAssessmentAndPlanSection2Entry1056(AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2,
-				ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2.getEAllOperations().get(61));
+			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
-				GET_CONSOL_PLANNED_ACT2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PLANNED_ACT2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedAct2> result = (Collection<PlannedAct2>) query.evaluate(assessmentAndPlanSection2);
-		return new BasicEList.UnmodifiableEList<PlannedAct2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentAndPlanSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSection2Entry1056"),
+						 new Object [] { assessmentAndPlanSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Planned Act2 Entry Planned Act21057</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedAct2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Planned Act2 Entry Planned Act21057</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param assessmentAndPlanSection2 The receiving '<em><b>Assessment And Plan Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(assessmentAndPlanSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -138,26 +222,28 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	public static boolean validateAssessmentAndPlanSectionTemplateId(
 			AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
 				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentAndPlanSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionTemplateId"),
-					new Object[] { assessmentAndPlanSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionTemplateId"),
+						 new Object [] { assessmentAndPlanSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -197,26 +283,28 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 
 	public static boolean validateAssessmentAndPlanSectionCodeP(AssessmentAndPlanSection2 assessmentAndPlanSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
 				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentAndPlanSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP"),
-					new Object[] { assessmentAndPlanSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCodeP"),
+						 new Object [] { assessmentAndPlanSection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -228,7 +316,7 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 				}
 				passToken.add(assessmentAndPlanSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -242,9 +330,9 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '51847-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code</em>}' invariant operation.
@@ -270,96 +358,34 @@ public class AssessmentAndPlanSection2Operations extends AssessmentAndPlanSectio
 
 	public static boolean validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection2 assessmentAndPlanSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(assessmentAndPlanSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
 			try {
 				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assessmentAndPlanSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCode"),
-					new Object[] { assessmentAndPlanSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionCode"),
+						 new Object [] { assessmentAndPlanSection2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateAssessmentAndPlanSectionPlanOfCareActivityAct(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Plan Of Care Activity Act</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAssessmentAndPlanSectionPlanOfCareActivityAct(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PlannedAct2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAssessmentAndPlanSectionPlanOfCareActivityAct(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Plan Of Care Activity Act</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAssessmentAndPlanSectionPlanOfCareActivityAct(AssessmentAndPlanSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param assessmentAndPlanSection2 The receiving '<em><b>Assessment And Plan Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(
-			AssessmentAndPlanSection2 assessmentAndPlanSection2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION2);
-			try {
-				VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			assessmentAndPlanSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ASSESSMENT_AND_PLAN_SECTION2__ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
-					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSection2AssessmentAndPlanSectionPlanOfCareActivityAct"),
-					new Object[] { assessmentAndPlanSection2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

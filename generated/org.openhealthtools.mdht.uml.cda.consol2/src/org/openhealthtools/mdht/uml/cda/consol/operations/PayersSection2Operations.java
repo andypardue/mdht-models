@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -39,11 +41,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#getConsolCoverageActivity2s() <em>Get Consol Coverage Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSection2Entry1108(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Entry1108</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSection2CoverageActivity2EntryCoverageActivity21109(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Coverage Activity2 Entry Coverage Activity21109</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection2#validatePayersSectionCoverageActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,47 +62,129 @@ public class PayersSection2Operations extends PayersSectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolCoverageActivity2s(PayersSection2) <em>Get Consol Coverage Activity2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePayersSection2Entry1108(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Entry1108</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolCoverageActivity2s(PayersSection2)
+	 * @see #validatePayersSection2Entry1108(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_COVERAGE_ACTIVITY2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity2)).oclAsType(consol::CoverageActivity2)";
+	protected static final String VALIDATE_PAYERS_SECTION2_ENTRY1108__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolCoverageActivity2s(PayersSection2) <em>Get Consol Coverage Activity2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePayersSection2Entry1108(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Entry1108</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolCoverageActivity2s(PayersSection2)
+	 * @see #validatePayersSection2Entry1108(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_COVERAGE_ACTIVITY2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_PAYERS_SECTION2_ENTRY1108__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param payersSection2 The receiving '<em><b>Payers Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<CoverageActivity2> getConsolCoverageActivity2s(PayersSection2 payersSection2) {
-		if (GET_CONSOL_COVERAGE_ACTIVITY2S__EOCL_QRY == null) {
+	
+	public static  boolean validatePayersSection2Entry1108(PayersSection2 payersSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PAYERS_SECTION2_ENTRY1108__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PAYERS_SECTION2,
-				ConsolPackage.Literals.PAYERS_SECTION2.getEAllOperations().get(62));
+			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION2);
 			try {
-				GET_CONSOL_COVERAGE_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_COVERAGE_ACTIVITY2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PAYERS_SECTION2_ENTRY1108__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYERS_SECTION2_ENTRY1108__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_COVERAGE_ACTIVITY2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CoverageActivity2> result = (Collection<CoverageActivity2>) query.evaluate(payersSection2);
-		return new BasicEList.UnmodifiableEList<CoverageActivity2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION2_ENTRY1108__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION2_ENTRY1108,
+						 ConsolPlugin.INSTANCE.getString("PayersSection2PayersSection2Entry1108"),
+						 new Object [] { payersSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePayersSection2CoverageActivity2EntryCoverageActivity21109(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Coverage Activity2 Entry Coverage Activity21109</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePayersSection2CoverageActivity2EntryCoverageActivity21109(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePayersSection2CoverageActivity2EntryCoverageActivity21109(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section2 Coverage Activity2 Entry Coverage Activity21109</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePayersSection2CoverageActivity2EntryCoverageActivity21109(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param payersSection2 The receiving '<em><b>Payers Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validatePayersSection2CoverageActivity2EntryCoverageActivity21109(PayersSection2 payersSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(payersSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION2_COVERAGE_ACTIVITY2_ENTRY_COVERAGE_ACTIVITY21109,
+						 ConsolPlugin.INSTANCE.getString("PayersSection2PayersSection2CoverageActivity2EntryCoverageActivity21109"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -137,26 +221,28 @@ public class PayersSection2Operations extends PayersSectionOperations {
 
 	public static boolean validatePayersSectionTemplateId(PayersSection2 payersSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION2);
 			try {
 				VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			payersSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionTemplateId"),
-					new Object[] { payersSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionTemplateId"),
+						 new Object [] { payersSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -196,25 +282,28 @@ public class PayersSection2Operations extends PayersSectionOperations {
 
 	public static boolean validatePayersSectionCodeP(PayersSection2 payersSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PAYERS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION2);
 			try {
 				VALIDATE_PAYERS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYERS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCodeP"),
-					new Object[] { payersSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCodeP"),
+						 new Object [] { payersSection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -226,7 +315,7 @@ public class PayersSection2Operations extends PayersSectionOperations {
 				}
 				passToken.add(payersSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -240,9 +329,9 @@ public class PayersSection2Operations extends PayersSectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePayersSectionCode(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code</em>}' invariant operation.
@@ -268,91 +357,34 @@ public class PayersSection2Operations extends PayersSectionOperations {
 
 	public static boolean validatePayersSectionCode(PayersSection2 payersSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.PayersSectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.PayersSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(payersSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION2);
 			try {
 				VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(payersSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCode"), new Object[] { payersSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCode"),
+						 new Object [] { payersSection2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePayersSectionCoverageActivity(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePayersSectionCoverageActivity(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::CoverageActivity2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePayersSectionCoverageActivity(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePayersSectionCoverageActivity(PayersSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param payersSection2 The receiving '<em><b>Payers Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePayersSectionCoverageActivity(PayersSection2 payersSection2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION2);
-			try {
-				VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			payersSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_COVERAGE_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCoverageActivity"),
-					new Object[] { payersSection2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

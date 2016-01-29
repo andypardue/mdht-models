@@ -17,8 +17,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSection2Operations;
@@ -37,11 +35,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2Entry1196(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Entry1196</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity21197(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section2 Immunization Activity2 Entry Immunization Activity21197</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#validateImmunizationsSectionEntriesOptionalImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Immunization Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2#getConsolImmunizationActivity2s() <em>Get Consol Immunization Activity2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -123,7 +121,7 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateImmunizationsSection2Text() {
@@ -140,8 +138,11 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ImmunizationsSection2 target) {
 				target.init();
-				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-				target.setText(text);
+
+				// ED text = DatatypesFactory.eINSTANCE.createED();
+				// target.setText(text );
+				//
+
 			}
 
 			@Override
@@ -161,10 +162,82 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateImmunizationsSection2Entry1196() {
+		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSection2Entry1196TestCase = new OperationsTestCase<ImmunizationsSection2>(
+			"validateImmunizationsSection2Entry1196",
+			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATIONS_SECTION2_ENTRY1196__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationsSection2Operations.validateImmunizationsSection2Entry1196(
+					(ImmunizationsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationsSection2Entry1196TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity21197() {
+		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity21197TestCase = new OperationsTestCase<ImmunizationsSection2>(
+			"validateImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity21197",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATIONS_SECTION2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21197__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ImmunizationsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ImmunizationsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ImmunizationsSection2Operations.validateImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity21197(
+					(ImmunizationsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity21197TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateImmunizationsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ImmunizationsSection2>(
 			"validateImmunizationsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -198,7 +271,8 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 	public void testValidateImmunizationsSectionEntriesOptionalCodeP() {
 		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<ImmunizationsSection2>(
 			"validateImmunizationsSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -232,7 +306,8 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 	public void testValidateImmunizationsSectionEntriesOptionalCode() {
 		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<ImmunizationsSection2>(
 			"validateImmunizationsSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -263,51 +338,6 @@ public class ImmunizationsSection2Test extends CDAValidationTest {
 		};
 
 		validateImmunizationsSectionEntriesOptionalCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateImmunizationsSectionEntriesOptionalImmunizationActivity() {
-		OperationsTestCase<ImmunizationsSection2> validateImmunizationsSectionEntriesOptionalImmunizationActivityTestCase = new OperationsTestCase<ImmunizationsSection2>(
-			"validateImmunizationsSectionEntriesOptionalImmunizationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ImmunizationsSection2 target) {
-				// target.init defaults to a nullFlavor of NI which allows a pass
-			}
-
-			@Override
-			protected void updateToPass(ImmunizationsSection2 target) {
-				target.addSubstanceAdministration(ConsolFactory.eINSTANCE.createImmunizationActivity2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ImmunizationsSection2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
-					(ImmunizationsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateImmunizationsSectionEntriesOptionalImmunizationActivityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolImmunizationActivity2s() {
-
-		ImmunizationsSection2 target = objectFactory.create();
-		target.getConsolImmunizationActivity2s();
-
 	}
 
 	/**

@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AnesthesiaSection2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Anesthesia Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,9 +57,8 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
-		return AnesthesiaSection2Operations.getConsolProcedureActivityProcedure2s(this);
+	public boolean validateAnesthesiaSection2Entry1052(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSection2Entry1052(this, diagnostics, context);
 	}
 
 	/**
@@ -69,9 +66,26 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
-		return AnesthesiaSection2Operations.getConsolMedicationActivity2s(this);
+	public boolean validateAnesthesiaSection2Entry1054(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSection2Entry1054(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSection2Operations.validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055(this, diagnostics, context);
 	}
 
 	/**
@@ -110,40 +124,18 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * @generated
 	 */
 	@Override
-	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AnesthesiaSection2Operations.validateAnesthesiaSectionProcedureActivityProcedure(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnesthesiaSection2Operations.validateAnesthesiaSectionMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public AnesthesiaSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AnesthesiaSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AnesthesiaSection2Impl

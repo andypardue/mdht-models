@@ -22,8 +22,9 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSensoryStatus()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SensoryStatusTemplateId SensoryStatusClassCode SensoryStatusMoodCode SensoryStatusCodeP SensoryStatusStatusCode SensoryStatusStatusCodeP SensoryStatusEffectiveTime SensoryStatusValueP SensoryStatusIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.127' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SensoryStatusCode SensoryStatusValue SensoryStatusAuthorParticipation' constraints.validation.dependOn.SensoryStatusCode='SensoryStatusCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='SensoryStatusAssessmentScaleObservation SensoryStatusIVLTSHigh' constraints.validation.query='SensoryStatusIVLTSLow SensoryStatusIVLTSHigh'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SensoryStatusTemplateId SensoryStatusClassCode SensoryStatusMoodCode SensoryStatusCodeP SensoryStatusStatusCode SensoryStatusStatusCodeP SensoryStatusEffectiveTime SensoryStatusValueP SensoryStatusEntryRelationship736 SensoryStatusIVLTSLow' templateId.root='2.16.840.1.113883.10.20.22.4.127' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='SensoryStatusCode SensoryStatusValue SensoryStatusAuthorParticipation' constraints.validation.dependOn.SensoryStatusCode='SensoryStatusCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.query='SensoryStatusIVLTSLow SensoryStatusIVLTSHigh SensoryStatusAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation737' constraints.validation.info='SensoryStatusIVLTSHigh SensoryStatusAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation737'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSensoryStatusIVLTS constraints.validation.error='SensoryStatusIVLTSLow' constraints.validation.info='SensoryStatusIVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSensoryStatusAssessmentScaleObservationEntryRelationship constraints.validation.info='SensoryStatusAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation737'"
  * @generated
  */
 public interface SensoryStatus extends Observation {
@@ -82,7 +83,7 @@ public interface SensoryStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'47078008\' or value.code = \'405183003\' or value.code = \'373713005\' or value.code = \'397627001\' or value.code = \'397686008\' or value.code = \'397624008\' or value.code = \'128542002\' or value.code = \'285567008\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'47078008\' or value.code = \'405183003\' or value.code = \'373713005\' or value.code = \'397627001\' or value.code = \'397686008\' or value.code = \'397624008\' or value.code = \'128542002\' or value.code = \'285567008\'))'"
 	 * @generated
 	 */
 	boolean validateSensoryStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -94,7 +95,7 @@ public interface SensoryStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateSensoryStatusStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -130,7 +131,7 @@ public interface SensoryStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateSensoryStatusValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -154,10 +155,10 @@ public interface SensoryStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
-	boolean validateSensoryStatusAssessmentScaleObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,10 +167,10 @@ public interface SensoryStatus extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateSensoryStatusAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSensoryStatusEntryRelationship736(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,11 +199,14 @@ public interface SensoryStatus extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleObservation)).oclAsType(consol::AssessmentScaleObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleObservation)))'"
 	 * @generated
 	 */
-	EList<AssessmentScaleObservation> getAssessmentScaleObservations();
+	boolean validateSensoryStatusAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation737(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,9 +216,9 @@ public interface SensoryStatus extends Observation {
 	public SensoryStatus init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SensoryStatus init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SensoryStatus

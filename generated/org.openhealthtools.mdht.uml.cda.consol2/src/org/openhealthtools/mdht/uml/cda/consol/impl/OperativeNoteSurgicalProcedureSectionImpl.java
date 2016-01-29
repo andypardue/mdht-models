@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Operative Note Surgical Procedure Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +80,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCodeP(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +91,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +102,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	@Override
 	public boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -119,17 +112,17 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 */
 	@Override
 	public OperativeNoteSurgicalProcedureSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public OperativeNoteSurgicalProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // OperativeNoteSurgicalProcedureSectionImpl

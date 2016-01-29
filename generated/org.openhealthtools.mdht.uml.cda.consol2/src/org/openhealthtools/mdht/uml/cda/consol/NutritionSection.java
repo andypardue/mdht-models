@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getNutritionSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NutritionSectionTemplateId NutritionSectionCode NutritionSectionCodeP NutritionSectionTitle NutritionSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.57' code.code='61144-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Diet and nutrition' constraints.validation.warning='NutritionSectionNutritionalStatusObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NutritionSectionTemplateId NutritionSectionCode NutritionSectionCodeP NutritionSectionTitle NutritionSectionText NutritionSectionEntry762' templateId.root='2.16.840.1.113883.10.20.22.2.57' code.code='61144-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Diet and nutrition' constraints.validation.warning='NutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763' constraints.validation.query='NutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolNutritionSectionNutritionalStatusObservationEntry constraints.validation.warning='NutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763'"
  * @generated
  */
 public interface NutritionSection extends Section {
@@ -49,7 +50,7 @@ public interface NutritionSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'61144-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'61144-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateNutritionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,20 +98,22 @@ public interface NutritionSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::NutritionalStatusObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateNutritionSectionNutritionalStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateNutritionSectionEntry762(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NutritionalStatusObservation)).oclAsType(consol::NutritionalStatusObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NutritionalStatusObservation)))'"
 	 * @generated
 	 */
-	EList<NutritionalStatusObservation> getNutritionalStatusObservations();
+	boolean validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,9 +123,9 @@ public interface NutritionSection extends Section {
 	public NutritionSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NutritionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NutritionSection

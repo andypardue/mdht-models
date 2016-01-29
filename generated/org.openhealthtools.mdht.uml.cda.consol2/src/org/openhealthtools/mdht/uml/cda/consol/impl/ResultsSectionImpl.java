@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Results Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -67,9 +65,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionResultOrganizer(this, diagnostics, context);
+	public boolean validateResultsSectionEntry74(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionEntry74(this, diagnostics, context);
 	}
 
 	/**
@@ -77,9 +74,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ResultOrganizer> getConsolResultOrganizers() {
-		return ResultsSectionOperations.getConsolResultOrganizers(this);
+	public boolean validateResultsSectionResultOrganizerEntryResultOrganizer75(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionResultOrganizerEntryResultOrganizer75(this, diagnostics, context);
 	}
 
 	/**
@@ -130,17 +126,17 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 */
 	@Override
 	public ResultsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultsSectionImpl

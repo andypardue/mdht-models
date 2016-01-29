@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,8 +59,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	@Override
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +99,7 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -114,11 +107,8 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcern(
-			this, diagnostics, context);
+	public boolean validateProblemSectionEntriesOptionalEntry248(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalEntry248(this, diagnostics, context);
 	}
 
 	/**
@@ -126,9 +116,8 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemConcernAct> getProblemConcerns() {
-		return ProblemSectionEntriesOptionalOperations.getProblemConcerns(this);
+	public boolean validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249(this, diagnostics, context);
 	}
 
 	/**
@@ -138,17 +127,17 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	 */
 	@Override
 	public ProblemSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemSectionEntriesOptionalImpl

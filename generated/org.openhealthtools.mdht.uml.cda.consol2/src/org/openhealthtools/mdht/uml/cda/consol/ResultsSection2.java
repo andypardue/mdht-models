@@ -23,7 +23,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSection2Title ResultsSection2Text ResultsSectionEntriesOptionalResultOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.3.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ResultsSection2NullFlavor' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSection2Title ResultsSection2Text ResultsSection2Entry1210 ResultsSection2ResultOrganizer2EntryResultOrganizer21211' templateId.root='2.16.840.1.113883.10.20.22.2.3.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ResultsSection2NullFlavor' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP' constraints.validation.query='ResultsSection2ResultOrganizer2EntryResultOrganizer21211'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolResultsSection2ResultOrganizer2Entry constraints.validation.error='ResultsSection2ResultOrganizer2EntryResultOrganizer21211'"
  * @generated
  */
 public interface ResultsSection2 extends ResultsSectionEntriesOptional2 {
@@ -66,16 +67,40 @@ public interface ResultsSection2 extends ResultsSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	@Override
-	public ResultsSection2 init();
+	boolean validateResultsSection2Entry1210(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::ResultOrganizer2)))'"
+	 * @generated
+	 */
+	boolean validateResultsSection2ResultOrganizer2EntryResultOrganizer21211(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public ResultsSection2 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	@Override
 	public ResultsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSection2

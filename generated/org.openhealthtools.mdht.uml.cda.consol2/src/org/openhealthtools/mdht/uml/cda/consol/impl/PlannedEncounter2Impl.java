@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedEncounter2Opera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Encounter2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,8 +60,7 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 */
 	public boolean validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedEncounter2Operations.validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(
-			this, diagnostics, context);
+		return PlannedEncounter2Operations.validatePlannedEncounter2ParticipantServiceDeliveryLocationTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -142,27 +139,26 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedEncounter2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedEncounter2Operations.validatePlannedEncounter2PriorityPreference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedEncounter2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedEncounter2Operations.validatePlannedEncounter2Indication2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlannedEncounter2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2AuthorParticipation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedEncounter2EntryRelationship964(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedEncounter2Operations.validatePlannedEncounter2EntryRelationship964(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedEncounter2EntryRelationship966(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedEncounter2Operations.validatePlannedEncounter2EntryRelationship966(this, diagnostics, context);
 	}
 
 	/**
@@ -181,9 +177,8 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
-		return PlannedEncounter2Operations.getServiceDeliveryLocations(this);
+	public boolean validatePlannedEncounter2PriorityPreferenceEntryRelationshipPriorityPreference965(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedEncounter2Operations.validatePlannedEncounter2PriorityPreferenceEntryRelationshipPriorityPreference965(this, diagnostics, context);
 	}
 
 	/**
@@ -191,18 +186,8 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PriorityPreference getPriorityPreference() {
-		return PlannedEncounter2Operations.getPriorityPreference(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Indication2> getIndication2s() {
-		return PlannedEncounter2Operations.getIndication2s(this);
+	public boolean validatePlannedEncounter2Indication2EntryRelationshipIndication2967(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedEncounter2Operations.validatePlannedEncounter2Indication2EntryRelationshipIndication2967(this, diagnostics, context);
 	}
 
 	/**
@@ -233,17 +218,17 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 */
 	@Override
 	public PlannedEncounter2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedEncounter2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedEncounter2Impl

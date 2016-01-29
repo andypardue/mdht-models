@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosis2
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Preoperative Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,9 +66,17 @@ public class PreoperativeDiagnosis2Impl extends PreoperativeDiagnosisImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return PreoperativeDiagnosis2Operations.getConsolProblemObservation2s(this);
+	public boolean validatePreoperativeDiagnosis2EntryRelationship1000(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosis2Operations.validatePreoperativeDiagnosis2EntryRelationship1000(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePreoperativeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation21001(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosis2Operations.validatePreoperativeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation21001(this, diagnostics, context);
 	}
 
 	/**
@@ -99,30 +105,18 @@ public class PreoperativeDiagnosis2Impl extends PreoperativeDiagnosisImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PreoperativeDiagnosis2Operations.validatePreoperativeDiagnosisProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PreoperativeDiagnosis2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PreoperativeDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreoperativeDiagnosis2Impl

@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,9 +85,8 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionVitalSignsOrganizer(this, diagnostics, context);
+	public boolean validateVitalSignsSectionEntry162(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateVitalSignsSectionEntry162(this, diagnostics, context);
 	}
 
 	/**
@@ -97,9 +94,8 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<VitalSignsOrganizer> getConsolVitalSignsOrganizers() {
-		return VitalSignsSectionOperations.getConsolVitalSignsOrganizers(this);
+	public boolean validateVitalSignsSectionVitalSignsOrganizerEntryVitalSignsOrganizer163(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionOperations.validateVitalSignsSectionVitalSignsOrganizerEntryVitalSignsOrganizer163(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +106,7 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -132,17 +127,17 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	 */
 	@Override
 	public VitalSignsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsSectionImpl

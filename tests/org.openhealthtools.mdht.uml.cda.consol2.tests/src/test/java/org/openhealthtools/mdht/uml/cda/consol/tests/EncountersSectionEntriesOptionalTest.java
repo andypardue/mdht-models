@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#validateEncountersSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#validateEncountersSectionEntriesOptionalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#validateEncountersSectionEntriesOptionalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#validateEncountersSectionEntriesOptionalEncounterActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Encounter Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#getEncounterActivitiess() <em>Get Encounter Activitiess</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#validateEncountersSectionEntriesOptionalEntry260(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Entry260</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional#validateEncountersSectionEntriesOptionalEncounterActivitiesEntryEncounterActivities261(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Entries Optional Encounter Activities Entry Encounter Activities261</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,7 +55,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	public void testValidateEncountersSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
 			"validateEncountersSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +89,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalCode() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalCodeTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +123,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalCodeP() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalCodePTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +157,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalTitle() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalTitleTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +194,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalText() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalTextTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalText",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalText", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,13 +226,15 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateEncountersSectionEntriesOptionalEncounterActivities() {
-		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalEncounterActivitiesTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalEncounterActivities",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateEncountersSectionEntriesOptionalEntry260() {
+		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalEntry260TestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
+			"validateEncountersSectionEntriesOptionalEntry260",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENTRY260__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,20 +245,19 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(EncountersSectionEntriesOptional target) {
 				target.init();
-				target.addEncounter(ConsolFactory.eINSTANCE.createEncounterActivities().init());
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(
+				return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEntry260(
 					(EncountersSectionEntriesOptional) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateEncountersSectionEntriesOptionalEncounterActivitiesTestCase.doValidationTest();
+		validateEncountersSectionEntriesOptionalEntry260TestCase.doValidationTest();
 	}
 
 	/**
@@ -263,11 +265,35 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetEncounterActivitiess() {
 
-		EncountersSectionEntriesOptional target = objectFactory.create();
-		target.getEncounterActivitiess();
+	public void testValidateEncountersSectionEntriesOptionalEncounterActivitiesEntryEncounterActivities261() {
+		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalEncounterActivitiesEntryEncounterActivities261TestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
+			"validateEncountersSectionEntriesOptionalEncounterActivitiesEntryEncounterActivities261",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES_ENTRY_ENCOUNTER_ACTIVITIES261__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(EncountersSectionEntriesOptional target) {
+
+			}
+
+			@Override
+			protected void updateToPass(EncountersSectionEntriesOptional target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivitiesEntryEncounterActivities261(
+					(EncountersSectionEntriesOptional) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateEncountersSectionEntriesOptionalEncounterActivitiesEntryEncounterActivities261TestCase.doValidationTest();
 	}
 
 	/**

@@ -13,8 +13,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -35,11 +37,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#getConsolAdmissionMedication2s() <em>Get Consol Admission Medication2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateAdmissionMedicationsSectionEntriesOptional2Entry1084(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Entry1084</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateAdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Admission Medication2 Entry Admission Medication21085</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedicationsSectionEntriesOptional2#validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Admission Medication</em>}</li>
  * </ul>
  * </p>
  *
@@ -57,48 +59,129 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolAdmissionMedication2s(AdmissionMedicationsSectionEntriesOptional2) <em>Get Consol Admission Medication2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAdmissionMedicationsSectionEntriesOptional2Entry1084(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Entry1084</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolAdmissionMedication2s(AdmissionMedicationsSectionEntriesOptional2)
+	 * @see #validateAdmissionMedicationsSectionEntriesOptional2Entry1084(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_ADMISSION_MEDICATION2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication2)).oclAsType(consol::AdmissionMedication2)";
+	protected static final String VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolAdmissionMedication2s(AdmissionMedicationsSectionEntriesOptional2) <em>Get Consol Admission Medication2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateAdmissionMedicationsSectionEntriesOptional2Entry1084(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Entry1084</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolAdmissionMedication2s(AdmissionMedicationsSectionEntriesOptional2)
+	 * @see #validateAdmissionMedicationsSectionEntriesOptional2Entry1084(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_ADMISSION_MEDICATION2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param admissionMedicationsSectionEntriesOptional2 The receiving '<em><b>Admission Medications Section Entries Optional2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<AdmissionMedication2> getConsolAdmissionMedication2s(
-			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2) {
-		if (GET_CONSOL_ADMISSION_MEDICATION2S__EOCL_QRY == null) {
+	
+	public static  boolean validateAdmissionMedicationsSectionEntriesOptional2Entry1084(AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-				ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2.getEAllOperations().get(62));
+			helper.setContext(ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
-				GET_CONSOL_ADMISSION_MEDICATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_ADMISSION_MEDICATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_ADMISSION_MEDICATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<AdmissionMedication2> result = (Collection<AdmissionMedication2>) query.evaluate(admissionMedicationsSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<AdmissionMedication2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(admissionMedicationsSectionEntriesOptional2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1084,
+						 ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2AdmissionMedicationsSectionEntriesOptional2Entry1084"),
+						 new Object [] { admissionMedicationsSectionEntriesOptional2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Admission Medication2 Entry Admission Medication21085</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medications Section Entries Optional2 Admission Medication2 Entry Admission Medication21085</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param admissionMedicationsSectionEntriesOptional2 The receiving '<em><b>Admission Medications Section Entries Optional2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateAdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085(AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(admissionMedicationsSectionEntriesOptional2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_ADMISSION_MEDICATION2_ENTRY_ADMISSION_MEDICATION21085,
+						 ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2AdmissionMedicationsSectionEntriesOptional2AdmissionMedication2EntryAdmissionMedication21085"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -136,28 +219,28 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
 			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
 				VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			admissionMedicationsSectionEntriesOptional2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(admissionMedicationsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
-					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
+						 new Object [] { admissionMedicationsSectionEntriesOptional2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -198,28 +281,28 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(
 			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
 				VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			admissionMedicationsSectionEntriesOptional2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(admissionMedicationsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"),
-					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCodeP"),
+						 new Object [] { admissionMedicationsSectionEntriesOptional2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -227,13 +310,11 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptionalCodeP",
-						passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptionalCodeP", passToken);
 				}
 				passToken.add(admissionMedicationsSectionEntriesOptional2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -247,9 +328,9 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code</em>}' invariant operation.
@@ -276,99 +357,34 @@ public class AdmissionMedicationsSectionEntriesOptional2Operations extends
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
 			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptionalCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(admissionMedicationsSectionEntriesOptional2)) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptionalCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(admissionMedicationsSectionEntriesOptional2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
 				VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			admissionMedicationsSectionEntriesOptional2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(admissionMedicationsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
-					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
+						 ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
+						 new Object [] { admissionMedicationsSectionEntriesOptional2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Admission Medication</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AdmissionMedication2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Admission Medication</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(AdmissionMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param admissionMedicationsSectionEntriesOptional2 The receiving '<em><b>Admission Medications Section Entries Optional2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-			AdmissionMedicationsSectionEntriesOptional2 admissionMedicationsSectionEntriesOptional2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2);
-			try {
-				VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			admissionMedicationsSectionEntriesOptional2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION,
-					ConsolPlugin.INSTANCE.getString("AdmissionMedicationsSectionEntriesOptional2HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication"),
-					new Object[] { admissionMedicationsSectionEntriesOptional2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

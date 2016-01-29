@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ComplicationsSection2O
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Complications Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 */
 	public boolean validateComplicationsSectionExplicitComplications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSectionExplicitComplications(
-			this, diagnostics, context);
+		return ComplicationsSection2Operations.validateComplicationsSectionExplicitComplications(this, diagnostics, context);
 	}
 
 	/**
@@ -69,9 +66,17 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return ComplicationsSection2Operations.getConsolProblemObservation2s(this);
+	public boolean validateComplicationsSection2Entry1058(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplicationsSection2Operations.validateComplicationsSection2Entry1058(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateComplicationsSection2ProblemObservation2EntryProblemObservation21059(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ComplicationsSection2Operations.validateComplicationsSection2ProblemObservation2EntryProblemObservation21059(this, diagnostics, context);
 	}
 
 	/**
@@ -110,30 +115,18 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateComplicationsSectionProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSectionProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ComplicationsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ComplicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ComplicationsSection2Impl

@@ -26,7 +26,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,7 +63,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	public void testValidateVitalSignObservationInterpretationCodeP() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationInterpretationCodePTestCase = new OperationsTestCase<VitalSignObservation2>(
 			"validateVitalSignObservationInterpretationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -92,13 +92,14 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservation2AuthorParticipation() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2AuthorParticipationTestCase = new OperationsTestCase<VitalSignObservation2>(
 			"validateVitalSignObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -109,7 +110,7 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(VitalSignObservation2 target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -126,7 +127,7 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* modified VALIDATE_VITAL_SIGN_OBSERVATION2_PQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP due to inline datatype OCL generation issue
 	*/
 	@Test
@@ -138,18 +139,12 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(VitalSignObservation2 target) {
-				target.init();
-				PQ value = DatatypesFactory.eINSTANCE.createPQ();
-				target.getValues().add(value);
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation2 target) {
-				PQ value = DatatypesFactory.eINSTANCE.createPQ();
-				value.setUnit("hasUnit");
-				for (int i = 0; i < target.getValues().size(); i++) {
-					target.getValues().set(i, value);
-				}
+				target.init();
 
 			}
 
@@ -167,15 +162,16 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateVitalSignObservationTextReference() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextReferenceTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -203,15 +199,16 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateVitalSignObservationReferenceValue() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,15 +239,17 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateVitalSignObservationTextReferenceValue() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
 			"validateVitalSignObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -320,8 +319,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignObservationEffectiveTime() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationEffectiveTimeTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -389,10 +388,11 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateVitalSignObservationText() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextTestCase = new OperationsTestCase<VitalSignObservation2>(
@@ -428,26 +428,24 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationInterpretationCode() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationInterpretationCodeTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignObservation2 target) {
-				target.init();
-				target.getInterpretationCodes().clear();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation2 target) {
-				target.getInterpretationCodes().set(
-					0, DatatypesFactory.eINSTANCE.createCE("A", "2.16.840.1.113883.5.83"));
+				target.init();
+
 			}
 
 			@Override
@@ -471,10 +469,11 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This association is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateVitalSignObservationAuthor() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationAuthorTestCase = new OperationsTestCase<VitalSignObservation2>(

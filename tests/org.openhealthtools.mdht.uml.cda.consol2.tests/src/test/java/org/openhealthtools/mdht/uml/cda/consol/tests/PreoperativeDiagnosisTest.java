@@ -15,13 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosisOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,8 +32,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#validatePreoperativeDiagnosisClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#validatePreoperativeDiagnosisMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#validatePreoperativeDiagnosisCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#validatePreoperativeDiagnosisProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Problem Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#getProblemObservations() <em>Get Problem Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#validatePreoperativeDiagnosisEntryRelationship522(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Entry Relationship522</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis#validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Problem Observation Entry Relationship Problem Observation523</em>}</li>
  * </ul>
  * </p>
  *
@@ -115,7 +112,7 @@ public class PreoperativeDiagnosisTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePreoperativeDiagnosisCode() {
@@ -132,7 +129,7 @@ public class PreoperativeDiagnosisTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PreoperativeDiagnosis target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("10219-4", "2.16.840.1.113883.6.1"));
+
 			}
 
 			@Override
@@ -145,6 +142,78 @@ public class PreoperativeDiagnosisTest extends CDAValidationTest {
 		};
 
 		validatePreoperativeDiagnosisCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePreoperativeDiagnosisEntryRelationship522() {
+		OperationsTestCase<PreoperativeDiagnosis> validatePreoperativeDiagnosisEntryRelationship522TestCase = new OperationsTestCase<PreoperativeDiagnosis>(
+			"validatePreoperativeDiagnosisEntryRelationship522",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_ENTRY_RELATIONSHIP522__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PreoperativeDiagnosis target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PreoperativeDiagnosis target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisEntryRelationship522(
+					(PreoperativeDiagnosis) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePreoperativeDiagnosisEntryRelationship522TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523() {
+		OperationsTestCase<PreoperativeDiagnosis> validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523TestCase = new OperationsTestCase<PreoperativeDiagnosis>(
+			"validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION523__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PreoperativeDiagnosis target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PreoperativeDiagnosis target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523(
+					(PreoperativeDiagnosis) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523TestCase.doValidationTest();
 	}
 
 	/**
@@ -179,56 +248,6 @@ public class PreoperativeDiagnosisTest extends CDAValidationTest {
 		};
 
 		validatePreoperativeDiagnosisMoodCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidatePreoperativeDiagnosisProblemObservation() {
-		OperationsTestCase<PreoperativeDiagnosis> validatePreoperativeDiagnosisProblemObservationTestCase = new OperationsTestCase<PreoperativeDiagnosis>(
-			"validatePreoperativeDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PreoperativeDiagnosis target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PreoperativeDiagnosis target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createProblemObservation().init());
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-
-				}
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
-					(PreoperativeDiagnosis) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePreoperativeDiagnosisProblemObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProblemObservations() {
-
-		PreoperativeDiagnosis target = objectFactory.create();
-		target.getProblemObservations();
-
 	}
 
 	/**

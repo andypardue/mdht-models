@@ -17,16 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActivity2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,9 +34,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2InversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#getInstruction2() <em>Get Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#getConsolProductInstance() <em>Get Consol Product Instance</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2EntryRelationship956(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Entry Relationship956</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Entry Relationship Instruction2957</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Product Instance</em>}</li>
@@ -54,28 +49,25 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNonMedicinalSupplyActivity2Instruction2InversionInd() {
 		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivity2Instruction2InversionIndTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
 			"validateNonMedicinalSupplyActivity2Instruction2InversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NonMedicinalSupplyActivity2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setInversionInd(true);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -92,13 +84,14 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNonMedicinalSupplyActivityStatusCodeP() {
 		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivityStatusCodePTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
 			"validateNonMedicinalSupplyActivityStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -109,8 +102,7 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
 				target.init();
-				CS cs = DatatypesFactory.eINSTANCE.createCS();
-				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -127,38 +119,38 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateNonMedicinalSupplyActivity2Instruction2() {
-		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivity2Instruction2TestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
-			"validateNonMedicinalSupplyActivity2Instruction2",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNonMedicinalSupplyActivity2EntryRelationship956() {
+		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivity2EntryRelationship956TestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
+			"validateNonMedicinalSupplyActivity2EntryRelationship956",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NonMedicinalSupplyActivity2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-				target.getEntryRelationships().add(er);
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2(
+				return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2EntryRelationship956(
 					(NonMedicinalSupplyActivity2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNonMedicinalSupplyActivity2Instruction2TestCase.doValidationTest();
+		validateNonMedicinalSupplyActivity2EntryRelationship956TestCase.doValidationTest();
 	}
 
 	/**
@@ -166,23 +158,35 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInstruction2() {
 
-		NonMedicinalSupplyActivity2 target = objectFactory.create();
-		target.getInstruction2();
+	public void testValidateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957() {
+		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957TestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
+			"validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
-	}
+			@Override
+			protected void updateToFail(NonMedicinalSupplyActivity2 target) {
 
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolProductInstance() {
+			}
 
-		NonMedicinalSupplyActivity2 target = objectFactory.create();
-		target.getConsolProductInstance();
+			@Override
+			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
+				target.init();
 
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(
+					(NonMedicinalSupplyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957TestCase.doValidationTest();
 	}
 
 	/**
@@ -192,8 +196,8 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 	@Test
 	public void testValidateNonMedicinalSupplyActivityTemplateId() {
 		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivityTemplateIdTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
-			"validateNonMedicinalSupplyActivityTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -221,25 +225,27 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNonMedicinalSupplyActivityStatusCode() {
 		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivityStatusCodeTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
-			"validateNonMedicinalSupplyActivityStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NonMedicinalSupplyActivity2 target) {
-				target.init();
-				CS cs = DatatypesFactory.eINSTANCE.createCS();
-				target.setStatusCode(cs);
+
 			}
 
 			@Override
 			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
-				target.getStatusCode().setCode("completed");
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -263,13 +269,14 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNonMedicinalSupplyActivityProductInstance() {
 		OperationsTestCase<NonMedicinalSupplyActivity2> validateNonMedicinalSupplyActivityProductInstanceTestCase = new OperationsTestCase<NonMedicinalSupplyActivity2>(
 			"validateNonMedicinalSupplyActivityProductInstance",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -280,9 +287,7 @@ public class NonMedicinalSupplyActivity2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NonMedicinalSupplyActivity2 target) {
 				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-				p2.setParticipantRole(ConsolFactory.eINSTANCE.createProductInstance());
-				target.getParticipants().add(p2);
+
 			}
 
 			@Override

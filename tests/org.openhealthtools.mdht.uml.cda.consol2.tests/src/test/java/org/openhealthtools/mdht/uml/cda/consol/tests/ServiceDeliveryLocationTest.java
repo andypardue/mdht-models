@@ -15,14 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ServiceDeliveryLocationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,25 +46,25 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationHasPlayingEntity() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationHasPlayingEntityTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
 			"validateServiceDeliveryLocationHasPlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ServiceDeliveryLocation target) {
+				target.init();
 
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				target.setPlayingEntity(pe);
 			}
 
 			@Override
@@ -85,30 +81,25 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationHasPlayingEntityClassCode() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationHasPlayingEntityClassCodeTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
 			"validateServiceDeliveryLocationHasPlayingEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
-				target.init();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
 
-				target.setPlayingEntity(pe);
 			}
 
 			@Override
 			protected void updateToPass(ServiceDeliveryLocation target) {
+				target.init();
 
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				pe.setClassCode(EntityClassRoot.PLC);
-				target.setPlayingEntity(pe);
 			}
 
 			@Override
@@ -125,27 +116,25 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationHasPlayingEntityName() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationHasPlayingEntityNameTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
 			"validateServiceDeliveryLocationHasPlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
-				target.init();
-				target.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
 
 			}
 
 			@Override
 			protected void updateToPass(ServiceDeliveryLocation target) {
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pe.getNames().add(DatatypesFactory.eINSTANCE.createPN());
-				target.setPlayingEntity(pe);
+				target.init();
+
 			}
 
 			@Override
@@ -167,8 +156,8 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	@Test
 	public void testValidateServiceDeliveryLocationTemplateId() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationTemplateIdTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
-			"validateServiceDeliveryLocationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateServiceDeliveryLocationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -196,21 +185,14 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationClassCode() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationClassCodeTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
-			"validateServiceDeliveryLocationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateServiceDeliveryLocationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// we cannot violate the constraint because it only checks that the mood
-				// code is non-null and of type RoleClassRoot but EMF and Java enforce
-				// this
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
@@ -237,7 +219,7 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationCode() {
@@ -248,12 +230,12 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ServiceDeliveryLocation target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("", "2.16.840.1.113883.6.259"));
+				target.init();
 
 			}
 
@@ -271,7 +253,7 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationAddr() {
@@ -282,13 +264,13 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ServiceDeliveryLocation target) {
+				target.init();
 
-				target.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
 			}
 
 			@Override
@@ -305,7 +287,7 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateServiceDeliveryLocationTelecom() {
@@ -316,12 +298,13 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ServiceDeliveryLocation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ServiceDeliveryLocation target) {
-				target.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+				target.init();
+
 			}
 
 			@Override

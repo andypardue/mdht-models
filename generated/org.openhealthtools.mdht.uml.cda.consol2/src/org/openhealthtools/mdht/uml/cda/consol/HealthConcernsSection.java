@@ -26,7 +26,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthConcernsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthConcernsSectionTemplateId HealthConcernsSectionCode HealthConcernsSectionCodeP HealthConcernsSectionTitle HealthConcernsSectionText HealthConcernsSectionHealthConcernAct' templateId.root='2.16.840.1.113883.10.20.22.2.58' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='HealthConcernsSectionNullFlavor HealthConcernsSectionRiskConcernAct' code.code='75310-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Health concerns document' constraints.validation.warning='HealthConcernsSectionHealthStatusObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthConcernsSectionTemplateId HealthConcernsSectionCode HealthConcernsSectionCodeP HealthConcernsSectionTitle HealthConcernsSectionText HealthConcernsSectionEntry748 HealthConcernsSectionEntry750 HealthConcernsSectionEntry752 HealthConcernsSectionHealthConcernActEntryHealthConcernAct751' templateId.root='2.16.840.1.113883.10.20.22.2.58' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='HealthConcernsSectionNullFlavor HealthConcernsSectionRiskConcernActEntryRiskConcernAct753' code.code='75310-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Health concerns document' constraints.validation.warning='HealthConcernsSectionHealthStatusObservation2EntryHealthStatusObservation2749' constraints.validation.query='HealthConcernsSectionHealthStatusObservation2EntryHealthStatusObservation2749 HealthConcernsSectionHealthConcernActEntryHealthConcernAct751 HealthConcernsSectionRiskConcernActEntryRiskConcernAct753'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHealthConcernsSectionHealthStatusObservation2Entry constraints.validation.warning='HealthConcernsSectionHealthStatusObservation2EntryHealthStatusObservation2749'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHealthConcernsSectionHealthConcernActEntry constraints.validation.error='HealthConcernsSectionHealthConcernActEntryHealthConcernAct751'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHealthConcernsSectionRiskConcernActEntry constraints.validation.info='HealthConcernsSectionRiskConcernActEntryRiskConcernAct753'"
  * @generated
  */
 public interface HealthConcernsSection extends Section {
@@ -61,7 +64,7 @@ public interface HealthConcernsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'75310-3\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'75310-3\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateHealthConcernsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -109,10 +112,10 @@ public interface HealthConcernsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HealthConcernAct))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateHealthConcernsSectionHealthConcernAct(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHealthConcernsSectionEntry748(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -121,11 +124,10 @@ public interface HealthConcernsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::HealthStatusObservation2))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateHealthConcernsSectionHealthStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateHealthConcernsSectionEntry750(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,37 +136,46 @@ public interface HealthConcernsSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::RiskConcernAct))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateHealthConcernsSectionRiskConcernAct(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHealthConcernsSectionEntry752(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HealthConcernAct)).oclAsType(consol::HealthConcernAct)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation2)))'"
 	 * @generated
 	 */
-	EList<HealthConcernAct> getHealthConcernActs();
+	boolean validateHealthConcernsSectionHealthStatusObservation2EntryHealthStatusObservation2749(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation2)).oclAsType(consol::HealthStatusObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HealthConcernAct)))'"
 	 * @generated
 	 */
-	EList<HealthStatusObservation2> getHealthStatusObservation2s();
+	boolean validateHealthConcernsSectionHealthConcernActEntryHealthConcernAct751(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::RiskConcernAct)).oclAsType(consol::RiskConcernAct)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::RiskConcernAct)))'"
 	 * @generated
 	 */
-	EList<RiskConcernAct> getRiskConcernActs();
+	boolean validateHealthConcernsSectionRiskConcernActEntryRiskConcernAct753(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,9 +185,9 @@ public interface HealthConcernsSection extends Section {
 	public HealthConcernsSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HealthConcernsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthConcernsSection

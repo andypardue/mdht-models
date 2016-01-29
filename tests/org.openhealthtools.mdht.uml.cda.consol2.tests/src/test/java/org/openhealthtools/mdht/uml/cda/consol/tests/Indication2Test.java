@@ -52,10 +52,11 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateIndicationProblemIndication() {
 		OperationsTestCase<Indication2> validateIndicationProblemIndicationTestCase = new OperationsTestCase<Indication2>(
@@ -88,10 +89,11 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateIndicationCodeNullFlavorValue() {
 		OperationsTestCase<Indication2> validateIndicationCodeNullFlavorValueTestCase = new OperationsTestCase<Indication2>(
@@ -127,10 +129,11 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateIndicationCodeNullFlavor() {
 		OperationsTestCase<Indication2> validateIndicationCodeNullFlavorTestCase = new OperationsTestCase<Indication2>(
@@ -268,7 +271,7 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationId() {
@@ -278,13 +281,13 @@ public class Indication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(Indication2 target) {
-				target.init();
 
 			}
 
 			@Override
 			protected void updateToPass(Indication2 target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -300,22 +303,24 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationValueP() {
 		OperationsTestCase<Indication2> validateIndicationValuePTestCase = new OperationsTestCase<Indication2>(
 			"validateIndicationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(Indication2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(Indication2 target) {
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -331,7 +336,7 @@ public class Indication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateIndicationValue() {
@@ -341,15 +346,16 @@ public class Indication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(Indication2 target) {
-				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(Indication2 target) {
-				for (int i = 0; i < target.getValues().size(); i++) {
-					target.getValues().set(i, DatatypesFactory.eINSTANCE.createCD("notChecked", SNOMEDCT_ID));
-				}
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override

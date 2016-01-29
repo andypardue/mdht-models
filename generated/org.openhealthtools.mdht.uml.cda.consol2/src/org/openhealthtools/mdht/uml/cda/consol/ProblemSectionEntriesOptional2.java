@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSectionEntriesOptional2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.5' templateId.extension='2015-08-01' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.dependOn.ProblemSectionEntriesOptionalCode='ProblemSectionEntriesOptionalCodeP' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcern' constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSectionEntriesOptional2Entry1180 ProblemSectionEntriesOptional2Entry1182' templateId.root='2.16.840.1.113883.10.20.22.2.5' templateId.extension='2015-08-01' code.code='11450-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Problem List' constraints.validation.dependOn.ProblemSectionEntriesOptionalCode='ProblemSectionEntriesOptionalCodeP' constraints.validation.warning='ProblemSectionEntriesOptional2ProblemConcernAct2EntryProblemConcernAct21181' constraints.validation.query='ProblemSectionEntriesOptional2ProblemConcernAct2EntryProblemConcernAct21181 ProblemSectionEntriesOptional2HealthStatusObservation2EntryHealthStatusObservation21183' constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2EntryHealthStatusObservation21183'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemSectionEntriesOptional2ProblemConcernAct2Entry constraints.validation.warning='ProblemSectionEntriesOptional2ProblemConcernAct2EntryProblemConcernAct21181'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemSectionEntriesOptional2HealthStatusObservation2Entry constraints.validation.info='ProblemSectionEntriesOptional2HealthStatusObservation2EntryHealthStatusObservation21183'"
  * @generated
  */
 public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOptional {
@@ -35,29 +37,46 @@ public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOpt
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::HealthStatusObservation2))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateProblemSectionEntriesOptional2HealthStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProblemSectionEntriesOptional2Entry1180(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct2)).oclAsType(consol::ProblemConcernAct2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	EList<ProblemConcernAct2> getConsolProblemConcernAct2s();
+	boolean validateProblemSectionEntriesOptional2Entry1182(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation2))->asSequence()->any(true).oclAsType(consol::HealthStatusObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProblemConcernAct2)))'"
 	 * @generated
 	 */
-	HealthStatusObservation2 getHealthStatusObservation2();
+	boolean validateProblemSectionEntriesOptional2ProblemConcernAct2EntryProblemConcernAct21181(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation2)))'"
+	 * @generated
+	 */
+	boolean validateProblemSectionEntriesOptional2HealthStatusObservation2EntryHealthStatusObservation21183(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,10 +87,10 @@ public interface ProblemSectionEntriesOptional2 extends ProblemSectionEntriesOpt
 	public ProblemSectionEntriesOptional2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSectionEntriesOptional2

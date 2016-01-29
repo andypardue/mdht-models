@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Preoperative Diagnosis Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCode(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +78,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCodeP(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +88,25 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionText(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePreoperativeDiagnosisSectionEntry302(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionEntry302(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosisEntryPreoperativeDiagnosis303(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosisEntryPreoperativeDiagnosis303(this, diagnostics, context);
 	}
 
 	/**
@@ -104,30 +116,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTitle(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PreoperativeDiagnosis getPreoperativeDiagnosis() {
-		return PreoperativeDiagnosisSectionOperations.getPreoperativeDiagnosis(this);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -137,17 +126,17 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	@Override
 	public PreoperativeDiagnosisSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PreoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreoperativeDiagnosisSectionImpl

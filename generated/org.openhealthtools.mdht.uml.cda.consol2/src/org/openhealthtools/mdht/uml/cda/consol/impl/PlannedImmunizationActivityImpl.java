@@ -32,8 +32,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Immunization Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,8 +63,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityTemplateId(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +73,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityClassCode(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +83,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCodeP(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +93,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCode(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -120,8 +114,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityStatusCode(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +125,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityStatusCodeP(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -144,8 +136,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityEffectiveTime(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +147,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityRepeatNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRepeatNumber(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRepeatNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -167,8 +157,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityRouteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCodeP(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -178,8 +167,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCode(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +178,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityApproachSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCode(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -201,8 +188,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityApproachSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCodeP(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityApproachSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +199,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityDoseQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityDoseQuantity(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityDoseQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -224,8 +209,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPerformer(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -236,41 +220,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	@Override
 	public boolean validatePlannedImmunizationActivityAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityAuthorParticipation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedImmunizationActivityPriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPriorityPreference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedImmunizationActivityIndication2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIndication2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedImmunizationActivityInstruction2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityInstruction2(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -280,8 +230,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityPrecondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPrecondition(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPrecondition(this, diagnostics, context);
 	}
 
 	/**
@@ -291,8 +240,34 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityConsumable(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityConsumable(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityConsumable(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityEntryRelationship730(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityEntryRelationship730(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityEntryRelationship732(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityEntryRelationship732(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedImmunizationActivityEntryRelationship734(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityEntryRelationship734(this, diagnostics, context);
 	}
 
 	/**
@@ -302,8 +277,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIVLPQUnit(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIVLPQUnit(this, diagnostics, context);
 	}
 
 	/**
@@ -313,8 +287,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2(this, diagnostics, context);
 	}
 
 	/**
@@ -324,8 +297,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPreconditionTypeCode(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPreconditionTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -335,8 +307,7 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	public boolean validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(
-			this, diagnostics, context);
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2(this, diagnostics, context);
 	}
 
 	/**
@@ -344,8 +315,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferences() {
-		return PlannedImmunizationActivityOperations.getPriorityPreferences(this);
+	public boolean validatePlannedImmunizationActivityPriorityPreferenceEntryRelationshipPriorityPreference731(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPriorityPreferenceEntryRelationshipPriorityPreference731(this, diagnostics, context);
 	}
 
 	/**
@@ -353,8 +324,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Indication2> getIndication2s() {
-		return PlannedImmunizationActivityOperations.getIndication2s(this);
+	public boolean validatePlannedImmunizationActivityIndication2EntryRelationshipIndication2733(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIndication2EntryRelationshipIndication2733(this, diagnostics, context);
 	}
 
 	/**
@@ -362,8 +333,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Instruction2> getInstruction2s() {
-		return PlannedImmunizationActivityOperations.getInstruction2s(this);
+	public boolean validatePlannedImmunizationActivityInstruction2EntryRelationshipInstruction2735(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityInstruction2EntryRelationshipInstruction2735(this, diagnostics, context);
 	}
 
 	/**
@@ -373,17 +344,17 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 */
 	@Override
 	public PlannedImmunizationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedImmunizationActivityImpl

@@ -40,8 +40,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ContinuityOfCareDocume
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Continuity Of Care Document</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -92,8 +90,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 */
 	@Override
 	public boolean validateContinuityOfCareDocumentLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +101,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOf(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
@@ -123,119 +119,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentAdvanceDirectivesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAdvanceDirectivesSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentAllergiesSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAllergiesSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentEncountersSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentEncountersSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentPayersSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPayersSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentMedicationsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicationsSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentPlanOfCareSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentPlanOfCareSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentProceduresSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProceduresSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentFamilyHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFamilyHistorySection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentSocialHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentSocialHistorySection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentVitalSignsSectionEntriesOptional(
-			this, diagnostics, context);
+	public boolean validateContinuityOfCareDocumentComponent26(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponent26(this, diagnostics, context);
 	}
 
 	/**
@@ -246,8 +131,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -258,8 +142,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow(this, diagnostics, context);
 	}
 
 	/**
@@ -270,8 +153,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(this, diagnostics, context);
 	}
 
 	/**
@@ -282,8 +164,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -294,8 +175,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -306,8 +186,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -318,8 +197,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -330,8 +208,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -342,8 +219,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -354,8 +230,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEventPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -366,8 +241,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentDocumentationOfServiceEvent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEvent(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentDocumentationOfServiceEvent(this, diagnostics, context);
 	}
 
 	/**
@@ -378,8 +252,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -390,8 +263,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasRepresentOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -402,8 +274,7 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	@Override
 	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthor(
-			this, diagnostics, context);
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -411,11 +282,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentResultsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentResultsSection(
-			this, diagnostics, context);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentAllergiesSection29(this, diagnostics, context);
 	}
 
 	/**
@@ -423,11 +291,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentMedicalEquipmentSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentMedicalEquipmentSection(
-			this, diagnostics, context);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentMedicationsSection31(this, diagnostics, context);
 	}
 
 	/**
@@ -435,11 +300,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentFunctionalStatusSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentFunctionalStatusSection(
-			this, diagnostics, context);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentProblemSection33(this, diagnostics, context);
 	}
 
 	/**
@@ -447,11 +309,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentImmunizationsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentImmunizationsSectionEntriesOptional(
-			this, diagnostics, context);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentProceduresSection35(this, diagnostics, context);
 	}
 
 	/**
@@ -459,11 +318,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateContinuityOfCareDocumentProblemSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentProblemSection(
-			this, diagnostics, context);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentResultsSection37(this, diagnostics, context);
 	}
 
 	/**
@@ -471,9 +327,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AdvanceDirectivesSection getAdvanceDirectivesSection() {
-		return ContinuityOfCareDocumentOperations.getAdvanceDirectivesSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentAdvanceDirectivesSection39(this, diagnostics, context);
 	}
 
 	/**
@@ -481,9 +336,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AllergiesSection getAllergiesSection() {
-		return ContinuityOfCareDocumentOperations.getAllergiesSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentEncountersSection41(this, diagnostics, context);
 	}
 
 	/**
@@ -491,9 +345,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EncountersSection getEncountersSection() {
-		return ContinuityOfCareDocumentOperations.getEncountersSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentFamilyHistorySection43(this, diagnostics, context);
 	}
 
 	/**
@@ -501,9 +354,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PayersSection getPayersSection() {
-		return ContinuityOfCareDocumentOperations.getPayersSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentFunctionalStatusSection45(this, diagnostics, context);
 	}
 
 	/**
@@ -511,9 +363,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public MedicationsSection getMedicationsSection() {
-		return ContinuityOfCareDocumentOperations.getMedicationsSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentImmunizationsSectionEntriesOptional47(this, diagnostics, context);
 	}
 
 	/**
@@ -521,9 +372,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PlanOfCareSection getPlanOfCareSection() {
-		return ContinuityOfCareDocumentOperations.getPlanOfCareSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentMedicalEquipmentSection49(this, diagnostics, context);
 	}
 
 	/**
@@ -531,9 +381,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProceduresSection getProceduresSection() {
-		return ContinuityOfCareDocumentOperations.getProceduresSection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentPayersSection51(this, diagnostics, context);
 	}
 
 	/**
@@ -541,9 +390,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public FamilyHistorySection getFamilyHistorySection() {
-		return ContinuityOfCareDocumentOperations.getFamilyHistorySection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentPlanOfCareSection53(this, diagnostics, context);
 	}
 
 	/**
@@ -551,9 +399,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SocialHistorySection getSocialHistorySection() {
-		return ContinuityOfCareDocumentOperations.getSocialHistorySection(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentSocialHistorySection55(this, diagnostics, context);
 	}
 
 	/**
@@ -561,9 +408,152 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
-		return ContinuityOfCareDocumentOperations.getVitalSignsSectionEntriesOptional(this);
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyComponentVitalSignsSectionEntriesOptional57(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyAllergiesSection28(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyMedicationsSection30(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyProblemSection32(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyProblemSection32(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyProceduresSection34(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyProceduresSection34(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyResultsSection36(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyResultsSection36(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyAdvanceDirectivesSection38(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyEncountersSection40(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyEncountersSection40(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyFamilyHistorySection42(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyFunctionalStatusSection44(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyImmunizationsSectionEntriesOptional46(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyMedicalEquipmentSection48(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyPayersSection50(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyPayersSection50(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyPlanOfCareSection52(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodySocialHistorySection54(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBodyVitalSignsSectionEntriesOptional56(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateContinuityOfCareDocumentComponentStructuredBody27(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentComponentStructuredBody27(this, diagnostics, context);
 	}
 
 	/**
@@ -582,68 +572,18 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * @generated
 	 */
 	@Override
-	public ResultsSection getResultsSection() {
-		return ContinuityOfCareDocumentOperations.getResultsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MedicalEquipmentSection getMedicalEquipmentSection() {
-		return ContinuityOfCareDocumentOperations.getMedicalEquipmentSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FunctionalStatusSection getFunctionalStatusSection() {
-		return ContinuityOfCareDocumentOperations.getFunctionalStatusSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional() {
-		return ContinuityOfCareDocumentOperations.getImmunizationsSectionEntriesOptional(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProblemSection getProblemSection() {
-		return ContinuityOfCareDocumentOperations.getProblemSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ContinuityOfCareDocument init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ContinuityOfCareDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ContinuityOfCareDocumentImpl

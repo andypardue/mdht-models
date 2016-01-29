@@ -17,8 +17,6 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component4;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizer2Operations;
@@ -39,11 +37,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#getConsolResultObservation2s() <em>Get Consol Result Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer2 Result Observation2 Entry Relationship Result Observation21043</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerClassCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Class Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2#validateResultOrganizerResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -91,13 +88,13 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizer2AuthorParticipation() {
 		OperationsTestCase<ResultOrganizer2> validateResultOrganizer2AuthorParticipationTestCase = new OperationsTestCase<ResultOrganizer2>(
-			"validateResultOrganizer2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultOrganizer2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -108,7 +105,7 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultOrganizer2 target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -125,7 +122,7 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizer2IVLTSLow() {
@@ -136,14 +133,13 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultOrganizer2 target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultOrganizer2 target) {
-				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -160,7 +156,7 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizer2IVLTSHigh() {
@@ -171,14 +167,13 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultOrganizer2 target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultOrganizer2 target) {
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -198,16 +193,40 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolResultObservation2s() {
 
-		ResultOrganizer2 target = objectFactory.create();
-		target.getConsolResultObservation2s();
+	public void testValidateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043() {
+		OperationsTestCase<ResultOrganizer2> validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043TestCase = new OperationsTestCase<ResultOrganizer2>(
+			"validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER2_RESULT_OBSERVATION2_ENTRY_RELATIONSHIP_RESULT_OBSERVATION21043__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ResultOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultOrganizer2Operations.validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043(
+					(ResultOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateResultOrganizerCodeValue() {
@@ -218,29 +237,15 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultOrganizer2 target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				// setting invalid codeSystem to cause failure
-				code.setCodeSystem(BAD_CODESYSTEM_ID);
-				target.setCode(code);
+
 			}
 
-			private final String cpt4Cs = "2.16.840.1.113883.6.12";
-
-			private final String[] valCodeSystems = { cpt4Cs, CDAValidationTest.SNOMEDCT_ID, CDAValidationTest.LOINC_ID };
-
 			@Override
-			public void addPassTests() {
-				for (final String cs : valCodeSystems) {
-					addPassTest(new PassTest() {
-						@Override
-						public void updateToPass(ResultOrganizer2 target) {
-							target.init();
-							target.setCode(DatatypesFactory.eINSTANCE.createCD());
-							target.getCode().setCodeSystem(cs);
-						}
-					});
-				}
+			protected void updateToPass(ResultOrganizer2 target) {
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createCD();
+
 			}
 
 			@Override
@@ -257,10 +262,11 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultOrganizerClassCodeValue() {
 		OperationsTestCase<ResultOrganizer2> validateResultOrganizerClassCodeValueTestCase = new OperationsTestCase<ResultOrganizer2>(
@@ -275,6 +281,9 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(ResultOrganizer2 target) {
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -322,42 +331,6 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateResultOrganizerTemplateIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateResultOrganizerResultObservation() {
-		OperationsTestCase<ResultOrganizer2> validateResultOrganizerResultObservationTestCase = new OperationsTestCase<ResultOrganizer2>(
-			"validateResultOrganizerResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultOrganizer2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultOrganizer2 target) {
-				target.init();
-				Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-				comp.setObservation(ConsolFactory.eINSTANCE.createResultObservation2().init());
-				target.getComponents().add(comp);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultOrganizer2Operations.validateResultOrganizerResultObservation(
-					(ResultOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultOrganizerResultObservationTestCase.doValidationTest();
 	}
 
 	/**

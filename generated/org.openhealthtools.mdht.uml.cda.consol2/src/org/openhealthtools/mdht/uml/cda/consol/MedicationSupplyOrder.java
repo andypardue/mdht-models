@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationSupplyOrder()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderContainsMedicationOrImmunization MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderId MedicationSupplyOrderStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.17' classCode='SPLY' moodCode='INT' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderRepeatNumber MedicationSupplyOrderQuantity' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderContainsMedicationOrImmunization MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderId MedicationSupplyOrderStatusCode MedicationSupplyOrderEntryRelationship278' templateId.root='2.16.840.1.113883.10.20.22.4.17' classCode='SPLY' moodCode='INT' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderRepeatNumber MedicationSupplyOrderQuantity' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructionsEntryRelationshipInstructions279' constraints.validation.query='MedicationSupplyOrderInstructionsEntryRelationshipInstructions279'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationSupplyOrderInstructionsEntryRelationship constraints.validation.info='MedicationSupplyOrderInstructionsEntryRelationshipInstructions279'"
  * @generated
  */
 public interface MedicationSupplyOrder extends Supply {
@@ -98,7 +99,7 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (self.effectiveTime->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateMedicationSupplyOrderEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -158,7 +159,7 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateMedicationSupplyOrderId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -182,19 +183,22 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instructions) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationSupplyOrderEntryRelationship278(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)))'"
 	 * @generated
 	 */
-	Instructions getInstructions();
+	boolean validateMedicationSupplyOrderInstructionsEntryRelationshipInstructions279(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,9 +208,9 @@ public interface MedicationSupplyOrder extends Supply {
 	public MedicationSupplyOrder init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSupplyOrder

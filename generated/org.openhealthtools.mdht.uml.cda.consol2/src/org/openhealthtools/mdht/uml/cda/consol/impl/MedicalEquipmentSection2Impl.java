@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentSectio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medical Equipment Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,11 +58,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2MedicalEquipmentOrganizer(
-			this, diagnostics, context);
+	public boolean validateMedicalEquipmentSection2Entry1100(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2Entry1100(this, diagnostics, context);
 	}
 
 	/**
@@ -72,11 +67,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicalEquipmentSection2ProcedureActivityProcedure2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2ProcedureActivityProcedure2(
-			this, diagnostics, context);
+	public boolean validateMedicalEquipmentSection2Entry1102(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2Entry1102(this, diagnostics, context);
 	}
 
 	/**
@@ -84,9 +76,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<NonMedicinalSupplyActivity2> getConsolNonMedicinalSupplyActivity2s() {
-		return MedicalEquipmentSection2Operations.getConsolNonMedicinalSupplyActivity2s(this);
+	public boolean validateMedicalEquipmentSection2Entry1104(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2Entry1104(this, diagnostics, context);
 	}
 
 	/**
@@ -94,9 +85,8 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicalEquipmentOrganizer> getMedicalEquipmentOrganizers() {
-		return MedicalEquipmentSection2Operations.getMedicalEquipmentOrganizers(this);
+	public boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(this, diagnostics, context);
 	}
 
 	/**
@@ -104,9 +94,17 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
-		return MedicalEquipmentSection2Operations.getProcedureActivityProcedure2s(this);
+	public boolean validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(this, diagnostics, context);
 	}
 
 	/**
@@ -145,30 +143,18 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MedicalEquipmentSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicalEquipmentSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicalEquipmentSection2Impl

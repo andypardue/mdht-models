@@ -31,8 +31,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Supply2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -63,8 +61,7 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 */
 	public boolean validatePlannedSupply2MedInfoXorImmunXorProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2MedInfoXorImmunXorProductInstance(
-			this, diagnostics, context);
+		return PlannedSupply2Operations.validatePlannedSupply2MedInfoXorImmunXorProductInstance(this, diagnostics, context);
 	}
 
 	/**
@@ -162,45 +159,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedSupply2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2PriorityPreference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedSupply2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2Indication2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedSupply2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2Instruction2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedSupply2PlannedCoverage(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2PlannedCoverage(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validatePlannedSupply2ProductRecommended(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2ProductRecommended(this, diagnostics, context);
 	}
@@ -210,10 +168,45 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedSupply2EntryRelationship990(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2EntryRelationship990(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedSupply2EntryRelationship992(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2EntryRelationship992(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedSupply2EntryRelationship994(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2EntryRelationship994(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedSupply2EntryRelationship996(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2EntryRelationship996(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
-			this, diagnostics, context);
+		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(this, diagnostics, context);
 	}
 
 	/**
@@ -231,9 +224,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProductInstance getProductInstance() {
-		return PlannedSupply2Operations.getProductInstance(this);
+	public boolean validatePlannedSupply2PriorityPreferenceEntryRelationshipPriorityPreference991(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2PriorityPreferenceEntryRelationshipPriorityPreference991(this, diagnostics, context);
 	}
 
 	/**
@@ -241,8 +233,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferences() {
-		return PlannedSupply2Operations.getPriorityPreferences(this);
+	public boolean validatePlannedSupply2Indication2EntryRelationshipIndication2993(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2Indication2EntryRelationshipIndication2993(this, diagnostics, context);
 	}
 
 	/**
@@ -250,9 +242,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getIndication2s() {
-		return PlannedSupply2Operations.getIndication2s(this);
+	public boolean validatePlannedSupply2Instruction2EntryRelationshipInstruction2995(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2Instruction2EntryRelationshipInstruction2995(this, diagnostics, context);
 	}
 
 	/**
@@ -260,19 +251,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Instruction2> getInstruction2s() {
-		return PlannedSupply2Operations.getInstruction2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<PlannedCoverage> getPlannedCoverages() {
-		return PlannedSupply2Operations.getPlannedCoverages(this);
+	public boolean validatePlannedSupply2PlannedCoverageEntryRelationshipPlannedCoverage997(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedSupply2Operations.validatePlannedSupply2PlannedCoverageEntryRelationshipPlannedCoverage997(this, diagnostics, context);
 	}
 
 	/**
@@ -302,17 +282,17 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 */
 	@Override
 	public PlannedSupply2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedSupply2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedSupply2Impl

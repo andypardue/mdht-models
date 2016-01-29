@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerClassCode VitalSignsOrganizerMoodCode VitalSignsOrganizerId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerStatusCode VitalSignsOrganizerStatusCodeP VitalSignsOrganizerEffectiveTime VitalSignsOrganizerVitalSignObservation' templateId.root='2.16.840.1.113883.10.20.22.4.26' classCode='CLUSTER' moodCode='EVN' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Vital signs' statusCode.code='completed' constraints.validation.dependOn.VitalSignsOrganizerStatusCode='VitalSignsOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerClassCode VitalSignsOrganizerMoodCode VitalSignsOrganizerId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerStatusCode VitalSignsOrganizerStatusCodeP VitalSignsOrganizerEffectiveTime VitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165' templateId.root='2.16.840.1.113883.10.20.22.4.26' classCode='CLUSTER' moodCode='EVN' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Vital signs' statusCode.code='completed' constraints.validation.dependOn.VitalSignsOrganizerStatusCode='VitalSignsOrganizerStatusCodeP' constraints.validation.query='VitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolVitalSignsOrganizerVitalSignObservationEntryRelationship constraints.validation.error='VitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165'"
  * @generated
  */
 public interface VitalSignsOrganizer extends Organizer {
@@ -73,7 +74,7 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateVitalSignsOrganizerId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -85,7 +86,7 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'46680005\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'46680005\' and value.codeSystem = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
 	boolean validateVitalSignsOrganizerCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,7 +122,7 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateVitalSignsOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -145,19 +146,10 @@ public interface VitalSignsOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::VitalSignObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::VitalSignObservation)))'"
 	 * @generated
 	 */
-	boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::VitalSignObservation)).oclAsType(consol::VitalSignObservation)'"
-	 * @generated
-	 */
-	EList<VitalSignObservation> getVitalSignObservations();
+	boolean validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,9 +159,9 @@ public interface VitalSignsOrganizer extends Organizer {
 	public VitalSignsOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignsOrganizer

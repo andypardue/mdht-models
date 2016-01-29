@@ -15,13 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedicationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,12 +28,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Medication Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#getMedicationActivities() <em>Get Medication Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationEntryRelationship284(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Entry Relationship284</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Medication Activity Entry Relationship Medication Activity285</em>}</li>
  * </ul>
  * </p>
  *
@@ -44,43 +41,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class DischargeMedicationTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeMedicationMedicationActivity() {
-		OperationsTestCase<DischargeMedication> validateDischargeMedicationMedicationActivityTestCase = new OperationsTestCase<DischargeMedication>(
-			"validateDischargeMedicationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeMedication target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeMedication target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeMedicationOperations.validateDischargeMedicationMedicationActivity(
-					(DischargeMedication) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeMedicationMedicationActivityTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -223,11 +183,70 @@ public class DischargeMedicationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetMedicationActivities() {
 
-		DischargeMedication target = objectFactory.create();
-		target.getMedicationActivities();
+	public void testValidateDischargeMedicationEntryRelationship284() {
+		OperationsTestCase<DischargeMedication> validateDischargeMedicationEntryRelationship284TestCase = new OperationsTestCase<DischargeMedication>(
+			"validateDischargeMedicationEntryRelationship284", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION_ENTRY_RELATIONSHIP284__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeMedication target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedicationOperations.validateDischargeMedicationEntryRelationship284(
+					(DischargeMedication) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedicationEntryRelationship284TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285() {
+		OperationsTestCase<DischargeMedication> validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285TestCase = new OperationsTestCase<DischargeMedication>(
+			"validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY_ENTRY_RELATIONSHIP_MEDICATION_ACTIVITY285__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedication target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedicationOperations.validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285(
+					(DischargeMedication) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285TestCase.doValidationTest();
 	}
 
 	/**

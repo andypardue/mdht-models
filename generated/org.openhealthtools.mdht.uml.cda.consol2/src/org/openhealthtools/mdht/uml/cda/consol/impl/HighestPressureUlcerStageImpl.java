@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Highest Pressure Ulcer Stage</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -54,8 +52,7 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 */
 	@Override
 	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(
-			this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -65,8 +62,7 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 */
 	@Override
 	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(
-			this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -126,17 +122,17 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 */
 	@Override
 	public HighestPressureUlcerStage init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HighestPressureUlcerStage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HighestPressureUlcerStageImpl

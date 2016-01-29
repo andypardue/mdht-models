@@ -24,7 +24,11 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlannedObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationMoodCode PlannedObservation2CodeP PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.44' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='PlannedObservation2Code PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation' constraints.validation.dependOn.PlannedObservation2Code='PlannedObservation2CodeP' statusCode.code='active' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PriorityPreference PlannedObservation2Indication2 PlannedObservation2Instruction2 PlannedObservation2PlannedCoverage' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedObservation2TargetSiteCode='PlannedObservation2TargetSiteCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationMoodCode PlannedObservation2CodeP PlannedObservation2StatusCode PlannedObservation2StatusCodeP PlannedObservation2TargetSiteCode PlannedObservation2EntryRelationship968 PlannedObservation2EntryRelationship970 PlannedObservation2EntryRelationship972 PlannedObservation2EntryRelationship974' templateId.root='2.16.840.1.113883.10.20.22.4.44' templateId.extension='2014-06-09' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='PlannedObservation2Code PlannedObservation2EffectiveTime PlannedObservation2TargetSiteCodeP PlannedObservation2AuthorParticipation' constraints.validation.dependOn.PlannedObservation2Code='PlannedObservation2CodeP' statusCode.code='active' constraints.validation.info='PlannedObservation2Value PlannedObservation2MethodCode PlannedObservation2Performer PlannedObservation2PriorityPreferenceEntryRelationshipPriorityPreference969 PlannedObservation2Indication2EntryRelationshipIndication2971 PlannedObservation2Instruction2EntryRelationshipInstruction2973 PlannedObservation2PlannedCoverageEntryRelationshipPlannedCoverage975' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedObservation2TargetSiteCode='PlannedObservation2TargetSiteCodeP' constraints.validation.query='PlannedObservation2PriorityPreferenceEntryRelationshipPriorityPreference969 PlannedObservation2Indication2EntryRelationshipIndication2971 PlannedObservation2Instruction2EntryRelationshipInstruction2973 PlannedObservation2PlannedCoverageEntryRelationshipPlannedCoverage975'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedObservation2PriorityPreferenceEntryRelationship constraints.validation.info='PlannedObservation2PriorityPreferenceEntryRelationshipPriorityPreference969'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedObservation2Indication2EntryRelationship constraints.validation.info='PlannedObservation2Indication2EntryRelationshipIndication2971'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedObservation2Instruction2EntryRelationship constraints.validation.info='PlannedObservation2Instruction2EntryRelationshipInstruction2973'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPlannedObservation2PlannedCoverageEntryRelationship constraints.validation.info='PlannedObservation2PlannedCoverageEntryRelationshipPlannedCoverage975'"
  * @generated
  */
 public interface PlannedObservation2 extends PlanOfCareActivityObservation {
@@ -47,7 +51,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -59,7 +63,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,7 +99,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2Value(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -107,7 +111,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1)'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2MethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -131,7 +135,7 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validatePlannedObservation2TargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -167,10 +171,10 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validatePlannedObservation2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedObservation2EntryRelationship968(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,10 +183,10 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Indication2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validatePlannedObservation2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedObservation2EntryRelationship970(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -191,10 +195,10 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instruction2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validatePlannedObservation2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedObservation2EntryRelationship972(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,46 +207,58 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PlannedCoverage) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validatePlannedObservation2PlannedCoverage(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedObservation2EntryRelationship974(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)))'"
 	 * @generated
 	 */
-	EList<PriorityPreference> getPriorityPreferences();
+	boolean validatePlannedObservation2PriorityPreferenceEntryRelationshipPriorityPreference969(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)).oclAsType(consol::Indication2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)))'"
 	 * @generated
 	 */
-	EList<Indication2> getIndication2s();
+	boolean validatePlannedObservation2Indication2EntryRelationshipIndication2971(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2)).oclAsType(consol::Instruction2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2)))'"
 	 * @generated
 	 */
-	EList<Instruction2> getInstruction2s();
+	boolean validatePlannedObservation2Instruction2EntryRelationshipInstruction2973(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedCoverage)).oclAsType(consol::PlannedCoverage)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedCoverage)))'"
 	 * @generated
 	 */
-	EList<PlannedCoverage> getPlannedCoverages();
+	boolean validatePlannedObservation2PlannedCoverageEntryRelationshipPlannedCoverage975(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,10 +269,10 @@ public interface PlannedObservation2 extends PlanOfCareActivityObservation {
 	public PlannedObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedObservation2

@@ -34,8 +34,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -114,10 +112,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityAct(this, diagnostics, context);
+	public boolean validatePlanOfCareSectionEntry134(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry134(this, diagnostics, context);
 	}
 
 	/**
@@ -125,11 +121,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareSectionEntry136(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry136(this, diagnostics, context);
 	}
 
 	/**
@@ -137,11 +130,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareSectionEntry138(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry138(this, diagnostics, context);
 	}
 
 	/**
@@ -149,11 +139,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareSectionEntry140(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry140(this, diagnostics, context);
 	}
 
 	/**
@@ -161,11 +148,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
-			this, diagnostics, context);
+	public boolean validatePlanOfCareSectionEntry142(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry142(this, diagnostics, context);
 	}
 
 	/**
@@ -173,20 +157,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionInstructions(this, diagnostics, context);
+	public boolean validatePlanOfCareSectionEntry144(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry144(this, diagnostics, context);
 	}
 
 	/**
@@ -194,9 +166,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivityAct> getPlanOfCareActivityActs() {
-		return PlanOfCareSectionOperations.getPlanOfCareActivityActs(this);
+	public boolean validatePlanOfCareSectionEntry146(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionEntry146(this, diagnostics, context);
 	}
 
 	/**
@@ -204,9 +175,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivityEncounter> getPlanOfCareActivityEncounters() {
-		return PlanOfCareSectionOperations.getPlanOfCareActivityEncounters(this);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityActEntryPlanOfCareActivityAct135(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityActEntryPlanOfCareActivityAct135(this, diagnostics, context);
 	}
 
 	/**
@@ -214,9 +184,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivityObservation> getPlanOfCareActivityObservations() {
-		return PlanOfCareSectionOperations.getPlanOfCareActivityObservations(this);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounterEntryPlanOfCareActivityEncounter137(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounterEntryPlanOfCareActivityEncounter137(this, diagnostics, context);
 	}
 
 	/**
@@ -224,9 +193,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures() {
-		return PlanOfCareSectionOperations.getPlanOfCareActivityProcedures(this);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityObservationEntryPlanOfCareActivityObservation139(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservationEntryPlanOfCareActivityObservation139(this, diagnostics, context);
 	}
 
 	/**
@@ -234,9 +202,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivitySubstanceAdministration> getPlanOfCareActivitySubstanceAdministrations() {
-		return PlanOfCareSectionOperations.getPlanOfCareActivitySubstanceAdministrations(this);
+	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedureEntryPlanOfCareActivityProcedure141(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedureEntryPlanOfCareActivityProcedure141(this, diagnostics, context);
 	}
 
 	/**
@@ -244,9 +211,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivitySupply> getPlanOfCareActivitySupplies() {
-		return PlanOfCareSectionOperations.getPlanOfCareActivitySupplies(this);
+	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministrationEntryPlanOfCareActivitySubstanceAdministration143(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministrationEntryPlanOfCareActivitySubstanceAdministration143(this, diagnostics, context);
 	}
 
 	/**
@@ -254,9 +220,17 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Instructions> getInstructionss() {
-		return PlanOfCareSectionOperations.getInstructionss(this);
+	public boolean validatePlanOfCareSectionPlanOfCareActivitySupplyEntryPlanOfCareActivitySupply145(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupplyEntryPlanOfCareActivitySupply145(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlanOfCareSectionInstructionsEntryInstructions147(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionInstructionsEntryInstructions147(this, diagnostics, context);
 	}
 
 	/**
@@ -266,17 +240,17 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	@Override
 	public PlanOfCareSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareSectionImpl

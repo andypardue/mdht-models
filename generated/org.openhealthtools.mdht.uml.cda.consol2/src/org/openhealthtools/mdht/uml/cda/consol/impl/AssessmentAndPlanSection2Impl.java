@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Assessment And Plan Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlannedAct2> getConsolPlannedAct2s() {
-		return AssessmentAndPlanSection2Operations.getConsolPlannedAct2s(this);
+	public boolean validateAssessmentAndPlanSection2Entry1056(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2Entry1056(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +76,7 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 */
 	@Override
 	public boolean validateAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionTemplateId(
-			this, diagnostics, context);
+		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -100,30 +105,18 @@ public class AssessmentAndPlanSection2Impl extends AssessmentAndPlanSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public AssessmentAndPlanSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AssessmentAndPlanSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AssessmentAndPlanSection2Impl

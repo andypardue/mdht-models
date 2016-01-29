@@ -30,13 +30,13 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#getConsolProcedureActivityProcedure2s() <em>Get Consol Procedure Activity Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSection2Entry1052(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section2 Entry1052</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSection2Entry1054(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section2 Entry1054</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section2 Procedure Activity Procedure2 Entry Procedure Activity Procedure21053</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section2 Medication Activity2 Entry Medication Activity21055</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSectionProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Procedure Activity Procedure</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2#validateAnesthesiaSectionMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Anesthesia Section Medication Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,11 +50,34 @@ public class AnesthesiaSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProcedureActivityProcedure2s() {
 
-		AnesthesiaSection2 target = objectFactory.create();
-		target.getConsolProcedureActivityProcedure2s();
+	public void testValidateAnesthesiaSection2Entry1052() {
+		OperationsTestCase<AnesthesiaSection2> validateAnesthesiaSection2Entry1052TestCase = new OperationsTestCase<AnesthesiaSection2>(
+			"validateAnesthesiaSection2Entry1052",
+			operationsForOCL.getOCLValue("VALIDATE_ANESTHESIA_SECTION2_ENTRY1052__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AnesthesiaSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AnesthesiaSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AnesthesiaSection2Operations.validateAnesthesiaSection2Entry1052(
+					(AnesthesiaSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAnesthesiaSection2Entry1052TestCase.doValidationTest();
 	}
 
 	/**
@@ -62,11 +85,106 @@ public class AnesthesiaSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolMedicationActivity2s() {
 
-		AnesthesiaSection2 target = objectFactory.create();
-		target.getConsolMedicationActivity2s();
+	public void testValidateAnesthesiaSection2Entry1054() {
+		OperationsTestCase<AnesthesiaSection2> validateAnesthesiaSection2Entry1054TestCase = new OperationsTestCase<AnesthesiaSection2>(
+			"validateAnesthesiaSection2Entry1054",
+			operationsForOCL.getOCLValue("VALIDATE_ANESTHESIA_SECTION2_ENTRY1054__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AnesthesiaSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AnesthesiaSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AnesthesiaSection2Operations.validateAnesthesiaSection2Entry1054(
+					(AnesthesiaSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAnesthesiaSection2Entry1054TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053() {
+		OperationsTestCase<AnesthesiaSection2> validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053TestCase = new OperationsTestCase<AnesthesiaSection2>(
+			"validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ANESTHESIA_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21053__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AnesthesiaSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AnesthesiaSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AnesthesiaSection2Operations.validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053(
+					(AnesthesiaSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAnesthesiaSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21053TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055() {
+		OperationsTestCase<AnesthesiaSection2> validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055TestCase = new OperationsTestCase<AnesthesiaSection2>(
+			"validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ANESTHESIA_SECTION2_MEDICATION_ACTIVITY2_ENTRY_MEDICATION_ACTIVITY21055__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AnesthesiaSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AnesthesiaSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AnesthesiaSection2Operations.validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055(
+					(AnesthesiaSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAnesthesiaSection2MedicationActivity2EntryMedicationActivity21055TestCase.doValidationTest();
 	}
 
 	/**
@@ -176,72 +294,6 @@ public class AnesthesiaSection2Test extends CDAValidationTest {
 		};
 
 		validateAnesthesiaSectionCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAnesthesiaSectionProcedureActivityProcedure() {
-		OperationsTestCase<AnesthesiaSection2> validateAnesthesiaSectionProcedureActivityProcedureTestCase = new OperationsTestCase<AnesthesiaSection2>(
-			"validateAnesthesiaSectionProcedureActivityProcedure",
-			operationsForOCL.getOCLValue("VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AnesthesiaSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(AnesthesiaSection2 target) {
-				target.addProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AnesthesiaSection2Operations.validateAnesthesiaSectionProcedureActivityProcedure(
-					(AnesthesiaSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAnesthesiaSectionProcedureActivityProcedureTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAnesthesiaSectionMedicationActivity() {
-		OperationsTestCase<AnesthesiaSection2> validateAnesthesiaSectionMedicationActivityTestCase = new OperationsTestCase<AnesthesiaSection2>(
-			"validateAnesthesiaSectionMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AnesthesiaSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(AnesthesiaSection2 target) {
-				target.addSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AnesthesiaSection2Operations.validateAnesthesiaSectionMedicationActivity(
-					(AnesthesiaSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAnesthesiaSectionMedicationActivityTestCase.doValidationTest();
 	}
 
 	/**

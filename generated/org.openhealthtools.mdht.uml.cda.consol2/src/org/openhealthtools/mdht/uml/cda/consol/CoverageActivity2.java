@@ -24,9 +24,10 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCoverageActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityCode CoverageActivityCodeP CoverageActivityPolicyActivity CoverageActivity2EntryRelationship CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipPolicyActivity2' templateId.root='2.16.840.1.113883.10.20.22.4.60' templateId.extension='2015-08-01' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber CoverageActivity2EntryRelationshipSequenceNumber' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' constraints.validation.dependOn.CoverageActivityCode='CoverageActivityCodeP' constraints.validation.query='CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipSequenceNumber CoverageActivity2EntryRelationshipPolicyActivity2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityCode CoverageActivityCodeP CoverageActivity2EntryRelationship CoverageActivity2EntryRelationship898 CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipPolicyActivity2 CoverageActivity2PolicyActivity2EntryRelationshipPolicyActivity2899' templateId.root='2.16.840.1.113883.10.20.22.4.60' templateId.extension='2015-08-01' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber CoverageActivity2EntryRelationshipSequenceNumber' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' constraints.validation.dependOn.CoverageActivityCode='CoverageActivityCodeP' constraints.validation.query='CoverageActivity2EntryRelationshipINTValue CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipSequenceNumber CoverageActivity2EntryRelationshipPolicyActivity2 CoverageActivity2PolicyActivity2EntryRelationshipPolicyActivity2899'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCoverageActivity2EntryRelationship typeCode='COMP' constraints.validation.error='CoverageActivity2EntryRelationshipTypeCode CoverageActivity2EntryRelationshipPolicyActivity2 CoverageActivity2EntryRelationshipINTValue' constraints.validation.info='CoverageActivity2EntryRelationshipSequenceNumber' constraints.validation.query='CoverageActivity2EntryRelationshipINTValue'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCoverageActivity2EntryRelationshipINT constraints.validation.error='CoverageActivity2EntryRelationshipINTValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCoverageActivity2PolicyActivity2EntryRelationship constraints.validation.error='CoverageActivity2PolicyActivity2EntryRelationshipPolicyActivity2899'"
  * @generated
  */
 public interface CoverageActivity2 extends CoverageActivity {
@@ -53,6 +54,18 @@ public interface CoverageActivity2 extends CoverageActivity {
 	 * @generated
 	 */
 	boolean validateCoverageActivity2EntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
+	boolean validateCoverageActivity2EntryRelationship898(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,11 +120,14 @@ public interface CoverageActivity2 extends CoverageActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity2)).oclAsType(consol::PolicyActivity2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity2)))'"
 	 * @generated
 	 */
-	EList<PolicyActivity2> getConsolPolicyActivity2s();
+	boolean validateCoverageActivity2PolicyActivity2EntryRelationshipPolicyActivity2899(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -122,10 +138,10 @@ public interface CoverageActivity2 extends CoverageActivity {
 	public CoverageActivity2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CoverageActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CoverageActivity2

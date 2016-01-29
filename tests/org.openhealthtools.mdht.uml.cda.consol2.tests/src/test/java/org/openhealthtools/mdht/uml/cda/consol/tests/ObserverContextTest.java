@@ -11,7 +11,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ObserverContext;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ObserverContextOperations;
@@ -71,7 +70,7 @@ public class ObserverContextTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateObserverContextAssignedAuthor() {
@@ -82,12 +81,12 @@ public class ObserverContextTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ObserverContext target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ObserverContext target) {
-				target.setAssignedAuthor(CDAFactory.eINSTANCE.createAssignedAuthor());
+				target.init();
 
 			}
 

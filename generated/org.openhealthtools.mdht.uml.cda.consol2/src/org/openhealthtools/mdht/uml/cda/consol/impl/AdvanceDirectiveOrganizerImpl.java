@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,8 +59,7 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	@Override
 	public boolean validateAdvanceDirectiveOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	@Override
 	public boolean validateAdvanceDirectiveOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerClassCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -123,8 +119,7 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	@Override
 	public boolean validateAdvanceDirectiveOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCodeP(
-			this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -134,19 +129,7 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	@Override
 	public boolean validateAdvanceDirectiveOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2(
-			this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +139,7 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	public boolean validateAdvanceDirectiveOrganizerAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(
-			this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +147,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s() {
-		return AdvanceDirectiveOrganizerOperations.getAdvanceDirectiveObservation2s(this);
+	public boolean validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation2593(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation2593(this, diagnostics, context);
 	}
 
 	/**
@@ -176,17 +158,17 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	@Override
 	public AdvanceDirectiveOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdvanceDirectiveOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectiveOrganizerImpl

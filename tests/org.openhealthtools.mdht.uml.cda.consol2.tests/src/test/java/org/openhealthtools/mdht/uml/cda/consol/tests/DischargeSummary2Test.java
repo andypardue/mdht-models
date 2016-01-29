@@ -17,37 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.DischargeDietSection;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2;
-import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargePhysicalSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeStudiesSummarySection;
-import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
-import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeSummary2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,33 +37,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2Participant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2AllergiesSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Allergies Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HospitalCourseSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Hospital Course Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2PlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ChiefComplaintSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Chief Complaint Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ChiefComplaintAndReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Chief Complaint And Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2NutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Nutrition Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2FunctionalStatusSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Functional Status Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HistoryOfPastIllnessSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 History Of Past Illness Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HistoryOfPresentIllnessSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 History Of Present Illness Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HospitalConsultationsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Hospital Consultations Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HospitalDischargeInstructionsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Hospital Discharge Instructions Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HospitalDischargePhysicalSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Hospital Discharge Physical Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2HospitalDischargeStudiesSummarySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Hospital Discharge Studies Summary Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ImmunizationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Immunizations Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ProblemSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Problem Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ProceduresSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Procedures Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2SocialHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2DischargeDiagnosisSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Discharge Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Discharge Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Family History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2AdmissionDiagnosisSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Admission Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Admission Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2DischargeMedicationsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Discharge Medications Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2DischargeDietSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Discharge Diet Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2Component1318(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component1318</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Participant If Par Type Code IND Then AE Class Code IND</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter IVLTS High</em>}</li>
@@ -106,33 +55,61 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter Encounter Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter Responsible Party</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getAllergiesSectionEntriesOptional2() <em>Get Allergies Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHospitalCourseSection() <em>Get Hospital Course Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getPlanOfTreatmentSection2() <em>Get Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getChiefComplaintSection() <em>Get Chief Complaint Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getChiefComplaintAndReasonForVisitSection() <em>Get Chief Complaint And Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getFunctionalStatusSection2() <em>Get Functional Status Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHistoryOfPastIllnessSection2() <em>Get History Of Past Illness Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHistoryOfPresentIllnessSection() <em>Get History Of Present Illness Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHospitalConsultationsSection() <em>Get Hospital Consultations Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHospitalDischargeInstructionsSection() <em>Get Hospital Discharge Instructions Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHospitalDischargePhysicalSection() <em>Get Hospital Discharge Physical Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getHospitalDischargeStudiesSummarySection() <em>Get Hospital Discharge Studies Summary Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getImmunizationsSectionEntriesOptional2() <em>Get Immunizations Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getProblemSectionEntriesOptional2() <em>Get Problem Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getProceduresSectionEntriesOptional2() <em>Get Procedures Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getReasonForVisitSection() <em>Get Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getVitalSignsSectionEntriesOptional2() <em>Get Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getDischargeDiagnosisSection2() <em>Get Discharge Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getDischargeMedicationsSectionEntriesOptional2() <em>Get Discharge Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getFamilyHistorySection2() <em>Get Family History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getAdmissionDiagnosisSection2() <em>Get Admission Diagnosis Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getAdmissionMedicationsSectionEntriesOptional2() <em>Get Admission Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getDischargeMedicationsSection2() <em>Get Discharge Medications Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#getDischargeDietSection() <em>Get Discharge Diet Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21321(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Allergies Section Entries Optional21321</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHospitalCourseSection1323(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Hospital Course Section1323</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentDischargeDiagnosisSection21325(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Discharge Diagnosis Section21325</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSectionEntriesOptional21327(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Discharge Medications Section Entries Optional21327</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentPlanOfTreatmentSection21329(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Plan Of Treatment Section21329</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintSection1331(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Chief Complaint Section1331</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1333(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Chief Complaint And Reason For Visit Section1333</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentNutritionSection1335(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Nutrition Section1335</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentFamilyHistorySection21337(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Family History Section21337</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentFunctionalStatusSection21339(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Functional Status Section21339</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21341(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component History Of Past Illness Section21341</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1343(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component History Of Present Illness Section1343</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentAdmissionDiagnosisSection21345(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Admission Diagnosis Section21345</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional21347(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Admission Medications Section Entries Optional21347</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHospitalConsultationsSection1349(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Hospital Consultations Section1349</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeInstructionsSection1351(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Hospital Discharge Instructions Section1351</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargePhysicalSection1353(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Hospital Discharge Physical Section1353</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeStudiesSummarySection1355(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Hospital Discharge Studies Summary Section1355</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21357(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Immunizations Section Entries Optional21357</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentProblemSectionEntriesOptional21359(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Problem Section Entries Optional21359</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21361(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Procedures Section Entries Optional21361</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentReasonForVisitSection1363(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Reason For Visit Section1363</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentReviewOfSystemsSection1365(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Review Of Systems Section1365</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentSocialHistorySection21367(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Social History Section21367</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21369(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Vital Signs Section Entries Optional21369</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSection21371(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Discharge Medications Section21371</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyComponentDischargeDietSection1373(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Component Discharge Diet Section1373</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyAllergiesSectionEntriesOptional21320(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Allergies Section Entries Optional21320</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHospitalCourseSection1322(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Hospital Course Section1322</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyDischargeDiagnosisSection21324(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Discharge Diagnosis Section21324</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSectionEntriesOptional21326(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Discharge Medications Section Entries Optional21326</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyPlanOfTreatmentSection21328(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Plan Of Treatment Section21328</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyChiefComplaintSection1330(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Chief Complaint Section1330</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1332(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Chief Complaint And Reason For Visit Section1332</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyNutritionSection1334(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Nutrition Section1334</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyFamilyHistorySection21336(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Family History Section21336</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyFunctionalStatusSection21338(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Functional Status Section21338</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHistoryOfPastIllnessSection21340(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body History Of Past Illness Section21340</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHistoryOfPresentIllnessSection1342(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body History Of Present Illness Section1342</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyAdmissionDiagnosisSection21344(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Admission Diagnosis Section21344</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional21346(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Admission Medications Section Entries Optional21346</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHospitalConsultationsSection1348(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Hospital Consultations Section1348</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHospitalDischargeInstructionsSection1350(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Hospital Discharge Instructions Section1350</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHospitalDischargePhysicalSection1352(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Hospital Discharge Physical Section1352</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyHospitalDischargeStudiesSummarySection1354(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Hospital Discharge Studies Summary Section1354</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyImmunizationsSectionEntriesOptional21356(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Immunizations Section Entries Optional21356</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyProblemSectionEntriesOptional21358(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Problem Section Entries Optional21358</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyProceduresSectionEntriesOptional21360(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Procedures Section Entries Optional21360</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyReasonForVisitSection1362(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Reason For Visit Section1362</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyReviewOfSystemsSection1364(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Review Of Systems Section1364</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodySocialHistorySection21366(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Social History Section21366</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyVitalSignsSectionEntriesOptional21368(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Vital Signs Section Entries Optional21368</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSection21370(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Discharge Medications Section21370</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBodyDischargeDietSection1372(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body Discharge Diet Section1372</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentStructuredBody1319(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Structured Body1319</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -144,70 +121,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(DischargeSummary2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(DischargeSummary2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(DischargeSummary2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-
-				});
+			protected void updateToFail(DischargeSummary2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(DischargeSummary2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
 
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(DischargeSummary2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-				});
+				//
+				// /* DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection */
+				// DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection section =
+				//
+				// ConsolFactory.eINSTANCE.createDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection().init();
+				//
+				//
+				// target.addSection(section);
+				//
+				//
 
 			}
 
@@ -259,7 +201,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2Code() {
@@ -276,7 +218,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("11490-0", "2.16.840.1.113883.6.1"));
+
 			}
 
 			@Override
@@ -300,7 +242,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2Participant() {
@@ -317,8 +259,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
 				target.init();
-				Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-				target.getParticipants().add(p);
+
 			}
 
 			@Override
@@ -335,7 +276,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOf() {
@@ -352,8 +293,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
 				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
@@ -370,13 +310,14 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateDischargeSummary2AllergiesSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2AllergiesSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2AllergiesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateDischargeSummary2Component1318() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2Component1318TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2Component1318",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT1318__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -387,1074 +328,42 @@ public class DischargeSummary2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
 				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional2().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return DischargeSummary2Operations.validateDischargeSummary2AllergiesSectionEntriesOptional2(
+				return DischargeSummary2Operations.validateDischargeSummary2Component1318(
 					(DischargeSummary2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDischargeSummary2AllergiesSectionEntriesOptional2TestCase.doValidationTest();
+		validateDischargeSummary2Component1318TestCase.doValidationTest();
 	}
 
 	/**
 	*
 	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2HospitalCourseSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalCourseSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HospitalCourseSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* HospitalCourseSection */
-				HospitalCourseSection section =
-
-				ConsolFactory.eINSTANCE.createHospitalCourseSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HospitalCourseSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HospitalCourseSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2PlanOfTreatmentSection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2PlanOfTreatmentSection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2PlanOfTreatmentSection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2PlanOfTreatmentSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2ChiefComplaintSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ChiefComplaintSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* ChiefComplaintSection */
-				ChiefComplaintSection section =
-
-				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ChiefComplaintSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ChiefComplaintSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2ChiefComplaintAndReasonForVisitSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ChiefComplaintAndReasonForVisitSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ChiefComplaintAndReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* ChiefComplaintAndReasonForVisitSection */
-				ChiefComplaintAndReasonForVisitSection section =
-
-				ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ChiefComplaintAndReasonForVisitSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ChiefComplaintAndReasonForVisitSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2NutritionSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2NutritionSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2NutritionSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* NutritionSection */
-				NutritionSection section =
-
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2NutritionSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2NutritionSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2FunctionalStatusSection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2FunctionalStatusSection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2FunctionalStatusSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createFunctionalStatusSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2FunctionalStatusSection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2FunctionalStatusSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2HistoryOfPastIllnessSection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HistoryOfPastIllnessSection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HistoryOfPastIllnessSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createHistoryOfPastIllnessSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HistoryOfPastIllnessSection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HistoryOfPastIllnessSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2HistoryOfPresentIllnessSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HistoryOfPresentIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* HistoryOfPresentIllnessSection */
-				HistoryOfPresentIllnessSection section =
-
-				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HistoryOfPresentIllnessSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HistoryOfPresentIllnessSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2HospitalConsultationsSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalConsultationsSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HospitalConsultationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* HospitalConsultationsSection */
-				HospitalConsultationsSection section =
-
-				ConsolFactory.eINSTANCE.createHospitalConsultationsSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HospitalConsultationsSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HospitalConsultationsSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2HospitalDischargeInstructionsSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalDischargeInstructionsSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HospitalDischargeInstructionsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* HospitalDischargeInstructionsSection */
-				HospitalDischargeInstructionsSection section =
-
-				ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargeInstructionsSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HospitalDischargeInstructionsSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2HospitalDischargePhysicalSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalDischargePhysicalSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HospitalDischargePhysicalSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* HospitalDischargePhysicalSection */
-				HospitalDischargePhysicalSection section =
-
-				ConsolFactory.eINSTANCE.createHospitalDischargePhysicalSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargePhysicalSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HospitalDischargePhysicalSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2HospitalDischargeStudiesSummarySection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalDischargeStudiesSummarySectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HospitalDischargeStudiesSummarySection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* HospitalDischargeStudiesSummarySection */
-				HospitalDischargeStudiesSummarySection section =
-
-				ConsolFactory.eINSTANCE.createHospitalDischargeStudiesSummarySection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2HospitalDischargeStudiesSummarySection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2HospitalDischargeStudiesSummarySectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2ImmunizationsSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ImmunizationsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ImmunizationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ImmunizationsSectionEntriesOptional2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ImmunizationsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2ProblemSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ProblemSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ProblemSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createProblemSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ProblemSectionEntriesOptional2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ProblemSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2ProceduresSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ProceduresSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ProceduresSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createProceduresSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ProceduresSectionEntriesOptional2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ProceduresSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2ReasonForVisitSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ReasonForVisitSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* ReasonForVisitSection */
-				ReasonForVisitSection section =
-
-				ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ReasonForVisitSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ReasonForVisitSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateDischargeSummary2ReviewOfSystemsSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ReviewOfSystemsSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-
-				/* ReviewOfSystemsSection */
-				ReviewOfSystemsSection section =
-
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2ReviewOfSystemsSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2ReviewOfSystemsSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2SocialHistorySection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2SocialHistorySection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2SocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createSocialHistorySection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2SocialHistorySection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2SocialHistorySection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2VitalSignsSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2VitalSignsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2VitalSignsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2VitalSignsSectionEntriesOptional2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2VitalSignsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2DischargeDiagnosisSection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeDiagnosisSection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2DischargeDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createDischargeDiagnosisSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2DischargeDiagnosisSection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2DischargeDiagnosisSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2DischargeMedicationsSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createDischargeMedicationsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2FamilyHistorySection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2FamilyHistorySection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2FamilyHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createFamilyHistorySection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2FamilyHistorySection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2FamilyHistorySection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2AdmissionDiagnosisSection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2AdmissionDiagnosisSection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2AdmissionDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAdmissionDiagnosisSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2AdmissionDiagnosisSection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2AdmissionDiagnosisSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAdmissionMedicationsSectionEntriesOptional2().init());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2DischargeMedicationsSection2() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeMedicationsSection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2DischargeMedicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createDischargeMedicationsSection2().init());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2DischargeMedicationsSection2(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2DischargeMedicationsSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeSummary2DischargeDietSection() {
-		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeDietSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2DischargeDietSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeSummary2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeSummary2 target) {
-				target.init();
-				DischargeDietSection section = ConsolFactory.eINSTANCE.createDischargeDietSection().init();
-				target.addSection(section);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeSummary2Operations.validateDischargeSummary2DischargeDietSection(
-					(DischargeSummary2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeSummary2DischargeDietSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
 	* Note: Modified OCL in operations.
 	*/
 	@Test
 	public void testValidateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(DischargeSummary2 target) {
-						// <participant typeCode="IND"/>
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						p.setTypeCode(ParticipationType.IND);
-						target.getParticipants().add(p);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(DischargeSummary2 target) {
-						// <participant typeCode="IND">
-						// <associatedEntity/>
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						p.setTypeCode(ParticipationType.IND);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(DischargeSummary2 target) {
-						// <participant typeCode="IND">
-						// <associatedEntity classCode="ACCESS"/>
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						p.setTypeCode(ParticipationType.IND);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-						ae.setClassCode(RoleClassAssociative.ACCESS); // invalid code
-					}
-				});
+			protected void updateToFail(DischargeSummary2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(DischargeSummary2 target) {
-						// correct value pass
-						// <participant typeCode="IND" >
-						// <associatedEntity classCode="SOME CODE FROM THE SET" />
-						target.getParticipants().clear();
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-						p.getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(DischargeSummary2 target) {
-						// nullFlavor pass
-						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
-						target.getParticipants().clear();
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-						p.getAssociatedEntity().setNullFlavor(NullFlavor.NA);
-					}
-				});
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
 
 			}
 
@@ -1472,31 +381,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLowTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				ee.setEffectiveTime(ts);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setLow(
-					DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -1513,31 +416,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHighTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				ee.setEffectiveTime(ts);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setHigh(
-					DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -1554,34 +451,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPersonTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 
-				target.setComponentOf(cof);
-				cof.setEncompassingEncounter(ee);
-				ee.getEncounterParticipants().add(ep);
-				ep.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				for (EncounterParticipant ep : target.getComponentOf().getEncompassingEncounter().getEncounterParticipants()) {
-					ep.getAssignedEntity().setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1598,34 +486,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 
-				target.setComponentOf(cof);
-				cof.setEncompassingEncounter(ee);
-				ee.getEncounterParticipants().add(ep);
-				ep.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				for (EncounterParticipant ep : target.getComponentOf().getEncompassingEncounter().getEncounterParticipants()) {
-					ep.getAssignedEntity().getRepresentedOrganizations().add(CDAFactory.eINSTANCE.createOrganization());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1642,47 +521,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				ep.setAssignedEntity(ae);
-				ee.getEncounterParticipants().add(ep);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().clear();
+				target.init();
 
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				Person person = CDAFactory.eINSTANCE.createPerson();
-
-				ae.setAssignedPerson(person);
-
-				ep.setAssignedEntity(ae);
-
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().add(ep);
 			}
 
 			@Override
@@ -1699,41 +556,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-
-				ee.getEncounterParticipants().add(ep);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().clear();
+				target.init();
 
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				ep.setAssignedEntity(ae);
-
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().add(ep);
 			}
 
 			@Override
@@ -1750,33 +591,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPersonTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 
-				target.setComponentOf(cof);
-				cof.setEncompassingEncounter(ee);
-				ee.setResponsibleParty(rp);
-				rp.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().getAssignedEntity().setAssignedPerson(
-					CDAFactory.eINSTANCE.createPerson());
+				target.init();
+
 			}
 
 			@Override
@@ -1793,33 +626,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 
-				target.setComponentOf(cof);
-				cof.setEncompassingEncounter(ee);
-				ee.setResponsibleParty(rp);
-				rp.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().getAssignedEntity().getRepresentedOrganizations().add(
-					CDAFactory.eINSTANCE.createOrganization());
+				target.init();
+
 			}
 
 			@Override
@@ -1836,39 +661,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				rp.setAssignedEntity(ae);
-				ee.setResponsibleParty(rp);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				Person person = CDAFactory.eINSTANCE.createPerson();
+				target.init();
 
-				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().getAssignedEntity().setAssignedPerson(
-					person);
 			}
 
 			@Override
@@ -1885,35 +696,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-
-				ee.setResponsibleParty(rp);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				target.init();
 
-				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().setAssignedEntity(ae);
 			}
 
 			@Override
@@ -1930,29 +731,28 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTimeTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
 				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
 				target.setEffectiveTime(ts);
-				target.getComponentOf().getEncompassingEncounter().setEffectiveTime(ts);
+
 			}
 
 			@Override
@@ -1969,34 +769,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				// The following test fails because there is no dischargeDispositionCode element in encompassingEncounter
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				CE ddc = DatatypesFactory.eINSTANCE.createCE();
 
-				ee.setDischargeDispositionCode(ddc);
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				// requires a dischargeDispositionCode element in encompassingEncounter
-				// and the correct codeSystem for the NUBC UB-04 FL17-Patient Status valueSet
-				target.getComponentOf().getEncompassingEncounter().setDischargeDispositionCode(
-					DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.6.301.5"));
+				target.init();
+
 			}
 
 			@Override
@@ -2013,31 +804,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodePTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				// The following test fails because there is no dischargeDispositionCode element in encompassingEncounter
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
 
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				// Simply requires a dischargeDispositionCode element in encompassingEncounter
-				target.getComponentOf().getEncompassingEncounter().setDischargeDispositionCode(
-					DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -2054,31 +839,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
+				target.init();
 
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().add(ep);
 			}
 
 			@Override
@@ -2095,31 +874,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
+				target.init();
 
-				target.getComponentOf().getEncompassingEncounter().setResponsibleParty(rp);
 			}
 
 			@Override
@@ -2136,26 +909,25 @@ public class DischargeSummary2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounter() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DischargeSummary2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(DischargeSummary2 target) {
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				target.getComponentOf().setEncompassingEncounter(ee);
+				target.init();
+
 			}
 
 			@Override
@@ -2175,11 +947,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAllergiesSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getAllergiesSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21321() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21321TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21321",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION_ENTRIES_OPTIONAL21321__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21321(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21321TestCase.doValidationTest();
 	}
 
 	/**
@@ -2187,11 +983,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHospitalCourseSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHospitalCourseSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHospitalCourseSection1323() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHospitalCourseSection1323TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHospitalCourseSection1323",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HOSPITAL_COURSE_SECTION1323__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHospitalCourseSection1323(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHospitalCourseSection1323TestCase.doValidationTest();
 	}
 
 	/**
@@ -2199,11 +1019,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlanOfTreatmentSection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getPlanOfTreatmentSection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentDischargeDiagnosisSection21325() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentDischargeDiagnosisSection21325TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentDischargeDiagnosisSection21325",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIAGNOSIS_SECTION21325__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentDischargeDiagnosisSection21325(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentDischargeDiagnosisSection21325TestCase.doValidationTest();
 	}
 
 	/**
@@ -2211,11 +1055,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetChiefComplaintSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getChiefComplaintSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSectionEntriesOptional21327() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSectionEntriesOptional21327TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSectionEntriesOptional21327",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21327__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSectionEntriesOptional21327(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSectionEntriesOptional21327TestCase.doValidationTest();
 	}
 
 	/**
@@ -2223,11 +1091,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetChiefComplaintAndReasonForVisitSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getChiefComplaintAndReasonForVisitSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentPlanOfTreatmentSection21329() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentPlanOfTreatmentSection21329TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentPlanOfTreatmentSection21329",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION21329__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentPlanOfTreatmentSection21329(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentPlanOfTreatmentSection21329TestCase.doValidationTest();
 	}
 
 	/**
@@ -2235,11 +1127,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getNutritionSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintSection1331() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintSection1331TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintSection1331",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_CHIEF_COMPLAINT_SECTION1331__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintSection1331(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintSection1331TestCase.doValidationTest();
 	}
 
 	/**
@@ -2247,11 +1163,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetFunctionalStatusSection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getFunctionalStatusSection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1333() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1333TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1333",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION1333__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1333(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1333TestCase.doValidationTest();
 	}
 
 	/**
@@ -2259,11 +1199,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHistoryOfPastIllnessSection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHistoryOfPastIllnessSection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentNutritionSection1335() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentNutritionSection1335TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentNutritionSection1335",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION1335__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentNutritionSection1335(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentNutritionSection1335TestCase.doValidationTest();
 	}
 
 	/**
@@ -2271,11 +1235,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHistoryOfPresentIllnessSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHistoryOfPresentIllnessSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentFamilyHistorySection21337() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentFamilyHistorySection21337TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentFamilyHistorySection21337",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION21337__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentFamilyHistorySection21337(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentFamilyHistorySection21337TestCase.doValidationTest();
 	}
 
 	/**
@@ -2283,11 +1271,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHospitalConsultationsSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHospitalConsultationsSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentFunctionalStatusSection21339() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentFunctionalStatusSection21339TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentFunctionalStatusSection21339",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_FUNCTIONAL_STATUS_SECTION21339__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentFunctionalStatusSection21339(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentFunctionalStatusSection21339TestCase.doValidationTest();
 	}
 
 	/**
@@ -2295,11 +1307,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHospitalDischargeInstructionsSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHospitalDischargeInstructionsSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21341() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21341TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21341",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION21341__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21341(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21341TestCase.doValidationTest();
 	}
 
 	/**
@@ -2307,11 +1343,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHospitalDischargePhysicalSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHospitalDischargePhysicalSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1343() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1343TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1343",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION1343__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1343(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1343TestCase.doValidationTest();
 	}
 
 	/**
@@ -2319,11 +1379,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHospitalDischargeStudiesSummarySection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getHospitalDischargeStudiesSummarySection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentAdmissionDiagnosisSection21345() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentAdmissionDiagnosisSection21345TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentAdmissionDiagnosisSection21345",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_DIAGNOSIS_SECTION21345__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentAdmissionDiagnosisSection21345(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentAdmissionDiagnosisSection21345TestCase.doValidationTest();
 	}
 
 	/**
@@ -2331,11 +1415,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetImmunizationsSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getImmunizationsSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional21347() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional21347TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional21347",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21347__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional21347(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentAdmissionMedicationsSectionEntriesOptional21347TestCase.doValidationTest();
 	}
 
 	/**
@@ -2343,11 +1451,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getProblemSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHospitalConsultationsSection1349() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHospitalConsultationsSection1349TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHospitalConsultationsSection1349",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HOSPITAL_CONSULTATIONS_SECTION1349__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHospitalConsultationsSection1349(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHospitalConsultationsSection1349TestCase.doValidationTest();
 	}
 
 	/**
@@ -2355,11 +1487,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProceduresSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getProceduresSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeInstructionsSection1351() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeInstructionsSection1351TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeInstructionsSection1351",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION1351__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeInstructionsSection1351(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeInstructionsSection1351TestCase.doValidationTest();
 	}
 
 	/**
@@ -2367,11 +1523,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetReasonForVisitSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getReasonForVisitSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargePhysicalSection1353() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargePhysicalSection1353TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargePhysicalSection1353",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HOSPITAL_DISCHARGE_PHYSICAL_SECTION1353__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargePhysicalSection1353(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargePhysicalSection1353TestCase.doValidationTest();
 	}
 
 	/**
@@ -2379,11 +1559,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetReviewOfSystemsSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getReviewOfSystemsSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeStudiesSummarySection1355() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeStudiesSummarySection1355TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeStudiesSummarySection1355",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION1355__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeStudiesSummarySection1355(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentHospitalDischargeStudiesSummarySection1355TestCase.doValidationTest();
 	}
 
 	/**
@@ -2391,11 +1595,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSocialHistorySection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getSocialHistorySection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21357() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21357TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21357",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL21357__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21357(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21357TestCase.doValidationTest();
 	}
 
 	/**
@@ -2403,11 +1631,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetVitalSignsSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getVitalSignsSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentProblemSectionEntriesOptional21359() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentProblemSectionEntriesOptional21359TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentProblemSectionEntriesOptional21359",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION_ENTRIES_OPTIONAL21359__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentProblemSectionEntriesOptional21359(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentProblemSectionEntriesOptional21359TestCase.doValidationTest();
 	}
 
 	/**
@@ -2415,11 +1667,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetDischargeDiagnosisSection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getDischargeDiagnosisSection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21361() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21361TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21361",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION_ENTRIES_OPTIONAL21361__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21361(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21361TestCase.doValidationTest();
 	}
 
 	/**
@@ -2427,11 +1703,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetDischargeMedicationsSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getDischargeMedicationsSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentReasonForVisitSection1363() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentReasonForVisitSection1363TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentReasonForVisitSection1363",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_VISIT_SECTION1363__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentReasonForVisitSection1363(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentReasonForVisitSection1363TestCase.doValidationTest();
 	}
 
 	/**
@@ -2439,11 +1739,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetFamilyHistorySection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getFamilyHistorySection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentReviewOfSystemsSection1365() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentReviewOfSystemsSection1365TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentReviewOfSystemsSection1365",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION1365__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentReviewOfSystemsSection1365(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentReviewOfSystemsSection1365TestCase.doValidationTest();
 	}
 
 	/**
@@ -2451,11 +1775,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAdmissionDiagnosisSection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getAdmissionDiagnosisSection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentSocialHistorySection21367() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentSocialHistorySection21367TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentSocialHistorySection21367",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION21367__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentSocialHistorySection21367(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentSocialHistorySection21367TestCase.doValidationTest();
 	}
 
 	/**
@@ -2463,11 +1811,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAdmissionMedicationsSectionEntriesOptional2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getAdmissionMedicationsSectionEntriesOptional2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21369() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21369TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21369",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL21369__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21369(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21369TestCase.doValidationTest();
 	}
 
 	/**
@@ -2475,11 +1847,35 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetDischargeMedicationsSection2() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getDischargeMedicationsSection2();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSection21371() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSection21371TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSection21371",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_MEDICATIONS_SECTION21371__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSection21371(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentDischargeMedicationsSection21371TestCase.doValidationTest();
 	}
 
 	/**
@@ -2487,11 +1883,1043 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetDischargeDietSection() {
 
-		DischargeSummary2 target = objectFactory.create();
-		target.getDischargeDietSection();
+	public void testValidateDischargeSummary2ComponentStructuredBodyComponentDischargeDietSection1373() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyComponentDischargeDietSection1373TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyComponentDischargeDietSection1373",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_COMPONENT_DISCHARGE_DIET_SECTION1373__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyComponentDischargeDietSection1373(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyComponentDischargeDietSection1373TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyAllergiesSectionEntriesOptional21320() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyAllergiesSectionEntriesOptional21320TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyAllergiesSectionEntriesOptional21320",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION_ENTRIES_OPTIONAL21320__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyAllergiesSectionEntriesOptional21320(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyAllergiesSectionEntriesOptional21320TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHospitalCourseSection1322() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHospitalCourseSection1322TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHospitalCourseSection1322",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HOSPITAL_COURSE_SECTION1322__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHospitalCourseSection1322(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHospitalCourseSection1322TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyDischargeDiagnosisSection21324() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyDischargeDiagnosisSection21324TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyDischargeDiagnosisSection21324",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIAGNOSIS_SECTION21324__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyDischargeDiagnosisSection21324(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyDischargeDiagnosisSection21324TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSectionEntriesOptional21326() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSectionEntriesOptional21326TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSectionEntriesOptional21326",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21326__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSectionEntriesOptional21326(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSectionEntriesOptional21326TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyPlanOfTreatmentSection21328() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyPlanOfTreatmentSection21328TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyPlanOfTreatmentSection21328",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION21328__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyPlanOfTreatmentSection21328(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyPlanOfTreatmentSection21328TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyChiefComplaintSection1330() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyChiefComplaintSection1330TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyChiefComplaintSection1330",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_CHIEF_COMPLAINT_SECTION1330__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyChiefComplaintSection1330(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyChiefComplaintSection1330TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1332() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1332TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1332",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION1332__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1332(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1332TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyNutritionSection1334() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyNutritionSection1334TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyNutritionSection1334",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION1334__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyNutritionSection1334(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyNutritionSection1334TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyFamilyHistorySection21336() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyFamilyHistorySection21336TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyFamilyHistorySection21336",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION21336__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyFamilyHistorySection21336(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyFamilyHistorySection21336TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyFunctionalStatusSection21338() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyFunctionalStatusSection21338TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyFunctionalStatusSection21338",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_FUNCTIONAL_STATUS_SECTION21338__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyFunctionalStatusSection21338(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyFunctionalStatusSection21338TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHistoryOfPastIllnessSection21340() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHistoryOfPastIllnessSection21340TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHistoryOfPastIllnessSection21340",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION21340__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHistoryOfPastIllnessSection21340(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHistoryOfPastIllnessSection21340TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHistoryOfPresentIllnessSection1342() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHistoryOfPresentIllnessSection1342TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHistoryOfPresentIllnessSection1342",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION1342__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHistoryOfPresentIllnessSection1342(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHistoryOfPresentIllnessSection1342TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyAdmissionDiagnosisSection21344() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyAdmissionDiagnosisSection21344TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyAdmissionDiagnosisSection21344",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_ADMISSION_DIAGNOSIS_SECTION21344__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyAdmissionDiagnosisSection21344(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyAdmissionDiagnosisSection21344TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional21346() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional21346TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional21346",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21346__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional21346(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyAdmissionMedicationsSectionEntriesOptional21346TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHospitalConsultationsSection1348() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHospitalConsultationsSection1348TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHospitalConsultationsSection1348",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HOSPITAL_CONSULTATIONS_SECTION1348__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHospitalConsultationsSection1348(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHospitalConsultationsSection1348TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHospitalDischargeInstructionsSection1350() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHospitalDischargeInstructionsSection1350TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHospitalDischargeInstructionsSection1350",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION1350__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHospitalDischargeInstructionsSection1350(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHospitalDischargeInstructionsSection1350TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHospitalDischargePhysicalSection1352() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHospitalDischargePhysicalSection1352TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHospitalDischargePhysicalSection1352",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HOSPITAL_DISCHARGE_PHYSICAL_SECTION1352__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHospitalDischargePhysicalSection1352(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHospitalDischargePhysicalSection1352TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyHospitalDischargeStudiesSummarySection1354() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyHospitalDischargeStudiesSummarySection1354TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyHospitalDischargeStudiesSummarySection1354",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION1354__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyHospitalDischargeStudiesSummarySection1354(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyHospitalDischargeStudiesSummarySection1354TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyImmunizationsSectionEntriesOptional21356() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyImmunizationsSectionEntriesOptional21356TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyImmunizationsSectionEntriesOptional21356",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL21356__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyImmunizationsSectionEntriesOptional21356(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyImmunizationsSectionEntriesOptional21356TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyProblemSectionEntriesOptional21358() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyProblemSectionEntriesOptional21358TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyProblemSectionEntriesOptional21358",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION_ENTRIES_OPTIONAL21358__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyProblemSectionEntriesOptional21358(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyProblemSectionEntriesOptional21358TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyProceduresSectionEntriesOptional21360() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyProceduresSectionEntriesOptional21360TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyProceduresSectionEntriesOptional21360",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION_ENTRIES_OPTIONAL21360__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyProceduresSectionEntriesOptional21360(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyProceduresSectionEntriesOptional21360TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyReasonForVisitSection1362() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyReasonForVisitSection1362TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyReasonForVisitSection1362",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_REASON_FOR_VISIT_SECTION1362__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyReasonForVisitSection1362(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyReasonForVisitSection1362TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyReviewOfSystemsSection1364() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyReviewOfSystemsSection1364TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyReviewOfSystemsSection1364",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION1364__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyReviewOfSystemsSection1364(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyReviewOfSystemsSection1364TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodySocialHistorySection21366() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodySocialHistorySection21366TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodySocialHistorySection21366",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION21366__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodySocialHistorySection21366(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodySocialHistorySection21366TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyVitalSignsSectionEntriesOptional21368() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyVitalSignsSectionEntriesOptional21368TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyVitalSignsSectionEntriesOptional21368",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL21368__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyVitalSignsSectionEntriesOptional21368(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyVitalSignsSectionEntriesOptional21368TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSection21370() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSection21370TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSection21370",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_DISCHARGE_MEDICATIONS_SECTION21370__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSection21370(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyDischargeMedicationsSection21370TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBodyDischargeDietSection1372() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBodyDischargeDietSection1372TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBodyDischargeDietSection1372",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY_DISCHARGE_DIET_SECTION1372__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBodyDischargeDietSection1372(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBodyDischargeDietSection1372TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeSummary2ComponentStructuredBody1319() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentStructuredBody1319TestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ComponentStructuredBody1319",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_STRUCTURED_BODY1319__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ComponentStructuredBody1319(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ComponentStructuredBody1319TestCase.doValidationTest();
 	}
 
 	/**
@@ -2501,8 +2929,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<DischargeSummary2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

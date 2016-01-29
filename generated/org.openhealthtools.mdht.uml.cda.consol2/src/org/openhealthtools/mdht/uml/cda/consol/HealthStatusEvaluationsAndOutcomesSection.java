@@ -22,7 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthStatusEvaluationsAndOutcomesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthStatusEvaluationsAndOutcomesSectionTemplateId HealthStatusEvaluationsAndOutcomesSectionCode HealthStatusEvaluationsAndOutcomesSectionCodeP HealthStatusEvaluationsAndOutcomesSectionTitle HealthStatusEvaluationsAndOutcomesSectionText HealthStatusEvaluationsAndOutcomesSectionOutcomeObservation' templateId.root='2.16.840.1.113883.10.20.22.2.61' nullFlavor='NI' constraints.validation.info='HealthStatusEvaluationsAndOutcomesSectionNullFlavor' code.code='11383-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient Problem Outcome'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthStatusEvaluationsAndOutcomesSectionTemplateId HealthStatusEvaluationsAndOutcomesSectionCode HealthStatusEvaluationsAndOutcomesSectionCodeP HealthStatusEvaluationsAndOutcomesSectionTitle HealthStatusEvaluationsAndOutcomesSectionText HealthStatusEvaluationsAndOutcomesSectionEntry754 HealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755' templateId.root='2.16.840.1.113883.10.20.22.2.61' nullFlavor='NI' constraints.validation.info='HealthStatusEvaluationsAndOutcomesSectionNullFlavor' code.code='11383-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient Problem Outcome' constraints.validation.query='HealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntry constraints.validation.error='HealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755'"
  * @generated
  */
 public interface HealthStatusEvaluationsAndOutcomesSection extends Section {
@@ -59,7 +60,7 @@ public interface HealthStatusEvaluationsAndOutcomesSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'11383-7\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'11383-7\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateHealthStatusEvaluationsAndOutcomesSectionCode(DiagnosticChain diagnostics,
@@ -111,20 +112,22 @@ public interface HealthStatusEvaluationsAndOutcomesSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::OutcomeObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateHealthStatusEvaluationsAndOutcomesSectionEntry754(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::OutcomeObservation)).oclAsType(consol::OutcomeObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::OutcomeObservation)))'"
 	 * @generated
 	 */
-	EList<OutcomeObservation> getOutcomeObservations();
+	boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -134,10 +137,10 @@ public interface HealthStatusEvaluationsAndOutcomesSection extends Section {
 	public HealthStatusEvaluationsAndOutcomesSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HealthStatusEvaluationsAndOutcomesSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthStatusEvaluationsAndOutcomesSection

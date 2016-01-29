@@ -47,26 +47,23 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryObservation2CDTranslation() {
 		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservation2CDTranslationTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
-			"validateFamilyHistoryObservation2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservation2CDTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(FamilyHistoryObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(FamilyHistoryObservation2 target) {
-				target.getCode().getTranslations().set(0, DatatypesFactory.eINSTANCE.createCD("75326-9", LOINC_ID));
+				target.init();
 
 			}
 
@@ -84,25 +81,25 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryObservation2CDTranslationP() {
 		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservation2CDTranslationPTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
 			"validateFamilyHistoryObservation2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(FamilyHistoryObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(FamilyHistoryObservation2 target) {
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -124,8 +121,8 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationTemplateId() {
 		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservationTemplateIdTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
-			"validateFamilyHistoryObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -187,7 +184,7 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryObservationCode() {
@@ -198,15 +195,16 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(FamilyHistoryObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(FamilyHistoryObservation2 target) {
-				target.getCode().setCodeSystem(SNOMEDCT_ID);
-				target.getCode().setCode("404684003");
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override

@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActStatusCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.3' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' classCode='ACT' moodCode='EVN' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActStatusCode ProblemConcernActEffectiveTime ProblemConcernActEntryRelationship24 ProblemConcernActProblemObservationEntryRelationshipProblemObservation25' templateId.root='2.16.840.1.113883.10.20.22.4.3' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' classCode='ACT' moodCode='EVN' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.query='ProblemConcernActProblemObservationEntryRelationshipProblemObservation25'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemConcernActProblemObservationEntryRelationship constraints.validation.error='ProblemConcernActProblemObservationEntryRelationshipProblemObservation25'"
  * @generated
  */
 public interface ProblemConcernAct extends Act {
@@ -97,7 +98,7 @@ public interface ProblemConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,7 +122,7 @@ public interface ProblemConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'CONC\' and value.codeSystem = \'2.16.840.1.113883.5.6\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'CONC\' and value.codeSystem = \'2.16.840.1.113883.5.6\')'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -133,7 +134,7 @@ public interface ProblemConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\' or value.code = \'suspended\' or value.code = \'aborted\' or value.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\' or value.code = \'suspended\' or value.code = \'aborted\' or value.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -157,19 +158,22 @@ public interface ProblemConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProblemObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemConcernActEntryRelationship24(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation)).oclAsType(consol::ProblemObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation)))'"
 	 * @generated
 	 */
-	EList<ProblemObservation> getProblemObservations();
+	boolean validateProblemConcernActProblemObservationEntryRelationshipProblemObservation25(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,9 +183,9 @@ public interface ProblemConcernAct extends Act {
 	public ProblemConcernAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemConcernAct

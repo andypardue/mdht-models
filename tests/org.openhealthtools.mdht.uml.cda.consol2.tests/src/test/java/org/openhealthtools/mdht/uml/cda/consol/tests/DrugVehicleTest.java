@@ -15,13 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DrugVehicleOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,7 +44,7 @@ public class DrugVehicleTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugVehiclePlayingEntityCode() {
@@ -58,15 +55,12 @@ public class DrugVehicleTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DrugVehicle target) {
-				target.init();
 
-				target.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(DrugVehicle target) {
-
-				target.getPlayingEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
 
 			}
 
@@ -84,7 +78,7 @@ public class DrugVehicleTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugVehiclePlayingEntityName() {
@@ -95,15 +89,13 @@ public class DrugVehicleTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DrugVehicle target) {
-				target.init();
-				target.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(DrugVehicle target) {
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pe.getNames().add(DatatypesFactory.eINSTANCE.createPN());
-				target.setPlayingEntity(pe);
+				target.init();
+
 			}
 
 			@Override
@@ -220,7 +212,7 @@ public class DrugVehicleTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugVehiclePlayingEntity() {
@@ -237,7 +229,7 @@ public class DrugVehicleTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DrugVehicle target) {
 				target.init();
-				target.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
+
 			}
 
 			@Override

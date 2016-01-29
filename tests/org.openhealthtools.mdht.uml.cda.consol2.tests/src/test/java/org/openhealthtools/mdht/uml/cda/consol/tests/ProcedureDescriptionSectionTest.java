@@ -52,8 +52,8 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureDescriptionSectionTemplateId() {
 		OperationsTestCase<ProcedureDescriptionSection> validateProcedureDescriptionSectionTemplateIdTestCase = new OperationsTestCase<ProcedureDescriptionSection>(
-			"validateProcedureDescriptionSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureDescriptionSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureDescriptionSectionCodeP() {
 		OperationsTestCase<ProcedureDescriptionSection> validateProcedureDescriptionSectionCodePTestCase = new OperationsTestCase<ProcedureDescriptionSection>(
-			"validateProcedureDescriptionSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_DESCRIPTION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureDescriptionSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_DESCRIPTION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +191,8 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureDescriptionSectionTitle() {
 		OperationsTestCase<ProcedureDescriptionSection> validateProcedureDescriptionSectionTitleTestCase = new OperationsTestCase<ProcedureDescriptionSection>(
-			"validateProcedureDescriptionSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureDescriptionSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

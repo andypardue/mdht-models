@@ -17,33 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.InformationRecipient;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
-import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2;
-import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPresentIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
-import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryAndPhysicalNote2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,27 +42,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2Participant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2InFulfillmentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 In Fulfillment Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Allergies Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2AssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Assessment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2PlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2AssessmentAndPlanSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Assessment And Plan Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ChiefComplaintSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Chief Complaint Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Chief Complaint And Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2GeneralStatusSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 General Status Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 History Of Past Illness Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 History Of Present Illness Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Immunizations Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2InstructionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Instructions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2PhysicalExamSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Physical Exam Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Problem Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Procedures Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ReasonForVisitSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Results Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2SocialHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Family History Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2Component1374(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component1374</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Information Recipient Intended Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Participant If Par Type Code IND Then AE Class Code IND</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
@@ -100,27 +59,49 @@ import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Encounter Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getAllergiesSectionEntriesOptional2() <em>Get Allergies Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getAssessmentSection() <em>Get Assessment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getPlanOfTreatmentSection2() <em>Get Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getAssessmentAndPlanSection2() <em>Get Assessment And Plan Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getChiefComplaintSection() <em>Get Chief Complaint Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getChiefComplaintAndReasonForVisitSection() <em>Get Chief Complaint And Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getGeneralStatusSection() <em>Get General Status Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getHistoryOfPastIllnessSection2() <em>Get History Of Past Illness Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getHistoryOfPresentIllnessSection() <em>Get History Of Present Illness Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getImmunizationsSectionEntriesOptional2() <em>Get Immunizations Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getInstructionsSection2() <em>Get Instructions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getMedicationsSectionEntriesOptional2() <em>Get Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getPhysicalExamSection2() <em>Get Physical Exam Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getProblemSectionEntriesOptional2() <em>Get Problem Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getProceduresSectionEntriesOptional2() <em>Get Procedures Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getReasonForVisitSection() <em>Get Reason For Visit Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getResultsSectionEntriesOptional2() <em>Get Results Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getSocialHistorySection2() <em>Get Social History Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getVitalSignsSectionEntriesOptional2() <em>Get Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#getFamilyHistorySection2() <em>Get Family History Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21377(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Allergies Section Entries Optional21377</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentSection1379(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Assessment Section1379</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21381(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Plan Of Treatment Section21381</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21383(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Assessment And Plan Section21383</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintSection1385(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Chief Complaint Section1385</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1387(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Chief Complaint And Reason For Visit Section1387</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentFamilyHistorySection21389(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Family History Section21389</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentGeneralStatusSection1391(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component General Status Section1391</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21393(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component History Of Past Illness Section21393</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1395(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component History Of Present Illness Section1395</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21397(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Immunizations Section Entries Optional21397</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentInstructionsSection21399(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Instructions Section21399</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21401(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Medications Section Entries Optional21401</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPhysicalExamSection21403(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Physical Exam Section21403</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21405(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Problem Section Entries Optional21405</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21407(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Procedures Section Entries Optional21407</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReasonForVisitSection1409(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Reason For Visit Section1409</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21411(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Results Section Entries Optional21411</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReviewOfSystemsSection1413(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Review Of Systems Section1413</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentSocialHistorySection21415(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Social History Section21415</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21417(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Component Vital Signs Section Entries Optional21417</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21376(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Allergies Section Entries Optional21376</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentSection1378(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Assessment Section1378</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyPlanOfTreatmentSection21380(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Plan Of Treatment Section21380</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentAndPlanSection21382(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Assessment And Plan Section21382</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintSection1384(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Chief Complaint Section1384</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1386(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Chief Complaint And Reason For Visit Section1386</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyFamilyHistorySection21388(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Family History Section21388</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyGeneralStatusSection1390(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body General Status Section1390</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPastIllnessSection21392(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body History Of Past Illness Section21392</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1394(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body History Of Present Illness Section1394</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyImmunizationsSectionEntriesOptional21396(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Immunizations Section Entries Optional21396</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyInstructionsSection21398(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Instructions Section21398</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21400(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Medications Section Entries Optional21400</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyPhysicalExamSection21402(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Physical Exam Section21402</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyProblemSectionEntriesOptional21404(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Problem Section Entries Optional21404</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyProceduresSectionEntriesOptional21406(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Procedures Section Entries Optional21406</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyReasonForVisitSection1408(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Reason For Visit Section1408</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyResultsSectionEntriesOptional21410(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Results Section Entries Optional21410</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyReviewOfSystemsSection1412(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Review Of Systems Section1412</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodySocialHistorySection21414(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Social History Section21414</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21416(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body Vital Signs Section Entries Optional21416</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentStructuredBody1375(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Structured Body1375</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -132,74 +113,24 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisitTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2HasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HAS_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HAS_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			{
-				skipNullTest();
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
 			}
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-
-				});
-
-			}
-
-			/*
-			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
-			 */
-			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-				});
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
 
 			}
 
@@ -217,74 +148,24 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			{
-				skipNullTest();
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
 			}
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-
-				});
-
-			}
-
-			/*
-			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
-			 */
-			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-				});
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
 
 			}
 
@@ -302,79 +183,24 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2DoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			{
-				skipNullTest();
-			}
-
-			/*
-			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
-			 */
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-
-				});
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-				});
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
 
 			}
 
@@ -392,79 +218,33 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			{
-				skipNullTest();
-			}
-
-			/*
-			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
-			 */
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-
-				});
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
 
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
-					}
-				});
+				// /* DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection */
+				// DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection section =
+				//
+				// ConsolFactory.eINSTANCE.createDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection().init();
+				//
+				//
+				// target.addSection(section);
+				//
 
 			}
 
@@ -516,7 +296,7 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2Code() {
@@ -527,14 +307,13 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				CE code = target.getCode();
-				code.setCode("34117-2");
-				code.setCodeSystem("2.16.840.1.113883.6.1");
+				target.init();
+
 			}
 
 			@Override
@@ -558,13 +337,14 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2InformationRecipient() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2InformationRecipientTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2InformationRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -575,8 +355,7 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
 				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
+
 			}
 
 			@Override
@@ -593,13 +372,13 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2Participant() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ParticipantTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2Participant",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHistoryAndPhysicalNote2Participant", operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -610,8 +389,7 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
 				target.init();
-				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
@@ -628,13 +406,14 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2InFulfillmentOf() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2InFulfillmentOfTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2InFulfillmentOf",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -645,7 +424,7 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
 				target.init();
-				target.getInFulfillmentOfs().add(CDAFactory.eINSTANCE.createInFulfillmentOf());
+
 			}
 
 			@Override
@@ -662,13 +441,13 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOf() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ComponentOf",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHistoryAndPhysicalNote2ComponentOf", operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -679,8 +458,7 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
 				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
@@ -697,13 +475,14 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateHistoryAndPhysicalNote2Component1374() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2Component1374TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2Component1374", operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT1374__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -714,773 +493,42 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
 				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional2().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2(
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2Component1374(
 					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateHistoryAndPhysicalNote2AllergiesSectionEntriesOptional2TestCase.doValidationTest();
+		validateHistoryAndPhysicalNote2Component1374TestCase.doValidationTest();
 	}
 
 	/**
 	*
 	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2AssessmentSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2AssessmentSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2AssessmentSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* AssessmentSection */
-				AssessmentSection section =
-
-				ConsolFactory.eINSTANCE.createAssessmentSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AssessmentSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2AssessmentSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2PlanOfTreatmentSection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2PlanOfTreatmentSection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2PlanOfTreatmentSection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2PlanOfTreatmentSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2AssessmentAndPlanSection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2AssessmentAndPlanSection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2AssessmentAndPlanSection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2AssessmentAndPlanSection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2AssessmentAndPlanSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ChiefComplaintSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ChiefComplaintSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* ChiefComplaintSection */
-				ChiefComplaintSection section =
-
-				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ChiefComplaintSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ChiefComplaintSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* ChiefComplaintAndReasonForVisitSection */
-				ChiefComplaintAndReasonForVisitSection section =
-
-				ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ChiefComplaintAndReasonForVisitSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2GeneralStatusSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2GeneralStatusSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2GeneralStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* GeneralStatusSection */
-				GeneralStatusSection section =
-
-				ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2GeneralStatusSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2GeneralStatusSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createHistoryOfPastIllnessSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2HistoryOfPastIllnessSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* HistoryOfPresentIllnessSection */
-				HistoryOfPresentIllnessSection section =
-
-				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2HistoryOfPresentIllnessSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createImmunizationsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ImmunizationsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2InstructionsSection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2InstructionsSection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2InstructionsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INSTRUCTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createInstructionsSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2InstructionsSection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2InstructionsSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createMedicationsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2MedicationsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2PhysicalExamSection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2PhysicalExamSection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2PhysicalExamSection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createPhysicalExamSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2PhysicalExamSection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2PhysicalExamSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createProblemSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ProblemSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createProceduresSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ProceduresSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ReasonForVisitSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ReasonForVisitSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* ReasonForVisitSection */
-				ReasonForVisitSection section =
-
-				ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ReasonForVisitSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ReasonForVisitSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_RESULTS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createResultsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ResultsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2ReviewOfSystemsSection() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ReviewOfSystemsSectionTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2ReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-
-				/* ReviewOfSystemsSection */
-				ReviewOfSystemsSection section =
-
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ReviewOfSystemsSection(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2ReviewOfSystemsSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2SocialHistorySection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2SocialHistorySection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2SocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createSocialHistorySection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2SocialHistorySection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2SocialHistorySection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHistoryAndPhysicalNote2FamilyHistorySection2() {
-		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2FamilyHistorySection2TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateHistoryAndPhysicalNote2FamilyHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createFamilyHistorySection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2FamilyHistorySection2(
-					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHistoryAndPhysicalNote2FamilyHistorySection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipientTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
+
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.setIntendedRecipient(CDAFactory.eINSTANCE.createIntendedRecipient());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1497,93 +545,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* Note: Modified OCL in operations.
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						// <participant typeCode="IND"/>
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						p.setTypeCode(ParticipationType.IND);
-						target.getParticipants().add(p);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						// <participant typeCode="IND">
-						// <associatedEntity/>
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						p.setTypeCode(ParticipationType.IND);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(HistoryAndPhysicalNote2 target) {
-						// <participant typeCode="IND">
-						// <associatedEntity classCode="ACCESS"/>
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						p.setTypeCode(ParticipationType.IND);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-						ae.setClassCode(RoleClassAssociative.ACCESS); // invalid code
-					}
-				});
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						// correct value pass
-						// <participant typeCode="IND" >
-						// <associatedEntity classCode="SOME CODE FROM THE SET" />
-						target.getParticipants().clear();
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-						p.getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(HistoryAndPhysicalNote2 target) {
-						// nullFlavor pass
-						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
-						target.getParticipants().clear();
-						target.init();
-						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
-						target.getParticipants().add(p);
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						p.setAssociatedEntity(ae);
-						p.getAssociatedEntity().setNullFlavor(NullFlavor.NA);
-					}
-				});
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
 
 			}
 
@@ -1601,30 +581,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
 
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("200912");
-				ee.setEffectiveTime(ivlts);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_DAY);
+				target.init();
+
 			}
 
 			@Override
@@ -1641,30 +616,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
 
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_MINUTE);
+				target.init();
+
 			}
 
 			@Override
@@ -1681,30 +651,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
 
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS(PRECISE_TO_MINUTE);
-				ee.setEffectiveTime(ivlts);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(PRECISE_TO_SECOND);
+				target.init();
+
 			}
 
 			@Override
@@ -1721,31 +686,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 component = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				component.setEncompassingEncounter(ee);
-				target.setComponentOf(component);
 
-				IVL_TS ivlts = DatatypesFactory.eINSTANCE.createIVL_TS("2009121217");
-				ee.setEffectiveTime(ivlts);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setValue(
-					PRECISE_TO_MINUTE_WITH_TIMEZONE);
+				target.init();
+
 			}
 
 			@Override
@@ -1762,39 +721,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				rp.setAssignedEntity(ae);
-				ee.setResponsibleParty(rp);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				Person person = CDAFactory.eINSTANCE.createPerson();
+				target.init();
 
-				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().getAssignedEntity().setAssignedPerson(
-					person);
 			}
 
 			@Override
@@ -1811,33 +756,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
-
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-				ee.setResponsibleParty(rp);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getResponsibleParty().setAssignedEntity(
-					CDAFactory.eINSTANCE.createAssignedEntity());
+				target.init();
+
 			}
 
 			@Override
@@ -1854,47 +791,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				ep.setAssignedEntity(ae);
-				ee.getEncounterParticipants().add(ep);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().clear();
+				target.init();
 
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				Person person = CDAFactory.eINSTANCE.createPerson();
-
-				ae.setAssignedPerson(person);
-
-				ep.setAssignedEntity(ae);
-
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().add(ep);
 			}
 
 			@Override
@@ -1911,41 +826,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-
-				ee.getEncounterParticipants().add(ep);
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().clear();
+				target.init();
 
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
-
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-
-				ep.setAssignedEntity(ae);
-
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().add(ep);
 			}
 
 			@Override
@@ -1962,30 +861,24 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterIdTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterId",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -2003,30 +896,28 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTimeTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
 				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
 				target.setEffectiveTime(ts);
-				target.getComponentOf().getEncompassingEncounter().setEffectiveTime(ts);
+
 			}
 
 			@Override
@@ -2043,31 +934,24 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsiblePartyTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				ResponsibleParty rp = CDAFactory.eINSTANCE.createResponsibleParty();
-
-				target.getComponentOf().getEncompassingEncounter().setResponsibleParty(rp);
+				target.init();
 
 			}
 
@@ -2085,31 +969,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipantTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterEncounterParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				EncounterParticipant ep = CDAFactory.eINSTANCE.createEncounterParticipant();
+				target.init();
 
-				target.getComponentOf().getEncompassingEncounter().getEncounterParticipants().add(ep);
 			}
 
 			@Override
@@ -2126,30 +1004,24 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocationTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterLocation",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
 
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-
-				cof.setEncompassingEncounter(ee);
-
-				target.setComponentOf(cof);
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().setLocation(CDAFactory.eINSTANCE.createLocation());
+				target.init();
 
 			}
 
@@ -2167,29 +1039,25 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
 			"validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(HistoryAndPhysicalNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-
-				target.setComponentOf(cof);
 
 			}
 
 			@Override
 			protected void updateToPass(HistoryAndPhysicalNote2 target) {
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
+				target.init();
 
-				target.getComponentOf().setEncompassingEncounter(ee);
 			}
 
 			@Override
@@ -2209,11 +1077,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAllergiesSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getAllergiesSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21377() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21377TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21377",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION_ENTRIES_OPTIONAL21377__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21377(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21377TestCase.doValidationTest();
 	}
 
 	/**
@@ -2221,11 +1113,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getAssessmentSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentSection1379() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentSection1379TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentSection1379",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION1379__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentSection1379(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentSection1379TestCase.doValidationTest();
 	}
 
 	/**
@@ -2233,11 +1149,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlanOfTreatmentSection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getPlanOfTreatmentSection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21381() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21381TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21381",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION21381__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21381(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21381TestCase.doValidationTest();
 	}
 
 	/**
@@ -2245,11 +1185,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentAndPlanSection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getAssessmentAndPlanSection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21383() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21383TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21383",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION21383__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21383(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21383TestCase.doValidationTest();
 	}
 
 	/**
@@ -2257,11 +1221,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetChiefComplaintSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getChiefComplaintSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintSection1385() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintSection1385TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintSection1385",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_CHIEF_COMPLAINT_SECTION1385__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintSection1385(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintSection1385TestCase.doValidationTest();
 	}
 
 	/**
@@ -2269,11 +1257,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetChiefComplaintAndReasonForVisitSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getChiefComplaintAndReasonForVisitSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1387() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1387TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1387",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION1387__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1387(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1387TestCase.doValidationTest();
 	}
 
 	/**
@@ -2281,11 +1293,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetGeneralStatusSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getGeneralStatusSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentFamilyHistorySection21389() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentFamilyHistorySection21389TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentFamilyHistorySection21389",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_FAMILY_HISTORY_SECTION21389__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentFamilyHistorySection21389(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentFamilyHistorySection21389TestCase.doValidationTest();
 	}
 
 	/**
@@ -2293,11 +1329,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHistoryOfPastIllnessSection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getHistoryOfPastIllnessSection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentGeneralStatusSection1391() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentGeneralStatusSection1391TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentGeneralStatusSection1391",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_GENERAL_STATUS_SECTION1391__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentGeneralStatusSection1391(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentGeneralStatusSection1391TestCase.doValidationTest();
 	}
 
 	/**
@@ -2305,11 +1365,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHistoryOfPresentIllnessSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getHistoryOfPresentIllnessSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21393() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21393TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21393",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PAST_ILLNESS_SECTION21393__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21393(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21393TestCase.doValidationTest();
 	}
 
 	/**
@@ -2317,11 +1401,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetImmunizationsSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getImmunizationsSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1395() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1395TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1395",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_HISTORY_OF_PRESENT_ILLNESS_SECTION1395__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1395(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1395TestCase.doValidationTest();
 	}
 
 	/**
@@ -2329,11 +1437,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInstructionsSection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getInstructionsSection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21397() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21397TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21397",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL21397__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21397(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentImmunizationsSectionEntriesOptional21397TestCase.doValidationTest();
 	}
 
 	/**
@@ -2341,11 +1473,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetMedicationsSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getMedicationsSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentInstructionsSection21399() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentInstructionsSection21399TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentInstructionsSection21399",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_INSTRUCTIONS_SECTION21399__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentInstructionsSection21399(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentInstructionsSection21399TestCase.doValidationTest();
 	}
 
 	/**
@@ -2353,11 +1509,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPhysicalExamSection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getPhysicalExamSection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21401() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21401TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21401",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21401__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21401(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21401TestCase.doValidationTest();
 	}
 
 	/**
@@ -2365,11 +1545,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getProblemSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPhysicalExamSection21403() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPhysicalExamSection21403TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPhysicalExamSection21403",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION21403__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPhysicalExamSection21403(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentPhysicalExamSection21403TestCase.doValidationTest();
 	}
 
 	/**
@@ -2377,11 +1581,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProceduresSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getProceduresSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21405() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21405TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21405",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION_ENTRIES_OPTIONAL21405__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21405(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21405TestCase.doValidationTest();
 	}
 
 	/**
@@ -2389,11 +1617,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetReasonForVisitSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getReasonForVisitSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21407() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21407TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21407",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PROCEDURES_SECTION_ENTRIES_OPTIONAL21407__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21407(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21407TestCase.doValidationTest();
 	}
 
 	/**
@@ -2401,11 +1653,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetResultsSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getResultsSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReasonForVisitSection1409() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReasonForVisitSection1409TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReasonForVisitSection1409",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_REASON_FOR_VISIT_SECTION1409__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReasonForVisitSection1409(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReasonForVisitSection1409TestCase.doValidationTest();
 	}
 
 	/**
@@ -2413,11 +1689,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetReviewOfSystemsSection() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getReviewOfSystemsSection();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21411() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21411TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21411",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION_ENTRIES_OPTIONAL21411__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21411(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21411TestCase.doValidationTest();
 	}
 
 	/**
@@ -2425,11 +1725,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSocialHistorySection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getSocialHistorySection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReviewOfSystemsSection1413() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReviewOfSystemsSection1413TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReviewOfSystemsSection1413",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION1413__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReviewOfSystemsSection1413(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentReviewOfSystemsSection1413TestCase.doValidationTest();
 	}
 
 	/**
@@ -2437,11 +1761,35 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetVitalSignsSectionEntriesOptional2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getVitalSignsSectionEntriesOptional2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentSocialHistorySection21415() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentSocialHistorySection21415TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentSocialHistorySection21415",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_SOCIAL_HISTORY_SECTION21415__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentSocialHistorySection21415(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentSocialHistorySection21415TestCase.doValidationTest();
 	}
 
 	/**
@@ -2449,11 +1797,827 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetFamilyHistorySection2() {
 
-		HistoryAndPhysicalNote2 target = objectFactory.create();
-		target.getFamilyHistorySection2();
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21417() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21417TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21417",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL21417__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21417(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21417TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21376() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21376TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21376",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION_ENTRIES_OPTIONAL21376__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21376(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21376TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentSection1378() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentSection1378TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentSection1378",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION1378__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentSection1378(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentSection1378TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyPlanOfTreatmentSection21380() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyPlanOfTreatmentSection21380TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyPlanOfTreatmentSection21380",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION21380__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyPlanOfTreatmentSection21380(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyPlanOfTreatmentSection21380TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentAndPlanSection21382() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentAndPlanSection21382TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentAndPlanSection21382",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION21382__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentAndPlanSection21382(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyAssessmentAndPlanSection21382TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintSection1384() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintSection1384TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintSection1384",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_CHIEF_COMPLAINT_SECTION1384__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintSection1384(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintSection1384TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1386() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1386TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1386",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION1386__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1386(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1386TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyFamilyHistorySection21388() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyFamilyHistorySection21388TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyFamilyHistorySection21388",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_FAMILY_HISTORY_SECTION21388__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyFamilyHistorySection21388(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyFamilyHistorySection21388TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyGeneralStatusSection1390() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyGeneralStatusSection1390TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyGeneralStatusSection1390",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_GENERAL_STATUS_SECTION1390__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyGeneralStatusSection1390(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyGeneralStatusSection1390TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPastIllnessSection21392() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPastIllnessSection21392TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPastIllnessSection21392",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PAST_ILLNESS_SECTION21392__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPastIllnessSection21392(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPastIllnessSection21392TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1394() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1394TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1394",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_HISTORY_OF_PRESENT_ILLNESS_SECTION1394__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1394(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1394TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyImmunizationsSectionEntriesOptional21396() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyImmunizationsSectionEntriesOptional21396TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyImmunizationsSectionEntriesOptional21396",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL21396__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyImmunizationsSectionEntriesOptional21396(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyImmunizationsSectionEntriesOptional21396TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyInstructionsSection21398() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyInstructionsSection21398TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyInstructionsSection21398",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_INSTRUCTIONS_SECTION21398__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyInstructionsSection21398(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyInstructionsSection21398TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21400() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21400TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21400",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21400__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21400(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21400TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyPhysicalExamSection21402() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyPhysicalExamSection21402TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyPhysicalExamSection21402",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION21402__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyPhysicalExamSection21402(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyPhysicalExamSection21402TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyProblemSectionEntriesOptional21404() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyProblemSectionEntriesOptional21404TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyProblemSectionEntriesOptional21404",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION_ENTRIES_OPTIONAL21404__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyProblemSectionEntriesOptional21404(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyProblemSectionEntriesOptional21404TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyProceduresSectionEntriesOptional21406() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyProceduresSectionEntriesOptional21406TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyProceduresSectionEntriesOptional21406",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_PROCEDURES_SECTION_ENTRIES_OPTIONAL21406__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyProceduresSectionEntriesOptional21406(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyProceduresSectionEntriesOptional21406TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyReasonForVisitSection1408() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyReasonForVisitSection1408TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyReasonForVisitSection1408",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_REASON_FOR_VISIT_SECTION1408__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyReasonForVisitSection1408(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyReasonForVisitSection1408TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyResultsSectionEntriesOptional21410() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyResultsSectionEntriesOptional21410TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyResultsSectionEntriesOptional21410",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION_ENTRIES_OPTIONAL21410__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyResultsSectionEntriesOptional21410(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyResultsSectionEntriesOptional21410TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyReviewOfSystemsSection1412() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyReviewOfSystemsSection1412TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyReviewOfSystemsSection1412",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION1412__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyReviewOfSystemsSection1412(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyReviewOfSystemsSection1412TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodySocialHistorySection21414() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodySocialHistorySection21414TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodySocialHistorySection21414",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_SOCIAL_HISTORY_SECTION21414__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodySocialHistorySection21414(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodySocialHistorySection21414TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21416() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21416TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21416",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL21416__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21416(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21416TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHistoryAndPhysicalNote2ComponentStructuredBody1375() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ComponentStructuredBody1375TestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ComponentStructuredBody1375",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_COMPONENT_STRUCTURED_BODY1375__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HistoryAndPhysicalNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HistoryAndPhysicalNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ComponentStructuredBody1375(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ComponentStructuredBody1375TestCase.doValidationTest();
 	}
 
 	/**
@@ -2463,8 +2627,8 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<HistoryAndPhysicalNote2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

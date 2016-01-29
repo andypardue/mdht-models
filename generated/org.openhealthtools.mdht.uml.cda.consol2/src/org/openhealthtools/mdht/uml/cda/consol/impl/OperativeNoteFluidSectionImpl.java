@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Operative Note Fluid Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 */
 	@Override
 	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(
-			this, diagnostics, context);
+		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -109,17 +106,17 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 */
 	@Override
 	public OperativeNoteFluidSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public OperativeNoteFluidSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // OperativeNoteFluidSectionImpl

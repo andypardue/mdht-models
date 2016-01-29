@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -39,11 +41,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#getConsolImmunizationActivity2s() <em>Get Consol Immunization Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#validateImmunizationsSectionEntriesOptional2Entry1090(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional2 Entry1090</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#validateImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional2 Immunization Activity2 Entry Immunization Activity21091</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#validateImmunizationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#validateImmunizationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#validateImmunizationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2#validateImmunizationsSectionEntriesOptionalImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Immunization Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,48 +62,129 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolImmunizationActivity2s(ImmunizationsSectionEntriesOptional2) <em>Get Consol Immunization Activity2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateImmunizationsSectionEntriesOptional2Entry1090(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional2 Entry1090</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolImmunizationActivity2s(ImmunizationsSectionEntriesOptional2)
+	 * @see #validateImmunizationsSectionEntriesOptional2Entry1090(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_IMMUNIZATION_ACTIVITY2S__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity2)).oclAsType(consol::ImmunizationActivity2)";
+	protected static final String VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolImmunizationActivity2s(ImmunizationsSectionEntriesOptional2) <em>Get Consol Immunization Activity2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateImmunizationsSectionEntriesOptional2Entry1090(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional2 Entry1090</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolImmunizationActivity2s(ImmunizationsSectionEntriesOptional2)
+	 * @see #validateImmunizationsSectionEntriesOptional2Entry1090(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_IMMUNIZATION_ACTIVITY2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param immunizationsSectionEntriesOptional2 The receiving '<em><b>Immunizations Section Entries Optional2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<ImmunizationActivity2> getConsolImmunizationActivity2s(
-			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2) {
-		if (GET_CONSOL_IMMUNIZATION_ACTIVITY2S__EOCL_QRY == null) {
+	
+	public static  boolean validateImmunizationsSectionEntriesOptional2Entry1090(ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
-				ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2.getEAllOperations().get(62));
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
-				GET_CONSOL_IMMUNIZATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_IMMUNIZATION_ACTIVITY2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_IMMUNIZATION_ACTIVITY2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ImmunizationActivity2> result = (Collection<ImmunizationActivity2>) query.evaluate(immunizationsSectionEntriesOptional2);
-		return new BasicEList.UnmodifiableEList<ImmunizationActivity2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSectionEntriesOptional2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_ENTRY1090,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptional2Entry1090"),
+						 new Object [] { immunizationsSectionEntriesOptional2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional2 Immunization Activity2 Entry Immunization Activity21091</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional2 Immunization Activity2 Entry Immunization Activity21091</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param immunizationsSectionEntriesOptional2 The receiving '<em><b>Immunizations Section Entries Optional2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091(ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(immunizationsSectionEntriesOptional2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2_IMMUNIZATION_ACTIVITY2_ENTRY_IMMUNIZATION_ACTIVITY21091,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity21091"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -139,28 +222,28 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	public static boolean validateImmunizationsSectionEntriesOptionalTemplateId(
 			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
 				VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationsSectionEntriesOptional2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalTemplateId"),
-					new Object[] { immunizationsSectionEntriesOptional2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalTemplateId"),
+						 new Object [] { immunizationsSectionEntriesOptional2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -201,28 +284,28 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	public static boolean validateImmunizationsSectionEntriesOptionalCodeP(
 			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
 				VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationsSectionEntriesOptional2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCodeP"),
-					new Object[] { immunizationsSectionEntriesOptional2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCodeP"),
+						 new Object [] { immunizationsSectionEntriesOptional2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -230,12 +313,11 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptionalCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptionalCodeP", passToken);
 				}
 				passToken.add(immunizationsSectionEntriesOptional2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -249,9 +331,9 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationsSectionEntriesOptionalCode(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Code</em>}' invariant operation.
@@ -278,98 +360,34 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 	public static boolean validateImmunizationsSectionEntriesOptionalCode(
 			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptionalCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(immunizationsSectionEntriesOptional2)) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptionalCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationsSectionEntriesOptional2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2);
 			try {
 				VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationsSectionEntriesOptional2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(immunizationsSectionEntriesOptional2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCode"),
-					new Object[] { immunizationsSectionEntriesOptional2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
+						 ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCode"),
+						 new Object [] { immunizationsSectionEntriesOptional2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateImmunizationsSectionEntriesOptionalImmunizationActivity(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Immunization Activity</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationsSectionEntriesOptionalImmunizationActivity(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::ImmunizationActivity2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateImmunizationsSectionEntriesOptionalImmunizationActivity(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunizations Section Entries Optional Immunization Activity</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateImmunizationsSectionEntriesOptionalImmunizationActivity(ImmunizationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param immunizationsSectionEntriesOptional2 The receiving '<em><b>Immunizations Section Entries Optional2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(
-			ImmunizationsSectionEntriesOptional2 immunizationsSectionEntriesOptional2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2);
-			try {
-				VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			immunizationsSectionEntriesOptional2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalImmunizationActivity"),
-					new Object[] { immunizationsSectionEntriesOptional2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

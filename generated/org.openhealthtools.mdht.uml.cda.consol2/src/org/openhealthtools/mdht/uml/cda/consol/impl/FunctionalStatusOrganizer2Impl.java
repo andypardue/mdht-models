@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusOrgani
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,22 +59,9 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusOrganizer2SelfCareActivities(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivities(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateFunctionalStatusOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2AuthorParticipation(
-			this, diagnostics, context);
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -84,9 +69,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<FunctionalStatusObservation2> getConsolFunctionalStatusObservation2s() {
-		return FunctionalStatusOrganizer2Operations.getConsolFunctionalStatusObservation2s(this);
+	public boolean validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919(this, diagnostics, context);
 	}
 
 	/**
@@ -94,9 +78,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SelfCareActivities> getSelfCareActivitiess() {
-		return FunctionalStatusOrganizer2Operations.getSelfCareActivitiess(this);
+	public boolean validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921(this, diagnostics, context);
 	}
 
 	/**
@@ -155,30 +138,18 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public FunctionalStatusOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FunctionalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FunctionalStatusOrganizer2Impl

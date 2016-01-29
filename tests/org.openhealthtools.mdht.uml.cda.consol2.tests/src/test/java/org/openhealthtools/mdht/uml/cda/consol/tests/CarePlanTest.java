@@ -17,29 +17,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.Authenticator;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.InformationRecipient;
-import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.CarePlan;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
-import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
-import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipDocument;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,10 +45,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipDocument;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthConcernsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Concerns Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanGoalsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Goals Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanHealthStatusEvaluationsOutcomesSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Health Status Evaluations Outcomes Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInterventionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Interventions Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponent766(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component766</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Information Recipient Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Information Recipient Intended Recipient Received Organization Name</em>}</li>
@@ -116,10 +97,15 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipDocument;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanRelatedDocumentParentDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Related Document Parent Document</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Of Encompassing Encounter</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getHealthConcernsSection() <em>Get Health Concerns Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getGoalsSection() <em>Get Goals Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getHealthStatusEvaluationsOutcomesSection() <em>Get Health Status Evaluations Outcomes Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#getInterventionsSection2() <em>Get Interventions Section2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyComponentHealthConcernsSection769(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Component Health Concerns Section769</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyComponentGoalsSection771(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Component Goals Section771</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyComponentInterventionsSection2773(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Component Interventions Section2773</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyComponentHealthStatusEvaluationsOutcomesSection775(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Component Health Status Evaluations Outcomes Section775</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyHealthConcernsSection768(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Health Concerns Section768</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyGoalsSection770(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Goals Section770</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyInterventionsSection2772(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Interventions Section2772</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBodyHealthStatusEvaluationsOutcomesSection774(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body Health Status Evaluations Outcomes Section774</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanComponentStructuredBody767(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Component Structured Body767</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -131,30 +117,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDoesNotHavePlanOfTreatmentSectionV2() {
 		OperationsTestCase<CarePlan> validateCarePlanDoesNotHavePlanOfTreatmentSectionV2TestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDoesNotHavePlanOfTreatmentSectionV2",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				PlanOfTreatmentSection2 pots = ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init();
-				target.addSection(pots);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				// since the sections are an unmodifiable list (cannot do target.getSections().clear()),
-				// walk the cda to clear everything in the component(s)
-				target.getComponent().getStructuredBody().getComponents().clear();
-				// add a random section which IS allowed
-				Section hcs = ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
-				target.addSection(hcs);
+				target.init();
+
 			}
 
 			@Override
@@ -242,7 +223,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanSetId() {
@@ -258,7 +239,6 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.setSetId(DatatypesFactory.eINSTANCE.createII());
 
 			}
 
@@ -275,7 +255,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanVersionNumber() {
@@ -292,7 +272,6 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.setVersionNumber(DatatypesFactory.eINSTANCE.createINT());
 
 			}
 
@@ -309,7 +288,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipient() {
@@ -326,8 +305,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
+
 			}
 
 			@Override
@@ -344,7 +322,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticator() {
@@ -361,7 +339,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
+
 			}
 
 			@Override
@@ -377,13 +355,13 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReview() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanParticipantCarePlanReview",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanParticipantCarePlanReview", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -394,8 +372,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
+
 			}
 
 			@Override
@@ -412,7 +389,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiver() {
@@ -429,8 +406,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
+
 			}
 
 			@Override
@@ -447,7 +423,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOf() {
@@ -464,7 +440,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+
 			}
 
 			@Override
@@ -480,7 +456,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanRelatedDocument() {
@@ -497,7 +473,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
+
 			}
 
 			@Override
@@ -513,7 +489,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanComponentOf() {
@@ -530,7 +506,7 @@ public class CarePlanTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.setComponentOf(CDAFactory.eINSTANCE.createComponent1());
+
 			}
 
 			@Override
@@ -549,10 +525,11 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateCarePlanHealthConcernsSection() {
-		OperationsTestCase<CarePlan> validateCarePlanHealthConcernsSectionTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanHealthConcernsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_HEALTH_CONCERNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateCarePlanComponent766() {
+		OperationsTestCase<CarePlan> validateCarePlanComponent766TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponent766",
+			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_COMPONENT766__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -564,25 +541,17 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToPass(CarePlan target) {
 				target.init();
 
-				/* HealthConcernsSection */
-				HealthConcernsSection section =
-
-				ConsolFactory.eINSTANCE.createHealthConcernsSection().init();
-
-				target.addSection(section);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CarePlanOperations.validateCarePlanHealthConcernsSection(
-					(CarePlan) objectToTest, diagnostician, map);
+				return CarePlanOperations.validateCarePlanComponent766((CarePlan) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateCarePlanHealthConcernsSectionTestCase.doValidationTest();
+		validateCarePlanComponent766TestCase.doValidationTest();
 	}
 
 	/**
@@ -590,141 +559,22 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateCarePlanGoalsSection() {
-		OperationsTestCase<CarePlan> validateCarePlanGoalsSectionTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanGoalsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_GOALS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CarePlan target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CarePlan target) {
-				target.init();
-
-				/* GoalsSection */
-				GoalsSection section =
-
-				ConsolFactory.eINSTANCE.createGoalsSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CarePlanOperations.validateCarePlanGoalsSection((CarePlan) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCarePlanGoalsSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateCarePlanHealthStatusEvaluationsOutcomesSection() {
-		OperationsTestCase<CarePlan> validateCarePlanHealthStatusEvaluationsOutcomesSectionTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanHealthStatusEvaluationsOutcomesSection",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CarePlan target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CarePlan target) {
-				target.init();
-
-				/* HealthStatusEvaluationsAndOutcomesSection */
-				HealthStatusEvaluationsAndOutcomesSection section = ConsolFactory.eINSTANCE.createHealthStatusEvaluationsAndOutcomesSection().init();
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CarePlanOperations.validateCarePlanHealthStatusEvaluationsOutcomesSection(
-					(CarePlan) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCarePlanHealthStatusEvaluationsOutcomesSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateCarePlanInterventionsSection2() {
-		OperationsTestCase<CarePlan> validateCarePlanInterventionsSection2TestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanInterventionsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CarePlan target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CarePlan target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createInterventionsSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CarePlanOperations.validateCarePlanInterventionsSection2(
-					(CarePlan) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCarePlanInterventionsSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientInformationRecipientName() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientInformationRecipientNameTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientInformationRecipientName",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
-				Person ir2 = CDAFactory.eINSTANCE.createPerson();
-				ir.getIntendedRecipient().setInformationRecipient(ir2);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				PN name = DatatypesFactory.eINSTANCE.createPN();
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getInformationRecipient().getNames().add(name);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -741,32 +591,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationIdTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
-				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
-				intendedRec.setReceivedOrganization(recOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getReceivedOrganization().getIds().add(
-						DatatypesFactory.eINSTANCE.createII());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -783,32 +626,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationNameTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
-				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
-				intendedRec.setReceivedOrganization(recOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getReceivedOrganization().getNames().add(
-						DatatypesFactory.eINSTANCE.createON());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -825,32 +661,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodePTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
-				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
-				intendedRec.setReceivedOrganization(recOrg);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getReceivedOrganization().setStandardIndustryClassCode(
-						DatatypesFactory.eINSTANCE.createCE());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -867,33 +696,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
-				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
-				intendedRec.setReceivedOrganization(recOrg);
-				recOrg.setStandardIndustryClassCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getReceivedOrganization().setStandardIndustryClassCode(
-						DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.6.101"));
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -910,29 +731,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientId() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientIdTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getIds().add(DatatypesFactory.eINSTANCE.createII());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -949,29 +766,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientAddr() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientAddrTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientAddr",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -988,29 +801,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientTelecom() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientTelecomTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1027,30 +836,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientInformationRecipient() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientInformationRecipientTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientInformationRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				Person ir2 = CDAFactory.eINSTANCE.createPerson();
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().setInformationRecipient(ir2);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1067,30 +871,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipientReceivedOrganization() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientReceivedOrganizationTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipientReceivedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				ir.setIntendedRecipient(intendedRec);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				Organization recOrg = CDAFactory.eINSTANCE.createOrganization();
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.getIntendedRecipient().setReceivedOrganization(recOrg);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1107,26 +906,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanInformationRecipientIntendedRecipient() {
 		OperationsTestCase<CarePlan> validateCarePlanInformationRecipientIntendedRecipientTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanInformationRecipientIntendedRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getInformationRecipients().get(0).setIntendedRecipient(
-					CDAFactory.eINSTANCE.createIntendedRecipient());
+				target.init();
+
 			}
 
 			@Override
@@ -1143,26 +941,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorAssignedEntityId() {
 		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorAssignedEntityIdTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanAuthenticatorAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanAuthenticatorAssignedEntityId", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
-				target.getAuthenticators().get(0).setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getAuthenticators().get(0).getAssignedEntity().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -1179,29 +975,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorAssignedEntityCode() {
 		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorAssignedEntityCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanAuthenticatorAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
-				target.getAuthenticators().get(0).setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
-				target.getAuthenticators().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE(
-						CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getAuthenticators().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("ONESELF", "2.16.840.1.113883.5.111"));
+				target.init();
+
 			}
 
 			@Override
@@ -1218,26 +1010,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorAssignedEntityCodeP() {
 		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorAssignedEntityCodePTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanAuthenticatorAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
-				target.getAuthenticators().get(0).setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
 
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getAuthenticators().get(0).getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -1254,7 +1045,7 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorTime() {
@@ -1265,20 +1056,20 @@ public class CarePlanTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getAuthenticators().get(0).setTime(DatatypesFactory.eINSTANCE.createTS());
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CarePlanOperations.validateCarePlanAuthenticatorTime((CarePlan) objectToTest, diagnostician, map);
+				return CarePlanOperations.validateCarePlanAuthenticatorTime(
+					(CarePlan) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -1288,24 +1079,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorSignatureCode() {
 		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorSignatureCodeTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanAuthenticatorSignatureCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanAuthenticatorSignatureCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_AUTHENTICATOR_SIGNATURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getAuthenticators().get(0).setSignatureCode(DatatypesFactory.eINSTANCE.createCS());
+				target.init();
+
 			}
 
 			@Override
@@ -1322,28 +1113,27 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorSDTCSignatureText() {
 		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorSDTCSignatureTextTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanAuthenticatorSDTCSignatureText",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_SDTC_SIGNATURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_AUTHENTICATOR_SDTC_SIGNATURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				Authenticator auth = CDAFactory.eINSTANCE.createAuthenticator();
-				target.getAuthenticators().add(auth);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				ED sdtcSigText = DatatypesFactory.eINSTANCE.createED();
-				for (Authenticator a : target.getAuthenticators()) {
-					a.setSDTCSignatureText(sdtcSigText);
-				}
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createED();
+
 			}
 
 			@Override
@@ -1360,24 +1150,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanAuthenticatorAssignedEntity() {
 		OperationsTestCase<CarePlan> validateCarePlanAuthenticatorAssignedEntityTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanAuthenticatorAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanAuthenticatorAssignedEntity", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getAuthenticators().add(CDAFactory.eINSTANCE.createAuthenticator());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getAuthenticators().get(0).setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+				target.init();
+
 			}
 
 			@Override
@@ -1394,26 +1184,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewAssociatedEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().setClassCode(RoleClassAssociative.ASSIGNED);
+				target.init();
+
 			}
 
 			@Override
@@ -1430,27 +1219,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewAssociatedEntityId() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewAssociatedEntityIdTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewAssociatedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -1467,26 +1254,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewAssociatedEntityCodeP() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewAssociatedEntityCodePTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewAssociatedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -1503,30 +1289,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewAssociatedEntityCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewAssociatedEntityCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewAssociatedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
-				target.getParticipants().get(0).getAssociatedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE(
-						CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("CodeNotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+				target.init();
+
 			}
 
 			@Override
@@ -1543,30 +1324,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewTypeCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewTypeCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// It is not possible for this test to fail since @typeCode is used for identification of the specific Participation type and sub
-				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
-				skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(CarePlan target) {
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
+
 			}
 
 			@Override
@@ -1583,26 +1359,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewFunctionCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewFunctionCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewFunctionCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).setFunctionCode(
-					DatatypesFactory.eINSTANCE.createCE("425268008", SNOMEDCT_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -1619,25 +1394,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewFunctionCodeP() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewFunctionCodePTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewFunctionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -1654,25 +1429,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewTime() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewTimeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewTime",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).setTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -1689,25 +1464,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCarePlanReviewAssociatedEntity() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCarePlanReviewAssociatedEntityTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCarePlanReviewAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+				target.init();
+
 			}
 
 			@Override
@@ -1724,29 +1499,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonNameTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
-				target.getParticipants().get(0).getAssociatedEntity().setAssociatedPerson(
-					CDAFactory.eINSTANCE.createPerson());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().getAssociatedPerson().getNames().add(
-					DatatypesFactory.eINSTANCE.createPN());
+				target.init();
+
 			}
 
 			@Override
@@ -1763,27 +1534,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiverAssociatedEntityClassCodeP() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityClassCodePTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCaregiverAssociatedEntityClassCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				// classCode's value is not checked in this test, only that the attribute exists
-				target.getParticipants().get(0).getAssociatedEntity().setClassCode(RoleClassAssociative.ACCESS);
+				target.init();
+
 			}
 
 			@Override
@@ -1800,26 +1569,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiverAssociatedEntityClassCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityClassCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCaregiverAssociatedEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
+				target.init();
+
 			}
 
 			@Override
@@ -1836,27 +1604,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).getAssociatedEntity().setAssociatedPerson(
-					CDAFactory.eINSTANCE.createPerson());
+				target.init();
+
 			}
 
 			@Override
@@ -1873,30 +1639,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiverTypeCode() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverTypeCodeTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanParticipantCaregiverTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanParticipantCaregiverTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// It is not possible for this test to fail since @typeCode is used for identification of the specific Participation type and sub
-				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
-				skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(CarePlan target) {
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
+
 			}
 
 			@Override
@@ -1913,25 +1673,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanParticipantCaregiverAssociatedEntity() {
 		OperationsTestCase<CarePlan> validateCarePlanParticipantCaregiverAssociatedEntityTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanParticipantCaregiverAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+				target.init();
+
 			}
 
 			@Override
@@ -1948,28 +1708,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventIVLTSLow() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventIVLTSLowTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
-				target.getDocumentationOfs().get(0).getServiceEvent().setEffectiveTime(
-					DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().setLow(
-					DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -1986,28 +1743,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventIVLTSHigh() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventIVLTSHighTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
-				target.getDocumentationOfs().get(0).getServiceEvent().setEffectiveTime(
-					DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getEffectiveTime().setHigh(
-					DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -2024,32 +1778,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
-					CDAFactory.eINSTANCE.createPerformer1());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
-					CDAFactory.eINSTANCE.createAssignedEntity());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setAssignedPerson(
-					CDAFactory.eINSTANCE.createPerson());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().getAssignedPerson().getNames().add(
-					DatatypesFactory.eINSTANCE.createPN());
+				target.init();
+
 			}
 
 			@Override
@@ -2066,29 +1813,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityIdTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				target.getDocumentationOfs().get(0).setServiceEvent(se);
-				se.getPerformers().add(CDAFactory.eINSTANCE.createPerformer1());
-				se.getPerformers().get(0).setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -2105,29 +1848,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				target.getDocumentationOfs().get(0).setServiceEvent(se);
-				se.getPerformers().add(CDAFactory.eINSTANCE.createPerformer1());
-				se.getPerformers().get(0).setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -2144,30 +1883,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
-					CDAFactory.eINSTANCE.createPerformer1());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
-					CDAFactory.eINSTANCE.createAssignedEntity());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setAssignedPerson(
-					CDAFactory.eINSTANCE.createPerson());
+				target.init();
+
 			}
 
 			@Override
@@ -2184,28 +1918,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformerAssignedEntity() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
-					CDAFactory.eINSTANCE.createPerformer1());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setAssignedEntity(
-					CDAFactory.eINSTANCE.createAssignedEntity());
+				target.init();
+
 			}
 
 			@Override
@@ -2222,25 +1953,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventClassCode() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventClassCodeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().setClassCode(ActClassRoot.PCPR);
+				target.init();
+
 			}
 
 			@Override
@@ -2257,26 +1988,28 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().setEffectiveTime(
-					DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
 			}
 
 			@Override
@@ -2293,26 +2026,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEventPerformer1() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventPerformer1TestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanDocumentationOfServiceEventPerformer1",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
-					CDAFactory.eINSTANCE.createPerformer1());
+				target.init();
+
 			}
 
 			@Override
@@ -2329,24 +2061,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanDocumentationOfServiceEvent() {
 		OperationsTestCase<CarePlan> validateCarePlanDocumentationOfServiceEventTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanDocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanDocumentationOfServiceEvent", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+				target.init();
+
 			}
 
 			@Override
@@ -2363,25 +2095,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanRelatedDocumentParentDocumentSetId() {
 		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentParentDocumentSetIdTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanRelatedDocumentParentDocumentSetId",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
-				target.getRelatedDocuments().get(0).setParentDocument(CDAFactory.eINSTANCE.createParentDocument());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getRelatedDocuments().get(0).getParentDocument().setSetId(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -2398,26 +2130,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanRelatedDocumentParentDocumentVersionNumber() {
 		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentParentDocumentVersionNumberTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanRelatedDocumentParentDocumentVersionNumber",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
-				target.getRelatedDocuments().get(0).setParentDocument(CDAFactory.eINSTANCE.createParentDocument());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getRelatedDocuments().get(0).getParentDocument().setVersionNumber(
-					DatatypesFactory.eINSTANCE.createINT());
+				target.init();
+
 			}
 
 			@Override
@@ -2434,24 +2165,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanRelatedDocumentTypeCodeP() {
 		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentTypeCodePTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanRelatedDocumentTypeCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanRelatedDocumentTypeCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getRelatedDocuments().get(0).setTypeCode(x_ActRelationshipDocument.XFRM);
+				target.init();
+
 			}
 
 			@Override
@@ -2468,25 +2199,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanRelatedDocumentTypeCode() {
 		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentTypeCodeTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanRelatedDocumentTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanRelatedDocumentTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
-				target.getRelatedDocuments().get(0).setTypeCode(x_ActRelationshipDocument.XFRM); // not part of the required valueSet
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getRelatedDocuments().get(0).setTypeCode(x_ActRelationshipDocument.APND);
+				target.init();
+
 			}
 
 			@Override
@@ -2503,24 +2233,24 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanRelatedDocumentParentDocument() {
 		OperationsTestCase<CarePlan> validateCarePlanRelatedDocumentParentDocumentTestCase = new OperationsTestCase<CarePlan>(
-			"validateCarePlanRelatedDocumentParentDocument",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCarePlanRelatedDocumentParentDocument", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getRelatedDocuments().add(CDAFactory.eINSTANCE.createRelatedDocument());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getRelatedDocuments().get(0).setParentDocument(CDAFactory.eINSTANCE.createParentDocument());
+				target.init();
+
 			}
 
 			@Override
@@ -2537,26 +2267,28 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanComponentOfEncompassingEncounterEffectiveTime() {
 		OperationsTestCase<CarePlan> validateCarePlanComponentOfEncompassingEncounterEffectiveTimeTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanComponentOfEncompassingEncounterEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.setComponentOf(CDAFactory.eINSTANCE.createComponent1());
-				target.getComponentOf().setEncompassingEncounter(CDAFactory.eINSTANCE.createEncompassingEncounter());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getComponentOf().getEncompassingEncounter().setEffectiveTime(
-					DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
 			}
 
 			@Override
@@ -2573,24 +2305,25 @@ public class CarePlanTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCarePlanComponentOfEncompassingEncounter() {
 		OperationsTestCase<CarePlan> validateCarePlanComponentOfEncompassingEncounterTestCase = new OperationsTestCase<CarePlan>(
 			"validateCarePlanComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.setComponentOf(CDAFactory.eINSTANCE.createComponent1());
+
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
-				target.getComponentOf().setEncompassingEncounter(CDAFactory.eINSTANCE.createEncompassingEncounter());
+				target.init();
+
 			}
 
 			@Override
@@ -2610,11 +2343,35 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHealthConcernsSection() {
 
-		CarePlan target = objectFactory.create();
-		target.getHealthConcernsSection();
+	public void testValidateCarePlanComponentStructuredBodyComponentHealthConcernsSection769() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyComponentHealthConcernsSection769TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyComponentHealthConcernsSection769",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_COMPONENT_HEALTH_CONCERNS_SECTION769__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyComponentHealthConcernsSection769(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyComponentHealthConcernsSection769TestCase.doValidationTest();
 	}
 
 	/**
@@ -2622,11 +2379,35 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetGoalsSection() {
 
-		CarePlan target = objectFactory.create();
-		target.getGoalsSection();
+	public void testValidateCarePlanComponentStructuredBodyComponentGoalsSection771() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyComponentGoalsSection771TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyComponentGoalsSection771",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_COMPONENT_GOALS_SECTION771__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyComponentGoalsSection771(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyComponentGoalsSection771TestCase.doValidationTest();
 	}
 
 	/**
@@ -2634,11 +2415,35 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHealthStatusEvaluationsOutcomesSection() {
 
-		CarePlan target = objectFactory.create();
-		target.getHealthStatusEvaluationsOutcomesSection();
+	public void testValidateCarePlanComponentStructuredBodyComponentInterventionsSection2773() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyComponentInterventionsSection2773TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyComponentInterventionsSection2773",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_COMPONENT_INTERVENTIONS_SECTION2773__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyComponentInterventionsSection2773(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyComponentInterventionsSection2773TestCase.doValidationTest();
 	}
 
 	/**
@@ -2646,11 +2451,214 @@ public class CarePlanTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInterventionsSection2() {
 
-		CarePlan target = objectFactory.create();
-		target.getInterventionsSection2();
+	public void testValidateCarePlanComponentStructuredBodyComponentHealthStatusEvaluationsOutcomesSection775() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyComponentHealthStatusEvaluationsOutcomesSection775TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyComponentHealthStatusEvaluationsOutcomesSection775",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_COMPONENT_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION775__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyComponentHealthStatusEvaluationsOutcomesSection775(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyComponentHealthStatusEvaluationsOutcomesSection775TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCarePlanComponentStructuredBodyHealthConcernsSection768() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyHealthConcernsSection768TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyHealthConcernsSection768",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_HEALTH_CONCERNS_SECTION768__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyHealthConcernsSection768(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyHealthConcernsSection768TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCarePlanComponentStructuredBodyGoalsSection770() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyGoalsSection770TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyGoalsSection770",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_GOALS_SECTION770__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyGoalsSection770(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyGoalsSection770TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCarePlanComponentStructuredBodyInterventionsSection2772() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyInterventionsSection2772TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyInterventionsSection2772",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_INTERVENTIONS_SECTION2772__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyInterventionsSection2772(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyInterventionsSection2772TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCarePlanComponentStructuredBodyHealthStatusEvaluationsOutcomesSection774() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBodyHealthStatusEvaluationsOutcomesSection774TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBodyHealthStatusEvaluationsOutcomesSection774",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION774__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBodyHealthStatusEvaluationsOutcomesSection774(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBodyHealthStatusEvaluationsOutcomesSection774TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCarePlanComponentStructuredBody767() {
+		OperationsTestCase<CarePlan> validateCarePlanComponentStructuredBody767TestCase = new OperationsTestCase<CarePlan>(
+			"validateCarePlanComponentStructuredBody767", operationsForOCL.getOCLValue(
+				"VALIDATE_CARE_PLAN_COMPONENT_STRUCTURED_BODY767__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CarePlan target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CarePlan target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CarePlanOperations.validateCarePlanComponentStructuredBody767(
+					(CarePlan) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCarePlanComponentStructuredBody767TestCase.doValidationTest();
 	}
 
 	/**
@@ -2660,8 +2668,8 @@ public class CarePlanTest extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<CarePlan> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<CarePlan>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

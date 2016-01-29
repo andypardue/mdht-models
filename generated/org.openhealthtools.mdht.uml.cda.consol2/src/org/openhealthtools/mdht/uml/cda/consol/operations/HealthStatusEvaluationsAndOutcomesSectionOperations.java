@@ -13,8 +13,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -43,8 +45,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#validateHealthStatusEvaluationsAndOutcomesSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#validateHealthStatusEvaluationsAndOutcomesSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#validateHealthStatusEvaluationsAndOutcomesSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Outcome Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#getOutcomeObservations() <em>Get Outcome Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#validateHealthStatusEvaluationsAndOutcomesSectionEntry754(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Entry754</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection#validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Outcome Observation Entry Outcome Observation755</em>}</li>
  * </ul>
  * </p>
  *
@@ -95,28 +97,28 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
 				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTemplateId"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTemplateId"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -157,28 +159,28 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
 				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionNullFlavor"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionNullFlavor"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -192,9 +194,9 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '11383-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '11383-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionCode(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Code</em>}' invariant operation.
@@ -221,28 +223,28 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionCode(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
 				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCode"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCode"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -283,28 +285,28 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionCodeP(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
 				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCodeP"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCodeP"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -345,28 +347,28 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionTitle(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
 				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTitle"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTitle"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -407,53 +409,53 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionText(
 			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
 				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionText"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionText"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Outcome Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionEntry754(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Entry754</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHealthStatusEvaluationsAndOutcomesSectionEntry754(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::OutcomeObservation))";
+	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Outcome Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionEntry754(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Entry754</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateHealthStatusEvaluationsAndOutcomesSectionEntry754(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,80 +467,99 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(
-			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateHealthStatusEvaluationsAndOutcomesSectionEntry754(HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
-				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusEvaluationsAndOutcomesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(healthStatusEvaluationsAndOutcomesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation"),
-					new Object[] { healthStatusEvaluationsAndOutcomesSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_ENTRY754,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionEntry754"),
+						 new Object [] { healthStatusEvaluationsAndOutcomesSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getOutcomeObservations(HealthStatusEvaluationsAndOutcomesSection) <em>Get Outcome Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Outcome Observation Entry Outcome Observation755</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOutcomeObservations(HealthStatusEvaluationsAndOutcomesSection)
+	 * @see #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_OUTCOME_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::OutcomeObservation)).oclAsType(consol::OutcomeObservation)";
+	protected static final String VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::OutcomeObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getOutcomeObservations(HealthStatusEvaluationsAndOutcomesSection) <em>Get Outcome Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Evaluations And Outcomes Section Outcome Observation Entry Outcome Observation755</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOutcomeObservations(HealthStatusEvaluationsAndOutcomesSection)
+	 * @see #validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(HealthStatusEvaluationsAndOutcomesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_OUTCOME_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param healthStatusEvaluationsAndOutcomesSection The receiving '<em><b>Health Status Evaluations And Outcomes Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<OutcomeObservation> getOutcomeObservations(
-			HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection) {
-		if (GET_OUTCOME_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(HealthStatusEvaluationsAndOutcomesSection healthStatusEvaluationsAndOutcomesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION,
-				ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION.getEAllOperations().get(62));
+			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION);
 			try {
-				GET_OUTCOME_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OUTCOME_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OUTCOME_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<OutcomeObservation> result = (Collection<OutcomeObservation>) query.evaluate(healthStatusEvaluationsAndOutcomesSection);
-		return new BasicEList.UnmodifiableEList<OutcomeObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(healthStatusEvaluationsAndOutcomesSection);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION_ENTRY_OUTCOME_OBSERVATION755,
+						 ConsolPlugin.INSTANCE.getString("HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // HealthStatusEvaluationsAndOutcomesSectionOperations

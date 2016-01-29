@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationSupplyOrder2
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Supply Order2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrder2ContainsMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsMedicationInformation2(
-			this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsMedicationInformation2(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(
-			this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2(this, diagnostics, context);
 	}
 
 	/**
@@ -90,9 +86,17 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Instruction2 getConsolInstruction2() {
-		return MedicationSupplyOrder2Operations.getConsolInstruction2(this);
+	public boolean validateMedicationSupplyOrder2EntryRelationship954(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2EntryRelationship954(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationSupplyOrder2Instruction2EntryRelationshipInstruction2955(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrder2Instruction2EntryRelationshipInstruction2955(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +107,7 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
-			this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderContainsMedicationOrImmunization(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +118,7 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	@Override
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructionInversionInd(
-			this, diagnostics, context);
+		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -155,28 +157,18 @@ public class MedicationSupplyOrder2Impl extends MedicationSupplyOrderImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrder2Operations.validateMedicationSupplyOrderInstructions(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MedicationSupplyOrder2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationSupplyOrder2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationSupplyOrder2Impl

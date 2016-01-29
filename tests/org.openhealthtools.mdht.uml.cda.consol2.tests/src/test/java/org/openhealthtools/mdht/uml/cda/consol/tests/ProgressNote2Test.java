@@ -17,27 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.Location;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
-import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
-import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
-import org.openhealthtools.mdht.uml.cda.consol.ObjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProgressNote2;
-import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
-import org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProgressNote2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,22 +38,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2AssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Assessment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2PlanOfTreatmentSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2AssessmentAndPlanSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Assessment And Plan Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2AllergiesSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Allergies Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ChiefComplaintSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Chief Complaint Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2InterventionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Interventions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2InstructionsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Instructions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2MedicationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ObjectiveSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Objective Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2PhysicalExamSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Physical Exam Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ProblemSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Problem Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ResultsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Results Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ReviewOfSystemsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2SubjectiveSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Subjective Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2NutritionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2Component1510(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component1510</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event US Realm Date And Time DT Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Effective Time Has High When No Width</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2DocumentationOfServiceEventTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Documentation Of Service Event Template Id</em>}</li>
@@ -82,22 +52,39 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounterLocation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter Location</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Of Encompassing Encounter</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getAssessmentSection() <em>Get Assessment Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getPlanOfTreatmentSection2() <em>Get Plan Of Treatment Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getAssessmentAndPlanSection2() <em>Get Assessment And Plan Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getAllergiesSectionEntriesOptional2() <em>Get Allergies Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getChiefComplaintSection() <em>Get Chief Complaint Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getInterventionsSection2() <em>Get Interventions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getInstructionsSection2() <em>Get Instructions Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getMedicationsSectionEntriesOptional2() <em>Get Medications Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getObjectiveSection() <em>Get Objective Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getPhysicalExamSection2() <em>Get Physical Exam Section2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getProblemSectionEntriesOptional2() <em>Get Problem Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getResultsSectionEntriesOptional2() <em>Get Results Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getSubjectiveSection() <em>Get Subjective Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getVitalSignsSectionEntriesOptional2() <em>Get Vital Signs Section Entries Optional2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#getNutritionSection() <em>Get Nutrition Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentAssessmentSection1513(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Assessment Section1513</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21515(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Plan Of Treatment Section21515</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21517(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Assessment And Plan Section21517</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21519(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Allergies Section Entries Optional21519</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentChiefComplaintSection1521(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Chief Complaint Section1521</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentInterventionsSection21523(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Interventions Section21523</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentInstructionsSection21525(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Instructions Section21525</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21527(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Medications Section Entries Optional21527</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentObjectiveSection1529(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Objective Section1529</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentPhysicalExamSection21531(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Physical Exam Section21531</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21533(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Problem Section Entries Optional21533</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21535(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Results Section Entries Optional21535</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentReviewOfSystemsSection1537(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Review Of Systems Section1537</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentSubjectiveSection1539(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Subjective Section1539</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21541(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Vital Signs Section Entries Optional21541</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyComponentNutritionSection1543(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Component Nutrition Section1543</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyAssessmentSection1512(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Assessment Section1512</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyPlanOfTreatmentSection21514(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Plan Of Treatment Section21514</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyAssessmentAndPlanSection21516(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Assessment And Plan Section21516</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21518(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Allergies Section Entries Optional21518</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyChiefComplaintSection1520(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Chief Complaint Section1520</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyInterventionsSection21522(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Interventions Section21522</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyInstructionsSection21524(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Instructions Section21524</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21526(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Medications Section Entries Optional21526</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyObjectiveSection1528(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Objective Section1528</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyPhysicalExamSection21530(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Physical Exam Section21530</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyProblemSectionEntriesOptional21532(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Problem Section Entries Optional21532</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyResultsSectionEntriesOptional21534(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Results Section Entries Optional21534</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyReviewOfSystemsSection1536(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Review Of Systems Section1536</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodySubjectiveSection1538(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Subjective Section1538</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21540(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Vital Signs Section Entries Optional21540</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBodyNutritionSection1542(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body Nutrition Section1542</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateProgressNote2ComponentStructuredBody1511(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note2 Component Structured Body1511</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  * </ul>
  * </p>
@@ -109,74 +96,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			{
-				skipNullTest();
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
 			}
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ProgressNote2 target) {
-						target.init();
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-
-				});
-
-			}
-
-			/*
-			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
-			 */
-			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-				});
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
 
 			}
 
@@ -194,79 +131,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			{
-				skipNullTest();
-			}
-
-			/*
-			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
-			 */
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-					}
-
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-
-				});
+			protected void updateToFail(ProgressNote2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ProgressNote2 target) {
-						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createAssessmentSection().init());
-						target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-					}
-				});
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
 
 			}
 
@@ -318,24 +200,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2Code() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2CodeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2Code",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				CE code = target.getCode();
-				code.setCode("11506-3");
-				code.setCodeSystem("2.16.840.1.113883.6.1");
+				target.init();
+
 			}
 
 			@Override
@@ -359,7 +241,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOf() {
@@ -376,8 +258,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
 				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(dof);
+
 			}
 
 			@Override
@@ -394,7 +275,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOf() {
@@ -411,8 +292,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
 				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
@@ -432,10 +312,11 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateProgressNote2AssessmentSection() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2AssessmentSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2AssessmentSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateProgressNote2Component1510() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2Component1510TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2Component1510",
+			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT1510__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -447,608 +328,40 @@ public class ProgressNote2Test extends CDAValidationTest {
 			protected void updateToPass(ProgressNote2 target) {
 				target.init();
 
-				/* AssessmentSection */
-				AssessmentSection section =
-
-				ConsolFactory.eINSTANCE.createAssessmentSection().init();
-
-				target.addSection(section);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProgressNote2Operations.validateProgressNote2AssessmentSection(
+				return ProgressNote2Operations.validateProgressNote2Component1510(
 					(ProgressNote2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProgressNote2AssessmentSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2PlanOfTreatmentSection2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2PlanOfTreatmentSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createPlanOfTreatmentSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2PlanOfTreatmentSection2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2PlanOfTreatmentSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2AssessmentAndPlanSection2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2AssessmentAndPlanSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2AssessmentAndPlanSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAssessmentAndPlanSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2AssessmentAndPlanSection2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2AssessmentAndPlanSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2AllergiesSectionEntriesOptional2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2AllergiesSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2AllergiesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2AllergiesSectionEntriesOptional2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2AllergiesSectionEntriesOptional2TestCase.doValidationTest();
+		validateProgressNote2Component1510TestCase.doValidationTest();
 	}
 
 	/**
 	*
 	* @generated
-	*/
-	@Test
-	public void testValidateProgressNote2ChiefComplaintSection() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ChiefComplaintSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-
-				/* ChiefComplaintSection */
-				ChiefComplaintSection section =
-
-				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ChiefComplaintSection(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ChiefComplaintSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2InterventionsSection2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2InterventionsSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2InterventionsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_INTERVENTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createInterventionsSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2InterventionsSection2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2InterventionsSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2InstructionsSection2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2InstructionsSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2InstructionsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_INSTRUCTIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createInstructionsSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2InstructionsSection2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2InstructionsSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2MedicationsSectionEntriesOptional2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2MedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2MedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createMedicationsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2MedicationsSectionEntriesOptional2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2MedicationsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateProgressNote2ObjectiveSection() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ObjectiveSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ObjectiveSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-
-				/* ObjectiveSection */
-				ObjectiveSection section =
-
-				ConsolFactory.eINSTANCE.createObjectiveSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ObjectiveSection(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ObjectiveSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2PhysicalExamSection2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2PhysicalExamSection2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2PhysicalExamSection2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createPhysicalExamSection2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2PhysicalExamSection2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2PhysicalExamSection2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2ProblemSectionEntriesOptional2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ProblemSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ProblemSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createProblemSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ProblemSectionEntriesOptional2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ProblemSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2ResultsSectionEntriesOptional2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ResultsSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ResultsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_RESULTS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createResultsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ResultsSectionEntriesOptional2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ResultsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateProgressNote2ReviewOfSystemsSection() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2ReviewOfSystemsSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2ReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-
-				/* ReviewOfSystemsSection */
-				ReviewOfSystemsSection section =
-
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2ReviewOfSystemsSection(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2ReviewOfSystemsSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateProgressNote2SubjectiveSection() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2SubjectiveSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2SubjectiveSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-
-				/* SubjectiveSection */
-				SubjectiveSection section =
-
-				ConsolFactory.eINSTANCE.createSubjectiveSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2SubjectiveSection(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2SubjectiveSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2VitalSignsSectionEntriesOptional2() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2VitalSignsSectionEntriesOptional2TestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2VitalSignsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-				target.addSection(ConsolFactory.eINSTANCE.createVitalSignsSectionEntriesOptional2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2VitalSignsSectionEntriesOptional2(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2VitalSignsSectionEntriesOptional2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateProgressNote2NutritionSection() {
-		OperationsTestCase<ProgressNote2> validateProgressNote2NutritionSectionTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateProgressNote2NutritionSection",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProgressNote2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ProgressNote2 target) {
-				target.init();
-
-				/* NutritionSection */
-				NutritionSection section =
-
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
-
-				target.addSection(section);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProgressNote2Operations.validateProgressNote2NutritionSection(
-					(ProgressNote2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProgressNote2NutritionSectionTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-
-				low.setValue("12345");
-				ts.setLow(low);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				target.init();
 
 			}
 
@@ -1066,40 +379,25 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidthTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				ts.setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
-				ts.setWidth(DatatypesFactory.eINSTANCE.createPQ());
-				target.setEffectiveTime(ts);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				ts.setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
-				target.setEffectiveTime(ts);
-				se.setEffectiveTime(ts);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				target.init();
+
 			}
 
 			@Override
@@ -1116,7 +414,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheDay() {
@@ -1160,7 +458,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 	//
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheMinute() {
@@ -1205,7 +503,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 	//
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2DocumentationOfServiceEventPreciseToTheSecond() {
@@ -1250,7 +548,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 	//
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2DocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset() {
@@ -1294,29 +592,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOfServiceEventTemplateId() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventTemplateIdTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(dof);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				dof.setServiceEvent(se);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					dof.getServiceEvent().getTemplateIds().add(
-						DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.10.20.21.3.1"));
-				}
+				target.init();
 
 			}
 
@@ -1334,33 +627,25 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOfServiceEventClassCode() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventClassCodeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				se.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				se.setClassCode(ActClassRoot.PCPR);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				target.init();
+
 			}
 
 			@Override
@@ -1377,32 +662,27 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				se.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
 			}
 
@@ -1420,30 +700,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2DocumentationOfServiceEvent() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2DocumentationOfServiceEventTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2DocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 
-				target.getDocumentationOfs().add(dof);
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				target.init();
 
 			}
 
@@ -1461,30 +735,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLowTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterUSRealmDateAndTimeDTLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_US_REALM_DATE_AND_TIME_DT_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
-				IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
-				ee.setEffectiveTime(et);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getEffectiveTime().setLow(
-					DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
 
 			}
 
@@ -1502,31 +770,25 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityIdTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
-				target.getComponentOf().getEncompassingEncounter().setLocation(CDAFactory.eINSTANCE.createLocation());
-				target.getComponentOf().getEncompassingEncounter().getLocation().setHealthCareFacility(
-					CDAFactory.eINSTANCE.createHealthCareFacility());
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getLocation().getHealthCareFacility().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -1543,34 +805,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				ee.setLocation(CDAFactory.eINSTANCE.createLocation());
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				Location loc = CDAFactory.eINSTANCE.createLocation();
-				loc.setHealthCareFacility(CDAFactory.eINSTANCE.createHealthCareFacility());
-				ee.setLocation(loc);
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
+				target.init();
 
 			}
 
@@ -1588,7 +840,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheDay() {
@@ -1630,7 +882,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 	//
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheMinute() {
@@ -1672,7 +924,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 	//
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2ComponentOfEncompassingEncounterPreciseToTheSecond() {
@@ -1714,7 +966,7 @@ public class ProgressNote2Test extends CDAValidationTest {
 	//
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateProgressNote2ComponentOfEncompassingEncounterIfMorePreciseThanDayIncludeTimeZoneOffset() {
@@ -1757,27 +1009,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterId() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterIdTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -1795,28 +1044,27 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterEffectiveTime() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterEffectiveTimeTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().setEffectiveTime(
-					DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
 
 			}
 
@@ -1834,27 +1082,24 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounterLocation() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterLocationTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounterLocation",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				EncompassingEncounter ee = CDAFactory.eINSTANCE.createEncompassingEncounter();
-				cof.setEncompassingEncounter(ee);
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().getEncompassingEncounter().setLocation(CDAFactory.eINSTANCE.createLocation());
+				target.init();
 
 			}
 
@@ -1872,25 +1117,25 @@ public class ProgressNote2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressNote2ComponentOfEncompassingEncounter() {
 		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentOfEncompassingEncounterTestCase = new OperationsTestCase<ProgressNote2>(
 			"validateProgressNote2ComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressNote2 target) {
-				target.init();
-				Component1 cof = CDAFactory.eINSTANCE.createComponent1();
-				target.setComponentOf(cof);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressNote2 target) {
-				target.getComponentOf().setEncompassingEncounter(CDAFactory.eINSTANCE.createEncompassingEncounter());
+				target.init();
+
 			}
 
 			@Override
@@ -1910,11 +1155,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentSection() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getAssessmentSection();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentAssessmentSection1513() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentAssessmentSection1513TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentAssessmentSection1513",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_SECTION1513__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentAssessmentSection1513(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentAssessmentSection1513TestCase.doValidationTest();
 	}
 
 	/**
@@ -1922,11 +1191,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlanOfTreatmentSection2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getPlanOfTreatmentSection2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21515() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21515TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21515",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PLAN_OF_TREATMENT_SECTION21515__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21515(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21515TestCase.doValidationTest();
 	}
 
 	/**
@@ -1934,11 +1227,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentAndPlanSection2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getAssessmentAndPlanSection2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21517() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21517TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21517",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_ASSESSMENT_AND_PLAN_SECTION21517__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21517(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21517TestCase.doValidationTest();
 	}
 
 	/**
@@ -1946,11 +1263,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAllergiesSectionEntriesOptional2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getAllergiesSectionEntriesOptional2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21519() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21519TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21519",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_ALLERGIES_SECTION_ENTRIES_OPTIONAL21519__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21519(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21519TestCase.doValidationTest();
 	}
 
 	/**
@@ -1958,11 +1299,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetChiefComplaintSection() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getChiefComplaintSection();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentChiefComplaintSection1521() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentChiefComplaintSection1521TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentChiefComplaintSection1521",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_CHIEF_COMPLAINT_SECTION1521__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentChiefComplaintSection1521(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentChiefComplaintSection1521TestCase.doValidationTest();
 	}
 
 	/**
@@ -1970,11 +1335,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInterventionsSection2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getInterventionsSection2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentInterventionsSection21523() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentInterventionsSection21523TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentInterventionsSection21523",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_INTERVENTIONS_SECTION21523__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentInterventionsSection21523(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentInterventionsSection21523TestCase.doValidationTest();
 	}
 
 	/**
@@ -1982,11 +1371,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInstructionsSection2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getInstructionsSection2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentInstructionsSection21525() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentInstructionsSection21525TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentInstructionsSection21525",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_INSTRUCTIONS_SECTION21525__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentInstructionsSection21525(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentInstructionsSection21525TestCase.doValidationTest();
 	}
 
 	/**
@@ -1994,11 +1407,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetMedicationsSectionEntriesOptional2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getMedicationsSectionEntriesOptional2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21527() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21527TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21527",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21527__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21527(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21527TestCase.doValidationTest();
 	}
 
 	/**
@@ -2006,11 +1443,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetObjectiveSection() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getObjectiveSection();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentObjectiveSection1529() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentObjectiveSection1529TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentObjectiveSection1529",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_OBJECTIVE_SECTION1529__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentObjectiveSection1529(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentObjectiveSection1529TestCase.doValidationTest();
 	}
 
 	/**
@@ -2018,11 +1479,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPhysicalExamSection2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getPhysicalExamSection2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentPhysicalExamSection21531() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentPhysicalExamSection21531TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentPhysicalExamSection21531",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PHYSICAL_EXAM_SECTION21531__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentPhysicalExamSection21531(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentPhysicalExamSection21531TestCase.doValidationTest();
 	}
 
 	/**
@@ -2030,11 +1515,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemSectionEntriesOptional2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getProblemSectionEntriesOptional2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21533() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21533TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21533",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_PROBLEM_SECTION_ENTRIES_OPTIONAL21533__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21533(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentProblemSectionEntriesOptional21533TestCase.doValidationTest();
 	}
 
 	/**
@@ -2042,11 +1551,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetResultsSectionEntriesOptional2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getResultsSectionEntriesOptional2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21535() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21535TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21535",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_RESULTS_SECTION_ENTRIES_OPTIONAL21535__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21535(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentResultsSectionEntriesOptional21535TestCase.doValidationTest();
 	}
 
 	/**
@@ -2054,11 +1587,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetReviewOfSystemsSection() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getReviewOfSystemsSection();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentReviewOfSystemsSection1537() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentReviewOfSystemsSection1537TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentReviewOfSystemsSection1537",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_REVIEW_OF_SYSTEMS_SECTION1537__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentReviewOfSystemsSection1537(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentReviewOfSystemsSection1537TestCase.doValidationTest();
 	}
 
 	/**
@@ -2066,11 +1623,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSubjectiveSection() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getSubjectiveSection();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentSubjectiveSection1539() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentSubjectiveSection1539TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentSubjectiveSection1539",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_SUBJECTIVE_SECTION1539__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentSubjectiveSection1539(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentSubjectiveSection1539TestCase.doValidationTest();
 	}
 
 	/**
@@ -2078,11 +1659,35 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetVitalSignsSectionEntriesOptional2() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getVitalSignsSectionEntriesOptional2();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21541() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21541TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21541",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL21541__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21541(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentVitalSignsSectionEntriesOptional21541TestCase.doValidationTest();
 	}
 
 	/**
@@ -2090,11 +1695,647 @@ public class ProgressNote2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionSection() {
 
-		ProgressNote2 target = objectFactory.create();
-		target.getNutritionSection();
+	public void testValidateProgressNote2ComponentStructuredBodyComponentNutritionSection1543() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyComponentNutritionSection1543TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyComponentNutritionSection1543",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_COMPONENT_NUTRITION_SECTION1543__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyComponentNutritionSection1543(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyComponentNutritionSection1543TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyAssessmentSection1512() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyAssessmentSection1512TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyAssessmentSection1512",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_ASSESSMENT_SECTION1512__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyAssessmentSection1512(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyAssessmentSection1512TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyPlanOfTreatmentSection21514() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyPlanOfTreatmentSection21514TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyPlanOfTreatmentSection21514",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_PLAN_OF_TREATMENT_SECTION21514__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyPlanOfTreatmentSection21514(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyPlanOfTreatmentSection21514TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyAssessmentAndPlanSection21516() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyAssessmentAndPlanSection21516TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyAssessmentAndPlanSection21516",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_ASSESSMENT_AND_PLAN_SECTION21516__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyAssessmentAndPlanSection21516(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyAssessmentAndPlanSection21516TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21518() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21518TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21518",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_ALLERGIES_SECTION_ENTRIES_OPTIONAL21518__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21518(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21518TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyChiefComplaintSection1520() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyChiefComplaintSection1520TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyChiefComplaintSection1520",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_CHIEF_COMPLAINT_SECTION1520__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyChiefComplaintSection1520(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyChiefComplaintSection1520TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyInterventionsSection21522() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyInterventionsSection21522TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyInterventionsSection21522",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_INTERVENTIONS_SECTION21522__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyInterventionsSection21522(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyInterventionsSection21522TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyInstructionsSection21524() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyInstructionsSection21524TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyInstructionsSection21524",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_INSTRUCTIONS_SECTION21524__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyInstructionsSection21524(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyInstructionsSection21524TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21526() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21526TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21526",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_MEDICATIONS_SECTION_ENTRIES_OPTIONAL21526__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21526(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21526TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyObjectiveSection1528() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyObjectiveSection1528TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyObjectiveSection1528",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_OBJECTIVE_SECTION1528__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyObjectiveSection1528(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyObjectiveSection1528TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyPhysicalExamSection21530() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyPhysicalExamSection21530TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyPhysicalExamSection21530",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_PHYSICAL_EXAM_SECTION21530__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyPhysicalExamSection21530(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyPhysicalExamSection21530TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyProblemSectionEntriesOptional21532() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyProblemSectionEntriesOptional21532TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyProblemSectionEntriesOptional21532",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_PROBLEM_SECTION_ENTRIES_OPTIONAL21532__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyProblemSectionEntriesOptional21532(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyProblemSectionEntriesOptional21532TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyResultsSectionEntriesOptional21534() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyResultsSectionEntriesOptional21534TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyResultsSectionEntriesOptional21534",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_RESULTS_SECTION_ENTRIES_OPTIONAL21534__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyResultsSectionEntriesOptional21534(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyResultsSectionEntriesOptional21534TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyReviewOfSystemsSection1536() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyReviewOfSystemsSection1536TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyReviewOfSystemsSection1536",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_REVIEW_OF_SYSTEMS_SECTION1536__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyReviewOfSystemsSection1536(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyReviewOfSystemsSection1536TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodySubjectiveSection1538() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodySubjectiveSection1538TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodySubjectiveSection1538",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_SUBJECTIVE_SECTION1538__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodySubjectiveSection1538(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodySubjectiveSection1538TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21540() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21540TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21540",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL21540__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21540(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyVitalSignsSectionEntriesOptional21540TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBodyNutritionSection1542() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBodyNutritionSection1542TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBodyNutritionSection1542",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY_NUTRITION_SECTION1542__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBodyNutritionSection1542(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBodyNutritionSection1542TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProgressNote2ComponentStructuredBody1511() {
+		OperationsTestCase<ProgressNote2> validateProgressNote2ComponentStructuredBody1511TestCase = new OperationsTestCase<ProgressNote2>(
+			"validateProgressNote2ComponentStructuredBody1511",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_NOTE2_COMPONENT_STRUCTURED_BODY1511__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProgressNote2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProgressNote2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProgressNote2Operations.validateProgressNote2ComponentStructuredBody1511(
+					(ProgressNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProgressNote2ComponentStructuredBody1511TestCase.doValidationTest();
 	}
 
 	/**
@@ -2104,8 +2345,8 @@ public class ProgressNote2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<ProgressNote2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ProgressNote2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

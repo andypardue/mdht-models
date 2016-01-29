@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Admission Medication</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,6 +96,24 @@ public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedicat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdmissionMedicationEntryRelationship526(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdmissionMedicationOperations.validateAdmissionMedicationEntryRelationship526(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdmissionMedicationMedicationActivityEntryRelationshipMedicationActivity527(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdmissionMedicationOperations.validateAdmissionMedicationMedicationActivityEntryRelationshipMedicationActivity527(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAdmissionMedicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationMoodCode(this, diagnostics, context);
@@ -109,39 +125,18 @@ public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedicat
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdmissionMedicationMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdmissionMedicationOperations.validateAdmissionMedicationMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MedicationActivity> getMedicationActivities() {
-		return AdmissionMedicationOperations.getMedicationActivities(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public AdmissionMedication init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdmissionMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdmissionMedicationImpl

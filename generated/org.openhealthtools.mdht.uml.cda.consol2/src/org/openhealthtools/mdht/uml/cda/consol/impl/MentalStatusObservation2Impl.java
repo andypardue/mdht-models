@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mental Status Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 */
 	public boolean validateMentalStatusObservation2ValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2ValueDatatype(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2ValueDatatype(this, diagnostics, context);
 	}
 
 	/**
@@ -131,8 +128,7 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * @generated
 	 */
 	public boolean validateMentalStatusObservation2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2StatusCodeP(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2StatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +138,7 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 */
 	public boolean validateMentalStatusObservation2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2EffectiveTime(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -162,19 +157,7 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 */
 	public boolean validateMentalStatusObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2AuthorParticipation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMentalStatusObservation2AssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2AssessmentScaleObservation(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +167,16 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 */
 	public boolean validateMentalStatusObservation2ReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2ReferenceRange(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2ReferenceRange(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation2EntryRelationship1050(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2EntryRelationship1050(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +186,7 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 */
 	public boolean validateMentalStatusObservation2CDTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslation(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -206,8 +196,7 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 */
 	public boolean validateMentalStatusObservation2CDTranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslationP(
-			this, diagnostics, context);
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -215,8 +204,8 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
-		return MentalStatusObservation2Operations.getAssessmentScaleObservations(this);
+	public boolean validateMentalStatusObservation2AssessmentScaleObservationEntryRelationshipAssessmentScaleObservation1051(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2AssessmentScaleObservationEntryRelationshipAssessmentScaleObservation1051(this, diagnostics, context);
 	}
 
 	/**
@@ -225,16 +214,16 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * @generated
 	 */
 	public MentalStatusObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MentalStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MentalStatusObservation2Impl

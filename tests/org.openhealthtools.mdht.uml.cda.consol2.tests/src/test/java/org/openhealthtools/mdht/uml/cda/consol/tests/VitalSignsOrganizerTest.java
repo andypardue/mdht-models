@@ -16,14 +16,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizerOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
@@ -43,8 +41,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer#validateVitalSignsOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer#validateVitalSignsOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer#validateVitalSignsOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer#validateVitalSignsOrganizerVitalSignObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Vital Sign Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer#getVitalSignObservations() <em>Get Vital Sign Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer#validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Vital Sign Observation Entry Relationship Vital Sign Observation165</em>}</li>
  * </ul>
  * </p>
  *
@@ -157,7 +154,7 @@ public class VitalSignsOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignsOrganizerId() {
@@ -174,9 +171,6 @@ public class VitalSignsOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(VitalSignsOrganizer target) {
 				target.init();
-
-				II ii = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(ii);
 
 			}
 
@@ -267,8 +261,8 @@ public class VitalSignsOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsOrganizerStatusCodeP() {
 		OperationsTestCase<VitalSignsOrganizer> validateVitalSignsOrganizerStatusCodePTestCase = new OperationsTestCase<VitalSignsOrganizer>(
-			"validateVitalSignsOrganizerStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizerStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -345,8 +339,8 @@ public class VitalSignsOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsOrganizerEffectiveTime() {
 		OperationsTestCase<VitalSignsOrganizer> validateVitalSignsOrganizerEffectiveTimeTestCase = new OperationsTestCase<VitalSignsOrganizer>(
-			"validateVitalSignsOrganizerEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizerEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -377,51 +371,38 @@ public class VitalSignsOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateVitalSignsOrganizerVitalSignObservation() {
-		OperationsTestCase<VitalSignsOrganizer> validateVitalSignsOrganizerVitalSignObservationTestCase = new OperationsTestCase<VitalSignsOrganizer>(
-			"validateVitalSignsOrganizerVitalSignObservation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165() {
+		OperationsTestCase<VitalSignsOrganizer> validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165TestCase = new OperationsTestCase<VitalSignsOrganizer>(
+			"validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION_ENTRY_RELATIONSHIP_VITAL_SIGN_OBSERVATION165__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignsOrganizer target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignsOrganizer target) {
-
-				Observation observation = ConsolFactory.eINSTANCE.createVitalSignObservation().init();
-
-				target.addObservation(observation);
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(
+				return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165(
 					(VitalSignsOrganizer) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateVitalSignsOrganizerVitalSignObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetVitalSignObservations() {
-
-		VitalSignsOrganizer target = objectFactory.create();
-		target.getVitalSignObservations();
-
+		validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165TestCase.doValidationTest();
 	}
 
 	/**

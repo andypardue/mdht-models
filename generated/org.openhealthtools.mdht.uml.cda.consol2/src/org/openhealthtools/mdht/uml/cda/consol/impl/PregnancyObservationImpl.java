@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Pregnancy Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -147,11 +145,8 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(
-			this, diagnostics, context);
+	public boolean validatePregnancyObservationEntryRelationship148(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationEntryRelationship148(this, diagnostics, context);
 	}
 
 	/**
@@ -159,9 +154,8 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EstimatedDateOfDelivery getEstimatedDateOfDelivery() {
-		return PregnancyObservationOperations.getEstimatedDateOfDelivery(this);
+	public boolean validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDeliveryEntryRelationshipEstimatedDateOfDelivery149(this, diagnostics, context);
 	}
 
 	/**
@@ -171,17 +165,17 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 */
 	@Override
 	public PregnancyObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PregnancyObservationImpl

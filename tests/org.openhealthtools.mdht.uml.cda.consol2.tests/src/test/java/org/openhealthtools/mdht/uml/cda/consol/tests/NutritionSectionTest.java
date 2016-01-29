@@ -38,8 +38,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionNutritionalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#getNutritionalStatusObservations() <em>Get Nutritional Status Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionEntry762(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Entry762</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation Entry Nutritional Status Observation763</em>}</li>
  * </ul>
  * </p>
  *
@@ -84,7 +84,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionSectionCode() {
@@ -95,13 +95,12 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("61144-2", LOINC_ID));
+				target.init();
 
 			}
 
@@ -119,7 +118,7 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionSectionCodeP() {
@@ -130,13 +129,12 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-				target.init();
-				target.setCode(null);
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
 
 			}
 
@@ -228,35 +226,37 @@ public class NutritionSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateNutritionSectionNutritionalStatusObservation() {
-		OperationsTestCase<NutritionSection> validateNutritionSectionNutritionalStatusObservationTestCase = new OperationsTestCase<NutritionSection>(
-			"validateNutritionSectionNutritionalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNutritionSectionEntry762() {
+		OperationsTestCase<NutritionSection> validateNutritionSectionEntry762TestCase = new OperationsTestCase<NutritionSection>(
+			"validateNutritionSectionEntry762",
+			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NutritionSection target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionSection target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createNutritionalStatusObservation().init());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservation(
+				return NutritionSectionOperations.validateNutritionSectionEntry762(
 					(NutritionSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNutritionSectionNutritionalStatusObservationTestCase.doValidationTest();
+		validateNutritionSectionEntry762TestCase.doValidationTest();
 	}
 
 	/**
@@ -264,11 +264,35 @@ public class NutritionSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionalStatusObservations() {
 
-		NutritionSection target = objectFactory.create();
-		target.getNutritionalStatusObservations();
+	public void testValidateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763() {
+		OperationsTestCase<NutritionSection> validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763TestCase = new OperationsTestCase<NutritionSection>(
+			"validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionSectionOperations.validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(
+					(NutritionSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763TestCase.doValidationTest();
 	}
 
 	/**

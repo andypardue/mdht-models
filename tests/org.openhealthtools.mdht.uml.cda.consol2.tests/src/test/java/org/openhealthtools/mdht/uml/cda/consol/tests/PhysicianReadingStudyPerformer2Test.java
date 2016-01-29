@@ -45,7 +45,8 @@ public class PhysicianReadingStudyPerformer2Test extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerTemplateId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer2> validatePhysicianReadingStudyPerformerTemplateIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer2>(
 			"validatePhysicianReadingStudyPerformerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

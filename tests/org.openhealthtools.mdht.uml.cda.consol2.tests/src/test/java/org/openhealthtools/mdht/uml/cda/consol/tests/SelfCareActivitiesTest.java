@@ -191,7 +191,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSelfCareActivitiesCode() {
@@ -202,15 +202,13 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SelfCareActivities target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(code);
+
 			}
 
 			@Override
 			protected void updateToPass(SelfCareActivities target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD("46008-9", LOINC_ID);
-				target.setCode(code);
+				target.init();
+
 			}
 
 			@Override
@@ -310,8 +308,8 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 	@Test
 	public void testValidateSelfCareActivitiesEffectiveTime() {
 		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesEffectiveTimeTestCase = new OperationsTestCase<SelfCareActivities>(
-			"validateSelfCareActivitiesEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSelfCareActivitiesEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -342,7 +340,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSelfCareActivitiesValue() {
@@ -353,15 +351,16 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SelfCareActivities target) {
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(val);
+
 			}
 
 			@Override
 			protected void updateToPass(SelfCareActivities target) {
-				target.getValues().clear();
-				CD val = DatatypesFactory.eINSTANCE.createCD("371153006", SNOMEDCT_ID);
-				target.getValues().add(val);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -378,7 +377,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSelfCareActivitiesValueP() {
@@ -395,8 +394,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SelfCareActivities target) {
 				target.init();
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(val);
+
 			}
 
 			@Override
@@ -413,13 +411,13 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSelfCareActivitiesAuthorParticipation() {
 		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesAuthorParticipationTestCase = new OperationsTestCase<SelfCareActivities>(
-			"validateSelfCareActivitiesAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSelfCareActivitiesAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -430,7 +428,7 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SelfCareActivities target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override

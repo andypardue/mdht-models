@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDiagnosticImagingReport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId DiagnosticImagingReportSectionsHaveText GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP GeneralHeaderConstraintsId DiagnosticImagingReportInformant DiagnosticImagingReportDocumentationOf DiagnosticImagingReportFindingsSection DiagnosticImagingReportParticipantAssociatedEntityPersonName DiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReportParticipantAssociatedEntity DiagnosticImagingReportDocumentationOfServiceEvent4ClassCode DiagnosticImagingReportDocumentationOfServiceEvent4Code DiagnosticImagingReportDocumentationOfServiceEvent3 DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay DiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime DiagnosticImagingReportComponentOfEncompassingEncounter7Id DiagnosticImagingReportComponentOfEncompassingEncounter' templateId.root='2.16.840.1.113883.10.20.22.1.5' constraints.validation.warning='DiagnosticImagingReportUseDiagnosticImagingCode DiagnosticImagingReportAllSectionsHaveTitle DiagnosticImagingReportDICOMObjectCatalogSection DiagnosticImagingReportDocumentationOfServiceEvent4Id DiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute DiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='DiagnosticImagingReportInformationRecipient DiagnosticImagingReportParticipant1 DiagnosticImagingReportInFulfillmentOf DiagnosticImagingReportRelatedDocument DiagnosticImagingReportComponentOf DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty' constraints.validation.query='DiagnosticImagingReportParticipantAssociatedEntityPersonName DiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReportParticipantAssociatedEntity DiagnosticImagingReportDocumentationOfServiceEvent4ClassCode DiagnosticImagingReportDocumentationOfServiceEvent4Code DiagnosticImagingReportDocumentationOfServiceEvent4Id DiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer DiagnosticImagingReportDocumentationOfServiceEvent3 DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond DiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime DiagnosticImagingReportComponentOfEncompassingEncounter7Id DiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty DiagnosticImagingReportComponentOfEncompassingEncounter'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId DiagnosticImagingReportSectionsHaveText GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP GeneralHeaderConstraintsId DiagnosticImagingReportInformant DiagnosticImagingReportDocumentationOf DiagnosticImagingReportComponent530 DiagnosticImagingReportParticipantAssociatedEntityPersonName DiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReportParticipantAssociatedEntity DiagnosticImagingReportDocumentationOfServiceEvent4ClassCode DiagnosticImagingReportDocumentationOfServiceEvent4Code DiagnosticImagingReportDocumentationOfServiceEvent3 DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay DiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime DiagnosticImagingReportComponentOfEncompassingEncounter7Id DiagnosticImagingReportComponentOfEncompassingEncounter DiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533 DiagnosticImagingReportComponentStructuredBodyFindingsSection532 DiagnosticImagingReportComponentStructuredBodyDICOMObjectCatalogSection534 DiagnosticImagingReportComponentStructuredBody531' templateId.root='2.16.840.1.113883.10.20.22.1.5' constraints.validation.warning='DiagnosticImagingReportUseDiagnosticImagingCode DiagnosticImagingReportAllSectionsHaveTitle DiagnosticImagingReportDocumentationOfServiceEvent4Id DiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute DiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant DiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='DiagnosticImagingReportInformationRecipient DiagnosticImagingReportParticipant1 DiagnosticImagingReportInFulfillmentOf DiagnosticImagingReportRelatedDocument DiagnosticImagingReportComponentOf DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty' constraints.validation.query='DiagnosticImagingReportParticipantAssociatedEntityPersonName DiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson DiagnosticImagingReportParticipantAssociatedEntity DiagnosticImagingReportDocumentationOfServiceEvent4ClassCode DiagnosticImagingReportDocumentationOfServiceEvent4Code DiagnosticImagingReportDocumentationOfServiceEvent4Id DiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer DiagnosticImagingReportDocumentationOfServiceEvent3 DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond DiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime DiagnosticImagingReportComponentOfEncompassingEncounter7Id DiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty DiagnosticImagingReportComponentOfEncompassingEncounter DiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533 DiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535 DiagnosticImagingReportComponentStructuredBodyFindingsSection532 DiagnosticImagingReportComponentStructuredBodyDICOMObjectCatalogSection534 DiagnosticImagingReportComponentStructuredBody531'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportParticipant constraints.validation.error='DiagnosticImagingReportParticipantAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportParticipantAssociatedEntity constraints.validation.error='DiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportParticipantAssociatedEntityPerson constraints.validation.error='DiagnosticImagingReportParticipantAssociatedEntityPersonName'"
@@ -34,6 +34,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOfEncompassingEncounter7 constraints.validation.error='DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay DiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime DiagnosticImagingReportComponentOfEncompassingEncounter7Id' constraints.validation.warning='DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute DiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset DiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant' constraints.validation.info='DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty constraints.validation.error='DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity constraints.validation.warning='DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponent constraints.validation.error='DiagnosticImagingReportComponentStructuredBody531 ComponentStructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533 ComponentDiagnosticImagingReportComponentStructuredBodyFindingsSection532 ComponentDiagnosticImagingReportComponentStructuredBodyDICOMObjectCatalogSection534' constraints.validation.query='ComponentStructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533 ComponentStructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535 ComponentDiagnosticImagingReportComponentStructuredBodyFindingsSection532 ComponentDiagnosticImagingReportComponentStructuredBodyDICOMObjectCatalogSection534' constraints.validation.warning='ComponentStructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentStructuredBody constraints.validation.error='DiagnosticImagingReportComponentStructuredBodyFindingsSection532 DiagnosticImagingReportComponentStructuredBodyDICOMObjectCatalogSection534 StructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533' constraints.validation.query='StructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533 StructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535' constraints.validation.warning='StructuredBodyDiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentStructuredBodyComponent constraints.validation.error='DiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533' constraints.validation.warning='DiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535'"
  * @generated
  */
 public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
@@ -177,23 +180,10 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))'"
 	 * @generated
 	 */
-	boolean validateDiagnosticImagingReportFindingsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DICOMObjectCatalogSection))'"
-	 * @generated
-	 */
-	boolean validateDiagnosticImagingReportDICOMObjectCatalogSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateDiagnosticImagingReportComponent530(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,7 +387,7 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() >= 1))'"
 	 * @generated
 	 */
 	boolean validateDiagnosticImagingReportComponentOfEncompassingEncounter7Id(DiagnosticChain diagnostics,
@@ -445,20 +435,62 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->any(true).oclAsType(consol::FindingsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection)))'"
 	 * @generated
 	 */
-	FindingsSection getFindingsSection();
+	boolean validateDiagnosticImagingReportComponentStructuredBodyComponentFindingsSection533(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DICOMObjectCatalogSection))->asSequence()->any(true).oclAsType(consol::DICOMObjectCatalogSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DICOMObjectCatalogSection)))'"
 	 * @generated
 	 */
-	DICOMObjectCatalogSection getDICOMObjectCatalogSection();
+	boolean validateDiagnosticImagingReportComponentStructuredBodyComponentDICOMObjectCatalogSection535(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReportComponentStructuredBodyFindingsSection532(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReportComponentStructuredBodyDICOMObjectCatalogSection534(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->reject(structuredBody->one(structuredBody : cda::StructuredBody | not structuredBody.oclIsUndefined() and structuredBody.oclIsKindOf(cda::StructuredBody)))'"
+	 * @generated
+	 */
+	boolean validateDiagnosticImagingReportComponentStructuredBody531(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -469,10 +501,10 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	public DiagnosticImagingReport init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DiagnosticImagingReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DiagnosticImagingReport

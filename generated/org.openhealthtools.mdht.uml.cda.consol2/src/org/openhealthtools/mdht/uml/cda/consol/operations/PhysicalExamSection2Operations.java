@@ -43,23 +43,23 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2WoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Wound Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Component(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Entry1110(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1110</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Entry1112(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1112</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Entry1114(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1114</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2Entry1116(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1116</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2ComponentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getWoundObservations() <em>Get Wound Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolPressureUlcerObservations() <em>Get Consol Pressure Ulcer Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolHighestPressureUlcerStages() <em>Get Consol Highest Pressure Ulcer Stages</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#getConsolNumberOfPressureUlcersObservations() <em>Get Consol Number Of Pressure Ulcers Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Longitudinal Care Wound Observation Entry Wound Observation1111</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Pressure Ulcer Observation Entry Pressure Ulcer Observation1113</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Number Of Pressure Ulcers Observation Entry Number Of Pressure Ulcers Observation1115</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Highest Pressure Ulcer Stage Entry Highest Pressure Ulcer Stage1117</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionPressureUlcerObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Pressure Ulcer Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Highest Pressure Ulcer Stage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionNumberOfPressureUlcersObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Number Of Pressure Ulcers Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,65 +73,6 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	 */
 	protected PhysicalExamSection2Operations() {
 		super();
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2WoundObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Wound Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSection2WoundObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::LongitudinalCareWoundObservation))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2WoundObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Wound Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSection2WoundObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePhysicalExamSection2WoundObservation(PhysicalExamSection2 physicalExamSection2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
-			try {
-				VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2WoundObservation"),
-					new Object[] { physicalExamSection2 }));
-			}
-
-			return false;
-		}
-		return true;
 	}
 
 	/**
@@ -168,26 +109,268 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSection2Component(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Component"),
-					new Object[] { physicalExamSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Component"),
+						 new Object [] { physicalExamSection2 }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2Entry1110(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1110</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1110(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1110__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2Entry1110(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1110</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1110(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1110__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhysicalExamSection2Entry1110(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1110__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
+			try {
+				VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1110__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1110__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1110__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_ENTRY1110,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Entry1110"),
+						 new Object [] { physicalExamSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2Entry1112(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1112</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1112(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1112__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2Entry1112(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1112</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1112(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1112__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhysicalExamSection2Entry1112(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1112__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
+			try {
+				VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1112__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1112__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1112__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_ENTRY1112,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Entry1112"),
+						 new Object [] { physicalExamSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2Entry1114(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1114</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1114(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1114__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2Entry1114(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1114</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1114(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1114__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhysicalExamSection2Entry1114(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1114__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
+			try {
+				VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1114__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1114__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1114__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_ENTRY1114,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Entry1114"),
+						 new Object [] { physicalExamSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2Entry1116(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1116</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1116(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1116__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2Entry1116(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Entry1116</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhysicalExamSection2Entry1116(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1116__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhysicalExamSection2Entry1116(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1116__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
+			try {
+				VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1116__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1116__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_ENTRY1116__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_ENTRY1116,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Entry1116"),
+						 new Object [] { physicalExamSection2 }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -201,9 +384,9 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).section->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->excluding(null).section->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = code.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2ComponentSectionCode(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Component Section Code</em>}' invariant operation.
@@ -229,31 +412,33 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSectionCode(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -294,31 +479,33 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSectionCodeP(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionCodeP"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionCodeP"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -359,31 +546,33 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSectionTitle(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionTitle"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionTitle"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -424,31 +613,33 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSectionText(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionText"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSectionText"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -489,30 +680,33 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	@SuppressWarnings("unchecked")
 	public static boolean validatePhysicalExamSection2ComponentSection(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION,
-						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSection"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSection"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -520,182 +714,267 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getWoundObservations(PhysicalExamSection2) <em>Get Wound Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Longitudinal Care Wound Observation Entry Wound Observation1111</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWoundObservations(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)).oclAsType(consol::LongitudinalCareWoundObservation)";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getWoundObservations(PhysicalExamSection2) <em>Get Wound Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Longitudinal Care Wound Observation Entry Wound Observation1111</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWoundObservations(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_WOUND_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<LongitudinalCareWoundObservation> getWoundObservations(PhysicalExamSection2 physicalExamSection2) {
-		if (GET_WOUND_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validatePhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2.getEAllOperations().get(73));
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
-				GET_WOUND_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(physicalExamSection2);
-		return new BasicEList.UnmodifiableEList<LongitudinalCareWoundObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION1111,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation1111"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolPressureUlcerObservations(PhysicalExamSection2) <em>Get Consol Pressure Ulcer Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Pressure Ulcer Observation Entry Pressure Ulcer Observation1113</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolPressureUlcerObservations(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)).oclAsType(consol::PressureUlcerObservation)";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolPressureUlcerObservations(PhysicalExamSection2) <em>Get Consol Pressure Ulcer Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Pressure Ulcer Observation Entry Pressure Ulcer Observation1113</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolPressureUlcerObservations(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PressureUlcerObservation> getConsolPressureUlcerObservations(
-			PhysicalExamSection2 physicalExamSection2) {
-		if (GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validatePhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2.getEAllOperations().get(74));
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
-				GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PressureUlcerObservation> result = (Collection<PressureUlcerObservation>) query.evaluate(physicalExamSection2);
-		return new BasicEList.UnmodifiableEList<PressureUlcerObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_PRESSURE_ULCER_OBSERVATION_ENTRY_PRESSURE_ULCER_OBSERVATION1113,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation1113"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolHighestPressureUlcerStages(PhysicalExamSection2) <em>Get Consol Highest Pressure Ulcer Stages</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Number Of Pressure Ulcers Observation Entry Number Of Pressure Ulcers Observation1115</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolHighestPressureUlcerStages(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)).oclAsType(consol::HighestPressureUlcerStage)";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolHighestPressureUlcerStages(PhysicalExamSection2) <em>Get Consol Highest Pressure Ulcer Stages</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Number Of Pressure Ulcers Observation Entry Number Of Pressure Ulcers Observation1115</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolHighestPressureUlcerStages(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<HighestPressureUlcerStage> getConsolHighestPressureUlcerStages(
-			PhysicalExamSection2 physicalExamSection2) {
-		if (GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validatePhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2.getEAllOperations().get(75));
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
-				GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY = helper.createQuery(GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<HighestPressureUlcerStage> result = (Collection<HighestPressureUlcerStage>) query.evaluate(physicalExamSection2);
-		return new BasicEList.UnmodifiableEList<HighestPressureUlcerStage>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION1115,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation1115"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolNumberOfPressureUlcersObservations(PhysicalExamSection2) <em>Get Consol Number Of Pressure Ulcers Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Highest Pressure Ulcer Stage Entry Highest Pressure Ulcer Stage1117</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolNumberOfPressureUlcersObservations(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)).oclAsType(consol::NumberOfPressureUlcersObservation)";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolNumberOfPressureUlcersObservations(PhysicalExamSection2) <em>Get Consol Number Of Pressure Ulcers Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section2 Highest Pressure Ulcer Stage Entry Highest Pressure Ulcer Stage1117</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolNumberOfPressureUlcersObservations(PhysicalExamSection2)
+	 * @see #validatePhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<NumberOfPressureUlcersObservation> getConsolNumberOfPressureUlcersObservations(
-			PhysicalExamSection2 physicalExamSection2) {
-		if (GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validatePhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117(PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2.getEAllOperations().get(76));
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
-				GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<NumberOfPressureUlcersObservation> result = (Collection<NumberOfPressureUlcersObservation>) query.evaluate(physicalExamSection2);
-		return new BasicEList.UnmodifiableEList<NumberOfPressureUlcersObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalExamSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_HIGHEST_PRESSURE_ULCER_STAGE_ENTRY_HIGHEST_PRESSURE_ULCER_STAGE1117,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage1117"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -732,26 +1011,28 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSectionTemplateId(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionTemplateId"),
-					new Object[] { physicalExamSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionTemplateId"),
+						 new Object [] { physicalExamSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -791,26 +1072,28 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSectionCodeP(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCodeP"),
-					new Object[] { physicalExamSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCodeP"),
+						 new Object [] { physicalExamSection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -822,7 +1105,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 				}
 				passToken.add(physicalExamSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -836,9 +1119,9 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionCode(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}' invariant operation.
@@ -864,216 +1147,34 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 
 	public static boolean validatePhysicalExamSectionCode(PhysicalExamSection2 physicalExamSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(physicalExamSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCode"),
-					new Object[] { physicalExamSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCode"),
+						 new Object [] { physicalExamSection2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Pressure Ulcer Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Pressure Ulcer Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePhysicalExamSectionPressureUlcerObservation(
-			PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
-			try {
-				VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionPressureUlcerObservation"),
-					new Object[] { physicalExamSection2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhysicalExamSectionHighestPressureUlcerStage(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Highest Pressure Ulcer Stage</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSectionHighestPressureUlcerStage(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionHighestPressureUlcerStage(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Highest Pressure Ulcer Stage</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSectionHighestPressureUlcerStage(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePhysicalExamSectionHighestPressureUlcerStage(
-			PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
-			try {
-				VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionHighestPressureUlcerStage"),
-					new Object[] { physicalExamSection2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validatePhysicalExamSectionNumberOfPressureUlcersObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Number Of Pressure Ulcers Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSectionNumberOfPressureUlcersObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionNumberOfPressureUlcersObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Number Of Pressure Ulcers Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalExamSectionNumberOfPressureUlcersObservation(PhysicalExamSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param physicalExamSection2 The receiving '<em><b>Physical Exam Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(
-			PhysicalExamSection2 physicalExamSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION2);
-			try {
-				VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionNumberOfPressureUlcersObservation"),
-					new Object[] { physicalExamSection2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

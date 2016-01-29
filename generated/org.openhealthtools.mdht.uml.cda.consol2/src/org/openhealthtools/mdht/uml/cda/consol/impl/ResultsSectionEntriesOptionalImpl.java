@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Results Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,8 +59,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +99,7 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -114,11 +107,8 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(
-			this, diagnostics, context);
+	public boolean validateResultsSectionEntriesOptionalEntry256(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalEntry256(this, diagnostics, context);
 	}
 
 	/**
@@ -126,9 +116,8 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ResultOrganizer> getResultOrganizers() {
-		return ResultsSectionEntriesOptionalOperations.getResultOrganizers(this);
+	public boolean validateResultsSectionEntriesOptionalResultOrganizerEntryResultOrganizer257(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizerEntryResultOrganizer257(this, diagnostics, context);
 	}
 
 	/**
@@ -138,17 +127,17 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	 */
 	@Override
 	public ResultsSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultsSectionEntriesOptionalImpl

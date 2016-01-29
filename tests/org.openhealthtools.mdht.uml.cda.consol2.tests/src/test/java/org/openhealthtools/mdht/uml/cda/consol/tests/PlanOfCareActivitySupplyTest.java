@@ -19,9 +19,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivitySupplyOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,8 +47,8 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivitySupplyTemplateId() {
 		OperationsTestCase<PlanOfCareActivitySupply> validatePlanOfCareActivitySupplyTemplateIdTestCase = new OperationsTestCase<PlanOfCareActivitySupply>(
-			"validatePlanOfCareActivitySupplyTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivitySupplyTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -79,20 +76,14 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivitySupplyClassCode() {
 		OperationsTestCase<PlanOfCareActivitySupply> validatePlanOfCareActivitySupplyClassCodeTestCase = new OperationsTestCase<PlanOfCareActivitySupply>(
-			"validatePlanOfCareActivitySupplyClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivitySupplyClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// we cannot violate the constraint because it only checks that the class
-				// code is non-null and of type ActClassSupply but EMF and Java enforce this
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PlanOfCareActivitySupply target) {
@@ -119,21 +110,14 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivitySupplyMoodCode() {
 		OperationsTestCase<PlanOfCareActivitySupply> validatePlanOfCareActivitySupplyMoodCodeTestCase = new OperationsTestCase<PlanOfCareActivitySupply>(
-			"validatePlanOfCareActivitySupplyMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivitySupplyMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// we cannot violate the constraint because it only checks that the mood
-				// code is non-null and of type x_DocumentSubstanceMood but EMF and Java
-				// enforce this
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PlanOfCareActivitySupply target) {
@@ -143,7 +127,7 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlanOfCareActivitySupply target) {
 				target.init();
-				target.setMoodCode(x_DocumentSubstanceMood.INT);
+
 			}
 
 			@Override
@@ -160,7 +144,7 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivitySupplyId() {
@@ -177,8 +161,6 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlanOfCareActivitySupply target) {
 				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(id);
 
 			}
 

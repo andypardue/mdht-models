@@ -20,7 +20,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistoryOrganizer2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizer2Id FamilyHistoryOrganizerFamilyHistoryObservation' templateId.root='2.16.840.1.113883.10.20.22.4.45' templateId.extension='2015-08-01'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizer2Id FamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545' templateId.root='2.16.840.1.113883.10.20.22.4.45' templateId.extension='2015-08-01' constraints.validation.query='FamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationship constraints.validation.error='FamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545'"
  * @generated
  */
 public interface FamilyHistoryOrganizer2 extends FamilyHistoryOrganizer {
@@ -31,7 +32,7 @@ public interface FamilyHistoryOrganizer2 extends FamilyHistoryOrganizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryOrganizer2Id(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -39,11 +40,14 @@ public interface FamilyHistoryOrganizer2 extends FamilyHistoryOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryObservation2)).oclAsType(consol::FamilyHistoryObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryObservation2)))'"
 	 * @generated
 	 */
-	EList<FamilyHistoryObservation2> getConsolFamilyHistoryObservation2s();
+	boolean validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -53,9 +57,9 @@ public interface FamilyHistoryOrganizer2 extends FamilyHistoryOrganizer {
 	public FamilyHistoryOrganizer2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FamilyHistoryOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FamilyHistoryOrganizer2

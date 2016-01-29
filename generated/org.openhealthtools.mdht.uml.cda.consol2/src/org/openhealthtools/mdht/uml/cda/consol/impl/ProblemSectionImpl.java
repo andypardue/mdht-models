@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemSectionOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,9 +55,17 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemConcernAct> getConsolProblemConcerns() {
-		return ProblemSectionOperations.getConsolProblemConcerns(this);
+	public boolean validateProblemSectionEntry108(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionEntry108(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSectionProblemConcernActEntryProblemConcern109(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionProblemConcernActEntryProblemConcern109(this, diagnostics, context);
 	}
 
 	/**
@@ -119,29 +125,18 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemSectionOperations.validateProblemSectionEntriesOptionalProblemConcern(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProblemSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemSectionImpl

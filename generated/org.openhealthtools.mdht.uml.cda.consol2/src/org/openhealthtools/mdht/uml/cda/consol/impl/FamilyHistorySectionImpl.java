@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -108,9 +106,8 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateFamilyHistorySectionFamilyHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistory(this, diagnostics, context);
+	public boolean validateFamilyHistorySectionEntry58(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySectionOperations.validateFamilyHistorySectionEntry58(this, diagnostics, context);
 	}
 
 	/**
@@ -118,9 +115,8 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<FamilyHistoryOrganizer> getFamilyHistories() {
-		return FamilyHistorySectionOperations.getFamilyHistories(this);
+	public boolean validateFamilyHistorySectionFamilyHistoryOrganizerEntryFamilyHistory59(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySectionOperations.validateFamilyHistorySectionFamilyHistoryOrganizerEntryFamilyHistory59(this, diagnostics, context);
 	}
 
 	/**
@@ -130,17 +126,17 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	 */
 	@Override
 	public FamilyHistorySection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FamilyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistorySectionImpl

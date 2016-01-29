@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicianReadingStudyP
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Physician Reading Study Performer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,8 +54,7 @@ public class PhysicianReadingStudyPerformer2Impl extends PhysicianReadingStudyPe
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformer2Operations.validatePhysicianReadingStudyPerformerTemplateId(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformer2Operations.validatePhysicianReadingStudyPerformerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,17 +64,17 @@ public class PhysicianReadingStudyPerformer2Impl extends PhysicianReadingStudyPe
 	 */
 	@Override
 	public PhysicianReadingStudyPerformer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PhysicianReadingStudyPerformer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PhysicianReadingStudyPerformer2Impl

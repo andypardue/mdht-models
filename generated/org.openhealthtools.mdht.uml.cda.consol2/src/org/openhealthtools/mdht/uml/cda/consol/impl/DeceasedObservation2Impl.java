@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DeceasedObservation2Op
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Deceased Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,9 +55,17 @@ public class DeceasedObservation2Impl extends DeceasedObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProblemObservation2 getConsolProblemObservation2() {
-		return DeceasedObservation2Operations.getConsolProblemObservation2(this);
+	public boolean validateDeceasedObservation2EntryRelationship900(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DeceasedObservation2Operations.validateDeceasedObservation2EntryRelationship900(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDeceasedObservation2ProblemObservation2EntryRelationshipProblemObservation2901(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DeceasedObservation2Operations.validateDeceasedObservation2ProblemObservation2EntryRelationshipProblemObservation2901(this, diagnostics, context);
 	}
 
 	/**
@@ -98,29 +104,18 @@ public class DeceasedObservation2Impl extends DeceasedObservationImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateDeceasedObservationProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DeceasedObservation2Operations.validateDeceasedObservationProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public DeceasedObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DeceasedObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DeceasedObservation2Impl

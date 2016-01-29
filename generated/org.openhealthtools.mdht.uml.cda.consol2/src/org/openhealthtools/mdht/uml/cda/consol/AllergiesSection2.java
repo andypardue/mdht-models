@@ -23,7 +23,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergiesSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSection2Title AllergiesSection2Text AllergiesSectionEntriesOptionalAllergyProblemAct' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='AllergiesSection2NullFlavor' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts' constraints.validation.dependOn.AllergiesSectionEntriesOptionalCode='AllergiesSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSection2Title AllergiesSection2Text AllergiesSection2Entry1190 AllergiesSection2AllergyConcernAct2EntryAllergyConcernAct21191' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='AllergiesSection2NullFlavor' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts' constraints.validation.dependOn.AllergiesSectionEntriesOptionalCode='AllergiesSectionEntriesOptionalCodeP' constraints.validation.query='AllergiesSection2AllergyConcernAct2EntryAllergyConcernAct21191'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergiesSection2AllergyConcernAct2Entry constraints.validation.error='AllergiesSection2AllergyConcernAct2EntryAllergyConcernAct21191'"
  * @generated
  */
 public interface AllergiesSection2 extends AllergiesSectionEntriesOptional2 {
@@ -66,16 +67,40 @@ public interface AllergiesSection2 extends AllergiesSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	@Override
-	public AllergiesSection2 init();
+	boolean validateAllergiesSection2Entry1190(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyConcernAct2)))'"
+	 * @generated
+	 */
+	boolean validateAllergiesSection2AllergyConcernAct2EntryAllergyConcernAct21191(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public AllergiesSection2 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	@Override
 	public AllergiesSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergiesSection2

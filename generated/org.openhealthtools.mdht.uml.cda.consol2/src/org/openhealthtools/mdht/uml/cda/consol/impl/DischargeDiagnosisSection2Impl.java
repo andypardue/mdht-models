@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeDiagnosisSect
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Diagnosis Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -54,10 +52,18 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeDiagnosisSection2Entry1086(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2Entry1086(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateDischargeDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +73,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	public boolean validateDischargeDiagnosisSection2CETranslationP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +81,8 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalDischargeDiagnosis2 getConsolHospitalDischargeDiagnosis2() {
-		return DischargeDiagnosisSection2Operations.getConsolHospitalDischargeDiagnosis2(this);
+	public boolean validateDischargeDiagnosisSection2HospitalDischargeDiagnosis2EntryHospitalDischargeDiagnosis21087(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2HospitalDischargeDiagnosis2EntryHospitalDischargeDiagnosis21087(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +93,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +104,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCodeP(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -112,20 +115,7 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	@Override
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
-			this, diagnostics, context);
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -135,17 +125,17 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 */
 	@Override
 	public DischargeDiagnosisSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DischargeDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DischargeDiagnosisSection2Impl

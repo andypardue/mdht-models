@@ -25,7 +25,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ImmunizationsSectionCode='ImmunizationsSectionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionEntry116 ImmunizationsSectionImmunizationActivityEntryImmunization117' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ImmunizationsSectionCode='ImmunizationsSectionCodeP' constraints.validation.query='ImmunizationsSectionImmunizationActivityEntryImmunization117'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolImmunizationsSectionImmunizationActivityEntry constraints.validation.error='ImmunizationsSectionImmunizationActivityEntryImmunization117'"
  * @generated
  */
 public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptional {
@@ -48,7 +49,7 @@ public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptiona
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'11369-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'11369-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateImmunizationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -84,19 +85,22 @@ public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptiona
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::ImmunizationActivity))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateImmunizationsSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateImmunizationsSectionEntry116(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)).oclAsType(consol::ImmunizationActivity)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity)))'"
 	 * @generated
 	 */
-	EList<ImmunizationActivity> getImmunizations();
+	boolean validateImmunizationsSectionImmunizationActivityEntryImmunization117(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,10 +111,10 @@ public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptiona
 	public ImmunizationsSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ImmunizationsSection

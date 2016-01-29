@@ -24,8 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyConcernAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActCode AllergyProblemActAllergyObservation AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem' templateId.root='2.16.840.1.113883.10.20.22.4.30' templateId.extension='2015-08-01' constraints.validation.warning='AllergyConcernAct2AuthorParticipation' constraints.validation.query='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActCode AllergyConcernAct2EntryRelationship888 AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem AllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2889' templateId.root='2.16.840.1.113883.10.20.22.4.30' templateId.extension='2015-08-01' constraints.validation.warning='AllergyConcernAct2AuthorParticipation' constraints.validation.query='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem AllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2889'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyConcernAct2CD constraints.validation.error='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyConcernAct2AllergyObservation2EntryRelationship constraints.validation.error='AllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2889'"
  * @generated
  */
 public interface AllergyConcernAct2 extends AllergyProblemAct {
@@ -44,11 +45,26 @@ public interface AllergyConcernAct2 extends AllergyProblemAct {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation2)).oclAsType(consol::AllergyObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<AllergyObservation2> getConsolAllergyObservation2s();
+	boolean validateAllergyConcernAct2EntryRelationship888(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation2)))'"
+	 * @generated
+	 */
+	boolean validateAllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2889(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,10 +75,10 @@ public interface AllergyConcernAct2 extends AllergyProblemAct {
 	public AllergyConcernAct2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AllergyConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergyConcernAct2

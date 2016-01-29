@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Admission Medications Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,8 +60,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +71,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +82,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +93,25 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171(this, diagnostics, context);
 	}
 
 	/**
@@ -110,30 +122,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	@Override
 	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<AdmissionMedication> getAdmissionMedications() {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getAdmissionMedications(this);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -143,18 +132,18 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends Sect
 	 */
 	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalAdmissionMedicationsSectionEntriesOptionalImpl

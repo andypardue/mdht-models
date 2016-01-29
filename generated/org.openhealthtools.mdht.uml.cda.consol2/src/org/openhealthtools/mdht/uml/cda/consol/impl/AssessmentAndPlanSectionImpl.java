@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Assessment And Plan Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,11 +96,8 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
-			this, diagnostics, context);
+	public boolean validateAssessmentAndPlanSectionEntry180(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionEntry180(this, diagnostics, context);
 	}
 
 	/**
@@ -110,9 +105,8 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlanOfCareActivityAct> getPlanOfCareActivityActs() {
-		return AssessmentAndPlanSectionOperations.getPlanOfCareActivityActs(this);
+	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityActEntryPlanOfCareActivityAct181(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityActEntryPlanOfCareActivityAct181(this, diagnostics, context);
 	}
 
 	/**
@@ -122,17 +116,17 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	 */
 	@Override
 	public AssessmentAndPlanSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AssessmentAndPlanSectionImpl

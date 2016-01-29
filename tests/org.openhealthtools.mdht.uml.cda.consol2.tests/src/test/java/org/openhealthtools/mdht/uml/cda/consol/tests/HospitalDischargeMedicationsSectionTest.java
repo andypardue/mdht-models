@@ -33,13 +33,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#getConsolDischargeMedications() <em>Get Consol Discharge Medications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntry288(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entry288</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication289(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Discharge Medication Entry Discharge Medication289</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntriesOptionalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntriesOptionalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Title</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection#validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Discharge Medication</em>}</li>
  * </ul>
  * </p>
  *
@@ -53,11 +53,71 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolDischargeMedications() {
 
-		HospitalDischargeMedicationsSection target = objectFactory.create();
-		target.getConsolDischargeMedications();
+	public void testValidateHospitalDischargeMedicationsSectionEntry288() {
+		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntry288TestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
+			"validateHospitalDischargeMedicationsSectionEntry288",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRY288__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HospitalDischargeMedicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalDischargeMedicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntry288(
+					(HospitalDischargeMedicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalDischargeMedicationsSectionEntry288TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication289() {
+		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication289TestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
+			"validateHospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication289",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_DISCHARGE_MEDICATION_ENTRY_DISCHARGE_MEDICATION289__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HospitalDischargeMedicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalDischargeMedicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication289(
+					(HospitalDischargeMedicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication289TestCase.doValidationTest();
 	}
 
 	/**
@@ -68,7 +128,8 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	public void testValidateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
 			"validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -102,7 +163,8 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	public void testValidateHospitalDischargeMedicationsSectionEntriesOptionalCodeP() {
 		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
 			"validateHospitalDischargeMedicationsSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -136,7 +198,8 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	public void testValidateHospitalDischargeMedicationsSectionEntriesOptionalCode() {
 		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
 			"validateHospitalDischargeMedicationsSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -179,7 +242,8 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	public void testValidateHospitalDischargeMedicationsSectionEntriesOptionalText() {
 		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntriesOptionalTextTestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
 			"validateHospitalDischargeMedicationsSectionEntriesOptionalText",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -216,7 +280,8 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 	public void testValidateHospitalDischargeMedicationsSectionEntriesOptionalTitle() {
 		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntriesOptionalTitleTestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
 			"validateHospitalDischargeMedicationsSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -243,40 +308,6 @@ public class HospitalDischargeMedicationsSectionTest extends CDAValidationTest {
 		};
 
 		validateHospitalDischargeMedicationsSectionEntriesOptionalTitleTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication() {
-		OperationsTestCase<HospitalDischargeMedicationsSection> validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedicationTestCase = new OperationsTestCase<HospitalDischargeMedicationsSection>(
-			"validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HospitalDischargeMedicationsSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HospitalDischargeMedicationsSection target) {
-				target.init();
-				target.addAct(ConsolFactory.eINSTANCE.createDischargeMedication().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(
-					(HospitalDischargeMedicationsSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedicationTestCase.doValidationTest();
 	}
 
 	/**

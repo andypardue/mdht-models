@@ -28,15 +28,9 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivity2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,16 +42,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address State</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address City</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address Postal Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Payer Payer Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address State</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address City</em>}</li>
@@ -140,70 +134,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						AD ad = DatatypesFactory.eINSTANCE.createAD();
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						target.getPerformers().add(payer);
-						AssignedEntity payerEntity = createPayerAssignedEntity();
-						payerEntity.getAddrs().add(ad);
-						payer.setAssignedEntity(payerEntity);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						AD ad = DatatypesFactory.eINSTANCE.createAD();
-
-						target.getPerformers().add(payer);
-						AssignedEntity payerEntity = createPayerAssignedEntity();
-						payerEntity.getAddrs().clear();
-						payerEntity.getAddrs().add(ad);
-						payer.setAssignedEntity(payerEntity);
-					}
-				});
+			protected void updateToFail(PolicyActivity2 target) {
 
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
 
 			}
 
@@ -221,36 +169,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -267,39 +204,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payer.setAssignedEntity(payerEntity);
-				payerEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				payerEntity.getAddrs().get(0).getUses().add(PostalAddressUse.ABC);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -316,38 +239,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
 
-				payer.setAssignedEntity(payerEntity);
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
 
 			}
 
@@ -365,36 +274,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -411,36 +309,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -457,36 +344,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -503,36 +379,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -549,7 +414,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	// @Test
 	// public void testValidatePolicyActivity2Payer() {
@@ -688,7 +553,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	// @Test
 	// public void testValidatePolicyActivity2Guarantor() {
@@ -828,7 +693,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	// @Test
 	// public void testValidatePolicyActivity2Coverage() {
@@ -863,70 +728,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						AD ad = DatatypesFactory.eINSTANCE.createAD();
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						AssignedEntity gEntity = createGuarantorAssignedEntity();
-						gEntity.getAddrs().clear();
-						gEntity.getAddrs().add(ad);
-						guarantor.setAssignedEntity(gEntity);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						AD ad = DatatypesFactory.eINSTANCE.createAD();
-						AssignedEntity gEntity = createGuarantorAssignedEntity();
-						gEntity.getAddrs().clear();
-						gEntity.getAddrs().add(ad);
-						guarantor.setAssignedEntity(gEntity);
-					}
-				});
+			protected void updateToFail(PolicyActivity2 target) {
 
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
 
 			}
 
@@ -944,37 +763,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -991,38 +798,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				gEntity.getAddrs().get(0).getUses().add(PostalAddressUse.ABC);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1039,37 +833,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1086,37 +868,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1133,37 +903,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1180,37 +938,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1227,37 +973,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1274,15 +1008,17 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTimeTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_DATE_OF_BIRTH_IN_SDT_CBIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_DATE_OF_BIRTH_IN_SDT_CBIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1310,37 +1046,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTimeTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_SDTC_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY2_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_SDTC_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pr.setPlayingEntity(pe);
-				coverage.setParticipantRole(pr);
-				target.getParticipants().add(coverage);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pr.setPlayingEntity(pe);
-				coverage.setParticipantRole(pr);
-				TS sDTCBirthTime = DatatypesFactory.eINSTANCE.createTS();
-				pe.setSDTCBirthTime(sDTCBirthTime);
-				target.getParticipants().add(coverage);
+				target.init();
+
 			}
 
 			@Override
@@ -1357,7 +1081,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2CDTranslation() {
@@ -1368,16 +1092,12 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getCode().getTranslations().set(
-					0, DatatypesFactory.eINSTANCE.createCD("hasCode", "2.16.840.1.113883.3.221.5"));
+				target.init();
 
 			}
 
@@ -1395,7 +1115,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivity2CDTranslationP() {
@@ -1406,14 +1126,13 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -1498,7 +1217,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCode() {
@@ -1509,13 +1228,13 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getCode().setCode("12");
+				target.init();
+
 			}
 
 			@Override
@@ -1583,7 +1302,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityPayer() {
@@ -1593,91 +1312,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// does not contain any payer or any guarantor performer elements
-						target.init();
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 1 guarantor
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 0 guarantor
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 0 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
+			protected void updateToFail(PolicyActivity2 target) {
 
 			}
 
@@ -1685,27 +1320,6 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
 
-				Performer2 payer = createPerformer();
-				AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
-				aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				payer.setAssignedEntity(aePay);
-				target.getPerformers().add(payer);
-
-				II iiPay = DatatypesFactory.eINSTANCE.createII();
-				iiPay.setRoot(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-
-				Performer2 guarantor = createPerformer();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				guarantor.setAssignedEntity(ae);
-				target.getPerformers().add(guarantor);
-
-				II iiGuar = DatatypesFactory.eINSTANCE.createII();
-				iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
-				guarantor.getTemplateIds().add(0, iiGuar);
 			}
 
 			@Override
@@ -1722,7 +1336,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantor() {
@@ -1732,120 +1346,14 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// does not contain any payer or any guarantor performer elements
-						target.init();
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 1 payer and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 0 guarantor
-						target.init();
-						target.getPerformers().clear();
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 0 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(PolicyActivity2 target) {
-						// Contains 2 payers and Contains 2 guarantors
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor);
-						Performer2 guarantor2 = createPerformer();
-						guarantor2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						target.getPerformers().add(guarantor2);
-
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer);
-						Performer2 payer2 = createPerformer();
-						payer2.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						target.getPerformers().add(payer2);
-					}
-				});
+			protected void updateToFail(PolicyActivity2 target) {
 
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				// Contains 1 payer and 1 guarantor
 				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				AssignedEntity aePay = CDAFactory.eINSTANCE.createAssignedEntity();
-				aePay.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
 
-				payer.setAssignedEntity(aePay);
-				target.getPerformers().add(payer);
-
-				II iiPay = DatatypesFactory.eINSTANCE.createII();
-				iiPay.setRoot(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-
-				Performer2 guarantor = createPerformer();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.110"));
-
-				guarantor.setAssignedEntity(ae);
-				target.getPerformers().add(guarantor);
-
-				II iiGuar = DatatypesFactory.eINSTANCE.createII();
-				iiGuar.setRoot(GUARANTOR_PERFORMER_ROOT);
-				guarantor.getTemplateIds().add(0, iiGuar);
 			}
 
 			@Override
@@ -1862,7 +1370,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverage() {
@@ -1879,7 +1387,6 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getParticipants().add(createCoverage());
 
 			}
 
@@ -1897,36 +1404,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityPayerPayerAssignedEntityAddr() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityPayerPayerAssignedEntityAddrTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityPayerPayerAssignedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
-				payerEntity.getAddrs().add(PolicyActivityTest.createUSRealmAddress());
+				target.init();
+
 			}
 
 			@Override
@@ -1943,35 +1439,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityPayerPayerAssignedEntityTelecom() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityPayerPayerAssignedEntityTelecomTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityPayerPayerAssignedEntityTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getTelecoms().clear();
-				payer.setAssignedEntity(payerEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -1988,7 +1474,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityPayerTemplateId() {
@@ -1997,33 +1483,14 @@ public class PolicyActivity2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			// Checks if the template ID exists or not, but the template ID must exist in order to differentiate between the two different types of
-			// performers, payer and guarantor. So, it is not possible to not include a template ID and for the code to know to fail it for not
-			// specifically having a payer or a guarantor. Due to the identification issue, the fail test has been skipped.
-
-			{
-				this.skipFailsTest();
-			}
-
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = CDAFactory.eINSTANCE.createPerformer2();
-				II iiPay = DatatypesFactory.eINSTANCE.createII(BAD_TEMPLATE_ID);
-				payer.getTemplateIds().add(0, iiPay);
-				target.getPerformers().add(payer);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = CDAFactory.eINSTANCE.createPerformer2();
-				II iiPay = DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-				payer.setAssignedEntity(createPayerAssignedEntity());
-				target.getPerformers().add(payer);
 
 			}
 
@@ -2041,34 +1508,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityPayerPayerAssignedEntity() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityPayerPayerAssignedEntityTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityPayerPayerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = CDAFactory.eINSTANCE.createPerformer2();
-				II iiPay = DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-				target.getPerformers().add(payer);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = CDAFactory.eINSTANCE.createPerformer2();
-				II iiPay = DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT);
-				payer.getTemplateIds().add(0, iiPay);
-				payer.setAssignedEntity(createPayerAssignedEntity());
-				target.getPerformers().add(payer);
 
 			}
 
@@ -2086,65 +1543,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityCodeP() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorGuarantorAssignedEntityCodePTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				guarantor.setAssignedEntity(createGuarantorAssignedEntity());
-				guarantor.getAssignedEntity().setCode(null);
-				target.getPerformers().add(guarantor);
+
 			}
 
 			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-
-					@Override
-					// Case with guarantor/assignedEntity/code
-					public void updateToPass(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						guarantor.setAssignedEntity(createGuarantorAssignedEntity());
-						target.getPerformers().add(guarantor);
-					}
-
-				});
-
-				addPassTest(new PassTest() {
-
-					@Override
-					// Case with guarantor/assignedEntity/code="GUAR" AND payer/assignedEntity/code="GUAR"
-					// to ensure there is no confusion between the two identities.
-					public void updateToPass(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						// payer
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						payer.setAssignedEntity(createPayerAssignedEntity());
-						target.getPerformers().add(payer);
-						// guarantor
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						guarantor.setAssignedEntity(createGuarantorAssignedEntity());
-						target.getPerformers().add(guarantor);
-					}
-
-				});
+			protected void updateToPass(PolicyActivity2 target) {
+				target.init();
 
 			}
 
@@ -2162,66 +1578,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityCode() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorGuarantorAssignedEntityCodeTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityGuarantorGuarantorAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				guarantor.setAssignedEntity(createGuarantorAssignedEntity());
-				guarantor.getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("GUAR", "2.16.840.1.113883.5.XXX"));
-				target.getPerformers().add(guarantor);
+
 			}
 
 			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-
-					@Override
-					// Case with guarantor/assignedEntity/code
-					public void updateToPass(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						guarantor.setAssignedEntity(createGuarantorAssignedEntity());
-						target.getPerformers().add(guarantor);
-					}
-
-				});
-
-				addPassTest(new PassTest() {
-
-					@Override
-					// Case with guarantor/assignedEntity/code="GUAR" AND payer/assignedEntity/code="GUAR"
-					// to ensure there is no confusion between the two identities.
-					public void updateToPass(PolicyActivity2 target) {
-						target.init();
-						target.getPerformers().clear();
-						// payer
-						Performer2 payer = createPerformer();
-						payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-						payer.setAssignedEntity(createPayerAssignedEntity());
-						target.getPerformers().add(payer);
-						// guarantor
-						Performer2 guarantor = createPerformer();
-						guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-						guarantor.setAssignedEntity(createGuarantorAssignedEntity());
-						target.getPerformers().add(guarantor);
-					}
-
-				});
+			protected void updateToPass(PolicyActivity2 target) {
+				target.init();
 
 			}
 
@@ -2239,35 +1613,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityAddr() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorGuarantorAssignedEntityAddrTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityGuarantorGuarantorAssignedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				target.init();
+
 			}
 
 			@Override
@@ -2284,35 +1648,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityTelecom() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorGuarantorAssignedEntityTelecomTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+				target.init();
+
 			}
 
 			@Override
@@ -2329,40 +1683,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantorTemplateId() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorTemplateIdTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivityGuarantorTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePolicyActivityGuarantorTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			// Checks if the template ID exists or not, but the template ID must exist in order to differentiate between the two different types of
-			// performers, payer and guarantor. So, it is not possible to not include a template ID and for the code to know to fail it for not
-			// specifically having a payer or a guarantor. Due to the identification issue, the fail test has been skipped.
-
-			{
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				// target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				target.getPerformers().add(guarantor);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
 				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				target.getPerformers().add(guarantor);
-				// Although the correct GUARANTOR performer template ID is provided, any ID will pass, as the test only ensures an ID is there.
-				// The real check for the actual ID is done with testValidatePolicyActivityGuarantor()
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+
 			}
 
 			@Override
@@ -2379,15 +1717,16 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidatePolicyActivityGuarantorTypeCode() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorTypeCodeTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivityGuarantorTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePolicyActivityGuarantorTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2397,6 +1736,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
+				target.init();
 
 			}
 
@@ -2414,34 +1754,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntity() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityGuarantorGuarantorAssignedEntityTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityGuarantorGuarantorAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				II iiGuar = DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT);
-				guarantor.getTemplateIds().add(0, iiGuar);
-				target.getPerformers().add(guarantor);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				II iiGuar = DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT);
-				guarantor.getTemplateIds().add(0, iiGuar);
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
+				target.init();
+
 			}
 
 			@Override
@@ -2458,37 +1789,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityNameTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pr.setPlayingEntity(pe);
-				coverage.setParticipantRole(pr);
-				target.getParticipants().add(coverage);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pr.setPlayingEntity(pe);
-				coverage.setParticipantRole(pr);
-				PN name = DatatypesFactory.eINSTANCE.createPN();
-				pe.getNames().add(name);
-				target.getParticipants().add(coverage);
+				target.init();
+
 			}
 
 			@Override
@@ -2505,35 +1824,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverageCoverageRoleId() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageCoverageRoleIdTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivityCoverageCoverageRoleId",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePolicyActivityCoverageCoverageRoleId", operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				coverage.setParticipantRole(pr);
-				target.getParticipants().add(coverage);
 
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pr.setPlayingEntity(pe);
-				coverage.setParticipantRole(pr);
-				target.getParticipants().add(coverage);
-				coverage.getParticipantRole().getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -2550,35 +1858,25 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityTestCase = new OperationsTestCase<PolicyActivity2>(
 			"validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				coverage.setParticipantRole(pr);
-				target.getParticipants().add(coverage);
 
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pr.setPlayingEntity(pe);
-				coverage.setParticipantRole(pr);
-				target.getParticipants().add(coverage);
-				coverage.getParticipantRole().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				target.init();
+
 			}
 
 			@Override
@@ -2595,33 +1893,24 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverageTemplateId() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageTemplateIdTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivityCoverageTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePolicyActivityCoverageTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				Participant2 coverage = CDAFactory.eINSTANCE.createParticipant2();
-				II iiCov = DatatypesFactory.eINSTANCE.createII(BAD_TEMPLATE_ID);
-				coverage.getTemplateIds().add(0, iiCov);
-				coverage.setTypeCode(ParticipationType.COV);
-				target.getParticipants().add(coverage);
+
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = CDAFactory.eINSTANCE.createParticipant2();
-				II iiCov = DatatypesFactory.eINSTANCE.createII(COVERAGE_PARTICIPANT_ROOT);
-				coverage.getTemplateIds().add(0, iiCov);
-				coverage.setTypeCode(ParticipationType.COV);
-				target.getParticipants().add(coverage);
+				target.init();
+
 			}
 
 			@Override
@@ -2638,36 +1927,23 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePolicyActivityCoverageCoverageRole() {
 		OperationsTestCase<PolicyActivity2> validatePolicyActivityCoverageCoverageRoleTestCase = new OperationsTestCase<PolicyActivity2>(
-			"validatePolicyActivityCoverageCoverageRole",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePolicyActivityCoverageCoverageRole", operationsForOCL.getOCLValue(
+				"VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PolicyActivity2 target) {
-				target.init();
-				Participant2 coverage = CDAFactory.eINSTANCE.createParticipant2();
-				CDAFactory.eINSTANCE.createParticipantRole();
-				CDAFactory.eINSTANCE.createPlayingEntity();
-				coverage.setTypeCode(ParticipationType.COV);
-				target.getParticipants().add(coverage);
 
 			}
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getParticipants().clear();
-				Participant2 coverage = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole role = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pEntity = CDAFactory.eINSTANCE.createPlayingEntity();
-				role.setPlayingEntity(pEntity);
-				coverage.setParticipantRole(role);
-				coverage.setTypeCode(ParticipationType.COV);
-				target.getParticipants().add(coverage);
+				target.init();
 
 			}
 

@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#validateProblemSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#validateProblemSectionEntriesOptionalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#validateProblemSectionEntriesOptionalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#validateProblemSectionEntriesOptionalProblemConcern(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Problem Concern</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#getProblemConcerns() <em>Get Problem Concerns</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#validateProblemSectionEntriesOptionalEntry248(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Entry248</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional#validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Section Entries Optional Problem Concern Act Entry Problem Concern249</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,7 +55,8 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	public void testValidateProblemSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
 			"validateProblemSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +89,8 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalCode() {
 		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalCodeTestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
-			"validateProblemSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +123,8 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalCodeP() {
 		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalCodePTestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
-			"validateProblemSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +157,8 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalTitle() {
 		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalTitleTestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
-			"validateProblemSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +194,8 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalText() {
 		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalTextTestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
-			"validateProblemSectionEntriesOptionalText",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalText", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,13 +226,14 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateProblemSectionEntriesOptionalProblemConcern() {
-		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalProblemConcernTestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
-			"validateProblemSectionEntriesOptionalProblemConcern",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateProblemSectionEntriesOptionalEntry248() {
+		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalEntry248TestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
+			"validateProblemSectionEntriesOptionalEntry248", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_ENTRY248__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,19 +244,19 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProblemSectionEntriesOptional target) {
 				target.init();
-				target.addAct(ConsolFactory.eINSTANCE.createProblemConcernAct().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcern(
+				return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalEntry248(
 					(ProblemSectionEntriesOptional) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateProblemSectionEntriesOptionalProblemConcernTestCase.doValidationTest();
+		validateProblemSectionEntriesOptionalEntry248TestCase.doValidationTest();
 	}
 
 	/**
@@ -262,11 +264,35 @@ public class ProblemSectionEntriesOptionalTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemConcerns() {
 
-		ProblemSectionEntriesOptional target = objectFactory.create();
-		target.getProblemConcerns();
+	public void testValidateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249() {
+		OperationsTestCase<ProblemSectionEntriesOptional> validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249TestCase = new OperationsTestCase<ProblemSectionEntriesOptional>(
+			"validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN_ACT_ENTRY_PROBLEM_CONCERN249__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ProblemSectionEntriesOptional target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemSectionEntriesOptional target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249(
+					(ProblemSectionEntriesOptional) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemSectionEntriesOptionalProblemConcernActEntryProblemConcern249TestCase.doValidationTest();
 	}
 
 	/**

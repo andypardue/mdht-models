@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ExternalDocumentImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>External Document Reference</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	@Override
 	public boolean validateExternalDocumentReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	@Override
 	public boolean validateExternalDocumentReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -120,8 +116,7 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	public boolean validateExternalDocumentReferenceVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceVersionNumber(
-			this, diagnostics, context);
+		return ExternalDocumentReferenceOperations.validateExternalDocumentReferenceVersionNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -131,17 +126,17 @@ public class ExternalDocumentReferenceImpl extends ExternalDocumentImpl implemen
 	 */
 	@Override
 	public ExternalDocumentReference init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ExternalDocumentReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ExternalDocumentReferenceImpl

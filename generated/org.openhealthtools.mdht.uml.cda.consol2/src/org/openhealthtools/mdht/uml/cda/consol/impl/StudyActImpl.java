@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Study Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -177,9 +175,8 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateStudyActSeriesAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StudyActOperations.validateStudyActSeriesAct(this, diagnostics, context);
+	public boolean validateStudyActEntryRelationship536(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StudyActOperations.validateStudyActEntryRelationship536(this, diagnostics, context);
 	}
 
 	/**
@@ -187,9 +184,8 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SeriesAct getSeriesAct() {
-		return StudyActOperations.getSeriesAct(this);
+	public boolean validateStudyActSeriesActEntryRelationshipSeriesAct537(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StudyActOperations.validateStudyActSeriesActEntryRelationshipSeriesAct537(this, diagnostics, context);
 	}
 
 	/**
@@ -199,17 +195,17 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 */
 	@Override
 	public StudyAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public StudyAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // StudyActImpl

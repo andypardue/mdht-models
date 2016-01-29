@@ -53,7 +53,8 @@ public class ProcedureSpecimensTakenSectionTest extends CDAValidationTest {
 	public void testValidateProcedureSpecimensTakenSectionTemplateId() {
 		OperationsTestCase<ProcedureSpecimensTakenSection> validateProcedureSpecimensTakenSectionTemplateIdTestCase = new OperationsTestCase<ProcedureSpecimensTakenSection>(
 			"validateProcedureSpecimensTakenSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +87,8 @@ public class ProcedureSpecimensTakenSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureSpecimensTakenSectionCode() {
 		OperationsTestCase<ProcedureSpecimensTakenSection> validateProcedureSpecimensTakenSectionCodeTestCase = new OperationsTestCase<ProcedureSpecimensTakenSection>(
-			"validateProcedureSpecimensTakenSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureSpecimensTakenSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +121,8 @@ public class ProcedureSpecimensTakenSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureSpecimensTakenSectionCodeP() {
 		OperationsTestCase<ProcedureSpecimensTakenSection> validateProcedureSpecimensTakenSectionCodePTestCase = new OperationsTestCase<ProcedureSpecimensTakenSection>(
-			"validateProcedureSpecimensTakenSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureSpecimensTakenSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -154,8 +155,8 @@ public class ProcedureSpecimensTakenSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureSpecimensTakenSectionText() {
 		OperationsTestCase<ProcedureSpecimensTakenSection> validateProcedureSpecimensTakenSectionTextTestCase = new OperationsTestCase<ProcedureSpecimensTakenSection>(
-			"validateProcedureSpecimensTakenSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureSpecimensTakenSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +192,8 @@ public class ProcedureSpecimensTakenSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureSpecimensTakenSectionTitle() {
 		OperationsTestCase<ProcedureSpecimensTakenSection> validateProcedureSpecimensTakenSectionTitleTestCase = new OperationsTestCase<ProcedureSpecimensTakenSection>(
-			"validateProcedureSpecimensTakenSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureSpecimensTakenSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPhysicalFindingsOfSkinSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalFindingsOfSkinSectionTemplateId PhysicalFindingsOfSkinSectionCode PhysicalFindingsOfSkinSectionCodeP PhysicalFindingsOfSkinSectionTitle PhysicalFindingsOfSkinSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.62' code.code='10206-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Skin Narrative' constraints.validation.info='PhysicalFindingsOfSkinSectionWoundObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalFindingsOfSkinSectionTemplateId PhysicalFindingsOfSkinSectionCode PhysicalFindingsOfSkinSectionCodeP PhysicalFindingsOfSkinSectionTitle PhysicalFindingsOfSkinSectionText PhysicalFindingsOfSkinSectionEntry764' templateId.root='2.16.840.1.113883.10.20.22.2.62' code.code='10206-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Skin Narrative' constraints.validation.info='PhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765' constraints.validation.query='PhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntry constraints.validation.info='PhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765'"
  * @generated
  */
 public interface PhysicalFindingsOfSkinSection extends Section {
@@ -49,7 +50,7 @@ public interface PhysicalFindingsOfSkinSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'10206-1\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'10206-1\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validatePhysicalFindingsOfSkinSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,20 +98,22 @@ public interface PhysicalFindingsOfSkinSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::LongitudinalCareWoundObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validatePhysicalFindingsOfSkinSectionWoundObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalFindingsOfSkinSectionEntry764(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)).oclAsType(consol::LongitudinalCareWoundObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)))'"
 	 * @generated
 	 */
-	EList<LongitudinalCareWoundObservation> getWoundObservations();
+	boolean validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,9 +123,9 @@ public interface PhysicalFindingsOfSkinSection extends Section {
 	public PhysicalFindingsOfSkinSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PhysicalFindingsOfSkinSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalFindingsOfSkinSection

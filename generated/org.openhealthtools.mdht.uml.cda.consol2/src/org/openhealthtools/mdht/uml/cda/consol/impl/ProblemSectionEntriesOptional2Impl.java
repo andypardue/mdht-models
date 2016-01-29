@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemSectionEntriesO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,11 +58,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemSectionEntriesOptional2HealthStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2HealthStatusObservation2(
-			this, diagnostics, context);
+	public boolean validateProblemSectionEntriesOptional2Entry1180(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2Entry1180(this, diagnostics, context);
 	}
 
 	/**
@@ -72,9 +67,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemConcernAct2> getConsolProblemConcernAct2s() {
-		return ProblemSectionEntriesOptional2Operations.getConsolProblemConcernAct2s(this);
+	public boolean validateProblemSectionEntriesOptional2Entry1182(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2Entry1182(this, diagnostics, context);
 	}
 
 	/**
@@ -82,9 +76,17 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public HealthStatusObservation2 getHealthStatusObservation2() {
-		return ProblemSectionEntriesOptional2Operations.getHealthStatusObservation2(this);
+	public boolean validateProblemSectionEntriesOptional2ProblemConcernAct2EntryProblemConcernAct21181(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2ProblemConcernAct2EntryProblemConcernAct21181(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemSectionEntriesOptional2HealthStatusObservation2EntryHealthStatusObservation21183(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptional2HealthStatusObservation2EntryHealthStatusObservation21183(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +97,7 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	@Override
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +107,7 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -117,20 +117,7 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 */
 	@Override
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalProblemConcern(
-			this, diagnostics, context);
+		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -140,17 +127,17 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 */
 	@Override
 	public ProblemSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemSectionEntriesOptional2Impl

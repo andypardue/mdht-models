@@ -15,20 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component2;
-import org.openhealthtools.mdht.uml.cda.Custodian;
-import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
-import org.openhealthtools.mdht.uml.cda.PatientRole;
-import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.consol.operations.UnstructuredDocumentOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,25 +54,23 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentRecordTarget() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentRecordTargetTestCase = new OperationsTestCase<UnstructuredDocument>(
-			"validateUnstructuredDocumentRecordTarget",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateUnstructuredDocumentRecordTarget", operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
 
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
+				target.init();
 
 			}
 
@@ -100,7 +88,7 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentAuthor() {
@@ -111,13 +99,13 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				target.getAuthors().add(author);
+				target.init();
+
 			}
 
 			@Override
@@ -134,7 +122,7 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentComponent() {
@@ -145,15 +133,12 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-
-				Component2 value = CDAFactory.eINSTANCE.createComponent2();
-
-				target.setComponent(value);
+				target.init();
 
 			}
 
@@ -171,7 +156,7 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodian() {
@@ -188,8 +173,6 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
 				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				target.setCustodian(custodian);
 
 			}
 
@@ -207,32 +190,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentRecordTargetPatientRole2Id() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentRecordTargetPatientRole2IdTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentRecordTargetPatientRole2Id",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				target.getRecordTargets().add(rt);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getRecordTargets().clear();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				pr.getIds().add(DatatypesFactory.eINSTANCE.createII());
-				rt.setPatientRole(pr);
-				target.getRecordTargets().add(rt);
+				target.init();
 
 			}
 
@@ -250,30 +225,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentRecordTargetPatientRole2() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentRecordTargetPatientRole2TestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentRecordTargetPatientRole2",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getRecordTargets().clear();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				pr.getIds().add(DatatypesFactory.eINSTANCE.createII());
-				rt.setPatientRole(pr);
-				target.getRecordTargets().add(rt);
+				target.init();
 
 			}
 
@@ -291,34 +260,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentAuthorAssignedAuthor2Addr() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentAuthorAssignedAuthor2AddrTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentAuthorAssignedAuthor2Addr",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
 
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
+				target.init();
 
 			}
 
@@ -336,32 +295,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentAuthorAssignedAuthor2Telecom() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentAuthorAssignedAuthor2TelecomTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentAuthorAssignedAuthor2Telecom",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				aa.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
+				target.init();
 
 			}
 
@@ -379,29 +330,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentAuthorAssignedAuthor2() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentAuthorAssignedAuthor2TestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentAuthorAssignedAuthor2",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				target.getAuthors().add(author);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getAuthors().clear();
-				Author author = CDAFactory.eINSTANCE.createAuthor();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				author.setAssignedAuthor(aa);
-				target.getAuthors().add(author);
+				target.init();
 
 			}
 
@@ -419,30 +365,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddrTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
-				CustodianOrganization co = CDAFactory.eINSTANCE.createCustodianOrganization();
-				ac.setRepresentedCustodianOrganization(co);
-				custodian.setAssignedCustodian(ac);
-				target.setCustodian(custodian);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().setAddr(
-					DatatypesFactory.eINSTANCE.createAD());
+				target.init();
 
 			}
 
@@ -460,30 +400,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationIdTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
-				CustodianOrganization co = CDAFactory.eINSTANCE.createCustodianOrganization();
-				ac.setRepresentedCustodianOrganization(co);
-				custodian.setAssignedCustodian(ac);
-				target.setCustodian(custodian);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -501,30 +435,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationNameTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
-				CustodianOrganization co = CDAFactory.eINSTANCE.createCustodianOrganization();
-				ac.setRepresentedCustodianOrganization(co);
-				custodian.setAssignedCustodian(ac);
-				target.setCustodian(custodian);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().setName(
-					DatatypesFactory.eINSTANCE.createON());
+				target.init();
 
 			}
 
@@ -542,30 +470,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecomTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
-				CustodianOrganization co = CDAFactory.eINSTANCE.createCustodianOrganization();
-				ac.setRepresentedCustodianOrganization(co);
-				custodian.setAssignedCustodian(ac);
-				target.setCustodian(custodian);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				target.getCustodian().getAssignedCustodian().getRepresentedCustodianOrganization().setTelecom(
-					DatatypesFactory.eINSTANCE.createTEL());
+				target.init();
 
 			}
 
@@ -583,33 +505,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
 
-				custodian.setAssignedCustodian(ac);
-				target.setCustodian(custodian);
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
-				CustodianOrganization co = CDAFactory.eINSTANCE.createCustodianOrganization();
-				ac.setRepresentedCustodianOrganization(co);
-				custodian.setAssignedCustodian(ac);
-				target.setCustodian(custodian);
+				target.init();
 
 			}
 
@@ -627,28 +540,24 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian2() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian2TestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian2",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(UnstructuredDocument target) {
-				target.init();
-				Custodian custodian = CDAFactory.eINSTANCE.createCustodian();
-				target.setCustodian(custodian);
+
 			}
 
 			@Override
 			protected void updateToPass(UnstructuredDocument target) {
-				AssignedCustodian ac = CDAFactory.eINSTANCE.createAssignedCustodian();
-				CustodianOrganization co = CDAFactory.eINSTANCE.createCustodianOrganization();
-				ac.setRepresentedCustodianOrganization(co);
-				target.getCustodian().setAssignedCustodian(ac);
+				target.init();
 
 			}
 
@@ -671,8 +580,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<UnstructuredDocument> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<UnstructuredDocument>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

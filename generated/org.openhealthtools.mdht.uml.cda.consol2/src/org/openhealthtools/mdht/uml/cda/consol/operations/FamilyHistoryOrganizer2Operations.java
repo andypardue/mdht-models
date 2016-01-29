@@ -13,8 +13,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -36,9 +38,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizer2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#getConsolFamilyHistoryObservation2s() <em>Get Consol Family History Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Family History Observation2 Entry Relationship Family History Observation21545</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerFamilyHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Family History Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,7 +63,7 @@ public class FamilyHistoryOrganizer2Operations extends FamilyHistoryOrganizerOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryOrganizer2Id(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Id</em>}' invariant operation.
@@ -88,74 +89,97 @@ public class FamilyHistoryOrganizer2Operations extends FamilyHistoryOrganizerOpe
 
 	public static boolean validateFamilyHistoryOrganizer2Id(FamilyHistoryOrganizer2 familyHistoryOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER2);
 			try {
 				VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistoryOrganizer2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_ORGANIZER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_ORGANIZER2__FAMILY_HISTORY_ORGANIZER2_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizer2FamilyHistoryOrganizer2Id"),
-					new Object[] { familyHistoryOrganizer2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_ORGANIZER2__FAMILY_HISTORY_ORGANIZER2_ID,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizer2FamilyHistoryOrganizer2Id"),
+						 new Object [] { familyHistoryOrganizer2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolFamilyHistoryObservation2s(FamilyHistoryOrganizer2) <em>Get Consol Family History Observation2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Family History Observation2 Entry Relationship Family History Observation21545</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolFamilyHistoryObservation2s(FamilyHistoryOrganizer2)
+	 * @see #validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_FAMILY_HISTORY_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryObservation2)).oclAsType(consol::FamilyHistoryObservation2)";
+	protected static final String VALIDATE_FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryObservation2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolFamilyHistoryObservation2s(FamilyHistoryOrganizer2) <em>Get Consol Family History Observation2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Family History Observation2 Entry Relationship Family History Observation21545</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolFamilyHistoryObservation2s(FamilyHistoryOrganizer2)
+	 * @see #validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_FAMILY_HISTORY_OBSERVATION2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param familyHistoryOrganizer2 The receiving '<em><b>Family History Organizer2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<FamilyHistoryObservation2> getConsolFamilyHistoryObservation2s(
-			FamilyHistoryOrganizer2 familyHistoryOrganizer2) {
-		if (GET_CONSOL_FAMILY_HISTORY_OBSERVATION2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(FamilyHistoryOrganizer2 familyHistoryOrganizer2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER2,
-				ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER2.getEAllOperations().get(72));
+			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER2);
 			try {
-				GET_CONSOL_FAMILY_HISTORY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_FAMILY_HISTORY_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_FAMILY_HISTORY_OBSERVATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<FamilyHistoryObservation2> result = (Collection<FamilyHistoryObservation2>) query.evaluate(familyHistoryOrganizer2);
-		return new BasicEList.UnmodifiableEList<FamilyHistoryObservation2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(familyHistoryOrganizer2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_ORGANIZER2__FAMILY_HISTORY_ORGANIZER2_FAMILY_HISTORY_OBSERVATION2_ENTRY_RELATIONSHIP_FAMILY_HISTORY_OBSERVATION21545,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizer2FamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -192,87 +216,28 @@ public class FamilyHistoryOrganizer2Operations extends FamilyHistoryOrganizerOpe
 
 	public static boolean validateFamilyHistoryOrganizerTemplateId(FamilyHistoryOrganizer2 familyHistoryOrganizer2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER2);
 			try {
 				VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistoryOrganizer2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistoryOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_ORGANIZER2__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizer2FamilyHistoryOrganizerTemplateId"),
-					new Object[] { familyHistoryOrganizer2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_ORGANIZER2__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizer2FamilyHistoryOrganizerTemplateId"),
+						 new Object [] { familyHistoryOrganizer2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateFamilyHistoryOrganizerFamilyHistoryObservation(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Family History Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFamilyHistoryOrganizerFamilyHistoryObservation(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::FamilyHistoryObservation2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFamilyHistoryOrganizerFamilyHistoryObservation(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Family History Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFamilyHistoryOrganizerFamilyHistoryObservation(FamilyHistoryOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param familyHistoryOrganizer2 The receiving '<em><b>Family History Organizer2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(
-			FamilyHistoryOrganizer2 familyHistoryOrganizer2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER2);
-			try {
-				VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistoryOrganizer2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_ORGANIZER2__FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizer2FamilyHistoryOrganizerFamilyHistoryObservation"),
-					new Object[] { familyHistoryOrganizer2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

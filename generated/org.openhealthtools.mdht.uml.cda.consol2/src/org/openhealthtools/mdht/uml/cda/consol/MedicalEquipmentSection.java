@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP MedicalEquipmentSectionTitle MedicalEquipmentSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.23' code.code='46264-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medical Equipment' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP MedicalEquipmentSectionTitle MedicalEquipmentSectionText MedicalEquipmentSectionEntry78' templateId.root='2.16.840.1.113883.10.20.22.2.23' code.code='46264-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medical Equipment' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79' constraints.validation.query='MedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicalEquipmentSectionNonMedicinalSupplyActivityEntry constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79'"
  * @generated
  */
 public interface MedicalEquipmentSection extends Section {
@@ -49,7 +50,7 @@ public interface MedicalEquipmentSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'46264-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'46264-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateMedicalEquipmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,20 +98,22 @@ public interface MedicalEquipmentSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicalEquipmentSectionEntry78(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity)).oclAsType(consol::NonMedicinalSupplyActivity)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(supply->exists(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity)))'"
 	 * @generated
 	 */
-	EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities();
+	boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,9 +123,9 @@ public interface MedicalEquipmentSection extends Section {
 	public MedicalEquipmentSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicalEquipmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicalEquipmentSection

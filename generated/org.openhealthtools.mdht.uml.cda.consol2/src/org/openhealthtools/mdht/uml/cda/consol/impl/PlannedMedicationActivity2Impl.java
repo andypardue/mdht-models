@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedMedicationActiv
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Medication Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,8 +60,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2StatusCode(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2StatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +71,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2StatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2StatusCodeP(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2StatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +82,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTime(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +93,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2RepeatNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RepeatNumber(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RepeatNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +102,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	public boolean validatePlannedMedicationActivity2RouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCodeP(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +112,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2RouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCode(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +122,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	public boolean validatePlannedMedicationActivity2ApproachSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ApproachSiteCodeP(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ApproachSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +133,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2ApproachSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ApproachSiteCode(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +144,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2DoseQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2DoseQuantity(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2DoseQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -166,8 +155,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2RateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RateQuantity(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -178,8 +166,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2MaxDoseQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2MaxDoseQuantity(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2MaxDoseQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -190,8 +177,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2AdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2AdministrationUnitCodeP(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2AdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +188,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2AdministrationUnitCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2AdministrationUnitCode(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2AdministrationUnitCode(this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +198,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2Performer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Performer(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Performer(this, diagnostics, context);
 	}
 
 	/**
@@ -225,43 +209,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2AuthorParticipation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedMedicationActivity2PriorityPreference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PriorityPreference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedMedicationActivity2Indication2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Indication2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedMedicationActivity2Instruction2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Instruction2(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -271,8 +219,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2Consumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Consumable(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Consumable(this, diagnostics, context);
 	}
 
 	/**
@@ -282,8 +229,34 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	public boolean validatePlannedMedicationActivity2Precondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Precondition(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Precondition(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EntryRelationship984(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EntryRelationship984(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EntryRelationship986(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EntryRelationship986(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EntryRelationship988(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EntryRelationship988(this, diagnostics, context);
 	}
 
 	/**
@@ -294,8 +267,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2IVLPQdoseQuantityUnit(this, diagnostics, context);
 	}
 
 	/**
@@ -306,8 +278,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2IVLPQrateQuantityUnit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2IVLPQrateQuantityUnit(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2IVLPQrateQuantityUnit(this, diagnostics, context);
 	}
 
 	/**
@@ -318,8 +289,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlannedMedicationActivity2ConsumableMedicationInformation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ConsumableMedicationInformation2(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2ConsumableMedicationInformation2(this, diagnostics, context);
 	}
 
 	/**
@@ -329,8 +299,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	public boolean validatePlannedMedicationActivity2PreconditionTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionTypeCode(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -340,8 +309,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	public boolean validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PreconditionPreconditionForSubstanceAdministration2(this, diagnostics, context);
 	}
 
 	/**
@@ -349,8 +317,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferences() {
-		return PlannedMedicationActivity2Operations.getPriorityPreferences(this);
+	public boolean validatePlannedMedicationActivity2PriorityPreferenceEntryRelationshipPriorityPreference985(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2PriorityPreferenceEntryRelationshipPriorityPreference985(this, diagnostics, context);
 	}
 
 	/**
@@ -358,9 +326,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getIndication2s() {
-		return PlannedMedicationActivity2Operations.getIndication2s(this);
+	public boolean validatePlannedMedicationActivity2Indication2EntryRelationshipIndication2987(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Indication2EntryRelationshipIndication2987(this, diagnostics, context);
 	}
 
 	/**
@@ -368,9 +335,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Instruction2> getInstruction2s() {
-		return PlannedMedicationActivity2Operations.getInstruction2s(this);
+	public boolean validatePlannedMedicationActivity2Instruction2EntryRelationshipInstruction2989(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Instruction2EntryRelationshipInstruction2989(this, diagnostics, context);
 	}
 
 	/**
@@ -381,8 +347,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -393,8 +358,7 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(
-			this, diagnostics, context);
+		return PlannedMedicationActivity2Operations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -404,17 +368,17 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 */
 	@Override
 	public PlannedMedicationActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedMedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedMedicationActivity2Impl

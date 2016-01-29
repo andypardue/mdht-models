@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -148,19 +146,8 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizerOperations.validateResultOrganizerResultObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ResultObservation> getResultObservations() {
-		return ResultOrganizerOperations.getResultObservations(this);
+	public boolean validateResultOrganizerResultObservationEntryRelationshipResultObservation77(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations.validateResultOrganizerResultObservationEntryRelationshipResultObservation77(this, diagnostics, context);
 	}
 
 	/**
@@ -170,17 +157,17 @@ public class ResultOrganizerImpl extends OrganizerImpl implements ResultOrganize
 	 */
 	@Override
 	public ResultOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultOrganizerImpl

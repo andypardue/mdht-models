@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Specimens Taken Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	@Override
 	public boolean validateProcedureSpecimensTakenSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 */
 	@Override
 	public boolean validateProcedureSpecimensTakenSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 */
 	@Override
 	public boolean validateProcedureSpecimensTakenSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +87,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 */
 	@Override
 	public boolean validateProcedureSpecimensTakenSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +97,7 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 */
 	@Override
 	public boolean validateProcedureSpecimensTakenSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(
-			this, diagnostics, context);
+		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -114,17 +107,17 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	 */
 	@Override
 	public ProcedureSpecimensTakenSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureSpecimensTakenSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureSpecimensTakenSectionImpl

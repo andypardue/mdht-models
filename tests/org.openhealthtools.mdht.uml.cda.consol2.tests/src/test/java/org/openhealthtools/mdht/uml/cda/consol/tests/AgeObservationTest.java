@@ -11,6 +11,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -23,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,7 +52,7 @@ public class AgeObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAgeObservationValueUnits() {
@@ -62,43 +62,14 @@ public class AgeObservationTest extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(AgeObservation target) {
-						// empty
-					}
-				}
-
-				);
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(AgeObservation target) {
-						// check against two units
-						target.init();
-						PQ val1 = DatatypesFactory.eINSTANCE.createPQ();
-						PQ val2 = DatatypesFactory.eINSTANCE.createPQ();
-						val1.setUnit("Unit 1");
-						val2.setUnit("Unit 2");
-						target.getValues().add(val1);
-						target.getValues().add(val2);
-					}
-				}
-
-				);
+			protected void updateToFail(AgeObservation target) {
 
 			}
 
 			@Override
 			protected void updateToPass(AgeObservation target) {
 				target.init();
-				PQ val = DatatypesFactory.eINSTANCE.createPQ();
-				val.setUnit("meter");
-				target.getValues().add(val);
+
 			}
 
 			@Override
@@ -251,7 +222,7 @@ public class AgeObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAgeObservationCode() {
@@ -270,10 +241,15 @@ public class AgeObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCodeSystem("2.16.840.1.113883.6.96");
-				cd.setCode("445518008");
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(AgeObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.AgeObservationCodeP", passToken);
 			}
 
 			@Override
@@ -361,7 +337,7 @@ public class AgeObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAgeObservationValue() {
@@ -379,7 +355,7 @@ public class AgeObservationTest extends CDAValidationTest {
 			protected void updateToPass(AgeObservation target) {
 				target.init();
 
-				PQ value = DatatypesFactory.eINSTANCE.createPQ();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}

@@ -32,8 +32,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mental Status Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -112,11 +110,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMentalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionAssessmentScaleObservation(
-			this, diagnostics, context);
+	public boolean validateMentalStatusSectionEntry756(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusSectionOperations.validateMentalStatusSectionEntry756(this, diagnostics, context);
 	}
 
 	/**
@@ -124,10 +119,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMentalStatusSectionMentalStatusOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusOrganizer2(
-			this, diagnostics, context);
+	public boolean validateMentalStatusSectionEntry758(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusSectionOperations.validateMentalStatusSectionEntry758(this, diagnostics, context);
 	}
 
 	/**
@@ -135,10 +128,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMentalStatusSectionMentalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation2(
-			this, diagnostics, context);
+	public boolean validateMentalStatusSectionEntry760(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusSectionOperations.validateMentalStatusSectionEntry760(this, diagnostics, context);
 	}
 
 	/**
@@ -146,9 +137,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
-		return MentalStatusSectionOperations.getAssessmentScaleObservations(this);
+	public boolean validateMentalStatusSectionMentalStatusOrganizer2EntryMentalStatusOrganizer2757(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusOrganizer2EntryMentalStatusOrganizer2757(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +146,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusOrganizer2> getMentalStatusOrganizer2s() {
-		return MentalStatusSectionOperations.getMentalStatusOrganizer2s(this);
+	public boolean validateMentalStatusSectionMentalStatusObservation2EntryMentalStatusObservation2759(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusSectionOperations.validateMentalStatusSectionMentalStatusObservation2EntryMentalStatusObservation2759(this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +155,8 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getMentalStatusObservation2s() {
-		return MentalStatusSectionOperations.getMentalStatusObservation2s(this);
+	public boolean validateMentalStatusSectionAssessmentScaleObservationEntryAssessmentScaleObservation761(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusSectionOperations.validateMentalStatusSectionAssessmentScaleObservationEntryAssessmentScaleObservation761(this, diagnostics, context);
 	}
 
 	/**
@@ -176,17 +166,17 @@ public class MentalStatusSectionImpl extends SectionImpl implements MentalStatus
 	 */
 	@Override
 	public MentalStatusSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MentalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MentalStatusSectionImpl

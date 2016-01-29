@@ -26,7 +26,10 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReactionObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationValue ReactionObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.warning='ReactionObservationTextReference ReactionObservationTextReferenceValue ReactionObservationEffectiveTimeLow ReactionObservationEffectiveTimeHigh ReactionObservationText ReactionObservationEffectiveTime ReactionObservationSeverityObservation' classCode='OBS' moodCode='EVN' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='ReactionObservationProcedureActivityProcedure ReactionObservationMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationValue ReactionObservationValueP ReactionObservationEntryRelationship8 ReactionObservationEntryRelationship10 ReactionObservationEntryRelationship12' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.warning='ReactionObservationTextReference ReactionObservationTextReferenceValue ReactionObservationEffectiveTimeLow ReactionObservationEffectiveTimeHigh ReactionObservationText ReactionObservationEffectiveTime ReactionObservationSeverityObservationEntryRelationshipSeverityObservation9' classCode='OBS' moodCode='EVN' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.query='ReactionObservationSeverityObservationEntryRelationshipSeverityObservation9 ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure11 ReactionObservationMedicationActivityEntryRelationshipMedicationActivity13' constraints.validation.info='ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure11 ReactionObservationMedicationActivityEntryRelationshipMedicationActivity13'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReactionObservationSeverityObservationEntryRelationship constraints.validation.warning='ReactionObservationSeverityObservationEntryRelationshipSeverityObservation9'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReactionObservationProcedureActivityProcedureEntryRelationship constraints.validation.info='ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure11'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolReactionObservationMedicationActivityEntryRelationship constraints.validation.info='ReactionObservationMedicationActivityEntryRelationshipMedicationActivity13'"
  * @generated
  */
 public interface ReactionObservation extends Observation {
@@ -208,7 +211,7 @@ public interface ReactionObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateReactionObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -232,7 +235,7 @@ public interface ReactionObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateReactionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -256,10 +259,10 @@ public interface ReactionObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateReactionObservationSeverityObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReactionObservationEntryRelationship8(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -268,11 +271,10 @@ public interface ReactionObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(consol::ProcedureActivityProcedure) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateReactionObservationEntryRelationship10(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,37 +283,46 @@ public interface ReactionObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::MedicationActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateReactionObservationMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReactionObservationEntryRelationship12(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation)))'"
 	 * @generated
 	 */
-	SeverityObservation getSeverityObservation();
+	boolean validateReactionObservationSeverityObservationEntryRelationshipSeverityObservation9(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)).oclAsType(consol::ProcedureActivityProcedure)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(procedure->exists(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)))'"
 	 * @generated
 	 */
-	EList<ProcedureActivityProcedure> getProcedureActivityProcedures();
+	boolean validateReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure11(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)))'"
 	 * @generated
 	 */
-	EList<MedicationActivity> getMedicationActivities();
+	boolean validateReactionObservationMedicationActivityEntryRelationshipMedicationActivity13(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -321,9 +332,9 @@ public interface ReactionObservation extends Observation {
 	public ReactionObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ReactionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReactionObservation

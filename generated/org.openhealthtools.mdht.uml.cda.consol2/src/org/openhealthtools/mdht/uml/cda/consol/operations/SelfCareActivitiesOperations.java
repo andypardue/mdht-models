@@ -94,26 +94,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesTemplateId(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesTemplateId"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesTemplateId"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -153,26 +155,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesClassCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesClassCode"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesClassCode"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -212,26 +216,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesMoodCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesMoodCode"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesMoodCode"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -271,26 +277,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesCodeP(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCodeP"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCodeP"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -302,7 +310,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(selfCareActivities);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -316,9 +324,9 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '46008-9' or value.code = '28409-1' or value.code = '28408-3' or value.code = '46484-2' or value.code = '46482-6' or value.code = '28413-3'))";
+	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '46008-9' or value.code = '28409-1' or value.code = '28408-3' or value.code = '46484-2' or value.code = '46482-6' or value.code = '28413-3'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSelfCareActivitiesCode(SelfCareActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Code</em>}' invariant operation.
@@ -344,34 +352,34 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.SelfCareActivitiesCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SelfCareActivitiesCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(selfCareActivities)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCode"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCode"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -385,8 +393,9 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSelfCareActivitiesStatusCode(SelfCareActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Status Code</em>}' invariant operation.
@@ -412,26 +421,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesStatusCode(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesStatusCode"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesStatusCode"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -471,26 +482,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesStatusCodeP(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesStatusCodeP"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesStatusCodeP"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -530,26 +543,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesEffectiveTime(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesEffectiveTime"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesEffectiveTime"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -563,9 +578,9 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '371150009' or value.code = '371153006' or value.code = '371155004' or value.code = '371152001' or value.code = '371154000' or value.code = '371151008' or value.code = '371156003' or value.code = '371157007' or value.code = '385640009')))";
+	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '371150009' or value.code = '371153006' or value.code = '371155004' or value.code = '371152001' or value.code = '371154000' or value.code = '371151008' or value.code = '371156003' or value.code = '371157007' or value.code = '385640009')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSelfCareActivitiesValue(SelfCareActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Value</em>}' invariant operation.
@@ -591,26 +606,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesValue(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValue"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValue"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -650,26 +667,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesValueP(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValueP"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE_P,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValueP"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -709,26 +728,28 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSelfCareActivitiesAuthorParticipation(SelfCareActivities selfCareActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SELF_CARE_ACTIVITIES);
 			try {
 				VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			selfCareActivities)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(selfCareActivities)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesAuthorParticipation"),
-					new Object[] { selfCareActivities }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesAuthorParticipation"),
+						 new Object [] { selfCareActivities }));
 			}
-
+			 
 			return false;
 		}
 		return true;

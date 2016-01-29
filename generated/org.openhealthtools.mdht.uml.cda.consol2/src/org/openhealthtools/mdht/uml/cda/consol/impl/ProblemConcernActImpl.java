@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Concern Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -158,9 +156,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernActOperations.validateProblemConcernActProblemObservation(this, diagnostics, context);
+	public boolean validateProblemConcernActEntryRelationship24(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActEntryRelationship24(this, diagnostics, context);
 	}
 
 	/**
@@ -168,9 +165,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation> getProblemObservations() {
-		return ProblemConcernActOperations.getProblemObservations(this);
+	public boolean validateProblemConcernActProblemObservationEntryRelationshipProblemObservation25(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernActOperations.validateProblemConcernActProblemObservationEntryRelationshipProblemObservation25(this, diagnostics, context);
 	}
 
 	/**
@@ -180,17 +176,17 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 */
 	@Override
 	public ProblemConcernAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemConcernActImpl

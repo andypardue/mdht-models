@@ -22,7 +22,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosis2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreoperativeDiagnosisTemplateId PreoperativeDiagnosisCode PreoperativeDiagnosisCodeP PreoperativeDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.65' templateId.extension='2015-08-01' code.code='10219-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Preoperative Diagnosis' constraints.validation.dependOn.PreoperativeDiagnosisCode='PreoperativeDiagnosisCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreoperativeDiagnosisTemplateId PreoperativeDiagnosisCode PreoperativeDiagnosisCodeP PreoperativeDiagnosis2EntryRelationship1000 PreoperativeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation21001' templateId.root='2.16.840.1.113883.10.20.22.4.65' templateId.extension='2015-08-01' code.code='10219-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Preoperative Diagnosis' constraints.validation.dependOn.PreoperativeDiagnosisCode='PreoperativeDiagnosisCodeP' constraints.validation.query='PreoperativeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation21001'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPreoperativeDiagnosis2ProblemObservation2EntryRelationship constraints.validation.error='PreoperativeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation21001'"
  * @generated
  */
 public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {
@@ -41,11 +42,26 @@ public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)).oclAsType(consol::ProblemObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<ProblemObservation2> getConsolProblemObservation2s();
+	boolean validatePreoperativeDiagnosis2EntryRelationship1000(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)))'"
+	 * @generated
+	 */
+	boolean validatePreoperativeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation21001(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,10 +72,10 @@ public interface PreoperativeDiagnosis2 extends PreoperativeDiagnosis {
 	public PreoperativeDiagnosis2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PreoperativeDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreoperativeDiagnosis2

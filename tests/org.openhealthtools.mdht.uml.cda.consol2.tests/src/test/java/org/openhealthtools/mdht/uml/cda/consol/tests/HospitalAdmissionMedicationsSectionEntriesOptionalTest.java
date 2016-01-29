@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Admission Medication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#getAdmissionMedications() <em>Get Admission Medications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Entry170</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional#validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Medications Section Entries Optional Admission Medication Entry Admission Medication171</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,7 +55,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
 			"validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -89,7 +90,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalCode() {
 		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
 			"validateHospitalAdmissionMedicationsSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -123,7 +125,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP() {
 		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
 			"validateHospitalAdmissionMedicationsSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -157,7 +160,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalText() {
 		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalTextTestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
 			"validateHospitalAdmissionMedicationsSectionEntriesOptionalText",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,10 +195,83 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	* @generated
 	*/
 	@Test
+
+	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170() {
+		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170TestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
+			"validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ENTRY170__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HospitalAdmissionMedicationsSectionEntriesOptional target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalAdmissionMedicationsSectionEntriesOptional target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170(
+					(HospitalAdmissionMedicationsSectionEntriesOptional) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171() {
+		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171TestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
+			"validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION_ENTRY_ADMISSION_MEDICATION171__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HospitalAdmissionMedicationsSectionEntriesOptional target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalAdmissionMedicationsSectionEntriesOptional target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171(
+					(HospitalAdmissionMedicationsSectionEntriesOptional) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalTitle() {
 		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalTitleTestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
 			"validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,52 +302,6 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 
 	/**
 	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication() {
-		OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional> validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationTestCase = new OperationsTestCase<HospitalAdmissionMedicationsSectionEntriesOptional>(
-			"validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HospitalAdmissionMedicationsSectionEntriesOptional target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(HospitalAdmissionMedicationsSectionEntriesOptional target) {
-				target.addAct(ConsolFactory.eINSTANCE.createAdmissionMedication().init());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-					(HospitalAdmissionMedicationsSectionEntriesOptional) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetAdmissionMedications() {
-
-		HospitalAdmissionMedicationsSectionEntriesOptional target = objectFactory.create();
-		target.getAdmissionMedications();
-
-	}
-
-	/**
-	*
 	* @generated
 	*/
 	private static class OperationsForOCL extends HospitalAdmissionMedicationsSectionEntriesOptionalOperations {
@@ -291,7 +322,8 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalTest extends CDAV
 	*
 	* @generated
 	*/
-	private static class ObjectFactory implements TestObjectFactory<HospitalAdmissionMedicationsSectionEntriesOptional> {
+	private static class ObjectFactory
+			implements TestObjectFactory<HospitalAdmissionMedicationsSectionEntriesOptional> {
 		@Override
 		public HospitalAdmissionMedicationsSectionEntriesOptional create() {
 			return ConsolFactory.eINSTANCE.createHospitalAdmissionMedicationsSectionEntriesOptional();

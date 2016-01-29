@@ -31,7 +31,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProceduresSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProceduresSectionEntriesOptionalTemplateId ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSectionEntriesOptionalTitle ProceduresSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.7' code.code='47519-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Procedures' constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityProcedure ProceduresSectionEntriesOptionalProcedureActivityObservation ProceduresSectionEntriesOptionalProcedureActivityAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProceduresSectionEntriesOptionalTemplateId ProceduresSectionEntriesOptionalCode ProceduresSectionEntriesOptionalCodeP ProceduresSectionEntriesOptionalTitle ProceduresSectionEntriesOptionalText ProceduresSectionEntriesOptionalEntry250 ProceduresSectionEntriesOptionalEntry252 ProceduresSectionEntriesOptionalEntry254' templateId.root='2.16.840.1.113883.10.20.22.2.7' code.code='47519-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of Procedures' constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityProcedureEntryProcedureActivityProcedure251 ProceduresSectionEntriesOptionalProcedureActivityObservationEntryProcedureActivityObservation253 ProceduresSectionEntriesOptionalProcedureActivityActEntryProcedureActivityAct255' constraints.validation.query='ProceduresSectionEntriesOptionalProcedureActivityProcedureEntryProcedureActivityProcedure251 ProceduresSectionEntriesOptionalProcedureActivityObservationEntryProcedureActivityObservation253 ProceduresSectionEntriesOptionalProcedureActivityActEntryProcedureActivityAct255'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProceduresSectionEntriesOptionalProcedureActivityProcedureEntry constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityProcedureEntryProcedureActivityProcedure251'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProceduresSectionEntriesOptionalProcedureActivityObservationEntry constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityObservationEntryProcedureActivityObservation253'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProceduresSectionEntriesOptionalProcedureActivityActEntry constraints.validation.info='ProceduresSectionEntriesOptionalProcedureActivityActEntryProcedureActivityAct255'"
  * @generated
  */
 public interface ProceduresSectionEntriesOptional extends Section {
@@ -54,7 +57,7 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'47519-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'47519-4\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -102,11 +105,10 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureActivityProcedure))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProceduresSectionEntriesOptionalEntry250(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,11 +117,10 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProcedureActivityObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateProceduresSectionEntriesOptionalProcedureActivityObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProceduresSectionEntriesOptionalEntry252(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,38 +129,46 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::ProcedureActivityAct))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProceduresSectionEntriesOptionalEntry254(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)).oclAsType(consol::ProcedureActivityProcedure)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(procedure->exists(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure)))'"
 	 * @generated
 	 */
-	EList<ProcedureActivityProcedure> getProcedureActivityProcedures();
+	boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedureEntryProcedureActivityProcedure251(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)).oclAsType(consol::ProcedureActivityObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProcedureActivityObservation)))'"
 	 * @generated
 	 */
-	EList<ProcedureActivityObservation> getProcedureActivityObservations();
+	boolean validateProceduresSectionEntriesOptionalProcedureActivityObservationEntryProcedureActivityObservation253(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureActivityAct)).oclAsType(consol::ProcedureActivityAct)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::ProcedureActivityAct)))'"
 	 * @generated
 	 */
-	EList<ProcedureActivityAct> getProcedureActivityActs();
+	boolean validateProceduresSectionEntriesOptionalProcedureActivityActEntryProcedureActivityAct255(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,9 +178,9 @@ public interface ProceduresSectionEntriesOptional extends Section {
 	public ProceduresSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ProceduresSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProceduresSectionEntriesOptional

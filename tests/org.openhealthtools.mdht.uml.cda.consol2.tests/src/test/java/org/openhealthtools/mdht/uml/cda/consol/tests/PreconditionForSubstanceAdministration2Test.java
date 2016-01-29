@@ -21,7 +21,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreconditionForSubstanceAdministration2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
@@ -55,7 +54,8 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 	public void testValidatePreconditionForSubstanceAdministrationCodeP() {
 		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationCodePTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
 			"validatePreconditionForSubstanceAdministrationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -83,13 +83,14 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePreconditionForSubstanceAdministrationValueP() {
 		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationValuePTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
 			"validatePreconditionForSubstanceAdministrationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -100,8 +101,7 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 			@Override
 			protected void updateToPass(PreconditionForSubstanceAdministration2 target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.setValue(value);
+
 			}
 
 			@Override
@@ -124,7 +124,8 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 	public void testValidatePreconditionForSubstanceAdministrationTemplateId() {
 		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationTemplateIdTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
 			"validatePreconditionForSubstanceAdministrationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -158,7 +159,8 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 	public void testValidatePreconditionForSubstanceAdministrationCode() {
 		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationCodeTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
 			"validatePreconditionForSubstanceAdministrationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -186,15 +188,17 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidatePreconditionForSubstanceAdministrationText() {
 		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationTextTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
 			"validatePreconditionForSubstanceAdministrationText",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,13 +229,14 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidatePreconditionForSubstanceAdministrationValue() {
 		OperationsTestCase<PreconditionForSubstanceAdministration2> validatePreconditionForSubstanceAdministrationValueTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration2>(
 			"validatePreconditionForSubstanceAdministrationValue",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,8 +247,10 @@ public class PreconditionForSubstanceAdministration2Test extends CDAValidationTe
 			@Override
 			protected void updateToPass(PreconditionForSubstanceAdministration2 target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD("mustExistOnly", SNOMEDCT_ID);
-				target.setValue(value);
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+
 			}
 
 			@Override

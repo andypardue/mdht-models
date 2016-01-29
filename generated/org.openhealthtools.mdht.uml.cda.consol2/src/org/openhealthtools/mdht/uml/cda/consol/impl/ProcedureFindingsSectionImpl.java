@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Findings Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,6 +96,24 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProcedureFindingsSectionEntry304(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionEntry304(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureFindingsSectionProblemObservationEntryProblemObservation305(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservationEntryProblemObservation305(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateProcedureFindingsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTitle(this, diagnostics, context);
@@ -109,40 +125,18 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProblemObservation> getProblemObservations() {
-		return ProcedureFindingsSectionOperations.getProblemObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProcedureFindingsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureFindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureFindingsSectionImpl

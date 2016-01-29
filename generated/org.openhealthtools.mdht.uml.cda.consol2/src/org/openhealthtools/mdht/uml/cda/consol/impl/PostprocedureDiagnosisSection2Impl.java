@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PostprocedureDiagnosis
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Postprocedure Diagnosis Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PostprocedureDiagnosis2 getConsolPostprocedureDiagnosis2() {
-		return PostprocedureDiagnosisSection2Operations.getConsolPostprocedureDiagnosis2(this);
+	public boolean validatePostprocedureDiagnosisSection2Entry1142(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2Entry1142(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +77,7 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	@Override
 	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +87,7 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 */
 	@Override
 	public boolean validatePostprocedureDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCodeP(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,20 +97,7 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 */
 	@Override
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -116,17 +107,17 @@ public class PostprocedureDiagnosisSection2Impl extends PostprocedureDiagnosisSe
 	 */
 	@Override
 	public PostprocedureDiagnosisSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PostprocedureDiagnosisSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PostprocedureDiagnosisSection2Impl

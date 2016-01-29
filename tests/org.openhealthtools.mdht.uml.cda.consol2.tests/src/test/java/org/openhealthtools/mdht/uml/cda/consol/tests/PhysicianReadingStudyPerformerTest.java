@@ -16,17 +16,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicianReadingStudyPerformerOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,7 +58,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerTemplateId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerTemplateIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -93,23 +87,23 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerTime() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerTimeTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
-			"validatePhysicianReadingStudyPerformerTime",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicianReadingStudyPerformerTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.setTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+				target.init();
 
 			}
 
@@ -126,27 +120,26 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	}
 
 	/**
-	* 
-	* @generated NOT
+	*
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerTypeCode() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerTypeCodeTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				// incorrect value
-				target.setTypeCode(x_ServiceEventPerformer.SPRF);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				// correct value
-				target.setTypeCode(x_ServiceEventPerformer.PRF);
+				target.init();
+
 			}
 
 			@Override
@@ -163,24 +156,25 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntity() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
+				target.init();
 
-				target.setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
 			}
 
 			@Override
@@ -197,28 +191,25 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_DAY_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				low.setValue("1234");
-				time.setLow(low);
-				target.setTime(time);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().getLow().setValue(PRECISE_TO_DAY);
+				target.init();
+
 			}
 
 			@Override
@@ -235,28 +226,25 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_MINUTE_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				high.setValue("1234");
-				time.setHigh(high);
-				target.setTime(time);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().getHigh().setValue(PRECISE_TO_MINUTE);
+				target.init();
+
 			}
 
 			@Override
@@ -273,32 +261,25 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_PRECISE_TO_THE_SECOND_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				low.setValue("1234");
-				high.setValue("1234");
-				time.setLow(low);
-				time.setHigh(high);
-				target.setTime(time);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().getLow().setValue(PRECISE_TO_SECOND);
-				target.getTime().getHigh().setValue(PRECISE_TO_SECOND);
+				target.init();
+
 			}
 
 			@Override
@@ -315,32 +296,25 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTSTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_GENERAL_HEADER_CONSTRAINTS_US_REALM_DATE_AND_TIME_DT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET_IVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				IVL_TS time = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				low.setValue(PRECISE_TO_MINUTE);
-				high.setValue(PRECISE_TO_MINUTE);
-				time.setLow(low);
-				time.setHigh(high);
-				target.setTime(time);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				target.getTime().getLow().setValue(PRECISE_TO_MINUTE_WITH_TIMEZONE);
-				target.getTime().getHigh().setValue(PRECISE_TO_MINUTE_WITH_TIMEZONE);
+				target.init();
+
 			}
 
 			@Override
@@ -357,30 +331,24 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
-				target.setAssignedEntity(ae);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				id.setRoot("2.16.840.1.113883.4.6");
-				ae.getIds().add(id);
-				target.setAssignedEntity(ae);
+				target.init();
 
 			}
 
@@ -398,28 +366,24 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityHasDICOM() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityHasDICOMTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
-				target.setAssignedEntity(ae);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("test", "1.2.840.10008.2.16.4"));
-				target.setAssignedEntity(ae);
+				target.init();
 
 			}
 
@@ -437,28 +401,24 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganizationTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 
-				target.setAssignedEntity(ae);
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
-				target.setAssignedEntity(ae);
+				target.init();
 
 			}
 
@@ -476,27 +436,24 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityCode() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityCodeTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				target.setAssignedEntity(ae);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE("test", "1.2.840.10008.2.16.4"));
-				target.setAssignedEntity(ae);
+				target.init();
 
 			}
 
@@ -514,29 +471,24 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PhysicianReadingStudyPerformer target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				target.setAssignedEntity(ae);
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicianReadingStudyPerformer target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				id.setRoot("2.16.840.1.113883.4.6");
-				ae.getIds().add(id);
-				target.setAssignedEntity(ae);
+				target.init();
 
 			}
 

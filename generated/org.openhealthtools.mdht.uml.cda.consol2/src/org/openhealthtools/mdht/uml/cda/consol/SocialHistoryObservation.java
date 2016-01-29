@@ -108,7 +108,7 @@ public interface SocialHistoryObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -120,7 +120,7 @@ public interface SocialHistoryObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'229819007\' or value.code = \'256235009\' or value.code = \'160573003\' or value.code = \'364393001\' or value.code = \'364703007\' or value.code = \'425400000\' or value.code = \'363908000\' or value.code = \'228272008\' or value.code = \'105421008\' or value.code = \'302160007\' or value.code = \'423514004\' or value.code = \'102487004\' or value.code = \'424483007\' or value.code = \'442133001\' or value.code = \'446996006\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'229819007\' or value.code = \'256235009\' or value.code = \'160573003\' or value.code = \'364393001\' or value.code = \'364703007\' or value.code = \'425400000\' or value.code = \'363908000\' or value.code = \'228272008\' or value.code = \'105421008\' or value.code = \'302160007\' or value.code = \'423514004\' or value.code = \'102487004\' or value.code = \'424483007\' or value.code = \'442133001\' or value.code = \'446996006\'))'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -144,7 +144,7 @@ public interface SocialHistoryObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -156,7 +156,7 @@ public interface SocialHistoryObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -169,9 +169,9 @@ public interface SocialHistoryObservation extends Observation {
 	public SocialHistoryObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SocialHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistoryObservation

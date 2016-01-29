@@ -26,11 +26,12 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPatientReferralAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientReferralActTemplateId PatientReferralActClassCode PatientReferralActMoodCode PatientReferralActMoodCodeP PatientReferralActId PatientReferralActCode PatientReferralActCodeP PatientReferralActStatusCode PatientReferralActStatusCodeP PatientReferralActEffectiveTime PatientReferralActEntryRelationshipObservationClassCode PatientReferralActEntryRelationshipObservationMoodCode PatientReferralActEntryRelationshipObservationCodeP PatientReferralActEntryRelationshipObservationCode PatientReferralActEntryRelationshipObservationStatusCode PatientReferralActEntryRelationshipObservationStatusCodeP PatientReferralActEntryRelationshipObservationValueP PatientReferralActEntryRelationshipTypeCode PatientReferralActEntryRelationshipObservation PatientReferralActParticipantTypeCode PatientReferralActParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.140' classCode='PCPR' constraints.validation.dependOn.PatientReferralActMoodCode='PatientReferralActMoodCodeP' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PatientReferralActCode='PatientReferralActCodeP' statusCode.code='active' constraints.validation.warning='PatientReferralActPriorityCode PatientReferralActAuthorParticipation PatientReferralActEntryRelationshipObservationPriorityCodeP PatientReferralActEntryRelationshipObservationPriorityCode PatientReferralActEntryRelationshipObservationValue PatientReferralActParticipantParticipantRoleCode' constraints.validation.info='PatientReferralActEntryRelationship PatientReferralActIndication2 PatientReferralActParticipant PatientReferralActParticipantParticipantRoleCodeP' constraints.validation.query='PatientReferralActEntryRelationshipObservationClassCode PatientReferralActEntryRelationshipObservationMoodCode PatientReferralActEntryRelationshipObservationCodeP PatientReferralActEntryRelationshipObservationCode PatientReferralActEntryRelationshipObservationStatusCode PatientReferralActEntryRelationshipObservationStatusCodeP PatientReferralActEntryRelationshipObservationPriorityCodeP PatientReferralActEntryRelationshipObservationPriorityCode PatientReferralActEntryRelationshipObservationValue PatientReferralActEntryRelationshipObservationValueP PatientReferralActEntryRelationshipTypeCode PatientReferralActEntryRelationshipObservation PatientReferralActParticipantParticipantRoleCodeP PatientReferralActParticipantParticipantRoleCode PatientReferralActParticipantTypeCode PatientReferralActParticipantParticipantRole' constraints.validation.dependOn.PatientReferralActEntryRelationshipObservationCode='PatientReferralActEntryRelationshipObservationCodeP' constraints.validation.dependOn.PatientReferralActEntryRelationshipObservationPriorityCode='PatientReferralActEntryRelationshipObservationPriorityCodeP' constraints.validation.dependOn.PatientReferralActParticipantParticipantRoleCode='PatientReferralActParticipantParticipantRoleCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientReferralActTemplateId PatientReferralActClassCode PatientReferralActMoodCode PatientReferralActMoodCodeP PatientReferralActId PatientReferralActCode PatientReferralActCodeP PatientReferralActStatusCode PatientReferralActStatusCodeP PatientReferralActEffectiveTime PatientReferralActEntryRelationship622 PatientReferralActEntryRelationshipObservationClassCode PatientReferralActEntryRelationshipObservationMoodCode PatientReferralActEntryRelationshipObservationCodeP PatientReferralActEntryRelationshipObservationCode PatientReferralActEntryRelationshipObservationStatusCode PatientReferralActEntryRelationshipObservationStatusCodeP PatientReferralActEntryRelationshipObservationValueP PatientReferralActEntryRelationshipTypeCode PatientReferralActEntryRelationshipObservation PatientReferralActParticipantTypeCode PatientReferralActParticipantParticipantRole' templateId.root='2.16.840.1.113883.10.20.22.4.140' classCode='PCPR' constraints.validation.dependOn.PatientReferralActMoodCode='PatientReferralActMoodCodeP' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PatientReferralActCode='PatientReferralActCodeP' statusCode.code='active' constraints.validation.warning='PatientReferralActPriorityCode PatientReferralActAuthorParticipation PatientReferralActEntryRelationshipObservationPriorityCodeP PatientReferralActEntryRelationshipObservationPriorityCode PatientReferralActEntryRelationshipObservationValue PatientReferralActParticipantParticipantRoleCode' constraints.validation.info='PatientReferralActEntryRelationship PatientReferralActParticipant PatientReferralActParticipantParticipantRoleCodeP PatientReferralActIndication2EntryRelationshipIndication2623' constraints.validation.query='PatientReferralActEntryRelationshipObservationClassCode PatientReferralActEntryRelationshipObservationMoodCode PatientReferralActEntryRelationshipObservationCodeP PatientReferralActEntryRelationshipObservationCode PatientReferralActEntryRelationshipObservationStatusCode PatientReferralActEntryRelationshipObservationStatusCodeP PatientReferralActEntryRelationshipObservationPriorityCodeP PatientReferralActEntryRelationshipObservationPriorityCode PatientReferralActEntryRelationshipObservationValue PatientReferralActEntryRelationshipObservationValueP PatientReferralActEntryRelationshipTypeCode PatientReferralActEntryRelationshipObservation PatientReferralActParticipantParticipantRoleCodeP PatientReferralActParticipantParticipantRoleCode PatientReferralActParticipantTypeCode PatientReferralActParticipantParticipantRole PatientReferralActIndication2EntryRelationshipIndication2623' constraints.validation.dependOn.PatientReferralActEntryRelationshipObservationCode='PatientReferralActEntryRelationshipObservationCodeP' constraints.validation.dependOn.PatientReferralActEntryRelationshipObservationPriorityCode='PatientReferralActEntryRelationshipObservationPriorityCodeP' constraints.validation.dependOn.PatientReferralActParticipantParticipantRoleCode='PatientReferralActParticipantParticipantRoleCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPatientReferralActEntryRelationship typeCode='SUBJ' constraints.validation.error='PatientReferralActEntryRelationshipTypeCode PatientReferralActEntryRelationshipObservation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPatientReferralActEntryRelationshipObservation classCode='OBS' constraints.validation.error='PatientReferralActEntryRelationshipObservationClassCode PatientReferralActEntryRelationshipObservationMoodCode PatientReferralActEntryRelationshipObservationCode PatientReferralActEntryRelationshipObservationCodeP PatientReferralActEntryRelationshipObservationStatusCode PatientReferralActEntryRelationshipObservationStatusCodeP PatientReferralActEntryRelationshipObservationValueP' moodCode='RQO' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='assertion' constraints.validation.dependOn.PatientReferralActEntryRelationshipObservationCode='PatientReferralActEntryRelationshipObservationCodeP' statusCode.code='completed' priorityCode.codeSystem='2.16.840.1.113883.5.7' priorityCode.codeSystemName='ActPriority' constraints.validation.warning='PatientReferralActEntryRelationshipObservationPriorityCode PatientReferralActEntryRelationshipObservationPriorityCodeP PatientReferralActEntryRelationshipObservationValue' constraints.validation.dependOn.PatientReferralActEntryRelationshipObservationPriorityCode='PatientReferralActEntryRelationshipObservationPriorityCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPatientReferralActParticipant typeCode='REFT' constraints.validation.error='PatientReferralActParticipantTypeCode PatientReferralActParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPatientReferralActParticipantParticipantRole code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='PatientReferralActParticipantParticipantRoleCode' constraints.validation.info='PatientReferralActParticipantParticipantRoleCodeP' constraints.validation.dependOn.PatientReferralActParticipantParticipantRoleCode='PatientReferralActParticipantParticipantRoleCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPatientReferralActIndication2EntryRelationship constraints.validation.info='PatientReferralActIndication2EntryRelationshipIndication2623'"
  * @generated
  */
 public interface PatientReferralAct extends Act {
@@ -77,7 +78,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and \r\nlet value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in \r\nvalue = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::RQO'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and \nlet value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in \nvalue = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::RQO'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -89,7 +90,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,7 +114,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -125,7 +126,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'active\')'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -197,10 +198,10 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::Indication2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
 	 * @generated
 	 */
-	boolean validatePatientReferralActIndication2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientReferralActParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,10 +210,10 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validatePatientReferralActParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePatientReferralActEntryRelationship622(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,7 +261,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.code = \'ASSERTION\' and value.codeSystem = \'2.16.840.1.113883.5.4\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.code = \'ASSERTION\' and value.codeSystem = \'2.16.840.1.113883.5.4\'))'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActEntryRelationshipObservationCode(DiagnosticChain diagnostics,
@@ -273,7 +274,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((statusCode.oclIsUndefined() or statusCode.isNullFlavorUndefined()) implies (not statusCode.oclIsUndefined() and statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((statusCode.oclIsUndefined() or statusCode.isNullFlavorUndefined()) implies (not statusCode.oclIsUndefined() and statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\'))'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActEntryRelationshipObservationStatusCode(DiagnosticChain diagnostics,
@@ -312,7 +313,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((priorityCode.oclIsUndefined() or priorityCode.isNullFlavorUndefined()) implies (not priorityCode.oclIsUndefined() and priorityCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = priorityCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.7\' and (value.code = \'A\' or value.code = \'CR\' or value.code = \'CS\' or value.code = \'CSP\' or value.code = \'CSR\' or value.code = \'EL\' or value.code = \'EM\' or value.code = \'P\' or value.code = \'PRN\' or value.code = \'R\' or value.code = \'RR\' or value.code = \'S\' or value.code = \'T\' or value.code = \'UD\' or value.code = \'UR\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((priorityCode.oclIsUndefined() or priorityCode.isNullFlavorUndefined()) implies (not priorityCode.oclIsUndefined() and priorityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = priorityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.7\' and (value.code = \'A\' or value.code = \'CR\' or value.code = \'CS\' or value.code = \'CSP\' or value.code = \'CSR\' or value.code = \'EL\' or value.code = \'EM\' or value.code = \'P\' or value.code = \'PRN\' or value.code = \'R\' or value.code = \'RR\' or value.code = \'S\' or value.code = \'T\' or value.code = \'UD\' or value.code = \'UR\')))'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActEntryRelationshipObservationPriorityCode(DiagnosticChain diagnostics,
@@ -325,7 +326,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'370985002\' or value.code = \'170941001\' or value.code = \'170935008\' or value.code = \'268528005\' or value.code = \'170939002\' or value.code = \'268529002\' or value.code = \'170936009\' or value.code = \'170937000\' or value.code = \'170940000\'))))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'370985002\' or value.code = \'170941001\' or value.code = \'170935008\' or value.code = \'268528005\' or value.code = \'170939002\' or value.code = \'268529002\' or value.code = \'170936009\' or value.code = \'170937000\' or value.code = \'170940000\'))))'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActEntryRelationshipObservationValue(DiagnosticChain diagnostics,
@@ -389,7 +390,7 @@ public interface PatientReferralAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validatePatientReferralActParticipantParticipantRoleCode(DiagnosticChain diagnostics,
@@ -423,11 +424,14 @@ public interface PatientReferralAct extends Act {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)).oclAsType(consol::Indication2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)))'"
 	 * @generated
 	 */
-	EList<Indication2> getIndication2s();
+	boolean validatePatientReferralActIndication2EntryRelationshipIndication2623(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -437,9 +441,9 @@ public interface PatientReferralAct extends Act {
 	public PatientReferralAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PatientReferralAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientReferralAct

@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivity2Operati
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Policy Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,8 +66,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +76,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +86,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +96,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +106,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -123,8 +116,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -134,8 +126,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -145,8 +136,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2PayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -156,8 +146,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -167,8 +156,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -178,8 +166,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -189,8 +176,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -200,8 +186,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -211,8 +196,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -222,8 +206,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -233,8 +216,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -244,8 +226,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -256,8 +237,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -367,8 +347,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityPayerPayerAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityPayerPayerAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityPayerPayerAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -400,8 +379,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -412,8 +390,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -424,8 +401,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -436,8 +412,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -468,8 +443,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntity(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityGuarantorGuarantorAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -480,8 +454,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -502,8 +475,7 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	@Override
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivity2Operations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(
-			this, diagnostics, context);
+		return PolicyActivity2Operations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -533,17 +505,17 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 */
 	@Override
 	public PolicyActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PolicyActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PolicyActivity2Impl

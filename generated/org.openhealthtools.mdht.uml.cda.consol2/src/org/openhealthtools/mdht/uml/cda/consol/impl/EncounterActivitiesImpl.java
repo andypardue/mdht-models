@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Activities</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -73,8 +71,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesCodeOriginalTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalTextReference(
-			this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +92,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesCodeOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +103,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesServiceDeliveryTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryTypeCode(
-			this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -189,8 +184,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCode(
-			this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesSDTCDischargeDispositionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -201,18 +195,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncounterActivitiesIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesIndication(this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesServiceDeliveryLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -228,13 +211,20 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateEncounterActivitiesEncounterDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterDiagnosis(this, diagnostics, context);
+	public boolean validateEncounterActivitiesEntryRelationship112(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesEntryRelationship112(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterActivitiesEntryRelationship114(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesEntryRelationship114(this, diagnostics, context);
 	}
 
 	/**
@@ -245,8 +235,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -257,8 +246,7 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	@Override
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
-			this, diagnostics, context);
+		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -266,9 +254,8 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
-		return EncounterActivitiesOperations.getServiceDeliveryLocations(this);
+	public boolean validateEncounterActivitiesIndicationEntryRelationshipIndication113(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesIndicationEntryRelationshipIndication113(this, diagnostics, context);
 	}
 
 	/**
@@ -276,19 +263,8 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication> getIndications() {
-		return EncounterActivitiesOperations.getIndications(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<EncounterDiagnosis> getEncounterDiagnosiss() {
-		return EncounterActivitiesOperations.getEncounterDiagnosiss(this);
+	public boolean validateEncounterActivitiesEncounterDiagnosisEntryRelationshipEncounterDiagnosis115(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivitiesOperations.validateEncounterActivitiesEncounterDiagnosisEntryRelationshipEncounterDiagnosis115(this, diagnostics, context);
 	}
 
 	/**
@@ -298,17 +274,17 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 */
 	@Override
 	public EncounterActivities init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncounterActivities init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterActivitiesImpl

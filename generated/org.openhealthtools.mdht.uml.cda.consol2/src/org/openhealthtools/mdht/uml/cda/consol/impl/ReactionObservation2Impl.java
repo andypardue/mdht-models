@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ReactionObservation2Op
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reaction Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -89,9 +87,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProcedureActivityProcedure2> getConsolProcedureActivityProcedure2s() {
-		return ReactionObservation2Operations.getConsolProcedureActivityProcedure2s(this);
+	public boolean validateReactionObservation2EntryRelationship1036(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2EntryRelationship1036(this, diagnostics, context);
 	}
 
 	/**
@@ -99,9 +96,8 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
-		return ReactionObservation2Operations.getConsolMedicationActivity2s(this);
+	public boolean validateReactionObservation2EntryRelationship1038(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2EntryRelationship1038(this, diagnostics, context);
 	}
 
 	/**
@@ -109,9 +105,35 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SeverityObservation2 getConsolSeverityObservation2() {
-		return ReactionObservation2Operations.getConsolSeverityObservation2(this);
+	public boolean validateReactionObservation2EntryRelationship1040(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2EntryRelationship1040(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservation2ProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21037(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2ProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21037(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservation2MedicationActivity2EntryRelationshipMedicationActivity21039(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2MedicationActivity2EntryRelationshipMedicationActivity21039(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReactionObservation2SeverityObservation2EntryRelationshipSeverityObservation21041(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReactionObservation2Operations.validateReactionObservation2SeverityObservation2EntryRelationshipSeverityObservation21041(this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +144,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationProcedureActivityProcedureInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedureInversionInd(
-			this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedureInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -134,8 +155,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationMedicationActivityInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationMedicationActivityInversionInd(
-			this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationMedicationActivityInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -146,8 +166,7 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	@Override
 	public boolean validateReactionObservationSeverityObservationInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationSeverityObservationInversionInd(
-			this, diagnostics, context);
+		return ReactionObservation2Operations.validateReactionObservationSeverityObservationInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -237,52 +256,18 @@ public class ReactionObservation2Impl extends ReactionObservationImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReactionObservationMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReactionObservationSeverityObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReactionObservation2Operations.validateReactionObservationSeverityObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ReactionObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ReactionObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReactionObservation2Impl

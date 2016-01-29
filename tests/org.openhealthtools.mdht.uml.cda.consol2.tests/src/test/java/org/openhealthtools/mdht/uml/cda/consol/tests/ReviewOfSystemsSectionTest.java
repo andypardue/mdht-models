@@ -52,8 +52,8 @@ public class ReviewOfSystemsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateReviewOfSystemsSectionTemplateId() {
 		OperationsTestCase<ReviewOfSystemsSection> validateReviewOfSystemsSectionTemplateIdTestCase = new OperationsTestCase<ReviewOfSystemsSection>(
-			"validateReviewOfSystemsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReviewOfSystemsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

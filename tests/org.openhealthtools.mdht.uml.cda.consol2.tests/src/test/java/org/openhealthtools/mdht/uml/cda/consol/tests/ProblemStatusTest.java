@@ -16,8 +16,6 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemStatusOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -54,7 +52,7 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProblemStatusTextReference() {
@@ -65,18 +63,13 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProblemStatus target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
 
-				target.setText(txt);
 			}
 
 			@Override
 			protected void updateToPass(ProblemStatus target) {
+				target.init();
 
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
 			}
 
 			@Override
@@ -93,7 +86,7 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProblemStatusReferenceValue() {
@@ -104,18 +97,15 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ProblemStatus target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(ProblemStatus target) {
 				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -133,39 +123,27 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProblemStatusTextReferenceValue() {
-		OperationsTestCase<ProblemStatus> validateProblemStatusTextReferenceValueTestCase = new NarrativeReferenceTestCase<ProblemStatus>(
-			"validateProblemStatusTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<ProblemStatus> validateProblemStatusTextReferenceValueTestCase = new OperationsTestCase<ProblemStatus>(
+			"validateProblemStatusTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_STATUS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProblemStatus target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular problem status.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 
 			}
 
 			@Override
 			protected void updateToPass(ProblemStatus target) {
+				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular problem status.");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
@@ -284,13 +262,14 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProblemStatusCode() {
 		OperationsTestCase<ProblemStatus> validateProblemStatusCodeTestCase = new OperationsTestCase<ProblemStatus>(
 			"validateProblemStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProblemStatus target) {
@@ -301,7 +280,8 @@ public class ProblemStatusTest extends CDAValidationTest {
 			protected void updateToPass(ProblemStatus target) {
 				target.init();
 
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("33999-4", "2.16.840.1.113883.6.1"));
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
 
 			}
 
@@ -362,7 +342,8 @@ public class ProblemStatusTest extends CDAValidationTest {
 	public void testValidateProblemStatusText() {
 		OperationsTestCase<ProblemStatus> validateProblemStatusTextTestCase = new OperationsTestCase<ProblemStatus>(
 			"validateProblemStatusText",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProblemStatus target) {
@@ -392,7 +373,7 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProblemStatusValue() {
@@ -411,8 +392,6 @@ public class ProblemStatusTest extends CDAValidationTest {
 				target.init();
 
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("55561003");
 				target.getValues().add(value);
 
 			}

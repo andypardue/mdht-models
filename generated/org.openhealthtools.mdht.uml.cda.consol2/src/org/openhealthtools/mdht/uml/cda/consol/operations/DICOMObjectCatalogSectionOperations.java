@@ -19,7 +19,9 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
@@ -41,8 +43,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionStudyAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#getStudyActs() <em>Get Study Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionEntry296(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Entry296</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act Entry Study Act297</em>}</li>
  * </ul>
  * </p>
  *
@@ -93,26 +95,28 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	public static boolean validateDICOMObjectCatalogSectionTemplateId(
 			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
 			try {
 				VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dicomObjectCatalogSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dicomObjectCatalogSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionTemplateId"),
-					new Object[] { dicomObjectCatalogSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionTemplateId"),
+						 new Object [] { dicomObjectCatalogSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -126,9 +130,9 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDICOMObjectCatalogSectionCode(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Code</em>}' invariant operation.
@@ -154,26 +158,28 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 
 	public static boolean validateDICOMObjectCatalogSectionCode(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
 			try {
 				VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dicomObjectCatalogSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dicomObjectCatalogSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionCode"),
-					new Object[] { dicomObjectCatalogSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionCode"),
+						 new Object [] { dicomObjectCatalogSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -213,51 +219,53 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 
 	public static boolean validateDICOMObjectCatalogSectionCodeP(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
 			try {
 				VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dicomObjectCatalogSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dicomObjectCatalogSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionCodeP"),
-					new Object[] { dicomObjectCatalogSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionCodeP"),
+						 new Object [] { dicomObjectCatalogSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateDICOMObjectCatalogSectionStudyAct(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDICOMObjectCatalogSectionEntry296(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Entry296</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDICOMObjectCatalogSectionStudyAct(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDICOMObjectCatalogSectionEntry296(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::StudyAct))";
+	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateDICOMObjectCatalogSectionStudyAct(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateDICOMObjectCatalogSectionEntry296(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Entry296</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateDICOMObjectCatalogSectionStudyAct(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateDICOMObjectCatalogSectionEntry296(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,77 +277,99 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDICOMObjectCatalogSectionStudyAct(
-			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateDICOMObjectCatalogSectionEntry296(DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
 			try {
-				VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dicomObjectCatalogSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dicomObjectCatalogSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT,
-					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionStudyAct"),
-					new Object[] { dicomObjectCatalogSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_ENTRY296,
+						 ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionEntry296"),
+						 new Object [] { dicomObjectCatalogSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getStudyActs(DICOMObjectCatalogSection) <em>Get Study Acts</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act Entry Study Act297</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStudyActs(DICOMObjectCatalogSection)
+	 * @see #validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_STUDY_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct)).oclAsType(consol::StudyAct)";
+	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getStudyActs(DICOMObjectCatalogSection) <em>Get Study Acts</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act Entry Study Act297</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStudyActs(DICOMObjectCatalogSection)
+	 * @see #validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(DICOMObjectCatalogSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_STUDY_ACTS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param dicomObjectCatalogSection The receiving '<em><b>DICOM Object Catalog Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<StudyAct> getStudyActs(DICOMObjectCatalogSection dicomObjectCatalogSection) {
-		if (GET_STUDY_ACTS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION,
-				ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION.getEAllOperations().get(59));
+			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
 			try {
-				GET_STUDY_ACTS__EOCL_QRY = helper.createQuery(GET_STUDY_ACTS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_ACTS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<StudyAct> result = (Collection<StudyAct>) query.evaluate(dicomObjectCatalogSection);
-		return new BasicEList.UnmodifiableEList<StudyAct>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dicomObjectCatalogSection);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.DICOM_OBJECT_CATALOG_SECTION__DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297,
+						 ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionDICOMObjectCatalogSectionStudyActEntryStudyAct297"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // DICOMObjectCatalogSectionOperations

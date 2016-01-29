@@ -52,8 +52,8 @@ public class HospitalConsultationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalConsultationsSectionTemplateId() {
 		OperationsTestCase<HospitalConsultationsSection> validateHospitalConsultationsSectionTemplateIdTestCase = new OperationsTestCase<HospitalConsultationsSection>(
-			"validateHospitalConsultationsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalConsultationsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +86,8 @@ public class HospitalConsultationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalConsultationsSectionCode() {
 		OperationsTestCase<HospitalConsultationsSection> validateHospitalConsultationsSectionCodeTestCase = new OperationsTestCase<HospitalConsultationsSection>(
-			"validateHospitalConsultationsSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalConsultationsSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class HospitalConsultationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalConsultationsSectionCodeP() {
 		OperationsTestCase<HospitalConsultationsSection> validateHospitalConsultationsSectionCodePTestCase = new OperationsTestCase<HospitalConsultationsSection>(
-			"validateHospitalConsultationsSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalConsultationsSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -154,8 +154,8 @@ public class HospitalConsultationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalConsultationsSectionText() {
 		OperationsTestCase<HospitalConsultationsSection> validateHospitalConsultationsSectionTextTestCase = new OperationsTestCase<HospitalConsultationsSection>(
-			"validateHospitalConsultationsSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalConsultationsSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +191,8 @@ public class HospitalConsultationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalConsultationsSectionTitle() {
 		OperationsTestCase<HospitalConsultationsSection> validateHospitalConsultationsSectionTitleTestCase = new OperationsTestCase<HospitalConsultationsSection>(
-			"validateHospitalConsultationsSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalConsultationsSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

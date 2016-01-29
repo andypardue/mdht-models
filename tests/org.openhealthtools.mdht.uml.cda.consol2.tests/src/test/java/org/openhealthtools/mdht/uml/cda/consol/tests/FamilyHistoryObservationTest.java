@@ -10,18 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import static org.junit.Assert.assertEquals;
-
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.Diagnostician;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryObservationOperations;
@@ -32,7 +28,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,10 +48,10 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationAgeObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Age Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationFamilyHistoryDeathObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Family History Death Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#getAgeObservation() <em>Get Age Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#getFamilyHistoryDeathObservation() <em>Get Family History Death Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationEntryRelationship62(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Entry Relationship62</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationEntryRelationship64(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Entry Relationship64</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation63(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Age Observation Entry Relationship Age Observation63</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation#validateFamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation65(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Family History Death Observation Entry Relationship Family History Death Observation65</em>}</li>
  * </ul>
  * </p>
  *
@@ -67,52 +62,24 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryObservationAgeObservationInversion() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationAgeObservationInversionTestCase = new OperationsTestCase<FamilyHistoryObservation>(
 			"validateFamilyHistoryObservationAgeObservationInversion",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				skipNullTest();
-			}
 
 			@Override
 			protected void updateToFail(FamilyHistoryObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createAgeObservation().init());
-				target.getEntryRelationships().add(er);
-			}
 
-			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-
-					@Override
-					public void updateToPass(FamilyHistoryObservation target) {
-						// Test case with only entry Relationship
-						// Should pass
-						target.getEntryRelationships().clear();
-						target.init();
-						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-						target.getEntryRelationships().add(er);
-					}
-
-				});
 			}
 
 			@Override
 			protected void updateToPass(FamilyHistoryObservation target) {
-				target.getEntryRelationships().clear();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createAgeObservation().init());
-				er.setInversionInd(true);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
@@ -135,8 +102,8 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationTemplateId() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationTemplateIdTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -169,8 +136,8 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationClassCode() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationClassCodeTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -203,8 +170,8 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationMoodCode() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationMoodCodeTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -269,7 +236,7 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryObservationCode() {
@@ -288,10 +255,15 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCodeSystem("2.16.840.1.113883.6.96");
-				cd.setCode("418799008");
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(FamilyHistoryObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservationCodeP", passToken);
 			}
 
 			@Override
@@ -340,55 +312,6 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 		validateFamilyHistoryObservationCodePTestCase.doValidationTest();
 	}
 
-	/**
-	 * Test the dependency interaction of the Code and CodeP constraints.
-	 * 
-	 *  @generated not
-	 */
-	@Test
-	public void integrationTestValidateFamilyHistoryObservationCode() {
-		FamilyHistoryObservation fixture = ConsolFactory.eINSTANCE.createFamilyHistoryObservation();
-
-		Diagnostic problems = Diagnostician.INSTANCE.validate(fixture);
-
-		// because the property constraint failed, the terminology constraint should short-circuit
-		assertEquals(
-			1,
-			getDiagnostics(problems, ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P).size());
-		assertEquals(
-			0,
-			getDiagnostics(problems, ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE).size());
-
-		fixture.init();
-
-		CD cd = DatatypesFactory.eINSTANCE.createCD();
-		cd.setCodeSystem("2.16.840.1.113883.6.96");
-		cd.setCode("1234");
-		fixture.setCode(cd);
-
-		problems = Diagnostician.INSTANCE.validate(fixture);
-
-		// because the property constraint passed, the terminology constraint should be evaluated
-		assertEquals(
-			0,
-			getDiagnostics(problems, ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P).size());
-		assertEquals(
-			1,
-			getDiagnostics(problems, ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE).size());
-
-		cd.setCode("418799008");
-
-		problems = Diagnostician.INSTANCE.validate(fixture);
-
-		// both constraints now should be satisfied
-		assertEquals(
-			0,
-			getDiagnostics(problems, ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P).size());
-		assertEquals(
-			0,
-			getDiagnostics(problems, ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE).size());
-	}
-
 	static List<? extends Diagnostic> getDiagnostics(Diagnostic diagnostic, int code) {
 		List<Diagnostic> result = new java.util.ArrayList<Diagnostic>(3);
 
@@ -408,8 +331,8 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationStatusCode() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationStatusCodeTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -445,8 +368,8 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationStatusCodeP() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationStatusCodePTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -479,8 +402,8 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationEffectiveTime() {
 		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationEffectiveTimeTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -511,7 +434,7 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryObservationValue() {
@@ -530,8 +453,6 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("234422006");
 				target.getValues().add(value);
 
 			}
@@ -550,13 +471,15 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateFamilyHistoryObservationAgeObservation() {
-		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationAgeObservationTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationAgeObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateFamilyHistoryObservationEntryRelationship62() {
+		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationEntryRelationship62TestCase = new OperationsTestCase<FamilyHistoryObservation>(
+			"validateFamilyHistoryObservationEntryRelationship62",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_ENTRY_RELATIONSHIP62__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -567,33 +490,32 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(FamilyHistoryObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createAgeObservation().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(
+				return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEntryRelationship62(
 					(FamilyHistoryObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateFamilyHistoryObservationAgeObservationTestCase.doValidationTest();
+		validateFamilyHistoryObservationEntryRelationship62TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateFamilyHistoryObservationFamilyHistoryDeathObservation() {
-		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationFamilyHistoryDeathObservationTestCase = new OperationsTestCase<FamilyHistoryObservation>(
-			"validateFamilyHistoryObservationFamilyHistoryDeathObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_FAMILY_HISTORY_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateFamilyHistoryObservationEntryRelationship64() {
+		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationEntryRelationship64TestCase = new OperationsTestCase<FamilyHistoryObservation>(
+			"validateFamilyHistoryObservationEntryRelationship64",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_ENTRY_RELATIONSHIP64__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -604,23 +526,19 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(FamilyHistoryObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createFamilyHistoryDeathObservation().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
-				target.getEntryRelationships().add(er);
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(
+				return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEntryRelationship64(
 					(FamilyHistoryObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateFamilyHistoryObservationFamilyHistoryDeathObservationTestCase.doValidationTest();
+		validateFamilyHistoryObservationEntryRelationship64TestCase.doValidationTest();
 	}
 
 	/**
@@ -628,11 +546,35 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAgeObservation() {
 
-		FamilyHistoryObservation target = objectFactory.create();
-		target.getAgeObservation();
+	public void testValidateFamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation63() {
+		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation63TestCase = new OperationsTestCase<FamilyHistoryObservation>(
+			"validateFamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation63",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_ENTRY_RELATIONSHIP_AGE_OBSERVATION63__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(FamilyHistoryObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FamilyHistoryObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation63(
+					(FamilyHistoryObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation63TestCase.doValidationTest();
 	}
 
 	/**
@@ -640,11 +582,35 @@ public class FamilyHistoryObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetFamilyHistoryDeathObservation() {
 
-		FamilyHistoryObservation target = objectFactory.create();
-		target.getFamilyHistoryDeathObservation();
+	public void testValidateFamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation65() {
+		OperationsTestCase<FamilyHistoryObservation> validateFamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation65TestCase = new OperationsTestCase<FamilyHistoryObservation>(
+			"validateFamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation65",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_FAMILY_HISTORY_DEATH_OBSERVATION_ENTRY_RELATIONSHIP_FAMILY_HISTORY_DEATH_OBSERVATION65__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(FamilyHistoryObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FamilyHistoryObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation65(
+					(FamilyHistoryObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation65TestCase.doValidationTest();
 	}
 
 	/**

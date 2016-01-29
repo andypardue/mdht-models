@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cognitive Abilities Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,8 +60,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationTemplateId(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +71,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationClassCode(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +82,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationMoodCode(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +92,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateCognitiveAbilitiesObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationId(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationId(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +102,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateCognitiveAbilitiesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCodeP(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +112,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateCognitiveAbilitiesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCode(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +122,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateCognitiveAbilitiesObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationText(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationText(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +133,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCode(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +144,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCodeP(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -166,8 +155,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationEffectiveTime(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -177,8 +165,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateCognitiveAbilitiesObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValue(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -188,20 +175,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateCognitiveAbilitiesObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValueP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateCognitiveAbilitiesObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAssessmentScaleObservation(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -212,8 +186,7 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateCognitiveAbilitiesObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAuthorParticipation(
-			this, diagnostics, context);
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -221,9 +194,17 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
-		return CognitiveAbilitiesObservationOperations.getAssessmentScaleObservations(this);
+	public boolean validateCognitiveAbilitiesObservationEntryRelationship594(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationEntryRelationship594(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation595(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation595(this, diagnostics, context);
 	}
 
 	/**
@@ -233,17 +214,17 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public CognitiveAbilitiesObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CognitiveAbilitiesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CognitiveAbilitiesObservationImpl

@@ -26,7 +26,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,8 +60,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundMeasurementObservationTemplateId() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationTemplateIdTestCase = new OperationsTestCase<WoundMeasurementObservation>(
-			"validateWoundMeasurementObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundMeasurementObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -95,8 +94,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundMeasurementObservationClassCode() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationClassCodeTestCase = new OperationsTestCase<WoundMeasurementObservation>(
-			"validateWoundMeasurementObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundMeasurementObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -129,8 +128,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundMeasurementObservationMoodCode() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationMoodCodeTestCase = new OperationsTestCase<WoundMeasurementObservation>(
-			"validateWoundMeasurementObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundMeasurementObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -200,8 +199,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundMeasurementObservationCodeP() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationCodePTestCase = new OperationsTestCase<WoundMeasurementObservation>(
-			"validateWoundMeasurementObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundMeasurementObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -229,7 +228,7 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateWoundMeasurementObservationCode() {
@@ -240,15 +239,16 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(WoundMeasurementObservation target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID);
-				target.setCode(code);
+
 			}
 
 			@Override
 			protected void updateToPass(WoundMeasurementObservation target) {
-				target.getCode().setCode("39125-0");
-				target.getCode().setCodeSystem(LOINC_ID);
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -277,8 +277,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundMeasurementObservationStatusCode() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationStatusCodeTestCase = new OperationsTestCase<WoundMeasurementObservation>(
-			"validateWoundMeasurementObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundMeasurementObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -315,7 +315,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateWoundMeasurementObservationStatusCodeP() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationStatusCodePTestCase = new OperationsTestCase<WoundMeasurementObservation>(
 			"validateWoundMeasurementObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -349,7 +350,8 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 	public void testValidateWoundMeasurementObservationEffectiveTime() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationEffectiveTimeTestCase = new OperationsTestCase<WoundMeasurementObservation>(
 			"validateWoundMeasurementObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -380,27 +382,27 @@ public class WoundMeasurementObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateWoundMeasurementObservationValue() {
 		OperationsTestCase<WoundMeasurementObservation> validateWoundMeasurementObservationValueTestCase = new OperationsTestCase<WoundMeasurementObservation>(
-			"validateWoundMeasurementObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundMeasurementObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(WoundMeasurementObservation target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
 			protected void updateToPass(WoundMeasurementObservation target) {
-				target.getValues().clear();
-				PQ val = DatatypesFactory.eINSTANCE.createPQ();
-				target.getValues().add(val);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override

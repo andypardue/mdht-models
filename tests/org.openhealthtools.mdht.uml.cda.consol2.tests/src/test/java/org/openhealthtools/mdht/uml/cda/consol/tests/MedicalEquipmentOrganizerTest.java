@@ -17,16 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component4;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentOrganizerOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
@@ -46,12 +42,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerProcedureActivityProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#getNonMedicinalSupplyActivity2s() <em>Get Non Medicinal Supply Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#getProcedureActivityProcedure2s() <em>Get Procedure Activity Procedure2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity2597(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Non Medicinal Supply Activity2 Entry Relationship Non Medicinal Supply Activity2597</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2599(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Procedure Activity Procedure2 Entry Relationship Procedure Activity Procedure2599</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,42 +56,25 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProcTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
 			"validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicalEquipmentOrganizer target) {
-				target.init();
+
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(MedicalEquipmentOrganizer target) {
-						target.init();
-						Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-						comp.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
-						target.getComponents().add(comp);
-					}
-				});
+			protected void updateToPass(MedicalEquipmentOrganizer target) {
+				target.init();
 
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(MedicalEquipmentOrganizer target) {
-						target.init();
-						Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-						comp.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-						target.getComponents().add(comp);
-
-					}
-				});
 			}
 
 			@Override
@@ -119,8 +96,8 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentOrganizerTemplateId() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerTemplateIdTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -153,8 +130,8 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentOrganizerClassCode() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerClassCodeTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -187,8 +164,8 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentOrganizerMoodCode() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerMoodCodeTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -216,7 +193,7 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicalEquipmentOrganizerId() {
@@ -233,8 +210,7 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicalEquipmentOrganizer target) {
 				target.init();
-				II idII = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(idII);
+
 			}
 
 			@Override
@@ -251,7 +227,7 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicalEquipmentOrganizerCode() {
@@ -268,8 +244,7 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicalEquipmentOrganizer target) {
 				target.init();
-				CD cdCode = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cdCode);
+
 			}
 
 			@Override
@@ -286,13 +261,13 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicalEquipmentOrganizerStatusCodeP() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerStatusCodePTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -303,8 +278,7 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicalEquipmentOrganizer target) {
 				target.init();
-				CS statusCodeCS = DatatypesFactory.eINSTANCE.createCS();
-				target.setStatusCode(statusCodeCS);
+
 			}
 
 			@Override
@@ -326,8 +300,8 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentOrganizerStatusCode() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerStatusCodeTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -370,8 +344,8 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentOrganizerEffectiveTime() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerEffectiveTimeTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -402,98 +376,24 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2() {
-		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicalEquipmentOrganizer target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicalEquipmentOrganizer target) {
-				target.init();
-				Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-				comp.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
-				target.getComponents().add(comp);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2(
-					(MedicalEquipmentOrganizer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateMedicalEquipmentOrganizerProcedureActivityProcedure2() {
-		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerProcedureActivityProcedure2TestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicalEquipmentOrganizer target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicalEquipmentOrganizer target) {
-				target.init();
-				Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-				comp.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-				target.getComponents().add(comp);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2(
-					(MedicalEquipmentOrganizer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicalEquipmentOrganizerProcedureActivityProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicalEquipmentOrganizerIVLTSLow() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerIVLTSLowTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerIVLTSLow", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicalEquipmentOrganizer target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(MedicalEquipmentOrganizer target) {
-				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -510,24 +410,24 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicalEquipmentOrganizerIVLTSHigh() {
 		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerIVLTSHighTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentOrganizerIVLTSHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicalEquipmentOrganizer target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(MedicalEquipmentOrganizer target) {
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -547,11 +447,35 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNonMedicinalSupplyActivity2s() {
 
-		MedicalEquipmentOrganizer target = objectFactory.create();
-		target.getNonMedicinalSupplyActivity2s();
+	public void testValidateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity2597() {
+		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity2597TestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
+			"validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity2597",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP_NON_MEDICINAL_SUPPLY_ACTIVITY2597__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(MedicalEquipmentOrganizer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicalEquipmentOrganizer target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity2597(
+					(MedicalEquipmentOrganizer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicalEquipmentOrganizerNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity2597TestCase.doValidationTest();
 	}
 
 	/**
@@ -559,11 +483,35 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProcedureActivityProcedure2s() {
 
-		MedicalEquipmentOrganizer target = objectFactory.create();
-		target.getProcedureActivityProcedure2s();
+	public void testValidateMedicalEquipmentOrganizerProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2599() {
+		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2599TestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
+			"validateMedicalEquipmentOrganizerProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2599",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_PROCEDURE2599__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(MedicalEquipmentOrganizer target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicalEquipmentOrganizer target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2599(
+					(MedicalEquipmentOrganizer) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicalEquipmentOrganizerProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2599TestCase.doValidationTest();
 	}
 
 	/**

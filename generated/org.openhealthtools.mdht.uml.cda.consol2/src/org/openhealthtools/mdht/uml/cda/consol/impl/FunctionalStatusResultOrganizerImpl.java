@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusResult
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Result Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -53,21 +51,8 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<FunctionalStatusResultObservation> getFunctionalStatusResultObservations() {
-		return FunctionalStatusResultOrganizerOperations.getFunctionalStatusResultObservations(this);
+	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591(this, diagnostics, context);
 	}
 
 	/**
@@ -157,17 +142,17 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 */
 	@Override
 	public FunctionalStatusResultOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FunctionalStatusResultOrganizerImpl

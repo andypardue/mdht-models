@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryOrganizer
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -63,8 +61,8 @@ public class FamilyHistoryOrganizer2Impl extends FamilyHistoryOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FamilyHistoryObservation2> getConsolFamilyHistoryObservation2s() {
-		return FamilyHistoryOrganizer2Operations.getConsolFamilyHistoryObservation2s(this);
+	public boolean validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation21545(this, diagnostics, context);
 	}
 
 	/**
@@ -83,30 +81,18 @@ public class FamilyHistoryOrganizer2Impl extends FamilyHistoryOrganizerImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerFamilyHistoryObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public FamilyHistoryOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FamilyHistoryOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistoryOrganizer2Impl

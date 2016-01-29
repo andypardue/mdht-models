@@ -10,13 +10,16 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
@@ -39,8 +42,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationBoundaryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#getBoundaryObservation() <em>Get Boundary Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationEntryRelationship546(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Entry Relationship546</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation Entry Relationship Boundary Observation547</em>}</li>
  * </ul>
  * </p>
  *
@@ -91,27 +94,28 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationTemplateId(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
 			try {
 				VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referencedFramesObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationTemplateId"),
-					new Object[] { referencedFramesObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationTemplateId"),
+						 new Object [] { referencedFramesObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -152,26 +156,28 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationClassCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
 			try {
 				VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referencedFramesObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationClassCode"),
-					new Object[] { referencedFramesObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationClassCode"),
+						 new Object [] { referencedFramesObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -212,26 +218,28 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationMoodCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
 			try {
 				VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referencedFramesObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationMoodCode"),
-					new Object[] { referencedFramesObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationMoodCode"),
+						 new Object [] { referencedFramesObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -245,9 +253,9 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' invariant operation.
@@ -274,51 +282,53 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
 			try {
 				VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referencedFramesObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationCode"),
-					new Object[] { referencedFramesObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationCode"),
+						 new Object [] { referencedFramesObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateReferencedFramesObservationBoundaryObservation(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateReferencedFramesObservationEntryRelationship546(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Entry Relationship546</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateReferencedFramesObservationBoundaryObservation(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateReferencedFramesObservationEntryRelationship546(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::BoundaryObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationBoundaryObservation(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationEntryRelationship546(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Entry Relationship546</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateReferencedFramesObservationBoundaryObservation(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateReferencedFramesObservationEntryRelationship546(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -330,77 +340,99 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateReferencedFramesObservationBoundaryObservation(
-			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateReferencedFramesObservationEntryRelationship546(ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
 			try {
-				VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referencedFramesObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationBoundaryObservation"),
-					new Object[] { referencedFramesObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_ENTRY_RELATIONSHIP546,
+						 ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationEntryRelationship546"),
+						 new Object [] { referencedFramesObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getBoundaryObservation(ReferencedFramesObservation) <em>Get Boundary Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation Entry Relationship Boundary Observation547</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBoundaryObservation(ReferencedFramesObservation)
+	 * @see #validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_BOUNDARY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->any(true).oclAsType(consol::BoundaryObservation)";
+	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getBoundaryObservation(ReferencedFramesObservation) <em>Get Boundary Observation</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation Entry Relationship Boundary Observation547</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBoundaryObservation(ReferencedFramesObservation)
+	 * @see #validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_BOUNDARY_OBSERVATION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param referencedFramesObservation The receiving '<em><b>Referenced Frames Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static BoundaryObservation getBoundaryObservation(ReferencedFramesObservation referencedFramesObservation) {
-		if (GET_BOUNDARY_OBSERVATION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION,
-				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION.getEAllOperations().get(56));
+			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
 			try {
-				GET_BOUNDARY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_BOUNDARY_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BOUNDARY_OBSERVATION__EOCL_QRY);
-		return (BoundaryObservation) query.evaluate(referencedFramesObservation);
+		Object oclResult = VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referencedFramesObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION_ENTRY_RELATIONSHIP_BOUNDARY_OBSERVATION547,
+						 ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // ReferencedFramesObservationOperations

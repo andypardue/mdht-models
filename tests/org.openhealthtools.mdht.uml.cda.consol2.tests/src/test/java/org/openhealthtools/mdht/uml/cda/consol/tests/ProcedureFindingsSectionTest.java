@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#validateProcedureFindingsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#validateProcedureFindingsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#validateProcedureFindingsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#validateProcedureFindingsSectionProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Problem Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#getProblemObservations() <em>Get Problem Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#validateProcedureFindingsSectionEntry304(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Entry304</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection#validateProcedureFindingsSectionProblemObservationEntryProblemObservation305(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Findings Section Problem Observation Entry Problem Observation305</em>}</li>
  * </ul>
  * </p>
  *
@@ -54,8 +54,8 @@ public class ProcedureFindingsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureFindingsSectionTemplateId() {
 		OperationsTestCase<ProcedureFindingsSection> validateProcedureFindingsSectionTemplateIdTestCase = new OperationsTestCase<ProcedureFindingsSection>(
-			"validateProcedureFindingsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureFindingsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,6 +191,77 @@ public class ProcedureFindingsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateProcedureFindingsSectionEntry304() {
+		OperationsTestCase<ProcedureFindingsSection> validateProcedureFindingsSectionEntry304TestCase = new OperationsTestCase<ProcedureFindingsSection>(
+			"validateProcedureFindingsSectionEntry304", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_FINDINGS_SECTION_ENTRY304__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureFindingsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProcedureFindingsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionEntry304(
+					(ProcedureFindingsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureFindingsSectionEntry304TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProcedureFindingsSectionProblemObservationEntryProblemObservation305() {
+		OperationsTestCase<ProcedureFindingsSection> validateProcedureFindingsSectionProblemObservationEntryProblemObservation305TestCase = new OperationsTestCase<ProcedureFindingsSection>(
+			"validateProcedureFindingsSectionProblemObservationEntryProblemObservation305",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION_ENTRY_PROBLEM_OBSERVATION305__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureFindingsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProcedureFindingsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservationEntryProblemObservation305(
+					(ProcedureFindingsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureFindingsSectionProblemObservationEntryProblemObservation305TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateProcedureFindingsSectionTitle() {
 		OperationsTestCase<ProcedureFindingsSection> validateProcedureFindingsSectionTitleTestCase = new OperationsTestCase<ProcedureFindingsSection>(
 			"validateProcedureFindingsSectionTitle",
@@ -221,53 +292,6 @@ public class ProcedureFindingsSectionTest extends CDAValidationTest {
 		};
 
 		validateProcedureFindingsSectionTitleTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateProcedureFindingsSectionProblemObservation() {
-		OperationsTestCase<ProcedureFindingsSection> validateProcedureFindingsSectionProblemObservationTestCase = new OperationsTestCase<ProcedureFindingsSection>(
-			"validateProcedureFindingsSectionProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProcedureFindingsSection target) {
-				target.init();
-
-			}
-
-			@Override
-			protected void updateToPass(ProcedureFindingsSection target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createProblemObservation().init());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(
-					(ProcedureFindingsSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProcedureFindingsSectionProblemObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProblemObservations() {
-
-		ProcedureFindingsSection target = objectFactory.create();
-		target.getProblemObservations();
-
 	}
 
 	/**

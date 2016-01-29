@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusResult
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Result Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	public boolean validateFunctionalStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationValueDatatype(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationValueDatatype(this, diagnostics, context);
 	}
 
 	/**
@@ -80,44 +77,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	public boolean validateFunctionalStatusResultObservationAuthor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationAuthor(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationCaregiverCharacteristics(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationAssessmentScaleObservation(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -128,8 +88,34 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	public boolean validateFunctionalStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRange(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRange(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservationEntryRelationship584(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationEntryRelationship584(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservationEntryRelationship586(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationEntryRelationship586(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFunctionalStatusResultObservationEntryRelationship588(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationEntryRelationship588(this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +126,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(this, diagnostics, context);
 	}
 
 	/**
@@ -152,8 +137,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRangeObservationRange(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationReferenceRangeObservationRange(this, diagnostics, context);
 	}
 
 	/**
@@ -161,9 +145,8 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NonMedicinalSupplyActivity getNonMedicinalSupplyActivity() {
-		return FunctionalStatusResultObservationOperations.getNonMedicinalSupplyActivity(this);
+	public boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity585(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity585(this, diagnostics, context);
 	}
 
 	/**
@@ -171,9 +154,8 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public CaregiverCharacteristics getCaregiverCharacteristics() {
-		return FunctionalStatusResultObservationOperations.getCaregiverCharacteristics(this);
+	public boolean validateFunctionalStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics587(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics587(this, diagnostics, context);
 	}
 
 	/**
@@ -181,9 +163,8 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AssessmentScaleObservation getAssessmentScaleObservation() {
-		return FunctionalStatusResultObservationOperations.getAssessmentScaleObservation(this);
+	public boolean validateFunctionalStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation589(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation589(this, diagnostics, context);
 	}
 
 	/**
@@ -193,8 +174,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationTextReference(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -204,8 +184,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationTextReferenceValue(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -215,8 +194,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationTemplateId(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -226,8 +204,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationClassCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -277,8 +254,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationStatusCodeP(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -288,8 +264,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationStatusCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -299,8 +274,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationEffectiveTime(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -320,8 +294,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationInterpretationCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationInterpretationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -331,8 +304,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationMethodCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationMethodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -342,8 +314,7 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public boolean validateResultObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateResultObservationTargetSiteCode(
-			this, diagnostics, context);
+		return FunctionalStatusResultObservationOperations.validateResultObservationTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -353,17 +324,17 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 */
 	@Override
 	public FunctionalStatusResultObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FunctionalStatusResultObservationImpl

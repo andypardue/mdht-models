@@ -50,8 +50,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureNote2Operatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Note2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -82,8 +80,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +90,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +100,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
@@ -167,275 +162,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureNote2ComplicationsSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComplicationsSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureDescriptionSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureDescriptionSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureIndicationsSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureIndicationsSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2PostprocedureDiagnosisSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2PostprocedureDiagnosisSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2AssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2AssessmentSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2AssessmentAndPlanSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2AssessmentAndPlanSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2PlanOfTreatmentSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2PlanOfTreatmentSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2AllergiesSectionEntriesOptional2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2AllergiesSectionEntriesOptional2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2AnesthesiaSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2AnesthesiaSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ChiefComplaintSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2FamilyHistorySection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2FamilyHistorySection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2HistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2HistoryOfPastIllnessSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2HistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2HistoryOfPresentIllnessSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2MedicalHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2MedicalHistorySection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2MedicationsSectionEntriesOptional2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2MedicationsSectionEntriesOptional2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2MedicationsAdministeredSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2MedicationsAdministeredSection2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2PhysicalExamSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2PhysicalExamSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2PlannedProcedureSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2PlannedProcedureSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureDispositionSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureDispositionSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureEstimatedBloodLossSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureEstimatedBloodLossSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureFindingsSection2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureFindingsSection2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureImplantsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureImplantsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProcedureSpecimensTakenSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProcedureSpecimensTakenSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ProceduresSectionEntriesOptional2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ProceduresSectionEntriesOptional2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ReasonForVisitSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ReasonForVisitSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2ReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ReviewOfSystemsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureNote2SocialHistorySection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2SocialHistorySection2(this, diagnostics, context);
+	public boolean validateProcedureNote2Component1452(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2Component1452(this, diagnostics, context);
 	}
 
 	/**
@@ -445,8 +173,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ParticipantAssociatedEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ParticipantAssociatedEntityClassCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ParticipantAssociatedEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -456,8 +183,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ParticipantAssociatedEntityAssociatedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ParticipantAssociatedEntityAssociatedPerson(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ParticipantAssociatedEntityAssociatedPerson(this, diagnostics, context);
 	}
 
 	/**
@@ -506,8 +232,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(this, diagnostics, context);
 	}
 
 	/**
@@ -517,8 +242,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -528,8 +252,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -539,8 +262,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerTypeCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -550,8 +272,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -561,8 +282,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -572,8 +292,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -583,8 +302,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -594,8 +312,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -605,8 +322,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -616,8 +332,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -627,8 +342,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventProcedureCodes(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventProcedureCodes(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventProcedureCodes(this, diagnostics, context);
 	}
 
 	/**
@@ -638,8 +352,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -649,8 +362,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventCode(this, diagnostics, context);
 	}
 
 	/**
@@ -660,8 +372,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformer(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -671,8 +382,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(this, diagnostics, context);
 	}
 
 	/**
@@ -740,8 +450,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -751,8 +460,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId(this, diagnostics, context);
 	}
 
 	/**
@@ -762,8 +470,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(this, diagnostics, context);
 	}
 
 	/**
@@ -773,8 +480,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterId(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -784,8 +490,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterCode(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterCode(this, diagnostics, context);
 	}
 
 	/**
@@ -795,8 +500,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -806,8 +510,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounterLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterLocation(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounterLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -817,8 +520,7 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	public boolean validateProcedureNote2ComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return ProcedureNote2Operations.validateProcedureNote2ComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -826,8 +528,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ComplicationsSection2 getComplicationsSection2() {
-		return ProcedureNote2Operations.getComplicationsSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentComplicationsSection21455(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentComplicationsSection21455(this, diagnostics, context);
 	}
 
 	/**
@@ -835,8 +537,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureDescriptionSection getProcedureDescriptionSection() {
-		return ProcedureNote2Operations.getProcedureDescriptionSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureDescriptionSection1457(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureDescriptionSection1457(this, diagnostics, context);
 	}
 
 	/**
@@ -844,8 +546,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureIndicationsSection2 getProcedureIndicationsSection2() {
-		return ProcedureNote2Operations.getProcedureIndicationsSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureIndicationsSection21459(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureIndicationsSection21459(this, diagnostics, context);
 	}
 
 	/**
@@ -853,8 +555,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PostprocedureDiagnosisSection2 getPostprocedureDiagnosisSection2() {
-		return ProcedureNote2Operations.getPostprocedureDiagnosisSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentPostprocedureDiagnosisSection21461(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentPostprocedureDiagnosisSection21461(this, diagnostics, context);
 	}
 
 	/**
@@ -862,8 +564,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssessmentSection getAssessmentSection() {
-		return ProcedureNote2Operations.getAssessmentSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentAssessmentSection1463(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentAssessmentSection1463(this, diagnostics, context);
 	}
 
 	/**
@@ -871,8 +573,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssessmentAndPlanSection2 getAssessmentAndPlanSection2() {
-		return ProcedureNote2Operations.getAssessmentAndPlanSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21465(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentAssessmentAndPlanSection21465(this, diagnostics, context);
 	}
 
 	/**
@@ -880,8 +582,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlanOfTreatmentSection2 getPlanOfTreatmentSection2() {
-		return ProcedureNote2Operations.getPlanOfTreatmentSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21467(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentPlanOfTreatmentSection21467(this, diagnostics, context);
 	}
 
 	/**
@@ -889,8 +591,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergiesSectionEntriesOptional2 getAllergiesSectionEntriesOptional2() {
-		return ProcedureNote2Operations.getAllergiesSectionEntriesOptional2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21469(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentAllergiesSectionEntriesOptional21469(this, diagnostics, context);
 	}
 
 	/**
@@ -898,8 +600,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnesthesiaSection2 getAnesthesiaSection2() {
-		return ProcedureNote2Operations.getAnesthesiaSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentAnesthesiaSection21471(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentAnesthesiaSection21471(this, diagnostics, context);
 	}
 
 	/**
@@ -907,8 +609,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ChiefComplaintSection getChiefComplaintSection() {
-		return ProcedureNote2Operations.getChiefComplaintSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentChiefComplaintSection1473(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentChiefComplaintSection1473(this, diagnostics, context);
 	}
 
 	/**
@@ -916,8 +618,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-		return ProcedureNote2Operations.getChiefComplaintAndReasonForVisitSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1475(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection1475(this, diagnostics, context);
 	}
 
 	/**
@@ -925,8 +627,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistorySection2 getFamilyHistorySection2() {
-		return ProcedureNote2Operations.getFamilyHistorySection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentFamilyHistorySection21477(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentFamilyHistorySection21477(this, diagnostics, context);
 	}
 
 	/**
@@ -934,8 +636,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfPastIllnessSection2 getHistoryOfPastIllnessSection2() {
-		return ProcedureNote2Operations.getHistoryOfPastIllnessSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21479(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentHistoryOfPastIllnessSection21479(this, diagnostics, context);
 	}
 
 	/**
@@ -943,8 +645,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection() {
-		return ProcedureNote2Operations.getHistoryOfPresentIllnessSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1481(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentHistoryOfPresentIllnessSection1481(this, diagnostics, context);
 	}
 
 	/**
@@ -952,8 +654,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicalHistorySection getMedicalHistorySection() {
-		return ProcedureNote2Operations.getMedicalHistorySection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentMedicalHistorySection1483(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentMedicalHistorySection1483(this, diagnostics, context);
 	}
 
 	/**
@@ -961,8 +663,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationsSectionEntriesOptional2 getMedicationsSectionEntriesOptional2() {
-		return ProcedureNote2Operations.getMedicationsSectionEntriesOptional2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21485(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentMedicationsSectionEntriesOptional21485(this, diagnostics, context);
 	}
 
 	/**
@@ -970,8 +672,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationsAdministeredSection2 getMedicationsAdministeredSection2() {
-		return ProcedureNote2Operations.getMedicationsAdministeredSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentMedicationsAdministeredSection21487(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentMedicationsAdministeredSection21487(this, diagnostics, context);
 	}
 
 	/**
@@ -979,8 +681,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PhysicalExamSection2 getPhysicalExamSection2() {
-		return ProcedureNote2Operations.getPhysicalExamSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentPhysicalExamSection21489(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentPhysicalExamSection21489(this, diagnostics, context);
 	}
 
 	/**
@@ -988,8 +690,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PlannedProcedureSection2 getPlannedProcedureSection2() {
-		return ProcedureNote2Operations.getPlannedProcedureSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentPlannedProcedureSection21491(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentPlannedProcedureSection21491(this, diagnostics, context);
 	}
 
 	/**
@@ -997,8 +699,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureDispositionSection getProcedureDispositionSection() {
-		return ProcedureNote2Operations.getProcedureDispositionSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureDispositionSection1493(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureDispositionSection1493(this, diagnostics, context);
 	}
 
 	/**
@@ -1006,8 +708,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection() {
-		return ProcedureNote2Operations.getProcedureEstimatedBloodLossSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureEstimatedBloodLossSection1495(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureEstimatedBloodLossSection1495(this, diagnostics, context);
 	}
 
 	/**
@@ -1015,8 +717,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureFindingsSection2 getProcedureFindingsSection2() {
-		return ProcedureNote2Operations.getProcedureFindingsSection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureFindingsSection21497(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureFindingsSection21497(this, diagnostics, context);
 	}
 
 	/**
@@ -1024,8 +726,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureImplantsSection getProcedureImplantsSection() {
-		return ProcedureNote2Operations.getProcedureImplantsSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureImplantsSection1499(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureImplantsSection1499(this, diagnostics, context);
 	}
 
 	/**
@@ -1033,8 +735,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection() {
-		return ProcedureNote2Operations.getProcedureSpecimensTakenSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProcedureSpecimensTakenSection1501(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProcedureSpecimensTakenSection1501(this, diagnostics, context);
 	}
 
 	/**
@@ -1042,8 +744,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProceduresSectionEntriesOptional2 getProceduresSectionEntriesOptional2() {
-		return ProcedureNote2Operations.getProceduresSectionEntriesOptional2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21503(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentProceduresSectionEntriesOptional21503(this, diagnostics, context);
 	}
 
 	/**
@@ -1051,8 +753,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReasonForVisitSection getReasonForVisitSection() {
-		return ProcedureNote2Operations.getReasonForVisitSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentReasonForVisitSection1505(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentReasonForVisitSection1505(this, diagnostics, context);
 	}
 
 	/**
@@ -1060,8 +762,8 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReviewOfSystemsSection getReviewOfSystemsSection() {
-		return ProcedureNote2Operations.getReviewOfSystemsSection(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentReviewOfSystemsSection1507(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentReviewOfSystemsSection1507(this, diagnostics, context);
 	}
 
 	/**
@@ -1069,8 +771,269 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SocialHistorySection2 getSocialHistorySection2() {
-		return ProcedureNote2Operations.getSocialHistorySection2(this);
+	public boolean validateProcedureNote2ComponentStructuredBodyComponentSocialHistorySection21509(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComponentSocialHistorySection21509(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyComplicationsSection21454(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyComplicationsSection21454(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureDescriptionSection1456(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureDescriptionSection1456(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureIndicationsSection21458(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureIndicationsSection21458(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyPostprocedureDiagnosisSection21460(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyPostprocedureDiagnosisSection21460(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyAssessmentSection1462(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyAssessmentSection1462(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyAssessmentAndPlanSection21464(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyAssessmentAndPlanSection21464(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyPlanOfTreatmentSection21466(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyPlanOfTreatmentSection21466(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21468(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyAllergiesSectionEntriesOptional21468(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyAnesthesiaSection21470(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyAnesthesiaSection21470(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyChiefComplaintSection1472(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyChiefComplaintSection1472(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1474(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyChiefComplaintAndReasonForVisitSection1474(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyFamilyHistorySection21476(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyFamilyHistorySection21476(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyHistoryOfPastIllnessSection21478(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyHistoryOfPastIllnessSection21478(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1480(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyHistoryOfPresentIllnessSection1480(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyMedicalHistorySection1482(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyMedicalHistorySection1482(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21484(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyMedicationsSectionEntriesOptional21484(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyMedicationsAdministeredSection21486(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyMedicationsAdministeredSection21486(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyPhysicalExamSection21488(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyPhysicalExamSection21488(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyPlannedProcedureSection21490(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyPlannedProcedureSection21490(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureDispositionSection1492(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureDispositionSection1492(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureEstimatedBloodLossSection1494(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureEstimatedBloodLossSection1494(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureFindingsSection21496(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureFindingsSection21496(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureImplantsSection1498(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureImplantsSection1498(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProcedureSpecimensTakenSection1500(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProcedureSpecimensTakenSection1500(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyProceduresSectionEntriesOptional21502(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyProceduresSectionEntriesOptional21502(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyReasonForVisitSection1504(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyReasonForVisitSection1504(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodyReviewOfSystemsSection1506(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodyReviewOfSystemsSection1506(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBodySocialHistorySection21508(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBodySocialHistorySection21508(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNote2ComponentStructuredBody1453(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNote2Operations.validateProcedureNote2ComponentStructuredBody1453(this, diagnostics, context);
 	}
 
 	/**
@@ -1090,17 +1053,17 @@ public class ProcedureNote2Impl extends USRealmHeader2Impl implements ProcedureN
 	 */
 	@Override
 	public ProcedureNote2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureNote2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureNote2Impl

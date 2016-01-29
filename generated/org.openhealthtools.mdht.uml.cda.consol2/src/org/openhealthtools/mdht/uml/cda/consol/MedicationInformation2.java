@@ -77,10 +77,10 @@ public interface MedicationInformation2 extends MedicationInformation {
 	public MedicationInformation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationInformation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationInformation2

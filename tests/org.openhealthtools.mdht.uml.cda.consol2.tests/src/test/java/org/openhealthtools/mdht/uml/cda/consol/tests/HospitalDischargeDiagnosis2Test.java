@@ -17,13 +17,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeDiagnosis2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,10 +31,10 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#validateHospitalDischargeDiagnosisCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#validateHospitalDischargeDiagnosis2EntryRelationship924(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis2 Entry Relationship924</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#validateHospitalDischargeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2925(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis2 Problem Observation2 Entry Relationship Problem Observation2925</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#validateHospitalDischargeDiagnosisTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#validateHospitalDischargeDiagnosisCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2#validateHospitalDischargeDiagnosisProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Problem Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -53,8 +50,8 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargeDiagnosisCodeP() {
 		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosisCodePTestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
-			"validateHospitalDischargeDiagnosisCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargeDiagnosisCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -85,11 +82,71 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolProblemObservation2s() {
 
-		HospitalDischargeDiagnosis2 target = objectFactory.create();
-		target.getConsolProblemObservation2s();
+	public void testValidateHospitalDischargeDiagnosis2EntryRelationship924() {
+		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosis2EntryRelationship924TestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
+			"validateHospitalDischargeDiagnosis2EntryRelationship924",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS2_ENTRY_RELATIONSHIP924__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(HospitalDischargeDiagnosis2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalDischargeDiagnosis2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosis2EntryRelationship924(
+					(HospitalDischargeDiagnosis2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalDischargeDiagnosis2EntryRelationship924TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateHospitalDischargeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2925() {
+		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2925TestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
+			"validateHospitalDischargeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2925",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS2_PROBLEM_OBSERVATION2_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION2925__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(HospitalDischargeDiagnosis2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(HospitalDischargeDiagnosis2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2925(
+					(HospitalDischargeDiagnosis2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHospitalDischargeDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2925TestCase.doValidationTest();
 	}
 
 	/**
@@ -99,8 +156,8 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargeDiagnosisTemplateId() {
 		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosisTemplateIdTestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
-			"validateHospitalDischargeDiagnosisTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargeDiagnosisTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -165,43 +222,6 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 		};
 
 		validateHospitalDischargeDiagnosisCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHospitalDischargeDiagnosisProblemObservation() {
-		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosisProblemObservationTestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
-			"validateHospitalDischargeDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(HospitalDischargeDiagnosis2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(HospitalDischargeDiagnosis2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisProblemObservation(
-					(HospitalDischargeDiagnosis2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHospitalDischargeDiagnosisProblemObservationTestCase.doValidationTest();
 	}
 
 	/**

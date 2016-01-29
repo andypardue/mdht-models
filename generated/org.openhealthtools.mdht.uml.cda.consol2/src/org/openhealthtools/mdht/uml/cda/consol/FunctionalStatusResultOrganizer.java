@@ -21,7 +21,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusResultObservation' templateId.root='2.16.840.1.113883.10.20.22.4.66' constraints.validation.warning='ResultOrganizerCodeValue' classCode='CLUSTER' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerCode ResultOrganizerStatusCode ResultOrganizerStatusCodeP FunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591' templateId.root='2.16.840.1.113883.10.20.22.4.66' constraints.validation.warning='ResultOrganizerCodeValue' classCode='CLUSTER' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP' constraints.validation.query='FunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationship constraints.validation.error='FunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591'"
  * @generated
  */
 public interface FunctionalStatusResultOrganizer extends ResultOrganizer {
@@ -32,20 +33,10 @@ public interface FunctionalStatusResultOrganizer extends ResultOrganizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::FunctionalStatusResultObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusResultObservation)))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusResultObservation)).oclAsType(consol::FunctionalStatusResultObservation)'"
-	 * @generated
-	 */
-	EList<FunctionalStatusResultObservation> getFunctionalStatusResultObservations();
+	boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,10 +47,10 @@ public interface FunctionalStatusResultOrganizer extends ResultOrganizer {
 	public FunctionalStatusResultOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultOrganizer

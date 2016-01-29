@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
@@ -57,25 +56,25 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionAssessmentValueOfTypeCDIsFromSnomed() {
 		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentValueOfTypeCDIsFromSnomedTestCase = new OperationsTestCase<NutritionAssessment>(
 			"validateNutritionAssessmentValueOfTypeCDIsFromSnomed",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NutritionAssessment target) {
-				target.init();
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(val);
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionAssessment target) {
-				target.getValues().set(0, DatatypesFactory.eINSTANCE.createCD("hasCode", SNOMEDCT_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -194,7 +193,7 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionAssessmentId() {
@@ -211,8 +210,7 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NutritionAssessment target) {
 				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(id);
+
 			}
 
 			@Override
@@ -263,7 +261,7 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionAssessmentCode() {
@@ -274,19 +272,13 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(NutritionAssessment target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				code.setCode(BAD_CODE_VALUE);
-				code.setCodeSystem(LOINC_ID);
-				target.setCode(code);
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionAssessment target) {
-				// code.setCode("230125005");
-				// code.setCodeSystem(SNOMEDCT_ID);
-				target.getCode().setCode("75303-8");
-				target.getCode().setCodeSystem(LOINC_ID);
+				target.init();
+
 			}
 
 			@Override
@@ -386,8 +378,8 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionAssessmentEffectiveTime() {
 		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentEffectiveTimeTestCase = new OperationsTestCase<NutritionAssessment>(
-			"validateNutritionAssessmentEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionAssessmentEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -455,23 +447,24 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionAssessmentAuthorParticipation() {
 		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentAuthorParticipationTestCase = new OperationsTestCase<NutritionAssessment>(
-			"validateNutritionAssessmentAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionAssessmentAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NutritionAssessment target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionAssessment target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
+
 			}
 
 			@Override

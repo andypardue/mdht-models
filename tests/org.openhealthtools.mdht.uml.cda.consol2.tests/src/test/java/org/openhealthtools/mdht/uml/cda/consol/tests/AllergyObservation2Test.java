@@ -18,11 +18,6 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Operations;
@@ -32,8 +27,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,15 +40,17 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2SeverityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2EntryRelationship890(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Entry Relationship890</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2EntryRelationship892(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Entry Relationship892</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2EntryRelationship894(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Entry Relationship894</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Specific Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Class Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Food Other Substance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolAllergyStatusObservations() <em>Get Consol Allergy Status Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolReactionObservation2s() <em>Get Consol Reaction Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getSeverityObservation2() <em>Get Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2891(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Reaction Observation2 Entry Relationship Reaction Observation2891</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2893(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2 Entry Relationship Severity Observation2893</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation895(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Allergy Status Observation Entry Relationship Allergy Status Observation895</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Original Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Original Text Reference Value</em>}</li>
@@ -69,8 +64,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationAllergyStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Allergy Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Reaction Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity CE Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity CE Translation</em>}</li>
@@ -90,7 +83,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservation2NegationInd() {
@@ -101,12 +94,13 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.setNegationInd(false);
+				target.init();
+
 			}
 
 			@Override
@@ -123,7 +117,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationValueP() {
@@ -140,7 +134,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
 				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
@@ -191,23 +185,24 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservation2AuthorParticipation() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservation2AuthorParticipationTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyObservation2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
+
 			}
 
 			@Override
@@ -224,13 +219,14 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateAllergyObservation2SeverityObservation2() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservation2SeverityObservation2TestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservation2SeverityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateAllergyObservation2EntryRelationship890() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2EntryRelationship890TestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2EntryRelationship890", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_ENTRY_RELATIONSHIP890__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -241,27 +237,94 @@ public class AllergyObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(
+				return AllergyObservation2Operations.validateAllergyObservation2EntryRelationship890(
 					(AllergyObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservation2SeverityObservation2TestCase.doValidationTest();
+		validateAllergyObservation2EntryRelationship890TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergyObservation2EntryRelationship892() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2EntryRelationship892TestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2EntryRelationship892", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_ENTRY_RELATIONSHIP892__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2EntryRelationship892(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2EntryRelationship892TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergyObservation2EntryRelationship894() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2EntryRelationship894TestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2EntryRelationship894", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_ENTRY_RELATIONSHIP894__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2EntryRelationship894(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2EntryRelationship894TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservation2IVLTSLow() {
@@ -272,13 +335,13 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -295,7 +358,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservation2IVLTSHigh() {
@@ -306,13 +369,13 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -329,15 +392,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedicationTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ALLERGY_SPECIFIC_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ALLERGY_SPECIFIC_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -365,15 +430,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedicationTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ALLERGY_CLASS_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ALLERGY_CLASS_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -401,15 +468,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstanceTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ALLERGY_FOOD_OTHER_SUBSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ALLERGY_FOOD_OTHER_SUBSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -440,48 +509,12 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolAllergyStatusObservations() {
 
-		AllergyObservation2 target = objectFactory.create();
-		target.getConsolAllergyStatusObservations();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolReactionObservation2s() {
-
-		AllergyObservation2 target = objectFactory.create();
-		target.getConsolReactionObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetSeverityObservation2() {
-
-		AllergyObservation2 target = objectFactory.create();
-		target.getSeverityObservation2();
-
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateAllergyObservationValueOriginalText() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservationValueOriginalTextTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservationValueOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_VALUE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2891() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2891TestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2891",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_REACTION_OBSERVATION2_ENTRY_RELATIONSHIP_REACTION_OBSERVATION2891__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -491,6 +524,119 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2891(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2891TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2893() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2893TestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2893",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2_ENTRY_RELATIONSHIP_SEVERITY_OBSERVATION2893__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2893(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2893TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation895() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation895TestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation895",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_ALLERGY_STATUS_OBSERVATION_ENTRY_RELATIONSHIP_ALLERGY_STATUS_OBSERVATION895__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation895(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation895TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Test
+	@Ignore
+	public void testValidateAllergyObservationValueOriginalText() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservationValueOriginalTextTestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservationValueOriginalText", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_VALUE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
 
 			}
 
@@ -508,15 +654,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationOriginalTextReference() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationOriginalTextReferenceTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationOriginalTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -544,15 +692,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationOriginalTextReferenceValue() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationOriginalTextReferenceValueTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -562,6 +712,10 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -579,15 +733,16 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationReferenceValue() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationReferenceValueTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -618,15 +773,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator() {
 		OperationsTestCase<AllergyObservation2> validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicatorTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -654,29 +811,25 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSubstanceOrDeviceAllergyObservationReactionInversionIndicator() {
 		OperationsTestCase<AllergyObservation2> validateSubstanceOrDeviceAllergyObservationReactionInversionIndicatorTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
-				er.setObservation(ConsolFactory.eINSTANCE.createReactionObservation2().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setInversionInd(true);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -693,29 +846,25 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator() {
 		OperationsTestCase<AllergyObservation2> validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicatorTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setInversionInd(true);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -738,7 +887,8 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	public void testValidateSubstanceOrDeviceAllergyObservationTemplateId() {
 		OperationsTestCase<AllergyObservation2> validateSubstanceOrDeviceAllergyObservationTemplateIdTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateSubstanceOrDeviceAllergyObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -800,7 +950,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationCode() {
@@ -811,16 +961,16 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				// target.init() happens to, by default, set up the code properly
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
 				target.init();
+
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("ASSERTION");
-				cd.setCodeSystem("2.16.840.1.113883.5.4");
 				target.setCode(cd);
+
 			}
 
 			@Override
@@ -844,7 +994,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationValue() {
@@ -855,15 +1005,16 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
+				target.init();
+
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("420134006");
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -968,80 +1119,7 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	* This association is being overridden as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateAllergyObservationAllergyStatusObservation() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservationAllergyStatusObservationTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservationAllergyStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservation2Operations.validateAllergyObservationAllergyStatusObservation(
-					(AllergyObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationAllergyStatusObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAllergyObservationReactionObservation() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservationReactionObservationTestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservationReactionObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_REACTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.MFST);
-				er.setObservation(ConsolFactory.eINSTANCE.createReactionObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservation2Operations.validateAllergyObservationReactionObservation(
-					(AllergyObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationReactionObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationParticipant() {
@@ -1052,12 +1130,13 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+				target.init();
+
 			}
 
 			@Override
@@ -1074,15 +1153,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalTextTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1113,15 +1194,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslationTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1149,15 +1232,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValueTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1188,15 +1273,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValueTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1227,15 +1314,17 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1263,39 +1352,24 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntityCode() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityCodeTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
 
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getParticipants().clear();
-
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				pe.setCode(DatatypesFactory.eINSTANCE.createCE());
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
+				target.init();
 
 			}
 
@@ -1313,36 +1387,24 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationParticipantParticipantRolePlayingEntity() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRolePlayingEntityTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
 
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getParticipants().clear();
-
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-
-				pr.setPlayingEntity(pe);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
+				target.init();
 
 			}
 
@@ -1360,31 +1422,25 @@ public class AllergyObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyObservationParticipantParticipantRole() {
 		OperationsTestCase<AllergyObservation2> validateAllergyObservationParticipantParticipantRoleTestCase = new OperationsTestCase<AllergyObservation2>(
 			"validateAllergyObservationParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
 
-				target.getParticipants().add(par);
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTypeCode(ParticipationType.CSM);
-				target.getParticipants().add(par);
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pr);
+				target.init();
+
 			}
 
 			@Override

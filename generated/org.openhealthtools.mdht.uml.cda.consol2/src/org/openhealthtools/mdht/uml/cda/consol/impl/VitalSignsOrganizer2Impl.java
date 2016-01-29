@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Op
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -71,8 +69,7 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	@Override
 	public boolean validateVitalSignsOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2AuthorParticipation(
-			this, diagnostics, context);
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -98,9 +95,8 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<VitalSignObservation2> getConsolVitalSignObservation2s() {
-		return VitalSignsOrganizer2Operations.getConsolVitalSignObservation2s(this);
+	public boolean validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049(this, diagnostics, context);
 	}
 
 	/**
@@ -139,30 +135,18 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerVitalSignObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public VitalSignsOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsOrganizer2Impl

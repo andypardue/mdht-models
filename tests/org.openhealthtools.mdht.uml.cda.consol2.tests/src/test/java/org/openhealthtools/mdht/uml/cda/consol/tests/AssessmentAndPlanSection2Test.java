@@ -30,11 +30,11 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#getConsolPlannedAct2s() <em>Get Consol Planned Act2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSection2Entry1056(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Entry1056</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section2 Planned Act2 Entry Planned Act21057</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2#validateAssessmentAndPlanSectionPlanOfCareActivityAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment And Plan Section Plan Of Care Activity Act</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,11 +48,70 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolPlannedAct2s() {
 
-		AssessmentAndPlanSection2 target = objectFactory.create();
-		target.getConsolPlannedAct2s();
+	public void testValidateAssessmentAndPlanSection2Entry1056() {
+		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSection2Entry1056TestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
+			"validateAssessmentAndPlanSection2Entry1056", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_ENTRY1056__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AssessmentAndPlanSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentAndPlanSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2Entry1056(
+					(AssessmentAndPlanSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentAndPlanSection2Entry1056TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057() {
+		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057TestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
+			"validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION2_PLANNED_ACT2_ENTRY_PLANNED_ACT21057__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AssessmentAndPlanSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentAndPlanSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057(
+					(AssessmentAndPlanSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentAndPlanSection2PlannedAct2EntryPlannedAct21057TestCase.doValidationTest();
 	}
 
 	/**
@@ -62,8 +121,8 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentAndPlanSectionTemplateId() {
 		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSectionTemplateIdTestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
-			"validateAssessmentAndPlanSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentAndPlanSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -162,39 +221,6 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 		};
 
 		validateAssessmentAndPlanSectionCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAssessmentAndPlanSectionPlanOfCareActivityAct() {
-		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSectionPlanOfCareActivityActTestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
-			"validateAssessmentAndPlanSectionPlanOfCareActivityAct",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AssessmentAndPlanSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(AssessmentAndPlanSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AssessmentAndPlanSection2Operations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
-					(AssessmentAndPlanSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAssessmentAndPlanSectionPlanOfCareActivityActTestCase.doValidationTest();
 	}
 
 	/**

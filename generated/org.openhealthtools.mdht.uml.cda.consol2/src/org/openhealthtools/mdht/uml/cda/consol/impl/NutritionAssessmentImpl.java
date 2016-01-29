@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Nutrition Assessment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 */
 	public boolean validateNutritionAssessmentValueOfTypeCDIsFromSnomed(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NutritionAssessmentOperations.validateNutritionAssessmentValueOfTypeCDIsFromSnomed(
-			this, diagnostics, context);
+		return NutritionAssessmentOperations.validateNutritionAssessmentValueOfTypeCDIsFromSnomed(this, diagnostics, context);
 	}
 
 	/**
@@ -181,17 +178,17 @@ public class NutritionAssessmentImpl extends ObservationImpl implements Nutritio
 	 */
 	@Override
 	public NutritionAssessment init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NutritionAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NutritionAssessmentImpl

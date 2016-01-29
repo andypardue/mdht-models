@@ -54,8 +54,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Risk Concern Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -174,365 +172,341 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRiskConcernActProblemObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActProblemObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActAllergyObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActAllergyObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActEntryReferenceRelatesTo(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActEntryReferenceRelatesTo(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActEntryReferenceHasComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActEntryReferenceHasComponent(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActAssessmentScaleObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActMentalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActMentalStatusObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActSelfCareActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActSelfCareActivities(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActMentalStatusObservation2B(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActMentalStatusObservation2B(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActSmokingStatusMeaningfulUse2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActSmokingStatusMeaningfulUse2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActEncounterDiagnosis2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActEncounterDiagnosis2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActFamilyHistoryOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActFamilyHistoryOrganizer2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActFunctionalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActFunctionalStatusObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActHospitalAdmissionDiagnosis2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActHospitalAdmissionDiagnosis2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActMentalStatusObservation2C(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActMentalStatusObservation2C(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActNutritionAssessment(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActNutritionAssessment(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActNutritionAssessmentB(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActNutritionAssessmentB(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActPostprocedureDiagnosis2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActPostprocedureDiagnosis2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActPregnancyObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActPreoperativeDiagnosis2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActPreoperativeDiagnosis2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActReactionObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActReactionObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActResultObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActResultObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActSensoryStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActSensoryStatus(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActSocialHistoryObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActSocialHistoryObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActSubstanceOrDeviceAllergyObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActSubstanceOrDeviceAllergyObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActTobaccoUse2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActTobaccoUse2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActVitalSignObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActVitalSignObservation2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActWoundObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActWoundObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActProblemObservation2HasSupport(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActProblemObservation2HasSupport(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActCaregiverCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActCaregiverCharacteristics(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActCulturalAndReligiousObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActCulturalAndReligiousObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActCharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActCharacteristicsOfHomeEnvironment(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActNutritionalStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActNutritionalStatusObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActResultOrganizer2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActResultOrganizer2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActPriorityPreferencePatient(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActPriorityPreferencePatient(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActPriorityPreferenceProvider(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActPriorityPreferenceProvider(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActProblemConcernAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActProblemConcernAct2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRiskConcernActEntryReferenceHealthConcern(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActEntryReferenceHealthConcern(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateRiskConcernActReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RiskConcernActOperations.validateRiskConcernActReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1590(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1590(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1592(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1592(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1594(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1594(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1596(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1596(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1598(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1598(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1600(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1600(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1602(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1602(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1604(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1604(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1606(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1606(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1608(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1608(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1610(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1610(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1612(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1612(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1614(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1614(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1616(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1616(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1618(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1618(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1620(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1620(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1622(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1622(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1624(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1624(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1626(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1626(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1628(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1628(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1630(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1630(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1632(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1632(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1634(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1634(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1636(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1636(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1638(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1638(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1640(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1640(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1642(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1642(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1644(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1644(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1646(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1646(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1648(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1648(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1650(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1650(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1652(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1652(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1654(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1654(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1656(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1656(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1658(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1658(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1660(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1660(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRiskConcernActEntryRelationship1662(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryRelationship1662(this, diagnostics, context);
 	}
 
 	/**
@@ -551,8 +525,7 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 */
 	public boolean validateRiskConcernActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return RiskConcernActOperations.validateRiskConcernActReferenceExternalDocumentReference(
-			this, diagnostics, context);
+		return RiskConcernActOperations.validateRiskConcernActReferenceExternalDocumentReference(this, diagnostics, context);
 	}
 
 	/**
@@ -560,8 +533,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemObservation2> getProblemObservation2s() {
-		return RiskConcernActOperations.getProblemObservation2s(this);
+	public boolean validateRiskConcernActProblemObservation2EntryRelationshipProblemObservation21591(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActProblemObservation2EntryRelationshipProblemObservation21591(this, diagnostics, context);
 	}
 
 	/**
@@ -569,8 +542,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AllergyObservation2> getAllergyObservation2s() {
-		return RiskConcernActOperations.getAllergyObservation2s(this);
+	public boolean validateRiskConcernActAllergyObservation2EntryRelationshipAllergyObservation21593(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActAllergyObservation2EntryRelationshipAllergyObservation21593(this, diagnostics, context);
 	}
 
 	/**
@@ -578,8 +551,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EntryReference> getEntryReferenceRelatesTos() {
-		return RiskConcernActOperations.getEntryReferenceRelatesTos(this);
+	public boolean validateRiskConcernActEntryReferenceEntryRelationshipEntryReferenceRelatesTo1595(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryReferenceEntryRelationshipEntryReferenceRelatesTo1595(this, diagnostics, context);
 	}
 
 	/**
@@ -587,8 +560,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EntryReference> getEntryReferenceHasComponents() {
-		return RiskConcernActOperations.getEntryReferenceHasComponents(this);
+	public boolean validateRiskConcernActEntryReferenceEntryRelationshipEntryReferenceHasComponent1597(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryReferenceEntryRelationshipEntryReferenceHasComponent1597(this, diagnostics, context);
 	}
 
 	/**
@@ -596,8 +569,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
-		return RiskConcernActOperations.getAssessmentScaleObservations(this);
+	public boolean validateRiskConcernActAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation1599(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation1599(this, diagnostics, context);
 	}
 
 	/**
@@ -605,8 +578,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getMentalStatusObservation2s() {
-		return RiskConcernActOperations.getMentalStatusObservation2s(this);
+	public boolean validateRiskConcernActMentalStatusObservation2EntryRelationshipMentalStatusObservation21601(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActMentalStatusObservation2EntryRelationshipMentalStatusObservation21601(this, diagnostics, context);
 	}
 
 	/**
@@ -614,8 +587,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SelfCareActivities> getSelfCareActivitiess() {
-		return RiskConcernActOperations.getSelfCareActivitiess(this);
+	public boolean validateRiskConcernActSelfCareActivitiesEntryRelationshipSelfCareActivities1603(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActSelfCareActivitiesEntryRelationshipSelfCareActivities1603(this, diagnostics, context);
 	}
 
 	/**
@@ -623,8 +596,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getMentalStatusObservation2Bs() {
-		return RiskConcernActOperations.getMentalStatusObservation2Bs(this);
+	public boolean validateRiskConcernActMentalStatusObservation2EntryRelationshipMentalStatusObservation2B1605(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActMentalStatusObservation2EntryRelationshipMentalStatusObservation2B1605(this, diagnostics, context);
 	}
 
 	/**
@@ -632,8 +605,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SmokingStatusMeaningfulUse2> getSmokingStatusMeaningfulUse2s() {
-		return RiskConcernActOperations.getSmokingStatusMeaningfulUse2s(this);
+	public boolean validateRiskConcernActSmokingStatusMeaningfulUse2EntryRelationshipSmokingStatusMeaningfulUse21607(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActSmokingStatusMeaningfulUse2EntryRelationshipSmokingStatusMeaningfulUse21607(this, diagnostics, context);
 	}
 
 	/**
@@ -641,8 +614,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EncounterDiagnosis2> getEncounterDiagnosis2s() {
-		return RiskConcernActOperations.getEncounterDiagnosis2s(this);
+	public boolean validateRiskConcernActEncounterDiagnosis2EntryRelationshipEncounterDiagnosis21609(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEncounterDiagnosis2EntryRelationshipEncounterDiagnosis21609(this, diagnostics, context);
 	}
 
 	/**
@@ -650,8 +623,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FamilyHistoryOrganizer2> getFamilyHistoryOrganizer2s() {
-		return RiskConcernActOperations.getFamilyHistoryOrganizer2s(this);
+	public boolean validateRiskConcernActFamilyHistoryOrganizer2EntryRelationshipFamilyHistoryOrganizer21611(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActFamilyHistoryOrganizer2EntryRelationshipFamilyHistoryOrganizer21611(this, diagnostics, context);
 	}
 
 	/**
@@ -659,8 +632,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FunctionalStatusObservation2> getFunctionalStatusObservation2s() {
-		return RiskConcernActOperations.getFunctionalStatusObservation2s(this);
+	public boolean validateRiskConcernActFunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation21613(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActFunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation21613(this, diagnostics, context);
 	}
 
 	/**
@@ -668,8 +641,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<HospitalAdmissionDiagnosis2> getHospitalAdmissionDiagnosis2s() {
-		return RiskConcernActOperations.getHospitalAdmissionDiagnosis2s(this);
+	public boolean validateRiskConcernActHospitalAdmissionDiagnosis2EntryRelationshipHospitalAdmissionDiagnosis21615(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActHospitalAdmissionDiagnosis2EntryRelationshipHospitalAdmissionDiagnosis21615(this, diagnostics, context);
 	}
 
 	/**
@@ -677,8 +650,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MentalStatusObservation2> getMentalStatusObservation2Cs() {
-		return RiskConcernActOperations.getMentalStatusObservation2Cs(this);
+	public boolean validateRiskConcernActMentalStatusObservation2EntryRelationshipMentalStatusObservation2C1617(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActMentalStatusObservation2EntryRelationshipMentalStatusObservation2C1617(this, diagnostics, context);
 	}
 
 	/**
@@ -686,8 +659,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NutritionAssessment> getNutritionAssessments() {
-		return RiskConcernActOperations.getNutritionAssessments(this);
+	public boolean validateRiskConcernActNutritionAssessmentEntryRelationshipNutritionAssessment1619(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActNutritionAssessmentEntryRelationshipNutritionAssessment1619(this, diagnostics, context);
 	}
 
 	/**
@@ -695,8 +668,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NutritionAssessment> getNutritionAssessmentBs() {
-		return RiskConcernActOperations.getNutritionAssessmentBs(this);
+	public boolean validateRiskConcernActNutritionAssessmentEntryRelationshipNutritionAssessmentB1621(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActNutritionAssessmentEntryRelationshipNutritionAssessmentB1621(this, diagnostics, context);
 	}
 
 	/**
@@ -704,8 +677,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PostprocedureDiagnosis2> getPostprocedureDiagnosis2s() {
-		return RiskConcernActOperations.getPostprocedureDiagnosis2s(this);
+	public boolean validateRiskConcernActPostprocedureDiagnosis2EntryRelationshipPostprocedureDiagnosis21623(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActPostprocedureDiagnosis2EntryRelationshipPostprocedureDiagnosis21623(this, diagnostics, context);
 	}
 
 	/**
@@ -713,8 +686,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PregnancyObservation> getPregnancyObservations() {
-		return RiskConcernActOperations.getPregnancyObservations(this);
+	public boolean validateRiskConcernActPregnancyObservationEntryRelationshipPregnancyObservation1625(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActPregnancyObservationEntryRelationshipPregnancyObservation1625(this, diagnostics, context);
 	}
 
 	/**
@@ -722,8 +695,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PreoperativeDiagnosis2> getPreoperativeDiagnosis2s() {
-		return RiskConcernActOperations.getPreoperativeDiagnosis2s(this);
+	public boolean validateRiskConcernActPreoperativeDiagnosis2EntryRelationshipPreoperativeDiagnosis21627(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActPreoperativeDiagnosis2EntryRelationshipPreoperativeDiagnosis21627(this, diagnostics, context);
 	}
 
 	/**
@@ -731,8 +704,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ReactionObservation2> getReactionObservation2s() {
-		return RiskConcernActOperations.getReactionObservation2s(this);
+	public boolean validateRiskConcernActReactionObservation2EntryRelationshipReactionObservation21629(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActReactionObservation2EntryRelationshipReactionObservation21629(this, diagnostics, context);
 	}
 
 	/**
@@ -740,8 +713,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ResultObservation2> getResultObservation2s() {
-		return RiskConcernActOperations.getResultObservation2s(this);
+	public boolean validateRiskConcernActResultObservation2EntryRelationshipResultObservation21631(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActResultObservation2EntryRelationshipResultObservation21631(this, diagnostics, context);
 	}
 
 	/**
@@ -749,8 +722,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SensoryStatus> getSensoryStatuss() {
-		return RiskConcernActOperations.getSensoryStatuss(this);
+	public boolean validateRiskConcernActSensoryStatusEntryRelationshipSensoryStatus1633(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActSensoryStatusEntryRelationshipSensoryStatus1633(this, diagnostics, context);
 	}
 
 	/**
@@ -758,8 +731,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SocialHistoryObservation2> getSocialHistoryObservation2s() {
-		return RiskConcernActOperations.getSocialHistoryObservation2s(this);
+	public boolean validateRiskConcernActSocialHistoryObservation2EntryRelationshipSocialHistoryObservation21635(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActSocialHistoryObservation2EntryRelationshipSocialHistoryObservation21635(this, diagnostics, context);
 	}
 
 	/**
@@ -767,8 +740,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SubstanceOrDeviceAllergyObservation2> getSubstanceOrDeviceAllergyObservation2s() {
-		return RiskConcernActOperations.getSubstanceOrDeviceAllergyObservation2s(this);
+	public boolean validateRiskConcernActSubstanceOrDeviceAllergyObservation2EntryRelationshipSubstanceOrDeviceAllergyObservation21637(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActSubstanceOrDeviceAllergyObservation2EntryRelationshipSubstanceOrDeviceAllergyObservation21637(this, diagnostics, context);
 	}
 
 	/**
@@ -776,8 +749,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TobaccoUse2> getTobaccoUse2s() {
-		return RiskConcernActOperations.getTobaccoUse2s(this);
+	public boolean validateRiskConcernActTobaccoUse2EntryRelationshipTobaccoUse21639(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActTobaccoUse2EntryRelationshipTobaccoUse21639(this, diagnostics, context);
 	}
 
 	/**
@@ -785,8 +758,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<VitalSignObservation2> getVitalSignObservation2s() {
-		return RiskConcernActOperations.getVitalSignObservation2s(this);
+	public boolean validateRiskConcernActVitalSignObservation2EntryRelationshipVitalSignObservation21641(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActVitalSignObservation2EntryRelationshipVitalSignObservation21641(this, diagnostics, context);
 	}
 
 	/**
@@ -794,8 +767,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<LongitudinalCareWoundObservation> getWoundObservations() {
-		return RiskConcernActOperations.getWoundObservations(this);
+	public boolean validateRiskConcernActLongitudinalCareWoundObservationEntryRelationshipWoundObservation1643(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActLongitudinalCareWoundObservationEntryRelationshipWoundObservation1643(this, diagnostics, context);
 	}
 
 	/**
@@ -803,8 +776,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemObservation2> getProblemObservation2HasSupports() {
-		return RiskConcernActOperations.getProblemObservation2HasSupports(this);
+	public boolean validateRiskConcernActProblemObservation2EntryRelationshipProblemObservation2HasSupport1645(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActProblemObservation2EntryRelationshipProblemObservation2HasSupport1645(this, diagnostics, context);
 	}
 
 	/**
@@ -812,8 +785,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
-		return RiskConcernActOperations.getCaregiverCharacteristicss(this);
+	public boolean validateRiskConcernActCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics1647(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics1647(this, diagnostics, context);
 	}
 
 	/**
@@ -821,8 +794,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CulturalAndReligiousObservation> getCulturalAndReligiousObservations() {
-		return RiskConcernActOperations.getCulturalAndReligiousObservations(this);
+	public boolean validateRiskConcernActCulturalAndReligiousObservationEntryRelationshipCulturalAndReligiousObservation1649(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActCulturalAndReligiousObservationEntryRelationshipCulturalAndReligiousObservation1649(this, diagnostics, context);
 	}
 
 	/**
@@ -830,8 +803,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments() {
-		return RiskConcernActOperations.getCharacteristicsOfHomeEnvironments(this);
+	public boolean validateRiskConcernActCharacteristicsOfHomeEnvironmentEntryRelationshipCharacteristicsOfHomeEnvironment1651(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActCharacteristicsOfHomeEnvironmentEntryRelationshipCharacteristicsOfHomeEnvironment1651(this, diagnostics, context);
 	}
 
 	/**
@@ -839,8 +812,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NutritionalStatusObservation> getNutritionalStatusObservations() {
-		return RiskConcernActOperations.getNutritionalStatusObservations(this);
+	public boolean validateRiskConcernActNutritionalStatusObservationEntryRelationshipNutritionalStatusObservation1653(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActNutritionalStatusObservationEntryRelationshipNutritionalStatusObservation1653(this, diagnostics, context);
 	}
 
 	/**
@@ -848,8 +821,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ResultOrganizer2> getResultOrganizer2s() {
-		return RiskConcernActOperations.getResultOrganizer2s(this);
+	public boolean validateRiskConcernActResultOrganizer2EntryRelationshipResultOrganizer21655(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActResultOrganizer2EntryRelationshipResultOrganizer21655(this, diagnostics, context);
 	}
 
 	/**
@@ -857,8 +830,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferencePatients() {
-		return RiskConcernActOperations.getPriorityPreferencePatients(this);
+	public boolean validateRiskConcernActPriorityPreferenceEntryRelationshipPriorityPreferencePatient1657(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActPriorityPreferenceEntryRelationshipPriorityPreferencePatient1657(this, diagnostics, context);
 	}
 
 	/**
@@ -866,8 +839,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferenceProviders() {
-		return RiskConcernActOperations.getPriorityPreferenceProviders(this);
+	public boolean validateRiskConcernActPriorityPreferenceEntryRelationshipPriorityPreferenceProvider1659(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActPriorityPreferenceEntryRelationshipPriorityPreferenceProvider1659(this, diagnostics, context);
 	}
 
 	/**
@@ -875,8 +848,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProblemConcernAct2> getProblemConcernAct2s() {
-		return RiskConcernActOperations.getProblemConcernAct2s(this);
+	public boolean validateRiskConcernActProblemConcernAct2EntryRelationshipProblemConcernAct21661(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActProblemConcernAct2EntryRelationshipProblemConcernAct21661(this, diagnostics, context);
 	}
 
 	/**
@@ -884,8 +857,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EntryReference> getEntryReferenceHealthConcerns() {
-		return RiskConcernActOperations.getEntryReferenceHealthConcerns(this);
+	public boolean validateRiskConcernActEntryReferenceEntryRelationshipEntryReferenceHealthConcern1663(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RiskConcernActOperations.validateRiskConcernActEntryReferenceEntryRelationshipEntryReferenceHealthConcern1663(this, diagnostics, context);
 	}
 
 	/**
@@ -894,16 +867,16 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * @generated
 	 */
 	public RiskConcernAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public RiskConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // RiskConcernActImpl

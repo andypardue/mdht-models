@@ -15,20 +15,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SeriesAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SeriesActOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CR;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CV;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,8 +45,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#validateSeriesActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Series Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#validateSeriesActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Series Act Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#validateSeriesActText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Series Act Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#validateSeriesActSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Series Act SOP Instance Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#getSOPInstanceObservations() <em>Get SOP Instance Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#validateSeriesActEntryRelationship538(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Series Act Entry Relationship538</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SeriesAct#validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Series Act SOP Instance Observation Entry Relationship SOP Instance Observation539</em>}</li>
  * </ul>
  * </p>
  *
@@ -63,7 +57,7 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActIdHasRoot() {
@@ -74,16 +68,12 @@ public class SeriesActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SeriesAct target) {
-				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
 			protected void updateToPass(SeriesAct target) {
-				target.getIds().clear();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				id.setRoot("test");
-				target.getIds().add(id);
+				target.init();
 
 			}
 
@@ -100,7 +90,7 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActIdNoExtension() {
@@ -111,18 +101,12 @@ public class SeriesActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SeriesAct target) {
-				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				id.setExtension("test");
-				target.getIds().add(id);
+
 			}
 
 			@Override
 			protected void updateToPass(SeriesAct target) {
-				target.getIds().clear();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				id.setRoot("test");
-				target.getIds().add(id);
+				target.init();
 
 			}
 
@@ -139,7 +123,7 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActCodeQualifier() {
@@ -156,13 +140,6 @@ public class SeriesActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeriesAct target) {
 				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CV name = DatatypesFactory.eINSTANCE.createCV();
-				name.setCode("121139");
-				qual.setName(name);
-				code.getQualifiers().add(qual);
-				target.setCode(code);
 
 			}
 
@@ -179,7 +156,7 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActCodeQualifierCode() {
@@ -196,14 +173,6 @@ public class SeriesActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeriesAct target) {
 				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CV name = DatatypesFactory.eINSTANCE.createCV();
-				name.setCode("121139");
-				name.setCodeSystem("1.2.840.10008.2.16.4");
-				qual.setName(name);
-				code.getQualifiers().add(qual);
-				target.setCode(code);
 
 			}
 
@@ -238,13 +207,8 @@ public class SeriesActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeriesAct target) {
 				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				val.setCodeSystem("1.2.840.10008.2.16.4");
-				qual.setValue(val);
-				code.getQualifiers().add(qual);
-				target.setCode(code);
+
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -262,13 +226,13 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActCodeQualifierValueCode() {
 		OperationsTestCase<SeriesAct> validateSeriesActCodeQualifierValueCodeTestCase = new OperationsTestCase<SeriesAct>(
-			"validateSeriesActCodeQualifierValueCode",
-			operationsForOCL.getOCLValue("VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeriesActCodeQualifierValueCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -279,13 +243,7 @@ public class SeriesActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeriesAct target) {
 				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				CR qual = DatatypesFactory.eINSTANCE.createCR();
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				val.setCodeSystem("1.2.840.10008.2.16.4");
-				qual.setValue(val);
-				code.getQualifiers().add(qual);
-				target.setCode(code);
+
 			}
 
 			@Override
@@ -401,7 +359,7 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActCode() {
@@ -417,7 +375,7 @@ public class SeriesActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SeriesAct target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("113015", "1.2.840.10008.2.16.4"));
+
 			}
 
 			@Override
@@ -469,7 +427,7 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateSeriesActId() {
@@ -479,12 +437,12 @@ public class SeriesActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SeriesAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(SeriesAct target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -536,40 +494,37 @@ public class SeriesActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateSeriesActSOPInstanceObservation() {
-		OperationsTestCase<SeriesAct> validateSeriesActSOPInstanceObservationTestCase = new OperationsTestCase<SeriesAct>(
-			"validateSeriesActSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateSeriesActEntryRelationship538() {
+		OperationsTestCase<SeriesAct> validateSeriesActEntryRelationship538TestCase = new OperationsTestCase<SeriesAct>(
+			"validateSeriesActEntryRelationship538",
+			operationsForOCL.getOCLValue("VALIDATE_SERIES_ACT_ENTRY_RELATIONSHIP538__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SeriesAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(SeriesAct target) {
-
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createSOPInstanceObservation().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				target.getEntryRelationships().add(er);
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return SeriesActOperations.validateSeriesActSOPInstanceObservation(
+				return SeriesActOperations.validateSeriesActEntryRelationship538(
 					(SeriesAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateSeriesActSOPInstanceObservationTestCase.doValidationTest();
+		validateSeriesActEntryRelationship538TestCase.doValidationTest();
 	}
 
 	/**
@@ -577,11 +532,35 @@ public class SeriesActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSOPInstanceObservations() {
 
-		SeriesAct target = objectFactory.create();
-		target.getSOPInstanceObservations();
+	public void testValidateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539() {
+		OperationsTestCase<SeriesAct> validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539TestCase = new OperationsTestCase<SeriesAct>(
+			"validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION_ENTRY_RELATIONSHIP_SOP_INSTANCE_OBSERVATION539__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(SeriesAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(SeriesAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SeriesActOperations.validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539(
+					(SeriesAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539TestCase.doValidationTest();
 	}
 
 	/**

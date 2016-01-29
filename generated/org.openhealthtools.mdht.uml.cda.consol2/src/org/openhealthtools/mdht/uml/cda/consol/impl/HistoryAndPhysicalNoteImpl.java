@@ -46,8 +46,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryAndPhysicalNote
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History And Physical Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -79,8 +77,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +99,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +110,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
 	}
 
 	/**
@@ -137,8 +131,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteInFulfillmentOf(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteInFulfillmentOf(this, diagnostics, context);
 	}
 
 	/**
@@ -156,251 +149,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteAllergiesSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteAssessmentSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteAssessmentSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNotePlanOfCareSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNotePlanOfCareSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteAssessmentAndPlanSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteAssessmentAndPlanSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteChiefComplaintSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteChiefComplaintSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteFamilyHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteFamilyHistorySection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteGeneralStatusSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteGeneralStatusSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteHistoryOfPastIllnessSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteMedicationsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNotePhysicalExamSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNotePhysicalExamSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteReasonForVisitSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteReasonForVisitSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteResultsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteResultsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteReviewOfSystemsSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteSocialHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteSocialHistorySection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteHistoryOfPresentIllnessSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteImmunizationsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteProblemSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteProblemSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteProceduresSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteVitalSignsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHistoryAndPhysicalNoteInstructionsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteInstructionsSection(
-			this, diagnostics, context);
+	public boolean validateHistoryAndPhysicalNoteComponent352(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponent352(this, diagnostics, context);
 	}
 
 	/**
@@ -411,8 +161,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -423,8 +172,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -435,8 +183,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -447,8 +194,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -459,8 +205,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay(this, diagnostics, context);
 	}
 
 	/**
@@ -471,8 +216,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute(this, diagnostics, context);
 	}
 
 	/**
@@ -483,8 +227,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond(this, diagnostics, context);
 	}
 
 	/**
@@ -495,8 +238,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset(this, diagnostics, context);
 	}
 
 	/**
@@ -507,8 +249,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -519,8 +260,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(this, diagnostics, context);
 	}
 
 	/**
@@ -531,8 +271,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location(this, diagnostics, context);
 	}
 
 	/**
@@ -543,8 +282,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -555,8 +293,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -567,8 +304,7 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	@Override
 	public boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -576,9 +312,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getAllergiesSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional355(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional355(this, diagnostics, context);
 	}
 
 	/**
@@ -586,9 +321,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AssessmentSection getAssessmentSection() {
-		return HistoryAndPhysicalNoteOperations.getAssessmentSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentAssessmentSection357(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentAssessmentSection357(this, diagnostics, context);
 	}
 
 	/**
@@ -596,9 +330,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PlanOfCareSection getPlanOfCareSection() {
-		return HistoryAndPhysicalNoteOperations.getPlanOfCareSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentPlanOfCareSection359(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentPlanOfCareSection359(this, diagnostics, context);
 	}
 
 	/**
@@ -606,9 +339,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
-		return HistoryAndPhysicalNoteOperations.getAssessmentAndPlanSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentAssessmentAndPlanSection361(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentAssessmentAndPlanSection361(this, diagnostics, context);
 	}
 
 	/**
@@ -616,9 +348,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ChiefComplaintSection getChiefComplaintSection() {
-		return HistoryAndPhysicalNoteOperations.getChiefComplaintSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentChiefComplaintSection363(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentChiefComplaintSection363(this, diagnostics, context);
 	}
 
 	/**
@@ -626,9 +357,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-		return HistoryAndPhysicalNoteOperations.getChiefComplaintAndReasonForVisitSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection365(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection365(this, diagnostics, context);
 	}
 
 	/**
@@ -636,9 +366,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public FamilyHistorySection getFamilyHistorySection() {
-		return HistoryAndPhysicalNoteOperations.getFamilyHistorySection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentFamilyHistorySection367(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentFamilyHistorySection367(this, diagnostics, context);
 	}
 
 	/**
@@ -646,9 +375,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public GeneralStatusSection getGeneralStatusSection() {
-		return HistoryAndPhysicalNoteOperations.getGeneralStatusSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentGeneralStatusSection369(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentGeneralStatusSection369(this, diagnostics, context);
 	}
 
 	/**
@@ -656,9 +384,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection() {
-		return HistoryAndPhysicalNoteOperations.getHistoryOfPastIllnessSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentHistoryOfPastIllnessSection371(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentHistoryOfPastIllnessSection371(this, diagnostics, context);
 	}
 
 	/**
@@ -666,9 +393,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getMedicationsSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional373(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional373(this, diagnostics, context);
 	}
 
 	/**
@@ -676,9 +402,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PhysicalExamSection getPhysicalExamSection() {
-		return HistoryAndPhysicalNoteOperations.getPhysicalExamSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentPhysicalExamSection375(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentPhysicalExamSection375(this, diagnostics, context);
 	}
 
 	/**
@@ -686,9 +411,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ReasonForVisitSection getReasonForVisitSection() {
-		return HistoryAndPhysicalNoteOperations.getReasonForVisitSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentReasonForVisitSection377(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentReasonForVisitSection377(this, diagnostics, context);
 	}
 
 	/**
@@ -696,9 +420,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ResultsSectionEntriesOptional getResultsSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getResultsSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentResultsSectionEntriesOptional379(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentResultsSectionEntriesOptional379(this, diagnostics, context);
 	}
 
 	/**
@@ -706,9 +429,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ReviewOfSystemsSection getReviewOfSystemsSection() {
-		return HistoryAndPhysicalNoteOperations.getReviewOfSystemsSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentReviewOfSystemsSection381(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentReviewOfSystemsSection381(this, diagnostics, context);
 	}
 
 	/**
@@ -716,9 +438,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SocialHistorySection getSocialHistorySection() {
-		return HistoryAndPhysicalNoteOperations.getSocialHistorySection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentSocialHistorySection383(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentSocialHistorySection383(this, diagnostics, context);
 	}
 
 	/**
@@ -726,9 +447,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection() {
-		return HistoryAndPhysicalNoteOperations.getHistoryOfPresentIllnessSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentHistoryOfPresentIllnessSection385(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentHistoryOfPresentIllnessSection385(this, diagnostics, context);
 	}
 
 	/**
@@ -736,9 +456,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getImmunizationsSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentImmunizationsSectionEntriesOptional387(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentImmunizationsSectionEntriesOptional387(this, diagnostics, context);
 	}
 
 	/**
@@ -746,9 +465,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProblemSectionEntriesOptional getProblemSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getProblemSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentProblemSectionEntriesOptional389(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentProblemSectionEntriesOptional389(this, diagnostics, context);
 	}
 
 	/**
@@ -756,9 +474,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getProceduresSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentProceduresSectionEntriesOptional391(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentProceduresSectionEntriesOptional391(this, diagnostics, context);
 	}
 
 	/**
@@ -766,9 +483,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
-		return HistoryAndPhysicalNoteOperations.getVitalSignsSectionEntriesOptional(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional393(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional393(this, diagnostics, context);
 	}
 
 	/**
@@ -776,9 +492,206 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public InstructionsSection getInstructionsSection() {
-		return HistoryAndPhysicalNoteOperations.getInstructionsSection(this);
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyComponentInstructionsSection395(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyComponentInstructionsSection395(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyAllergiesSectionEntriesOptional354(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyAllergiesSectionEntriesOptional354(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyAssessmentSection356(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyAssessmentSection356(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyPlanOfCareSection358(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyPlanOfCareSection358(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyAssessmentAndPlanSection360(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyAssessmentAndPlanSection360(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyChiefComplaintSection362(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyChiefComplaintSection362(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyChiefComplaintAndReasonForVisitSection364(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyChiefComplaintAndReasonForVisitSection364(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyFamilyHistorySection366(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyFamilyHistorySection366(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyGeneralStatusSection368(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyGeneralStatusSection368(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyHistoryOfPastIllnessSection370(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyHistoryOfPastIllnessSection370(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyMedicationsSectionEntriesOptional372(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyMedicationsSectionEntriesOptional372(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyPhysicalExamSection374(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyPhysicalExamSection374(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyReasonForVisitSection376(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyReasonForVisitSection376(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyResultsSectionEntriesOptional378(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyResultsSectionEntriesOptional378(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyReviewOfSystemsSection380(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyReviewOfSystemsSection380(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodySocialHistorySection382(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodySocialHistorySection382(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyHistoryOfPresentIllnessSection384(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyHistoryOfPresentIllnessSection384(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyImmunizationsSectionEntriesOptional386(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyImmunizationsSectionEntriesOptional386(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyProblemSectionEntriesOptional388(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyProblemSectionEntriesOptional388(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyProceduresSectionEntriesOptional390(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyProceduresSectionEntriesOptional390(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyVitalSignsSectionEntriesOptional392(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyVitalSignsSectionEntriesOptional392(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBodyInstructionsSection394(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBodyInstructionsSection394(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteComponentStructuredBody353(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteComponentStructuredBody353(this, diagnostics, context);
 	}
 
 	/**
@@ -808,17 +721,17 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 */
 	@Override
 	public HistoryAndPhysicalNote init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HistoryAndPhysicalNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HistoryAndPhysicalNoteImpl

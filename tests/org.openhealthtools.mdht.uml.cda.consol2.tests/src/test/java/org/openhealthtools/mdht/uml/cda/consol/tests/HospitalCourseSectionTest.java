@@ -52,8 +52,8 @@ public class HospitalCourseSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalCourseSectionTemplateId() {
 		OperationsTestCase<HospitalCourseSection> validateHospitalCourseSectionTemplateIdTestCase = new OperationsTestCase<HospitalCourseSection>(
-			"validateHospitalCourseSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_COURSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalCourseSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_COURSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -146,20 +144,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<VitalSignObservation> getVitalSignObservations() {
-		return VitalSignsOrganizerOperations.getVitalSignObservations(this);
+	public boolean validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation165(this, diagnostics, context);
 	}
 
 	/**
@@ -169,17 +155,17 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 */
 	@Override
 	public VitalSignsOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsOrganizerImpl

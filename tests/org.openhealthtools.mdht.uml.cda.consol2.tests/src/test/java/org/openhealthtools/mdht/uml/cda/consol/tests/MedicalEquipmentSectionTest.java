@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#validateMedicalEquipmentSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#validateMedicalEquipmentSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#validateMedicalEquipmentSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#validateMedicalEquipmentSectionNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Non Medicinal Supply Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#getNonMedicinalSupplyActivities() <em>Get Non Medicinal Supply Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#validateMedicalEquipmentSectionEntry78(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Entry78</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection#validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Non Medicinal Supply Activity Entry Non Medicinal Supply Activity79</em>}</li>
  * </ul>
  * </p>
  *
@@ -54,8 +54,8 @@ public class MedicalEquipmentSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentSectionTemplateId() {
 		OperationsTestCase<MedicalEquipmentSection> validateMedicalEquipmentSectionTemplateIdTestCase = new OperationsTestCase<MedicalEquipmentSection>(
-			"validateMedicalEquipmentSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,13 +225,14 @@ public class MedicalEquipmentSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateMedicalEquipmentSectionNonMedicinalSupplyActivity() {
-		OperationsTestCase<MedicalEquipmentSection> validateMedicalEquipmentSectionNonMedicinalSupplyActivityTestCase = new OperationsTestCase<MedicalEquipmentSection>(
-			"validateMedicalEquipmentSectionNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateMedicalEquipmentSectionEntry78() {
+		OperationsTestCase<MedicalEquipmentSection> validateMedicalEquipmentSectionEntry78TestCase = new OperationsTestCase<MedicalEquipmentSection>(
+			"validateMedicalEquipmentSectionEntry78",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_ENTRY78__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,19 +243,19 @@ public class MedicalEquipmentSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicalEquipmentSection target) {
 				target.init();
-				target.addSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
+				return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionEntry78(
 					(MedicalEquipmentSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicalEquipmentSectionNonMedicinalSupplyActivityTestCase.doValidationTest();
+		validateMedicalEquipmentSectionEntry78TestCase.doValidationTest();
 	}
 
 	/**
@@ -262,11 +263,35 @@ public class MedicalEquipmentSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNonMedicinalSupplyActivities() {
 
-		MedicalEquipmentSection target = objectFactory.create();
-		target.getNonMedicinalSupplyActivities();
+	public void testValidateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79() {
+		OperationsTestCase<MedicalEquipmentSection> validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79TestCase = new OperationsTestCase<MedicalEquipmentSection>(
+			"validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY79__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(MedicalEquipmentSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicalEquipmentSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79(
+					(MedicalEquipmentSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79TestCase.doValidationTest();
 	}
 
 	/**

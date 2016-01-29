@@ -33,8 +33,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -66,8 +64,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	@Override
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +192,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	@Override
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -346,8 +342,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -387,28 +382,6 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationActivityMedicationSupplyOrder(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityMedicationSupplyOrder(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityReactionObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityReactionObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateMedicationActivityConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityConsumable(this, diagnostics, context);
 	}
@@ -421,8 +394,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	@Override
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -442,8 +414,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -451,9 +422,44 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public MedicationSupplyOrder getMedicationSupplyOrder() {
-		return MedicationActivityOperations.getMedicationSupplyOrder(this);
+	public boolean validateMedicationActivityInstructionsEntryRelationshipInstructions15(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityInstructionsEntryRelationshipInstructions15(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder17(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder17(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityReactionObservationEntryRelationshipReactionObservation19(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityReactionObservationEntryRelationshipReactionObservation19(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityIndicationEntryRelationshipIndication21(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityIndicationEntryRelationshipIndication21(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityMedicationDispenseEntryRelationshipMedicationDispense23(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityMedicationDispenseEntryRelationshipMedicationDispense23(this, diagnostics, context);
 	}
 
 	/**
@@ -472,38 +478,53 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationActivityInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityInstructions(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityIndication(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityMedicationDispense(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityMedicationDispense(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateMedicationActivityPrecondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityPrecondition(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEntryRelationship14(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEntryRelationship14(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEntryRelationship16(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEntryRelationship16(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEntryRelationship18(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEntryRelationship18(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEntryRelationship20(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEntryRelationship20(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivityEntryRelationship22(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivityOperations.validateMedicationActivityEntryRelationship22(this, diagnostics, context);
 	}
 
 	/**
@@ -522,68 +543,18 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public ReactionObservation getReactionObservation() {
-		return MedicationActivityOperations.getReactionObservation(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Instructions getInstructions() {
-		return MedicationActivityOperations.getInstructions(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Indication> getIndications() {
-		return MedicationActivityOperations.getIndications(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MedicationDispense> getMedicationDispenses() {
-		return MedicationActivityOperations.getMedicationDispenses(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<DrugVehicle> getDrugVehicles() {
-		return MedicationActivityOperations.getDrugVehicles(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public MedicationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationActivityImpl

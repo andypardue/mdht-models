@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservation2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -96,8 +94,7 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 */
 	public boolean validateResultObservation2ReferenceRangeObservationRangeValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRangeValue(
-			this, diagnostics, context);
+		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRangeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +104,7 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 */
 	public boolean validateResultObservation2ReferenceRangeObservationRangeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRangeCode(
-			this, diagnostics, context);
+		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRangeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +114,7 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 */
 	public boolean validateResultObservation2ReferenceRangeObservationRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRange(
-			this, diagnostics, context);
+		return ResultObservation2Operations.validateResultObservation2ReferenceRangeObservationRange(this, diagnostics, context);
 	}
 
 	/**
@@ -250,17 +245,17 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 */
 	@Override
 	public ResultObservation2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultObservation2Impl

@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedure2Opera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Procedure2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -179,8 +177,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedProcedure2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreference(this, diagnostics, context);
+	public boolean validatePlannedProcedure2EntryRelationship976(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship976(this, diagnostics, context);
 	}
 
 	/**
@@ -188,9 +186,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedProcedure2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2Indication2(this, diagnostics, context);
+	public boolean validatePlannedProcedure2EntryRelationship978(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship978(this, diagnostics, context);
 	}
 
 	/**
@@ -198,9 +195,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedProcedure2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2(this, diagnostics, context);
+	public boolean validatePlannedProcedure2EntryRelationship980(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship980(this, diagnostics, context);
 	}
 
 	/**
@@ -208,9 +204,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePlannedProcedure2PlannedCoverage(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2PlannedCoverage(this, diagnostics, context);
+	public boolean validatePlannedProcedure2EntryRelationship982(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship982(this, diagnostics, context);
 	}
 
 	/**
@@ -218,8 +213,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferences() {
-		return PlannedProcedure2Operations.getPriorityPreferences(this);
+	public boolean validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977(this, diagnostics, context);
 	}
 
 	/**
@@ -227,9 +222,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getIndication2s() {
-		return PlannedProcedure2Operations.getIndication2s(this);
+	public boolean validatePlannedProcedure2Indication2EntryRelationshipIndication2979(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2Indication2EntryRelationshipIndication2979(this, diagnostics, context);
 	}
 
 	/**
@@ -237,9 +231,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Instruction2> getInstruction2s() {
-		return PlannedProcedure2Operations.getInstruction2s(this);
+	public boolean validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981(this, diagnostics, context);
 	}
 
 	/**
@@ -247,9 +240,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlannedCoverage> getPlannedCoverages() {
-		return PlannedProcedure2Operations.getPlannedCoverages(this);
+	public boolean validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedure2Operations.validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983(this, diagnostics, context);
 	}
 
 	/**
@@ -280,17 +272,17 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 */
 	@Override
 	public PlannedProcedure2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedProcedure2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedProcedure2Impl

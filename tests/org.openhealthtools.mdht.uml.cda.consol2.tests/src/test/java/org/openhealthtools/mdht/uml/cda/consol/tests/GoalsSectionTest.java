@@ -39,8 +39,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Goal Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#getGoalObservations() <em>Get Goal Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionEntry746(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Entry746</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.GoalsSection#validateGoalsSectionGoalObservationEntryGoalObservation747(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Goals Section Goal Observation Entry Goal Observation747</em>}</li>
  * </ul>
  * </p>
  *
@@ -119,23 +119,24 @@ public class GoalsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateGoalsSectionCode() {
 		OperationsTestCase<GoalsSection> validateGoalsSectionCodeTestCase = new OperationsTestCase<GoalsSection>(
 			"validateGoalsSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(GoalsSection target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("61146-7", LOINC_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -151,7 +152,7 @@ public class GoalsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateGoalsSectionCodeP() {
@@ -162,19 +163,20 @@ public class GoalsSectionTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
-				target.init();
-				target.setCode(null);
+
 			}
 
 			@Override
 			protected void updateToPass(GoalsSection target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalsSectionOperations.validateGoalsSectionCodeP((GoalsSection) objectToTest, diagnostician, map);
+				return GoalsSectionOperations.validateGoalsSectionCodeP(
+					(GoalsSection) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -190,7 +192,8 @@ public class GoalsSectionTest extends CDAValidationTest {
 	public void testValidateGoalsSectionTitle() {
 		OperationsTestCase<GoalsSection> validateGoalsSectionTitleTestCase = new OperationsTestCase<GoalsSection>(
 			"validateGoalsSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
@@ -209,7 +212,8 @@ public class GoalsSectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalsSectionOperations.validateGoalsSectionTitle((GoalsSection) objectToTest, diagnostician, map);
+				return GoalsSectionOperations.validateGoalsSectionTitle(
+					(GoalsSection) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -225,7 +229,8 @@ public class GoalsSectionTest extends CDAValidationTest {
 	public void testValidateGoalsSectionText() {
 		OperationsTestCase<GoalsSection> validateGoalsSectionTextTestCase = new OperationsTestCase<GoalsSection>(
 			"validateGoalsSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
@@ -254,37 +259,37 @@ public class GoalsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateGoalsSectionGoalObservation() {
-		OperationsTestCase<GoalsSection> validateGoalsSectionGoalObservationTestCase = new OperationsTestCase<GoalsSection>(
-			"validateGoalsSectionGoalObservation",
-			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateGoalsSectionEntry746() {
+		OperationsTestCase<GoalsSection> validateGoalsSectionEntry746TestCase = new OperationsTestCase<GoalsSection>(
+			"validateGoalsSectionEntry746",
+			operationsForOCL.getOCLValue("VALIDATE_GOALS_SECTION_ENTRY746__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(GoalsSection target) {
-				target.init();
-				// need to remove NI as that allows pass
-				target.unsetNullFlavor();
+
 			}
 
 			@Override
 			protected void updateToPass(GoalsSection target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createGoalObservation().init());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return GoalsSectionOperations.validateGoalsSectionGoalObservation(
+				return GoalsSectionOperations.validateGoalsSectionEntry746(
 					(GoalsSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGoalsSectionGoalObservationTestCase.doValidationTest();
+		validateGoalsSectionEntry746TestCase.doValidationTest();
 	}
 
 	/**
@@ -292,11 +297,35 @@ public class GoalsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetGoalObservations() {
 
-		GoalsSection target = objectFactory.create();
-		target.getGoalObservations();
+	public void testValidateGoalsSectionGoalObservationEntryGoalObservation747() {
+		OperationsTestCase<GoalsSection> validateGoalsSectionGoalObservationEntryGoalObservation747TestCase = new OperationsTestCase<GoalsSection>(
+			"validateGoalsSectionGoalObservationEntryGoalObservation747",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GOALS_SECTION_GOAL_OBSERVATION_ENTRY_GOAL_OBSERVATION747__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(GoalsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GoalsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GoalsSectionOperations.validateGoalsSectionGoalObservationEntryGoalObservation747(
+					(GoalsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGoalsSectionGoalObservationEntryGoalObservation747TestCase.doValidationTest();
 	}
 
 	/**

@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -45,8 +47,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#validatePhysicalFindingsOfSkinSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#validatePhysicalFindingsOfSkinSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#validatePhysicalFindingsOfSkinSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#validatePhysicalFindingsOfSkinSectionWoundObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Wound Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#getWoundObservations() <em>Get Wound Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#validatePhysicalFindingsOfSkinSectionEntry764(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Entry764</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection#validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Longitudinal Care Wound Observation Entry Wound Observation765</em>}</li>
  * </ul>
  * </p>
  *
@@ -97,28 +99,28 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalFindingsOfSkinSectionTemplateId(
 			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
 				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalFindingsOfSkinSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionTemplateId"),
-					new Object[] { physicalFindingsOfSkinSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionTemplateId"),
+						 new Object [] { physicalFindingsOfSkinSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -132,9 +134,9 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '10206-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '10206-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalFindingsOfSkinSectionCode(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Code</em>}' invariant operation.
@@ -161,26 +163,28 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalFindingsOfSkinSectionCode(
 			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
 				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalFindingsOfSkinSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionCode"),
-					new Object[] { physicalFindingsOfSkinSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionCode"),
+						 new Object [] { physicalFindingsOfSkinSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -221,26 +225,28 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalFindingsOfSkinSectionCodeP(
 			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
 				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalFindingsOfSkinSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionCodeP"),
-					new Object[] { physicalFindingsOfSkinSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionCodeP"),
+						 new Object [] { physicalFindingsOfSkinSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -281,26 +287,28 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalFindingsOfSkinSectionTitle(
 			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
 				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalFindingsOfSkinSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionTitle"),
-					new Object[] { physicalFindingsOfSkinSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionTitle"),
+						 new Object [] { physicalFindingsOfSkinSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -341,51 +349,53 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalFindingsOfSkinSectionText(
 			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
 				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalFindingsOfSkinSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionText"),
-					new Object[] { physicalFindingsOfSkinSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionText"),
+						 new Object [] { physicalFindingsOfSkinSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePhysicalFindingsOfSkinSectionWoundObservation(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Wound Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicalFindingsOfSkinSectionEntry764(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Entry764</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalFindingsOfSkinSectionWoundObservation(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePhysicalFindingsOfSkinSectionEntry764(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::LongitudinalCareWoundObservation))";
+	protected static final String VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePhysicalFindingsOfSkinSectionWoundObservation(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Wound Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicalFindingsOfSkinSectionEntry764(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Entry764</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePhysicalFindingsOfSkinSectionWoundObservation(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validatePhysicalFindingsOfSkinSectionEntry764(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,80 +407,99 @@ public class PhysicalFindingsOfSkinSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePhysicalFindingsOfSkinSectionWoundObservation(
-			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validatePhysicalFindingsOfSkinSectionEntry764(PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
-				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalFindingsOfSkinSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalFindingsOfSkinSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionWoundObservation"),
-					new Object[] { physicalFindingsOfSkinSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_ENTRY764,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionEntry764"),
+						 new Object [] { physicalFindingsOfSkinSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getWoundObservations(PhysicalFindingsOfSkinSection) <em>Get Wound Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Longitudinal Care Wound Observation Entry Wound Observation765</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWoundObservations(PhysicalFindingsOfSkinSection)
+	 * @see #validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_WOUND_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)).oclAsType(consol::LongitudinalCareWoundObservation)";
+	protected static final String VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getWoundObservations(PhysicalFindingsOfSkinSection) <em>Get Wound Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Findings Of Skin Section Longitudinal Care Wound Observation Entry Wound Observation765</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWoundObservations(PhysicalFindingsOfSkinSection)
+	 * @see #validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(PhysicalFindingsOfSkinSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_WOUND_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param physicalFindingsOfSkinSection The receiving '<em><b>Physical Findings Of Skin Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<LongitudinalCareWoundObservation> getWoundObservations(
-			PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection) {
-		if (GET_WOUND_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validatePhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765(PhysicalFindingsOfSkinSection physicalFindingsOfSkinSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION,
-				ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION.getEAllOperations().get(61));
+			helper.setContext(ConsolPackage.Literals.PHYSICAL_FINDINGS_OF_SKIN_SECTION);
 			try {
-				GET_WOUND_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<LongitudinalCareWoundObservation> result = (Collection<LongitudinalCareWoundObservation>) query.evaluate(physicalFindingsOfSkinSection);
-		return new BasicEList.UnmodifiableEList<LongitudinalCareWoundObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicalFindingsOfSkinSection);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_FINDINGS_OF_SKIN_SECTION__PHYSICAL_FINDINGS_OF_SKIN_SECTION_LONGITUDINAL_CARE_WOUND_OBSERVATION_ENTRY_WOUND_OBSERVATION765,
+						 ConsolPlugin.INSTANCE.getString("PhysicalFindingsOfSkinSectionPhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation765"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // PhysicalFindingsOfSkinSectionOperations

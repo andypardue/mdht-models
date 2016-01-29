@@ -30,8 +30,8 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#validateReasonForReferralSection2PatientReferralAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section2 Patient Referral Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#getPatientReferralActs() <em>Get Patient Referral Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#validateReasonForReferralSection2Entry1156(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section2 Entry1156</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#validateReasonForReferralSection2PatientReferralActEntryPatientReferralAct1157(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section2 Patient Referral Act Entry Patient Referral Act1157</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#validateReasonForReferralSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#validateReasonForReferralSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2#validateReasonForReferralSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Code</em>}</li>
@@ -45,35 +45,37 @@ public class ReasonForReferralSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateReasonForReferralSection2PatientReferralAct() {
-		OperationsTestCase<ReasonForReferralSection2> validateReasonForReferralSection2PatientReferralActTestCase = new OperationsTestCase<ReasonForReferralSection2>(
-			"validateReasonForReferralSection2PatientReferralAct",
-			operationsForOCL.getOCLValue("VALIDATE_REASON_FOR_REFERRAL_SECTION2_PATIENT_REFERRAL_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateReasonForReferralSection2Entry1156() {
+		OperationsTestCase<ReasonForReferralSection2> validateReasonForReferralSection2Entry1156TestCase = new OperationsTestCase<ReasonForReferralSection2>(
+			"validateReasonForReferralSection2Entry1156", operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_REFERRAL_SECTION2_ENTRY1156__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ReasonForReferralSection2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ReasonForReferralSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createPatientReferralAct().init());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ReasonForReferralSection2Operations.validateReasonForReferralSection2PatientReferralAct(
+				return ReasonForReferralSection2Operations.validateReasonForReferralSection2Entry1156(
 					(ReasonForReferralSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReasonForReferralSection2PatientReferralActTestCase.doValidationTest();
+		validateReasonForReferralSection2Entry1156TestCase.doValidationTest();
 	}
 
 	/**
@@ -81,11 +83,35 @@ public class ReasonForReferralSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPatientReferralActs() {
 
-		ReasonForReferralSection2 target = objectFactory.create();
-		target.getPatientReferralActs();
+	public void testValidateReasonForReferralSection2PatientReferralActEntryPatientReferralAct1157() {
+		OperationsTestCase<ReasonForReferralSection2> validateReasonForReferralSection2PatientReferralActEntryPatientReferralAct1157TestCase = new OperationsTestCase<ReasonForReferralSection2>(
+			"validateReasonForReferralSection2PatientReferralActEntryPatientReferralAct1157",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_REFERRAL_SECTION2_PATIENT_REFERRAL_ACT_ENTRY_PATIENT_REFERRAL_ACT1157__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ReasonForReferralSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReasonForReferralSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReasonForReferralSection2Operations.validateReasonForReferralSection2PatientReferralActEntryPatientReferralAct1157(
+					(ReasonForReferralSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReasonForReferralSection2PatientReferralActEntryPatientReferralAct1157TestCase.doValidationTest();
 	}
 
 	/**
@@ -95,8 +121,8 @@ public class ReasonForReferralSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateReasonForReferralSectionTemplateId() {
 		OperationsTestCase<ReasonForReferralSection2> validateReasonForReferralSectionTemplateIdTestCase = new OperationsTestCase<ReasonForReferralSection2>(
-			"validateReasonForReferralSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReasonForReferralSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

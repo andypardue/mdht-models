@@ -27,8 +27,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Functional Status Result Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#getFunctionalStatusResultObservations() <em>Get Functional Status Result Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Functional Status Result Observation Entry Relationship Functional Status Result Observation591</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateResultOrganizerCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateResultOrganizerClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Class Code</em>}</li>
@@ -47,13 +46,15 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateFunctionalStatusResultOrganizerFunctionalStatusResultObservation() {
-		OperationsTestCase<FunctionalStatusResultOrganizer> validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationTestCase = new OperationsTestCase<FunctionalStatusResultOrganizer>(
-			"validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591() {
+		OperationsTestCase<FunctionalStatusResultOrganizer> validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591TestCase = new OperationsTestCase<FunctionalStatusResultOrganizer>(
+			"validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION_ENTRY_RELATIONSHIP_FUNCTIONAL_STATUS_RESULT_OBSERVATION591__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -64,36 +65,24 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(FunctionalStatusResultOrganizer target) {
 				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createFunctionalStatusResultObservation().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
+				return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591(
 					(FunctionalStatusResultOrganizer) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationTestCase.doValidationTest();
+		validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationEntryRelationshipFunctionalStatusResultObservation591TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testGetFunctionalStatusResultObservations() {
-
-		FunctionalStatusResultOrganizer target = objectFactory.create();
-		target.getFunctionalStatusResultObservations();
-
-	}
-
-	/**
-	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateResultOrganizerCodeValue() {
@@ -102,26 +91,19 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			private final String[] valCodeSystems = { "2.16.840.1.113883.6.254", CDAValidationTest.SNOMEDCT_ID };
-
 			@Override
 			protected void updateToFail(FunctionalStatusResultOrganizer target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
-			public void addPassTests() {
-				for (final String cs : valCodeSystems) {
-					addPassTest(new PassTest() {
-						@Override
-						public void updateToPass(FunctionalStatusResultOrganizer target) {
-							target.init();
-							target.setCode(DatatypesFactory.eINSTANCE.createCD());
-							target.getCode().setCodeSystem(cs);
-						}
-					});
-				}
+			protected void updateToPass(FunctionalStatusResultOrganizer target) {
+				target.init();
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+				//
+
 			}
 
 			@Override
@@ -240,13 +222,14 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizerId() {
 		OperationsTestCase<FunctionalStatusResultOrganizer> validateResultOrganizerIdTestCase = new OperationsTestCase<FunctionalStatusResultOrganizer>(
 			"validateResultOrganizerId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(FunctionalStatusResultOrganizer target) {
@@ -256,7 +239,6 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(FunctionalStatusResultOrganizer target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
 
 			}
 
@@ -274,7 +256,7 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizerCode() {
@@ -291,7 +273,6 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(FunctionalStatusResultOrganizer target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("", "2.16.840.1.113883.6.96"));
 
 			}
 

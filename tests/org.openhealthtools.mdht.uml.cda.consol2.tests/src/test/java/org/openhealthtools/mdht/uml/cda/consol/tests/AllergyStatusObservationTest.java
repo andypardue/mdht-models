@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyStatusObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
@@ -52,8 +52,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationTemplateId() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationTemplateIdTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +86,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationClassCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationClassCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationMoodCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationMoodCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -149,7 +149,7 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyStatusObservationCode() {
@@ -166,6 +166,9 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AllergyStatusObservation target) {
 				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
 			}
 
@@ -188,8 +191,8 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyStatusObservationStatusCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationStatusCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -220,7 +223,7 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT 
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyStatusObservationValue() {
@@ -238,9 +241,7 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(AllergyStatusObservation target) {
 				target.init();
 
-				CE value = DatatypesFactory.eINSTANCE.createCE();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("55561003");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}

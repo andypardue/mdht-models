@@ -32,8 +32,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Health Concerns Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -121,10 +119,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHealthConcernsSectionHealthConcernAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernAct(this, diagnostics, context);
+	public boolean validateHealthConcernsSectionEntry748(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionEntry748(this, diagnostics, context);
 	}
 
 	/**
@@ -132,10 +128,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernsSectionHealthStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthStatusObservation2(
-			this, diagnostics, context);
+	public boolean validateHealthConcernsSectionEntry750(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionEntry750(this, diagnostics, context);
 	}
 
 	/**
@@ -143,8 +137,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernsSectionRiskConcernAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernsSectionOperations.validateHealthConcernsSectionRiskConcernAct(this, diagnostics, context);
+	public boolean validateHealthConcernsSectionEntry752(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionEntry752(this, diagnostics, context);
 	}
 
 	/**
@@ -152,9 +146,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<HealthConcernAct> getHealthConcernActs() {
-		return HealthConcernsSectionOperations.getHealthConcernActs(this);
+	public boolean validateHealthConcernsSectionHealthStatusObservation2EntryHealthStatusObservation2749(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthStatusObservation2EntryHealthStatusObservation2749(this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +155,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<HealthStatusObservation2> getHealthStatusObservation2s() {
-		return HealthConcernsSectionOperations.getHealthStatusObservation2s(this);
+	public boolean validateHealthConcernsSectionHealthConcernActEntryHealthConcernAct751(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernActEntryHealthConcernAct751(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +164,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RiskConcernAct> getRiskConcernActs() {
-		return HealthConcernsSectionOperations.getRiskConcernActs(this);
+	public boolean validateHealthConcernsSectionRiskConcernActEntryRiskConcernAct753(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionRiskConcernActEntryRiskConcernAct753(this, diagnostics, context);
 	}
 
 	/**
@@ -182,17 +175,17 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 */
 	@Override
 	public HealthConcernsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HealthConcernsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HealthConcernsSectionImpl

@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSectionOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergies Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -97,9 +95,8 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAllergiesSectionAllergyProblemAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionOperations.validateAllergiesSectionAllergyProblemAct(this, diagnostics, context);
+	public boolean validateAllergiesSectionEntry106(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSectionOperations.validateAllergiesSectionEntry106(this, diagnostics, context);
 	}
 
 	/**
@@ -107,9 +104,8 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AllergyProblemAct> getConsolAllergyProblemActs() {
-		return AllergiesSectionOperations.getConsolAllergyProblemActs(this);
+	public boolean validateAllergiesSectionAllergyProblemActEntryAllergyProblemAct107(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSectionOperations.validateAllergiesSectionAllergyProblemActEntryAllergyProblemAct107(this, diagnostics, context);
 	}
 
 	/**
@@ -130,17 +126,17 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 */
 	@Override
 	public AllergiesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AllergiesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergiesSectionImpl

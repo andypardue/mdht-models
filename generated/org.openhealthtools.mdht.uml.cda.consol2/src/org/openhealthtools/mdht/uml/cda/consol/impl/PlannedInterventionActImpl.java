@@ -45,8 +45,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Intervention Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -167,233 +165,7 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActAuthorParticipation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActAdvanceDirectiveObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActImmunizationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActImmunizationActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActMedicationActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActProcedureActivityAct2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityAct2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActInterventionAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActInterventionAct(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActProcedureActivityObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActProcedureActivityProcedure2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityProcedure2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActEncounterActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActEncounterActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActInstruction2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedAct2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedEncounter2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedEncounter2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedProcedure2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedProcedure2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedMedicationActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedSupply2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActNutritionRecommendation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActEntryReferenceDocInstance(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceDocInstance(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActEntryReferenceGoalObs(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceGoalObs(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActHandoffCommunicationParticipants(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActHandoffCommunicationParticipants(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validatePlannedInterventionActPlannedImmunizationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedImmunizationActivity(
-			this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -410,10 +182,198 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedInterventionActEntryRelationship1548(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1548(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1550(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1550(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1552(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1552(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1554(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1554(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1556(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1556(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1558(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1558(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1560(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1560(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1562(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1562(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1564(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1564(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1566(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1566(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1568(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1568(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1570(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1570(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1572(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1572(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1574(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1574(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1576(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1576(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1578(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1578(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1580(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1580(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1582(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1582(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1584(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1584(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1586(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1586(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedInterventionActEntryRelationship1588(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1588(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePlannedInterventionActReferenceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceTypeCode(
-			this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -423,8 +383,7 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 */
 	public boolean validatePlannedInterventionActReferenceExternalDocumentReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceExternalDocumentReference(
-			this, diagnostics, context);
+		return PlannedInterventionActOperations.validatePlannedInterventionActReferenceExternalDocumentReference(this, diagnostics, context);
 	}
 
 	/**
@@ -432,8 +391,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirectiveObservation2> getAdvanceDirectiveObservation2s() {
-		return PlannedInterventionActOperations.getAdvanceDirectiveObservation2s(this);
+	public boolean validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549(this, diagnostics, context);
 	}
 
 	/**
@@ -441,8 +400,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ImmunizationActivity2> getImmunizationActivity2s() {
-		return PlannedInterventionActOperations.getImmunizationActivity2s(this);
+	public boolean validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551(this, diagnostics, context);
 	}
 
 	/**
@@ -450,8 +409,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicationActivity2> getMedicationActivity2s() {
-		return PlannedInterventionActOperations.getMedicationActivity2s(this);
+	public boolean validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553(this, diagnostics, context);
 	}
 
 	/**
@@ -459,8 +418,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureActivityAct2> getProcedureActivityAct2s() {
-		return PlannedInterventionActOperations.getProcedureActivityAct2s(this);
+	public boolean validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555(this, diagnostics, context);
 	}
 
 	/**
@@ -468,8 +427,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InterventionAct> getInterventionActs() {
-		return PlannedInterventionActOperations.getInterventionActs(this);
+	public boolean validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557(this, diagnostics, context);
 	}
 
 	/**
@@ -477,8 +436,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureActivityObservation2> getProcedureActivityObservation2s() {
-		return PlannedInterventionActOperations.getProcedureActivityObservation2s(this);
+	public boolean validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559(this, diagnostics, context);
 	}
 
 	/**
@@ -486,8 +445,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s() {
-		return PlannedInterventionActOperations.getProcedureActivityProcedure2s(this);
+	public boolean validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561(this, diagnostics, context);
 	}
 
 	/**
@@ -495,8 +454,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EncounterActivity2> getEncounterActivity2s() {
-		return PlannedInterventionActOperations.getEncounterActivity2s(this);
+	public boolean validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563(this, diagnostics, context);
 	}
 
 	/**
@@ -504,8 +463,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Instruction2> getInstruction2s() {
-		return PlannedInterventionActOperations.getInstruction2s(this);
+	public boolean validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565(this, diagnostics, context);
 	}
 
 	/**
@@ -513,8 +472,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NonMedicinalSupplyActivity2> getNonMedicinalSupplyActivity2s() {
-		return PlannedInterventionActOperations.getNonMedicinalSupplyActivity2s(this);
+	public boolean validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567(this, diagnostics, context);
 	}
 
 	/**
@@ -522,8 +481,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedAct2> getPlannedAct2s() {
-		return PlannedInterventionActOperations.getPlannedAct2s(this);
+	public boolean validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569(this, diagnostics, context);
 	}
 
 	/**
@@ -531,8 +490,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedEncounter2> getPlannedEncounter2s() {
-		return PlannedInterventionActOperations.getPlannedEncounter2s(this);
+	public boolean validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571(this, diagnostics, context);
 	}
 
 	/**
@@ -540,8 +499,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedObservation2> getPlannedObservation2s() {
-		return PlannedInterventionActOperations.getPlannedObservation2s(this);
+	public boolean validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573(this, diagnostics, context);
 	}
 
 	/**
@@ -549,8 +508,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedProcedure2> getPlannedProcedure2s() {
-		return PlannedInterventionActOperations.getPlannedProcedure2s(this);
+	public boolean validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575(this, diagnostics, context);
 	}
 
 	/**
@@ -558,8 +517,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedMedicationActivity2> getPlannedMedicationActivity2s() {
-		return PlannedInterventionActOperations.getPlannedMedicationActivity2s(this);
+	public boolean validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577(this, diagnostics, context);
 	}
 
 	/**
@@ -567,8 +526,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedSupply2> getPlannedSupply2s() {
-		return PlannedInterventionActOperations.getPlannedSupply2s(this);
+	public boolean validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579(this, diagnostics, context);
 	}
 
 	/**
@@ -576,8 +535,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NutritionRecommendation> getNutritionRecommendations() {
-		return PlannedInterventionActOperations.getNutritionRecommendations(this);
+	public boolean validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581(this, diagnostics, context);
 	}
 
 	/**
@@ -585,8 +544,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EntryReference> getEntryReferenceDocInstances() {
-		return PlannedInterventionActOperations.getEntryReferenceDocInstances(this);
+	public boolean validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583(this, diagnostics, context);
 	}
 
 	/**
@@ -594,8 +553,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EntryReference getEntryReferenceGoalObs() {
-		return PlannedInterventionActOperations.getEntryReferenceGoalObs(this);
+	public boolean validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585(this, diagnostics, context);
 	}
 
 	/**
@@ -603,8 +562,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<HandoffCommunicationParticipants> getHandoffCommunicationParticipantss() {
-		return PlannedInterventionActOperations.getHandoffCommunicationParticipantss(this);
+	public boolean validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587(this, diagnostics, context);
 	}
 
 	/**
@@ -612,8 +571,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PlannedImmunizationActivity> getPlannedImmunizationActivities() {
-		return PlannedInterventionActOperations.getPlannedImmunizationActivities(this);
+	public boolean validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589(this, diagnostics, context);
 	}
 
 	/**
@@ -622,16 +581,16 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * @generated
 	 */
 	public PlannedInterventionAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PlannedInterventionAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedInterventionActImpl

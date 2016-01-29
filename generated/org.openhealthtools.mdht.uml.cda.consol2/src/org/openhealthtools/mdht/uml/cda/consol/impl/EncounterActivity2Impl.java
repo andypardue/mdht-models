@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivity2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -70,6 +68,24 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterActivity2EntryRelationship904(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivity2Operations.validateEncounterActivity2EntryRelationship904(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterActivity2EntryRelationship906(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivity2Operations.validateEncounterActivity2EntryRelationship906(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncounterActivity2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivity2Operations.validateEncounterActivity2CDTranslation(this, diagnostics, context);
 	}
@@ -81,8 +97,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 */
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -90,9 +105,8 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getConsolIndication2s() {
-		return EncounterActivity2Operations.getConsolIndication2s(this);
+	public boolean validateEncounterActivity2Indication2EntryRelationshipIndication2905(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivity2Operations.validateEncounterActivity2Indication2EntryRelationshipIndication2905(this, diagnostics, context);
 	}
 
 	/**
@@ -100,18 +114,8 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<EncounterDiagnosis2> getConsolEncounterDiagnosis2s() {
-		return EncounterActivity2Operations.getConsolEncounterDiagnosis2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<ServiceDeliveryLocation> getConsolServiceDeliveryLocations() {
-		return EncounterActivity2Operations.getConsolServiceDeliveryLocations(this);
+	public boolean validateEncounterActivity2EncounterDiagnosis2EntryRelationshipEncounterDiagnosis2907(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterActivity2Operations.validateEncounterActivity2EncounterDiagnosis2EntryRelationshipEncounterDiagnosis2907(this, diagnostics, context);
 	}
 
 	/**
@@ -153,29 +157,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesSDTCDischargeDispositionCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncounterActivitiesIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesIndication(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncounterActivitiesEncounterDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterDiagnosis(this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesSDTCDischargeDispositionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -186,8 +168,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesServiceDeliveryLocation(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesServiceDeliveryLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -209,8 +190,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -221,8 +201,7 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	@Override
 	public boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(
-			this, diagnostics, context);
+		return EncounterActivity2Operations.validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -232,17 +211,17 @@ public class EncounterActivity2Impl extends EncounterActivitiesImpl implements E
 	 */
 	@Override
 	public EncounterActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncounterActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterActivity2Impl

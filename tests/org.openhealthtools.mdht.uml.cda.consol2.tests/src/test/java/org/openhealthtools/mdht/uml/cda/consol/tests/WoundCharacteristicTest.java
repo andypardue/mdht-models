@@ -157,7 +157,7 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateWoundCharacteristicId() {
@@ -168,12 +168,13 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(WoundCharacteristic target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(WoundCharacteristic target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
+
 			}
 
 			@Override
@@ -224,7 +225,7 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateWoundCharacteristicCode() {
@@ -235,13 +236,13 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(WoundCharacteristic target) {
-				target.init();
-				target.setCode(null);
+
 			}
 
 			@Override
 			protected void updateToPass(WoundCharacteristic target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4"));
+				target.init();
+
 			}
 
 			@Override
@@ -341,8 +342,8 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundCharacteristicEffectiveTime() {
 		OperationsTestCase<WoundCharacteristic> validateWoundCharacteristicEffectiveTimeTestCase = new OperationsTestCase<WoundCharacteristic>(
-			"validateWoundCharacteristicEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundCharacteristicEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -373,7 +374,7 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateWoundCharacteristicValue() {
@@ -384,15 +385,16 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(WoundCharacteristic target) {
-				target.init();
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(val);
+
 			}
 
 			@Override
 			protected void updateToPass(WoundCharacteristic target) {
-				target.getValues().clear();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("NotCurrentlyTested", SNOMEDCT_ID));
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -409,7 +411,7 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateWoundCharacteristicValueP() {
@@ -426,8 +428,7 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(WoundCharacteristic target) {
 				target.init();
-				CD val = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(val);
+
 			}
 
 			@Override

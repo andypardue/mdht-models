@@ -95,27 +95,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentValueOfTypeCDIsFromSnomed(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentValueOfTypeCDIsFromSnomed"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentValueOfTypeCDIsFromSnomed"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -155,26 +156,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentTemplateId(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentTemplateId"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentTemplateId"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -214,26 +217,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentClassCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentClassCode"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentClassCode"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -273,26 +278,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentMoodCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentMoodCode"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentMoodCode"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -306,7 +313,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentId(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Id</em>}' invariant operation.
@@ -332,26 +339,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentId(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentId"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_ID,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentId"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -391,26 +400,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentCodeP(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCodeP"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCodeP"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -422,7 +433,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(nutritionAssessment);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -436,9 +447,9 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '75303-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '75303-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentCode(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Code</em>}' invariant operation.
@@ -464,34 +475,34 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionAssessmentCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionAssessmentCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(nutritionAssessment)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCode"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCode"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -505,8 +516,9 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentStatusCode(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Status Code</em>}' invariant operation.
@@ -532,26 +544,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentStatusCode(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCode"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCode"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -591,26 +605,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentStatusCodeP(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCodeP"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCodeP"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -650,26 +666,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentEffectiveTime(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentEffectiveTime"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentEffectiveTime"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -709,26 +727,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentValue(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentValue"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentValue"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -768,26 +788,28 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNutritionAssessmentAuthorParticipation(NutritionAssessment nutritionAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_ASSESSMENT);
 			try {
 				VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentAuthorParticipation"),
-					new Object[] { nutritionAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentAuthorParticipation"),
+						 new Object [] { nutritionAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;

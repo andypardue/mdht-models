@@ -24,9 +24,13 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityProcedure2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureStatusCode ProcedureActivityProcedureStatusCodeP ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.14' templateId.extension='2014-06-09' constraints.validation.warning='ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureTargetSiteCodeP ProcedureActivityProcedurePerformer ProcedureActivityProcedure2AuthorParticipation' constraints.validation.info='ProcedureActivityProcedure2CodeSuggestedCodeSystems ProcedureActivityProcedureIndication ProcedureActivityProcedureMedicationActivity ProcedureActivityProcedurePatientInstruction ProcedureActivityProcedureSpecimen ProcedureActivityProcedure2ReactionObservation2' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProcedureActivityProcedureTargetSiteCode='ProcedureActivityProcedureTargetSiteCodeP' moodCode='EVN' constraints.validation.dependOn.ProcedureActivityProcedureStatusCode='ProcedureActivityProcedureStatusCodeP' constraints.validation.query='ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureStatusCode ProcedureActivityProcedureStatusCodeP ProcedureActivityProcedure2EntryRelationship1028 ProcedureActivityProcedure2EntryRelationship1030 ProcedureActivityProcedure2EntryRelationship1032 ProcedureActivityProcedure2EntryRelationship1034 ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.14' templateId.extension='2014-06-09' constraints.validation.warning='ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureTargetSiteCodeP ProcedureActivityProcedurePerformer ProcedureActivityProcedure2AuthorParticipation' constraints.validation.info='ProcedureActivityProcedure2CodeSuggestedCodeSystems ProcedureActivityProcedureSpecimen ProcedureActivityProcedure2Instruction2EntryRelationshipInstruction21029 ProcedureActivityProcedure2Indication2EntryRelationshipIndication21031 ProcedureActivityProcedure2MedicationActivity2EntryRelationshipMedicationActivity21033 ProcedureActivityProcedure2ReactionObservation2EntryRelationshipReactionObservation21035' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProcedureActivityProcedureTargetSiteCode='ProcedureActivityProcedureTargetSiteCodeP' moodCode='EVN' constraints.validation.dependOn.ProcedureActivityProcedureStatusCode='ProcedureActivityProcedureStatusCodeP' constraints.validation.query='ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity ProcedureActivityProcedure2Instruction2EntryRelationshipInstruction21029 ProcedureActivityProcedure2Indication2EntryRelationshipIndication21031 ProcedureActivityProcedure2MedicationActivity2EntryRelationshipMedicationActivity21033 ProcedureActivityProcedure2ReactionObservation2EntryRelationshipReactionObservation21035'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2ProcedureActivityPerformer constraints.validation.error='ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2ProcedureActivityPerformerProcedureActivityAssignedEntity constraints.validation.error='ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2Instruction2EntryRelationship constraints.validation.info='ProcedureActivityProcedure2Instruction2EntryRelationshipInstruction21029'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2Indication2EntryRelationship constraints.validation.info='ProcedureActivityProcedure2Indication2EntryRelationshipIndication21031'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2MedicationActivity2EntryRelationship constraints.validation.info='ProcedureActivityProcedure2MedicationActivity2EntryRelationshipMedicationActivity21033'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2ReactionObservation2EntryRelationship constraints.validation.info='ProcedureActivityProcedure2ReactionObservation2EntryRelationshipReactionObservation21035'"
  * @generated
  */
 public interface ProcedureActivityProcedure2 extends ProcedureActivityProcedure {
@@ -75,47 +79,94 @@ public interface ProcedureActivityProcedure2 extends ProcedureActivityProcedure 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReactionObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityProcedure2ReactionObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityProcedure2EntryRelationship1028(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)).oclAsType(consol::Indication2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<Indication2> getConsolIndication2s();
+	boolean validateProcedureActivityProcedure2EntryRelationship1030(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity2)).oclAsType(consol::MedicationActivity2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<MedicationActivity2> getConsolMedicationActivity2s();
+	boolean validateProcedureActivityProcedure2EntryRelationship1032(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2))->asSequence()->any(true).oclAsType(consol::Instruction2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	Instruction2 getConsolInstruction2();
+	boolean validateProcedureActivityProcedure2EntryRelationship1034(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation2)).oclAsType(consol::ReactionObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2)))'"
 	 * @generated
 	 */
-	EList<ReactionObservation2> getReactionObservation2s();
+	boolean validateProcedureActivityProcedure2Instruction2EntryRelationshipInstruction21029(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2)))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedure2Indication2EntryRelationshipIndication21031(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity2)))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedure2MedicationActivity2EntryRelationshipMedicationActivity21033(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation2)))'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedure2ReactionObservation2EntryRelationshipReactionObservation21035(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -126,10 +177,10 @@ public interface ProcedureActivityProcedure2 extends ProcedureActivityProcedure 
 	public ProcedureActivityProcedure2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureActivityProcedure2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityProcedure2

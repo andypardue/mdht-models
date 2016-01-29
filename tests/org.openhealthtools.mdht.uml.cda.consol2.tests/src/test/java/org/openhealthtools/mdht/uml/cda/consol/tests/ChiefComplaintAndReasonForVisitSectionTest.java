@@ -53,7 +53,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionTemplateId() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionTemplateIdTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +88,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionCode() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionCodeTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,7 +123,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionCodeP() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionCodePTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -155,7 +158,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionText() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionTextTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -192,7 +196,8 @@ public class ChiefComplaintAndReasonForVisitSectionTest extends CDAValidationTes
 	public void testValidateChiefComplaintAndReasonForVisitSectionTitle() {
 		OperationsTestCase<ChiefComplaintAndReasonForVisitSection> validateChiefComplaintAndReasonForVisitSectionTitleTestCase = new OperationsTestCase<ChiefComplaintAndReasonForVisitSection>(
 			"validateChiefComplaintAndReasonForVisitSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

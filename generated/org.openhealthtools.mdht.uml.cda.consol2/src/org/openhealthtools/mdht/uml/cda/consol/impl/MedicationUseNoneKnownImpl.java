@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Use None Known</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,8 +63,7 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	@Override
 	public boolean validateMedicationUseNoneKnownTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(
-			this, diagnostics, context);
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -206,17 +203,17 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 */
 	@Override
 	public MedicationUseNoneKnown init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationUseNoneKnownImpl

@@ -113,7 +113,7 @@ public class BoundaryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateBoundaryObservationCode() {
@@ -131,7 +131,7 @@ public class BoundaryObservationTest extends CDAValidationTest {
 			protected void updateToPass(BoundaryObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD("113036", "1.2.840.10008.2.16.4", "", "");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
 			}
@@ -184,7 +184,7 @@ public class BoundaryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateBoundaryObservationValue() {
@@ -195,13 +195,15 @@ public class BoundaryObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(BoundaryObservation target) {
-				target.init();
 
 			}
 
 			@Override
 			protected void updateToPass(BoundaryObservation target) {
-				target.getValues().add(DatatypesFactory.eINSTANCE.createINT());
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 

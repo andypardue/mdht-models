@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SubstanceAdministeredA
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
@@ -58,8 +57,8 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSubstanceAdministeredActTemplateId() {
 		OperationsTestCase<SubstanceAdministeredAct> validateSubstanceAdministeredActTemplateIdTestCase = new OperationsTestCase<SubstanceAdministeredAct>(
-			"validateSubstanceAdministeredActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSubstanceAdministeredActTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -92,8 +91,8 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSubstanceAdministeredActClassCode() {
 		OperationsTestCase<SubstanceAdministeredAct> validateSubstanceAdministeredActClassCodeTestCase = new OperationsTestCase<SubstanceAdministeredAct>(
-			"validateSubstanceAdministeredActClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSubstanceAdministeredActClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -126,8 +125,8 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSubstanceAdministeredActMoodCode() {
 		OperationsTestCase<SubstanceAdministeredAct> validateSubstanceAdministeredActMoodCodeTestCase = new OperationsTestCase<SubstanceAdministeredAct>(
-			"validateSubstanceAdministeredActMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSubstanceAdministeredActMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -155,7 +154,7 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSubstanceAdministeredActId() {
@@ -172,8 +171,7 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SubstanceAdministeredAct target) {
 				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(id);
+
 			}
 
 			@Override
@@ -270,8 +268,8 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSubstanceAdministeredActStatusCode() {
 		OperationsTestCase<SubstanceAdministeredAct> validateSubstanceAdministeredActStatusCodeTestCase = new OperationsTestCase<SubstanceAdministeredAct>(
-			"validateSubstanceAdministeredActStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSubstanceAdministeredActStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -307,8 +305,8 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSubstanceAdministeredActStatusCodeP() {
 		OperationsTestCase<SubstanceAdministeredAct> validateSubstanceAdministeredActStatusCodePTestCase = new OperationsTestCase<SubstanceAdministeredAct>(
-			"validateSubstanceAdministeredActStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSubstanceAdministeredActStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -341,8 +339,8 @@ public class SubstanceAdministeredActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSubstanceAdministeredActEffectiveTime() {
 		OperationsTestCase<SubstanceAdministeredAct> validateSubstanceAdministeredActEffectiveTimeTestCase = new OperationsTestCase<SubstanceAdministeredAct>(
-			"validateSubstanceAdministeredActEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSubstanceAdministeredActEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

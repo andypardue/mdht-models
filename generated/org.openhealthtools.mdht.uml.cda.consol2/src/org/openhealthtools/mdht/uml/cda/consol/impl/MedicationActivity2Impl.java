@@ -35,8 +35,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationActivity2Ope
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,8 +66,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivity2SubstanceAdministeredActInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActInversionInd(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +76,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2SubstanceAdministeredActSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActSequenceNumber(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActSequenceNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +86,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	public boolean validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivity2EffectiveTimeIVLTSLowXorValue(this, diagnostics, context);
 	}
 
 	/**
@@ -112,18 +107,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivity2DrugMonitoringAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2DrugMonitoringAct(this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -142,11 +126,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredAct(
-			this, diagnostics, context);
+	public boolean validateMedicationActivity2EntryRelationship936(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship936(this, diagnostics, context);
 	}
 
 	/**
@@ -154,10 +135,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivity2MedicationFreeTextSig(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivity2MedicationFreeTextSig(
-			this, diagnostics, context);
+	public boolean validateMedicationActivity2EntryRelationship938(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship938(this, diagnostics, context);
 	}
 
 	/**
@@ -165,9 +144,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public DrugMonitoringAct getDrugMonitoringAct() {
-		return MedicationActivity2Operations.getDrugMonitoringAct(this);
+	public boolean validateMedicationActivity2EntryRelationship940(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship940(this, diagnostics, context);
 	}
 
 	/**
@@ -175,9 +153,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Instruction2 getConsolInstruction2() {
-		return MedicationActivity2Operations.getConsolInstruction2(this);
+	public boolean validateMedicationActivity2EntryRelationship942(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship942(this, diagnostics, context);
 	}
 
 	/**
@@ -185,9 +162,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SubstanceAdministeredAct> getSubstanceAdministeredActs() {
-		return MedicationActivity2Operations.getSubstanceAdministeredActs(this);
+	public boolean validateMedicationActivity2EntryRelationship944(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship944(this, diagnostics, context);
 	}
 
 	/**
@@ -195,9 +171,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getConsolIndication2s() {
-		return MedicationActivity2Operations.getConsolIndication2s(this);
+	public boolean validateMedicationActivity2EntryRelationship946(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship946(this, diagnostics, context);
 	}
 
 	/**
@@ -205,9 +180,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
-		return MedicationActivity2Operations.getConsolMedicationSupplyOrder2(this);
+	public boolean validateMedicationActivity2EntryRelationship948(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship948(this, diagnostics, context);
 	}
 
 	/**
@@ -215,9 +189,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationDispense2> getConsolMedicationDispense2s() {
-		return MedicationActivity2Operations.getConsolMedicationDispense2s(this);
+	public boolean validateMedicationActivity2EntryRelationship950(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2EntryRelationship950(this, diagnostics, context);
 	}
 
 	/**
@@ -225,9 +198,8 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ReactionObservation2 getConsolReactionObservation2() {
-		return MedicationActivity2Operations.getConsolReactionObservation2(this);
+	public boolean validateMedicationActivity2Indication2EntryRelationshipIndication2937(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2Indication2EntryRelationshipIndication2937(this, diagnostics, context);
 	}
 
 	/**
@@ -235,8 +207,62 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<MedicationFreeTextSig> getMedicationFreeTextSigs() {
-		return MedicationActivity2Operations.getMedicationFreeTextSigs(this);
+	public boolean validateMedicationActivity2Instruction2EntryRelationshipInstruction2939(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2Instruction2EntryRelationshipInstruction2939(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2MedicationSupplyOrder2EntryRelationshipMedicationSupplyOrder2941(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationSupplyOrder2EntryRelationshipMedicationSupplyOrder2941(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2MedicationDispense2EntryRelationshipMedicationDispense2943(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationDispense2EntryRelationshipMedicationDispense2943(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2ReactionObservation2EntryRelationshipReactionObservation2945(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2ReactionObservation2EntryRelationshipReactionObservation2945(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2DrugMonitoringActEntryRelationshipDrugMonitoringAct947(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2DrugMonitoringActEntryRelationshipDrugMonitoringAct947(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2SubstanceAdministeredActEntryRelationshipSubstanceAdministeredAct949(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2SubstanceAdministeredActEntryRelationshipSubstanceAdministeredAct949(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationActivity2MedicationFreeTextSigEntryRelationshipMedicationFreeTextSig951(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationFreeTextSigEntryRelationshipMedicationFreeTextSig951(this, diagnostics, context);
 	}
 
 	/**
@@ -277,8 +303,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -289,8 +314,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -301,8 +325,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityEffectiveTimeIVLTSorTS(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSorTS(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSorTS(this, diagnostics, context);
 	}
 
 	/**
@@ -324,8 +347,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityEffectiveTimeIVLTSHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSHigh(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityEffectiveTimeIVLTSHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -407,8 +429,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityAdministrationUnitCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCode(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityAdministrationUnitCode(this, diagnostics, context);
 	}
 
 	/**
@@ -419,26 +440,6 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivityText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityInstructions(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityIndication(this, diagnostics, context);
 	}
 
 	/**
@@ -459,38 +460,6 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityConsumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivityConsumable(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityMedicationSupplyOrder(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityMedicationSupplyOrder(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityMedicationDispense(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityMedicationDispense(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationActivityReactionObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityReactionObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -522,8 +491,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -534,8 +502,7 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivity2Operations.validateMedicationActivityConsumableMedicationInformation(
-			this, diagnostics, context);
+		return MedicationActivity2Operations.validateMedicationActivityConsumableMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -545,17 +512,17 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 */
 	@Override
 	public MedicationActivity2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationActivity2Impl

@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.Performer1Impl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Physician Reading Study Performer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTemplateId(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTime(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTime(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +78,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTypeCode(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntity(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +99,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +109,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -127,8 +119,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +129,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerGeneralHeaderConstraintsUSRealmDateAndTimeDTIfMorePreciseThanDayIncludeTimeZoneOffsetIVLTS(this, diagnostics, context);
 	}
 
 	/**
@@ -150,8 +140,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(this, diagnostics, context);
 	}
 
 	/**
@@ -162,8 +151,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(this, diagnostics, context);
 	}
 
 	/**
@@ -174,8 +162,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -186,8 +173,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -198,8 +184,7 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	@Override
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityId(
-			this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -209,17 +194,17 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	@Override
 	public PhysicianReadingStudyPerformer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PhysicianReadingStudyPerformer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PhysicianReadingStudyPerformerImpl

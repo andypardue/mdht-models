@@ -17,13 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
@@ -37,11 +36,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2Entry1212(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Entry1212</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section2 Vital Signs Organizer2 Entry Vital Signs Organizer21213</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Entries Optional Vital Signs Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2#getConsolVitalSignsOrganizer2s() <em>Get Consol Vital Signs Organizer2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -123,7 +122,7 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateVitalSignsSection2Text() {
@@ -140,8 +139,9 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(VitalSignsSection2 target) {
 				target.init();
-				StrucDocText text = CDAFactory.eINSTANCE.createStrucDocText();
-				target.setText(text);
+
+				DatatypesFactory.eINSTANCE.createED();
+
 			}
 
 			@Override
@@ -161,10 +161,82 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateVitalSignsSection2Entry1212() {
+		OperationsTestCase<VitalSignsSection2> validateVitalSignsSection2Entry1212TestCase = new OperationsTestCase<VitalSignsSection2>(
+			"validateVitalSignsSection2Entry1212",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION2_ENTRY1212__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsSection2Operations.validateVitalSignsSection2Entry1212(
+					(VitalSignsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsSection2Entry1212TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213() {
+		OperationsTestCase<VitalSignsSection2> validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213TestCase = new OperationsTestCase<VitalSignsSection2>(
+			"validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION2_VITAL_SIGNS_ORGANIZER2_ENTRY_VITAL_SIGNS_ORGANIZER21213__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsSection2Operations.validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213(
+					(VitalSignsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateVitalSignsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<VitalSignsSection2> validateVitalSignsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<VitalSignsSection2>(
 			"validateVitalSignsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -198,7 +270,8 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 	public void testValidateVitalSignsSectionEntriesOptionalCodeP() {
 		OperationsTestCase<VitalSignsSection2> validateVitalSignsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<VitalSignsSection2>(
 			"validateVitalSignsSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,8 +304,8 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsSectionEntriesOptionalCode() {
 		OperationsTestCase<VitalSignsSection2> validateVitalSignsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<VitalSignsSection2>(
-			"validateVitalSignsSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -263,51 +336,6 @@ public class VitalSignsSection2Test extends CDAValidationTest {
 		};
 
 		validateVitalSignsSectionEntriesOptionalCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateVitalSignsSectionEntriesOptionalVitalSignsOrganizer() {
-		OperationsTestCase<VitalSignsSection2> validateVitalSignsSectionEntriesOptionalVitalSignsOrganizerTestCase = new OperationsTestCase<VitalSignsSection2>(
-			"validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignsSection2 target) {
-				// target.init defaults to a nullFlavor of NI which allows a pass
-			}
-
-			@Override
-			protected void updateToPass(VitalSignsSection2 target) {
-				target.addOrganizer(ConsolFactory.eINSTANCE.createVitalSignsOrganizer2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
-					(VitalSignsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignsSectionEntriesOptionalVitalSignsOrganizerTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolVitalSignsOrganizer2s() {
-
-		VitalSignsSection2 target = objectFactory.create();
-		target.getConsolVitalSignsOrganizer2s();
-
 	}
 
 	/**

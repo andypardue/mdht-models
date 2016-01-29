@@ -19,9 +19,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivitySubstanceAdministrationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,7 +48,8 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 	public void testValidatePlanOfCareActivitySubstanceAdministrationTemplateId() {
 		OperationsTestCase<PlanOfCareActivitySubstanceAdministration> validatePlanOfCareActivitySubstanceAdministrationTemplateIdTestCase = new OperationsTestCase<PlanOfCareActivitySubstanceAdministration>(
 			"validatePlanOfCareActivitySubstanceAdministrationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -79,20 +77,15 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivitySubstanceAdministrationClassCode() {
 		OperationsTestCase<PlanOfCareActivitySubstanceAdministration> validatePlanOfCareActivitySubstanceAdministrationClassCodeTestCase = new OperationsTestCase<PlanOfCareActivitySubstanceAdministration>(
 			"validatePlanOfCareActivitySubstanceAdministrationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// we cannot violate the constraint because it only checks that the class
-				// code is non-null and of type ActClass but EMF and Java enforce this
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PlanOfCareActivitySubstanceAdministration target) {
@@ -119,21 +112,15 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivitySubstanceAdministrationMoodCode() {
 		OperationsTestCase<PlanOfCareActivitySubstanceAdministration> validatePlanOfCareActivitySubstanceAdministrationMoodCodeTestCase = new OperationsTestCase<PlanOfCareActivitySubstanceAdministration>(
 			"validatePlanOfCareActivitySubstanceAdministrationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// we cannot violate the constraint because it only checks that the mood
-				// code is non-null and of type x_DocumentSubstanceMood but EMF and Java
-				// enforce this
-				this.skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(PlanOfCareActivitySubstanceAdministration target) {
@@ -143,7 +130,7 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 			@Override
 			protected void updateToPass(PlanOfCareActivitySubstanceAdministration target) {
 				target.init();
-				target.setMoodCode(x_DocumentSubstanceMood.INT);
+
 			}
 
 			@Override
@@ -160,13 +147,14 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivitySubstanceAdministrationId() {
 		OperationsTestCase<PlanOfCareActivitySubstanceAdministration> validatePlanOfCareActivitySubstanceAdministrationIdTestCase = new OperationsTestCase<PlanOfCareActivitySubstanceAdministration>(
 			"validatePlanOfCareActivitySubstanceAdministrationId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -177,8 +165,6 @@ public class PlanOfCareActivitySubstanceAdministrationTest extends CDAValidation
 			@Override
 			protected void updateToPass(PlanOfCareActivitySubstanceAdministration target) {
 				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(id);
 
 			}
 

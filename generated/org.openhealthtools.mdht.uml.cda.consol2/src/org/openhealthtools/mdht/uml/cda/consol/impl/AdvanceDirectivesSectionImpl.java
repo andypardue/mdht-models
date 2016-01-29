@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directives Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,11 +96,8 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
-			this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSectionEntry104(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntry104(this, diagnostics, context);
 	}
 
 	/**
@@ -110,9 +105,8 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AdvanceDirectiveObservation> getConsolAdvanceDirectiveObservations() {
-		return AdvanceDirectivesSectionOperations.getConsolAdvanceDirectiveObservations(this);
+	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservationEntryAdvanceDirectiveObservation105(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservationEntryAdvanceDirectiveObservation105(this, diagnostics, context);
 	}
 
 	/**
@@ -123,8 +117,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -134,17 +127,17 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 */
 	@Override
 	public AdvanceDirectivesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectivesSectionImpl

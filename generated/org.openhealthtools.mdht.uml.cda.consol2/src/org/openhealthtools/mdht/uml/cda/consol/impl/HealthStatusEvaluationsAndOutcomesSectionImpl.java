@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Health Status Evaluations And Outcomes Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCode(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +87,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCodeP(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +97,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTitle(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +107,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 */
 	public boolean validateHealthStatusEvaluationsAndOutcomesSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionText(
-			this, diagnostics, context);
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -123,10 +115,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation(
-			this, diagnostics, context);
+	public boolean validateHealthStatusEvaluationsAndOutcomesSectionEntry754(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionEntry754(this, diagnostics, context);
 	}
 
 	/**
@@ -134,8 +124,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<OutcomeObservation> getOutcomeObservations() {
-		return HealthStatusEvaluationsAndOutcomesSectionOperations.getOutcomeObservations(this);
+	public boolean validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusEvaluationsAndOutcomesSectionOperations.validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationEntryOutcomeObservation755(this, diagnostics, context);
 	}
 
 	/**
@@ -144,17 +134,17 @@ public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl i
 	 * @generated
 	 */
 	public HealthStatusEvaluationsAndOutcomesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HealthStatusEvaluationsAndOutcomesSection init(
 			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HealthStatusEvaluationsAndOutcomesSectionImpl

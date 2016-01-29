@@ -18,15 +18,11 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservation2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
@@ -107,8 +103,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservationInterpretationCodeP() {
 		OperationsTestCase<ResultObservation2> validateResultObservationInterpretationCodePTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationInterpretationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -136,13 +132,13 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservation2AuthorParticipation() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2AuthorParticipationTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservation2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -153,7 +149,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -170,13 +166,13 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservation2ReferenceRange() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2ReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservation2ReferenceRange", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -187,8 +183,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
 				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				target.getReferenceRanges().add(rr);
+
 			}
 
 			@Override
@@ -205,27 +200,28 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservation2ReferenceRangeObservationRangeValue() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeValueTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRangeValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				target.getReferenceRanges().get(0).getObservationRange().setValue(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -242,29 +238,25 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservation2ReferenceRangeObservationRangeCode() {
-		// Note: Modified operation OCL due to inline OCL 0..0 generation issue
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRangeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
-				target.getReferenceRanges().get(0).getObservationRange().setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				target.getReferenceRanges().get(0).getObservationRange().setCode(null);
+				target.init();
+
 			}
 
 			@Override
@@ -281,25 +273,25 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservation2ReferenceRangeObservationRange() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRange",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				target.getReferenceRanges().add(rr);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				target.getReferenceRanges().get(0).setObservationRange(CDAFactory.eINSTANCE.createObservationRange());
+				target.init();
+
 			}
 
 			@Override
@@ -316,15 +308,16 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationAuthorMultiplicity() {
 		OperationsTestCase<ResultObservation2> validateResultObservationAuthorMultiplicityTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationAuthorMultiplicity",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationAuthorMultiplicity", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -352,10 +345,11 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationCodeValue() {
 		OperationsTestCase<ResultObservation2> validateResultObservationCodeValueTestCase = new OperationsTestCase<ResultObservation2>(
@@ -365,37 +359,17 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				// setting invalid codeSystem to cause failure
-				code.setCodeSystem(BAD_CODESYSTEM_ID);
-				target.setCode(code);
+
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultObservation2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 1
-						code.setCodeSystem("2.16.840.1.113883.6.1");
-						target.setCode(code);
-					}
-				});
+			protected void updateToPass(ResultObservation2 target) {
+				target.init();
 
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultObservation2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 2
-						code.setCodeSystem(SNOMEDCT_ID);
-						target.setCode(code);
-					}
-				});
-			};
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -411,10 +385,11 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationTextReference() {
 		OperationsTestCase<ResultObservation2> validateResultObservationTextReferenceTestCase = new OperationsTestCase<ResultObservation2>(
@@ -447,10 +422,11 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationReferenceValue() {
 		OperationsTestCase<ResultObservation2> validateResultObservationReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
@@ -486,15 +462,16 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationTextReferenceValue() {
 		OperationsTestCase<ResultObservation2> validateResultObservationTextReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -525,15 +502,17 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationNoObservationRangeCode() {
 		OperationsTestCase<ResultObservation2> validateResultObservationNoObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservationNoObservationRangeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -632,10 +611,11 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateResultObservationText() {
 		OperationsTestCase<ResultObservation2> validateResultObservationTextTestCase = new OperationsTestCase<ResultObservation2>(
@@ -671,7 +651,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationCode() {
@@ -682,14 +662,16 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				target.getCode().setCodeSystem(LOINC_ID);
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -750,28 +732,24 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationInterpretationCode() {
 		OperationsTestCase<ResultObservation2> validateResultObservationInterpretationCodeTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				target.getInterpretationCodes().clear();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				for (CE icode : target.getInterpretationCodes()) {
-					icode.setCode("A");
-					icode.setCodeSystem("2.16.840.1.113883.5.83");
-				}
+				target.init();
+
 			}
 
 			@Override

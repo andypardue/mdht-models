@@ -26,7 +26,10 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSOPInstanceObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP' templateId.root='2.16.840.1.113883.10.20.6.2.8' classCode='DGIMG' constraints.validation.warning='SOPInstanceObservationEffectiveTime SOPInstanceObservationText' moodCode='EVN' code.codeSystem='1.2.840.10008.2.6.1' code.codeSystemName='DCMUID' constraints.validation.dependOn.SOPInstanceObservationCode='SOPInstanceObservationCodeP' constraints.validation.info='SOPInstanceObservationSOPInstanceObservation SOPInstanceObservationPurposeofReferenceObservation SOPInstanceObservationReferencedFramesObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP SOPInstanceObservationEntryRelationship540 SOPInstanceObservationEntryRelationship542 SOPInstanceObservationEntryRelationship544' templateId.root='2.16.840.1.113883.10.20.6.2.8' classCode='DGIMG' constraints.validation.warning='SOPInstanceObservationEffectiveTime SOPInstanceObservationText' moodCode='EVN' code.codeSystem='1.2.840.10008.2.6.1' code.codeSystemName='DCMUID' constraints.validation.dependOn.SOPInstanceObservationCode='SOPInstanceObservationCodeP' constraints.validation.info='SOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation541 SOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation543 SOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation545' constraints.validation.query='SOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation541 SOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation543 SOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation545'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSOPInstanceObservationSOPInstanceObservationEntryRelationship constraints.validation.info='SOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation541'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSOPInstanceObservationPurposeofReferenceObservationEntryRelationship constraints.validation.info='SOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation543'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSOPInstanceObservationReferencedFramesObservationEntryRelationship constraints.validation.info='SOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation545'"
  * @generated
  */
 public interface SOPInstanceObservation extends Observation {
@@ -145,7 +148,7 @@ public interface SOPInstanceObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateSOPInstanceObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -193,7 +196,7 @@ public interface SOPInstanceObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'1.2.840.10008.2.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'1.2.840.10008.2.6.1\')'"
 	 * @generated
 	 */
 	boolean validateSOPInstanceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -205,11 +208,10 @@ public interface SOPInstanceObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateSOPInstanceObservationEntryRelationship540(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,11 +220,10 @@ public interface SOPInstanceObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PurposeofReferenceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateSOPInstanceObservationPurposeofReferenceObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateSOPInstanceObservationEntryRelationship542(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,38 +232,46 @@ public interface SOPInstanceObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ReferencedFramesObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateSOPInstanceObservationReferencedFramesObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateSOPInstanceObservationEntryRelationship544(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)))'"
 	 * @generated
 	 */
-	EList<SOPInstanceObservation> getSOPInstanceObservations();
+	boolean validateSOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation541(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation)).oclAsType(consol::PurposeofReferenceObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation)))'"
 	 * @generated
 	 */
-	EList<PurposeofReferenceObservation> getPurposeofReferenceObservations();
+	boolean validateSOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation543(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation)).oclAsType(consol::ReferencedFramesObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation)))'"
 	 * @generated
 	 */
-	EList<ReferencedFramesObservation> getReferencedFramesObservations();
+	boolean validateSOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation545(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,9 +281,9 @@ public interface SOPInstanceObservation extends Observation {
 	public SOPInstanceObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SOPInstanceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SOPInstanceObservation

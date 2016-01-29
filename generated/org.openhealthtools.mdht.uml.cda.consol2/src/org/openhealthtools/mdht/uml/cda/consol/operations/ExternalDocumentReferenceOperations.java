@@ -89,26 +89,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceTemplateId(
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceTemplateId"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceTemplateId"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -149,26 +151,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceClassCode(
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceClassCode"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceClassCode"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -209,26 +213,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceMoodCode(
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceMoodCode"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceMoodCode"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -268,26 +274,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 
 	public static boolean validateExternalDocumentReferenceId(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_ID,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceId"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_ID,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceId"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -327,26 +335,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 
 	public static boolean validateExternalDocumentReferenceCode(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceCode"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_CODE,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceCode"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -386,26 +396,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 
 	public static boolean validateExternalDocumentReferenceSetId(ExternalDocumentReference externalDocumentReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_SET_ID,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceSetId"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_SET_ID,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceSetId"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -446,26 +458,28 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	public static boolean validateExternalDocumentReferenceVersionNumber(
 			ExternalDocumentReference externalDocumentReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.EXTERNAL_DOCUMENT_REFERENCE);
 			try {
 				VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			externalDocumentReference)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(externalDocumentReference)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER,
-					ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceVersionNumber"),
-					new Object[] { externalDocumentReference }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.EXTERNAL_DOCUMENT_REFERENCE__EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER,
+						 ConsolPlugin.INSTANCE.getString("ExternalDocumentReferenceExternalDocumentReferenceVersionNumber"),
+						 new Object [] { externalDocumentReference }));
 			}
-
+			 
 			return false;
 		}
 		return true;

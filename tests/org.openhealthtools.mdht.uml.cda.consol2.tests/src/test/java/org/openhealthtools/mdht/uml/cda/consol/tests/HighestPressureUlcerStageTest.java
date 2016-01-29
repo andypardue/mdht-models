@@ -49,8 +49,8 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 	@Test
 	public void testValidateHighestPressureUlcerStageTemplateId() {
 		OperationsTestCase<HighestPressureUlcerStage> validateHighestPressureUlcerStageTemplateIdTestCase = new OperationsTestCase<HighestPressureUlcerStage>(
-			"validateHighestPressureUlcerStageTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHighestPressureUlcerStageTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -83,8 +83,8 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 	@Test
 	public void testValidateHighestPressureUlcerStageClassCode() {
 		OperationsTestCase<HighestPressureUlcerStage> validateHighestPressureUlcerStageClassCodeTestCase = new OperationsTestCase<HighestPressureUlcerStage>(
-			"validateHighestPressureUlcerStageClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHighestPressureUlcerStageClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -117,8 +117,8 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 	@Test
 	public void testValidateHighestPressureUlcerStageMoodCode() {
 		OperationsTestCase<HighestPressureUlcerStage> validateHighestPressureUlcerStageMoodCodeTestCase = new OperationsTestCase<HighestPressureUlcerStage>(
-			"validateHighestPressureUlcerStageMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHighestPressureUlcerStageMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -146,7 +146,7 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateHighestPressureUlcerStageId() {
@@ -163,7 +163,7 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(HighestPressureUlcerStage target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -185,8 +185,8 @@ public class HighestPressureUlcerStageTest extends CDAValidationTest {
 	@Test
 	public void testValidateHighestPressureUlcerStageCodeP() {
 		OperationsTestCase<HighestPressureUlcerStage> validateHighestPressureUlcerStageCodePTestCase = new OperationsTestCase<HighestPressureUlcerStage>(
-			"validateHighestPressureUlcerStageCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHighestPressureUlcerStageCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

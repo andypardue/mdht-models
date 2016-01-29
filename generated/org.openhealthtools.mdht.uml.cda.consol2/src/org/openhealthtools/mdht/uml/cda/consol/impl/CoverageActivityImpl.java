@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Coverage Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 */
 	public boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
-			this, diagnostics, context);
+		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -129,9 +126,8 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCoverageActivityPolicyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityPolicyActivity(this, diagnostics, context);
+	public boolean validateCoverageActivityEntryRelationship236(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivityOperations.validateCoverageActivityEntryRelationship236(this, diagnostics, context);
 	}
 
 	/**
@@ -139,9 +135,8 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PolicyActivity> getPolicyActivities() {
-		return CoverageActivityOperations.getPolicyActivities(this);
+	public boolean validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivityOperations.validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237(this, diagnostics, context);
 	}
 
 	/**
@@ -151,17 +146,17 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 */
 	@Override
 	public CoverageActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CoverageActivityImpl

@@ -31,8 +31,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -64,8 +62,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationCodeCodeSystems(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCodeCodeSystems(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCodeCodeSystems(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +73,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationCodeOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCodeOriginalText(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +84,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationOriginalTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationOriginalTextReference(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationOriginalTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +95,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +106,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationReferenceValue(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +117,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEncounterInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEncounterInversion(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEncounterInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -136,8 +128,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationServiceDeliveryLocationTypeCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationServiceDeliveryLocationTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -148,8 +139,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationInstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationInstructionsInversion(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationInstructionsInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +150,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -172,8 +161,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationClassCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +171,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 */
 	@Override
 	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMoodCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -204,8 +191,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 */
 	@Override
 	public boolean validateProcedureActivityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -216,8 +202,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationStatusCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -227,8 +212,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 */
 	@Override
 	public boolean validateProcedureActivityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationValue(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -239,8 +223,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEffectiveTime(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -251,8 +234,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationPriorityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPriorityCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPriorityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -263,8 +245,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationPriorityCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPriorityCodeP(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPriorityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -275,8 +256,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMethodCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMethodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -287,8 +267,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationTargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTargetSiteCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -299,8 +278,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationTargetSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTargetSiteCodeP(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationTargetSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -311,8 +289,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPerformer(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -323,44 +300,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationServiceDeliveryLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityObservationInstructions(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationInstructions(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityObservationIndication(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationIndication(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityObservationMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMedicationActivity(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationServiceDeliveryLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -371,8 +311,34 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationship(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationship(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservationEntryRelationship266(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationship266(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservationEntryRelationship268(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationship268(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityObservationEntryRelationship270(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationship270(this, diagnostics, context);
 	}
 
 	/**
@@ -383,8 +349,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationId(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationId(this, diagnostics, context);
 	}
 
 	/**
@@ -395,8 +360,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationName(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -407,8 +371,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecom(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -419,8 +382,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddr(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -431,8 +393,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityId(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityId(this, diagnostics, context);
 	}
 
 	/**
@@ -443,8 +404,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -455,8 +415,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -467,8 +426,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityRepresentedOrganization(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityRepresentedOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -479,8 +437,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -491,8 +448,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -503,8 +459,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -515,8 +470,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterId(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterId(this, diagnostics, context);
 	}
 
 	/**
@@ -527,8 +481,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationshipInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipInversionInd(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -539,8 +492,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipTypeCode(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -551,8 +503,7 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounter(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounter(
-			this, diagnostics, context);
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -560,9 +511,8 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
-		return ProcedureActivityObservationOperations.getServiceDeliveryLocations(this);
+	public boolean validateProcedureActivityObservationInstructionsEntryRelationshipInstructions267(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationInstructionsEntryRelationshipInstructions267(this, diagnostics, context);
 	}
 
 	/**
@@ -570,9 +520,8 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Instructions getInstructions() {
-		return ProcedureActivityObservationOperations.getInstructions(this);
+	public boolean validateProcedureActivityObservationIndicationEntryRelationshipIndication269(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationIndicationEntryRelationshipIndication269(this, diagnostics, context);
 	}
 
 	/**
@@ -580,19 +529,8 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication> getIndications() {
-		return ProcedureActivityObservationOperations.getIndications(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MedicationActivity> getMedicationActivities() {
-		return ProcedureActivityObservationOperations.getMedicationActivities(this);
+	public boolean validateProcedureActivityObservationMedicationActivityEntryRelationshipMedicationActivity271(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMedicationActivityEntryRelationshipMedicationActivity271(this, diagnostics, context);
 	}
 
 	/**
@@ -602,17 +540,17 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 */
 	@Override
 	public ProcedureActivityObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureActivityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureActivityObservationImpl

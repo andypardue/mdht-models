@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Comment Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -149,8 +147,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	@Override
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +157,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +167,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(this, diagnostics, context);
 	}
 
 	/**
@@ -182,8 +177,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(this, diagnostics, context);
 	}
 
 	/**
@@ -193,8 +187,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(this, diagnostics, context);
 	}
 
 	/**
@@ -204,8 +197,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(this, diagnostics, context);
 	}
 
 	/**
@@ -215,8 +207,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -226,8 +217,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	public boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(this, diagnostics, context);
 	}
 
 	/**
@@ -238,8 +228,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	@Override
 	public boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -250,8 +239,7 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	@Override
 	public boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(
-			this, diagnostics, context);
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(this, diagnostics, context);
 	}
 
 	/**
@@ -303,17 +291,17 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 */
 	@Override
 	public CommentActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CommentActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CommentActivityImpl

@@ -83,26 +83,28 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 
 	public static boolean validateCourseOfCareSectionTemplateId(CourseOfCareSection courseOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_COURSE_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COURSE_OF_CARE_SECTION);
 			try {
 				VALIDATE_COURSE_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COURSE_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			courseOfCareSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(courseOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionTemplateId"),
-					new Object[] { courseOfCareSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionTemplateId"),
+						 new Object [] { courseOfCareSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -116,9 +118,9 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '8648-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '8648-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCourseOfCareSectionCode(CourseOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Course Of Care Section Code</em>}' invariant operation.
@@ -144,26 +146,28 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 
 	public static boolean validateCourseOfCareSectionCode(CourseOfCareSection courseOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COURSE_OF_CARE_SECTION);
 			try {
 				VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			courseOfCareSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(courseOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionCode"),
-					new Object[] { courseOfCareSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionCode"),
+						 new Object [] { courseOfCareSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -203,26 +207,28 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 
 	public static boolean validateCourseOfCareSectionCodeP(CourseOfCareSection courseOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_COURSE_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COURSE_OF_CARE_SECTION);
 			try {
 				VALIDATE_COURSE_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COURSE_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			courseOfCareSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(courseOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionCodeP"),
-					new Object[] { courseOfCareSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionCodeP"),
+						 new Object [] { courseOfCareSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -262,26 +268,28 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 
 	public static boolean validateCourseOfCareSectionTitle(CourseOfCareSection courseOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_COURSE_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COURSE_OF_CARE_SECTION);
 			try {
 				VALIDATE_COURSE_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COURSE_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			courseOfCareSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(courseOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionTitle"),
-					new Object[] { courseOfCareSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionTitle"),
+						 new Object [] { courseOfCareSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -321,26 +329,28 @@ public class CourseOfCareSectionOperations extends SectionOperations {
 
 	public static boolean validateCourseOfCareSectionText(CourseOfCareSection courseOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_COURSE_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COURSE_OF_CARE_SECTION);
 			try {
 				VALIDATE_COURSE_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COURSE_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			courseOfCareSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COURSE_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(courseOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionText"),
-					new Object[] { courseOfCareSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.COURSE_OF_CARE_SECTION__COURSE_OF_CARE_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("CourseOfCareSectionCourseOfCareSectionText"),
+						 new Object [] { courseOfCareSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -10,14 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -26,7 +25,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
 
 /**
  * <!-- begin-user-doc -->
@@ -57,28 +55,26 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSocialHistoryObservationOriginalText() {
 		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationOriginalTextTestCase = new OperationsTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationOriginalText", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SocialHistoryObservation target) {
-				target.init();
-				CD objCode = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(objCode);
+
 			}
 
 			@Override
 			protected void updateToPass(SocialHistoryObservation target) {
-				target.setClassCode(null);
-				CD objCode = DatatypesFactory.eINSTANCE.createCD();
-				objCode.setOriginalText(DatatypesFactory.eINSTANCE.createED());
-				target.setCode(objCode);
+				target.init();
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
 
 			}
 
@@ -96,34 +92,23 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSocialHistoryObservationReference() {
 		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationReferenceTestCase = new OperationsTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationReference",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationReference", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SocialHistoryObservation target) {
-				target.init();
-				CD objCode = DatatypesFactory.eINSTANCE.createCD();
-				ED objOrigText = DatatypesFactory.eINSTANCE.createED();
-				objCode.setOriginalText(objOrigText);
-				target.setCode(objCode);
 
 			}
 
 			@Override
 			protected void updateToPass(SocialHistoryObservation target) {
-				CD objCode = DatatypesFactory.eINSTANCE.createCD();
-				ED objOrigText = DatatypesFactory.eINSTANCE.createED();
-				TEL objReference = DatatypesFactory.eINSTANCE.createTEL();
-				objReference.setValue("#test");
-				objOrigText.setReference(objReference);
-				objCode.setOriginalText(objOrigText);
-				target.setCode(objCode);
+				target.init();
 
 			}
 
@@ -141,43 +126,27 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSocialHistoryObservationReferenceValue() {
-		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationReferenceValueTestCase = new NarrativeReferenceTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationReferenceValueTestCase = new OperationsTestCase<SocialHistoryObservation>(
+			"validateSocialHistoryObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SocialHistoryObservation target) {
-				target.init();
-				// CD code = DatatypesFactory.eINSTANCE.createCD();
-				// ED ot = DatatypesFactory.eINSTANCE.createED();
-				// TEL ref = DatatypesFactory.eINSTANCE.createTEL();
-				// ot.setReference(ref);
-				// code.setOriginalText(ot);
-				// target.setCode(code);
-				//
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular adverse reaction.");
-
-				// add a reference to the section text
-				target.setCode(createCDWithOriginalTextReference("Some sample text", "#1.2.3.4"));
 
 			}
 
 			@Override
 			protected void updateToPass(SocialHistoryObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular adverse reaction.");
+				target.init();
 
-				// add a reference to the section text
-				target.setCode(createCDWithOriginalTextReference("Some sample text", "#1.2.3.4"));
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -199,8 +168,8 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservationTemplateId() {
 		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationTemplateIdTestCase = new OperationsTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -233,8 +202,8 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservationClassCode() {
 		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationClassCodeTestCase = new OperationsTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -267,8 +236,8 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservationMoodCode() {
 		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationMoodCodeTestCase = new OperationsTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -333,7 +302,7 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSocialHistoryObservationCode() {
@@ -352,10 +321,15 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCodeSystem("2.16.840.1.113883.6.96");
-				cd.setCode("256235009");
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(SocialHistoryObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP", passToken);
 			}
 
 			@Override
@@ -406,13 +380,13 @@ public class SocialHistoryObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated 
+	* @generated
 	*/
 	@Test
 	public void testValidateSocialHistoryObservationStatusCode() {
 		OperationsTestCase<SocialHistoryObservation> validateSocialHistoryObservationStatusCodeTestCase = new OperationsTestCase<SocialHistoryObservation>(
-			"validateSocialHistoryObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

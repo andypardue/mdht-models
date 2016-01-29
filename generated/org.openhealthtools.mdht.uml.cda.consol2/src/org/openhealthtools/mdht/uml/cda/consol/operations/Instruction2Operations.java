@@ -82,25 +82,28 @@ public class Instruction2Operations extends InstructionsOperations {
 
 	public static boolean validateInstructionsTemplateId(Instruction2 instruction2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTION2);
 			try {
 				VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(instruction2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("Instruction2InstructionsTemplateId"),
-					new Object[] { instruction2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("Instruction2InstructionsTemplateId"),
+						 new Object [] { instruction2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -140,24 +143,28 @@ public class Instruction2Operations extends InstructionsOperations {
 
 	public static boolean validateInstructionsText(Instruction2 instruction2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTION2);
 			try {
 				VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(instruction2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEXT,
-					ConsolPlugin.INSTANCE.getString("Instruction2InstructionsText"), new Object[] { instruction2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEXT,
+						 ConsolPlugin.INSTANCE.getString("Instruction2InstructionsText"),
+						 new Object [] { instruction2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;

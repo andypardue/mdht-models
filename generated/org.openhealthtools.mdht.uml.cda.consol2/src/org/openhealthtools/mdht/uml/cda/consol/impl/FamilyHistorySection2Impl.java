@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistorySection2O
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -54,8 +52,17 @@ public class FamilyHistorySection2Impl extends FamilyHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<FamilyHistoryOrganizer2> getConsolFamilyHistoryOrganizer2s() {
-		return FamilyHistorySection2Operations.getConsolFamilyHistoryOrganizer2s(this);
+	public boolean validateFamilyHistorySection2Entry1546(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySection2Operations.validateFamilyHistorySection2Entry1546(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistorySection2FamilyHistoryOrganizer2EntryFamilyHistoryOrganizer21547(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySection2Operations.validateFamilyHistorySection2FamilyHistoryOrganizer2EntryFamilyHistoryOrganizer21547(this, diagnostics, context);
 	}
 
 	/**
@@ -74,28 +81,18 @@ public class FamilyHistorySection2Impl extends FamilyHistorySectionImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateFamilyHistorySectionFamilyHistory(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistorySection2Operations.validateFamilyHistorySectionFamilyHistory(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public FamilyHistorySection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public FamilyHistorySection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistorySection2Impl

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedication2Op
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Admission Medication2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class AdmissionMedication2Impl extends AdmissionMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
-		return AdmissionMedication2Operations.getConsolMedicationActivity2s(this);
+	public boolean validateAdmissionMedication2EntryRelationship886(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdmissionMedication2Operations.validateAdmissionMedication2EntryRelationship886(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdmissionMedication2Operations.validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887(this, diagnostics, context);
 	}
 
 	/**
@@ -99,29 +105,18 @@ public class AdmissionMedication2Impl extends AdmissionMedicationImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdmissionMedicationMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdmissionMedication2Operations.validateAdmissionMedicationMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public AdmissionMedication2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdmissionMedication2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdmissionMedication2Impl

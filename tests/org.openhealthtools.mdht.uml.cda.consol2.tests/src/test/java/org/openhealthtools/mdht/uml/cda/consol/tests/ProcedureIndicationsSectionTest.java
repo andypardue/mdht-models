@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#validateProcedureIndicationsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#validateProcedureIndicationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#validateProcedureIndicationsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#validateProcedureIndicationsSectionIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Indication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#getIndications() <em>Get Indications</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#validateProcedureIndicationsSectionEntry306(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Entry306</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection#validateProcedureIndicationsSectionIndicationEntryIndication307(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Indications Section Indication Entry Indication307</em>}</li>
  * </ul>
  * </p>
  *
@@ -54,8 +54,8 @@ public class ProcedureIndicationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureIndicationsSectionTemplateId() {
 		OperationsTestCase<ProcedureIndicationsSection> validateProcedureIndicationsSectionTemplateIdTestCase = new OperationsTestCase<ProcedureIndicationsSection>(
-			"validateProcedureIndicationsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureIndicationsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +122,8 @@ public class ProcedureIndicationsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureIndicationsSectionCodeP() {
 		OperationsTestCase<ProcedureIndicationsSection> validateProcedureIndicationsSectionCodePTestCase = new OperationsTestCase<ProcedureIndicationsSection>(
-			"validateProcedureIndicationsSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureIndicationsSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,10 +191,81 @@ public class ProcedureIndicationsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateProcedureIndicationsSectionEntry306() {
+		OperationsTestCase<ProcedureIndicationsSection> validateProcedureIndicationsSectionEntry306TestCase = new OperationsTestCase<ProcedureIndicationsSection>(
+			"validateProcedureIndicationsSectionEntry306", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_ENTRY306__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureIndicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProcedureIndicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionEntry306(
+					(ProcedureIndicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureIndicationsSectionEntry306TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateProcedureIndicationsSectionIndicationEntryIndication307() {
+		OperationsTestCase<ProcedureIndicationsSection> validateProcedureIndicationsSectionIndicationEntryIndication307TestCase = new OperationsTestCase<ProcedureIndicationsSection>(
+			"validateProcedureIndicationsSectionIndicationEntryIndication307",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_INDICATION_ENTRY_INDICATION307__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProcedureIndicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProcedureIndicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionIndicationEntryIndication307(
+					(ProcedureIndicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProcedureIndicationsSectionIndicationEntryIndication307TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateProcedureIndicationsSectionTitle() {
 		OperationsTestCase<ProcedureIndicationsSection> validateProcedureIndicationsSectionTitleTestCase = new OperationsTestCase<ProcedureIndicationsSection>(
-			"validateProcedureIndicationsSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureIndicationsSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -221,52 +292,6 @@ public class ProcedureIndicationsSectionTest extends CDAValidationTest {
 		};
 
 		validateProcedureIndicationsSectionTitleTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateProcedureIndicationsSectionIndication() {
-		OperationsTestCase<ProcedureIndicationsSection> validateProcedureIndicationsSectionIndicationTestCase = new OperationsTestCase<ProcedureIndicationsSection>(
-			"validateProcedureIndicationsSectionIndication",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ProcedureIndicationsSection target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(ProcedureIndicationsSection target) {
-
-				target.addObservation(ConsolFactory.eINSTANCE.createIndication().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ProcedureIndicationsSectionOperations.validateProcedureIndicationsSectionIndication(
-					(ProcedureIndicationsSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateProcedureIndicationsSectionIndicationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetIndications() {
-
-		ProcedureIndicationsSection target = objectFactory.create();
-		target.getIndications();
-
 	}
 
 	/**

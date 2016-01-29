@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionEntri
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,9 +57,17 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<VitalSignsOrganizer2> getConsolVitalSignsOrganizer2s() {
-		return VitalSignsSectionEntriesOptional2Operations.getConsolVitalSignsOrganizer2s(this);
+	public boolean validateVitalSignsSectionEntriesOptional2Entry1172(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptional2Entry1172(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsSectionEntriesOptional2VitalSignsOrganizer2EntryVitalSignsOrganizer21173(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptional2VitalSignsOrganizer2EntryVitalSignsOrganizer21173(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +78,7 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +89,7 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -95,20 +99,7 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	 */
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
-			this, diagnostics, context);
+		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -118,17 +109,17 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	 */
 	@Override
 	public VitalSignsSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsSectionEntriesOptional2Impl

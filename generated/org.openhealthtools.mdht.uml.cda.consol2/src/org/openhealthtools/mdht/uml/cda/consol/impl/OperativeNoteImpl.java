@@ -41,8 +41,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteOperation
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Operative Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -91,170 +89,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateOperativeNoteAnesthesiaSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteAnesthesiaSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteComplicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteComplicationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNotePostoperativeDiagnosisSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNotePostoperativeDiagnosisSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNotePreoperativeDiagnosisSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNotePreoperativeDiagnosisSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureEstimatedBloodLossSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureEstimatedBloodLossSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureFindingsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureFindingsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureSpecimensTakenSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureSpecimensTakenSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureDescriptionSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureDescriptionSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureImplantsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureImplantsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNoteOperativeNoteFluidSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteOperativeNoteFluidSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteOperativeNoteSurgicalProcedureSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNotePlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNotePlanOfCareSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNotePlannedProcedureSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNotePlannedProcedureSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureDispositionSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureDispositionSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteProcedureIndicationsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteProcedureIndicationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateOperativeNoteSurgicalDrainsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteSurgicalDrainsSection(this, diagnostics, context);
+	public boolean validateOperativeNoteComponent396(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponent396(this, diagnostics, context);
 	}
 
 	/**
@@ -265,8 +101,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -277,8 +112,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -289,8 +123,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -301,8 +134,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -313,8 +145,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventProcedureCodes(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventProcedureCodes(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventProcedureCodes(this, diagnostics, context);
 	}
 
 	/**
@@ -325,8 +156,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow(this, diagnostics, context);
 	}
 
 	/**
@@ -337,8 +167,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -349,8 +178,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth(this, diagnostics, context);
 	}
 
 	/**
@@ -361,8 +189,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay(this, diagnostics, context);
 	}
 
 	/**
@@ -373,8 +200,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute(this, diagnostics, context);
 	}
 
 	/**
@@ -385,8 +211,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond(this, diagnostics, context);
 	}
 
 	/**
@@ -397,8 +222,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset(this, diagnostics, context);
 	}
 
 	/**
@@ -420,8 +244,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTime(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -432,8 +255,7 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	@Override
 	public boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(
-			this, diagnostics, context);
+		return OperativeNoteOperations.validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -452,9 +274,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public AnesthesiaSection getAnesthesiaSection() {
-		return OperativeNoteOperations.getAnesthesiaSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399(this, diagnostics, context);
 	}
 
 	/**
@@ -462,9 +283,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ComplicationsSection getComplicationsSection() {
-		return OperativeNoteOperations.getComplicationsSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentComplicationsSection401(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentComplicationsSection401(this, diagnostics, context);
 	}
 
 	/**
@@ -472,9 +292,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PostoperativeDiagnosisSection getPostoperativeDiagnosisSection() {
-		return OperativeNoteOperations.getPostoperativeDiagnosisSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403(this, diagnostics, context);
 	}
 
 	/**
@@ -482,9 +301,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PreoperativeDiagnosisSection getPreoperativeDiagnosisSection() {
-		return OperativeNoteOperations.getPreoperativeDiagnosisSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405(this, diagnostics, context);
 	}
 
 	/**
@@ -492,9 +310,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection() {
-		return OperativeNoteOperations.getProcedureEstimatedBloodLossSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407(this, diagnostics, context);
 	}
 
 	/**
@@ -502,9 +319,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureFindingsSection getProcedureFindingsSection() {
-		return OperativeNoteOperations.getProcedureFindingsSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409(this, diagnostics, context);
 	}
 
 	/**
@@ -512,9 +328,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection() {
-		return OperativeNoteOperations.getProcedureSpecimensTakenSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411(this, diagnostics, context);
 	}
 
 	/**
@@ -522,9 +337,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureDescriptionSection getProcedureDescriptionSection() {
-		return OperativeNoteOperations.getProcedureDescriptionSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413(this, diagnostics, context);
 	}
 
 	/**
@@ -532,9 +346,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureImplantsSection getProcedureImplantsSection() {
-		return OperativeNoteOperations.getProcedureImplantsSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415(this, diagnostics, context);
 	}
 
 	/**
@@ -542,9 +355,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public OperativeNoteFluidSection getOperativeNoteFluidSection() {
-		return OperativeNoteOperations.getOperativeNoteFluidSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417(this, diagnostics, context);
 	}
 
 	/**
@@ -552,9 +364,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public OperativeNoteSurgicalProcedureSection getOperativeNoteSurgicalProcedureSection() {
-		return OperativeNoteOperations.getOperativeNoteSurgicalProcedureSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419(this, diagnostics, context);
 	}
 
 	/**
@@ -562,9 +373,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PlanOfCareSection getPlanOfCareSection() {
-		return OperativeNoteOperations.getPlanOfCareSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421(this, diagnostics, context);
 	}
 
 	/**
@@ -572,9 +382,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public PlannedProcedureSection getPlannedProcedureSection() {
-		return OperativeNoteOperations.getPlannedProcedureSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423(this, diagnostics, context);
 	}
 
 	/**
@@ -582,9 +391,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureDispositionSection getProcedureDispositionSection() {
-		return OperativeNoteOperations.getProcedureDispositionSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425(this, diagnostics, context);
 	}
 
 	/**
@@ -592,9 +400,8 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProcedureIndicationsSection getProcedureIndicationsSection() {
-		return OperativeNoteOperations.getProcedureIndicationsSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427(this, diagnostics, context);
 	}
 
 	/**
@@ -602,9 +409,161 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SurgicalDrainsSection getSurgicalDrainsSection() {
-		return OperativeNoteOperations.getSurgicalDrainsSection(this);
+	public boolean validateOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyAnesthesiaSection398(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyAnesthesiaSection398(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyComplicationsSection400(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyComplicationsSection400(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureFindingsSection408(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureFindingsSection408(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureDescriptionSection412(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureDescriptionSection412(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureImplantsSection414(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureImplantsSection414(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyOperativeNoteFluidSection416(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyOperativeNoteFluidSection416(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyPlanOfCareSection420(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyPlanOfCareSection420(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyPlannedProcedureSection422(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyPlannedProcedureSection422(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureDispositionSection424(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureDispositionSection424(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodyProcedureIndicationsSection426(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodyProcedureIndicationsSection426(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBodySurgicalDrainsSection428(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBodySurgicalDrainsSection428(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteComponentStructuredBody397(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteComponentStructuredBody397(this, diagnostics, context);
 	}
 
 	/**
@@ -634,17 +593,17 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	@Override
 	public OperativeNote init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public OperativeNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // OperativeNoteImpl

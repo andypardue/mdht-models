@@ -20,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreconditionForSubstanceAdministrationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
@@ -52,7 +51,8 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 	public void testValidatePreconditionForSubstanceAdministrationTemplateId() {
 		OperationsTestCase<PreconditionForSubstanceAdministration> validatePreconditionForSubstanceAdministrationTemplateIdTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration>(
 			"validatePreconditionForSubstanceAdministrationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -80,13 +80,14 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePreconditionForSubstanceAdministrationCode() {
 		OperationsTestCase<PreconditionForSubstanceAdministration> validatePreconditionForSubstanceAdministrationCodeTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration>(
 			"validatePreconditionForSubstanceAdministrationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -97,7 +98,7 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 			@Override
 			protected void updateToPass(PreconditionForSubstanceAdministration target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
@@ -120,7 +121,8 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 	public void testValidatePreconditionForSubstanceAdministrationText() {
 		OperationsTestCase<PreconditionForSubstanceAdministration> validatePreconditionForSubstanceAdministrationTextTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration>(
 			"validatePreconditionForSubstanceAdministrationText",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -151,13 +153,14 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidatePreconditionForSubstanceAdministrationValue() {
 		OperationsTestCase<PreconditionForSubstanceAdministration> validatePreconditionForSubstanceAdministrationValueTestCase = new OperationsTestCase<PreconditionForSubstanceAdministration>(
 			"validatePreconditionForSubstanceAdministrationValue",
-			operationsForOCL.getOCLValue("VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -168,8 +171,11 @@ public class PreconditionForSubstanceAdministrationTest extends CDAValidationTes
 			@Override
 			protected void updateToPass(PreconditionForSubstanceAdministration target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4");
-				target.setValue(value);
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+				//
+
 			}
 
 			@Override

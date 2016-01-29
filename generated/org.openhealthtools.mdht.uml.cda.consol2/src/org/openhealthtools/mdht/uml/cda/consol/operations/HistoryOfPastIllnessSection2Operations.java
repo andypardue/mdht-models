@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -39,11 +41,11 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#getConsolProblemObservation2s() <em>Get Consol Problem Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSection2Entry1080(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Entry1080</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Problem Observation2 Entry Problem Observation21081</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection2#validateHistoryOfPastIllnessSectionProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Problem Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,48 +62,129 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolProblemObservation2s(HistoryOfPastIllnessSection2) <em>Get Consol Problem Observation2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateHistoryOfPastIllnessSection2Entry1080(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Entry1080</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProblemObservation2s(HistoryOfPastIllnessSection2)
+	 * @see #validateHistoryOfPastIllnessSection2Entry1080(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)).oclAsType(consol::ProblemObservation2)";
+	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolProblemObservation2s(HistoryOfPastIllnessSection2) <em>Get Consol Problem Observation2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateHistoryOfPastIllnessSection2Entry1080(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Entry1080</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolProblemObservation2s(HistoryOfPastIllnessSection2)
+	 * @see #validateHistoryOfPastIllnessSection2Entry1080(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param historyOfPastIllnessSection2 The receiving '<em><b>History Of Past Illness Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<ProblemObservation2> getConsolProblemObservation2s(
-			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2) {
-		if (GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY == null) {
+	
+	public static  boolean validateHistoryOfPastIllnessSection2Entry1080(HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2,
-				ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2.getEAllOperations().get(62));
+			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(historyOfPastIllnessSection2);
-		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(historyOfPastIllnessSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION2_ENTRY1080,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2Entry1080"),
+						 new Object [] { historyOfPastIllnessSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateHistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Problem Observation2 Entry Problem Observation21081</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section2 Problem Observation2 Entry Problem Observation21081</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param historyOfPastIllnessSection2 The receiving '<em><b>History Of Past Illness Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateHistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081(HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(historyOfPastIllnessSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION2_PROBLEM_OBSERVATION2_ENTRY_PROBLEM_OBSERVATION21081,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSection2ProblemObservation2EntryProblemObservation21081"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -139,27 +222,28 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionTemplateId(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
 				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyOfPastIllnessSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(historyOfPastIllnessSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionTemplateId"),
-					new Object[] { historyOfPastIllnessSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionTemplateId"),
+						 new Object [] { historyOfPastIllnessSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -200,26 +284,28 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionCodeP(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
 				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyOfPastIllnessSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(historyOfPastIllnessSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP"),
-					new Object[] { historyOfPastIllnessSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCodeP"),
+						 new Object [] { historyOfPastIllnessSection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -231,7 +317,7 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 				}
 				passToken.add(historyOfPastIllnessSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -245,9 +331,9 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryOfPastIllnessSectionCode(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code</em>}' invariant operation.
@@ -274,96 +360,34 @@ public class HistoryOfPastIllnessSection2Operations extends HistoryOfPastIllness
 	public static boolean validateHistoryOfPastIllnessSectionCode(
 			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(historyOfPastIllnessSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
 			try {
 				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyOfPastIllnessSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(historyOfPastIllnessSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode"),
-					new Object[] { historyOfPastIllnessSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionCode"),
+						 new Object [] { historyOfPastIllnessSection2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateHistoryOfPastIllnessSectionProblemObservation(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Problem Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfPastIllnessSectionProblemObservation(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::ProblemObservation2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateHistoryOfPastIllnessSectionProblemObservation(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Problem Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateHistoryOfPastIllnessSectionProblemObservation(HistoryOfPastIllnessSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param historyOfPastIllnessSection2 The receiving '<em><b>History Of Past Illness Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateHistoryOfPastIllnessSectionProblemObservation(
-			HistoryOfPastIllnessSection2 historyOfPastIllnessSection2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION2);
-			try {
-				VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyOfPastIllnessSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION2__HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSection2HistoryOfPastIllnessSectionProblemObservation"),
-					new Object[] { historyOfPastIllnessSection2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

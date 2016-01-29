@@ -58,7 +58,7 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSmokingStatusMeaningfulUse2Id(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Meaningful Use2 Id</em>}' invariant operation.
@@ -85,26 +85,28 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusMeaningfulUse2Id(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_ID,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2Id"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_ID,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2Id"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -145,28 +147,28 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusMeaningfulUse2AuthorParticipation(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2AuthorParticipation"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2AuthorParticipation"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -207,26 +209,28 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationTemplateId(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationTemplateId"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationTemplateId"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -267,26 +271,28 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationCodeP(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationCodeP"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationCodeP"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -298,7 +304,7 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 				}
 				passToken.add(smokingStatusMeaningfulUse2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -312,9 +318,9 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '72166-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '72166-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationCode(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code</em>}' invariant operation.
@@ -340,34 +346,34 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 
 	public static boolean validateSmokingStatusObservationCode(SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservationCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(smokingStatusMeaningfulUse2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationCode"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationCode"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -408,26 +414,28 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationValueP(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationValueP"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_VALUE_P,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationValueP"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -439,7 +447,7 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 				}
 				passToken.add(smokingStatusMeaningfulUse2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -453,9 +461,9 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '449868002' or value.code = '428041000124106' or value.code = '8517006' or value.code = '266919005' or value.code = '77176002' or value.code = '266927001' or value.code = '428071000124103' or value.code = '428061000124105')))";
+	protected static final String VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '449868002' or value.code = '428041000124106' or value.code = '8517006' or value.code = '266919005' or value.code = '77176002' or value.code = '266927001' or value.code = '428071000124103' or value.code = '428061000124105')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSmokingStatusObservationValue(SmokingStatusMeaningfulUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}' invariant operation.
@@ -482,34 +490,34 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 	public static boolean validateSmokingStatusObservationValue(
 			SmokingStatusMeaningfulUse2 smokingStatusMeaningfulUse2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservationValueP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservationValueP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(smokingStatusMeaningfulUse2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SMOKING_STATUS_MEANINGFUL_USE2);
 			try {
 				VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			smokingStatusMeaningfulUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(smokingStatusMeaningfulUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationValue"),
-					new Object[] { smokingStatusMeaningfulUse2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationValue"),
+						 new Object [] { smokingStatusMeaningfulUse2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;

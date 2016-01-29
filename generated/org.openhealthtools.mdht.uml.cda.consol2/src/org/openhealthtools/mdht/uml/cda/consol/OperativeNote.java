@@ -24,11 +24,14 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getOperativeNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent' templateId.root='2.16.840.1.113883.10.20.22.1.7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.info='OperativeNoteProcedureImplantsSection OperativeNoteOperativeNoteFluidSection OperativeNoteOperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection OperativeNoteDocumentationOfServiceEventPreciseToTheSecond' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventPreciseToTheSecond OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent' constraints.validation.warning='OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP OperativeNoteDocumentationOf OperativeNoteComponent396 OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent OperativeNoteComponentStructuredBodyComponentAnesthesiaSection399 OperativeNoteComponentStructuredBodyComponentComplicationsSection401 OperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403 OperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405 OperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407 OperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409 OperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411 OperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413 OperativeNoteComponentStructuredBodyAnesthesiaSection398 OperativeNoteComponentStructuredBodyComplicationsSection400 OperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402 OperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404 OperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406 OperativeNoteComponentStructuredBodyProcedureFindingsSection408 OperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410 OperativeNoteComponentStructuredBodyProcedureDescriptionSection412 OperativeNoteComponentStructuredBodyProcedureImplantsSection414 OperativeNoteComponentStructuredBodyOperativeNoteFluidSection416 OperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418 OperativeNoteComponentStructuredBodyPlanOfCareSection420 OperativeNoteComponentStructuredBodyPlannedProcedureSection422 OperativeNoteComponentStructuredBodyProcedureDispositionSection424 OperativeNoteComponentStructuredBodyProcedureIndicationsSection426 OperativeNoteComponentStructuredBodySurgicalDrainsSection428 OperativeNoteComponentStructuredBody397' templateId.root='2.16.840.1.113883.10.20.22.1.7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventPreciseToTheSecond OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEvent OperativeNoteComponentStructuredBodyComponentAnesthesiaSection399 OperativeNoteComponentStructuredBodyComponentComplicationsSection401 OperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403 OperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405 OperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407 OperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409 OperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411 OperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413 OperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415 OperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417 OperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419 OperativeNoteComponentStructuredBodyComponentPlanOfCareSection421 OperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423 OperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425 OperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427 OperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429 OperativeNoteComponentStructuredBodyAnesthesiaSection398 OperativeNoteComponentStructuredBodyComplicationsSection400 OperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402 OperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404 OperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406 OperativeNoteComponentStructuredBodyProcedureFindingsSection408 OperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410 OperativeNoteComponentStructuredBodyProcedureDescriptionSection412 OperativeNoteComponentStructuredBodyProcedureImplantsSection414 OperativeNoteComponentStructuredBodyOperativeNoteFluidSection416 OperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418 OperativeNoteComponentStructuredBodyPlanOfCareSection420 OperativeNoteComponentStructuredBodyPlannedProcedureSection422 OperativeNoteComponentStructuredBodyProcedureDispositionSection424 OperativeNoteComponentStructuredBodyProcedureIndicationsSection426 OperativeNoteComponentStructuredBodySurgicalDrainsSection428 OperativeNoteComponentStructuredBody397' constraints.validation.warning='OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='OperativeNoteDocumentationOfServiceEventPreciseToTheSecond OperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415 OperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417 OperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419 OperativeNoteComponentStructuredBodyComponentPlanOfCareSection421 OperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423 OperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425 OperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427 OperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOf constraints.validation.error='OperativeNoteDocumentationOfServiceEvent'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEvent constraints.validation.error='OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventPreciseToTheDay OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEventPrimaryPerformer OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode ServiceEventOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity' constraints.validation.warning='OperativeNoteDocumentationOfServiceEventPreciseToTheMinute OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='OperativeNoteDocumentationOfServiceEventPreciseToTheSecond' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode ServiceEventOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer typeCode='PPRF' constraints.validation.error='OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.error='OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteComponent constraints.validation.error='OperativeNoteComponentStructuredBody397 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentComplicationsSection401 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413 ComponentOperativeNoteComponentStructuredBodyAnesthesiaSection398 ComponentOperativeNoteComponentStructuredBodyComplicationsSection400 ComponentOperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402 ComponentOperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404 ComponentOperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406 ComponentOperativeNoteComponentStructuredBodyProcedureFindingsSection408 ComponentOperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410 ComponentOperativeNoteComponentStructuredBodyProcedureDescriptionSection412 ComponentOperativeNoteComponentStructuredBodyProcedureImplantsSection414 ComponentOperativeNoteComponentStructuredBodyOperativeNoteFluidSection416 ComponentOperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418 ComponentOperativeNoteComponentStructuredBodyPlanOfCareSection420 ComponentOperativeNoteComponentStructuredBodyPlannedProcedureSection422 ComponentOperativeNoteComponentStructuredBodyProcedureDispositionSection424 ComponentOperativeNoteComponentStructuredBodyProcedureIndicationsSection426 ComponentOperativeNoteComponentStructuredBodySurgicalDrainsSection428' constraints.validation.query='ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentComplicationsSection401 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429 ComponentOperativeNoteComponentStructuredBodyAnesthesiaSection398 ComponentOperativeNoteComponentStructuredBodyComplicationsSection400 ComponentOperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402 ComponentOperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404 ComponentOperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406 ComponentOperativeNoteComponentStructuredBodyProcedureFindingsSection408 ComponentOperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410 ComponentOperativeNoteComponentStructuredBodyProcedureDescriptionSection412 ComponentOperativeNoteComponentStructuredBodyProcedureImplantsSection414 ComponentOperativeNoteComponentStructuredBodyOperativeNoteFluidSection416 ComponentOperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418 ComponentOperativeNoteComponentStructuredBodyPlanOfCareSection420 ComponentOperativeNoteComponentStructuredBodyPlannedProcedureSection422 ComponentOperativeNoteComponentStructuredBodyProcedureDispositionSection424 ComponentOperativeNoteComponentStructuredBodyProcedureIndicationsSection426 ComponentOperativeNoteComponentStructuredBodySurgicalDrainsSection428' constraints.validation.info='ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427 ComponentStructuredBodyOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteComponentStructuredBody constraints.validation.error='OperativeNoteComponentStructuredBodyAnesthesiaSection398 OperativeNoteComponentStructuredBodyComplicationsSection400 OperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402 OperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404 OperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406 OperativeNoteComponentStructuredBodyProcedureFindingsSection408 OperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410 OperativeNoteComponentStructuredBodyProcedureDescriptionSection412 OperativeNoteComponentStructuredBodyProcedureImplantsSection414 OperativeNoteComponentStructuredBodyOperativeNoteFluidSection416 OperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418 OperativeNoteComponentStructuredBodyPlanOfCareSection420 OperativeNoteComponentStructuredBodyPlannedProcedureSection422 OperativeNoteComponentStructuredBodyProcedureDispositionSection424 OperativeNoteComponentStructuredBodyProcedureIndicationsSection426 OperativeNoteComponentStructuredBodySurgicalDrainsSection428 StructuredBodyOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399 StructuredBodyOperativeNoteComponentStructuredBodyComponentComplicationsSection401 StructuredBodyOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403 StructuredBodyOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413' constraints.validation.query='StructuredBodyOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399 StructuredBodyOperativeNoteComponentStructuredBodyComponentComplicationsSection401 StructuredBodyOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403 StructuredBodyOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415 StructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417 StructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419 StructuredBodyOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421 StructuredBodyOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427 StructuredBodyOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429' constraints.validation.info='StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415 StructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417 StructuredBodyOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419 StructuredBodyOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421 StructuredBodyOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425 StructuredBodyOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427 StructuredBodyOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteComponentStructuredBodyComponent constraints.validation.error='OperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413' constraints.validation.info='OperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429'"
  * @generated
  */
 public interface OperativeNote extends GeneralHeaderConstraints {
@@ -63,10 +66,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))'"
 	 * @generated
 	 */
-	boolean validateOperativeNoteAnesthesiaSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNoteComponent396(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -75,189 +78,7 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteComplicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNotePostoperativeDiagnosisSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNotePreoperativeDiagnosisSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureEstimatedBloodLossSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureFindingsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureSpecimensTakenSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureDescriptionSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureImplantsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteOperativeNoteFluidSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteOperativeNoteSurgicalProcedureSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNotePlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNotePlannedProcedureSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureDispositionSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteProcedureIndicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection))'"
-	 * @generated
-	 */
-	boolean validateOperativeNoteSurgicalDrainsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode(
@@ -460,146 +281,398 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->any(true).oclAsType(consol::AnesthesiaSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection)))'"
 	 * @generated
 	 */
-	AnesthesiaSection getAnesthesiaSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentAnesthesiaSection399(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))->asSequence()->any(true).oclAsType(consol::ComplicationsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection)))'"
 	 * @generated
 	 */
-	ComplicationsSection getComplicationsSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentComplicationsSection401(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection)))'"
 	 * @generated
 	 */
-	PostoperativeDiagnosisSection getPostoperativeDiagnosisSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentPostoperativeDiagnosisSection403(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosisSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection)))'"
 	 * @generated
 	 */
-	PreoperativeDiagnosisSection getPreoperativeDiagnosisSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentPreoperativeDiagnosisSection405(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->any(true).oclAsType(consol::ProcedureEstimatedBloodLossSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection)))'"
 	 * @generated
 	 */
-	ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureEstimatedBloodLossSection407(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))->asSequence()->any(true).oclAsType(consol::ProcedureFindingsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection)))'"
 	 * @generated
 	 */
-	ProcedureFindingsSection getProcedureFindingsSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureFindingsSection409(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))->asSequence()->any(true).oclAsType(consol::ProcedureSpecimensTakenSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection)))'"
 	 * @generated
 	 */
-	ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureSpecimensTakenSection411(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDescriptionSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection)))'"
 	 * @generated
 	 */
-	ProcedureDescriptionSection getProcedureDescriptionSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureDescriptionSection413(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))->asSequence()->any(true).oclAsType(consol::ProcedureImplantsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection)))'"
 	 * @generated
 	 */
-	ProcedureImplantsSection getProcedureImplantsSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureImplantsSection415(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection))->asSequence()->any(true).oclAsType(consol::OperativeNoteFluidSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection)))'"
 	 * @generated
 	 */
-	OperativeNoteFluidSection getOperativeNoteFluidSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentOperativeNoteFluidSection417(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection))->asSequence()->any(true).oclAsType(consol::OperativeNoteSurgicalProcedureSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection)))'"
 	 * @generated
 	 */
-	OperativeNoteSurgicalProcedureSection getOperativeNoteSurgicalProcedureSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentOperativeNoteSurgicalProcedureSection419(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)))'"
 	 * @generated
 	 */
-	PlanOfCareSection getPlanOfCareSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentPlanOfCareSection421(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))->asSequence()->any(true).oclAsType(consol::PlannedProcedureSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection)))'"
 	 * @generated
 	 */
-	PlannedProcedureSection getPlannedProcedureSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentPlannedProcedureSection423(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDispositionSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection)))'"
 	 * @generated
 	 */
-	ProcedureDispositionSection getProcedureDispositionSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureDispositionSection425(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))->asSequence()->any(true).oclAsType(consol::ProcedureIndicationsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection)))'"
 	 * @generated
 	 */
-	ProcedureIndicationsSection getProcedureIndicationsSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentProcedureIndicationsSection427(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection))->asSequence()->any(true).oclAsType(consol::SurgicalDrainsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection)))'"
 	 * @generated
 	 */
-	SurgicalDrainsSection getSurgicalDrainsSection();
+	boolean validateOperativeNoteComponentStructuredBodyComponentSurgicalDrainsSection429(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyAnesthesiaSection398(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyComplicationsSection400(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyPostoperativeDiagnosisSection402(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyPreoperativeDiagnosisSection404(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureEstimatedBloodLossSection406(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureFindingsSection408(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureSpecimensTakenSection410(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureDescriptionSection412(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureImplantsSection414(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyOperativeNoteFluidSection416(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyOperativeNoteSurgicalProcedureSection418(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyPlanOfCareSection420(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyPlannedProcedureSection422(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureDispositionSection424(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodyProcedureIndicationsSection426(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBodySurgicalDrainsSection428(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->reject(structuredBody->one(structuredBody : cda::StructuredBody | not structuredBody.oclIsUndefined() and structuredBody.oclIsKindOf(cda::StructuredBody)))'"
+	 * @generated
+	 */
+	boolean validateOperativeNoteComponentStructuredBody397(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -610,10 +683,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	public OperativeNote init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public OperativeNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OperativeNote

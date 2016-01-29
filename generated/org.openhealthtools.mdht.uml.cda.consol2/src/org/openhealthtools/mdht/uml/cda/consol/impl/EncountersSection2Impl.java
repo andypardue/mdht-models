@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSection2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounters Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,11 +85,28 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncountersSection2Entry1192(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSection2Operations.validateEncountersSection2Entry1192(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSection2EncounterActivity2EntryEncounterActivity21193(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSection2Operations.validateEncountersSection2EncounterActivity2EntryEncounterActivity21193(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -121,40 +136,18 @@ public class EncountersSection2Impl extends EncountersSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EncountersSection2Operations.validateEncountersSectionEntriesOptionalEncounterActivities(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<EncounterActivity2> getConsolEncounterActivity2s() {
-		return EncountersSection2Operations.getConsolEncounterActivity2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EncountersSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncountersSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncountersSection2Impl

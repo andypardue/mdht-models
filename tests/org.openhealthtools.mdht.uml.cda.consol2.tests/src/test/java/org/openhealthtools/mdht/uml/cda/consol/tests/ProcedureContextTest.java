@@ -51,19 +51,22 @@ public class ProcedureContextTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureContextEffectiveTimeValue() {
 		OperationsTestCase<ProcedureContext> validateProcedureContextEffectiveTimeValueTestCase = new OperationsTestCase<ProcedureContext>(
-			"validateProcedureContextEffectiveTimeValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureContextEffectiveTimeValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProcedureContext target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(ProcedureContext target) {
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("test"));
+				target.init();
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+				//
 
 			}
 
@@ -183,7 +186,7 @@ public class ProcedureContextTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateProcedureContextCode() {
@@ -200,7 +203,7 @@ public class ProcedureContextTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProcedureContext target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override

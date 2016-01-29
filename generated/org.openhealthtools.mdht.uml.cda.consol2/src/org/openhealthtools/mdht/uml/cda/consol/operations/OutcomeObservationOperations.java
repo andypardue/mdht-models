@@ -52,17 +52,17 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryReferenceGoalObs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Goal Obs</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryReferenceInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Intervention Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationProgressTowardGoalObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryRelationship616(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship616</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryRelationship618(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship618</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryRelationship620(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship620</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Reference Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Reference External Document Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getEntryReferenceGoalObss() <em>Get Entry Reference Goal Obss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getEntryReferenceInterventionActs() <em>Get Entry Reference Intervention Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#getProgressTowardGoalObservation() <em>Get Progress Toward Goal Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Entry Relationship Entry Reference Goal Obs617</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation Entry Relationship Progress Toward Goal Observation619</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation#validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Entry Relationship Entry Reference Intervention Act621</em>}</li>
  * </ul>
  * </p>
  *
@@ -112,28 +112,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue(
 			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgTowardGoalObsInversionIndIsTrue"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgTowardGoalObsInversionIndIsTrue"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -173,26 +173,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationTemplateId(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationTemplateId"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationTemplateId"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -232,26 +234,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationClassCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationClassCode"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationClassCode"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -291,26 +295,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationMoodCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationMoodCode"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationMoodCode"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -324,7 +330,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOutcomeObservationId(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Id</em>}' invariant operation.
@@ -350,26 +356,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationId(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationId"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationId"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -409,26 +417,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationCodeP(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCodeP"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCodeP"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -440,7 +450,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(outcomeObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -454,9 +464,9 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOutcomeObservationCode(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Code</em>}' invariant operation.
@@ -482,34 +492,34 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.OutcomeObservationCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.OutcomeObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(outcomeObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCode"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCode"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -523,7 +533,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOutcomeObservationValue(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Value</em>}' invariant operation.
@@ -549,146 +559,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationValue(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationValue"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationValue"),
+						 new Object [] { outcomeObservation }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryReferenceGoalObs(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Goal Obs</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOutcomeObservationEntryReferenceGoalObs(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::GEVL)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryReferenceGoalObs(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Goal Obs</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOutcomeObservationEntryReferenceGoalObs(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateOutcomeObservationEntryReferenceGoalObs(OutcomeObservation outcomeObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
-			try {
-				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceGoalObs"),
-					new Object[] { outcomeObservation }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryReferenceInterventionAct(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Intervention Act</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOutcomeObservationEntryReferenceInterventionAct(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryReferenceInterventionAct(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Intervention Act</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOutcomeObservationEntryReferenceInterventionAct(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateOutcomeObservationEntryReferenceInterventionAct(
-			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
-			try {
-				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceInterventionAct"),
-					new Object[] { outcomeObservation }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -728,87 +620,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationAuthorParticipation(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationAuthorParticipation"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationAuthorParticipation"),
+						 new Object [] { outcomeObservation }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateOutcomeObservationProgressTowardGoalObservation(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOutcomeObservationProgressTowardGoalObservation(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProgressTowardGoalObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateOutcomeObservationProgressTowardGoalObservation(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateOutcomeObservationProgressTowardGoalObservation(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateOutcomeObservationProgressTowardGoalObservation(
-			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
-			try {
-				VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgressTowardGoalObservation"),
-					new Object[] { outcomeObservation }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -848,26 +681,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationReference(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReference"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReference"),
+						 new Object [] { outcomeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -907,26 +742,208 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOutcomeObservationEntryRelationship(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship"),
+						 new Object [] { outcomeObservation }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryRelationship616(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship616</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOutcomeObservationEntryRelationship616(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryRelationship616(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship616</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOutcomeObservationEntryRelationship616(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateOutcomeObservationEntryRelationship616(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
+			try {
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP616,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship616"),
+						 new Object [] { outcomeObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryRelationship618(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship618</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOutcomeObservationEntryRelationship618(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryRelationship618(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship618</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOutcomeObservationEntryRelationship618(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateOutcomeObservationEntryRelationship618(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
+			try {
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP618,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship618"),
+						 new Object [] { outcomeObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryRelationship620(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship620</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOutcomeObservationEntryRelationship620(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryRelationship620(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Relationship620</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOutcomeObservationEntryRelationship620(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateOutcomeObservationEntryRelationship620(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
+			try {
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(outcomeObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP620,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship620"),
+						 new Object [] { outcomeObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -966,30 +983,33 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOutcomeObservationReferenceTypeCode(OutcomeObservation outcomeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceTypeCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceTypeCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1030,31 +1050,33 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	@SuppressWarnings("unchecked")
 	public static boolean validateOutcomeObservationReferenceExternalDocumentReference(
 			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceExternalDocumentReference"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceExternalDocumentReference"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1062,133 +1084,201 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEntryReferenceGoalObss(OutcomeObservation) <em>Get Entry Reference Goal Obss</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Entry Relationship Entry Reference Goal Obs617</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEntryReferenceGoalObss(OutcomeObservation)
+	 * @see #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getEntryReferenceGoalObss(OutcomeObservation) <em>Get Entry Reference Goal Obss</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Entry Relationship Entry Reference Goal Obs617</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEntryReferenceGoalObss(OutcomeObservation)
+	 * @see #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<EntryReference> getEntryReferenceGoalObss(OutcomeObservation outcomeObservation) {
-		if (GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.OUTCOME_OBSERVATION,
-				ConsolPackage.Literals.OUTCOME_OBSERVATION.getEAllOperations().get(67));
+			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_GOAL_OBSS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(outcomeObservation);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS617,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getEntryReferenceInterventionActs(OutcomeObservation) <em>Get Entry Reference Intervention Acts</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation Entry Relationship Progress Toward Goal Observation619</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEntryReferenceInterventionActs(OutcomeObservation)
+	 * @see #validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProgressTowardGoalObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getEntryReferenceInterventionActs(OutcomeObservation) <em>Get Entry Reference Intervention Acts</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Progress Toward Goal Observation Entry Relationship Progress Toward Goal Observation619</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEntryReferenceInterventionActs(OutcomeObservation)
+	 * @see #validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<EntryReference> getEntryReferenceInterventionActs(OutcomeObservation outcomeObservation) {
-		if (GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.OUTCOME_OBSERVATION,
-				ConsolPackage.Literals.OUTCOME_OBSERVATION.getEAllOperations().get(68));
+			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<EntryReference> result = (Collection<EntryReference>) query.evaluate(outcomeObservation);
-		return new BasicEList.UnmodifiableEList<EntryReference>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION_ENTRY_RELATIONSHIP_PROGRESS_TOWARD_GOAL_OBSERVATION619,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProgressTowardGoalObservation(OutcomeObservation) <em>Get Progress Toward Goal Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Entry Relationship Entry Reference Intervention Act621</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProgressTowardGoalObservation(OutcomeObservation)
+	 * @see #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProgressTowardGoalObservation))->asSequence()->any(true).oclAsType(consol::ProgressTowardGoalObservation)";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getProgressTowardGoalObservation(OutcomeObservation) <em>Get Progress Toward Goal Observation</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Entry Reference Entry Relationship Entry Reference Intervention Act621</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProgressTowardGoalObservation(OutcomeObservation)
+	 * @see #validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param outcomeObservation The receiving '<em><b>Outcome Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static ProgressTowardGoalObservation getProgressTowardGoalObservation(OutcomeObservation outcomeObservation) {
-		if (GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.OUTCOME_OBSERVATION,
-				ConsolPackage.Literals.OUTCOME_OBSERVATION.getEAllOperations().get(69));
+			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY);
-		return (ProgressTowardGoalObservation) query.evaluate(outcomeObservation);
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_INTERVENTION_ACT621,
+						 ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // OutcomeObservationOperations

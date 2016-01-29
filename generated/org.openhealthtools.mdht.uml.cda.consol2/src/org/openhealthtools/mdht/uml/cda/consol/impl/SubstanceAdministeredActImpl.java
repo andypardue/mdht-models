@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Substance Administered Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -130,8 +128,7 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 */
 	@Override
 	public boolean validateSubstanceAdministeredActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCodeP(
-			this, diagnostics, context);
+		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +139,7 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	@Override
 	public boolean validateSubstanceAdministeredActEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActEffectiveTime(
-			this, diagnostics, context);
+		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -153,17 +149,17 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 */
 	@Override
 	public SubstanceAdministeredAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SubstanceAdministeredAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SubstanceAdministeredActImpl

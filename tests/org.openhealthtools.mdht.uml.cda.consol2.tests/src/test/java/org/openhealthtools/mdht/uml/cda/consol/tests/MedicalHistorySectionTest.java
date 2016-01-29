@@ -52,8 +52,8 @@ public class MedicalHistorySectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalHistorySectionTemplateId() {
 		OperationsTestCase<MedicalHistorySection> validateMedicalHistorySectionTemplateIdTestCase = new OperationsTestCase<MedicalHistorySection>(
-			"validateMedicalHistorySectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalHistorySectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

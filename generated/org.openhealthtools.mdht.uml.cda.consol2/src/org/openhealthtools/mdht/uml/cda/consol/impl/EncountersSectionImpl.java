@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounters Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,9 +55,8 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEncounterActivities(this, diagnostics, context);
+	public boolean validateEncountersSectionEntry110(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionEntry110(this, diagnostics, context);
 	}
 
 	/**
@@ -67,9 +64,8 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<EncounterActivities> getConsolEncounterActivitiess() {
-		return EncountersSectionOperations.getConsolEncounterActivitiess(this);
+	public boolean validateEncountersSectionEncounterActivitiesEntryEncounterActivities111(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionEncounterActivitiesEntryEncounterActivities111(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +76,7 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -133,17 +128,17 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 */
 	@Override
 	public EncountersSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncountersSectionImpl

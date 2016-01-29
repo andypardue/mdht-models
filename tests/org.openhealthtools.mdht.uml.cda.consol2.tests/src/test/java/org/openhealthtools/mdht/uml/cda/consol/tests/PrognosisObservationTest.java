@@ -189,7 +189,7 @@ public class PrognosisObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePrognosisObservationCode() {
@@ -200,15 +200,16 @@ public class PrognosisObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PrognosisObservation target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(code);
+
 			}
 
 			@Override
 			protected void updateToPass(PrognosisObservation target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD("75328-5", LOINC_ID);
-				target.setCode(code);
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -274,8 +275,8 @@ public class PrognosisObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePrognosisObservationStatusCodeP() {
 		OperationsTestCase<PrognosisObservation> validatePrognosisObservationStatusCodePTestCase = new OperationsTestCase<PrognosisObservation>(
-			"validatePrognosisObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePrognosisObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGNOSIS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -308,8 +309,8 @@ public class PrognosisObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePrognosisObservationEffectiveTime() {
 		OperationsTestCase<PrognosisObservation> validatePrognosisObservationEffectiveTimeTestCase = new OperationsTestCase<PrognosisObservation>(
-			"validatePrognosisObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePrognosisObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGNOSIS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

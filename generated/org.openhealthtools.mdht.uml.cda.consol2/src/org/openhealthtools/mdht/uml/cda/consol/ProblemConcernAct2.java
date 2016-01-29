@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.3' templateId.extension='2015-08-01' constraints.validation.info='ProblemConcernActEffectiveTimeHigh ProblemConcernAct2PriorityPreference' constraints.validation.dependOn.ProblemConcernActStatusCode='ProblemConcernActStatusCodeP' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.warning='ProblemConcernAct2AuthorParticipation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActCode ProblemConcernActCodeP ProblemConcernAct2EntryRelationship1002 ProblemConcernAct2EntryRelationship1004 ProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003' templateId.root='2.16.840.1.113883.10.20.22.4.3' templateId.extension='2015-08-01' constraints.validation.info='ProblemConcernActEffectiveTimeHigh ProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005' constraints.validation.dependOn.ProblemConcernActStatusCode='ProblemConcernActStatusCodeP' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.warning='ProblemConcernAct2AuthorParticipation' constraints.validation.query='ProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003 ProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemConcernAct2ProblemObservation2EntryRelationship constraints.validation.error='ProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemConcernAct2PriorityPreferenceEntryRelationship constraints.validation.info='ProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005'"
  * @generated
  */
 public interface ProblemConcernAct2 extends ProblemConcernAct {
@@ -59,28 +61,46 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PriorityPreference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateProblemConcernAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemConcernAct2EntryRelationship1002(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)).oclAsType(consol::PriorityPreference)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<PriorityPreference> getPriorityPreferences();
+	boolean validateProblemConcernAct2EntryRelationship1004(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)).oclAsType(consol::ProblemObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)))'"
 	 * @generated
 	 */
-	EList<ProblemObservation2> getConsolProblemObservation2s();
+	boolean validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference)))'"
+	 * @generated
+	 */
+	boolean validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,10 +111,10 @@ public interface ProblemConcernAct2 extends ProblemConcernAct {
 	public ProblemConcernAct2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemConcernAct2

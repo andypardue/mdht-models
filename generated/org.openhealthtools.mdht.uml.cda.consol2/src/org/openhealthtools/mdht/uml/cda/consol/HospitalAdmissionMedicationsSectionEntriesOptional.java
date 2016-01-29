@@ -30,7 +30,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalAdmissionMedicationsSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP HospitalAdmissionMedicationsSectionEntriesOptionalTitle HospitalAdmissionMedicationsSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.44' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='MEDICATIONS ON ADMISSION' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP HospitalAdmissionMedicationsSectionEntriesOptionalTitle HospitalAdmissionMedicationsSectionEntriesOptionalText HospitalAdmissionMedicationsSectionEntriesOptionalEntry170' templateId.root='2.16.840.1.113883.10.20.22.2.44' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='MEDICATIONS ON ADMISSION' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171' constraints.validation.query='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntry constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171'"
  * @generated
  */
 public interface HospitalAdmissionMedicationsSectionEntriesOptional extends Section {
@@ -54,7 +55,7 @@ public interface HospitalAdmissionMedicationsSectionEntriesOptional extends Sect
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'42346-7\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'42346-7\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
@@ -93,6 +94,30 @@ public interface HospitalAdmissionMedicationsSectionEntriesOptional extends Sect
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
+	 * @generated
+	 */
+	boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalEntry170(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication)))'"
+	 * @generated
+	 */
+	boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedicationEntryAdmissionMedication171(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
 	 * @generated
 	 */
@@ -102,37 +127,15 @@ public interface HospitalAdmissionMedicationsSectionEntriesOptional extends Sect
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AdmissionMedication))'"
-	 * @generated
-	 */
-	boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AdmissionMedication)).oclAsType(consol::AdmissionMedication)'"
-	 * @generated
-	 */
-	EList<AdmissionMedication> getAdmissionMedications();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalAdmissionMedicationsSectionEntriesOptional init(
 			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalAdmissionMedicationsSectionEntriesOptional

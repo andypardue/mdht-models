@@ -17,20 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedCoverageOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActClassDocumentEntryAct;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -171,13 +163,14 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageId() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageIdTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
@@ -187,8 +180,7 @@ public class PlannedCoverageTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
 				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(id);
+
 			}
 
 			@Override
@@ -280,7 +272,7 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageStatusCode() {
@@ -297,8 +289,10 @@ public class PlannedCoverageTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
 				target.init();
-				CS cs = DatatypesFactory.eINSTANCE.createCS("active");
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -349,13 +343,13 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationship() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageEntryRelationship", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -366,8 +360,7 @@ public class PlannedCoverageTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
@@ -384,13 +377,13 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageAuthorParticipation() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageAuthorParticipationTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -401,7 +394,7 @@ public class PlannedCoverageTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -418,25 +411,25 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActClassCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActClassCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				target.getActs().get(0).setClassCode(x_ActClassDocumentEntryAct.ACT);
+				target.init();
+
 			}
 
 			@Override
@@ -453,25 +446,25 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActMoodCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActMoodCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				target.getActs().get(0).setMoodCode(x_DocumentActMood.INT);
+				target.init();
+
 			}
 
 			@Override
@@ -488,26 +481,24 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActId() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActIdTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageEntryRelationshipActId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageEntryRelationshipActId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getActs().get(0).getIds().add(id);
+				target.init();
+
 			}
 
 			@Override
@@ -524,26 +515,25 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActCodeP() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActCodePTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				target.getActs().get(0).setCode(code);
+				target.init();
+
 			}
 
 			@Override
@@ -560,28 +550,25 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				code.setCode("1");
-				code.setCodeSystem("2.16.840.1.113883.3.221.5");
-				target.getActs().get(0).setCode(code);
+				target.init();
+
 			}
 
 			@Override
@@ -598,26 +585,28 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActStatusCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActStatusCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				CS statusCode = DatatypesFactory.eINSTANCE.createCS("active");
-				target.getActs().get(0).setStatusCode(statusCode);
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -634,26 +623,25 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipActStatusCodeP() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActStatusCodePTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipActStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				CS statusCode = DatatypesFactory.eINSTANCE.createCS();
-				target.getActs().get(0).setStatusCode(statusCode);
+				target.init();
+
 			}
 
 			@Override
@@ -670,27 +658,26 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipTypeCode() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipTypeCodeTestCase = new OperationsTestCase<PlannedCoverage>(
 			"validatePlannedCoverageEntryRelationshipTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.COMP);
+				target.init();
+
 			}
 
 			@Override
@@ -707,27 +694,24 @@ public class PlannedCoverageTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedCoverageEntryRelationshipAct() {
 		OperationsTestCase<PlannedCoverage> validatePlannedCoverageEntryRelationshipActTestCase = new OperationsTestCase<PlannedCoverage>(
-			"validatePlannedCoverageEntryRelationshipAct",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedCoverageEntryRelationshipAct", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedCoverage target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedCoverage target) {
-				target.getEntryRelationships().clear();
-				Act act = CDAFactory.eINSTANCE.createAct();
-				target.addAct(act);
+				target.init();
+
 			}
 
 			@Override

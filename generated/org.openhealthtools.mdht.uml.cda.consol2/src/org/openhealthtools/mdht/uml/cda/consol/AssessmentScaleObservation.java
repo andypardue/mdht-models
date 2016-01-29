@@ -22,9 +22,10 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssessmentScaleObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentScaleObservationTemplateId AssessmentScaleObservationClassCode AssessmentScaleObservationMoodCode AssessmentScaleObservationCode AssessmentScaleObservationEffectiveTime AssessmentScaleObservationId AssessmentScaleObservationStatusCode AssessmentScaleObservationStatusCodeP AssessmentScaleObservationValue AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.69' constraints.validation.warning='AssessmentScaleObservationCodeCodeSystem AssessmentScaleObservationAssessmentScaleSupportingObservation AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeText' constraints.validation.info='AssessmentScaleObservationInterpretationCodeTranslation AssessmentScaleObservationDerivationExpr AssessmentScaleObservationInterpretationCode AssessmentScaleObservationAuthor AssessmentScaleObservationReferenceRange AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.query='AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRangeText AssessmentScaleObservationReferenceRangeObservationRange'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentScaleObservationTemplateId AssessmentScaleObservationClassCode AssessmentScaleObservationMoodCode AssessmentScaleObservationCode AssessmentScaleObservationEffectiveTime AssessmentScaleObservationId AssessmentScaleObservationStatusCode AssessmentScaleObservationStatusCodeP AssessmentScaleObservationValue AssessmentScaleObservationEntryRelationship560 AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.69' constraints.validation.warning='AssessmentScaleObservationCodeCodeSystem AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeText AssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561' constraints.validation.info='AssessmentScaleObservationInterpretationCodeTranslation AssessmentScaleObservationDerivationExpr AssessmentScaleObservationInterpretationCode AssessmentScaleObservationAuthor AssessmentScaleObservationReferenceRange AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.query='AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRangeText AssessmentScaleObservationReferenceRangeObservationRange AssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationReferenceRange constraints.validation.error='AssessmentScaleObservationReferenceRangeObservationRange'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationReferenceRangeObservationRange constraints.validation.warning='AssessmentScaleObservationReferenceRangeObservationRangeTextReference AssessmentScaleObservationReferenceRangeObservationRangeText' constraints.validation.info='AssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue' constraints.validation.error='AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationship constraints.validation.warning='AssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561'"
  * @generated
  */
 public interface AssessmentScaleObservation extends Observation {
@@ -132,7 +133,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateAssessmentScaleObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -157,7 +158,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateAssessmentScaleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -217,11 +218,10 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationAssessmentScaleSupportingObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationEntryRelationship560(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,11 +291,14 @@ public interface AssessmentScaleObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation)).oclAsType(consol::AssessmentScaleSupportingObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation)))'"
 	 * @generated
 	 */
-	EList<AssessmentScaleSupportingObservation> getAssessmentScaleSupportingObservations();
+	boolean validateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,9 +308,9 @@ public interface AssessmentScaleObservation extends Observation {
 	public AssessmentScaleObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AssessmentScaleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleObservation

@@ -26,8 +26,10 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getOutcomeObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OutcomeObservationTemplateId OutcomeObservationProgTowardGoalObsInversionIndIsTrue OutcomeObservationClassCode OutcomeObservationMoodCode OutcomeObservationId OutcomeObservationCodeP OutcomeObservationEntryRelationship OutcomeObservationReferenceTypeCode OutcomeObservationReferenceExternalDocumentReference' templateId.root='2.16.840.1.113883.10.20.22.4.144' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='OutcomeObservationCode OutcomeObservationValue OutcomeObservationEntryReferenceGoalObs OutcomeObservationAuthorParticipation OutcomeObservationProgressTowardGoalObservation' constraints.validation.dependOn.OutcomeObservationCode='OutcomeObservationCodeP' constraints.validation.info='OutcomeObservationEntryReferenceInterventionAct OutcomeObservationReference' constraints.validation.query='OutcomeObservationReferenceTypeCode OutcomeObservationReferenceExternalDocumentReference'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OutcomeObservationTemplateId OutcomeObservationProgTowardGoalObsInversionIndIsTrue OutcomeObservationClassCode OutcomeObservationMoodCode OutcomeObservationId OutcomeObservationCodeP OutcomeObservationEntryRelationship OutcomeObservationEntryRelationship616 OutcomeObservationEntryRelationship618 OutcomeObservationEntryRelationship620 OutcomeObservationReferenceTypeCode OutcomeObservationReferenceExternalDocumentReference' templateId.root='2.16.840.1.113883.10.20.22.4.144' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='OutcomeObservationCode OutcomeObservationValue OutcomeObservationAuthorParticipation OutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617 OutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619' constraints.validation.dependOn.OutcomeObservationCode='OutcomeObservationCodeP' constraints.validation.info='OutcomeObservationReference OutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621' constraints.validation.query='OutcomeObservationReferenceTypeCode OutcomeObservationReferenceExternalDocumentReference OutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617 OutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619 OutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOutcomeObservationReference typeCode='REFR' constraints.validation.error='OutcomeObservationReferenceTypeCode OutcomeObservationReferenceExternalDocumentReference'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOutcomeObservationEntryReferenceEntryRelationship constraints.validation.warning='OutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617' constraints.validation.info='OutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOutcomeObservationProgressTowardGoalObservationEntryRelationship constraints.validation.warning='OutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619'"
  * @generated
  */
 public interface OutcomeObservation extends Observation {
@@ -87,7 +89,7 @@ public interface OutcomeObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateOutcomeObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -111,7 +113,7 @@ public interface OutcomeObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateOutcomeObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -123,35 +125,10 @@ public interface OutcomeObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateOutcomeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::GEVL)'"
-	 * @generated
-	 */
-	boolean validateOutcomeObservationEntryReferenceGoalObs(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::EntryReference) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
-	 * @generated
-	 */
-	boolean validateOutcomeObservationEntryReferenceInterventionAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,19 +141,6 @@ public interface OutcomeObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateOutcomeObservationAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::ProgressTowardGoalObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)'"
-	 * @generated
-	 */
-	boolean validateOutcomeObservationProgressTowardGoalObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,6 +173,42 @@ public interface OutcomeObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
+	boolean validateOutcomeObservationEntryRelationship616(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
+	boolean validateOutcomeObservationEntryRelationship618(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
+	boolean validateOutcomeObservationEntryRelationship620(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.reference->excluding(null)->reject(typeCode=vocab::x_ActRelationshipExternalReference::REFR)'"
 	 * @generated
 	 */
@@ -230,29 +230,38 @@ public interface OutcomeObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))'"
 	 * @generated
 	 */
-	EList<EntryReference> getEntryReferenceGoalObss();
+	boolean validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceGoalObs617(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)).oclAsType(consol::EntryReference)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProgressTowardGoalObservation)))'"
 	 * @generated
 	 */
-	EList<EntryReference> getEntryReferenceInterventionActs();
+	boolean validateOutcomeObservationProgressTowardGoalObservationEntryRelationshipProgressTowardGoalObservation619(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProgressTowardGoalObservation))->asSequence()->any(true).oclAsType(consol::ProgressTowardGoalObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EntryReference)))'"
 	 * @generated
 	 */
-	ProgressTowardGoalObservation getProgressTowardGoalObservation();
+	boolean validateOutcomeObservationEntryReferenceEntryRelationshipEntryReferenceInterventionAct621(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,9 +271,9 @@ public interface OutcomeObservation extends Observation {
 	public OutcomeObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OutcomeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OutcomeObservation

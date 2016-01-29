@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Handoff Communication Participants</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,8 +54,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsTemplateId(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +64,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsClassCode(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +74,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsMoodCode(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +84,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsCodeP(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +93,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 * @generated
 	 */
 	public boolean validateHandoffCommunicationParticipantsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsCode(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsCode(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +103,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsStatusCode(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +113,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsStatusCodeP(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +123,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsEffectiveTime(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -143,8 +133,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipant(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipant(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -154,8 +143,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsAuthorParticipation(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -165,8 +153,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -176,8 +163,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleId(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleId(this, diagnostics, context);
 	}
 
 	/**
@@ -187,8 +173,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -198,8 +183,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleCode(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleCode(this, diagnostics, context);
 	}
 
 	/**
@@ -209,8 +193,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRoleAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleAddr(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRoleAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -220,8 +203,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -231,8 +213,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantTypeCode(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -242,8 +223,7 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 */
 	public boolean validateHandoffCommunicationParticipantsParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRole(
-			this, diagnostics, context);
+		return HandoffCommunicationParticipantsOperations.validateHandoffCommunicationParticipantsParticipantParticipantRole(this, diagnostics, context);
 	}
 
 	/**
@@ -252,16 +232,16 @@ public class HandoffCommunicationParticipantsImpl extends ActImpl implements Han
 	 * @generated
 	 */
 	public HandoffCommunicationParticipants init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HandoffCommunicationParticipants init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HandoffCommunicationParticipantsImpl

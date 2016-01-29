@@ -17,17 +17,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionRecommendationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,18 +42,18 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedEncounter2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedAct2s() <em>Get Planned Act2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship602(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship602</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship604(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship604</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship606(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship606</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship608(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship608</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship610(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship610</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship612(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship612</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2 Entry Relationship Planned Encounter2603</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2 Entry Relationship Planned Medication Activity2605</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2 Entry Relationship Planned Observation2607</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2 Entry Relationship Planned Procedure2609</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2 Entry Relationship Planned Supply2611</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2 Entry Relationship Planned Act2613</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,8 +69,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationTemplateId() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationTemplateIdTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -107,8 +103,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationClassCode() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationClassCodeTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -136,13 +132,13 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionRecommendationMoodCodeP() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationMoodCodePTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationMoodCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -153,7 +149,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NutritionRecommendation target) {
 				target.init();
-				target.setMoodCode(x_DocumentActMood.INT);
+
 			}
 
 			@Override
@@ -170,7 +166,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionRecommendationMoodCode() {
@@ -178,12 +174,6 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			"validateNutritionRecommendationMoodCode",
 			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				// skipping fail test as cannot create a moodCode w/o a value
-				// and all possible values are part of the correct required valueSet
-				skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(NutritionRecommendation target) {
@@ -193,7 +183,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NutritionRecommendation target) {
 				target.init();
-				target.setMoodCode(x_DocumentActMood.INT);
+
 			}
 
 			@Override
@@ -251,7 +241,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionRecommendationCode() {
@@ -268,10 +258,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NutritionRecommendation target) {
 				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				code.setCode("61310001");
-				code.setCodeSystem("2.16.840.1.113883.6.96");
-				target.setCode(code);
+
 			}
 
 			@Override
@@ -295,13 +282,13 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionRecommendationStatusCode() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationStatusCodeTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -313,7 +300,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			protected void updateToPass(NutritionRecommendation target) {
 				target.init();
 
-				CS cs = DatatypesFactory.eINSTANCE.createCS("active");
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
 			}
@@ -332,25 +319,23 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateNutritionRecommendationStatusCodeP() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationStatusCodePTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
-				target.setStatusCode(null);
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionRecommendation target) {
-				CS cs = DatatypesFactory.eINSTANCE.createCS();
-				target.setStatusCode(cs);
+				target.init();
 
 			}
 
@@ -373,8 +358,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationEffectiveTime() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEffectiveTimeTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -405,212 +390,38 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateNutritionRecommendationPlannedEncounter2() {
-		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedEncounter2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNutritionRecommendationEntryRelationship602() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEntryRelationship602TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationEntryRelationship602",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(NutritionRecommendation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
-				target.getEntryRelationships().add(er);
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedEncounter2(
+				return NutritionRecommendationOperations.validateNutritionRecommendationEntryRelationship602(
 					(NutritionRecommendation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNutritionRecommendationPlannedEncounter2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateNutritionRecommendationPlannedMedicationActivity2() {
-		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedMedicationActivity2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(NutritionRecommendation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedMedicationActivity2(
-					(NutritionRecommendation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNutritionRecommendationPlannedMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateNutritionRecommendationPlannedObservation2() {
-		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedObservation2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(NutritionRecommendation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedObservation2(
-					(NutritionRecommendation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNutritionRecommendationPlannedObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateNutritionRecommendationPlannedProcedure2() {
-		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedProcedure2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(NutritionRecommendation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedProcedure2(
-					(NutritionRecommendation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNutritionRecommendationPlannedProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateNutritionRecommendationPlannedSupply2() {
-		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedSupply2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(NutritionRecommendation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedSupply2(
-					(NutritionRecommendation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNutritionRecommendationPlannedSupply2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateNutritionRecommendationPlannedAct2() {
-		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedAct2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(NutritionRecommendation target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(NutritionRecommendation target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedAct2(
-					(NutritionRecommendation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateNutritionRecommendationPlannedAct2TestCase.doValidationTest();
+		validateNutritionRecommendationEntryRelationship602TestCase.doValidationTest();
 	}
 
 	/**
@@ -618,11 +429,35 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedEncounter2s() {
 
-		NutritionRecommendation target = objectFactory.create();
-		target.getPlannedEncounter2s();
+	public void testValidateNutritionRecommendationEntryRelationship604() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEntryRelationship604TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationEntryRelationship604",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationEntryRelationship604(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationEntryRelationship604TestCase.doValidationTest();
 	}
 
 	/**
@@ -630,11 +465,35 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedMedicationActivity2s() {
 
-		NutritionRecommendation target = objectFactory.create();
-		target.getPlannedMedicationActivity2s();
+	public void testValidateNutritionRecommendationEntryRelationship606() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEntryRelationship606TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationEntryRelationship606",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationEntryRelationship606(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationEntryRelationship606TestCase.doValidationTest();
 	}
 
 	/**
@@ -642,11 +501,35 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedObservation2s() {
 
-		NutritionRecommendation target = objectFactory.create();
-		target.getPlannedObservation2s();
+	public void testValidateNutritionRecommendationEntryRelationship608() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEntryRelationship608TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationEntryRelationship608",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationEntryRelationship608(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationEntryRelationship608TestCase.doValidationTest();
 	}
 
 	/**
@@ -654,11 +537,35 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedProcedure2s() {
 
-		NutritionRecommendation target = objectFactory.create();
-		target.getPlannedProcedure2s();
+	public void testValidateNutritionRecommendationEntryRelationship610() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEntryRelationship610TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationEntryRelationship610",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationEntryRelationship610(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationEntryRelationship610TestCase.doValidationTest();
 	}
 
 	/**
@@ -666,11 +573,35 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedSupply2s() {
 
-		NutritionRecommendation target = objectFactory.create();
-		target.getPlannedSupply2s();
+	public void testValidateNutritionRecommendationEntryRelationship612() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEntryRelationship612TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationEntryRelationship612",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationEntryRelationship612(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationEntryRelationship612TestCase.doValidationTest();
 	}
 
 	/**
@@ -678,11 +609,215 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedAct2s() {
 
-		NutritionRecommendation target = objectFactory.create();
-		target.getPlannedAct2s();
+	public void testValidateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613() {
+		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613TestCase = new OperationsTestCase<NutritionRecommendation>(
+			"validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NutritionRecommendation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(NutritionRecommendation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NutritionRecommendationOperations.validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(
+					(NutritionRecommendation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613TestCase.doValidationTest();
 	}
 
 	/**

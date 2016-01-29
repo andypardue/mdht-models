@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Deceased Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -173,10 +171,8 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateDeceasedObservationProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DeceasedObservationOperations.validateDeceasedObservationProblemObservation(this, diagnostics, context);
+	public boolean validateDeceasedObservationEntryRelationship576(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DeceasedObservationOperations.validateDeceasedObservationEntryRelationship576(this, diagnostics, context);
 	}
 
 	/**
@@ -184,9 +180,8 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProblemObservation getProblemObservation() {
-		return DeceasedObservationOperations.getProblemObservation(this);
+	public boolean validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DeceasedObservationOperations.validateDeceasedObservationProblemObservationEntryRelationshipProblemObservation577(this, diagnostics, context);
 	}
 
 	/**
@@ -196,17 +191,17 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 */
 	@Override
 	public DeceasedObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DeceasedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DeceasedObservationImpl

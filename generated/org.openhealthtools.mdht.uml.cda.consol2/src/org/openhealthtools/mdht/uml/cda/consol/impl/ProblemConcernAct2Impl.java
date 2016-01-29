@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Concern Act2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -79,8 +77,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernAct2PriorityPreference(this, diagnostics, context);
+	public boolean validateProblemConcernAct2EntryRelationship1002(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernAct2EntryRelationship1002(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +86,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferences() {
-		return ProblemConcernAct2Operations.getPriorityPreferences(this);
+	public boolean validateProblemConcernAct2EntryRelationship1004(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernAct2EntryRelationship1004(this, diagnostics, context);
 	}
 
 	/**
@@ -97,9 +95,17 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return ProblemConcernAct2Operations.getConsolProblemObservation2s(this);
+	public boolean validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernAct2ProblemObservation2EntryRelationshipProblemObservation21003(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemConcernAct2Operations.validateProblemConcernAct2PriorityPreferenceEntryRelationshipPriorityPreference1005(this, diagnostics, context);
 	}
 
 	/**
@@ -178,28 +184,18 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemConcernAct2Operations.validateProblemConcernActProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProblemConcernAct2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProblemConcernAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemConcernAct2Impl

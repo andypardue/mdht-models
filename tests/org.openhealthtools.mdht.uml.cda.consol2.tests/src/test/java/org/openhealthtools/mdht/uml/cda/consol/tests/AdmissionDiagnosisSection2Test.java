@@ -21,8 +21,6 @@ import org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionDiagnosisSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,13 +30,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateAdmissionDiagnosisSection2Entry1082(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Diagnosis Section2 Entry1082</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateAdmissionDiagnosisSection2CETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Diagnosis Section2 CE Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateAdmissionDiagnosisSection2CETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Diagnosis Section2 CE Translation P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#getConsolHospitalAdmissionDiagnosis2() <em>Get Consol Hospital Admission Diagnosis2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateAdmissionDiagnosisSection2HospitalAdmissionDiagnosis2EntryHospitalAdmissionDiagnosis21083(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Diagnosis Section2 Hospital Admission Diagnosis2 Entry Hospital Admission Diagnosis21083</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateHospitalAdmissionDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateHospitalAdmissionDiagnosisSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateHospitalAdmissionDiagnosisSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Hospital Admission Diagnosis</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,30 +47,60 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdmissionDiagnosisSection2Entry1082() {
+		OperationsTestCase<AdmissionDiagnosisSection2> validateAdmissionDiagnosisSection2Entry1082TestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
+			"validateAdmissionDiagnosisSection2Entry1082", operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_ENTRY1082__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdmissionDiagnosisSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdmissionDiagnosisSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2Entry1082(
+					(AdmissionDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdmissionDiagnosisSection2Entry1082TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
 	*/
 	@Test
 	public void testValidateAdmissionDiagnosisSection2CETranslation() {
 		OperationsTestCase<AdmissionDiagnosisSection2> validateAdmissionDiagnosisSection2CETranslationTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
 			"validateAdmissionDiagnosisSection2CETranslation",
-			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdmissionDiagnosisSection2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
-				target.getCode().setCode("46241-6");
-				target.getCode().setCodeSystem(LOINC_ID);
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
-				for (CD translation : target.getCode().getTranslations()) {
-					translation.setCodeSystem(LOINC_ID);
-					translation.setCode("42347-5");
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -89,26 +117,25 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdmissionDiagnosisSection2CETranslationP() {
 		OperationsTestCase<AdmissionDiagnosisSection2> validateAdmissionDiagnosisSection2CETranslationPTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
 			"validateAdmissionDiagnosisSection2CETranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdmissionDiagnosisSection2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
-				target.getCode().setCode("46241-6");
-				target.getCode().setCodeSystem(LOINC_ID);
+
 			}
 
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -128,11 +155,35 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolHospitalAdmissionDiagnosis2() {
 
-		AdmissionDiagnosisSection2 target = objectFactory.create();
-		target.getConsolHospitalAdmissionDiagnosis2();
+	public void testValidateAdmissionDiagnosisSection2HospitalAdmissionDiagnosis2EntryHospitalAdmissionDiagnosis21083() {
+		OperationsTestCase<AdmissionDiagnosisSection2> validateAdmissionDiagnosisSection2HospitalAdmissionDiagnosis2EntryHospitalAdmissionDiagnosis21083TestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
+			"validateAdmissionDiagnosisSection2HospitalAdmissionDiagnosis2EntryHospitalAdmissionDiagnosis21083",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_HOSPITAL_ADMISSION_DIAGNOSIS2_ENTRY_HOSPITAL_ADMISSION_DIAGNOSIS21083__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AdmissionDiagnosisSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdmissionDiagnosisSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2HospitalAdmissionDiagnosis2EntryHospitalAdmissionDiagnosis21083(
+					(AdmissionDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdmissionDiagnosisSection2HospitalAdmissionDiagnosis2EntryHospitalAdmissionDiagnosis21083TestCase.doValidationTest();
 	}
 
 	/**
@@ -143,7 +194,8 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 	public void testValidateHospitalAdmissionDiagnosisSectionTemplateId() {
 		OperationsTestCase<AdmissionDiagnosisSection2> validateHospitalAdmissionDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
 			"validateHospitalAdmissionDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -171,13 +223,14 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionCodeP() {
 		OperationsTestCase<AdmissionDiagnosisSection2> validateHospitalAdmissionDiagnosisSectionCodePTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
 			"validateHospitalAdmissionDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -188,7 +241,7 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
@@ -205,25 +258,24 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionCode() {
 		OperationsTestCase<AdmissionDiagnosisSection2> validateHospitalAdmissionDiagnosisSectionCodeTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
-			"validateHospitalAdmissionDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalAdmissionDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdmissionDiagnosisSection2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
-				target.getCode().setCode("46241-6");
-				target.getCode().setCodeSystem(LOINC_ID);
+				target.init();
+
 			}
 
 			@Override
@@ -243,39 +295,6 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 		};
 
 		validateHospitalAdmissionDiagnosisSectionCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis() {
-		OperationsTestCase<AdmissionDiagnosisSection2> validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
-			"validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdmissionDiagnosisSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(AdmissionDiagnosisSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createHospitalAdmissionDiagnosis2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdmissionDiagnosisSection2Operations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
-					(AdmissionDiagnosisSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisTestCase.doValidationTest();
 	}
 
 	/**

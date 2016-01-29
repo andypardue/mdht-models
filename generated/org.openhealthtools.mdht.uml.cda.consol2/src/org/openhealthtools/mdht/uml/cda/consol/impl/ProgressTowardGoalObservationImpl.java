@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Progress Toward Goal Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,8 +59,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateProgressTowardGoalObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationTemplateId(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +70,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateProgressTowardGoalObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationClassCode(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +81,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateProgressTowardGoalObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationMoodCode(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +91,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateProgressTowardGoalObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationId(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationId(this, diagnostics, context);
 	}
 
 	/**
@@ -107,8 +101,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateProgressTowardGoalObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCodeP(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +111,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateProgressTowardGoalObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCode(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +122,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateProgressTowardGoalObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationStatusCode(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -142,8 +133,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	@Override
 	public boolean validateProgressTowardGoalObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationStatusCodeP(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +143,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateProgressTowardGoalObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValue(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -164,8 +153,7 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public boolean validateProgressTowardGoalObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValueP(
-			this, diagnostics, context);
+		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -175,17 +163,17 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 */
 	@Override
 	public ProgressTowardGoalObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProgressTowardGoalObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProgressTowardGoalObservationImpl

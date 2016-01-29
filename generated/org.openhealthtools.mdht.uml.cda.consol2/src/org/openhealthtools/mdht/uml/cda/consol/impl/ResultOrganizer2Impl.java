@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizer2Operat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -96,9 +94,8 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ResultObservation2> getConsolResultObservation2s() {
-		return ResultOrganizer2Operations.getConsolResultObservation2s(this);
+	public boolean validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizer2Operations.validateResultOrganizer2ResultObservation2EntryRelationshipResultObservation21043(this, diagnostics, context);
 	}
 
 	/**
@@ -137,28 +134,18 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizer2Operations.validateResultOrganizerResultObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ResultOrganizer2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ResultOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ResultOrganizer2Impl

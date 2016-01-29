@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PayersSection2Operatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Payers Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class PayersSection2Impl extends PayersSectionImpl implements PayersSecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CoverageActivity2> getConsolCoverageActivity2s() {
-		return PayersSection2Operations.getConsolCoverageActivity2s(this);
+	public boolean validatePayersSection2Entry1108(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PayersSection2Operations.validatePayersSection2Entry1108(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePayersSection2CoverageActivity2EntryCoverageActivity21109(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PayersSection2Operations.validatePayersSection2CoverageActivity2EntryCoverageActivity21109(this, diagnostics, context);
 	}
 
 	/**
@@ -99,28 +105,18 @@ public class PayersSection2Impl extends PayersSectionImpl implements PayersSecti
 	 * @generated
 	 */
 	@Override
-	public boolean validatePayersSectionCoverageActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayersSection2Operations.validatePayersSectionCoverageActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PayersSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PayersSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PayersSection2Impl

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosis2Ope
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class EncounterDiagnosis2Impl extends EncounterDiagnosisImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return EncounterDiagnosis2Operations.getConsolProblemObservation2s(this);
+	public boolean validateEncounterDiagnosis2EntryRelationship908(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterDiagnosis2Operations.validateEncounterDiagnosis2EntryRelationship908(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterDiagnosis2Operations.validateEncounterDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2909(this, diagnostics, context);
 	}
 
 	/**
@@ -99,28 +105,18 @@ public class EncounterDiagnosis2Impl extends EncounterDiagnosisImpl implements E
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterDiagnosis2Operations.validateEncounterDiagnosisProblemObservation(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EncounterDiagnosis2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public EncounterDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EncounterDiagnosis2Impl

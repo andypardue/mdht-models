@@ -15,19 +15,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.TextObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TextObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,10 +42,10 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation SOP Instance Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationQuantityMeasurementObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Quantity Measurement Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#getSOPInstanceObservations() <em>Get SOP Instance Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#getQuantityMeasurementObservations() <em>Get Quantity Measurement Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationEntryRelationship548(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Entry Relationship548</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationEntryRelationship550(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Entry Relationship550</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation SOP Instance Observation Entry Relationship SOP Instance Observation549</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TextObservation#validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Text Observation Quantity Measurement Observation Entry Relationship Quantity Measurement Observation551</em>}</li>
  * </ul>
  * </p>
  *
@@ -61,7 +56,7 @@ public class TextObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTextObservationTextReference() {
@@ -72,16 +67,12 @@ public class TextObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(TextObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(TextObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+				target.init();
 
 			}
 
@@ -99,28 +90,26 @@ public class TextObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTextObservationTextReferenceValue() {
 		OperationsTestCase<TextObservation> validateTextObservationTextReferenceValueTestCase = new OperationsTestCase<TextObservation>(
-			"validateTextObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTextObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(TextObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(TextObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -138,37 +127,26 @@ public class TextObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTextObservationReferenceValue() {
-		OperationsTestCase<TextObservation> validateTextObservationReferenceValueTestCase = new NarrativeReferenceTestCase<TextObservation>(
+		OperationsTestCase<TextObservation> validateTextObservationReferenceValueTestCase = new OperationsTestCase<TextObservation>(
 			"validateTextObservationReferenceValue",
 			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(TextObservation target) {
-				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
 			protected void updateToPass(TextObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
+				target.init();
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -288,7 +266,7 @@ public class TextObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTextObservationCode() {
@@ -306,7 +284,7 @@ public class TextObservationTest extends CDAValidationTest {
 			protected void updateToPass(TextObservation target) {
 				target.init();
 
-				CE cd = DatatypesFactory.eINSTANCE.createCE();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
 			}
@@ -399,7 +377,7 @@ public class TextObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTextObservationValue() {
@@ -417,7 +395,7 @@ public class TextObservationTest extends CDAValidationTest {
 			protected void updateToPass(TextObservation target) {
 				target.init();
 
-				ED value = DatatypesFactory.eINSTANCE.createED();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}
@@ -436,13 +414,14 @@ public class TextObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateTextObservationSOPInstanceObservation() {
-		OperationsTestCase<TextObservation> validateTextObservationSOPInstanceObservationTestCase = new OperationsTestCase<TextObservation>(
-			"validateTextObservationSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateTextObservationEntryRelationship548() {
+		OperationsTestCase<TextObservation> validateTextObservationEntryRelationship548TestCase = new OperationsTestCase<TextObservation>(
+			"validateTextObservationEntryRelationship548", operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_ENTRY_RELATIONSHIP548__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -453,34 +432,31 @@ public class TextObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TextObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SPRT);
-				er.setObservation(ConsolFactory.eINSTANCE.createSOPInstanceObservation().init());
-				target.getEntryRelationships().add(er);
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return TextObservationOperations.validateTextObservationSOPInstanceObservation(
+				return TextObservationOperations.validateTextObservationEntryRelationship548(
 					(TextObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateTextObservationSOPInstanceObservationTestCase.doValidationTest();
+		validateTextObservationEntryRelationship548TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateTextObservationQuantityMeasurementObservation() {
-		OperationsTestCase<TextObservation> validateTextObservationQuantityMeasurementObservationTestCase = new OperationsTestCase<TextObservation>(
-			"validateTextObservationQuantityMeasurementObservation",
-			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateTextObservationEntryRelationship550() {
+		OperationsTestCase<TextObservation> validateTextObservationEntryRelationship550TestCase = new OperationsTestCase<TextObservation>(
+			"validateTextObservationEntryRelationship550", operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_ENTRY_RELATIONSHIP550__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -491,23 +467,19 @@ public class TextObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TextObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SPRT);
-				er.setObservation(ConsolFactory.eINSTANCE.createQuantityMeasurementObservation().init());
-				target.getEntryRelationships().add(er);
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(
+				return TextObservationOperations.validateTextObservationEntryRelationship550(
 					(TextObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateTextObservationQuantityMeasurementObservationTestCase.doValidationTest();
+		validateTextObservationEntryRelationship550TestCase.doValidationTest();
 	}
 
 	/**
@@ -515,11 +487,35 @@ public class TextObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSOPInstanceObservations() {
 
-		TextObservation target = objectFactory.create();
-		target.getSOPInstanceObservations();
+	public void testValidateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549() {
+		OperationsTestCase<TextObservation> validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549TestCase = new OperationsTestCase<TextObservation>(
+			"validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION_ENTRY_RELATIONSHIP_SOP_INSTANCE_OBSERVATION549__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(TextObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TextObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TextObservationOperations.validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549(
+					(TextObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation549TestCase.doValidationTest();
 	}
 
 	/**
@@ -527,11 +523,35 @@ public class TextObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetQuantityMeasurementObservations() {
 
-		TextObservation target = objectFactory.create();
-		target.getQuantityMeasurementObservations();
+	public void testValidateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551() {
+		OperationsTestCase<TextObservation> validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551TestCase = new OperationsTestCase<TextObservation>(
+			"validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION_ENTRY_RELATIONSHIP_QUANTITY_MEASUREMENT_OBSERVATION551__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(TextObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TextObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TextObservationOperations.validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551(
+					(TextObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation551TestCase.doValidationTest();
 	}
 
 	/**

@@ -17,11 +17,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component4;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2;
-import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusOrganizer2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
@@ -35,16 +32,14 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusOrganizer2SelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Organizer2 Self Care Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Organizer2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#getConsolFunctionalStatusObservation2s() <em>Get Consol Functional Status Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Organizer2 Functional Status Observation2 Entry Relationship Functional Status Observation2919</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Organizer2 Self Care Activities Entry Relationship Self Care Activities921</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Functional Status Result Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,59 +50,25 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFunctionalStatusOrganizer2SelfCareActivities() {
-		OperationsTestCase<FunctionalStatusOrganizer2> validateFunctionalStatusOrganizer2SelfCareActivitiesTestCase = new OperationsTestCase<FunctionalStatusOrganizer2>(
-			"validateFunctionalStatusOrganizer2SelfCareActivities",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusOrganizer2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusOrganizer2 target) {
-				Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-				SelfCareActivities scaObs = ConsolFactory.eINSTANCE.createSelfCareActivities().init();
-				comp.setObservation(scaObs);
-				target.getComponents().add(comp);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivities(
-					(FunctionalStatusOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusOrganizer2SelfCareActivitiesTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFunctionalStatusOrganizer2AuthorParticipation() {
 		OperationsTestCase<FunctionalStatusOrganizer2> validateFunctionalStatusOrganizer2AuthorParticipationTestCase = new OperationsTestCase<FunctionalStatusOrganizer2>(
 			"validateFunctionalStatusOrganizer2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(FunctionalStatusOrganizer2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(FunctionalStatusOrganizer2 target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
+
 			}
 
 			@Override
@@ -127,11 +88,35 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolFunctionalStatusObservation2s() {
 
-		FunctionalStatusOrganizer2 target = objectFactory.create();
-		target.getConsolFunctionalStatusObservation2s();
+	public void testValidateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919() {
+		OperationsTestCase<FunctionalStatusOrganizer2> validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919TestCase = new OperationsTestCase<FunctionalStatusOrganizer2>(
+			"validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_FUNCTIONAL_STATUS_OBSERVATION2_ENTRY_RELATIONSHIP_FUNCTIONAL_STATUS_OBSERVATION2919__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(FunctionalStatusOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919(
+					(FunctionalStatusOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusOrganizer2FunctionalStatusObservation2EntryRelationshipFunctionalStatusObservation2919TestCase.doValidationTest();
 	}
 
 	/**
@@ -139,16 +124,40 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSelfCareActivitiess() {
 
-		FunctionalStatusOrganizer2 target = objectFactory.create();
-		target.getSelfCareActivitiess();
+	public void testValidateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921() {
+		OperationsTestCase<FunctionalStatusOrganizer2> validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921TestCase = new OperationsTestCase<FunctionalStatusOrganizer2>(
+			"validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_ORGANIZER2_SELF_CARE_ACTIVITIES_ENTRY_RELATIONSHIP_SELF_CARE_ACTIVITIES921__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(FunctionalStatusOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusOrganizer2Operations.validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921(
+					(FunctionalStatusOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusOrganizer2SelfCareActivitiesEntryRelationshipSelfCareActivities921TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateResultOrganizerCodeValue() {
@@ -157,26 +166,19 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
-			private final String[] valCodeSystems = { "2.16.840.1.113883.6.254", CDAValidationTest.LOINC_ID };
-
 			@Override
 			protected void updateToFail(FunctionalStatusOrganizer2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
-			public void addPassTests() {
-				for (final String cs : valCodeSystems) {
-					addPassTest(new PassTest() {
-						@Override
-						public void updateToPass(FunctionalStatusOrganizer2 target) {
-							target.init();
-							target.setCode(DatatypesFactory.eINSTANCE.createCD());
-							target.getCode().setCodeSystem(cs);
-						}
-					});
-				}
+			protected void updateToPass(FunctionalStatusOrganizer2 target) {
+				target.init();
+
+				// CD value = DatatypesFactory.eINSTANCE.createCD();
+				// target.getValues().add(value);
+				//
+
 			}
 
 			@Override
@@ -227,7 +229,7 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizerCode() {
@@ -238,12 +240,13 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(FunctionalStatusOrganizer2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(FunctionalStatusOrganizer2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -334,41 +337,6 @@ public class FunctionalStatusOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateResultOrganizerStatusCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFunctionalStatusResultOrganizerFunctionalStatusResultObservation() {
-		OperationsTestCase<FunctionalStatusOrganizer2> validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationTestCase = new OperationsTestCase<FunctionalStatusOrganizer2>(
-			"validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusOrganizer2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusOrganizer2 target) {
-				Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-				comp.setObservation(ConsolFactory.eINSTANCE.createFunctionalStatusObservation2().init());
-				target.getComponents().add(comp);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-					(FunctionalStatusOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationTestCase.doValidationTest();
 	}
 
 	/**

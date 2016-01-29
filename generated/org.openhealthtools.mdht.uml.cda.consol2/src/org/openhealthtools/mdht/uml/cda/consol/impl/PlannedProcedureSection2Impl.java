@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedureSectio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Procedure Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PlannedProcedure2> getConsolPlannedProcedure2s() {
-		return PlannedProcedureSection2Operations.getConsolPlannedProcedure2s(this);
+	public boolean validatePlannedProcedureSection2Entry1140(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSection2Operations.validatePlannedProcedureSection2Entry1140(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureSection2PlannedProcedure2EntryPlannedProcedure21141(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSection2Operations.validatePlannedProcedureSection2PlannedProcedure2EntryPlannedProcedure21141(this, diagnostics, context);
 	}
 
 	/**
@@ -99,30 +105,18 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedProcedureSection2Operations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PlannedProcedureSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedProcedureSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedProcedureSection2Impl

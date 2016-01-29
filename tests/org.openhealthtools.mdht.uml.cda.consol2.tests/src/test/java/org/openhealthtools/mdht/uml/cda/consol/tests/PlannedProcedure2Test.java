@@ -17,9 +17,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Performer2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedure2Operations;
@@ -27,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentProcedureMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,14 +45,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentProcedureMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2TargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Performer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Performer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PriorityPreference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Priority Preference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Indication2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Indication2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PlannedCoverage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Planned Coverage</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getPriorityPreferences() <em>Get Priority Preferences</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getIndication2s() <em>Get Indication2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getInstruction2s() <em>Get Instruction2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2EntryRelationship976(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Entry Relationship976</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2EntryRelationship978(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Entry Relationship978</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2EntryRelationship980(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Entry Relationship980</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2EntryRelationship982(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Entry Relationship982</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Priority Preference Entry Relationship Priority Preference977</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Indication2EntryRelationshipIndication2979(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Indication2 Entry Relationship Indication2979</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Instruction2 Entry Relationship Instruction2981</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure2 Planned Coverage Entry Relationship Planned Coverage983</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlanOfCareActivityProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Procedure Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2#validatePlanOfCareActivityProcedureMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Procedure Mood Code</em>}</li>
  * </ul>
@@ -70,38 +65,25 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2CodeFromLoincOrSnomed() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2CodeFromLoincOrSnomedTestCase = new OperationsTestCase<PlannedProcedure2>(
 			"validatePlannedProcedure2CodeFromLoincOrSnomed",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(PlannedProcedure2 target) {
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", LOINC_ID));
-					}
-				});
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
 
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(PlannedProcedure2 target) {
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", SNOMEDCT_ID));
-					}
-				});
 			}
 
 			@Override
@@ -118,40 +100,24 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2CodeFromCptOrIcd() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2CodeFromCptOrIcdTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2CodeFromCptOrIcd",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2CodeFromCptOrIcd", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			private static final String CPT = "2.16.840.1.113883.6.12", ICD = "2.16.840.1.113883.6.4";
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(PlannedProcedure2 target) {
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", CPT));
-					}
-				});
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
 
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(PlannedProcedure2 target) {
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("any", ICD));
-					}
-				});
 			}
 
 			@Override
@@ -168,28 +134,25 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2Instruction2InversionInd() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2Instruction2InversionIndTestCase = new OperationsTestCase<PlannedProcedure2>(
 			"validatePlannedProcedure2Instruction2InversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setInversionInd(true);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -206,7 +169,7 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2Code() {
@@ -217,12 +180,13 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -239,7 +203,7 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2StatusCode() {
@@ -256,8 +220,10 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
 				target.init();
-				CS cs = DatatypesFactory.eINSTANCE.createCS("active");
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -345,7 +311,7 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2MethodCode() {
@@ -356,12 +322,13 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				target.getMethodCodes().add(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -383,8 +350,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2TargetSiteCodeP() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2TargetSiteCodePTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2TargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2TargetSiteCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -412,26 +379,24 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2TargetSiteCode() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2TargetSiteCodeTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2TargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2TargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				for (int curTsc = 0; curTsc < target.getTargetSiteCodes().size(); curTsc++) {
-					target.getTargetSiteCodes().set(
-						curTsc, DatatypesFactory.eINSTANCE.createCD("mustExistOnly", SNOMEDCT_ID));
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -455,7 +420,7 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2Performer() {
@@ -466,13 +431,13 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				Performer2 p2 = CDAFactory.eINSTANCE.createPerformer2();
-				target.getPerformers().add(p2);
+				target.init();
+
 			}
 
 			@Override
@@ -489,23 +454,24 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedProcedure2AuthorParticipation() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2AuthorParticipationTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation());
+				target.init();
+
 			}
 
 			@Override
@@ -522,146 +488,37 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidatePlannedProcedure2PriorityPreference() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PriorityPreferenceTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2PriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidatePlannedProcedure2EntryRelationship976() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2EntryRelationship976TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2EntryRelationship976", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP976__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createPriorityPreference().init());
-				target.getEntryRelationships().add(er);
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreference(
+				return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship976(
 					(PlannedProcedure2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePlannedProcedure2PriorityPreferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedProcedure2Indication2() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2Indication2TestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2Indication2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedProcedure2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setObservation(ConsolFactory.eINSTANCE.createIndication2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedProcedure2Operations.validatePlannedProcedure2Indication2(
-					(PlannedProcedure2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedProcedure2Indication2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedProcedure2Instruction2() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2Instruction2TestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2Instruction2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedProcedure2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2(
-					(PlannedProcedure2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedProcedure2Instruction2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedProcedure2PlannedCoverage() {
-		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PlannedCoverageTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2PlannedCoverage",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedProcedure2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedProcedure2 target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setAct(ConsolFactory.eINSTANCE.createPlannedCoverage().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedProcedure2Operations.validatePlannedProcedure2PlannedCoverage(
-					(PlannedProcedure2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedProcedure2PlannedCoverageTestCase.doValidationTest();
+		validatePlannedProcedure2EntryRelationship976TestCase.doValidationTest();
 	}
 
 	/**
@@ -669,11 +526,34 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPriorityPreferences() {
 
-		PlannedProcedure2 target = objectFactory.create();
-		target.getPriorityPreferences();
+	public void testValidatePlannedProcedure2EntryRelationship978() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2EntryRelationship978TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2EntryRelationship978", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP978__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship978(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2EntryRelationship978TestCase.doValidationTest();
 	}
 
 	/**
@@ -681,11 +561,34 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetIndication2s() {
 
-		PlannedProcedure2 target = objectFactory.create();
-		target.getIndication2s();
+	public void testValidatePlannedProcedure2EntryRelationship980() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2EntryRelationship980TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2EntryRelationship980", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP980__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship980(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2EntryRelationship980TestCase.doValidationTest();
 	}
 
 	/**
@@ -693,11 +596,34 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInstruction2s() {
 
-		PlannedProcedure2 target = objectFactory.create();
-		target.getInstruction2s();
+	public void testValidatePlannedProcedure2EntryRelationship982() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2EntryRelationship982TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2EntryRelationship982", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP982__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2EntryRelationship982(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2EntryRelationship982TestCase.doValidationTest();
 	}
 
 	/**
@@ -705,11 +631,143 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedCoverages() {
 
-		PlannedProcedure2 target = objectFactory.create();
-		target.getPlannedCoverages();
+	public void testValidatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE_ENTRY_RELATIONSHIP_PRIORITY_PREFERENCE977__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2PriorityPreferenceEntryRelationshipPriorityPreference977TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedure2Indication2EntryRelationshipIndication2979() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2Indication2EntryRelationshipIndication2979TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2Indication2EntryRelationshipIndication2979",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_INDICATION2_ENTRY_RELATIONSHIP_INDICATION2979__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2Indication2EntryRelationshipIndication2979(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2Indication2EntryRelationshipIndication2979TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedure2Instruction2EntryRelationshipInstruction2981() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2981__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2Instruction2EntryRelationshipInstruction2981TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983() {
+		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983TestCase = new OperationsTestCase<PlannedProcedure2>(
+			"validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_PLANNED_COVERAGE983__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedProcedure2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedProcedure2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedProcedure2Operations.validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983(
+					(PlannedProcedure2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedProcedure2PlannedCoverageEntryRelationshipPlannedCoverage983TestCase.doValidationTest();
 	}
 
 	/**
@@ -720,7 +778,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareActivityProcedureTemplateId() {
 		OperationsTestCase<PlannedProcedure2> validatePlanOfCareActivityProcedureTemplateIdTestCase = new OperationsTestCase<PlannedProcedure2>(
 			"validatePlanOfCareActivityProcedureTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -748,13 +807,13 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlanOfCareActivityProcedureMoodCode() {
 		OperationsTestCase<PlannedProcedure2> validatePlanOfCareActivityProcedureMoodCodeTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlanOfCareActivityProcedureMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityProcedureMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -765,7 +824,7 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedProcedure2 target) {
 				target.init();
-				target.setMoodCode(x_DocumentProcedureMood.INT);
+
 			}
 
 			@Override

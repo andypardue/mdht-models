@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -41,15 +43,15 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2MedicalEquipmentOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Medical Equipment Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2ProcedureActivityProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Procedure Activity Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#getConsolNonMedicinalSupplyActivity2s() <em>Get Consol Non Medicinal Supply Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#getMedicalEquipmentOrganizers() <em>Get Medical Equipment Organizers</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#getProcedureActivityProcedure2s() <em>Get Procedure Activity Procedure2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2Entry1100(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1100</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2Entry1102(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1102</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2Entry1104(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1104</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Medical Equipment Organizer Entry Medical Equipment Organizer1101</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Non Medicinal Supply Activity2 Entry Non Medicinal Supply Activity21103</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Procedure Activity Procedure2 Entry Procedure Activity Procedure21105</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2#validateMedicalEquipmentSectionNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Non Medicinal Supply Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -66,25 +68,25 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2MedicalEquipmentOrganizer(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Medical Equipment Organizer</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2Entry1100(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1100</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentSection2MedicalEquipmentOrganizer(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentSection2Entry1100(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::MedicalEquipmentOrganizer))";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1100__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2MedicalEquipmentOrganizer(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Medical Equipment Organizer</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2Entry1100(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1100</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentSection2MedicalEquipmentOrganizer(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentSection2Entry1100(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1100__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,56 +98,55 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizer(
-			MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateMedicalEquipmentSection2Entry1100(MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1100__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1100__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1100__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1100__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalEquipmentSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2MedicalEquipmentOrganizer"),
-					new Object[] { medicalEquipmentSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_ENTRY1100,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2Entry1100"),
+						 new Object [] { medicalEquipmentSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2ProcedureActivityProcedure2(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Procedure Activity Procedure2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2Entry1102(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1102</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentSection2ProcedureActivityProcedure2(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentSection2Entry1102(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1102__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2ProcedureActivityProcedure2(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Procedure Activity Procedure2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2Entry1102(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1102</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentSection2ProcedureActivityProcedure2(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMedicalEquipmentSection2Entry1102(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1102__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,169 +158,291 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateMedicalEquipmentSection2ProcedureActivityProcedure2(
-			MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateMedicalEquipmentSection2Entry1102(MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1102__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1102__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1102__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1102__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalEquipmentSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2ProcedureActivityProcedure2"),
-					new Object[] { medicalEquipmentSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_ENTRY1102,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2Entry1102"),
+						 new Object [] { medicalEquipmentSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolNonMedicinalSupplyActivity2s(MedicalEquipmentSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2Entry1104(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1104</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolNonMedicinalSupplyActivity2s(MedicalEquipmentSection2)
+	 * @see #validateMedicalEquipmentSection2Entry1104(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)).oclAsType(consol::NonMedicinalSupplyActivity2)";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1104__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolNonMedicinalSupplyActivity2s(MedicalEquipmentSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2Entry1104(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Entry1104</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolNonMedicinalSupplyActivity2s(MedicalEquipmentSection2)
+	 * @see #validateMedicalEquipmentSection2Entry1104(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1104__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicalEquipmentSection2 The receiving '<em><b>Medical Equipment Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<NonMedicinalSupplyActivity2> getConsolNonMedicinalSupplyActivity2s(
-			MedicalEquipmentSection2 medicalEquipmentSection2) {
-		if (GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY == null) {
+	
+	public static  boolean validateMedicalEquipmentSection2Entry1104(MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1104__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2,
-				ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2.getEAllOperations().get(64));
+			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
-				GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1104__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1104__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(medicalEquipmentSection2);
-		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_ENTRY1104__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalEquipmentSection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_ENTRY1104,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2Entry1104"),
+						 new Object [] { medicalEquipmentSection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getMedicalEquipmentOrganizers(MedicalEquipmentSection2) <em>Get Medical Equipment Organizers</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Medical Equipment Organizer Entry Medical Equipment Organizer1101</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipmentOrganizers(MedicalEquipmentSection2)
+	 * @see #validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICAL_EQUIPMENT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::MedicalEquipmentOrganizer)).oclAsType(consol::MedicalEquipmentOrganizer)";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::MedicalEquipmentOrganizer)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicalEquipmentOrganizers(MedicalEquipmentSection2) <em>Get Medical Equipment Organizers</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Medical Equipment Organizer Entry Medical Equipment Organizer1101</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicalEquipmentOrganizers(MedicalEquipmentSection2)
+	 * @see #validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_MEDICAL_EQUIPMENT_ORGANIZERS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicalEquipmentSection2 The receiving '<em><b>Medical Equipment Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<MedicalEquipmentOrganizer> getMedicalEquipmentOrganizers(
-			MedicalEquipmentSection2 medicalEquipmentSection2) {
-		if (GET_MEDICAL_EQUIPMENT_ORGANIZERS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101(MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2,
-				ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2.getEAllOperations().get(65));
+			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
-				GET_MEDICAL_EQUIPMENT_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_ORGANIZERS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICAL_EQUIPMENT_ORGANIZERS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<MedicalEquipmentOrganizer> result = (Collection<MedicalEquipmentOrganizer>) query.evaluate(medicalEquipmentSection2);
-		return new BasicEList.UnmodifiableEList<MedicalEquipmentOrganizer>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicalEquipmentSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER_ENTRY_MEDICAL_EQUIPMENT_ORGANIZER1101,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2MedicalEquipmentOrganizerEntryMedicalEquipmentOrganizer1101"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getProcedureActivityProcedure2s(MedicalEquipmentSection2) <em>Get Procedure Activity Procedure2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Non Medicinal Supply Activity2 Entry Non Medicinal Supply Activity21103</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivityProcedure2s(MedicalEquipmentSection2)
+	 * @see #validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure2)).oclAsType(consol::ProcedureActivityProcedure2)";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(supply->exists(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getProcedureActivityProcedure2s(MedicalEquipmentSection2) <em>Get Procedure Activity Procedure2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Non Medicinal Supply Activity2 Entry Non Medicinal Supply Activity21103</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProcedureActivityProcedure2s(MedicalEquipmentSection2)
+	 * @see #validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicalEquipmentSection2 The receiving '<em><b>Medical Equipment Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<ProcedureActivityProcedure2> getProcedureActivityProcedure2s(
-			MedicalEquipmentSection2 medicalEquipmentSection2) {
-		if (GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateMedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103(MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2,
-				ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2.getEAllOperations().get(66));
+			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
-				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(medicalEquipmentSection2);
-		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicalEquipmentSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_NON_MEDICINAL_SUPPLY_ACTIVITY21103,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2NonMedicinalSupplyActivity2EntryNonMedicinalSupplyActivity21103"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Procedure Activity Procedure2 Entry Procedure Activity Procedure21105</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(procedure->exists(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section2 Procedure Activity Procedure2 Entry Procedure Activity Procedure21105</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicalEquipmentSection2 The receiving '<em><b>Medical Equipment Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateMedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105(MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicalEquipmentSection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE21105,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSection2ProcedureActivityProcedure2EntryProcedureActivityProcedure21105"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -356,26 +479,28 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 
 	public static boolean validateMedicalEquipmentSectionTemplateId(MedicalEquipmentSection2 medicalEquipmentSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
 				VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalEquipmentSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionTemplateId"),
-					new Object[] { medicalEquipmentSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionTemplateId"),
+						 new Object [] { medicalEquipmentSection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -415,26 +540,28 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 
 	public static boolean validateMedicalEquipmentSectionCodeP(MedicalEquipmentSection2 medicalEquipmentSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
 				VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalEquipmentSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCodeP"),
-					new Object[] { medicalEquipmentSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCodeP"),
+						 new Object [] { medicalEquipmentSection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -446,7 +573,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 				}
 				passToken.add(medicalEquipmentSection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -460,9 +587,9 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '46264-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '46264-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSectionCode(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Code</em>}' invariant operation.
@@ -488,95 +615,34 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 
 	public static boolean validateMedicalEquipmentSectionCode(MedicalEquipmentSection2 medicalEquipmentSection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicalEquipmentSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
 			try {
 				VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentSection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicalEquipmentSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCode"),
-					new Object[] { medicalEquipmentSection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCode"),
+						 new Object [] { medicalEquipmentSection2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateMedicalEquipmentSectionNonMedicinalSupplyActivity(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Non Medicinal Supply Activity</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentSectionNonMedicinalSupplyActivity(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSectionNonMedicinalSupplyActivity(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Non Medicinal Supply Activity</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateMedicalEquipmentSectionNonMedicinalSupplyActivity(MedicalEquipmentSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param medicalEquipmentSection2 The receiving '<em><b>Medical Equipment Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
-			MedicalEquipmentSection2 medicalEquipmentSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION2);
-			try {
-				VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentSection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionNonMedicinalSupplyActivity"),
-					new Object[] { medicalEquipmentSection2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

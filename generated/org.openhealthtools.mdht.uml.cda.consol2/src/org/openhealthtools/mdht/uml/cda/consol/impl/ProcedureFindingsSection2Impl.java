@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureFindingsSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Findings Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,9 +56,17 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return ProcedureFindingsSection2Operations.getConsolProblemObservation2s(this);
+	public boolean validateProcedureFindingsSection2Entry1146(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSection2Entry1146(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureFindingsSection2ProblemObservation2EntryProblemObservation21147(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSection2ProblemObservation2EntryProblemObservation21147(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +76,7 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 */
 	@Override
 	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -100,30 +105,18 @@ public class ProcedureFindingsSection2Impl extends ProcedureFindingsSectionImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureFindingsSection2Operations.validateProcedureFindingsSectionProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProcedureFindingsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureFindingsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureFindingsSection2Impl

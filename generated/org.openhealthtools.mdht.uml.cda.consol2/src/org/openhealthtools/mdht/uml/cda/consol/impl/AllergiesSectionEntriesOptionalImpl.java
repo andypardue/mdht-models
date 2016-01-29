@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergies Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,8 +59,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +99,7 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -114,11 +107,8 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
-			this, diagnostics, context);
+	public boolean validateAllergiesSectionEntriesOptionalEntry244(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalEntry244(this, diagnostics, context);
 	}
 
 	/**
@@ -126,9 +116,8 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AllergyProblemAct> getAllergyProblemActs() {
-		return AllergiesSectionEntriesOptionalOperations.getAllergyProblemActs(this);
+	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct245(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct245(this, diagnostics, context);
 	}
 
 	/**
@@ -138,17 +127,17 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	@Override
 	public AllergiesSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergiesSectionEntriesOptionalImpl

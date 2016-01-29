@@ -24,7 +24,9 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectivesSectionEntriesOptional2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.21' templateId.extension='2015-08-01' code.code='42348-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance Directives' constraints.validation.dependOn.AdvanceDirectivesSectionEntriesOptionalCode='AdvanceDirectivesSectionEntriesOptionalCodeP' constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP AdvanceDirectivesSectionEntriesOptional2Entry1174 AdvanceDirectivesSectionEntriesOptional2Entry1176' templateId.root='2.16.840.1.113883.10.20.22.2.21' templateId.extension='2015-08-01' code.code='42348-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance Directives' constraints.validation.dependOn.AdvanceDirectivesSectionEntriesOptionalCode='AdvanceDirectivesSectionEntriesOptionalCodeP' constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21175 AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1177' constraints.validation.query='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21175 AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1177'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2Entry constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21175'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntry constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1177'"
  * @generated
  */
 public interface AdvanceDirectivesSectionEntriesOptional2 extends AdvanceDirectivesSectionEntriesOptional {
@@ -35,29 +37,46 @@ public interface AdvanceDirectivesSectionEntriesOptional2 extends AdvanceDirecti
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAdvanceDirectivesSectionEntriesOptional2Entry1174(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer)).oclAsType(consol::AdvanceDirectiveOrganizer)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	EList<AdvanceDirectiveOrganizer> getAdvanceDirectiveOrganizers();
+	boolean validateAdvanceDirectivesSectionEntriesOptional2Entry1176(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2)).oclAsType(consol::AdvanceDirectiveObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2)))'"
 	 * @generated
 	 */
-	EList<AdvanceDirectiveObservation2> getConsolAdvanceDirectiveObservation2s();
+	boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21175(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer)))'"
+	 * @generated
+	 */
+	boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1177(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,10 +87,10 @@ public interface AdvanceDirectivesSectionEntriesOptional2 extends AdvanceDirecti
 	public AdvanceDirectivesSectionEntriesOptional2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdvanceDirectivesSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AdvanceDirectivesSectionEntriesOptional2

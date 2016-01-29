@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionEntr
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,8 +59,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalAbsenceOfMedications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalAbsenceOfMedications(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalAbsenceOfMedications(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +70,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -82,9 +78,17 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
-		return MedicationsSectionEntriesOptional2Operations.getConsolMedicationActivity2s(this);
+	public boolean validateMedicationsSectionEntriesOptional2Entry1178(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptional2Entry1178(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationsSectionEntriesOptional2MedicationActivity2EntryMedicationActivity21179(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptional2MedicationActivity2EntryMedicationActivity21179(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +99,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -107,20 +110,7 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptional2Operations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -130,17 +120,17 @@ public class MedicationsSectionEntriesOptional2Impl extends MedicationsSectionEn
 	 */
 	@Override
 	public MedicationsSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationsSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationsSectionEntriesOptional2Impl

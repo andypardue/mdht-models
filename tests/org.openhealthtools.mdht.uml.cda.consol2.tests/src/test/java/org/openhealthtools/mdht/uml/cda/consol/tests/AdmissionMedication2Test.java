@@ -17,13 +17,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedication2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,11 +30,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedication2EntryRelationship886(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication2 Entry Relationship886</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication2 Medication Activity2 Entry Relationship Medication Activity2887</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication2#validateAdmissionMedicationMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication Medication Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -51,11 +48,71 @@ public class AdmissionMedication2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolMedicationActivity2s() {
 
-		AdmissionMedication2 target = objectFactory.create();
-		target.getConsolMedicationActivity2s();
+	public void testValidateAdmissionMedication2EntryRelationship886() {
+		OperationsTestCase<AdmissionMedication2> validateAdmissionMedication2EntryRelationship886TestCase = new OperationsTestCase<AdmissionMedication2>(
+			"validateAdmissionMedication2EntryRelationship886",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_MEDICATION2_ENTRY_RELATIONSHIP886__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AdmissionMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdmissionMedication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdmissionMedication2Operations.validateAdmissionMedication2EntryRelationship886(
+					(AdmissionMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdmissionMedication2EntryRelationship886TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887() {
+		OperationsTestCase<AdmissionMedication2> validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887TestCase = new OperationsTestCase<AdmissionMedication2>(
+			"validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_MEDICATION2_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_MEDICATION_ACTIVITY2887__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdmissionMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdmissionMedication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdmissionMedication2Operations.validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887(
+					(AdmissionMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdmissionMedication2MedicationActivity2EntryRelationshipMedicationActivity2887TestCase.doValidationTest();
 	}
 
 	/**
@@ -165,43 +222,6 @@ public class AdmissionMedication2Test extends CDAValidationTest {
 		};
 
 		validateAdmissionMedicationCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdmissionMedicationMedicationActivity() {
-		OperationsTestCase<AdmissionMedication2> validateAdmissionMedicationMedicationActivityTestCase = new OperationsTestCase<AdmissionMedication2>(
-			"validateAdmissionMedicationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdmissionMedication2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdmissionMedication2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdmissionMedication2Operations.validateAdmissionMedicationMedicationActivity(
-					(AdmissionMedication2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdmissionMedicationMedicationActivityTestCase.doValidationTest();
 	}
 
 	/**

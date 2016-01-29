@@ -16,16 +16,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,11 +41,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActAllergyObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActEntryRelationship0(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Entry Relationship0</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActCDCodeAndCodeSystemValues(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act CD Code And Code System Values</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act CD Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActCDCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act CD Code System</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#getAllergyObservations() <em>Get Allergy Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct#validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Observation Entry Relationship Allergy Observation1</em>}</li>
  * </ul>
  * </p>
  *
@@ -59,29 +56,24 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActEffectiveTimeHigh() {
 		OperationsTestCase<AllergyProblemAct> validateAllergyProblemActEffectiveTimeHighTestCase = new OperationsTestCase<AllergyProblemAct>(
-			"validateAllergyProblemActEffectiveTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyProblemActEffectiveTimeHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyProblemAct target) {
-				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("completed"));
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
 				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("completed"));
-				IVL_TS pt = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS high = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				pt.setHigh(high);
-				target.setEffectiveTime(pt);
+
 			}
 
 			@Override
@@ -98,29 +90,24 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActEffectiveTimeLow() {
 		OperationsTestCase<AllergyProblemAct> validateAllergyProblemActEffectiveTimeLowTestCase = new OperationsTestCase<AllergyProblemAct>(
-			"validateAllergyProblemActEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyProblemActEffectiveTimeLow", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyProblemAct target) {
-				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("active"));
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
 				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("active"));
-				IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				et.setLow(low);
-				target.setEffectiveTime(et);
+
 			}
 
 			@Override
@@ -239,7 +226,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActId() {
@@ -256,7 +243,6 @@ public class AllergyProblemActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
 
 			}
 
@@ -274,7 +260,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActCode() {
@@ -285,12 +271,13 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyProblemAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -307,7 +294,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActStatusCode() {
@@ -324,7 +311,10 @@ public class AllergyProblemActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
 				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("completed"));
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -341,7 +331,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated 
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActEffectiveTime() {
@@ -378,13 +368,14 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateAllergyProblemActAllergyObservation() {
-		OperationsTestCase<AllergyProblemAct> validateAllergyProblemActAllergyObservationTestCase = new OperationsTestCase<AllergyProblemAct>(
-			"validateAllergyProblemActAllergyObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateAllergyProblemActEntryRelationship0() {
+		OperationsTestCase<AllergyProblemAct> validateAllergyProblemActEntryRelationship0TestCase = new OperationsTestCase<AllergyProblemAct>(
+			"validateAllergyProblemActEntryRelationship0", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_ENTRY_RELATIONSHIP0__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -396,91 +387,40 @@ public class AllergyProblemActTest extends CDAValidationTest {
 			protected void updateToPass(AllergyProblemAct target) {
 				target.init();
 
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createAllergyObservation().init());
-				target.getEntryRelationships().add(er);
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyProblemActOperations.validateAllergyProblemActAllergyObservation(
+				return AllergyProblemActOperations.validateAllergyProblemActEntryRelationship0(
 					(AllergyProblemAct) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyProblemActAllergyObservationTestCase.doValidationTest();
+		validateAllergyProblemActEntryRelationship0TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActCDCodeAndCodeSystemValues() {
 		OperationsTestCase<AllergyProblemAct> validateAllergyProblemActCDCodeAndCodeSystemValuesTestCase = new OperationsTestCase<AllergyProblemAct>(
 			"validateAllergyProblemActCDCodeAndCodeSystemValues",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AllergyProblemAct target) {
-						// fully inaccurate values
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD(
-							CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AllergyProblemAct target) {
-						// @code and @codeSystem swapped 1
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("48765-2", "2.16.840.1.113883.5.6"));
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AllergyProblemAct target) {
-						// @code and @codeSystem swapped 2
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("CONC", CDAValidationTest.LOINC_ID));
-					}
-				});
+			protected void updateToFail(AllergyProblemAct target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AllergyProblemAct target) {
-						// Concern (new)
-						// code element with @codeSystem = ???2.16.840.1.113883.5.6??? and @code = ???CONC???
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("CONC", "2.16.840.1.113883.5.6"));
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AllergyProblemAct target) {
-						// 48765-2 (old)
-						// code element with @codeSystem = ???2.16.840.1.113883.6.1??? and @code = ???48765-2???
-						target.init();
-						target.setCode(DatatypesFactory.eINSTANCE.createCD("48765-2", CDAValidationTest.LOINC_ID));
-					}
-				});
+			protected void updateToPass(AllergyProblemAct target) {
+				target.init();
 
 			}
 
@@ -498,7 +438,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActCDCode() {
@@ -509,13 +449,13 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyProblemAct target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
-				target.getCode().setCode("hasACode");
+				target.init();
+
 			}
 
 			@Override
@@ -532,7 +472,7 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAllergyProblemActCDCodeSystem() {
@@ -543,13 +483,13 @@ public class AllergyProblemActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AllergyProblemAct target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(AllergyProblemAct target) {
-				target.getCode().setCodeSystem("hasACodeSystem");
+				target.init();
+
 			}
 
 			@Override
@@ -569,11 +509,35 @@ public class AllergyProblemActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAllergyObservations() {
 
-		AllergyProblemAct target = objectFactory.create();
-		target.getAllergyObservations();
+	public void testValidateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1() {
+		OperationsTestCase<AllergyProblemAct> validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1TestCase = new OperationsTestCase<AllergyProblemAct>(
+			"validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION_ENTRY_RELATIONSHIP_ALLERGY_OBSERVATION1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AllergyProblemAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AllergyProblemAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyProblemActOperations.validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1(
+					(AllergyProblemAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1TestCase.doValidationTest();
 	}
 
 	/**

@@ -52,8 +52,8 @@ public class ReasonForVisitSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateReasonForVisitSectionTemplateId() {
 		OperationsTestCase<ReasonForVisitSection> validateReasonForVisitSectionTemplateIdTestCase = new OperationsTestCase<ReasonForVisitSection>(
-			"validateReasonForVisitSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReasonForVisitSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

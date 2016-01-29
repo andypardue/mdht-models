@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ParticipantRoleImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Service Delivery Location</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	@Override
 	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	@Override
 	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	@Override
 	public boolean validateServiceDeliveryLocationHasPlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityName(
-			this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -144,17 +139,17 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 */
 	@Override
 	public ServiceDeliveryLocation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ServiceDeliveryLocation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ServiceDeliveryLocationImpl

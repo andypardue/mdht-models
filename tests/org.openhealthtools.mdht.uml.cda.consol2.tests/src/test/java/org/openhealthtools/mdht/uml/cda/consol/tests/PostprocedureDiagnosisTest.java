@@ -15,13 +15,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PostprocedureDiagnosisOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,8 +32,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#validatePostprocedureDiagnosisClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#validatePostprocedureDiagnosisMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#validatePostprocedureDiagnosisCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#validatePostprocedureDiagnosisProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Problem Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#getProblemObservations() <em>Get Problem Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#validatePostprocedureDiagnosisEntryRelationship520(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Entry Relationship520</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis#validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Problem Observation Entry Relationship Problem Observation521</em>}</li>
  * </ul>
  * </p>
  *
@@ -52,8 +49,8 @@ public class PostprocedureDiagnosisTest extends CDAValidationTest {
 	@Test
 	public void testValidatePostprocedureDiagnosisTemplateId() {
 		OperationsTestCase<PostprocedureDiagnosis> validatePostprocedureDiagnosisTemplateIdTestCase = new OperationsTestCase<PostprocedureDiagnosis>(
-			"validatePostprocedureDiagnosisTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostprocedureDiagnosisTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -115,7 +112,7 @@ public class PostprocedureDiagnosisTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidatePostprocedureDiagnosisCode() {
@@ -132,7 +129,7 @@ public class PostprocedureDiagnosisTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PostprocedureDiagnosis target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("59769-0", "2.16.840.1.113883.6.1"));
+
 			}
 
 			@Override
@@ -145,6 +142,78 @@ public class PostprocedureDiagnosisTest extends CDAValidationTest {
 		};
 
 		validatePostprocedureDiagnosisCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePostprocedureDiagnosisEntryRelationship520() {
+		OperationsTestCase<PostprocedureDiagnosis> validatePostprocedureDiagnosisEntryRelationship520TestCase = new OperationsTestCase<PostprocedureDiagnosis>(
+			"validatePostprocedureDiagnosisEntryRelationship520",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_ENTRY_RELATIONSHIP520__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PostprocedureDiagnosis target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PostprocedureDiagnosis target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisEntryRelationship520(
+					(PostprocedureDiagnosis) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePostprocedureDiagnosisEntryRelationship520TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521() {
+		OperationsTestCase<PostprocedureDiagnosis> validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521TestCase = new OperationsTestCase<PostprocedureDiagnosis>(
+			"validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION_ENTRY_RELATIONSHIP_PROBLEM_OBSERVATION521__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PostprocedureDiagnosis target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PostprocedureDiagnosis target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521(
+					(PostprocedureDiagnosis) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521TestCase.doValidationTest();
 	}
 
 	/**
@@ -179,57 +248,6 @@ public class PostprocedureDiagnosisTest extends CDAValidationTest {
 		};
 
 		validatePostprocedureDiagnosisMoodCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidatePostprocedureDiagnosisProblemObservation() {
-		OperationsTestCase<PostprocedureDiagnosis> validatePostprocedureDiagnosisProblemObservationTestCase = new OperationsTestCase<PostprocedureDiagnosis>(
-			"validatePostprocedureDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PostprocedureDiagnosis target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PostprocedureDiagnosis target) {
-				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createProblemObservation().init());
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-
-				}
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(
-					(PostprocedureDiagnosis) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePostprocedureDiagnosisProblemObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetProblemObservations() {
-
-		PostprocedureDiagnosis target = objectFactory.create();
-		target.getProblemObservations();
-
 	}
 
 	/**

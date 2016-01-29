@@ -101,27 +101,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigTextReferenceValue(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigTextReferenceValue"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigTextReferenceValue"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -161,26 +162,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigTemplateId(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigTemplateId"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigTemplateId"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -220,26 +223,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigClassCode(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigClassCode"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigClassCode"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -253,9 +258,9 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and "
-			+ "let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in "
-			+ "value = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT";
+	protected static final String VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and "+
+"let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in "+
+"value = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationFreeTextSigMoodCode(MedicationFreeTextSig, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Free Text Sig Mood Code</em>}' invariant operation.
@@ -281,26 +286,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigMoodCode(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigMoodCode"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigMoodCode"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -314,9 +321,9 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '76662-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '76662-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationFreeTextSigCode(MedicationFreeTextSig, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Free Text Sig Code</em>}' invariant operation.
@@ -342,26 +349,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigCode(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigCode"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CODE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigCode"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -401,26 +410,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigCodeP(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigCodeP"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigCodeP"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -460,26 +471,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigText(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEXT,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigText"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEXT,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigText"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -519,26 +532,28 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 
 	public static boolean validateMedicationFreeTextSigConsumable(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationFreeTextSig)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(medicationFreeTextSig)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE,
-					ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumable"),
-					new Object[] { medicationFreeTextSig }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumable"),
+						 new Object [] { medicationFreeTextSig }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -578,30 +593,33 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigEDTELValue(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);
+		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE,
-						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigEDTELValue"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigEDTELValue"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -642,30 +660,33 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigEDReference(MedicationFreeTextSig medicationFreeTextSig,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);
+		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_ED_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigEDReference"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_ED_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigEDReference"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -710,31 +731,33 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor(
 			MedicationFreeTextSig medicationFreeTextSig, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);
+		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -775,31 +798,33 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug(
 			MedicationFreeTextSig medicationFreeTextSig, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);
+		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG,
-						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -840,31 +865,33 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 	@SuppressWarnings("unchecked")
 	public static boolean validateMedicationFreeTextSigConsumableManufacturedProduct(
 			MedicationFreeTextSig medicationFreeTextSig, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_FREE_TEXT_SIG);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);
+		Object oclResult = VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicationFreeTextSig);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT,
-						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProduct"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT,
+						 ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProduct"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}

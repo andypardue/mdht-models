@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.LongitudinalCareWoundO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Longitudinal Care Wound Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationClassCode(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationMoodCode(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +78,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCodeP(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +87,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * @generated
 	 */
 	public boolean validateLongitudinalCareWoundObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCode(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +97,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationValueP(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +107,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationValue(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +117,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationTargetSiteCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCodeP(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -136,41 +127,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationTargetSiteCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLongitudinalCareWoundObservationWoundMeasurementObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationWoundMeasurementObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLongitudinalCareWoundObservationWoundCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationWoundCharacteristics(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateLongitudinalCareWoundObservationHighestPressureUlcerStage(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationHighestPressureUlcerStage(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -180,8 +137,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationAuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationAuthorParticipation(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationAuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -189,10 +145,35 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2(
-			this, diagnostics, context);
+	public boolean validateLongitudinalCareWoundObservationEntryRelationship738(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationEntryRelationship738(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLongitudinalCareWoundObservationEntryRelationship740(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationEntryRelationship740(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLongitudinalCareWoundObservationEntryRelationship742(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationEntryRelationship742(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateLongitudinalCareWoundObservationEntryRelationship744(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationEntryRelationship744(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +183,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCDCRCDValueTerminology(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRCDValueTerminology(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRCDValueTerminology(this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +193,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCDCRCDCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRCDCode(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRCDCode(this, diagnostics, context);
 	}
 
 	/**
@@ -224,8 +203,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCDCRName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRName(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRName(this, diagnostics, context);
 	}
 
 	/**
@@ -235,8 +213,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCDCRNameP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRNameP(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRNameP(this, diagnostics, context);
 	}
 
 	/**
@@ -246,8 +223,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCDCRValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRValue(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDCRValue(this, diagnostics, context);
 	}
 
 	/**
@@ -257,8 +233,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	public boolean validateLongitudinalCareWoundObservationCDQualifier(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDQualifier(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationCDQualifier(this, diagnostics, context);
 	}
 
 	/**
@@ -266,8 +241,8 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<WoundMeasurementObservation> getWoundMeasurementObservations() {
-		return LongitudinalCareWoundObservationOperations.getWoundMeasurementObservations(this);
+	public boolean validateLongitudinalCareWoundObservationWoundMeasurementObservationEntryRelationshipWoundMeasurementObservation739(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationWoundMeasurementObservationEntryRelationshipWoundMeasurementObservation739(this, diagnostics, context);
 	}
 
 	/**
@@ -275,8 +250,8 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<WoundCharacteristic> getWoundCharacteristicss() {
-		return LongitudinalCareWoundObservationOperations.getWoundCharacteristicss(this);
+	public boolean validateLongitudinalCareWoundObservationWoundCharacteristicEntryRelationshipWoundCharacteristics741(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationWoundCharacteristicEntryRelationshipWoundCharacteristics741(this, diagnostics, context);
 	}
 
 	/**
@@ -284,8 +259,8 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HighestPressureUlcerStage getHighestPressureUlcerStage() {
-		return LongitudinalCareWoundObservationOperations.getHighestPressureUlcerStage(this);
+	public boolean validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservation2743(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservation2743(this, diagnostics, context);
 	}
 
 	/**
@@ -293,8 +268,8 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<NumberOfPressureUlcersObservation2> getNumberOfPressureUlcersObservation2s() {
-		return LongitudinalCareWoundObservationOperations.getNumberOfPressureUlcersObservation2s(this);
+	public boolean validateLongitudinalCareWoundObservationHighestPressureUlcerStageEntryRelationshipHighestPressureUlcerStage745(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return LongitudinalCareWoundObservationOperations.validateLongitudinalCareWoundObservationHighestPressureUlcerStageEntryRelationshipHighestPressureUlcerStage745(this, diagnostics, context);
 	}
 
 	/**
@@ -304,8 +279,7 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LongitudinalCareWoundObservationOperations.validateProblemObservationTemplateId(
-			this, diagnostics, context);
+		return LongitudinalCareWoundObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -315,17 +289,17 @@ public class LongitudinalCareWoundObservationImpl extends ProblemObservation2Imp
 	 */
 	@Override
 	public LongitudinalCareWoundObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public LongitudinalCareWoundObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // LongitudinalCareWoundObservationImpl

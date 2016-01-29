@@ -58,10 +58,10 @@ public interface SeverityObservation2 extends SeverityObservation {
 	public SeverityObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SeverityObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SeverityObservation2

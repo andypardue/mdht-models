@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -46,8 +48,8 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionNutritionalStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#getNutritionalStatusObservations() <em>Get Nutritional Status Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionEntry762(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Entry762</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionSection#validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation Entry Nutritional Status Observation763</em>}</li>
  * </ul>
  * </p>
  *
@@ -97,26 +99,28 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionTemplateId(NutritionSection nutritionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
 				VALIDATE_NUTRITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTemplateId"),
-					new Object[] { nutritionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTemplateId"),
+						 new Object [] { nutritionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,9 +134,9 @@ public class NutritionSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '61144-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '61144-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionSectionCode(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Code</em>}' invariant operation.
@@ -158,26 +162,28 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionCode(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
 				VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCode"),
-					new Object[] { nutritionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCode"),
+						 new Object [] { nutritionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -217,26 +223,28 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionCodeP(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
 				VALIDATE_NUTRITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCodeP"),
-					new Object[] { nutritionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCodeP"),
+						 new Object [] { nutritionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -276,26 +284,28 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionTitle(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
 				VALIDATE_NUTRITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTitle"),
-					new Object[] { nutritionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTitle"),
+						 new Object [] { nutritionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -335,51 +345,53 @@ public class NutritionSectionOperations extends SectionOperations {
 
 	public static boolean validateNutritionSectionText(NutritionSection nutritionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
 				VALIDATE_NUTRITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionText"),
-					new Object[] { nutritionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionText"),
+						 new Object [] { nutritionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionSectionNutritionalStatusObservation(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionSectionEntry762(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Entry762</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionSectionNutritionalStatusObservation(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionSectionEntry762(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::NutritionalStatusObservation))";
+	protected static final String VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionSectionNutritionalStatusObservation(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionSectionEntry762(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Entry762</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionSectionNutritionalStatusObservation(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionSectionEntry762(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -391,77 +403,99 @@ public class NutritionSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionSectionNutritionalStatusObservation(NutritionSection nutritionSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionSectionEntry762(NutritionSection nutritionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
-				VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_SECTION_ENTRY762__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionNutritionalStatusObservation"),
-					new Object[] { nutritionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_ENTRY762,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionEntry762"),
+						 new Object [] { nutritionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getNutritionalStatusObservations(NutritionSection) <em>Get Nutritional Status Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation Entry Nutritional Status Observation763</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionalStatusObservations(NutritionSection)
+	 * @see #validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NutritionalStatusObservation)).oclAsType(consol::NutritionalStatusObservation)";
+	protected static final String VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NutritionalStatusObservation)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getNutritionalStatusObservations(NutritionSection) <em>Get Nutritional Status Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Section Nutritional Status Observation Entry Nutritional Status Observation763</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getNutritionalStatusObservations(NutritionSection)
+	 * @see #validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(NutritionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionSection The receiving '<em><b>Nutrition Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<NutritionalStatusObservation> getNutritionalStatusObservations(NutritionSection nutritionSection) {
-		if (GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763(NutritionSection nutritionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_SECTION,
-				ConsolPackage.Literals.NUTRITION_SECTION.getEAllOperations().get(61));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_SECTION);
 			try {
-				GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITIONAL_STATUS_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<NutritionalStatusObservation> result = (Collection<NutritionalStatusObservation>) query.evaluate(nutritionSection);
-		return new BasicEList.UnmodifiableEList<NutritionalStatusObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionSection);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION_ENTRY_NUTRITIONAL_STATUS_OBSERVATION763,
+						 ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionNutritionalStatusObservationEntryNutritionalStatusObservation763"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // NutritionSectionOperations

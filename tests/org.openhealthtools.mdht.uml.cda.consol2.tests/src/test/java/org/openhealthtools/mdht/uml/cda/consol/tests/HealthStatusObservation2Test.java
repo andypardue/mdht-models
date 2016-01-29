@@ -55,7 +55,7 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHealthStatusObservation2Id() {
@@ -66,12 +66,12 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(HealthStatusObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(HealthStatusObservation2 target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -128,8 +128,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHealthStatusObservationStatusCodeP() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationStatusCodePTestCase = new OperationsTestCase<HealthStatusObservation2>(
-			"validateHealthStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthStatusObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -157,15 +157,17 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateHealthStatusObservationHasTextReference() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationHasTextReferenceTestCase = new OperationsTestCase<HealthStatusObservation2>(
 			"validateHealthStatusObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,15 +195,17 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateHealthStatusObservationTextReferenceValue() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationTextReferenceValueTestCase = new OperationsTestCase<HealthStatusObservation2>(
 			"validateHealthStatusObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -232,15 +236,17 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateHealthStatusObservationHasTextReferenceValue() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationHasTextReferenceValueTestCase = new OperationsTestCase<HealthStatusObservation2>(
 			"validateHealthStatusObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -276,8 +282,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHealthStatusObservationTemplateId() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationTemplateIdTestCase = new OperationsTestCase<HealthStatusObservation2>(
-			"validateHealthStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -305,7 +311,7 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateHealthStatusObservationCode() {
@@ -316,17 +322,14 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(HealthStatusObservation2 target) {
-				target.init();
-				target.getCode().setCode(CDAValidationTest.BAD_CODE_VALUE);
-				target.getCode().setCodeSystem(CDAValidationTest.BAD_CODESYSTEM_ID);
+
 			}
 
 			@Override
 			protected void updateToPass(HealthStatusObservation2 target) {
+				target.init();
 
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCode("11323-3");
-				cd.setCodeSystem(CDAValidationTest.LOINC_ID);
 				target.setCode(cd);
 
 			}
@@ -352,10 +355,11 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateHealthStatusObservationText() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationTextTestCase = new OperationsTestCase<HealthStatusObservation2>(
@@ -396,8 +400,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHealthStatusObservationStatusCode() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationStatusCodeTestCase = new OperationsTestCase<HealthStatusObservation2>(
-			"validateHealthStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

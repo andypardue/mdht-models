@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureIndicationsSe
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Indications Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,9 +57,17 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getConsolIndication2s() {
-		return ProcedureIndicationsSection2Operations.getConsolIndication2s(this);
+	public boolean validateProcedureIndicationsSection2Entry1148(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSection2Entry1148(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureIndicationsSection2Indication2EntryIndication21149(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSection2Indication2EntryIndication21149(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +78,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	@Override
 	public boolean validateProcedureIndicationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +88,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	@Override
 	public boolean validateProcedureIndicationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,20 +98,7 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	@Override
 	public boolean validateProcedureIndicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureIndicationsSectionIndication(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionIndication(
-			this, diagnostics, context);
+		return ProcedureIndicationsSection2Operations.validateProcedureIndicationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -117,17 +108,17 @@ public class ProcedureIndicationsSection2Impl extends ProcedureIndicationsSectio
 	 */
 	@Override
 	public ProcedureIndicationsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureIndicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureIndicationsSection2Impl

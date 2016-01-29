@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionCoverageActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#getCoverageActivities() <em>Get Coverage Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionEntry130(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Entry130</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PayersSection#validatePayersSectionCoverageActivityEntryCoverageActivity131(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Payers Section Coverage Activity Entry Coverage Activity131</em>}</li>
  * </ul>
  * </p>
  *
@@ -89,7 +89,8 @@ public class PayersSectionTest extends CDAValidationTest {
 	public void testValidatePayersSectionCode() {
 		OperationsTestCase<PayersSection> validatePayersSectionCodeTestCase = new OperationsTestCase<PayersSection>(
 			"validatePayersSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(PayersSection target) {
@@ -193,7 +194,8 @@ public class PayersSectionTest extends CDAValidationTest {
 	public void testValidatePayersSectionText() {
 		OperationsTestCase<PayersSection> validatePayersSectionTextTestCase = new OperationsTestCase<PayersSection>(
 			"validatePayersSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(PayersSection target) {
@@ -223,36 +225,37 @@ public class PayersSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidatePayersSectionCoverageActivity() {
-		OperationsTestCase<PayersSection> validatePayersSectionCoverageActivityTestCase = new OperationsTestCase<PayersSection>(
-			"validatePayersSectionCoverageActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidatePayersSectionEntry130() {
+		OperationsTestCase<PayersSection> validatePayersSectionEntry130TestCase = new OperationsTestCase<PayersSection>(
+			"validatePayersSectionEntry130",
+			operationsForOCL.getOCLValue("VALIDATE_PAYERS_SECTION_ENTRY130__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PayersSection target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PayersSection target) {
-				target.addAct(ConsolFactory.eINSTANCE.createCoverageActivity().init());
+				target.init();
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PayersSectionOperations.validatePayersSectionCoverageActivity(
+				return PayersSectionOperations.validatePayersSectionEntry130(
 					(PayersSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validatePayersSectionCoverageActivityTestCase.doValidationTest();
+		validatePayersSectionEntry130TestCase.doValidationTest();
 	}
 
 	/**
@@ -260,11 +263,35 @@ public class PayersSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCoverageActivities() {
 
-		PayersSection target = objectFactory.create();
-		target.getCoverageActivities();
+	public void testValidatePayersSectionCoverageActivityEntryCoverageActivity131() {
+		OperationsTestCase<PayersSection> validatePayersSectionCoverageActivityEntryCoverageActivity131TestCase = new OperationsTestCase<PayersSection>(
+			"validatePayersSectionCoverageActivityEntryCoverageActivity131",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY_ENTRY_COVERAGE_ACTIVITY131__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PayersSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PayersSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PayersSectionOperations.validatePayersSectionCoverageActivityEntryCoverageActivity131(
+					(PayersSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePayersSectionCoverageActivityEntryCoverageActivity131TestCase.doValidationTest();
 	}
 
 	/**

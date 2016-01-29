@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PostprocedureDiagnosis
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Postprocedure Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,9 +66,17 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<ProblemObservation2> getConsolProblemObservation2s() {
-		return PostprocedureDiagnosis2Operations.getConsolProblemObservation2s(this);
+	public boolean validatePostprocedureDiagnosis2EntryRelationship998(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosis2EntryRelationship998(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePostprocedureDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2999(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2999(this, diagnostics, context);
 	}
 
 	/**
@@ -99,30 +105,18 @@ public class PostprocedureDiagnosis2Impl extends PostprocedureDiagnosisImpl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PostprocedureDiagnosis2Operations.validatePostprocedureDiagnosisProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PostprocedureDiagnosis2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PostprocedureDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PostprocedureDiagnosis2Impl

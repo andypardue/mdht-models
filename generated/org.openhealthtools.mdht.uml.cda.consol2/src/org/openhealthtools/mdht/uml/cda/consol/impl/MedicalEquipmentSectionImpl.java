@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medical Equipment Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -108,11 +106,8 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
-			this, diagnostics, context);
+	public boolean validateMedicalEquipmentSectionEntry78(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionEntry78(this, diagnostics, context);
 	}
 
 	/**
@@ -120,9 +115,8 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
-		return MedicalEquipmentSectionOperations.getNonMedicinalSupplyActivities(this);
+	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity79(this, diagnostics, context);
 	}
 
 	/**
@@ -132,17 +126,17 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	 */
 	@Override
 	public MedicalEquipmentSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicalEquipmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicalEquipmentSectionImpl

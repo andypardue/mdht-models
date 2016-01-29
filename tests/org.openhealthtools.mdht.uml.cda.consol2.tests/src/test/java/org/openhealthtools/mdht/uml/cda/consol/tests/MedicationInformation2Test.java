@@ -17,13 +17,13 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationInformation2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,7 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateMedicationInformation2ManufacturedMaterial() {
@@ -88,26 +88,25 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslationTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformation2MedicationInformationManufacturedMaterialCETranslation",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION2_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION2_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationInformation2 target) {
-				target.init();
-				Material m = CDAFactory.eINSTANCE.createMaterial();
-				m.setCode(DatatypesFactory.eINSTANCE.createCE());
-				target.setManufacturedMaterial(m);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
-				target.getManufacturedMaterial().getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -124,15 +123,17 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValueTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -142,6 +143,9 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -159,25 +163,25 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCodeP() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialCodePTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationInformation2 target) {
-				target.init();
-				Material m = CDAFactory.eINSTANCE.createMaterial();
-				target.setManufacturedMaterial(m);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
-				target.getManufacturedMaterial().setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -228,24 +232,25 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationInformationManufacturedMaterial() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationManufacturedMaterialTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationManufacturedMaterial",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationInformation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
-				Material m = CDAFactory.eINSTANCE.createMaterial();
-				target.setManufacturedMaterial(m);
+				target.init();
+
 			}
 
 			@Override
@@ -262,15 +267,17 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalTextTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -280,6 +287,9 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createED();
 
 			}
 
@@ -297,15 +307,17 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslationTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -333,15 +345,17 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialReference() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialReferenceTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialReference",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -369,15 +383,17 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValueTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -387,6 +403,9 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createCD();
 
 			}
 
@@ -404,26 +423,25 @@ public class MedicationInformation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCode() {
 		OperationsTestCase<MedicationInformation2> validateMedicationInformationMedicationInformationManufacturedMaterialCodeTestCase = new OperationsTestCase<MedicationInformation2>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationInformation2 target) {
-				target.init();
-				Material m = CDAFactory.eINSTANCE.createMaterial();
-				target.setManufacturedMaterial(m);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationInformation2 target) {
-				target.getManufacturedMaterial().setCode(
-					DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.6.88"));
+				target.init();
+
 			}
 
 			@Override

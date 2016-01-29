@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSection2Opera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergies Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,6 +85,24 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergiesSection2Entry1190(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSection2Operations.validateAllergiesSection2Entry1190(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergiesSection2AllergyConcernAct2EntryAllergyConcernAct21191(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSection2Operations.validateAllergiesSection2AllergyConcernAct2EntryAllergyConcernAct21191(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -119,40 +135,18 @@ public class AllergiesSection2Impl extends AllergiesSectionEntriesOptional2Impl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AllergiesSection2Operations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<AllergyConcernAct2> getConsolAllergyConcernAct2s() {
-		return AllergiesSection2Operations.getConsolAllergyConcernAct2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public AllergiesSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AllergiesSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergiesSection2Impl

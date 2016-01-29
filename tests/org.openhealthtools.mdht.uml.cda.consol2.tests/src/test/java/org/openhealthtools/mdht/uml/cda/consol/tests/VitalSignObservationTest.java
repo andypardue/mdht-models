@@ -10,15 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -65,27 +63,23 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationTextReference() {
 		OperationsTestCase<VitalSignObservation> validateVitalSignObservationTextReferenceTestCase = new OperationsTestCase<VitalSignObservation>(
-			"validateVitalSignObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+				target.init();
 
 			}
 
@@ -103,28 +97,26 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationReferenceValue() {
 		OperationsTestCase<VitalSignObservation> validateVitalSignObservationReferenceValueTestCase = new OperationsTestCase<VitalSignObservation>(
-			"validateVitalSignObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -142,37 +134,27 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationTextReferenceValue() {
-		OperationsTestCase<VitalSignObservation> validateVitalSignObservationTextReferenceValueTestCase = new NarrativeReferenceTestCase<VitalSignObservation>(
+		OperationsTestCase<VitalSignObservation> validateVitalSignObservationTextReferenceValueTestCase = new OperationsTestCase<VitalSignObservation>(
 			"validateVitalSignObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
-				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
+				target.init();
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -363,7 +345,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationCode() {
@@ -381,9 +363,16 @@ public class VitalSignObservationTest extends CDAValidationTest {
 			protected void updateToPass(VitalSignObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD("8310-5", "2.16.840.1.113883.6.1", "", "");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
+			}
+
+			@Override
+			protected void setDependency(VitalSignObservation target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.VitalSignObservationCodeP", passToken);
 			}
 
 			@Override
@@ -442,8 +431,8 @@ public class VitalSignObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignObservationStatusCodeP() {
 		OperationsTestCase<VitalSignObservation> validateVitalSignObservationStatusCodePTestCase = new OperationsTestCase<VitalSignObservation>(
-			"validateVitalSignObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -476,8 +465,8 @@ public class VitalSignObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignObservationEffectiveTime() {
 		OperationsTestCase<VitalSignObservation> validateVitalSignObservationEffectiveTimeTestCase = new OperationsTestCase<VitalSignObservation>(
-			"validateVitalSignObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -508,7 +497,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationValue() {
@@ -520,18 +509,14 @@ public class VitalSignObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
 
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
+				target.init();
 
-				target.getValues().clear();
-
-				target.getValues().add(DatatypesFactory.eINSTANCE.createPQ());
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -549,13 +534,13 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationInterpretationCode() {
 		OperationsTestCase<VitalSignObservation> validateVitalSignObservationInterpretationCodeTestCase = new OperationsTestCase<VitalSignObservation>(
-			"validateVitalSignObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -566,7 +551,6 @@ public class VitalSignObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
 				target.init();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
@@ -584,7 +568,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationMethodCode() {
@@ -602,8 +586,6 @@ public class VitalSignObservationTest extends CDAValidationTest {
 			protected void updateToPass(VitalSignObservation target) {
 				target.init();
 
-				target.getMethodCodes().add(DatatypesFactory.eINSTANCE.createCE());
-
 			}
 
 			@Override
@@ -620,23 +602,23 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationTargetSiteCode() {
 		OperationsTestCase<VitalSignObservation> validateVitalSignObservationTargetSiteCodeTestCase = new OperationsTestCase<VitalSignObservation>(
-			"validateVitalSignObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationTargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
-				target.getTargetSiteCodes().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
 
 			}
 
@@ -654,7 +636,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationText() {
@@ -665,13 +647,15 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
+				target.init();
 
-				target.setText(DatatypesFactory.eINSTANCE.createED());
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
 
 			}
 
@@ -689,7 +673,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignObservationAuthor() {
@@ -700,13 +684,13 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(VitalSignObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
+				target.init();
 
-				target.getAuthors().add(CDAFactory.eINSTANCE.createAuthor());
 			}
 
 			@Override

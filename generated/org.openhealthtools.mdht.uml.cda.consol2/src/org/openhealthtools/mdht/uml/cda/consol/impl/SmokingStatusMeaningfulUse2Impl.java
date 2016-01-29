@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfu
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Smoking Status Meaningful Use2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -64,8 +62,7 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	public boolean validateSmokingStatusMeaningfulUse2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2AuthorParticipation(
-			this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2AuthorParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +72,7 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	@Override
 	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
-			this, diagnostics, context);
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -126,17 +122,17 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 */
 	@Override
 	public SmokingStatusMeaningfulUse2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SmokingStatusMeaningfulUse2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SmokingStatusMeaningfulUse2Impl

@@ -37,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#validateComplicationsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#validateComplicationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#validateComplicationsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#validateComplicationsSectionProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Problem Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#getProblemObservations() <em>Get Problem Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#validateComplicationsSectionEntry294(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Entry294</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection#validateComplicationsSectionProblemObservationEntryProblemObservation295(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complications Section Problem Observation Entry Problem Observation295</em>}</li>
  * </ul>
  * </p>
  *
@@ -225,13 +225,14 @@ public class ComplicationsSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateComplicationsSectionProblemObservation() {
-		OperationsTestCase<ComplicationsSection> validateComplicationsSectionProblemObservationTestCase = new OperationsTestCase<ComplicationsSection>(
-			"validateComplicationsSectionProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateComplicationsSectionEntry294() {
+		OperationsTestCase<ComplicationsSection> validateComplicationsSectionEntry294TestCase = new OperationsTestCase<ComplicationsSection>(
+			"validateComplicationsSectionEntry294",
+			operationsForOCL.getOCLValue("VALIDATE_COMPLICATIONS_SECTION_ENTRY294__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,19 +243,19 @@ public class ComplicationsSectionTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ComplicationsSection target) {
 				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createProblemObservation().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ComplicationsSectionOperations.validateComplicationsSectionProblemObservation(
+				return ComplicationsSectionOperations.validateComplicationsSectionEntry294(
 					(ComplicationsSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateComplicationsSectionProblemObservationTestCase.doValidationTest();
+		validateComplicationsSectionEntry294TestCase.doValidationTest();
 	}
 
 	/**
@@ -262,11 +263,35 @@ public class ComplicationsSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProblemObservations() {
 
-		ComplicationsSection target = objectFactory.create();
-		target.getProblemObservations();
+	public void testValidateComplicationsSectionProblemObservationEntryProblemObservation295() {
+		OperationsTestCase<ComplicationsSection> validateComplicationsSectionProblemObservationEntryProblemObservation295TestCase = new OperationsTestCase<ComplicationsSection>(
+			"validateComplicationsSectionProblemObservationEntryProblemObservation295",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION_ENTRY_PROBLEM_OBSERVATION295__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(ComplicationsSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ComplicationsSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ComplicationsSectionOperations.validateComplicationsSectionProblemObservationEntryProblemObservation295(
+					(ComplicationsSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateComplicationsSectionProblemObservationEntryProblemObservation295TestCase.doValidationTest();
 	}
 
 	/**

@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Procedure Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,6 +96,24 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedProcedureSectionEntry298(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionEntry298(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedureEntryPlanOfCareActivityProcedure299(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedureEntryPlanOfCareActivityProcedure299(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedProcedureSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTitle(this, diagnostics, context);
@@ -109,40 +125,18 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures() {
-		return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedures(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PlannedProcedureSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedProcedureSectionImpl

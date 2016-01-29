@@ -24,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,7 +59,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	public void testValidateCharacteristicsOfHomeEnvironmentTemplateId() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentTemplateIdTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
 			"validateCharacteristicsOfHomeEnvironmentTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -94,7 +94,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	public void testValidateCharacteristicsOfHomeEnvironmentClassCode() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentClassCodeTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
 			"validateCharacteristicsOfHomeEnvironmentClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -128,7 +129,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	public void testValidateCharacteristicsOfHomeEnvironmentMoodCode() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentMoodCodeTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
 			"validateCharacteristicsOfHomeEnvironmentMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,13 +158,13 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCharacteristicsOfHomeEnvironmentId() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentIdTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
-			"validateCharacteristicsOfHomeEnvironmentId",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicsOfHomeEnvironmentId", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -173,8 +175,7 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CharacteristicsOfHomeEnvironment target) {
 				target.init();
-				II idII = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(idII);
+
 			}
 
 			@Override
@@ -196,8 +197,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	@Test
 	public void testValidateCharacteristicsOfHomeEnvironmentCodeP() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentCodePTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
-			"validateCharacteristicsOfHomeEnvironmentCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicsOfHomeEnvironmentCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -230,8 +231,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	@Test
 	public void testValidateCharacteristicsOfHomeEnvironmentCode() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentCodeTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
-			"validateCharacteristicsOfHomeEnvironmentCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicsOfHomeEnvironmentCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -272,7 +273,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	public void testValidateCharacteristicsOfHomeEnvironmentStatusCode() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentStatusCodeTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
 			"validateCharacteristicsOfHomeEnvironmentStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -309,7 +311,8 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 	public void testValidateCharacteristicsOfHomeEnvironmentStatusCodeP() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentStatusCodePTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
 			"validateCharacteristicsOfHomeEnvironmentStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -337,26 +340,27 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCharacteristicsOfHomeEnvironmentValue() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentValueTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
-			"validateCharacteristicsOfHomeEnvironmentValue",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicsOfHomeEnvironmentValue", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CharacteristicsOfHomeEnvironment target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
 			protected void updateToPass(CharacteristicsOfHomeEnvironment target) {
-				target.getValues().clear();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("mustExistOnly", SNOMEDCT_ID));
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -373,24 +377,25 @@ public class CharacteristicsOfHomeEnvironmentTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCharacteristicsOfHomeEnvironmentValueP() {
 		OperationsTestCase<CharacteristicsOfHomeEnvironment> validateCharacteristicsOfHomeEnvironmentValuePTestCase = new OperationsTestCase<CharacteristicsOfHomeEnvironment>(
 			"validateCharacteristicsOfHomeEnvironmentValueP",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CharacteristicsOfHomeEnvironment target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(CharacteristicsOfHomeEnvironment target) {
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+				target.init();
+
 			}
 
 			@Override

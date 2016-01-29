@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Payers Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -108,9 +106,8 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePayersSectionCoverageActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PayersSectionOperations.validatePayersSectionCoverageActivity(this, diagnostics, context);
+	public boolean validatePayersSectionEntry130(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PayersSectionOperations.validatePayersSectionEntry130(this, diagnostics, context);
 	}
 
 	/**
@@ -118,9 +115,8 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CoverageActivity> getCoverageActivities() {
-		return PayersSectionOperations.getCoverageActivities(this);
+	public boolean validatePayersSectionCoverageActivityEntryCoverageActivity131(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PayersSectionOperations.validatePayersSectionCoverageActivityEntryCoverageActivity131(this, diagnostics, context);
 	}
 
 	/**
@@ -130,17 +126,17 @@ public class PayersSectionImpl extends SectionImpl implements PayersSection {
 	 */
 	@Override
 	public PayersSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PayersSectionImpl

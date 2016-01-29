@@ -53,7 +53,8 @@ public class HospitalDischargeStudiesSummarySectionTest extends CDAValidationTes
 	public void testValidateHospitalDischargeStudiesSummarySectionTemplateId() {
 		OperationsTestCase<HospitalDischargeStudiesSummarySection> validateHospitalDischargeStudiesSummarySectionTemplateIdTestCase = new OperationsTestCase<HospitalDischargeStudiesSummarySection>(
 			"validateHospitalDischargeStudiesSummarySectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +88,8 @@ public class HospitalDischargeStudiesSummarySectionTest extends CDAValidationTes
 	public void testValidateHospitalDischargeStudiesSummarySectionCode() {
 		OperationsTestCase<HospitalDischargeStudiesSummarySection> validateHospitalDischargeStudiesSummarySectionCodeTestCase = new OperationsTestCase<HospitalDischargeStudiesSummarySection>(
 			"validateHospitalDischargeStudiesSummarySectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,7 +123,8 @@ public class HospitalDischargeStudiesSummarySectionTest extends CDAValidationTes
 	public void testValidateHospitalDischargeStudiesSummarySectionCodeP() {
 		OperationsTestCase<HospitalDischargeStudiesSummarySection> validateHospitalDischargeStudiesSummarySectionCodePTestCase = new OperationsTestCase<HospitalDischargeStudiesSummarySection>(
 			"validateHospitalDischargeStudiesSummarySectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -155,7 +158,8 @@ public class HospitalDischargeStudiesSummarySectionTest extends CDAValidationTes
 	public void testValidateHospitalDischargeStudiesSummarySectionTitle() {
 		OperationsTestCase<HospitalDischargeStudiesSummarySection> validateHospitalDischargeStudiesSummarySectionTitleTestCase = new OperationsTestCase<HospitalDischargeStudiesSummarySection>(
 			"validateHospitalDischargeStudiesSummarySectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -192,7 +196,8 @@ public class HospitalDischargeStudiesSummarySectionTest extends CDAValidationTes
 	public void testValidateHospitalDischargeStudiesSummarySectionText() {
 		OperationsTestCase<HospitalDischargeStudiesSummarySection> validateHospitalDischargeStudiesSummarySectionTextTestCase = new OperationsTestCase<HospitalDischargeStudiesSummarySection>(
 			"validateHospitalDischargeStudiesSummarySectionText",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

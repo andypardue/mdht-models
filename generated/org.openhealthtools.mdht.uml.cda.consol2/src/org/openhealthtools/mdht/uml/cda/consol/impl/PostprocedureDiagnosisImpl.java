@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Postprocedure Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -88,6 +86,24 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePostprocedureDiagnosisEntryRelationship520(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisEntryRelationship520(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservationEntryRelationshipProblemObservation521(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePostprocedureDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisMoodCode(this, diagnostics, context);
@@ -99,40 +115,18 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProblemObservation> getProblemObservations() {
-		return PostprocedureDiagnosisOperations.getProblemObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PostprocedureDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PostprocedureDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PostprocedureDiagnosisImpl

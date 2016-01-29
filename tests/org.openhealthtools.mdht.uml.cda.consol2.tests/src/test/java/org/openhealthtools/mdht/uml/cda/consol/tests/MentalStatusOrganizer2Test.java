@@ -34,11 +34,10 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateMentalStatusOrganizer2HasCodeOrEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Organizer2 Has Code Or Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateMentalStatusOrganizer2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Organizer2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateMentalStatusOrganizer2CDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Organizer2 CD Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#getConsolMentalStatusObservation2s() <em>Get Consol Mental Status Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Organizer2 Mental Status Observation2 Entry Relationship Mental Status Observation2897</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateCognitiveStatusResultOrganizerCodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Code Code System</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Cognitive Status Result Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,7 +54,8 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	public void testValidateMentalStatusOrganizer2HasCodeOrEffectiveTime() {
 		OperationsTestCase<MentalStatusOrganizer2> validateMentalStatusOrganizer2HasCodeOrEffectiveTimeTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
 			"validateMentalStatusOrganizer2HasCodeOrEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,8 +91,8 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusOrganizer2EffectiveTime() {
 		OperationsTestCase<MentalStatusOrganizer2> validateMentalStatusOrganizer2EffectiveTimeTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
-			"validateMentalStatusOrganizer2EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusOrganizer2EffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -123,7 +123,7 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMentalStatusOrganizer2CDCode() {
@@ -134,13 +134,13 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MentalStatusOrganizer2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusOrganizer2 target) {
-				target.getCode().setCode("mustExistOnly");
+				target.init();
+
 			}
 
 			@Override
@@ -160,33 +160,58 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolMentalStatusObservation2s() {
 
-		MentalStatusOrganizer2 target = objectFactory.create();
-		target.getConsolMentalStatusObservation2s();
+	public void testValidateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897() {
+		OperationsTestCase<MentalStatusOrganizer2> validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897TestCase = new OperationsTestCase<MentalStatusOrganizer2>(
+			"validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_ORGANIZER2_MENTAL_STATUS_OBSERVATION2_ENTRY_RELATIONSHIP_MENTAL_STATUS_OBSERVATION2897__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(MentalStatusOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusOrganizer2Operations.validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897(
+					(MentalStatusOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusOrganizer2MentalStatusObservation2EntryRelationshipMentalStatusObservation2897TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCognitiveStatusResultOrganizerCodeCodeSystem() {
 		OperationsTestCase<MentalStatusOrganizer2> validateCognitiveStatusResultOrganizerCodeCodeSystemTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
 			"validateCognitiveStatusResultOrganizerCodeCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MentalStatusOrganizer2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusOrganizer2 target) {
-				target.getCode().setCodeSystem("2.16.840.1.113883.6.254");
+				target.init();
+
 			}
 
 			@Override
@@ -237,7 +262,7 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultOrganizerCode() {
@@ -248,12 +273,12 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MentalStatusOrganizer2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusOrganizer2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
 
 			}
 
@@ -267,40 +292,6 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateResultOrganizerCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateCognitiveStatusResultOrganizerCognitiveStatusResultObservation() {
-		OperationsTestCase<MentalStatusOrganizer2> validateCognitiveStatusResultOrganizerCognitiveStatusResultObservationTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
-			"validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MentalStatusOrganizer2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MentalStatusOrganizer2 target) {
-				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createMentalStatusObservation2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-					(MentalStatusOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCognitiveStatusResultOrganizerCognitiveStatusResultObservationTestCase.doValidationTest();
 	}
 
 	/**

@@ -18,11 +18,6 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ExternalDocument;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
-import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservation2Operations;
@@ -31,8 +26,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -97,8 +90,8 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveObservation2Value() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2ValueTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2Value",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservation2Value", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -129,13 +122,14 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2AuthorParticipation() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2AuthorParticipationTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -146,7 +140,7 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -163,26 +157,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2CDTranslation() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CDTranslationTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getCode().getTranslations().set(0, DatatypesFactory.eINSTANCE.createCD("75320-2", LOINC_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -199,25 +192,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2CDTranslationP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CDTranslationPTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -234,24 +227,24 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2IVLTSLow() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2IVLTSLowTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2IVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservation2IVLTSLow", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getEffectiveTime().setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -268,24 +261,24 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2IVLTSHigh() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2IVLTSHighTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2IVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservation2IVLTSHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -302,32 +295,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -344,32 +330,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("63161005", SNOMEDCT_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -386,32 +365,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityNameTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().getNames().add(
-					DatatypesFactory.eINSTANCE.createPN());
+				target.init();
+
 			}
 
 			@Override
@@ -428,36 +400,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRoleCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRoleCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRoleCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
 
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+				target.init();
 
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.setCode(DatatypesFactory.eINSTANCE.createCE());
-
-				p2.setParticipantRole(pr);
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
@@ -474,36 +435,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRoleCode() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRoleCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRoleCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
 
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+				target.init();
 
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.setCode(DatatypesFactory.eINSTANCE.createCE("notCurrentlyChecked", "2.16.840.1.113883.6.101"));
-
-				p2.setParticipantRole(pr);
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
@@ -520,36 +470,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRoleAddr() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRoleAddrTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRoleAddr",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
 
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+				target.init();
 
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-
-				p2.setParticipantRole(pr);
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
@@ -566,36 +505,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
 
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+				target.init();
 
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
-
-				p2.setParticipantRole(pr);
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
@@ -612,28 +540,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2VerifierTemplateId() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2VerifierTemplateIdTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2VerifierTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_VERIFIER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				for (Participant2 verifier : target.getParticipants()) {
-					verifier.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.10.20.1.58"));
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -650,32 +575,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -692,32 +610,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("63161005", SNOMEDCT_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -734,28 +645,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CustodianCustodianRoleCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.init();
+
 			}
 
 			@Override
@@ -772,29 +680,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleCode() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CustodianCustodianRoleCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().setCode(
-					DatatypesFactory.eINSTANCE.createCE("NotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+				target.init();
+
 			}
 
 			@Override
@@ -811,39 +715,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				text.setMediaType(null);
-				ed.setText(text);
 
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
+				target.init();
 
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				text.setMediaType("JPEG");
-				ed.setText(text);
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
 			}
 
 			@Override
@@ -860,36 +750,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ed.setText(DatatypesFactory.eINSTANCE.createED());
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
+				target.init();
 
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				text.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				ed.setText(text);
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
 			}
 
 			@Override
@@ -906,30 +785,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
 
-				target.getReferences().add(ref);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				target.init();
+
 			}
 
 			@Override
@@ -946,15 +820,17 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAdvanceDirectiveObservationHasStartingTime() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationHasStartingTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationHasStartingTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -982,15 +858,17 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAdvanceDirectiveObservationHasEndingTime() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationHasEndingTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationHasEndingTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1023,8 +901,8 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveObservationTemplateId() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationTemplateIdTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1057,8 +935,8 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveObservationCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1086,7 +964,7 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCode() {
@@ -1097,15 +975,16 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getCode().setCodeSystem(SNOMEDCT_ID);
-				target.getCode().setCode("52765003");
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -1135,7 +1014,8 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	public void testValidateAdvanceDirectiveObservationEffectiveTime() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationEffectiveTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1166,25 +1046,24 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationVerifier() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationVerifierTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationVerifier",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservationVerifier", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(par);
+				target.init();
+
 			}
 
 			@Override
@@ -1201,25 +1080,24 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCustodian() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationCustodian",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservationCustodian", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(par);
+				target.init();
+
 			}
 
 			@Override
@@ -1236,26 +1114,24 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationReference() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationReference",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveObservationReference", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				target.init();
+
 			}
 
 			@Override
@@ -1272,29 +1148,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationVerifierTime() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationVerifierTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationVerifierTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				IVL_TS value = DatatypesFactory.eINSTANCE.createIVL_TS();
-				for (Participant2 p2 : target.getParticipants()) {
-					p2.setTime(value);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1311,37 +1183,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationVerifierParticipantRole() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationVerifierParticipantRoleTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationVerifierParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+				target.init();
 
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
-				pr.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
-
-				p2.setParticipantRole(pr);
-
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
@@ -1358,32 +1218,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityNameTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().getNames().add(
-					DatatypesFactory.eINSTANCE.createPN());
+				target.init();
+
 			}
 
 			@Override
@@ -1400,29 +1253,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCustodianCustodianRoleAddr() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRoleAddrTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationCustodianCustodianRoleAddr",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getAddrs().add(
-					DatatypesFactory.eINSTANCE.createAD());
+				target.init();
+
 			}
 
 			@Override
@@ -1439,29 +1288,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCustodianCustodianRoleTelecom() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRoleTelecomTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getTelecoms().add(
-					DatatypesFactory.eINSTANCE.createTEL());
+				target.init();
+
 			}
 
 			@Override
@@ -1478,29 +1323,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntityTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
+				target.init();
+
 			}
 
 			@Override
@@ -1517,32 +1358,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRoleTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+				target.init();
 
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
 			}
 
 			@Override
@@ -1559,7 +1393,7 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType() {
@@ -1609,7 +1443,7 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	// /**
 	// *
-	// * @generated NOT
+	// * @generated
 	// */
 	// @Test
 	// public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentTextReference() {
@@ -1656,32 +1490,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentId() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceExternalDocumentIdTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationReferenceExternalDocumentId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ed.getIds().add(DatatypesFactory.eINSTANCE.createII());
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				target.init();
+
 			}
 
 			@Override
@@ -1698,32 +1525,28 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentText() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceExternalDocumentTextTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationReferenceExternalDocumentText",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ed.setText(DatatypesFactory.eINSTANCE.createED());
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				target.init();
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
+
 			}
 
 			@Override
@@ -1740,32 +1563,25 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectiveObservationReferenceTypeCode() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceTypeCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservationReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ref.setExternalDocument(ed);
-				ref.setTypeCode(x_ActRelationshipExternalReference.REFR);
-				target.getReferences().add(ref);
+				target.init();
+
 			}
 
 			@Override

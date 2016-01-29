@@ -15,18 +15,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
@@ -70,7 +63,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationTextReference() {
@@ -81,18 +74,13 @@ public class ResultObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
 
-				target.setText(txt);
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
 			}
 
 			@Override
@@ -109,7 +97,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationReferenceValue() {
@@ -120,18 +108,16 @@ public class ResultObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -148,39 +134,27 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationTextReferenceValue() {
-		OperationsTestCase<ResultObservation> validateResultObservationTextReferenceValueTestCase = new NarrativeReferenceTestCase<ResultObservation>(
-			"validateResultObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<ResultObservation> validateResultObservationTextReferenceValueTestCase = new OperationsTestCase<ResultObservation>(
+			"validateResultObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular result observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular result observed.");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
@@ -197,7 +171,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationCodeValue() {
@@ -208,20 +182,16 @@ public class ResultObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// setting invalid codeSystem to cause failure
-				value.setCodeSystem("invalidCodeSystem");
-				target.setCode(value);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
+				target.init();
 
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				// setting valid codeSystem
-				value.setCodeSystem("2.16.840.1.113883.6.1");
-				target.setCode(value);
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -238,42 +208,30 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationNoObservationRangeCode() {
 		OperationsTestCase<ResultObservation> validateResultObservationNoObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation>(
 			"validateResultObservationNoObservationRangeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.init();
-				ReferenceRange refRange = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange obsRange = CDAFactory.eINSTANCE.createObservationRange();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
 
-				value.setCode("Test");
-				obsRange.setCode(value);
-				refRange.setObservationRange(obsRange);
-				target.getReferenceRanges().add(refRange);
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
-				ReferenceRange refRange = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange obsRange = CDAFactory.eINSTANCE.createObservationRange();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.init();
 
-				target.getReferenceRanges().clear();
-				obsRange.setCode(value);
-				refRange.setObservationRange(obsRange);
-				target.getReferenceRanges().add(refRange);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
 				return ResultObservationOperations.validateResultObservationNoObservationRangeCode(
 					(ResultObservation) objectToTest, diagnostician, map);
 			}
@@ -285,31 +243,24 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationAuthorMultiplicity() {
 		OperationsTestCase<ResultObservation> validateResultObservationAuthorMultiplicityTestCase = new OperationsTestCase<ResultObservation>(
-			"validateResultObservationAuthorMultiplicity",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationAuthorMultiplicity", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.init();
-				Author author1 = CDAFactory.eINSTANCE.createAuthor();
-				Author author2 = CDAFactory.eINSTANCE.createAuthor();
-
-				// adding two authors
-				target.getAuthors().add(author1);
-				target.getAuthors().add(author2);
 
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
+				target.init();
 
-				target.getAuthors().clear();
 			}
 
 			@Override
@@ -394,7 +345,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationMoodCode() {
@@ -402,10 +353,6 @@ public class ResultObservationTest extends CDAValidationTest {
 			"validateResultObservationMoodCode",
 			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			{
-				skipFailsTest();
-			}
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
@@ -432,7 +379,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationId() {
@@ -448,9 +395,11 @@ public class ResultObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
+				target.init();
 
 				II ii = DatatypesFactory.eINSTANCE.createII();
 				target.getIds().add(ii);
+
 			}
 
 			@Override
@@ -467,7 +416,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationCode() {
@@ -478,14 +427,16 @@ public class ResultObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
-				target.setCode(null);
+
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
-				CE cd = DatatypesFactory.eINSTANCE.createCE();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
+
 			}
 
 			@Override
@@ -502,7 +453,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	* check
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationText() {
@@ -519,6 +470,7 @@ public class ResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
+
 				ED text = DatatypesFactory.eINSTANCE.createED();
 				target.setText(text);
 
@@ -575,7 +527,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationStatusCodeP() {
@@ -592,7 +544,7 @@ public class ResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS());
+
 			}
 
 			@Override
@@ -609,7 +561,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationEffectiveTime() {
@@ -626,6 +578,7 @@ public class ResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
+
 				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
 				target.setEffectiveTime(ts);
 
@@ -645,7 +598,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationValue() {
@@ -662,6 +615,7 @@ public class ResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
+
 				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
@@ -681,13 +635,13 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationInterpretationCode() {
 		OperationsTestCase<ResultObservation> validateResultObservationInterpretationCodeTestCase = new OperationsTestCase<ResultObservation>(
-			"validateResultObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -698,8 +652,7 @@ public class ResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
-				CE interpCode = DatatypesFactory.eINSTANCE.createCE();
-				target.getInterpretationCodes().add(interpCode);
+
 			}
 
 			@Override
@@ -716,7 +669,7 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationMethodCode() {
@@ -733,8 +686,6 @@ public class ResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ResultObservation target) {
 				target.init();
-				CE methodCode = DatatypesFactory.eINSTANCE.createCE();
-				target.getMethodCodes().add(methodCode);
 
 			}
 
@@ -752,32 +703,24 @@ public class ResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* TODO:Check
 	*/
 	@Test
 	public void testValidateResultObservationTargetSiteCode() {
 		OperationsTestCase<ResultObservation> validateResultObservationTargetSiteCodeTestCase = new OperationsTestCase<ResultObservation>(
-			"validateResultObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationTargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultObservation target) {
 
-				target.init();
-				CD tsCode2 = DatatypesFactory.eINSTANCE.createCD();
-				target.getTargetSiteCodes().add(tsCode2);
-
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation target) {
-				target.getTargetSiteCodes().clear();
-				CE tsCode1 = DatatypesFactory.eINSTANCE.createCE();
-				target.getTargetSiteCodes().add(tsCode1);
-				CE tsCode3 = DatatypesFactory.eINSTANCE.createCE();
-				target.getTargetSiteCodes().add(tsCode3);
+				target.init();
 
 			}
 

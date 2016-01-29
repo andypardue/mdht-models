@@ -34,7 +34,7 @@ public interface HealthStatusObservation2 extends HealthStatusObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateHealthStatusObservation2Id(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -72,10 +72,10 @@ public interface HealthStatusObservation2 extends HealthStatusObservation {
 	public HealthStatusObservation2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HealthStatusObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HealthStatusObservation2

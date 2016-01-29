@@ -77,10 +77,11 @@ public class Instruction2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateInstructionsText() {
 		OperationsTestCase<Instruction2> validateInstructionsTextTestCase = new OperationsTestCase<Instruction2>(

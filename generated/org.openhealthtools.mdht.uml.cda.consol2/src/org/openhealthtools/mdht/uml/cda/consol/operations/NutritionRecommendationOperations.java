@@ -13,8 +13,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -51,18 +53,18 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedEncounter2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#getPlannedAct2s() <em>Get Planned Act2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship602(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship602</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship604(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship604</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship606(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship606</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship608(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship608</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship610(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship610</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationEntryRelationship612(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship612</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2 Entry Relationship Planned Encounter2603</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2 Entry Relationship Planned Medication Activity2605</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2 Entry Relationship Planned Observation2607</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2 Entry Relationship Planned Procedure2609</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2 Entry Relationship Planned Supply2611</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation#validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2 Entry Relationship Planned Act2613</em>}</li>
  * </ul>
  * </p>
  *
@@ -112,26 +114,28 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationTemplateId(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationTemplateId"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationTemplateId"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -171,26 +175,28 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationClassCode(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationClassCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationClassCode"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -230,26 +236,28 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationMoodCodeP(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCodeP"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCodeP"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -261,7 +269,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 				}
 				passToken.add(nutritionRecommendation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -275,9 +283,9 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and "
-			+ "let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in "
-			+ "value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO or value = vocab::x_DocumentActMood::APT";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and "+
+"let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in "+
+"value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO or value = vocab::x_DocumentActMood::APT";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationMoodCode(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Mood Code</em>}' invariant operation.
@@ -303,34 +311,34 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationMoodCode(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(nutritionRecommendation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCode"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -370,26 +378,28 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationCodeP(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCodeP"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCodeP"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -401,7 +411,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 				}
 				passToken.add(nutritionRecommendation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -415,9 +425,9 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '61310001' or value.code = '386373004' or value.code = '418995006' or value.code = '413315001' or value.code = '182922004' or value.code = '229912004' or value.code = '225372007' or value.code = '448556005'))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '61310001' or value.code = '386373004' or value.code = '418995006' or value.code = '413315001' or value.code = '182922004' or value.code = '229912004' or value.code = '225372007' or value.code = '448556005'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationCode(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Code</em>}' invariant operation.
@@ -443,34 +453,34 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationCode(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(nutritionRecommendation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCode"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -484,8 +494,9 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationStatusCode(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Status Code</em>}' invariant operation.
@@ -511,26 +522,28 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationStatusCode(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCode"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -570,26 +583,28 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationStatusCodeP(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCodeP"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCodeP"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -629,51 +644,53 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 
 	public static boolean validateNutritionRecommendationEffectiveTime(NutritionRecommendation nutritionRecommendation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
 				VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEffectiveTime"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEffectiveTime"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedEncounter2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationEntryRelationship602(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship602</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedEncounter2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship602(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.encounter.oclIsUndefined() and entryRelationship.encounter.oclIsKindOf(consol::PlannedEncounter2))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedEncounter2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationEntryRelationship602(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship602</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedEncounter2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship602(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -685,54 +702,55 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionRecommendationPlannedEncounter2(
-			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionRecommendationEntryRelationship602(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedEncounter2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP602,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEntryRelationship602"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedMedicationActivity2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationEntryRelationship604(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship604</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedMedicationActivity2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship604(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::PlannedMedicationActivity2))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedMedicationActivity2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationEntryRelationship604(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship604</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedMedicationActivity2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship604(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -744,56 +762,55 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionRecommendationPlannedMedicationActivity2(
-			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionRecommendationEntryRelationship604(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedMedicationActivity2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP604,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEntryRelationship604"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedObservation2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationEntryRelationship606(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship606</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedObservation2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship606(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::PlannedObservation2))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedObservation2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationEntryRelationship606(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship606</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedObservation2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship606(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -805,56 +822,55 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionRecommendationPlannedObservation2(
-			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionRecommendationEntryRelationship606(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedObservation2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP606,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEntryRelationship606"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedProcedure2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationEntryRelationship608(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship608</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedProcedure2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship608(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(consol::PlannedProcedure2))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedProcedure2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationEntryRelationship608(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship608</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedProcedure2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship608(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -866,54 +882,55 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionRecommendationPlannedProcedure2(
-			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionRecommendationEntryRelationship608(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedProcedure2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP608,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEntryRelationship608"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedSupply2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationEntryRelationship610(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship610</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedSupply2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship610(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::PlannedSupply2))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedSupply2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationEntryRelationship610(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship610</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedSupply2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship610(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -925,54 +942,55 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionRecommendationPlannedSupply2(
-			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionRecommendationEntryRelationship610(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedSupply2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP610,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEntryRelationship610"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedAct2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationEntryRelationship612(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship612</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedAct2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship612(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::PlannedAct2))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedAct2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationEntryRelationship612(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Entry Relationship612</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNutritionRecommendationPlannedAct2(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNutritionRecommendationEntryRelationship612(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -984,297 +1002,429 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNutritionRecommendationPlannedAct2(NutritionRecommendation nutritionRecommendation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNutritionRecommendationEntryRelationship612(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ACT2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedAct2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP612,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEntryRelationship612"),
+						 new Object [] { nutritionRecommendation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedEncounter2s(NutritionRecommendation) <em>Get Planned Encounter2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2 Entry Relationship Planned Encounter2603</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedEncounter2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_ENCOUNTER2S__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlannedEncounter2)).oclAsType(consol::PlannedEncounter2)";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(encounter->exists(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlannedEncounter2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedEncounter2s(NutritionRecommendation) <em>Get Planned Encounter2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Encounter2 Entry Relationship Planned Encounter2603</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedEncounter2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_ENCOUNTER2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionRecommendation The receiving '<em><b>Nutrition Recommendation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedEncounter2> getPlannedEncounter2s(NutritionRecommendation nutritionRecommendation) {
-		if (GET_PLANNED_ENCOUNTER2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(66));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				GET_PLANNED_ENCOUNTER2S__EOCL_QRY = helper.createQuery(GET_PLANNED_ENCOUNTER2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_ENCOUNTER2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedEncounter2> result = (Collection<PlannedEncounter2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<PlannedEncounter2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionRecommendation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER2603,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedEncounter2EntryRelationshipPlannedEncounter2603"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedMedicationActivity2s(NutritionRecommendation) <em>Get Planned Medication Activity2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2 Entry Relationship Planned Medication Activity2605</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedMedicationActivity2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlannedMedicationActivity2)).oclAsType(consol::PlannedMedicationActivity2)";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlannedMedicationActivity2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedMedicationActivity2s(NutritionRecommendation) <em>Get Planned Medication Activity2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Medication Activity2 Entry Relationship Planned Medication Activity2605</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedMedicationActivity2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionRecommendation The receiving '<em><b>Nutrition Recommendation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedMedicationActivity2> getPlannedMedicationActivity2s(
-			NutritionRecommendation nutritionRecommendation) {
-		if (GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(67));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<PlannedMedicationActivity2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionRecommendation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY2605,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity2605"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedObservation2s(NutritionRecommendation) <em>Get Planned Observation2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2 Entry Relationship Planned Observation2607</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedObservation2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlannedObservation2)).oclAsType(consol::PlannedObservation2)";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlannedObservation2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedObservation2s(NutritionRecommendation) <em>Get Planned Observation2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Observation2 Entry Relationship Planned Observation2607</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedObservation2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_OBSERVATION2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionRecommendation The receiving '<em><b>Nutrition Recommendation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedObservation2> getPlannedObservation2s(NutritionRecommendation nutritionRecommendation) {
-		if (GET_PLANNED_OBSERVATION2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(68));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				GET_PLANNED_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PLANNED_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_OBSERVATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<PlannedObservation2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionRecommendation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION2607,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedObservation2EntryRelationshipPlannedObservation2607"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedProcedure2s(NutritionRecommendation) <em>Get Planned Procedure2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2 Entry Relationship Planned Procedure2609</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedProcedure2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_PROCEDURE2S__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::PlannedProcedure2)).oclAsType(consol::PlannedProcedure2)";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(procedure->exists(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::PlannedProcedure2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedProcedure2s(NutritionRecommendation) <em>Get Planned Procedure2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Procedure2 Entry Relationship Planned Procedure2609</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedProcedure2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_PROCEDURE2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionRecommendation The receiving '<em><b>Nutrition Recommendation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedProcedure2> getPlannedProcedure2s(NutritionRecommendation nutritionRecommendation) {
-		if (GET_PLANNED_PROCEDURE2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(69));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				GET_PLANNED_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PLANNED_PROCEDURE2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_PROCEDURE2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedProcedure2> result = (Collection<PlannedProcedure2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<PlannedProcedure2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionRecommendation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE2609,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedProcedure2EntryRelationshipPlannedProcedure2609"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedSupply2s(NutritionRecommendation) <em>Get Planned Supply2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2 Entry Relationship Planned Supply2611</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedSupply2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_SUPPLY2S__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::PlannedSupply2)).oclAsType(consol::PlannedSupply2)";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(supply->exists(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::PlannedSupply2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedSupply2s(NutritionRecommendation) <em>Get Planned Supply2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Supply2 Entry Relationship Planned Supply2611</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedSupply2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_SUPPLY2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionRecommendation The receiving '<em><b>Nutrition Recommendation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedSupply2> getPlannedSupply2s(NutritionRecommendation nutritionRecommendation) {
-		if (GET_PLANNED_SUPPLY2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(70));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				GET_PLANNED_SUPPLY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_SUPPLY2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_SUPPLY2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedSupply2> result = (Collection<PlannedSupply2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<PlannedSupply2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionRecommendation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY2611,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedSupply2EntryRelationshipPlannedSupply2611"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlannedAct2s(NutritionRecommendation) <em>Get Planned Act2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2 Entry Relationship Planned Act2613</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedAct2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLANNED_ACT2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedAct2)).oclAsType(consol::PlannedAct2)";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlannedAct2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlannedAct2s(NutritionRecommendation) <em>Get Planned Act2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Planned Act2 Entry Relationship Planned Act2613</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlannedAct2s(NutritionRecommendation)
+	 * @see #validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PLANNED_ACT2S__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nutritionRecommendation The receiving '<em><b>Nutrition Recommendation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<PlannedAct2> getPlannedAct2s(NutritionRecommendation nutritionRecommendation) {
-		if (GET_PLANNED_ACT2S__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613(NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
-				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(71));
+			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				GET_PLANNED_ACT2S__EOCL_QRY = helper.createQuery(GET_PLANNED_ACT2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_ACT2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<PlannedAct2> result = (Collection<PlannedAct2>) query.evaluate(nutritionRecommendation);
-		return new BasicEList.UnmodifiableEList<PlannedAct2>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nutritionRecommendation);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT2613,
+						 ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedAct2EntryRelationshipPlannedAct2613"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // NutritionRecommendationOperations

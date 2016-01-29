@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Preoperative Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -88,6 +86,24 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePreoperativeDiagnosisEntryRelationship522(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisEntryRelationship522(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservationEntryRelationshipProblemObservation523(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePreoperativeDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisMoodCode(this, diagnostics, context);
@@ -99,40 +115,18 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * @generated
 	 */
 	@Override
-	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProblemObservation> getProblemObservations() {
-		return PreoperativeDiagnosisOperations.getProblemObservations(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public PreoperativeDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreoperativeDiagnosisImpl

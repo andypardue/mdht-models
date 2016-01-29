@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2OfUcxSVEeGGzu7fmW9pXw" name="VitalSignsSection">
     <generalization xmi:id="_px07IBVgEeGQCvUGzi1kDQ" general="_bRH8sBVeEeGQCvUGzi1kDQ">
       <ownedComment xmi:id="_GRGhIBxREeG8X6LmnKJ43Q">
@@ -14,10 +14,6 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OlbBBSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbAxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OlbBhSVEeGGzu7fmW9pXw" name="vitalSignsOrganizer" visibility="private" type="_2OlbCRSVEeGGzu7fmW9pXw" association="_2PD8IBSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OlbCBSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbBxSVEeGGzu7fmW9pXw" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_5h_p0B0XEeGYy5bW_e08gQ" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zvtWoR7OEeGrB4pbKFQ9Sg" value="1"/>
@@ -25,8 +21,23 @@
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
       <redefinedProperty href="#_3RkfUB0XEeGYy5bW_e08gQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_6fAh8ca_EeWGb6ppo-ygHg" name="entry162" type="_6e_T0Ma_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6fAh8sa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6fAh88a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6fAh8Ma_EeWGb6ppo-ygHg"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6e_T0Ma_EeWGb6ppo-ygHg" name="VitalSignsOrganizerEntry">
+      <generalization xmi:id="_6e_T0ca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6fBwEca_EeWGb6ppo-ygHg" name="vitalSignsOrganizer163" type="_2OlbCRSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6fBwEsa_EeWGb6ppo-ygHg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6fBwE8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6fBwEMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2PD8IBSVEeGGzu7fmW9pXw" memberEnd="_2OlbBhSVEeGGzu7fmW9pXw _2PD8IRSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2PD8IBSVEeGGzu7fmW9pXw" memberEnd="_2PD8IRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2PD8IRSVEeGGzu7fmW9pXw" type="_2OfUcxSVEeGGzu7fmW9pXw" association="_2PD8IBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2OfUeBSVEeGGzu7fmW9pXw" base_Class="_2OfUcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.4.1">
@@ -75,10 +86,21 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRH8vxVeEeGQCvUGzi1kDQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRH8vhVeEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Xf_K0BxYEeG8X6LmnKJ43Q" name="vitalSignsOrganizer" type="_2OlbCRSVEeGGzu7fmW9pXw" association="_XgAY8BxYEeG8X6LmnKJ43Q">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jO-6wB0XEeGYy5bW_e08gQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jO-TsB0XEeGYy5bW_e08gQ" value="*"/>
+    <ownedAttribute xmi:id="_6hcx8ca_EeWGb6ppo-ygHg" name="entry264" type="_6hcK4Ma_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6hcx8sa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6hcx88a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6hcx8Ma_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6hcK4Ma_EeWGb6ppo-ygHg" name="VitalSignsOrganizerEntry">
+      <generalization xmi:id="_6hcK4ca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6heAEca_EeWGb6ppo-ygHg" name="vitalSignsOrganizer265" type="_2OlbCRSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6heAEsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6heAE8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6heAEMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_4L3_UBVfEeGQCvUGzi1kDQ" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.4">
     <ruleId>CONF:7268, CONF:10451</ruleId>
@@ -217,10 +239,10 @@
     <ruleId>CONF:7300</ruleId>
     <ruleId>R2.0=CONF:1098-7300</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7301</ruleId>
     <ruleId>R2.0=CONF:1098-7301</ruleId>
+    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7304</ruleId>
@@ -290,12 +312,23 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OlbFRSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbFBSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2OlbGBSVEeGGzu7fmW9pXw" name="vitalSignObservation" visibility="private" type="_2OrhsRSVEeGGzu7fmW9pXw" association="_2OrhohSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OlbGhSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbGRSVEeGGzu7fmW9pXw" value="*"/>
+    <ownedAttribute xmi:id="_6fDlQca_EeWGb6ppo-ygHg" name="entryRelationship164" type="_6fCXIMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6fDlQsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6fDlQ8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6fDlQMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6fCXIMa_EeWGb6ppo-ygHg" name="VitalSignObservationEntryRelationship">
+      <generalization xmi:id="_6fCXIca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6fEzYca_EeWGb6ppo-ygHg" name="vitalSignObservation165" type="_2OrhsRSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6fEzYsa_EeWGb6ppo-ygHg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6fEzY8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_6fEzYMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2OrhohSVEeGGzu7fmW9pXw" memberEnd="_2OlbGBSVEeGGzu7fmW9pXw _2OrhoxSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2OrhohSVEeGGzu7fmW9pXw" memberEnd="_2OrhoxSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OrhoxSVEeGGzu7fmW9pXw" type="_2OlbCRSVEeGGzu7fmW9pXw" association="_2OrhohSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_vIk70BneEeGs5a462vYX5Q" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.26">
@@ -336,7 +369,6 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:PropertyValidation xmi:id="_2OlbJRSVEeGGzu7fmW9pXw" base_Property="_2OlbEhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7288</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2OlbJxSVEeGGzu7fmW9pXw" base_Property="_2OlbGBSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_2OrhpBSVEeGGzu7fmW9pXw" base_Association="_2OrhohSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7285, CONF:15946</ruleId>
   </CDA:AssociationValidation>
@@ -365,7 +397,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15963</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_XgAY8BxYEeG8X6LmnKJ43Q" memberEnd="_Xf_K0BxYEeG8X6LmnKJ43Q _XgAY8RxYEeG8X6LmnKJ43Q">
+  <uml:Association xmi:id="_XgAY8BxYEeG8X6LmnKJ43Q" memberEnd="_XgAY8RxYEeG8X6LmnKJ43Q">
     <ownedEnd xmi:id="_XgAY8RxYEeG8X6LmnKJ43Q" type="_bRH8sBVeEeGQCvUGzi1kDQ" association="_XgAY8BxYEeG8X6LmnKJ43Q"/>
   </uml:Association>
   <CDA:TextValue xmi:id="_5PLmEB0YEeGYy5bW_e08gQ" severity="WARNING" base_Property="_21P6QB0YEeGYy5bW_e08gQ">
@@ -402,7 +434,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:ConstraintValidation xmi:id="_pIQzAOJvEeG3cO7ebC3QuA" base_Constraint="_cfXY0OJvEeG3cO7ebC3QuA">
     <ruleId>CONF:15945</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_4iF6IL86EeOS5KuvmCHHew" clientDependency="_PvyIwL87EeOS5KuvmCHHew" name="DeceasedObservation2">
+  <uml:Class xmi:id="_4iF6IL86EeOS5KuvmCHHew" name="DeceasedObservation2">
     <ownedComment xmi:id="_A79IEL87EeOS5KuvmCHHew">
       <body>This template represents the observation that a patient has died. It also represents the cause of death, indicated by an entryRelationship type of 'CAUS'. This template allows for more specific representation of data than is available with the use of dischargeDispositionCode.</body>
     </ownedComment>
@@ -411,11 +443,22 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <ownedAttribute xmi:id="_tcTcAL87EeOS5KuvmCHHew" name="code" visibility="private" aggregation="composite" redefinedProperty="_f4E9weZkEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_AnfjcPfwEeO297ryy8ptVg" name="problemObservation2" redefinedProperty="_U5AysOZlEeGINOJ_SD9_dA" association="_AngxkPfwEeO297ryy8ptVg">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H7UWYffwEeO297ryy8ptVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H7UWYPfwEeO297ryy8ptVg" value="1"/>
+    <ownedAttribute xmi:id="_6xvQsca_EeWGb6ppo-ygHg" name="entryRelationship900" type="_6xuCkMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6xvQssa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xvQs8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6xvQsMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6xuCkMa_EeWGb6ppo-ygHg" name="ProblemObservation2EntryRelationship">
+      <generalization xmi:id="_6xuCkca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6xwe0ca_EeWGb6ppo-ygHg" name="problemObservation2901" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6xwe0sa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6xxF4Ma_EeWGb6ppo-ygHg" value="1"/>
+        <association href="../consol.uml#_6xwe0Ma_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79" templateVersion="2015-08-01">
     <ruleId>CONF:1198-14871, CONF:1198-14872, CONF:1198-32541</ruleId>
@@ -428,7 +471,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:PropertyValidation xmi:id="_tcWfUL87EeOS5KuvmCHHew" base_Property="_tcTcAL87EeOS5KuvmCHHew">
     <ruleId>CONF:1198-14853</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" clientDependency="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation2">
+  <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" name="VitalSignObservation2">
     <ownedComment xmi:id="_PYxNUPM4EeOUvapeh9bVvQ">
       <body>This template represents measurement of common vital signs. Vital signs are represented with additional vocabulary constraints for type of vital sign and unit of measure.</body>
     </ownedComment>
@@ -532,7 +575,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:AssociationValidation xmi:id="_ueCmwPM5EeOUvapeh9bVvQ" severity="WARNING" base_Association="_tt_C0PM5EeOUvapeh9bVvQ">
     <ruleId>CONF:1098-7310</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_dDupoPV2EeONioZkBKP8eQ" clientDependency="_vMY4IPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer2">
+  <uml:Class xmi:id="_dDupoPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer2">
     <ownedComment xmi:id="_jK-7wPV2EeONioZkBKP8eQ">
       <body>This template provides a mechanism for grouping vital signs (e.g., grouping systolic blood pressure and diastolic blood pressure).</body>
     </ownedComment>
@@ -558,9 +601,10 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QGEHEPV7EeONioZkBKP8eQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QGEHEfV7EeONioZkBKP8eQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_cqXxoPV6EeONioZkBKP8eQ" name="vitalSignObservation2" type="__zeTcPM3EeOUvapeh9bVvQ" redefinedProperty="_2OlbGBSVEeGGzu7fmW9pXw" association="_cqZm0PV6EeONioZkBKP8eQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g1rUcfV6EeONioZkBKP8eQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g1rUcPV6EeONioZkBKP8eQ" value="*"/>
+    <ownedAttribute xmi:id="_61-3gca_EeWGb6ppo-ygHg" name="entryRelationship1048" type="_619pYMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_61-3gsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_61-3g8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_61-3gMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_QqaecE9yEeWsIc5CMrI4GA" name="CD">
       <ownedComment xmi:id="_SPtoUE9yEeWsIc5CMrI4GA">
@@ -576,6 +620,16 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_619pYMa_EeWGb6ppo-ygHg" name="VitalSignObservation2EntryRelationship">
+      <generalization xmi:id="_619pYca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_62Assca_EeWGb6ppo-ygHg" name="vitalSignObservation21049" type="__zeTcPM3EeOUvapeh9bVvQ" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_62Asssa_EeWGb6ppo-ygHg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_62Ass8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_62AssMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_hsMpkPV2EeONioZkBKP8eQ" base_Class="_dDupoPV2EeONioZkBKP8eQ" templateId="2.16.840.1.113883.10.20.22.4.26" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7281, CONF:1198-10528, CONF:1198-32582</ruleId>
@@ -584,7 +638,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:PropertyValidation xmi:id="_yESK8_V5EeONioZkBKP8eQ" base_Property="_yESK8PV5EeONioZkBKP8eQ">
     <ruleId>CONF:1198-7288</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_cqZm0PV6EeONioZkBKP8eQ" memberEnd="_cqXxoPV6EeONioZkBKP8eQ _cqaN4PV6EeONioZkBKP8eQ">
+  <uml:Association xmi:id="_cqZm0PV6EeONioZkBKP8eQ" memberEnd="_cqaN4PV6EeONioZkBKP8eQ">
     <ownedEnd xmi:id="_cqaN4PV6EeONioZkBKP8eQ" type="_dDupoPV2EeONioZkBKP8eQ" association="_cqZm0PV6EeONioZkBKP8eQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_dXDRcPV6EeONioZkBKP8eQ" base_Association="_cqZm0PV6EeONioZkBKP8eQ">
@@ -603,13 +657,13 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:AssociationValidation xmi:id="_QlZHYPV7EeONioZkBKP8eQ" severity="WARNING" base_Association="_QGEuIPV7EeONioZkBKP8eQ">
     <ruleId>CONF:1198-31153</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_AngxkPfwEeO297ryy8ptVg" memberEnd="_AnfjcPfwEeO297ryy8ptVg _AngxkffwEeO297ryy8ptVg">
+  <uml:Association xmi:id="_AngxkPfwEeO297ryy8ptVg" memberEnd="_AngxkffwEeO297ryy8ptVg">
     <ownedEnd xmi:id="_AngxkffwEeO297ryy8ptVg" type="_4iF6IL86EeOS5KuvmCHHew" association="_AngxkPfwEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_D-WxkPfwEeO297ryy8ptVg" severity="WARNING" base_Association="_AngxkPfwEeO297ryy8ptVg">
     <ruleId>CONF:1198-14868, CONF:1198-14875, CONF:1198-14870</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_8LkzYAFTEeSmasYc71ZgMQ" clientDependency="_6SqUgAFUEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional2">
+  <uml:Class xmi:id="_8LkzYAFTEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional2">
     <ownedComment xmi:id="_MeZhoAFUEeSmasYc71ZgMQ">
       <body>&lt;p>&#xD;
 The Vital Signs Section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&#xD;
@@ -623,10 +677,21 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ownedAttribute xmi:id="_I4risAFVEeSmasYc71ZgMQ" name="code" visibility="private" redefinedProperty="_bRH8uxVeEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_TrEuQAFVEeSmasYc71ZgMQ" name="vitalSignsOrganizer2" type="_dDupoPV2EeONioZkBKP8eQ" redefinedProperty="_Xf_K0BxYEeG8X6LmnKJ43Q" association="_TrHxkAFVEeSmasYc71ZgMQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TrFVUAFVEeSmasYc71ZgMQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TrFVUQFVEeSmasYc71ZgMQ" value="*"/>
+    <ownedAttribute xmi:id="_66Ab4ca_EeWGb6ppo-ygHg" name="entry1172" type="_65-msMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_66Ab4sa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_66Ab48a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_66Ab4Ma_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_65-msMa_EeWGb6ppo-ygHg" name="VitalSignsOrganizer2Entry">
+      <generalization xmi:id="_65-msca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_66BqAca_EeWGb6ppo-ygHg" name="vitalSignsOrganizer21173" type="_dDupoPV2EeONioZkBKP8eQ" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_66BqAsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_66BqA8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_66BqAMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_L4h0cAFUEeSmasYc71ZgMQ" base_Class="_8LkzYAFTEeSmasYc71ZgMQ" templateId="2.16.840.1.113883.10.20.22.2.4" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7268, CONF:1198-10451, CONF:1198-32584</ruleId>
@@ -639,13 +704,13 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:PropertyValidation xmi:id="_I4sw0AFVEeSmasYc71ZgMQ" base_Property="_I4risAFVEeSmasYc71ZgMQ">
     <ruleId>CONF:1198-15242</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_TrHxkAFVEeSmasYc71ZgMQ" memberEnd="_TrEuQAFVEeSmasYc71ZgMQ _TrHxkQFVEeSmasYc71ZgMQ">
+  <uml:Association xmi:id="_TrHxkAFVEeSmasYc71ZgMQ" memberEnd="_TrHxkQFVEeSmasYc71ZgMQ">
     <ownedEnd xmi:id="_TrHxkQFVEeSmasYc71ZgMQ" type="_8LkzYAFTEeSmasYc71ZgMQ" association="_TrHxkAFVEeSmasYc71ZgMQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_W2oEQAFVEeSmasYc71ZgMQ" severity="WARNING" base_Association="_TrHxkAFVEeSmasYc71ZgMQ">
     <ruleId>CONF:1198-7271, CONF:1198-15517</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_D3010ALzEeSM0Jd2D1FgKw" clientDependency="_ZW8CwALzEeSM0Jd2D1FgKw" name="VitalSignsSection2">
+  <uml:Class xmi:id="_D3010ALzEeSM0Jd2D1FgKw" name="VitalSignsSection2">
     <ownedComment xmi:id="_KuBRkALzEeSM0Jd2D1FgKw">
       <body>&lt;p>&#xD;
 The Vital Signs Section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&#xD;
@@ -666,13 +731,6 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ownedAttribute xmi:id="_wYuG4AL0EeSM0Jd2D1FgKw" name="code" visibility="private" redefinedProperty="_I4risAFVEeSmasYc71ZgMQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_8thgYAL0EeSM0Jd2D1FgKw" name="vitalSignsOrganizer2" type="_dDupoPV2EeONioZkBKP8eQ" redefinedProperty="_TrEuQAFVEeSmasYc71ZgMQ" association="_8tj8oAL0EeSM0Jd2D1FgKw">
-      <ownedComment xmi:id="_CkMiQKgcEeSoILDCw_oFwA">
-        <body>If section/@nullFlavor is not present:</body>
-      </ownedComment>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B7xG4QL1EeSM0Jd2D1FgKw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7xG4AL1EeSM0Jd2D1FgKw" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_TitIYQL1EeSM0Jd2D1FgKw" name="title" visibility="private" aggregation="composite" redefinedProperty="_3RkfUB0XEeGYy5bW_e08gQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TitIYwL1EeSM0Jd2D1FgKw" value="1"/>
@@ -683,6 +741,21 @@ Vital signs are represented in the same way as other results, but are aggregated
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TishUgL1EeSM0Jd2D1FgKw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TishUQL1EeSM0Jd2D1FgKw" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_67RnMca_EeWGb6ppo-ygHg" name="entry1212" type="_67PyAMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_67RnMsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_67RnM8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_67RnMMa_EeWGb6ppo-ygHg"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_67PyAMa_EeWGb6ppo-ygHg" name="VitalSignsOrganizer2Entry">
+      <generalization xmi:id="_67PyAca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_67S1Uca_EeWGb6ppo-ygHg" name="vitalSignsOrganizer21213" type="_dDupoPV2EeONioZkBKP8eQ" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_67S1Usa_EeWGb6ppo-ygHg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_67S1U8a_EeWGb6ppo-ygHg" value="*"/>
+        <association href="../consol.uml#_67S1UMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_G02AkALzEeSM0Jd2D1FgKw" base_Class="_D3010ALzEeSM0Jd2D1FgKw" templateId="2.16.840.1.113883.10.20.22.2.4.1" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7273, CONF:1198-10452, CONF:1198-32585</ruleId>
@@ -695,7 +768,7 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:PropertyValidation xmi:id="_wYwjIAL0EeSM0Jd2D1FgKw" base_Property="_wYuG4AL0EeSM0Jd2D1FgKw">
     <ruleId>CONF:1198-15962</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_8tj8oAL0EeSM0Jd2D1FgKw" memberEnd="_8thgYAL0EeSM0Jd2D1FgKw _8tkjsAL0EeSM0Jd2D1FgKw">
+  <uml:Association xmi:id="_8tj8oAL0EeSM0Jd2D1FgKw" memberEnd="_8tkjsAL0EeSM0Jd2D1FgKw">
     <ownedEnd xmi:id="_8tkjsAL0EeSM0Jd2D1FgKw" type="_D3010ALzEeSM0Jd2D1FgKw" association="_8tj8oAL0EeSM0Jd2D1FgKw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="__jRlgAL0EeSM0Jd2D1FgKw" base_Association="_8tj8oAL0EeSM0Jd2D1FgKw">
@@ -720,8 +793,8 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ruleId>CONF:1098-7307</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
-    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
     <ruleId>CONF:1098-32886</ruleId>
+    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
@@ -791,12 +864,24 @@ Vital signs are represented in the same way as other results, but are aggregated
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0WtkOu3EeGU4e2Grhba1w" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_U5AysOZlEeGINOJ_SD9_dA" name="problemObservation" association="_U5AysuZlEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U5AyseZlEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_6pHgMca_EeWGb6ppo-ygHg" name="entryRelationship576" type="_6pGSEMa_EeWGb6ppo-ygHg" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pHgMsa_EeWGb6ppo-ygHg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pHgM8a_EeWGb6ppo-ygHg" value="1"/>
+      <association href="../consol.uml#_6pHgMMa_EeWGb6ppo-ygHg"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_6pGSEMa_EeWGb6ppo-ygHg" name="ProblemObservationEntryRelationship">
+      <generalization xmi:id="_6pGSEca_EeWGb6ppo-ygHg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6pIuUca_EeWGb6ppo-ygHg" name="problemObservation577" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6pIuUsa_EeWGb6ppo-ygHg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6pIuU8a_EeWGb6ppo-ygHg" value="1"/>
+        <association href="../consol.uml#_6pIuUMa_EeWGb6ppo-ygHg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_U5AysuZlEeGINOJ_SD9_dA" memberEnd="_U5AysOZlEeGINOJ_SD9_dA _U5Ays-ZlEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_U5AysuZlEeGINOJ_SD9_dA" memberEnd="_U5Ays-ZlEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_U5Ays-ZlEeGINOJ_SD9_dA" type="_lm3boOZbEeGINOJ_SD9_dA" association="_U5AysuZlEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_qga1cOZkEeGINOJ_SD9_dA" base_Class="_lm3boOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.79">
@@ -840,4 +925,12 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:EntryRelationship xmi:id="_WoJ1EOZlEeGINOJ_SD9_dA" severity="WARNING" base_Association="_U5AysuZlEeGINOJ_SD9_dA">
     <ruleId>CONF:14868, CONF:14875, CONF:14870</ruleId>
   </CDA:EntryRelationship>
+  <CDA:Inline xmi:id="_6e_T0sa_EeWGb6ppo-ygHg" base_Class="_6e_T0Ma_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6fCXIsa_EeWGb6ppo-ygHg" base_Class="_6fCXIMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6hcK4sa_EeWGb6ppo-ygHg" base_Class="_6hcK4Ma_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6pGSEsa_EeWGb6ppo-ygHg" base_Class="_6pGSEMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_6xuCksa_EeWGb6ppo-ygHg" base_Class="_6xuCkMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_619pYsa_EeWGb6ppo-ygHg" base_Class="_619pYMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_65-mssa_EeWGb6ppo-ygHg" base_Class="_65-msMa_EeWGb6ppo-ygHg"/>
+  <CDA:Inline xmi:id="_67PyAsa_EeWGb6ppo-ygHg" base_Class="_67PyAMa_EeWGb6ppo-ygHg"/>
 </xmi:XMI>

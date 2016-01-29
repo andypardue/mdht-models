@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Non Medicinal Supply Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	@Override
 	public boolean validateNonMedicinalSupplyActivityEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTimeHigh(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	@Override
 	public boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +99,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +119,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -138,8 +130,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	@Override
 	public boolean validateNonMedicinalSupplyActivityEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTime(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -149,8 +140,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	@Override
 	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(
-			this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -161,18 +151,7 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	@Override
 	public boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductInstance getProductInstance() {
-		return NonMedicinalSupplyActivityOperations.getProductInstance(this);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(this, diagnostics, context);
 	}
 
 	/**
@@ -182,17 +161,17 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	@Override
 	public NonMedicinalSupplyActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NonMedicinalSupplyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NonMedicinalSupplyActivityImpl

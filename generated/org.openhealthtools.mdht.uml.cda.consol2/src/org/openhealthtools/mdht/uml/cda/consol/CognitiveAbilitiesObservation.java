@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCognitiveAbilitiesObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CognitiveAbilitiesObservationTemplateId CognitiveAbilitiesObservationClassCode CognitiveAbilitiesObservationMoodCode CognitiveAbilitiesObservationId CognitiveAbilitiesObservationCodeP CognitiveAbilitiesObservationStatusCode CognitiveAbilitiesObservationStatusCodeP CognitiveAbilitiesObservationEffectiveTime CognitiveAbilitiesObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.126' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='CognitiveAbilitiesObservationCode CognitiveAbilitiesObservationText CognitiveAbilitiesObservationValue CognitiveAbilitiesObservationAuthorParticipation' constraints.validation.dependOn.CognitiveAbilitiesObservationCode='CognitiveAbilitiesObservationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='CognitiveAbilitiesObservationAssessmentScaleObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CognitiveAbilitiesObservationTemplateId CognitiveAbilitiesObservationClassCode CognitiveAbilitiesObservationMoodCode CognitiveAbilitiesObservationId CognitiveAbilitiesObservationCodeP CognitiveAbilitiesObservationStatusCode CognitiveAbilitiesObservationStatusCodeP CognitiveAbilitiesObservationEffectiveTime CognitiveAbilitiesObservationValueP CognitiveAbilitiesObservationEntryRelationship594' templateId.root='2.16.840.1.113883.10.20.22.4.126' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='CognitiveAbilitiesObservationCode CognitiveAbilitiesObservationText CognitiveAbilitiesObservationValue CognitiveAbilitiesObservationAuthorParticipation' constraints.validation.dependOn.CognitiveAbilitiesObservationCode='CognitiveAbilitiesObservationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.info='CognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation595' constraints.validation.query='CognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation595'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationship constraints.validation.info='CognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation595'"
  * @generated
  */
 public interface CognitiveAbilitiesObservation extends Observation {
@@ -73,7 +74,7 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateCognitiveAbilitiesObservationId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,7 +98,7 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'61254005\' or value.code = \'395659009\' or value.code = \'286574007\' or value.code = \'307082005\' or value.code = \'304641000\' or value.code = \'363878000\' or value.code = \'418907009\' or value.code = \'304645009\' or value.code = \'311465003\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'61254005\' or value.code = \'395659009\' or value.code = \'286574007\' or value.code = \'307082005\' or value.code = \'304641000\' or value.code = \'363878000\' or value.code = \'418907009\' or value.code = \'304645009\' or value.code = \'311465003\'))'"
 	 * @generated
 	 */
 	boolean validateCognitiveAbilitiesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -121,7 +122,7 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateCognitiveAbilitiesObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -157,7 +158,7 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateCognitiveAbilitiesObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -181,19 +182,6 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
-	 * @generated
-	 */
-	boolean validateCognitiveAbilitiesObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))'"
 	 * @generated
 	 */
@@ -203,11 +191,26 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleObservation)).oclAsType(consol::AssessmentScaleObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<AssessmentScaleObservation> getAssessmentScaleObservations();
+	boolean validateCognitiveAbilitiesObservationEntryRelationship594(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleObservation)))'"
+	 * @generated
+	 */
+	boolean validateCognitiveAbilitiesObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation595(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,9 +220,9 @@ public interface CognitiveAbilitiesObservation extends Observation {
 	public CognitiveAbilitiesObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public CognitiveAbilitiesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveAbilitiesObservation

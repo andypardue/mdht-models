@@ -17,15 +17,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedication2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,10 +35,10 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2EntryRelationship902(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Entry Relationship902</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedication2MedicationActivity2EntryRelationshipMedicationActivity2903(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication2 Medication Activity2 Entry Relationship Medication Activity2903</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2#validateDischargeMedicationMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Medication Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -128,8 +125,8 @@ public class DischargeMedication2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeMedication2StatusCodeP() {
 		OperationsTestCase<DischargeMedication2> validateDischargeMedication2StatusCodePTestCase = new OperationsTestCase<DischargeMedication2>(
-			"validateDischargeMedication2StatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeMedication2StatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -160,11 +157,71 @@ public class DischargeMedication2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolMedicationActivity2s() {
 
-		DischargeMedication2 target = objectFactory.create();
-		target.getConsolMedicationActivity2s();
+	public void testValidateDischargeMedication2EntryRelationship902() {
+		OperationsTestCase<DischargeMedication2> validateDischargeMedication2EntryRelationship902TestCase = new OperationsTestCase<DischargeMedication2>(
+			"validateDischargeMedication2EntryRelationship902",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION2_ENTRY_RELATIONSHIP902__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DischargeMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedication2Operations.validateDischargeMedication2EntryRelationship902(
+					(DischargeMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedication2EntryRelationship902TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateDischargeMedication2MedicationActivity2EntryRelationshipMedicationActivity2903() {
+		OperationsTestCase<DischargeMedication2> validateDischargeMedication2MedicationActivity2EntryRelationshipMedicationActivity2903TestCase = new OperationsTestCase<DischargeMedication2>(
+			"validateDischargeMedication2MedicationActivity2EntryRelationshipMedicationActivity2903",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION2_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_MEDICATION_ACTIVITY2903__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedication2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedication2Operations.validateDischargeMedication2MedicationActivity2EntryRelationshipMedicationActivity2903(
+					(DischargeMedication2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedication2MedicationActivity2EntryRelationshipMedicationActivity2903TestCase.doValidationTest();
 	}
 
 	/**
@@ -203,7 +260,7 @@ public class DischargeMedication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDischargeMedicationCode() {
@@ -214,12 +271,13 @@ public class DischargeMedication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DischargeMedication2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(DischargeMedication2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("75311-1", LOINC_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -239,43 +297,6 @@ public class DischargeMedication2Test extends CDAValidationTest {
 		};
 
 		validateDischargeMedicationCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDischargeMedicationMedicationActivity() {
-		OperationsTestCase<DischargeMedication2> validateDischargeMedicationMedicationActivityTestCase = new OperationsTestCase<DischargeMedication2>(
-			"validateDischargeMedicationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DischargeMedication2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DischargeMedication2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DischargeMedication2Operations.validateDischargeMedicationMedicationActivity(
-					(DischargeMedication2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDischargeMedicationMedicationActivityTestCase.doValidationTest();
 	}
 
 	/**

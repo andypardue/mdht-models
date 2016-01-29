@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Admission Diagnosis Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +80,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCodeP(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +91,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTitle(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -108,8 +102,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionText(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -117,11 +110,8 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
-			this, diagnostics, context);
+	public boolean validateHospitalAdmissionDiagnosisSectionEntry168(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionEntry168(this, diagnostics, context);
 	}
 
 	/**
@@ -129,9 +119,8 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public HospitalAdmissionDiagnosis getHospitalAdmissionDiagnosis() {
-		return HospitalAdmissionDiagnosisSectionOperations.getHospitalAdmissionDiagnosis(this);
+	public boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisEntryHospitalAdmissionDiagnosis169(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisEntryHospitalAdmissionDiagnosis169(this, diagnostics, context);
 	}
 
 	/**
@@ -141,17 +130,17 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	@Override
 	public HospitalAdmissionDiagnosisSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HospitalAdmissionDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalAdmissionDiagnosisSectionImpl

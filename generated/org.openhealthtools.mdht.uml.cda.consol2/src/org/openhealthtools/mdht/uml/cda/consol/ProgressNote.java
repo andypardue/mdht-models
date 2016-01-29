@@ -24,13 +24,16 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProgressNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP ProgressNoteComponentOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6' templateId.root='2.16.840.1.113883.10.20.22.1.9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.warning='ProgressNoteDocumentationOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ProgressNoteAssessmentSection ProgressNotePlanOfCareSection ProgressNoteAssessmentAndPlanSection ProgressNoteAllergiesSectionEntriesOptional ProgressNoteChiefComplaintSection ProgressNoteInterventionsSection ProgressNoteMedicationsSectionEntriesOptional ProgressNoteObjectiveSection ProgressNotePhysicalExamSection ProgressNoteProblemSectionEntriesOptional ProgressNoteResultsSectionEntriesOptional ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection ProgressNoteVitalSignsSectionEntriesOptional ProgressNoteInstructionsSection ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond' constraints.validation.query='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId ProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections ProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent GeneralHeaderConstraintsCode GeneralHeaderConstraintsCodeP ProgressNoteComponentOf ProgressNoteComponent488 ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6 ProgressNoteComponentStructuredBodyAssessmentSection490 ProgressNoteComponentStructuredBodyPlanOfCareSection492 ProgressNoteComponentStructuredBodyAssessmentAndPlanSection494 ProgressNoteComponentStructuredBodyAllergiesSectionEntriesOptional496 ProgressNoteComponentStructuredBodyChiefComplaintSection498 ProgressNoteComponentStructuredBodyInterventionsSection500 ProgressNoteComponentStructuredBodyMedicationsSectionEntriesOptional502 ProgressNoteComponentStructuredBodyObjectiveSection504 ProgressNoteComponentStructuredBodyPhysicalExamSection506 ProgressNoteComponentStructuredBodyProblemSectionEntriesOptional508 ProgressNoteComponentStructuredBodyResultsSectionEntriesOptional510 ProgressNoteComponentStructuredBodyReviewOfSystemsSection512 ProgressNoteComponentStructuredBodySubjectiveSection514 ProgressNoteComponentStructuredBodyVitalSignsSectionEntriesOptional516 ProgressNoteComponentStructuredBodyInstructionsSection518 ProgressNoteComponentStructuredBody489' templateId.root='2.16.840.1.113883.10.20.22.1.9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.GeneralHeaderConstraintsCode='GeneralHeaderConstraintsCodeP' constraints.validation.warning='ProgressNoteDocumentationOf ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.query='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2ClassCode ProgressNoteDocumentationOfServiceEvent2EffectiveTime ProgressNoteDocumentationOfServiceEvent2 ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location ProgressNoteComponentOfEncompassingEncounter6 ProgressNoteComponentStructuredBodyComponentAssessmentSection491 ProgressNoteComponentStructuredBodyComponentPlanOfCareSection493 ProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495 ProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497 ProgressNoteComponentStructuredBodyComponentChiefComplaintSection499 ProgressNoteComponentStructuredBodyComponentInterventionsSection501 ProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503 ProgressNoteComponentStructuredBodyComponentObjectiveSection505 ProgressNoteComponentStructuredBodyComponentPhysicalExamSection507 ProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509 ProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511 ProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513 ProgressNoteComponentStructuredBodyComponentSubjectiveSection515 ProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517 ProgressNoteComponentStructuredBodyComponentInstructionsSection519 ProgressNoteComponentStructuredBodyAssessmentSection490 ProgressNoteComponentStructuredBodyPlanOfCareSection492 ProgressNoteComponentStructuredBodyAssessmentAndPlanSection494 ProgressNoteComponentStructuredBodyAllergiesSectionEntriesOptional496 ProgressNoteComponentStructuredBodyChiefComplaintSection498 ProgressNoteComponentStructuredBodyInterventionsSection500 ProgressNoteComponentStructuredBodyMedicationsSectionEntriesOptional502 ProgressNoteComponentStructuredBodyObjectiveSection504 ProgressNoteComponentStructuredBodyPhysicalExamSection506 ProgressNoteComponentStructuredBodyProblemSectionEntriesOptional508 ProgressNoteComponentStructuredBodyResultsSectionEntriesOptional510 ProgressNoteComponentStructuredBodyReviewOfSystemsSection512 ProgressNoteComponentStructuredBodySubjectiveSection514 ProgressNoteComponentStructuredBodyVitalSignsSectionEntriesOptional516 ProgressNoteComponentStructuredBodyInstructionsSection518 ProgressNoteComponentStructuredBody489' constraints.validation.info='ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond ProgressNoteComponentStructuredBodyComponentAssessmentSection491 ProgressNoteComponentStructuredBodyComponentPlanOfCareSection493 ProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495 ProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497 ProgressNoteComponentStructuredBodyComponentChiefComplaintSection499 ProgressNoteComponentStructuredBodyComponentInterventionsSection501 ProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503 ProgressNoteComponentStructuredBodyComponentObjectiveSection505 ProgressNoteComponentStructuredBodyComponentPhysicalExamSection507 ProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509 ProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511 ProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513 ProgressNoteComponentStructuredBodyComponentSubjectiveSection515 ProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517 ProgressNoteComponentStructuredBodyComponentInstructionsSection519'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOf constraints.validation.error='ProgressNoteDocumentationOfServiceEvent2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteDocumentationOfServiceEvent2 constraints.validation.error='ProgressNoteDocumentationOfServiceEvent2TemplateId ProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay ProgressNoteDocumentationOfServiceEvent2ClassCode' templateId.root='2.16.840.1.113883.10.20.21.3.1' constraints.validation.warning='ProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset ProgressNoteDocumentationOfServiceEvent2EffectiveTime' constraints.validation.info='ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond' classCode='PCPR'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOf constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay ProgressNoteComponentOfEncompassingEncounter6EffectiveTime ProgressNoteComponentOfEncompassingEncounter6Id ProgressNoteComponentOfEncompassingEncounter6Location' constraints.validation.warning='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset' constraints.validation.info='ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6Location constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1 constraints.validation.error='ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponent constraints.validation.error='ProgressNoteComponentStructuredBody489 ComponentProgressNoteComponentStructuredBodyAssessmentSection490 ComponentProgressNoteComponentStructuredBodyPlanOfCareSection492 ComponentProgressNoteComponentStructuredBodyAssessmentAndPlanSection494 ComponentProgressNoteComponentStructuredBodyAllergiesSectionEntriesOptional496 ComponentProgressNoteComponentStructuredBodyChiefComplaintSection498 ComponentProgressNoteComponentStructuredBodyInterventionsSection500 ComponentProgressNoteComponentStructuredBodyMedicationsSectionEntriesOptional502 ComponentProgressNoteComponentStructuredBodyObjectiveSection504 ComponentProgressNoteComponentStructuredBodyPhysicalExamSection506 ComponentProgressNoteComponentStructuredBodyProblemSectionEntriesOptional508 ComponentProgressNoteComponentStructuredBodyResultsSectionEntriesOptional510 ComponentProgressNoteComponentStructuredBodyReviewOfSystemsSection512 ComponentProgressNoteComponentStructuredBodySubjectiveSection514 ComponentProgressNoteComponentStructuredBodyVitalSignsSectionEntriesOptional516 ComponentProgressNoteComponentStructuredBodyInstructionsSection518' constraints.validation.info='ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentSection491 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentPlanOfCareSection493 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentChiefComplaintSection499 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentInterventionsSection501 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentObjectiveSection505 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentPhysicalExamSection507 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentSubjectiveSection515 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentInstructionsSection519' constraints.validation.query='ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentSection491 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentPlanOfCareSection493 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentChiefComplaintSection499 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentInterventionsSection501 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentObjectiveSection505 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentPhysicalExamSection507 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentSubjectiveSection515 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517 ComponentStructuredBodyProgressNoteComponentStructuredBodyComponentInstructionsSection519 ComponentProgressNoteComponentStructuredBodyAssessmentSection490 ComponentProgressNoteComponentStructuredBodyPlanOfCareSection492 ComponentProgressNoteComponentStructuredBodyAssessmentAndPlanSection494 ComponentProgressNoteComponentStructuredBodyAllergiesSectionEntriesOptional496 ComponentProgressNoteComponentStructuredBodyChiefComplaintSection498 ComponentProgressNoteComponentStructuredBodyInterventionsSection500 ComponentProgressNoteComponentStructuredBodyMedicationsSectionEntriesOptional502 ComponentProgressNoteComponentStructuredBodyObjectiveSection504 ComponentProgressNoteComponentStructuredBodyPhysicalExamSection506 ComponentProgressNoteComponentStructuredBodyProblemSectionEntriesOptional508 ComponentProgressNoteComponentStructuredBodyResultsSectionEntriesOptional510 ComponentProgressNoteComponentStructuredBodyReviewOfSystemsSection512 ComponentProgressNoteComponentStructuredBodySubjectiveSection514 ComponentProgressNoteComponentStructuredBodyVitalSignsSectionEntriesOptional516 ComponentProgressNoteComponentStructuredBodyInstructionsSection518'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentStructuredBody constraints.validation.error='ProgressNoteComponentStructuredBodyAssessmentSection490 ProgressNoteComponentStructuredBodyPlanOfCareSection492 ProgressNoteComponentStructuredBodyAssessmentAndPlanSection494 ProgressNoteComponentStructuredBodyAllergiesSectionEntriesOptional496 ProgressNoteComponentStructuredBodyChiefComplaintSection498 ProgressNoteComponentStructuredBodyInterventionsSection500 ProgressNoteComponentStructuredBodyMedicationsSectionEntriesOptional502 ProgressNoteComponentStructuredBodyObjectiveSection504 ProgressNoteComponentStructuredBodyPhysicalExamSection506 ProgressNoteComponentStructuredBodyProblemSectionEntriesOptional508 ProgressNoteComponentStructuredBodyResultsSectionEntriesOptional510 ProgressNoteComponentStructuredBodyReviewOfSystemsSection512 ProgressNoteComponentStructuredBodySubjectiveSection514 ProgressNoteComponentStructuredBodyVitalSignsSectionEntriesOptional516 ProgressNoteComponentStructuredBodyInstructionsSection518' constraints.validation.info='StructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentSection491 StructuredBodyProgressNoteComponentStructuredBodyComponentPlanOfCareSection493 StructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495 StructuredBodyProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497 StructuredBodyProgressNoteComponentStructuredBodyComponentChiefComplaintSection499 StructuredBodyProgressNoteComponentStructuredBodyComponentInterventionsSection501 StructuredBodyProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503 StructuredBodyProgressNoteComponentStructuredBodyComponentObjectiveSection505 StructuredBodyProgressNoteComponentStructuredBodyComponentPhysicalExamSection507 StructuredBodyProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509 StructuredBodyProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511 StructuredBodyProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513 StructuredBodyProgressNoteComponentStructuredBodyComponentSubjectiveSection515 StructuredBodyProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517 StructuredBodyProgressNoteComponentStructuredBodyComponentInstructionsSection519' constraints.validation.query='StructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentSection491 StructuredBodyProgressNoteComponentStructuredBodyComponentPlanOfCareSection493 StructuredBodyProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495 StructuredBodyProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497 StructuredBodyProgressNoteComponentStructuredBodyComponentChiefComplaintSection499 StructuredBodyProgressNoteComponentStructuredBodyComponentInterventionsSection501 StructuredBodyProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503 StructuredBodyProgressNoteComponentStructuredBodyComponentObjectiveSection505 StructuredBodyProgressNoteComponentStructuredBodyComponentPhysicalExamSection507 StructuredBodyProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509 StructuredBodyProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511 StructuredBodyProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513 StructuredBodyProgressNoteComponentStructuredBodyComponentSubjectiveSection515 StructuredBodyProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517 StructuredBodyProgressNoteComponentStructuredBodyComponentInstructionsSection519'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProgressNoteComponentStructuredBodyComponent constraints.validation.info='ProgressNoteComponentStructuredBodyComponentInstructionsSection519'"
  * @generated
  */
 public interface ProgressNote extends GeneralHeaderConstraints {
@@ -103,180 +106,10 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component2 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component2))'"
 	 * @generated
 	 */
-	boolean validateProgressNoteAssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNotePlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteAssessmentAndPlanSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteAllergiesSectionEntriesOptional(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteInterventionsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteObjectiveSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNotePhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteProblemSectionEntriesOptional(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteResultsSectionEntriesOptional(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteSubjectiveSection(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))'"
-	 * @generated
-	 */
-	boolean validateProgressNoteInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNoteComponent488(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,7 +338,7 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() >= 1))'"
 	 * @generated
 	 */
 	boolean validateProgressNoteComponentOfEncompassingEncounter6Id(DiagnosticChain diagnostics,
@@ -540,137 +373,374 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection)))'"
 	 * @generated
 	 */
-	AssessmentSection getAssessmentSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentAssessmentSection491(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection)))'"
 	 * @generated
 	 */
-	PlanOfCareSection getPlanOfCareSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentPlanOfCareSection493(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection)))'"
 	 * @generated
 	 */
-	AssessmentAndPlanSection getAssessmentAndPlanSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentAssessmentAndPlanSection495(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional();
+	boolean validateProgressNoteComponentStructuredBodyComponentAllergiesSectionEntriesOptional497(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection)))'"
 	 * @generated
 	 */
-	ChiefComplaintSection getChiefComplaintSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentChiefComplaintSection499(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection))->asSequence()->any(true).oclAsType(consol::InterventionsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection)))'"
 	 * @generated
 	 */
-	InterventionsSection getInterventionsSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentInterventionsSection501(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional();
+	boolean validateProgressNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional503(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection))->asSequence()->any(true).oclAsType(consol::ObjectiveSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection)))'"
 	 * @generated
 	 */
-	ObjectiveSection getObjectiveSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentObjectiveSection505(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection)))'"
 	 * @generated
 	 */
-	PhysicalExamSection getPhysicalExamSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentPhysicalExamSection507(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProblemSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	ProblemSectionEntriesOptional getProblemSectionEntriesOptional();
+	boolean validateProgressNoteComponentStructuredBodyComponentProblemSectionEntriesOptional509(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ResultsSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	ResultsSectionEntriesOptional getResultsSectionEntriesOptional();
+	boolean validateProgressNoteComponentStructuredBodyComponentResultsSectionEntriesOptional511(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection)))'"
 	 * @generated
 	 */
-	ReviewOfSystemsSection getReviewOfSystemsSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentReviewOfSystemsSection513(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection))->asSequence()->any(true).oclAsType(consol::SubjectiveSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection)))'"
 	 * @generated
 	 */
-	SubjectiveSection getSubjectiveSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentSubjectiveSection515(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional)))'"
 	 * @generated
 	 */
-	VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional();
+	boolean validateProgressNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional517(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null).component->excluding(null)->reject(section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection)))'"
 	 * @generated
 	 */
-	InstructionsSection getInstructionsSection();
+	boolean validateProgressNoteComponentStructuredBodyComponentInstructionsSection519(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyAssessmentSection490(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyPlanOfCareSection492(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyAssessmentAndPlanSection494(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyAllergiesSectionEntriesOptional496(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyChiefComplaintSection498(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyInterventionsSection500(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyMedicationsSectionEntriesOptional502(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyObjectiveSection504(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyPhysicalExamSection506(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyProblemSectionEntriesOptional508(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyResultsSectionEntriesOptional510(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyReviewOfSystemsSection512(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodySubjectiveSection514(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyVitalSignsSectionEntriesOptional516(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).structuredBody->excluding(null)->reject(component->one(component : cda::Component3 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component3)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBodyInstructionsSection518(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null)->reject(structuredBody->one(structuredBody : cda::StructuredBody | not structuredBody.oclIsUndefined() and structuredBody.oclIsKindOf(cda::StructuredBody)))'"
+	 * @generated
+	 */
+	boolean validateProgressNoteComponentStructuredBody489(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -681,10 +751,10 @@ public interface ProgressNote extends GeneralHeaderConstraints {
 	public ProgressNote init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProgressNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProgressNote

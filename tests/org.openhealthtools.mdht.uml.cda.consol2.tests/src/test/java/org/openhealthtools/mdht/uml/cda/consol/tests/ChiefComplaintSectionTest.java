@@ -52,8 +52,8 @@ public class ChiefComplaintSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateChiefComplaintSectionTemplateId() {
 		OperationsTestCase<ChiefComplaintSection> validateChiefComplaintSectionTemplateIdTestCase = new OperationsTestCase<ChiefComplaintSection>(
-			"validateChiefComplaintSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateChiefComplaintSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

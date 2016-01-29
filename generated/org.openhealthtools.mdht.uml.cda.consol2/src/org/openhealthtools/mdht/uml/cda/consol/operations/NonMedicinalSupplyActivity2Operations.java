@@ -15,8 +15,10 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -40,9 +42,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2InversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#getInstruction2() <em>Get Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#getConsolProductInstance() <em>Get Consol Product Instance</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2EntryRelationship956(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Entry Relationship956</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Entry Relationship Instruction2957</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2#validateNonMedicinalSupplyActivityProductInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Product Instance</em>}</li>
@@ -96,28 +97,28 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivity2Instruction2InversionInd(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
 				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd"),
+						 new Object [] { nonMedicinalSupplyActivity2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -158,27 +159,28 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivityStatusCodeP(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
 				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP"),
+						 new Object [] { nonMedicinalSupplyActivity2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -186,37 +188,36 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP", passToken);
 				}
 				passToken.add(nonMedicinalSupplyActivity2);
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivity2Instruction2(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivity2EntryRelationship956(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Entry Relationship956</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNonMedicinalSupplyActivity2Instruction2(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNonMedicinalSupplyActivity2EntryRelationship956(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::Instruction2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivity2Instruction2(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivity2EntryRelationship956(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Entry Relationship956</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateNonMedicinalSupplyActivity2Instruction2(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateNonMedicinalSupplyActivity2EntryRelationship956(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,118 +229,99 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNonMedicinalSupplyActivity2Instruction2(
-			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateNonMedicinalSupplyActivity2EntryRelationship956(NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP956,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2EntryRelationship956"),
+						 new Object [] { nonMedicinalSupplyActivity2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInstruction2(NonMedicinalSupplyActivity2) <em>Get Instruction2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Entry Relationship Instruction2957</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInstruction2(NonMedicinalSupplyActivity2)
+	 * @see #validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INSTRUCTION2__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2))->asSequence()->any(true).oclAsType(consol::Instruction2)";
+	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getInstruction2(NonMedicinalSupplyActivity2) <em>Get Instruction2</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity2 Instruction2 Entry Relationship Instruction2957</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInstruction2(NonMedicinalSupplyActivity2)
+	 * @see #validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_INSTRUCTION2__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param nonMedicinalSupplyActivity2 The receiving '<em><b>Non Medicinal Supply Activity2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static Instruction2 getInstruction2(NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2) {
-		if (GET_INSTRUCTION2__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateNonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957(NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2.getEAllOperations().get(66));
+			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				GET_INSTRUCTION2__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INSTRUCTION2__EOCL_QRY);
-		return (Instruction2) query.evaluate(nonMedicinalSupplyActivity2);
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConsolProductInstance(NonMedicinalSupplyActivity2) <em>Get Consol Product Instance</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolProductInstance(NonMedicinalSupplyActivity2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_PRODUCT_INSTANCE__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->any(true).oclAsType(consol::ProductInstance)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolProductInstance(NonMedicinalSupplyActivity2) <em>Get Consol Product Instance</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolProductInstance(NonMedicinalSupplyActivity2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_PRODUCT_INSTANCE__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-
-	public static ProductInstance getConsolProductInstance(NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2) {
-		if (GET_CONSOL_PRODUCT_INSTANCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2.getEAllOperations().get(67));
-			try {
-				GET_CONSOL_PRODUCT_INSTANCE__EOCL_QRY = helper.createQuery(GET_CONSOL_PRODUCT_INSTANCE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+		Object oclResult = VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(nonMedicinalSupplyActivity2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION2957,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2EntryRelationshipInstruction2957"),
+						 new Object [] { eObject }));
+				}
+				 
 			}
+			return oclResultSet.isEmpty();
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PRODUCT_INSTANCE__EOCL_QRY);
-		return (ProductInstance) query.evaluate(nonMedicinalSupplyActivity2);
+		return true;
 	}
 
 	/**
@@ -377,26 +359,28 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivityTemplateId(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
 				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityTemplateId"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityTemplateId"),
+						 new Object [] { nonMedicinalSupplyActivity2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -410,9 +394,9 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
-			+ "value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete')";
+	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivityStatusCode(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code</em>}' invariant operation.
@@ -439,34 +423,34 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivityStatusCode(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(nonMedicinalSupplyActivity2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
 				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode"),
+						 new Object [] { nonMedicinalSupplyActivity2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -480,7 +464,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::ProductInstance))";
+	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(consol::ProductInstance))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivityProductInstance(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Product Instance</em>}' invariant operation.
@@ -507,28 +491,28 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	public static boolean validateNonMedicinalSupplyActivityProductInstance(
 			NonMedicinalSupplyActivity2 nonMedicinalSupplyActivity2, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
 				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
+						 ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance"),
+						 new Object [] { nonMedicinalSupplyActivity2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;

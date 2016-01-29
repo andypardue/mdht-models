@@ -11,9 +11,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CaregiverCharacteristicsOperations;
@@ -21,8 +18,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -58,25 +53,24 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsValueCodeSystem() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsValueCodeSystemTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsValueCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CaregiverCharacteristics target) {
-				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("", "1.2.3.4", "", ""));
+
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				target.getValues().clear();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.1", "", ""));
+				target.init();
 
 			}
 
@@ -99,8 +93,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsTemplateId() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsTemplateIdTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -133,8 +127,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsClassCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsClassCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -167,8 +161,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsMoodCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsMoodCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -196,7 +190,7 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsId() {
@@ -213,7 +207,7 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -230,7 +224,7 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsCode() {
@@ -247,7 +241,7 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
@@ -269,8 +263,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsStatusCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsStatusCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -306,8 +300,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsStatusCodeP() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsStatusCodePTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -372,13 +366,13 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipant() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsParticipant", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -389,7 +383,6 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
 
 			}
 
@@ -407,54 +400,25 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantParticipantRoleClassCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantParticipantRoleClassCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantParticipantRoleClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(CaregiverCharacteristics target) {
-						// no content (classCode) within participantRole
-						target.init();
-						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-						par.setParticipantRole(pr);
-						target.getParticipants().add(par);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(CaregiverCharacteristics target) {
-						// has classCode but classCode has the wrong default (PART instead of CAREGIVER)
-						target.init();
-						Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-						ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-						pr.setClassCode(RoleClassRoot.PART);
-						par.setParticipantRole(pr);
-						target.getParticipants().add(par);
-					}
-				});
+			protected void updateToFail(CaregiverCharacteristics target) {
 
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				// has classCode with CAREGIVER default
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.setClassCode(RoleClassRoot.CAREGIVER);
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
+				target.init();
+
 			}
 
 			@Override
@@ -471,29 +435,24 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantTimeLow() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTimeLowTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CaregiverCharacteristics target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
-				target.getParticipants().add(par);
+				target.init();
 
 			}
 
@@ -511,29 +470,24 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantTimeHigh() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTimeHighTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CaregiverCharacteristics target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
-				target.getParticipants().add(par);
+				target.init();
 
 			}
 
@@ -551,48 +505,25 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantTypeCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTypeCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(CaregiverCharacteristics target) {
-						// has a participant without a typeCode
-						target.init();
-						Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
-						target.getParticipants().add(p);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(CaregiverCharacteristics target) {
-						// has a participant with a typeCode that has the wrong default
-						target.init();
-						Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
-						target.getParticipants().add(p);
-						p.setTypeCode(ParticipationType.ADM);
-					}
-				});
+			protected void updateToFail(CaregiverCharacteristics target) {
 
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				// has a participant with a typeCode that has the correct default
 				target.init();
-				Participant2 p = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(p);
-				p.setTypeCode(ParticipationType.IND);
+
 			}
 
 			@Override
@@ -609,27 +540,23 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantTime() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTimeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsParticipantTime",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsParticipantTime", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CaregiverCharacteristics target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
-				target.getParticipants().add(par);
+				target.init();
 
 			}
 
@@ -647,28 +574,24 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantParticipantRole() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantParticipantRoleTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CaregiverCharacteristics target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
+
 			}
 
 			@Override
 			protected void updateToPass(CaregiverCharacteristics target) {
-				target.getParticipants().clear();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pr);
-				target.getParticipants().add(par);
+				target.init();
 
 			}
 

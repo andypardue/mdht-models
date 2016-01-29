@@ -10,13 +10,16 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
@@ -47,8 +50,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActSeriesAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Series Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#getSeriesAct() <em>Get Series Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActEntryRelationship536(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Entry Relationship536</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActSeriesActEntryRelationshipSeriesAct537(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Series Act Entry Relationship Series Act537</em>}</li>
  * </ul>
  * </p>
  *
@@ -98,24 +101,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActIdsHaveRoot(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_IDS_HAVE_ROOT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActIdsHaveRoot"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_IDS_HAVE_ROOT,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActIdsHaveRoot"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -155,24 +162,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActNoIdExtension(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_NO_ID_EXTENSION,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActNoIdExtension"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_NO_ID_EXTENSION,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActNoIdExtension"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -212,24 +223,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActTextReference(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReference"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReference"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -269,25 +284,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActTextReferenceValue(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			studyAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReferenceValue"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReferenceValue"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -327,24 +345,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActReferenceValue(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActReferenceValue"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActReferenceValue"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -384,24 +406,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActTemplateId(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTemplateId"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActTemplateId"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -441,24 +467,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActClassCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActClassCode"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActClassCode"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -498,24 +528,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActMoodCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActMoodCode"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActMoodCode"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -529,7 +563,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStudyActId(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Id</em>}' invariant operation.
@@ -554,23 +588,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 
 	public static boolean validateStudyActId(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActId"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActId"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -584,9 +623,9 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStudyActCode(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}' invariant operation.
@@ -612,23 +651,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActCode"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActCode"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -668,24 +712,28 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActEffectiveTime(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActEffectiveTime"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActEffectiveTime"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -725,48 +773,53 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActText(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
 				VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActText"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActText"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateStudyActSeriesAct(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Series Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateStudyActEntryRelationship536(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Entry Relationship536</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActSeriesAct(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateStudyActEntryRelationship536(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::SeriesAct) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_STUDY_ACT_ENTRY_RELATIONSHIP536__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateStudyActSeriesAct(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Series Act</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateStudyActEntryRelationship536(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Entry Relationship536</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActSeriesAct(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateStudyActEntryRelationship536(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_STUDY_ACT_ENTRY_RELATIONSHIP536__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -778,71 +831,99 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStudyActSeriesAct(StudyAct studyAct, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateStudyActEntryRelationship536(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_STUDY_ACT_ENTRY_RELATIONSHIP536__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_STUDY_ACT_ENTRY_RELATIONSHIP536__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_ENTRY_RELATIONSHIP536__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_ENTRY_RELATIONSHIP536__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActSeriesAct"), new Object[] { studyAct }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_ENTRY_RELATIONSHIP536,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActEntryRelationship536"),
+						 new Object [] { studyAct }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSeriesAct(StudyAct) <em>Get Series Act</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateStudyActSeriesActEntryRelationshipSeriesAct537(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Series Act Entry Relationship Series Act537</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSeriesAct(StudyAct)
+	 * @see #validateStudyActSeriesActEntryRelationshipSeriesAct537(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SERIES_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct))->asSequence()->any(true).oclAsType(consol::SeriesAct)";
+	protected static final String VALIDATE_STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getSeriesAct(StudyAct) <em>Get Series Act</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateStudyActSeriesActEntryRelationshipSeriesAct537(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Series Act Entry Relationship Series Act537</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSeriesAct(StudyAct)
+	 * @see #validateStudyActSeriesActEntryRelationshipSeriesAct537(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_SERIES_ACT__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static SeriesAct getSeriesAct(StudyAct studyAct) {
-		if (GET_SERIES_ACT__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateStudyActSeriesActEntryRelationshipSeriesAct537(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.STUDY_ACT, ConsolPackage.Literals.STUDY_ACT.getEAllOperations().get(64));
+			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				GET_SERIES_ACT__EOCL_QRY = helper.createQuery(GET_SERIES_ACT__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SERIES_ACT__EOCL_QRY);
-		return (SeriesAct) query.evaluate(studyAct);
+		Object oclResult = VALIDATE_STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(studyAct);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT_ENTRY_RELATIONSHIP_SERIES_ACT537,
+						 ConsolPlugin.INSTANCE.getString("StudyActStudyActSeriesActEntryRelationshipSeriesAct537"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 } // StudyActOperations

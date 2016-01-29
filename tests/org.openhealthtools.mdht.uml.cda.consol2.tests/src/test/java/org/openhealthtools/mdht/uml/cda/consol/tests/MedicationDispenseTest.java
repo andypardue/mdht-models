@@ -17,23 +17,16 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.Product;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispenseOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_INT;
-import org.openhealthtools.mdht.uml.hl7.datatypes.SXCM_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassSupply;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,11 +45,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Repeat Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Quantity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseMedicationSupplyOrder(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Medication Supply Order</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseEntryRelationship234(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Entry Relationship234</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address State</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address City</em>}</li>
@@ -64,7 +57,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispensePerformerMedicationDispenseAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Performer Medication Dispense Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#getMedicationSupplyOrder() <em>Get Medication Supply Order</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationDispense#validateMedicationDispenseMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder235(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Medication Supply Order Entry Relationship Medication Supply Order235</em>}</li>
  * </ul>
  * </p>
  *
@@ -75,27 +68,24 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseContainsMedicationOrImmunization() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispenseContainsMedicationOrImmunizationTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispenseContainsMedicationOrImmunization",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Product prod = CDAFactory.eINSTANCE.createProduct();
-				target.setProduct(prod);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				Product prod = CDAFactory.eINSTANCE.createProduct();
-				prod.setManufacturedProduct(ConsolFactory.eINSTANCE.createImmunizationMedicationInformation().init());
-				target.setProduct(prod);
+				target.init();
 
 			}
 
@@ -147,7 +137,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseClassCode() {
@@ -158,7 +148,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.setClassCode(ActClassSupply.DIET);
+
 			}
 
 			@Override
@@ -199,8 +189,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
 
-				SXCM_TS e = DatatypesFactory.eINSTANCE.createSXCM_TS();
-				target.getEffectiveTimes().add(e);
+				DatatypesFactory.eINSTANCE.createIVL_TS();
 
 			}
 
@@ -218,7 +207,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseId() {
@@ -236,9 +225,6 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
 
-				II ii = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(ii);
-
 			}
 
 			@Override
@@ -255,7 +241,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseMoodCode() {
@@ -266,7 +252,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.setMoodCode(x_DocumentSubstanceMood.INT);
+
 			}
 
 			@Override
@@ -289,7 +275,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseRepeatNumber() {
@@ -307,9 +293,6 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
 
-				IVL_INT value = DatatypesFactory.eINSTANCE.createIVL_INT();
-				target.setRepeatNumber(value);
-
 			}
 
 			@Override
@@ -326,7 +309,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseStatusCode() {
@@ -343,7 +326,10 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("completed"));
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -360,7 +346,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispenseQuantity() {
@@ -377,7 +363,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
-				target.setQuantity(DatatypesFactory.eINSTANCE.createPQ());
+
 			}
 
 			@Override
@@ -394,7 +380,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformer() {
@@ -411,7 +397,7 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
-				target.getPerformers().add(CDAFactory.eINSTANCE.createPerformer2());
+
 			}
 
 			@Override
@@ -428,72 +414,67 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMedicationDispenseEntryRelationship234() {
+		OperationsTestCase<MedicationDispense> validateMedicationDispenseEntryRelationship234TestCase = new OperationsTestCase<MedicationDispense>(
+			"validateMedicationDispenseEntryRelationship234", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_ENTRY_RELATIONSHIP234__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationDispense target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationDispense target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MedicationDispenseOperations.validateMedicationDispenseEntryRelationship234(
+					(MedicationDispense) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMedicationDispenseEntryRelationship234TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			@Override
+			protected void updateToFail(MedicationDispense target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MedicationDispense target) {
+				target.init();
+
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 					(MedicationDispense) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(MedicationDispense target) {
-						target.init();
-						Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-						AD ad = DatatypesFactory.eINSTANCE.createAD();
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-						ad.addStreetAddressLine("123");
-
-						ae.getAddrs().add(ad);
-						per.setAssignedEntity(ae);
-						target.getPerformers().add(per);
-
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(MedicationDispense target) {
-						target.init();
-						Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-						AD ad = DatatypesFactory.eINSTANCE.createAD();
-
-						ae.getAddrs().add(ad);
-						per.setAssignedEntity(ae);
-						target.getPerformers().add(per);
-					}
-				});
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
-
 			}
 
 		};
@@ -503,35 +484,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -548,36 +519,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
-				ad.getUses().add(null);
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -594,35 +554,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -639,35 +589,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -684,35 +624,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -729,35 +659,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -774,35 +694,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
 
-				ae.getAddrs().add(ad);
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getAddrs().add(createUSRealmAddress());
-				per.setAssignedEntity(ae);
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -819,13 +729,14 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated note
+	* @generatede
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddrTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -860,27 +771,25 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationDispensePerformerMedicationDispenseAssignedEntity() {
 		OperationsTestCase<MedicationDispense> validateMedicationDispensePerformerMedicationDispenseAssignedEntityTestCase = new OperationsTestCase<MedicationDispense>(
 			"validateMedicationDispensePerformerMedicationDispenseAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_PERFORMER_MEDICATION_DISPENSE_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationDispense target) {
-				target.init();
-				target.getPerformers().add(CDAFactory.eINSTANCE.createPerformer2());
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationDispense target) {
-				target.getPerformers().clear();
-				Performer2 per = CDAFactory.eINSTANCE.createPerformer2();
-				per.setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
-				target.getPerformers().add(per);
+				target.init();
+
 			}
 
 			@Override
@@ -897,13 +806,15 @@ public class MedicationDispenseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateMedicationDispenseMedicationSupplyOrder() {
-		OperationsTestCase<MedicationDispense> validateMedicationDispenseMedicationSupplyOrderTestCase = new OperationsTestCase<MedicationDispense>(
-			"validateMedicationDispenseMedicationSupplyOrder",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateMedicationDispenseMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder235() {
+		OperationsTestCase<MedicationDispense> validateMedicationDispenseMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder235TestCase = new OperationsTestCase<MedicationDispense>(
+			"validateMedicationDispenseMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder235",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER_ENTRY_RELATIONSHIP_MEDICATION_SUPPLY_ORDER235__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -914,38 +825,19 @@ public class MedicationDispenseTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationDispense target) {
 				target.init();
-				MedicationSupplyOrder supply = ConsolFactory.eINSTANCE.createMedicationSupplyOrder().init();
-
-				target.addSupply(supply);
-
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				}
 
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicationDispenseOperations.validateMedicationDispenseMedicationSupplyOrder(
+				return MedicationDispenseOperations.validateMedicationDispenseMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder235(
 					(MedicationDispense) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicationDispenseMedicationSupplyOrderTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetMedicationSupplyOrder() {
-
-		MedicationDispense target = objectFactory.create();
-		target.getMedicationSupplyOrder();
-
+		validateMedicationDispenseMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder235TestCase.doValidationTest();
 	}
 
 	/**

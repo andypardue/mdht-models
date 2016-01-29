@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Anesthesia Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -99,6 +97,42 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAnesthesiaSectionEntry290(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionEntry290(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAnesthesiaSectionEntry292(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionEntry292(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAnesthesiaSectionProcedureActivityProcedureEntryProcedureActivityProcedure291(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedureEntryProcedureActivityProcedure291(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAnesthesiaSectionMedicationActivityEntryMedicationActivity293(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionMedicationActivityEntryMedicationActivity293(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAnesthesiaSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionTitle(this, diagnostics, context);
@@ -110,60 +144,18 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * @generated
 	 */
 	@Override
-	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedure(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AnesthesiaSectionOperations.validateAnesthesiaSectionMedicationActivity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<ProcedureActivityProcedure> getProcedureActivityProcedures() {
-		return AnesthesiaSectionOperations.getProcedureActivityProcedures(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<MedicationActivity> getMedicationActivities() {
-		return AnesthesiaSectionOperations.getMedicationActivities(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public AnesthesiaSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AnesthesiaSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AnesthesiaSectionImpl

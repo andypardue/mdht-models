@@ -55,7 +55,8 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 	public void testValidateFamilyHistoryDeathObservationTemplateId() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationTemplateIdTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
 			"validateFamilyHistoryDeathObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -89,7 +90,8 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 	public void testValidateFamilyHistoryDeathObservationClassCode() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationClassCodeTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
 			"validateFamilyHistoryDeathObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +124,8 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryDeathObservationMoodCode() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationMoodCodeTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
-			"validateFamilyHistoryDeathObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryDeathObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -151,13 +153,13 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryDeathObservationCode() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationCodeTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
-			"validateFamilyHistoryDeathObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryDeathObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -170,8 +172,6 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				cd.setCodeSystem("2.16.840.1.113883.5.4");
-				cd.setCode("ASSERTION");
 				target.setCode(cd);
 
 			}
@@ -196,7 +196,8 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 	public void testValidateFamilyHistoryDeathObservationStatusCode() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationStatusCodeTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
 			"validateFamilyHistoryDeathObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -227,13 +228,13 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryDeathObservationValue() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationValueTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
-			"validateFamilyHistoryDeathObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryDeathObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -246,9 +247,8 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 				target.init();
 
 				CD value = DatatypesFactory.eINSTANCE.createCD();
-				value.setCodeSystem("2.16.840.1.113883.6.96");
-				value.setCode("419099009");
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -265,13 +265,13 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateFamilyHistoryDeathObservationValueP() {
 		OperationsTestCase<FamilyHistoryDeathObservation> validateFamilyHistoryDeathObservationValuePTestCase = new OperationsTestCase<FamilyHistoryDeathObservation>(
-			"validateFamilyHistoryDeathObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryDeathObservationValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -283,9 +283,6 @@ public class FamilyHistoryDeathObservationTest extends CDAValidationTest {
 			protected void updateToPass(FamilyHistoryDeathObservation target) {
 				target.init();
 
-				// must exist as the correct type but the code value is not checked
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
 			}
 
 			@Override

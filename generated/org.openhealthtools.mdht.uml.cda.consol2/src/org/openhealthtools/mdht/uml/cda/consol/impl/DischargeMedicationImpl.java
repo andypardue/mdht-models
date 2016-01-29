@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Medication</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -51,17 +49,6 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.DISCHARGE_MEDICATION;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateDischargeMedicationMedicationActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeMedicationOperations.validateDischargeMedicationMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -106,12 +93,20 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationActivity> getMedicationActivities() {
-		return DischargeMedicationOperations.getMedicationActivities(this);
+	public boolean validateDischargeMedicationEntryRelationship284(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeMedicationOperations.validateDischargeMedicationEntryRelationship284(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeMedicationOperations.validateDischargeMedicationMedicationActivityEntryRelationshipMedicationActivity285(this, diagnostics, context);
 	}
 
 	/**
@@ -121,17 +116,17 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 */
 	@Override
 	public DischargeMedication init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DischargeMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DischargeMedicationImpl

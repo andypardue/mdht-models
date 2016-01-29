@@ -90,26 +90,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicTemplateId(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicTemplateId"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicTemplateId"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -149,26 +151,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicClassCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicClassCode"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicClassCode"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -208,26 +212,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicMoodCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicMoodCode"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicMoodCode"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -241,7 +247,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateWoundCharacteristicId(WoundCharacteristic, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Characteristic Id</em>}' invariant operation.
@@ -267,26 +273,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicId(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_ID,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicId"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_ID,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicId"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -326,26 +334,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicCodeP(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CODE_P,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicCodeP"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicCodeP"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -357,7 +367,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(woundCharacteristic);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -371,9 +381,9 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateWoundCharacteristicCode(WoundCharacteristic, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Characteristic Code</em>}' invariant operation.
@@ -399,34 +409,34 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristicCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristicCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(woundCharacteristic)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicCode"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CODE,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicCode"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -440,8 +450,9 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateWoundCharacteristicStatusCode(WoundCharacteristic, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Characteristic Status Code</em>}' invariant operation.
@@ -467,26 +478,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicStatusCode(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicStatusCode"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicStatusCode"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -526,26 +539,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicStatusCodeP(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicStatusCodeP"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicStatusCodeP"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -585,26 +600,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicEffectiveTime(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicEffectiveTime"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicEffectiveTime"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -618,9 +635,9 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateWoundCharacteristicValue(WoundCharacteristic, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Wound Characteristic Value</em>}' invariant operation.
@@ -646,26 +663,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicValue(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_VALUE,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicValue"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_VALUE,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicValue"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -705,26 +724,28 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 
 	public static boolean validateWoundCharacteristicValueP(WoundCharacteristic woundCharacteristic,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_WOUND_CHARACTERISTIC_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.WOUND_CHARACTERISTIC);
 			try {
 				VALIDATE_WOUND_CHARACTERISTIC_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WOUND_CHARACTERISTIC_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			woundCharacteristic)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_WOUND_CHARACTERISTIC_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(woundCharacteristic)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicValueP"),
-					new Object[] { woundCharacteristic }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_VALUE_P,
+						 ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicValueP"),
+						 new Object [] { woundCharacteristic }));
 			}
-
+			 
 			return false;
 		}
 		return true;

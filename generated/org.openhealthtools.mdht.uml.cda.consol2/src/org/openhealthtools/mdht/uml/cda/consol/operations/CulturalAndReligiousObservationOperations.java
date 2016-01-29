@@ -94,28 +94,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -156,28 +156,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationTemplateId(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationTemplateId"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationTemplateId"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -218,28 +218,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationClassCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationClassCode"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationClassCode"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -280,27 +280,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationMoodCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationMoodCode"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationMoodCode"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -314,7 +315,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Id</em>}' invariant operation.
@@ -341,27 +342,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationId(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationId"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_ID,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationId"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -402,27 +404,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationCodeP(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationCodeP"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationCodeP"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -430,12 +433,11 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservationCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservationCodeP", passToken);
 				}
 				passToken.add(culturalAndReligiousObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -449,9 +451,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '75281-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '75281-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Code</em>}' invariant operation.
@@ -478,36 +480,34 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(culturalAndReligiousObservation)) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(culturalAndReligiousObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationCode"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationCode"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -521,8 +521,9 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationStatusCode(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Status Code</em>}' invariant operation.
@@ -549,28 +550,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationStatusCode(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCode"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCode"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -611,28 +612,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationStatusCodeP(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCodeP"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCodeP"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -673,27 +674,28 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	public static boolean validateCulturalAndReligiousObservationValue(
 			CulturalAndReligiousObservation culturalAndReligiousObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CULTURAL_AND_RELIGIOUS_OBSERVATION);
 			try {
 				VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			culturalAndReligiousObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(culturalAndReligiousObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationValue"),
-					new Object[] { culturalAndReligiousObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("CulturalAndReligiousObservationCulturalAndReligiousObservationValue"),
+						 new Object [] { culturalAndReligiousObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -33,8 +33,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySection2O
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Social History Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -63,11 +61,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSocialHistorySection2CaregiverCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2CaregiverCharacteristics(
-			this, diagnostics, context);
+	public boolean validateSocialHistorySection2Entry1160(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2Entry1160(this, diagnostics, context);
 	}
 
 	/**
@@ -75,11 +70,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSocialHistorySection2CulturalAndReligiousObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2CulturalAndReligiousObservation(
-			this, diagnostics, context);
+	public boolean validateSocialHistorySection2Entry1162(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2Entry1162(this, diagnostics, context);
 	}
 
 	/**
@@ -87,11 +79,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironment(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySection2CharacteristicsOfHomeEnvironment(
-			this, diagnostics, context);
+	public boolean validateSocialHistorySection2Entry1164(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2Entry1164(this, diagnostics, context);
 	}
 
 	/**
@@ -99,9 +88,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SocialHistoryObservation2> getConsolSocialHistoryObservation2s() {
-		return SocialHistorySection2Operations.getConsolSocialHistoryObservation2s(this);
+	public boolean validateSocialHistorySection2Entry1166(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2Entry1166(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +97,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SmokingStatusMeaningfulUse2> getConsolCurrentSmokingStatus2s() {
-		return SocialHistorySection2Operations.getConsolCurrentSmokingStatus2s(this);
+	public boolean validateSocialHistorySection2Entry1168(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2Entry1168(this, diagnostics, context);
 	}
 
 	/**
@@ -118,9 +106,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<TobaccoUse2> getConsolTobaccoUse2s() {
-		return SocialHistorySection2Operations.getConsolTobaccoUse2s(this);
+	public boolean validateSocialHistorySection2Entry1170(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2Entry1170(this, diagnostics, context);
 	}
 
 	/**
@@ -128,9 +115,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CaregiverCharacteristics> getCaregiverCharacteristicss() {
-		return SocialHistorySection2Operations.getCaregiverCharacteristicss(this);
+	public boolean validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(this, diagnostics, context);
 	}
 
 	/**
@@ -138,9 +124,8 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CulturalAndReligiousObservation> getCulturalAndReligiousObservations() {
-		return SocialHistorySection2Operations.getCulturalAndReligiousObservations(this);
+	public boolean validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(this, diagnostics, context);
 	}
 
 	/**
@@ -148,9 +133,35 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments() {
-		return SocialHistorySection2Operations.getCharacteristicsOfHomeEnvironments(this);
+	public boolean validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(this, diagnostics, context);
 	}
 
 	/**
@@ -189,52 +200,18 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySectionSocialHistoryObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySectionSmokingStatusObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSocialHistorySectionTobaccoUse(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistorySection2Operations.validateSocialHistorySectionTobaccoUse(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SocialHistorySection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SocialHistorySection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SocialHistorySection2Impl

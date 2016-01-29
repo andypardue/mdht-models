@@ -29,7 +29,8 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeDiagnosisSectionTemplateId HospitalDischargeDiagnosisSectionCode HospitalDischargeDiagnosisSectionCodeP HospitalDischargeDiagnosisSectionTitle HospitalDischargeDiagnosisSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.24' code.code='11535-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Diagnosis' constraints.validation.warning='HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeDiagnosisSectionTemplateId HospitalDischargeDiagnosisSectionCode HospitalDischargeDiagnosisSectionCodeP HospitalDischargeDiagnosisSectionTitle HospitalDischargeDiagnosisSectionText HospitalDischargeDiagnosisSectionEntry280' templateId.root='2.16.840.1.113883.10.20.22.2.24' code.code='11535-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Diagnosis' constraints.validation.warning='HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntryHospitalDischargeDiagnosis281' constraints.validation.query='HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntryHospitalDischargeDiagnosis281'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntry constraints.validation.warning='HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntryHospitalDischargeDiagnosis281'"
  * @generated
  */
 public interface HospitalDischargeDiagnosisSection extends Section {
@@ -52,7 +53,7 @@ public interface HospitalDischargeDiagnosisSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'11535-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'11535-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -100,20 +101,22 @@ public interface HospitalDischargeDiagnosisSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::HospitalDischargeDiagnosis))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateHospitalDischargeDiagnosisSectionEntry280(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis)))'"
 	 * @generated
 	 */
-	HospitalDischargeDiagnosis getHospitalDischargeDiagnosis();
+	boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntryHospitalDischargeDiagnosis281(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,9 +126,9 @@ public interface HospitalDischargeDiagnosisSection extends Section {
 	public HospitalDischargeDiagnosisSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public HospitalDischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeDiagnosisSection

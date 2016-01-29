@@ -60,10 +60,10 @@ public interface Indication2 extends Indication {
 	public Indication2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Indication2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Indication2

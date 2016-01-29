@@ -17,13 +17,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component4;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
@@ -38,12 +35,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#getConsolVitalSignObservation2s() <em>Get Consol Vital Sign Observation2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 Vital Sign Observation2 Entry Relationship Vital Sign Observation21049</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Effective Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerVitalSignObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Vital Sign Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -88,13 +84,14 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignsOrganizer2AuthorParticipation() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2AuthorParticipationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
 			"validateVitalSignsOrganizer2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -105,7 +102,7 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(VitalSignsOrganizer2 target) {
 				target.init();
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+
 			}
 
 			@Override
@@ -122,26 +119,23 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignsOrganizer2CDTranslation() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2CDTranslationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizer2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizer2CDTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignsOrganizer2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignsOrganizer2 target) {
-				target.getCode().getTranslations().set(0, DatatypesFactory.eINSTANCE.createCD("74728-7", LOINC_ID));
+				target.init();
 
 			}
 
@@ -159,25 +153,23 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignsOrganizer2CDTranslationP() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2CDTranslationPTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizer2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizer2CDTranslationP", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(VitalSignsOrganizer2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignsOrganizer2 target) {
-				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
 
 			}
 
@@ -198,11 +190,35 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolVitalSignObservation2s() {
 
-		VitalSignsOrganizer2 target = objectFactory.create();
-		target.getConsolVitalSignObservation2s();
+	public void testValidateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049() {
+		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049TestCase = new OperationsTestCase<VitalSignsOrganizer2>(
+			"validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_VITAL_SIGN_OBSERVATION2_ENTRY_RELATIONSHIP_VITAL_SIGN_OBSERVATION21049__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(VitalSignsOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsOrganizer2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049(
+					(VitalSignsOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation21049TestCase.doValidationTest();
 	}
 
 	/**
@@ -241,7 +257,7 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateVitalSignsOrganizerCode() {
@@ -252,12 +268,13 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(VitalSignsOrganizer2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignsOrganizer2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("46680005", SNOMEDCT_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -286,8 +303,8 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsOrganizerEffectiveTime() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizerEffectiveTimeTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizerEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizerEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -314,42 +331,6 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateVitalSignsOrganizerEffectiveTimeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateVitalSignsOrganizerVitalSignObservation() {
-		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizerVitalSignObservationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizerVitalSignObservation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignsOrganizer2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(VitalSignsOrganizer2 target) {
-				target.init();
-				Component4 comp = CDAFactory.eINSTANCE.createComponent4();
-				comp.setObservation(ConsolFactory.eINSTANCE.createVitalSignObservation2().init());
-				target.getComponents().add(comp);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignsOrganizer2Operations.validateVitalSignsOrganizerVitalSignObservation(
-					(VitalSignsOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignsOrganizerVitalSignObservationTestCase.doValidationTest();
 	}
 
 	/**

@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Drug Monitoring Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -159,8 +157,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +168,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +179,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleClassCode(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +190,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRoleId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleId(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRoleId(this, diagnostics, context);
 	}
 
 	/**
@@ -207,8 +201,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRolePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -229,8 +222,7 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	@Override
 	public boolean validateDrugMonitoringActParticipantParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRole(
-			this, diagnostics, context);
+		return DrugMonitoringActOperations.validateDrugMonitoringActParticipantParticipantRole(this, diagnostics, context);
 	}
 
 	/**
@@ -240,17 +232,17 @@ public class DrugMonitoringActImpl extends ActImpl implements DrugMonitoringAct 
 	 */
 	@Override
 	public DrugMonitoringAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public DrugMonitoringAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DrugMonitoringActImpl

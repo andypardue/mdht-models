@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PriorityPreferenceOper
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
@@ -156,7 +155,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePriorityPreferenceId() {
@@ -173,8 +172,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PriorityPreference target) {
 				target.init();
-				II id = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(id);
+
 			}
 
 			@Override
@@ -191,7 +189,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePriorityPreferenceCodeP() {
@@ -202,13 +200,13 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PriorityPreference target) {
-				target.init();
-				target.setCode(null);
+
 			}
 
 			@Override
 			protected void updateToPass(PriorityPreference target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
+
 			}
 
 			@Override
@@ -225,7 +223,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePriorityPreferenceCode() {
@@ -236,13 +234,13 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PriorityPreference target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(PriorityPreference target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("225773000", SNOMEDCT_ID));
+				target.init();
+
 			}
 
 			@Override
@@ -303,7 +301,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePriorityPreferenceValue() {
@@ -314,16 +312,16 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PriorityPreference target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
 			protected void updateToPass(PriorityPreference target) {
-				target.getValues().clear();
-				CD value = DatatypesFactory.eINSTANCE.createCD("394849002", SNOMEDCT_ID);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -340,7 +338,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePriorityPreferenceValueP() {
@@ -357,8 +355,7 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PriorityPreference target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -375,23 +372,23 @@ public class PriorityPreferenceTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePriorityPreferenceAuthorParticipation() {
 		OperationsTestCase<PriorityPreference> validatePriorityPreferenceAuthorParticipationTestCase = new OperationsTestCase<PriorityPreference>(
-			"validatePriorityPreferenceAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePriorityPreferenceAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PriorityPreference target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PriorityPreference target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
 
 			}
 

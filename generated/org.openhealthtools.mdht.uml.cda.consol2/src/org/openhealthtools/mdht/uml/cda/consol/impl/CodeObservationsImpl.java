@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Code Observations</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -119,10 +117,8 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCodeObservationsSOPInstanceObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CodeObservationsOperations.validateCodeObservationsSOPInstanceObservation(this, diagnostics, context);
+	public boolean validateCodeObservationsEntryRelationship554(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodeObservationsOperations.validateCodeObservationsEntryRelationship554(this, diagnostics, context);
 	}
 
 	/**
@@ -130,11 +126,8 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCodeObservationsQuantityMeasurementObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(
-			this, diagnostics, context);
+	public boolean validateCodeObservationsEntryRelationship556(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodeObservationsOperations.validateCodeObservationsEntryRelationship556(this, diagnostics, context);
 	}
 
 	/**
@@ -142,9 +135,8 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
-		return CodeObservationsOperations.getSOPInstanceObservations(this);
+	public boolean validateCodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation555(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodeObservationsOperations.validateCodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation555(this, diagnostics, context);
 	}
 
 	/**
@@ -152,9 +144,8 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<QuantityMeasurementObservation> getQuantityMeasurementObservations() {
-		return CodeObservationsOperations.getQuantityMeasurementObservations(this);
+	public boolean validateCodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation557(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation557(this, diagnostics, context);
 	}
 
 	/**
@@ -164,17 +155,17 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 */
 	@Override
 	public CodeObservations init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public CodeObservations init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CodeObservationsImpl

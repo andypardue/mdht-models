@@ -17,22 +17,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DrugMonitoringActOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassRoot;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -171,7 +162,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActId() {
@@ -188,8 +179,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
 				target.init();
-				II iiID = DatatypesFactory.eINSTANCE.createII();
-				target.getIds().add(iiID);
+
 			}
 
 			@Override
@@ -318,7 +308,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActStatusCodeP() {
@@ -329,12 +319,13 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS());
+				target.init();
+
 			}
 
 			@Override
@@ -388,7 +379,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipant() {
@@ -405,8 +396,7 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
@@ -423,38 +413,25 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCodeTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pRole.setPlayingEntity(pe);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pRole.setPlayingEntity(pe);
-				pe.setClassCode(EntityClassRoot.PSN);
+
 			}
 
 			@Override
@@ -471,39 +448,25 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntityName() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityNameTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRolePlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pRole.setPlayingEntity(pe);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pRole.setPlayingEntity(pe);
-				PN namePN = DatatypesFactory.eINSTANCE.createPN();
-				pe.getNames().add(namePN);
+
 			}
 
 			@Override
@@ -520,34 +483,25 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantParticipantRoleClassCode() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRoleClassCodeTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRoleClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				pRole.setClassCode(RoleClassRoot.ASSIGNED);
+
 			}
 
 			@Override
@@ -564,35 +518,25 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantParticipantRoleId() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRoleIdTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRoleId",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				II idII = DatatypesFactory.eINSTANCE.createII();
-				pRole.getIds().add(idII);
+
 			}
 
 			@Override
@@ -609,35 +553,25 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntity() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
-				PlayingEntity pe = CDAFactory.eINSTANCE.createPlayingEntity();
-				pRole.setPlayingEntity(pe);
+
 			}
 
 			@Override
@@ -654,30 +588,24 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantTypeCode() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantTypeCodeTestCase = new OperationsTestCase<DrugMonitoringAct>(
-			"validateDrugMonitoringActParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDrugMonitoringActParticipantTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				par.setTypeCode(ParticipationType.RESP);
+
 			}
 
 			@Override
@@ -694,31 +622,25 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateDrugMonitoringActParticipantParticipantRole() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRoleTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(DrugMonitoringAct target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
+
 			}
 
 			@Override
 			protected void updateToPass(DrugMonitoringAct target) {
-				target.getTemplateIds().clear();
-				target.getParticipants().clear();
 				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				target.getParticipants().add(par);
-				ParticipantRole pRole = CDAFactory.eINSTANCE.createParticipantRole();
-				par.setParticipantRole(pRole);
+
 			}
 
 			@Override

@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedAct2Operations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Act2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -109,26 +107,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedAct2Indication2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedAct2Operations.validatePlannedAct2Indication2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedAct2Instruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedAct2Operations.validatePlannedAct2Instruction2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlannedAct2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlannedAct2AuthorParticipation(this, diagnostics, context);
 	}
@@ -148,8 +126,8 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedAct2Operations.validatePlannedAct2PriorityPreference(this, diagnostics, context);
+	public boolean validatePlannedAct2EntryRelationship958(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2EntryRelationship958(this, diagnostics, context);
 	}
 
 	/**
@@ -157,9 +135,8 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Indication2> getIndication2s() {
-		return PlannedAct2Operations.getIndication2s(this);
+	public boolean validatePlannedAct2EntryRelationship960(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2EntryRelationship960(this, diagnostics, context);
 	}
 
 	/**
@@ -167,9 +144,8 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Instruction2> getInstruction2s() {
-		return PlannedAct2Operations.getInstruction2s(this);
+	public boolean validatePlannedAct2EntryRelationship962(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2EntryRelationship962(this, diagnostics, context);
 	}
 
 	/**
@@ -177,8 +153,26 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PriorityPreference> getPriorityPreferences() {
-		return PlannedAct2Operations.getPriorityPreferences(this);
+	public boolean validatePlannedAct2PriorityPreferenceEntryRelationshipPriorityPreference959(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2PriorityPreferenceEntryRelationshipPriorityPreference959(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedAct2Indication2EntryRelationshipIndication2961(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2Indication2EntryRelationshipIndication2961(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedAct2Instruction2EntryRelationshipInstruction2963(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlannedAct2Operations.validatePlannedAct2Instruction2EntryRelationshipInstruction2963(this, diagnostics, context);
 	}
 
 	/**
@@ -208,17 +202,17 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 */
 	@Override
 	public PlannedAct2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlannedAct2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlannedAct2Impl

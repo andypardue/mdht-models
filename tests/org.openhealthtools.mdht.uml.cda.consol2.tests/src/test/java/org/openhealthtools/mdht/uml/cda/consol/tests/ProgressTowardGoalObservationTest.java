@@ -60,7 +60,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationTemplateId() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationTemplateIdTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -94,7 +95,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationClassCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationClassCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -127,8 +129,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationMoodCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationMoodCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -161,8 +163,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationId() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationIdTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationId",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -198,8 +200,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProgressTowardGoalObservationCodeP() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationCodePTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -227,26 +229,27 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressTowardGoalObservationCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressTowardGoalObservation target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(code);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressTowardGoalObservation target) {
-				CD code = DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4");
-				target.setCode(code);
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -276,7 +279,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationStatusCode() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationStatusCodeTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -313,7 +317,8 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 	public void testValidateProgressTowardGoalObservationStatusCodeP() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationStatusCodePTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
 			"validateProgressTowardGoalObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -341,27 +346,27 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressTowardGoalObservationValue() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationValueTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressTowardGoalObservation target) {
-				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressTowardGoalObservation target) {
-				target.getValues().clear();
-				CD value = DatatypesFactory.eINSTANCE.createCD("390802008", SNOMEDCT_ID);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -378,24 +383,24 @@ public class ProgressTowardGoalObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateProgressTowardGoalObservationValueP() {
 		OperationsTestCase<ProgressTowardGoalObservation> validateProgressTowardGoalObservationValuePTestCase = new OperationsTestCase<ProgressTowardGoalObservation>(
-			"validateProgressTowardGoalObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProgressTowardGoalObservationValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(ProgressTowardGoalObservation target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(ProgressTowardGoalObservation target) {
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
+				target.init();
+
 			}
 
 			@Override

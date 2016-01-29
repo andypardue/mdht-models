@@ -30,11 +30,11 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#getConsolPostprocedureDiagnosis2() <em>Get Consol Postprocedure Diagnosis2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#validatePostprocedureDiagnosisSection2Entry1142(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section2 Entry1142</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section2 Postprocedure Diagnosis2 Entry Postprocedure Diagnosis21143</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#validatePostprocedureDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#validatePostprocedureDiagnosisSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#validatePostprocedureDiagnosisSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2#validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section Postprocedure Diagnosis</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,11 +48,70 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetConsolPostprocedureDiagnosis2() {
 
-		PostprocedureDiagnosisSection2 target = objectFactory.create();
-		target.getConsolPostprocedureDiagnosis2();
+	public void testValidatePostprocedureDiagnosisSection2Entry1142() {
+		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSection2Entry1142TestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
+			"validatePostprocedureDiagnosisSection2Entry1142", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION2_ENTRY1142__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PostprocedureDiagnosisSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PostprocedureDiagnosisSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2Entry1142(
+					(PostprocedureDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePostprocedureDiagnosisSection2Entry1142TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143() {
+		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143TestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
+			"validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION2_POSTPROCEDURE_DIAGNOSIS2_ENTRY_POSTPROCEDURE_DIAGNOSIS21143__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PostprocedureDiagnosisSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PostprocedureDiagnosisSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143(
+					(PostprocedureDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePostprocedureDiagnosisSection2PostprocedureDiagnosis2EntryPostprocedureDiagnosis21143TestCase.doValidationTest();
 	}
 
 	/**
@@ -63,7 +122,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	public void testValidatePostprocedureDiagnosisSectionTemplateId() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
 			"validatePostprocedureDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -96,8 +156,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePostprocedureDiagnosisSectionCodeP() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionCodePTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
-			"validatePostprocedureDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostprocedureDiagnosisSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -130,8 +190,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePostprocedureDiagnosisSectionCode() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionCodeTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
-			"validatePostprocedureDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostprocedureDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -162,39 +222,6 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 		};
 
 		validatePostprocedureDiagnosisSectionCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePostprocedureDiagnosisSectionPostprocedureDiagnosis() {
-		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionPostprocedureDiagnosisTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
-			"validatePostprocedureDiagnosisSectionPostprocedureDiagnosis",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PostprocedureDiagnosisSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PostprocedureDiagnosisSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createPostprocedureDiagnosis2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PostprocedureDiagnosisSection2Operations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
-					(PostprocedureDiagnosisSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePostprocedureDiagnosisSectionPostprocedureDiagnosisTestCase.doValidationTest();
 	}
 
 	/**

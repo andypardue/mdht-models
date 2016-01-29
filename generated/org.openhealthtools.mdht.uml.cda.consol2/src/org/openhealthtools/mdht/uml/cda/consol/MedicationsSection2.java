@@ -23,7 +23,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP MedicationsSection2Title MedicationsSection2Text MedicationsSectionEntriesOptionalMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='MedicationsSection2NullFlavor' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalCodeP MedicationsSection2Title MedicationsSection2Text MedicationsSection2Entry1198 MedicationsSection2MedicationActivity2EntryMedicationActivity21199' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' templateId.extension='2014-06-09' nullFlavor='NI' constraints.validation.info='MedicationsSection2NullFlavor' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' constraints.validation.dependOn.MedicationsSectionEntriesOptionalCode='MedicationsSectionEntriesOptionalCodeP' constraints.validation.query='MedicationsSection2MedicationActivity2EntryMedicationActivity21199'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationsSection2MedicationActivity2Entry constraints.validation.error='MedicationsSection2MedicationActivity2EntryMedicationActivity21199'"
  * @generated
  */
 public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 {
@@ -66,16 +67,40 @@ public interface MedicationsSection2 extends MedicationsSectionEntriesOptional2 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	@Override
-	public MedicationsSection2 init();
+	boolean validateMedicationsSection2Entry1198(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity2)))'"
+	 * @generated
+	 */
+	boolean validateMedicationsSection2MedicationActivity2EntryMedicationActivity21199(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public MedicationsSection2 init();
+
+	/**
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
 	@Override
 	public MedicationsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationsSection2

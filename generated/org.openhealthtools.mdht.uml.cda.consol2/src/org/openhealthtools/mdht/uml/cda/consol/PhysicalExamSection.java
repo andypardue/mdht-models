@@ -31,7 +31,10 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPhysicalExamSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSectionTemplateId PhysicalExamSectionCode PhysicalExamSectionCodeP PhysicalExamSectionTitle PhysicalExamSectionText' templateId.root='2.16.840.1.113883.10.20.2.10' code.code='29545-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='PHYSICAL EXAMINATION' constraints.validation.info='PhysicalExamSectionPressureUlcerObservation PhysicalExamSectionNumberOfPressureUlcersObservation PhysicalExamSectionHighestPressureUlcerStage'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSectionTemplateId PhysicalExamSectionCode PhysicalExamSectionCodeP PhysicalExamSectionTitle PhysicalExamSectionText PhysicalExamSectionEntry174 PhysicalExamSectionEntry176 PhysicalExamSectionEntry178' templateId.root='2.16.840.1.113883.10.20.2.10' code.code='29545-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='PHYSICAL EXAMINATION' constraints.validation.info='PhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation175 PhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation177 PhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage179' constraints.validation.query='PhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation175 PhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation177 PhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage179'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicalExamSectionPressureUlcerObservationEntry constraints.validation.info='PhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation175'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicalExamSectionNumberOfPressureUlcersObservationEntry constraints.validation.info='PhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation177'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPhysicalExamSectionHighestPressureUlcerStageEntry constraints.validation.info='PhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage179'"
  * @generated
  */
 public interface PhysicalExamSection extends Section {
@@ -54,7 +57,7 @@ public interface PhysicalExamSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'29545-1\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'29545-1\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validatePhysicalExamSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -97,28 +100,15 @@ public interface PhysicalExamSection extends Section {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PressureUlcerObservation))'"
-	 * @generated
-	 */
-	boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalExamSectionEntry174(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,38 +117,58 @@ public interface PhysicalExamSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::HighestPressureUlcerStage))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicalExamSectionEntry176(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)).oclAsType(consol::PressureUlcerObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	EList<PressureUlcerObservation> getPressureUlcerObservations();
+	boolean validatePhysicalExamSectionEntry178(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)).oclAsType(consol::NumberOfPressureUlcersObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)))'"
 	 * @generated
 	 */
-	EList<NumberOfPressureUlcersObservation> getNumberOfPressureUlcersObservations();
+	boolean validatePhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation175(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)).oclAsType(consol::HighestPressureUlcerStage)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)))'"
 	 * @generated
 	 */
-	EList<HighestPressureUlcerStage> getHighestPressureUlcerStages();
+	boolean validatePhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation177(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)))'"
+	 * @generated
+	 */
+	boolean validatePhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage179(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,9 +178,9 @@ public interface PhysicalExamSection extends Section {
 	public PhysicalExamSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicalExamSection

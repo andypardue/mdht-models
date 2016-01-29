@@ -17,8 +17,10 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
@@ -44,21 +46,21 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CulturalAndReligiousObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CharacteristicsOfHomeEnvironment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolSocialHistoryObservation2s() <em>Get Consol Social History Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolCurrentSmokingStatus2s() <em>Get Consol Current Smoking Status2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolTobaccoUse2s() <em>Get Consol Tobacco Use2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCulturalAndReligiousObservations() <em>Get Cultural And Religious Observations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCharacteristicsOfHomeEnvironments() <em>Get Characteristics Of Home Environments</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2Entry1160(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1160</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2Entry1162(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1162</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2Entry1164(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1164</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2Entry1166(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1166</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2Entry1168(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1168</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2Entry1170(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1170</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Social History Observation2 Entry Social History Observation21161</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Smoking Status Meaningful Use2 Entry Current Smoking Status21163</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Tobacco Use2 Entry Tobacco Use21165</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics Entry Caregiver Characteristics1167</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation Entry Cultural And Religious Observation1169</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment Entry Characteristics Of Home Environment1171</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionSocialHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Social History Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionSmokingStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Smoking Status Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionTobaccoUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Tobacco Use</em>}</li>
  * </ul>
  * </p>
  *
@@ -75,25 +77,25 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2CaregiverCharacteristics(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2Entry1160(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1160</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySection2CaregiverCharacteristics(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSocialHistorySection2Entry1160(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CaregiverCharacteristics))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1160__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2CaregiverCharacteristics(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2Entry1160(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1160</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySection2CaregiverCharacteristics(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSocialHistorySection2Entry1160(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1160__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,56 +107,55 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateSocialHistorySection2CaregiverCharacteristics(
-			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateSocialHistorySection2Entry1160(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1160__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1160__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1160__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1160__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2CaregiverCharacteristics"),
-					new Object[] { socialHistorySection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_ENTRY1160,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2Entry1160"),
+						 new Object [] { socialHistorySection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2CulturalAndReligiousObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2Entry1162(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1162</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySection2CulturalAndReligiousObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSocialHistorySection2Entry1162(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CulturalAndReligiousObservation))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1162__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2CulturalAndReligiousObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2Entry1162(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1162</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySection2CulturalAndReligiousObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSocialHistorySection2Entry1162(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1162__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -166,56 +167,55 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateSocialHistorySection2CulturalAndReligiousObservation(
-			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateSocialHistorySection2Entry1162(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1162__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1162__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1162__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1162__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2CulturalAndReligiousObservation"),
-					new Object[] { socialHistorySection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_ENTRY1162,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2Entry1162"),
+						 new Object [] { socialHistorySection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2CharacteristicsOfHomeEnvironment(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2Entry1164(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1164</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySection2CharacteristicsOfHomeEnvironment(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSocialHistorySection2Entry1164(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CharacteristicsOfHomeEnvironment))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1164__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2CharacteristicsOfHomeEnvironment(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2Entry1164(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1164</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySection2CharacteristicsOfHomeEnvironment(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateSocialHistorySection2Entry1164(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1164__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -227,303 +227,609 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironment(
-			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateSocialHistorySection2Entry1164(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1164__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1164__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1164__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1164__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2CharacteristicsOfHomeEnvironment"),
-					new Object[] { socialHistorySection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_ENTRY1164,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2Entry1164"),
+						 new Object [] { socialHistorySection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolSocialHistoryObservation2s(SocialHistorySection2) <em>Get Consol Social History Observation2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2Entry1166(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1166</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolSocialHistoryObservation2s(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2Entry1166(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryObservation2)).oclAsType(consol::SocialHistoryObservation2)";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1166__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolSocialHistoryObservation2s(SocialHistorySection2) <em>Get Consol Social History Observation2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2Entry1166(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1166</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolSocialHistoryObservation2s(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2Entry1166(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1166__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<SocialHistoryObservation2> getConsolSocialHistoryObservation2s(
-			SocialHistorySection2 socialHistorySection2) {
-		if (GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY == null) {
+	
+	public static  boolean validateSocialHistorySection2Entry1166(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1166__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(71));
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1166__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1166__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<SocialHistoryObservation2> result = (Collection<SocialHistoryObservation2>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<SocialHistoryObservation2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1166__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_ENTRY1166,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2Entry1166"),
+						 new Object [] { socialHistorySection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolCurrentSmokingStatus2s(SocialHistorySection2) <em>Get Consol Current Smoking Status2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2Entry1168(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1168</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolCurrentSmokingStatus2s(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2Entry1168(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2)).oclAsType(consol::SmokingStatusMeaningfulUse2)";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1168__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolCurrentSmokingStatus2s(SocialHistorySection2) <em>Get Consol Current Smoking Status2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2Entry1168(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1168</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolCurrentSmokingStatus2s(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2Entry1168(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1168__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<SmokingStatusMeaningfulUse2> getConsolCurrentSmokingStatus2s(
-			SocialHistorySection2 socialHistorySection2) {
-		if (GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY == null) {
+	
+	public static  boolean validateSocialHistorySection2Entry1168(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1168__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(72));
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY = helper.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1168__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1168__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<SmokingStatusMeaningfulUse2> result = (Collection<SmokingStatusMeaningfulUse2>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<SmokingStatusMeaningfulUse2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1168__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_ENTRY1168,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2Entry1168"),
+						 new Object [] { socialHistorySection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolTobaccoUse2s(SocialHistorySection2) <em>Get Consol Tobacco Use2s</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2Entry1170(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1170</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolTobaccoUse2s(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2Entry1170(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CONSOL_TOBACCO_USE2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::TobaccoUse2)).oclAsType(consol::TobaccoUse2)";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1170__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolTobaccoUse2s(SocialHistorySection2) <em>Get Consol Tobacco Use2s</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2Entry1170(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Entry1170</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolTobaccoUse2s(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2Entry1170(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_TOBACCO_USE2S__EOCL_QRY;
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1170__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<TobaccoUse2> getConsolTobaccoUse2s(SocialHistorySection2 socialHistorySection2) {
-		if (GET_CONSOL_TOBACCO_USE2S__EOCL_QRY == null) {
+	
+	public static  boolean validateSocialHistorySection2Entry1170(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1170__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(73));
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				GET_CONSOL_TOBACCO_USE2S__EOCL_QRY = helper.createQuery(GET_CONSOL_TOBACCO_USE2S__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1170__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1170__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_TOBACCO_USE2S__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<TobaccoUse2> result = (Collection<TobaccoUse2>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<TobaccoUse2>(result.size(), result.toArray());
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_ENTRY1170__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_ENTRY1170,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2Entry1170"),
+						 new Object [] { socialHistorySection2 }));
+			}
+			 
+			return false;
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCaregiverCharacteristicss(SocialHistorySection2) <em>Get Caregiver Characteristicss</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Social History Observation2 Entry Social History Observation21161</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCaregiverCharacteristicss(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CAREGIVER_CHARACTERISTICSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CaregiverCharacteristics)).oclAsType(consol::CaregiverCharacteristics)";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SocialHistoryObservation2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getCaregiverCharacteristicss(SocialHistorySection2) <em>Get Caregiver Characteristicss</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Social History Observation2 Entry Social History Observation21161</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCaregiverCharacteristicss(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<CaregiverCharacteristics> getCaregiverCharacteristicss(
-			SocialHistorySection2 socialHistorySection2) {
-		if (GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateSocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(74));
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CaregiverCharacteristics> result = (Collection<CaregiverCharacteristics>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<CaregiverCharacteristics>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(socialHistorySection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_SOCIAL_HISTORY_OBSERVATION2_ENTRY_SOCIAL_HISTORY_OBSERVATION21161,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2SocialHistoryObservation2EntrySocialHistoryObservation21161"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCulturalAndReligiousObservations(SocialHistorySection2) <em>Get Cultural And Religious Observations</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Smoking Status Meaningful Use2 Entry Current Smoking Status21163</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCulturalAndReligiousObservations(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CulturalAndReligiousObservation)).oclAsType(consol::CulturalAndReligiousObservation)";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getCulturalAndReligiousObservations(SocialHistorySection2) <em>Get Cultural And Religious Observations</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Smoking Status Meaningful Use2 Entry Current Smoking Status21163</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCulturalAndReligiousObservations(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<CulturalAndReligiousObservation> getCulturalAndReligiousObservations(
-			SocialHistorySection2 socialHistorySection2) {
-		if (GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateSocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(75));
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CulturalAndReligiousObservation> result = (Collection<CulturalAndReligiousObservation>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<CulturalAndReligiousObservation>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(socialHistorySection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_SMOKING_STATUS_MEANINGFUL_USE2_ENTRY_CURRENT_SMOKING_STATUS21163,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2SmokingStatusMeaningfulUse2EntryCurrentSmokingStatus21163"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getCharacteristicsOfHomeEnvironments(SocialHistorySection2) <em>Get Characteristics Of Home Environments</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Tobacco Use2 Entry Tobacco Use21165</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCharacteristicsOfHomeEnvironments(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CharacteristicsOfHomeEnvironment)).oclAsType(consol::CharacteristicsOfHomeEnvironment)";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::TobaccoUse2)))";
 
 	/**
-	 * The cached OCL query for the '{@link #getCharacteristicsOfHomeEnvironments(SocialHistorySection2) <em>Get Characteristics Of Home Environments</em>}' query operation.
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Tobacco Use2 Entry Tobacco Use21165</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCharacteristicsOfHomeEnvironments(SocialHistorySection2)
+	 * @see #validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY;
+	
+	protected static Query<?, ?, ?> VALIDATE_SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments(
-			SocialHistorySection2 socialHistorySection2) {
-		if (GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY == null) {
+	@SuppressWarnings("unchecked")
+	public static  boolean validateSocialHistorySection2TobaccoUse2EntryTobaccoUse21165(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(76));
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
-				GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY = helper.createQuery(GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP);
-			} catch (ParserException pe) {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY);
-		@SuppressWarnings("unchecked")
-		Collection<CharacteristicsOfHomeEnvironment> result = (Collection<CharacteristicsOfHomeEnvironment>) query.evaluate(socialHistorySection2);
-		return new BasicEList.UnmodifiableEList<CharacteristicsOfHomeEnvironment>(result.size(), result.toArray());
+		Object oclResult = VALIDATE_SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(socialHistorySection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_TOBACCO_USE2_ENTRY_TOBACCO_USE21165,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2TobaccoUse2EntryTobaccoUse21165"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics Entry Caregiver Characteristics1167</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CaregiverCharacteristics)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics Entry Caregiver Characteristics1167</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateSocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(socialHistorySection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS_ENTRY_CAREGIVER_CHARACTERISTICS1167,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2CaregiverCharacteristicsEntryCaregiverCharacteristics1167"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation Entry Cultural And Religious Observation1169</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CulturalAndReligiousObservation)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation Entry Cultural And Religious Observation1169</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateSocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(socialHistorySection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION_ENTRY_CULTURAL_AND_RELIGIOUS_OBSERVATION1169,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2CulturalAndReligiousObservationEntryCulturalAndReligiousObservation1169"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment Entry Characteristics Of Home Environment1171</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CharacteristicsOfHomeEnvironment)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment Entry Characteristics Of Home Environment1171</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Query<?, ?, ?> VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static  boolean validateSocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171(SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(socialHistorySection2);		
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+  			
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ENTRY_CHARACTERISTICS_OF_HOME_ENVIRONMENT1171,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySection2CharacteristicsOfHomeEnvironmentEntryCharacteristicsOfHomeEnvironment1171"),
+						 new Object [] { eObject }));
+				}
+				 
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
 	}
 
 	/**
@@ -560,26 +866,28 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySectionTemplateId(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
 				VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionTemplateId"),
-					new Object[] { socialHistorySection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionTemplateId"),
+						 new Object [] { socialHistorySection2 }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -619,26 +927,28 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySectionCodeP(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
 				VALIDATE_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionCodeP"),
-					new Object[] { socialHistorySection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionCodeP"),
+						 new Object [] { socialHistorySection2 }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -650,7 +960,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 				}
 				passToken.add(socialHistorySection2);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -664,9 +974,9 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionCode(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' invariant operation.
@@ -692,215 +1002,34 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 
 	public static boolean validateSocialHistorySectionCode(SocialHistorySection2 socialHistorySection2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistorySectionCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistorySectionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(socialHistorySection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
 			try {
 				VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(socialHistorySection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionCode"),
-					new Object[] { socialHistorySection2 }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionCode"),
+						 new Object [] { socialHistorySection2 }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionSocialHistoryObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Social History Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionSocialHistoryObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SocialHistoryObservation2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionSocialHistoryObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Social History Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionSocialHistoryObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSocialHistorySectionSocialHistoryObservation(
-			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionSocialHistoryObservation"),
-					new Object[] { socialHistorySection2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionSmokingStatusObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Smoking Status Observation</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionSmokingStatusObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SmokingStatusMeaningfulUse2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionSmokingStatusObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Smoking Status Observation</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionSmokingStatusObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSocialHistorySectionSmokingStatusObservation(
-			SocialHistorySection2 socialHistorySection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionSmokingStatusObservation"),
-					new Object[] { socialHistorySection2 }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionTobaccoUse(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Tobacco Use</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionTobaccoUse(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::TobaccoUse2))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionTobaccoUse(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Tobacco Use</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionTobaccoUse(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateSocialHistorySectionTobaccoUse(SocialHistorySection2 socialHistorySection2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			socialHistorySection2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION_TOBACCO_USE,
-					ConsolPlugin.INSTANCE.getString("SocialHistorySection2SocialHistorySectionTobaccoUse"),
-					new Object[] { socialHistorySection2 }));
-			}
-
+			 
 			return false;
 		}
 		return true;

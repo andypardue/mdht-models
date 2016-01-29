@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.InstructionsSection2Op
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Instructions Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -67,9 +65,17 @@ public class InstructionsSection2Impl extends InstructionsSectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<Instruction2> getConsolInstruction2s() {
-		return InstructionsSection2Operations.getConsolInstruction2s(this);
+	public boolean validateInstructionsSection2Entry1092(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSection2Operations.validateInstructionsSection2Entry1092(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInstructionsSection2Instruction2EntryInstruction21093(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSection2Operations.validateInstructionsSection2Instruction2EntryInstruction21093(this, diagnostics, context);
 	}
 
 	/**
@@ -108,28 +114,18 @@ public class InstructionsSection2Impl extends InstructionsSectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateInstructionsSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsSection2Operations.validateInstructionsSectionInstructions(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public InstructionsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public InstructionsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // InstructionsSection2Impl

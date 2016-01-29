@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Problem Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -148,9 +146,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActAllergyObservation(this, diagnostics, context);
+	public boolean validateAllergyProblemActEntryRelationship0(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActEntryRelationship0(this, diagnostics, context);
 	}
 
 	/**
@@ -161,8 +158,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	@Override
 	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(this, diagnostics, context);
 	}
 
 	/**
@@ -190,9 +186,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<AllergyObservation> getAllergyObservations() {
-		return AllergyProblemActOperations.getAllergyObservations(this);
+	public boolean validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyProblemActOperations.validateAllergyProblemActAllergyObservationEntryRelationshipAllergyObservation1(this, diagnostics, context);
 	}
 
 	/**
@@ -202,17 +197,17 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	@Override
 	public AllergyProblemAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergyProblemActImpl

@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfulUse2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
@@ -48,7 +49,7 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusMeaningfulUse2Id() {
@@ -65,7 +66,7 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -82,23 +83,24 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusMeaningfulUse2AuthorParticipation() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2AuthorParticipationTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusMeaningfulUse2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
 
 			}
 
@@ -121,8 +123,8 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationTemplateId() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
-			"validateSmokingStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -184,7 +186,7 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationCode() {
@@ -195,14 +197,16 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.getCode().setCode("72166-2");
-				target.getCode().setCodeSystem(LOINC_ID);
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -226,7 +230,7 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationValueP() {
@@ -237,12 +241,12 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+				target.init();
 
 			}
 
@@ -260,7 +264,7 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationValue() {
@@ -271,13 +275,15 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SmokingStatusMeaningfulUse2 target) {
-				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-				target.getValues().set(0, DatatypesFactory.eINSTANCE.createCD("449868002", SNOMEDCT_ID));
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 

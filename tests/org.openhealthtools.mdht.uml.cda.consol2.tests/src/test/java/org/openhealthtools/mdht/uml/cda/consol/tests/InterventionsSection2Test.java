@@ -30,12 +30,12 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2InterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2HandoffCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2PlannedInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getInterventionActs() <em>Get Intervention Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getHandoffCommunications() <em>Get Handoff Communications</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#getPlannedInterventionActs() <em>Get Planned Intervention Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2Entry1094(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1094</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2Entry1096(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1096</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2Entry1098(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Entry1098</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2InterventionActEntryInterventionAct1095(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Intervention Act Entry Intervention Act1095</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Handoff Communication Participants Entry Handoff Communication1097</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section2 Planned Intervention Act Entry Planned Intervention Act1099</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2#validateInterventionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Interventions Section Code</em>}</li>
@@ -49,79 +49,14 @@ public class InterventionsSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
-	public void testValidateInterventionsSection2InterventionAct() {
-		OperationsTestCase<InterventionsSection2> validateInterventionsSection2InterventionActTestCase = new OperationsTestCase<InterventionsSection2>(
-			"validateInterventionsSection2InterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
 
-			@Override
-			protected void updateToFail(InterventionsSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(InterventionsSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createInterventionAct().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionsSection2Operations.validateInterventionsSection2InterventionAct(
-					(InterventionsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionsSection2InterventionActTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateInterventionsSection2HandoffCommunication() {
-		OperationsTestCase<InterventionsSection2> validateInterventionsSection2HandoffCommunicationTestCase = new OperationsTestCase<InterventionsSection2>(
-			"validateInterventionsSection2HandoffCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InterventionsSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(InterventionsSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunication(
-					(InterventionsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInterventionsSection2HandoffCommunicationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateInterventionsSection2PlannedInterventionAct() {
-		OperationsTestCase<InterventionsSection2> validateInterventionsSection2PlannedInterventionActTestCase = new OperationsTestCase<InterventionsSection2>(
-			"validateInterventionsSection2PlannedInterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateInterventionsSection2Entry1094() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2Entry1094TestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2Entry1094",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_ENTRY1094__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -132,19 +67,19 @@ public class InterventionsSection2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(InterventionsSection2 target) {
 				target.init();
-				target.addAct(ConsolFactory.eINSTANCE.createPlannedInterventionAct().init());
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionAct(
+				return InterventionsSection2Operations.validateInterventionsSection2Entry1094(
 					(InterventionsSection2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInterventionsSection2PlannedInterventionActTestCase.doValidationTest();
+		validateInterventionsSection2Entry1094TestCase.doValidationTest();
 	}
 
 	/**
@@ -152,11 +87,34 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInterventionActs() {
 
-		InterventionsSection2 target = objectFactory.create();
-		target.getInterventionActs();
+	public void testValidateInterventionsSection2Entry1096() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2Entry1096TestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2Entry1096",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_ENTRY1096__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2Entry1096(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2Entry1096TestCase.doValidationTest();
 	}
 
 	/**
@@ -164,11 +122,34 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHandoffCommunications() {
 
-		InterventionsSection2 target = objectFactory.create();
-		target.getHandoffCommunications();
+	public void testValidateInterventionsSection2Entry1098() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2Entry1098TestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2Entry1098",
+			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_ENTRY1098__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2Entry1098(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2Entry1098TestCase.doValidationTest();
 	}
 
 	/**
@@ -176,11 +157,107 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedInterventionActs() {
 
-		InterventionsSection2 target = objectFactory.create();
-		target.getPlannedInterventionActs();
+	public void testValidateInterventionsSection2InterventionActEntryInterventionAct1095() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2InterventionActEntryInterventionAct1095TestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2InterventionActEntryInterventionAct1095",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT_ENTRY_INTERVENTION_ACT1095__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2InterventionActEntryInterventionAct1095(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2InterventionActEntryInterventionAct1095TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097TestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_HANDOFF_COMMUNICATION1097__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2HandoffCommunicationParticipantsEntryHandoffCommunication1097TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099() {
+		OperationsTestCase<InterventionsSection2> validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099TestCase = new OperationsTestCase<InterventionsSection2>(
+			"validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT_ENTRY_PLANNED_INTERVENTION_ACT1099__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InterventionsSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(InterventionsSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InterventionsSection2Operations.validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099(
+					(InterventionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInterventionsSection2PlannedInterventionActEntryPlannedInterventionAct1099TestCase.doValidationTest();
 	}
 
 	/**

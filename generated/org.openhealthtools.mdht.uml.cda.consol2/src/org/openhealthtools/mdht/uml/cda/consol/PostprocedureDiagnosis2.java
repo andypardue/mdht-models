@@ -22,7 +22,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPostprocedureDiagnosis2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostprocedureDiagnosisTemplateId PostprocedureDiagnosisCode PostprocedureDiagnosisCodeP PostprocedureDiagnosisProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.51' templateId.extension='2015-08-01' code.code='59769-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Postprocedure Diagnosis' constraints.validation.dependOn.PostprocedureDiagnosisCode='PostprocedureDiagnosisCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostprocedureDiagnosisTemplateId PostprocedureDiagnosisCode PostprocedureDiagnosisCodeP PostprocedureDiagnosis2EntryRelationship998 PostprocedureDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2999' templateId.root='2.16.840.1.113883.10.20.22.4.51' templateId.extension='2015-08-01' code.code='59769-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Postprocedure Diagnosis' constraints.validation.dependOn.PostprocedureDiagnosisCode='PostprocedureDiagnosisCodeP' constraints.validation.query='PostprocedureDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2999'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolPostprocedureDiagnosis2ProblemObservation2EntryRelationship constraints.validation.error='PostprocedureDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2999'"
  * @generated
  */
 public interface PostprocedureDiagnosis2 extends PostprocedureDiagnosis {
@@ -41,11 +42,26 @@ public interface PostprocedureDiagnosis2 extends PostprocedureDiagnosis {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)).oclAsType(consol::ProblemObservation2)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	EList<ProblemObservation2> getConsolProblemObservation2s();
+	boolean validatePostprocedureDiagnosis2EntryRelationship998(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2)))'"
+	 * @generated
+	 */
+	boolean validatePostprocedureDiagnosis2ProblemObservation2EntryRelationshipProblemObservation2999(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -56,10 +72,10 @@ public interface PostprocedureDiagnosis2 extends PostprocedureDiagnosis {
 	public PostprocedureDiagnosis2 init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PostprocedureDiagnosis2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PostprocedureDiagnosis2

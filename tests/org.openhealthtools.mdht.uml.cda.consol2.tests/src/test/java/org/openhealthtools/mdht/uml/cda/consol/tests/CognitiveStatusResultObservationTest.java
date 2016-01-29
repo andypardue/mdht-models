@@ -12,24 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,15 +34,15 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationValueDatatype(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Value Datatype</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateResultObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Author</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Non Medicinal Supply Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationCaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Caregiver Characteristics</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationAssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Assessment Scale Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Reference Range</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationEntryRelationship568(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Entry Relationship568</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationEntryRelationship570(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Entry Relationship570</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationEntryRelationship572(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Entry Relationship572</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Reference Range Observation Range No Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationReferenceRangeObservationRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Reference Range Observation Range</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#getNonMedicinalSupplyActivities() <em>Get Non Medicinal Supply Activities</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity569(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Non Medicinal Supply Activity Entry Relationship Non Medicinal Supply Activity569</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics571(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Caregiver Characteristics Entry Relationship Caregiver Characteristics571</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateCognitiveStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation573(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Observation Assessment Scale Observation Entry Relationship Assessment Scale Observation573</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateResultObservationTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateResultObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
@@ -76,25 +68,25 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCognitiveStatusResultObservationValueDatatype() {
 		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationValueDatatypeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
 			"validateCognitiveStatusResultObservationValueDatatype",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CognitiveStatusResultObservation target) {
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+
 			}
 
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
-				target.getValues().clear();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.96", "", ""));
+
 			}
 
 			@Override
@@ -145,13 +137,13 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCognitiveStatusResultObservationAuthor() {
 		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationAuthorTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateCognitiveStatusResultObservationAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveStatusResultObservationAuthor", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -162,7 +154,7 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
-				target.getAuthors().add(CDAFactory.eINSTANCE.createAuthor());
+
 			}
 
 			@Override
@@ -179,126 +171,14 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCognitiveStatusResultObservationNonMedicinalSupplyActivity() {
-		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationNonMedicinalSupplyActivityTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateCognitiveStatusResultObservationNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CognitiveStatusResultObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CognitiveStatusResultObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(
-					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCognitiveStatusResultObservationNonMedicinalSupplyActivityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCognitiveStatusResultObservationCaregiverCharacteristics() {
-		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationCaregiverCharacteristicsTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateCognitiveStatusResultObservationCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CognitiveStatusResultObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CognitiveStatusResultObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				er.setObservation(ConsolFactory.eINSTANCE.createCaregiverCharacteristics().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationCaregiverCharacteristics(
-					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCognitiveStatusResultObservationCaregiverCharacteristicsTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateCognitiveStatusResultObservationAssessmentScaleObservation() {
-		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationAssessmentScaleObservationTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateCognitiveStatusResultObservationAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CognitiveStatusResultObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CognitiveStatusResultObservation target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setObservation(ConsolFactory.eINSTANCE.createAssessmentScaleObservation().init());
-				target.getEntryRelationships().add(er);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationAssessmentScaleObservation(
-					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCognitiveStatusResultObservationAssessmentScaleObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCognitiveStatusResultObservationReferenceRange() {
 		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationReferenceRangeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
 			"validateCognitiveStatusResultObservationReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -309,7 +189,7 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
-				target.getReferenceRanges().add(CDAFactory.eINSTANCE.createReferenceRange());
+
 			}
 
 			@Override
@@ -326,35 +206,132 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode() {
-		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCodeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateCognitiveStatusResultObservationEntryRelationship568() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationEntryRelationship568TestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationEntryRelationship568",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_ENTRY_RELATIONSHIP568__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CognitiveStatusResultObservation target) {
-				target.init();
-
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setCode(DatatypesFactory.eINSTANCE.createCD());
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
 
 			}
 
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
-				target.getReferenceRanges().clear();
+				target.init();
 
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationEntryRelationship568(
+					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultObservationEntryRelationship568TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCognitiveStatusResultObservationEntryRelationship570() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationEntryRelationship570TestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationEntryRelationship570",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_ENTRY_RELATIONSHIP570__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CognitiveStatusResultObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusResultObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationEntryRelationship570(
+					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultObservationEntryRelationship570TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateCognitiveStatusResultObservationEntryRelationship572() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationEntryRelationship572TestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationEntryRelationship572",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_ENTRY_RELATIONSHIP572__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CognitiveStatusResultObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusResultObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationEntryRelationship572(
+					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultObservationEntryRelationship572TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCodeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CognitiveStatusResultObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusResultObservation target) {
+				target.init();
 
 			}
 
@@ -372,30 +349,24 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCognitiveStatusResultObservationReferenceRangeObservationRange() {
 		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationReferenceRangeObservationRangeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
 			"validateCognitiveStatusResultObservationReferenceRangeObservationRange",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CognitiveStatusResultObservation target) {
-				target.init();
-				target.getReferenceRanges().add(CDAFactory.eINSTANCE.createReferenceRange());
 
 			}
 
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
-				target.getReferenceRanges().clear();
-
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+				target.init();
 
 			}
 
@@ -416,11 +387,35 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNonMedicinalSupplyActivities() {
 
-		CognitiveStatusResultObservation target = objectFactory.create();
-		target.getNonMedicinalSupplyActivities();
+	public void testValidateCognitiveStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity569() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity569TestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity569",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY_ENTRY_RELATIONSHIP_NON_MEDICINAL_SUPPLY_ACTIVITY569__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CognitiveStatusResultObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusResultObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity569(
+					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultObservationNonMedicinalSupplyActivityEntryRelationshipNonMedicinalSupplyActivity569TestCase.doValidationTest();
 	}
 
 	/**
@@ -428,11 +423,35 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetCaregiverCharacteristicss() {
 
-		CognitiveStatusResultObservation target = objectFactory.create();
-		target.getCaregiverCharacteristicss();
+	public void testValidateCognitiveStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics571() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics571TestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics571",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS_ENTRY_RELATIONSHIP_CAREGIVER_CHARACTERISTICS571__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CognitiveStatusResultObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusResultObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics571(
+					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultObservationCaregiverCharacteristicsEntryRelationshipCaregiverCharacteristics571TestCase.doValidationTest();
 	}
 
 	/**
@@ -440,36 +459,56 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentScaleObservations() {
 
-		CognitiveStatusResultObservation target = objectFactory.create();
-		target.getAssessmentScaleObservations();
+	public void testValidateCognitiveStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation573() {
+		OperationsTestCase<CognitiveStatusResultObservation> validateCognitiveStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation573TestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateCognitiveStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation573",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION_ENTRY_RELATIONSHIP_ASSESSMENT_SCALE_OBSERVATION573__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CognitiveStatusResultObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CognitiveStatusResultObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation573(
+					(CognitiveStatusResultObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCognitiveStatusResultObservationAssessmentScaleObservationEntryRelationshipAssessmentScaleObservation573TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationTextReference() {
-		OperationsTestCase<CognitiveStatusResultObservation> validateResultObservationTextReferenceTestCase = new NarrativeReferenceTestCase<CognitiveStatusResultObservation>(
+		OperationsTestCase<CognitiveStatusResultObservation> validateResultObservationTextReferenceTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
 			"validateResultObservationTextReference",
 			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CognitiveStatusResultObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
 
 			}
 
@@ -487,37 +526,26 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationTextReferenceValue() {
-		OperationsTestCase<CognitiveStatusResultObservation> validateResultObservationTextReferenceValueTestCase = new NarrativeReferenceTestCase<CognitiveStatusResultObservation>(
-			"validateResultObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<CognitiveStatusResultObservation> validateResultObservationTextReferenceValueTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
+			"validateResultObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CognitiveStatusResultObservation target) {
-				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
+				target.init();
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -674,7 +702,7 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationCode() {
@@ -692,7 +720,7 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
 
-				CE cd = DatatypesFactory.eINSTANCE.createCE("373930000", "2.16.840.1.113883.6.96");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
 			}
@@ -907,13 +935,13 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationInterpretationCode() {
 		OperationsTestCase<CognitiveStatusResultObservation> validateResultObservationInterpretationCodeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateResultObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -924,7 +952,6 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
@@ -942,7 +969,7 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationMethodCode() {
@@ -959,7 +986,6 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
-				target.getMethodCodes().add(DatatypesFactory.eINSTANCE.createCE());
 
 			}
 
@@ -977,13 +1003,13 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateResultObservationTargetSiteCode() {
 		OperationsTestCase<CognitiveStatusResultObservation> validateResultObservationTargetSiteCodeTestCase = new OperationsTestCase<CognitiveStatusResultObservation>(
-			"validateResultObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationTargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -994,7 +1020,6 @@ public class CognitiveStatusResultObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CognitiveStatusResultObservation target) {
 				target.init();
-				target.getTargetSiteCodes().add(DatatypesFactory.eINSTANCE.createCD());
 
 			}
 

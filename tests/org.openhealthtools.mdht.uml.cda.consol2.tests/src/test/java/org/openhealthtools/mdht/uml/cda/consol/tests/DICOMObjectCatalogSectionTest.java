@@ -31,8 +31,8 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionStudyAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#getStudyActs() <em>Get Study Acts</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionEntry296(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Entry296</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection#validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate DICOM Object Catalog Section Study Act Entry Study Act297</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,8 +48,8 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateDICOMObjectCatalogSectionTemplateId() {
 		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionTemplateIdTestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
-			"validateDICOMObjectCatalogSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDICOMObjectCatalogSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -116,8 +116,8 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateDICOMObjectCatalogSectionCodeP() {
 		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionCodePTestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
-			"validateDICOMObjectCatalogSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDICOMObjectCatalogSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -145,13 +145,14 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateDICOMObjectCatalogSectionStudyAct() {
-		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionStudyActTestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
-			"validateDICOMObjectCatalogSectionStudyAct",
-			operationsForOCL.getOCLValue("VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateDICOMObjectCatalogSectionEntry296() {
+		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionEntry296TestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
+			"validateDICOMObjectCatalogSectionEntry296", operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_ENTRY296__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -163,20 +164,18 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 			protected void updateToPass(DICOMObjectCatalogSection target) {
 				target.init();
 
-				target.addAct(ConsolFactory.eINSTANCE.createStudyAct().init());
-
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyAct(
+				return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionEntry296(
 					(DICOMObjectCatalogSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDICOMObjectCatalogSectionStudyActTestCase.doValidationTest();
+		validateDICOMObjectCatalogSectionEntry296TestCase.doValidationTest();
 	}
 
 	/**
@@ -184,11 +183,35 @@ public class DICOMObjectCatalogSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetStudyActs() {
 
-		DICOMObjectCatalogSection target = objectFactory.create();
-		target.getStudyActs();
+	public void testValidateDICOMObjectCatalogSectionStudyActEntryStudyAct297() {
+		OperationsTestCase<DICOMObjectCatalogSection> validateDICOMObjectCatalogSectionStudyActEntryStudyAct297TestCase = new OperationsTestCase<DICOMObjectCatalogSection>(
+			"validateDICOMObjectCatalogSectionStudyActEntryStudyAct297",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT_ENTRY_STUDY_ACT297__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(DICOMObjectCatalogSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DICOMObjectCatalogSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyActEntryStudyAct297(
+					(DICOMObjectCatalogSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDICOMObjectCatalogSectionStudyActEntryStudyAct297TestCase.doValidationTest();
 	}
 
 	/**

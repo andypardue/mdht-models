@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Referenced Frames Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	@Override
 	public boolean validateReferencedFramesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	@Override
 	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -90,32 +86,27 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateReferencedFramesObservationEntryRelationship546(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationEntryRelationship546(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation547(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateReferencedFramesObservationBoundaryObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BoundaryObservation getBoundaryObservation() {
-		return ReferencedFramesObservationOperations.getBoundaryObservation(this);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -125,17 +116,17 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	@Override
 	public ReferencedFramesObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ReferencedFramesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReferencedFramesObservationImpl

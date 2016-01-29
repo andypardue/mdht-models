@@ -16,22 +16,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Consumable;
-import org.openhealthtools.mdht.uml.cda.LabeledDrug;
-import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationFreeTextSig;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationFreeTextSigOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClass;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,39 +55,27 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigTextReferenceValue() {
-		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigTextReferenceValueTestCase = new NarrativeReferenceTestCase<MedicationFreeTextSig>(
+		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigTextReferenceValueTestCase = new OperationsTestCase<MedicationFreeTextSig>(
 			"validateMedicationFreeTextSigTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"Not a particularly severe reaction.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
+				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "Not a particularly severe reaction.");
+				DatatypesFactory.eINSTANCE.createCD();
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
@@ -118,8 +97,8 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationFreeTextSigTemplateId() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigTemplateIdTestCase = new OperationsTestCase<MedicationFreeTextSig>(
-			"validateMedicationFreeTextSigTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationFreeTextSigTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -147,24 +126,24 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigClassCode() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigClassCodeTestCase = new OperationsTestCase<MedicationFreeTextSig>(
-			"validateMedicationFreeTextSigClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationFreeTextSigClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-				target.setClassCode(ActClass.ACCM);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				target.setClassCode(ActClass.SBADM);
+				target.init();
+
 			}
 
 			@Override
@@ -181,7 +160,7 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigMoodCode() {
@@ -192,13 +171,13 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-				target.setMoodCode(x_DocumentSubstanceMood.RQO);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				target.setMoodCode(x_DocumentSubstanceMood.EVN);
+				target.init();
+
 			}
 
 			@Override
@@ -320,24 +299,24 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigConsumable() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigConsumableTestCase = new OperationsTestCase<MedicationFreeTextSig>(
-			"validateMedicationFreeTextSigConsumable",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationFreeTextSigConsumable", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				Consumable con = CDAFactory.eINSTANCE.createConsumable();
-				target.setConsumable(con);
+				target.init();
+
 			}
 
 			@Override
@@ -354,27 +333,26 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated not
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigEDTELValue() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigEDTELValueTestCase = new OperationsTestCase<MedicationFreeTextSig>(
-			"validateMedicationFreeTextSigEDTELValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationFreeTextSigEDTELValue", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				target.setText(text);
-				TEL reference = DatatypesFactory.eINSTANCE.createTEL();
-				target.getText().setReference(reference);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				target.getText().getReference().setValue("hasValue");
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createCD();
+
 			}
 
 			@Override
@@ -391,26 +369,24 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigEDReference() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigEDReferenceTestCase = new OperationsTestCase<MedicationFreeTextSig>(
-			"validateMedicationFreeTextSigEDReference",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationFreeTextSigEDReference", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_ED_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				target.setText(text);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				TEL reference = DatatypesFactory.eINSTANCE.createTEL();
-				target.getText().setReference(reference);
+				target.init();
+
 			}
 
 			@Override
@@ -427,61 +403,26 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* Note: OCL is modified in operations
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavorTestCase = new OperationsTestCase<MedicationFreeTextSig>(
 			"validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(MedicationFreeTextSig target) {
-						// no nullFlavor at all
-						target.init();
-						Consumable con = CDAFactory.eINSTANCE.createConsumable();
-						target.setConsumable(con);
-						ManufacturedProduct mp = CDAFactory.eINSTANCE.createManufacturedProduct();
-						con.setManufacturedProduct(mp);
-						LabeledDrug mld = CDAFactory.eINSTANCE.createLabeledDrug();
-						mp.setManufacturedLabeledDrug(mld);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(MedicationFreeTextSig target) {
-						// has nullFlavor but it's the wrong type
-						target.init();
-						Consumable con = CDAFactory.eINSTANCE.createConsumable();
-						target.setConsumable(con);
-						ManufacturedProduct mp = CDAFactory.eINSTANCE.createManufacturedProduct();
-						con.setManufacturedProduct(mp);
-						LabeledDrug mld = CDAFactory.eINSTANCE.createLabeledDrug();
-						mp.setManufacturedLabeledDrug(mld);
-						mld.setNullFlavor(NullFlavor.ASKU);
-					}
-				});
+			protected void updateToFail(MedicationFreeTextSig target) {
 
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				// has nullFlavor and it's the correct type
 				target.init();
-				Consumable con = CDAFactory.eINSTANCE.createConsumable();
-				target.setConsumable(con);
-				ManufacturedProduct mp = CDAFactory.eINSTANCE.createManufacturedProduct();
-				con.setManufacturedProduct(mp);
-				LabeledDrug mld = CDAFactory.eINSTANCE.createLabeledDrug();
-				mp.setManufacturedLabeledDrug(mld);
-				mld.setNullFlavor(NullFlavor.NA);
+
 			}
 
 			@Override
@@ -498,28 +439,25 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugTestCase = new OperationsTestCase<MedicationFreeTextSig>(
 			"validateMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-				Consumable con = CDAFactory.eINSTANCE.createConsumable();
-				target.setConsumable(con);
-				ManufacturedProduct mp = CDAFactory.eINSTANCE.createManufacturedProduct();
-				con.setManufacturedProduct(mp);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				LabeledDrug mld = CDAFactory.eINSTANCE.createLabeledDrug();
-				target.getConsumable().getManufacturedProduct().setManufacturedLabeledDrug(mld);
+				target.init();
+
 			}
 
 			@Override
@@ -536,26 +474,25 @@ public class MedicationFreeTextSigTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationFreeTextSigConsumableManufacturedProduct() {
 		OperationsTestCase<MedicationFreeTextSig> validateMedicationFreeTextSigConsumableManufacturedProductTestCase = new OperationsTestCase<MedicationFreeTextSig>(
 			"validateMedicationFreeTextSigConsumableManufacturedProduct",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationFreeTextSig target) {
-				target.init();
-				Consumable con = CDAFactory.eINSTANCE.createConsumable();
-				target.setConsumable(con);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationFreeTextSig target) {
-				ManufacturedProduct mp = CDAFactory.eINSTANCE.createManufacturedProduct();
-				target.getConsumable().setManufacturedProduct(mp);
+				target.init();
+
 			}
 
 			@Override

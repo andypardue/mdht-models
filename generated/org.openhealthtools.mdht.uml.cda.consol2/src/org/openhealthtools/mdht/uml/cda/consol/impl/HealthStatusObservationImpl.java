@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Health Status Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	@Override
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
-			this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	@Override
 	public boolean validateHealthStatusObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationTextReferenceValue(
-			this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	@Override
 	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(
-			this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -174,17 +169,17 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	@Override
 	public HealthStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public HealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HealthStatusObservationImpl

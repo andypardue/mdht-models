@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Activity Supply</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,17 +96,17 @@ public class PlanOfCareActivitySupplyImpl extends SupplyImpl implements PlanOfCa
 	 */
 	@Override
 	public PlanOfCareActivitySupply init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlanOfCareActivitySupply init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareActivitySupplyImpl

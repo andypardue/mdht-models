@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSection2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,11 +85,28 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignsSection2Entry1212(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSection2Operations.validateVitalSignsSection2Entry1212(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsSection2Operations.validateVitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer21213(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -121,40 +136,18 @@ public class VitalSignsSection2Impl extends VitalSignsSectionEntriesOptional2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignsSection2Operations.validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<VitalSignsOrganizer2> getConsolVitalSignsOrganizer2s() {
-		return VitalSignsSection2Operations.getConsolVitalSignsOrganizer2s(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public VitalSignsSection2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public VitalSignsSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsSection2Impl

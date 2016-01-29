@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.impl.AuthorImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Observer Context</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -74,17 +72,17 @@ public class ObserverContextImpl extends AuthorImpl implements ObserverContext {
 	 */
 	@Override
 	public ObserverContext init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ObserverContext init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ObserverContextImpl

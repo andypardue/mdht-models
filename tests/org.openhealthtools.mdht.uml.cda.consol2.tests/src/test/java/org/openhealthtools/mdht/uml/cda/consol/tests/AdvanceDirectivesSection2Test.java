@@ -18,15 +18,13 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Entry;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,15 +39,15 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Entry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Entry1184(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry1184</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Entry1186(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry1186</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#getConsolAdvanceDirectiveOrganizers() <em>Get Consol Advance Directive Organizers</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21185(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Advance Directive Observation2 Entry Advance Directive Observation21185</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1187(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Advance Directive Organizer Entry Advance Directive Organizer1187</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional2 Advance Directive Organizer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Advance Directive Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#getConsolAdvanceDirectiveObservation2s() <em>Get Consol Advance Directive Observation2s</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,117 +58,24 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION2_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_HAS_ADVANCE_DIRECTIVE_OBSERVATION2_XOR_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AdvanceDirectivesSection2 target) {
-						// blank
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AdvanceDirectivesSection2 target) {
-						// incorrect nullFlavor and no entries that are required supplied
-						target.init();
-						target.setNullFlavor(NullFlavor.ASKU);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AdvanceDirectivesSection2 target) {
-						// both entries (only allowed one or more of each option) without a nullFlavor
-						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
-						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(AdvanceDirectivesSection2 target) {
-						target.init();
-						target.setNullFlavor(NullFlavor.ASKU);
-						// both entries with incorrect nullFlavor so it still fails
-						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
-						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-					}
-				});
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
 
 			}
 
 			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						target.init();
-						target.setNullFlavor(NullFlavor.NI); // NI removes requirements
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						// target.init defaults to a nullFlavor of NI so not initializing for the test
-						// 1 AdvanceDirectiveOrganizer
-						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						// could also change NI to something else
-						target.init();
-						target.setNullFlavor(NullFlavor.ASKU);
-						// 2 AdvanceDirectiveOrganizers
-						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
-						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						target.init();
-						target.setNullFlavor(NullFlavor.ASKU);
-						// 1 AdvanceDirectiveObservation2s
-						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						// 2 AdvanceDirectiveObservation2s
-						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						target.init();
-						target.setNullFlavor(NullFlavor.NI);
-						// Both entries but nullFlavor negates the requirement and allows a pass
-						target.addOrganizer(ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
-						target.addObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-					}
-				});
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
 
 			}
 
@@ -188,10 +93,11 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAdvanceDirectivesSection2Text() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2TextTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
@@ -206,6 +112,9 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+				DatatypesFactory.eINSTANCE.createED();
 
 			}
 
@@ -223,10 +132,11 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAdvanceDirectivesSection2Title() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2TitleTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
@@ -267,8 +177,8 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectivesSection2NullFlavor() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2NullFlavorTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
-			"validateAdvanceDirectivesSection2NullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectivesSection2NullFlavor", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -296,7 +206,7 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectivesSection2Entry() {
@@ -307,28 +217,12 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(AdvanceDirectivesSection2 target) {
-				target.init();
-				target.setNullFlavor(NullFlavor.ASKU);
+
 			}
 
 			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						Entry entry = CDAFactory.eINSTANCE.createEntry();
-						target.getEntries().add(entry);
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(AdvanceDirectivesSection2 target) {
-						target.init();
-						target.setNullFlavor(NullFlavor.NI);
-					}
-				});
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
 
 			}
 
@@ -346,26 +240,95 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdvanceDirectivesSection2Entry1184() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2Entry1184TestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2Entry1184", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY1184__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2Entry1184(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2Entry1184TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdvanceDirectivesSection2Entry1186() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2Entry1186TestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2Entry1186", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY1186__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2Entry1186(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2Entry1186TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectivesSection2 target) {
-				target.init();
-				Entry entry = CDAFactory.eINSTANCE.createEntry();
-				target.getEntries().add(entry);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectivesSection2 target) {
-				target.getEntries().get(0).setOrganizer(
-					ConsolFactory.eINSTANCE.createAdvanceDirectiveOrganizer().init());
+				target.init();
+
 			}
 
 			@Override
@@ -382,26 +345,25 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2TestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ENTRY_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectivesSection2 target) {
-				target.init();
-				Entry entry = CDAFactory.eINSTANCE.createEntry();
-				target.getEntries().add(entry);
+
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectivesSection2 target) {
-				target.getEntries().get(0).setObservation(
-					ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
+				target.init();
+
 			}
 
 			@Override
@@ -421,10 +383,83 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateAdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21185() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21185TestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21185",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ADVANCE_DIRECTIVE_OBSERVATION2_ENTRY_ADVANCE_DIRECTIVE_OBSERVATION21185__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21185(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21185TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateAdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1187() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1187TestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1187",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION2_ADVANCE_DIRECTIVE_ORGANIZER_ENTRY_ADVANCE_DIRECTIVE_ORGANIZER1187__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1187(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1187TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -452,15 +487,17 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalCodeP() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalCodePTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -488,15 +525,17 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalCode() {
 		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalCodeTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -528,102 +567,6 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectivesSectionEntriesOptionalCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This association is being overridden as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer() {
-		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
-			"validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectivesSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectivesSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
-					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This association is being overridden as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation() {
-		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservationTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
-			"validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectivesSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectivesSection2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
-					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolAdvanceDirectiveObservation2s() {
-
-		AdvanceDirectivesSection2 target = objectFactory.create();
-		target.getConsolAdvanceDirectiveObservation2s();
-
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testGetConsolAdvanceDirectiveOrganizers() {
-
-		AdvanceDirectivesSection2 target = objectFactory.create();
-		target.getConsolAdvanceDirectiveOrganizers();
-
 	}
 
 	/**

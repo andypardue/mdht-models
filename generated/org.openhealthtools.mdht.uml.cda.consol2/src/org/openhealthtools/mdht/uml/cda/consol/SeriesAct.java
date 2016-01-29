@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeriesAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeriesActTemplateId SeriesActIdHasRoot SeriesActIdNoExtension SeriesActCodeQualifier SeriesActCodeQualifierCode SeriesActCodeQualifierValue SeriesActCodeQualifierValueCode SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' templateId.root='2.16.840.1.113883.10.20.22.4.63' classCode='ACT' moodCode='EVN' code.code='113015' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' constraints.validation.warning='SeriesActEffectiveTime' constraints.validation.info='SeriesActText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeriesActTemplateId SeriesActIdHasRoot SeriesActIdNoExtension SeriesActCodeQualifier SeriesActCodeQualifierCode SeriesActCodeQualifierValue SeriesActCodeQualifierValueCode SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActEntryRelationship538 SeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539' templateId.root='2.16.840.1.113883.10.20.22.4.63' classCode='ACT' moodCode='EVN' code.code='113015' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' constraints.validation.warning='SeriesActEffectiveTime' constraints.validation.info='SeriesActText' constraints.validation.query='SeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolSeriesActSOPInstanceObservationEntryRelationship constraints.validation.error='SeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539'"
  * @generated
  */
 public interface SeriesAct extends Act {
@@ -145,7 +146,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'113015\' and value.codeSystem = \'1.2.840.10008.2.16.4\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'113015\' and value.codeSystem = \'1.2.840.10008.2.16.4\')'"
 	 * @generated
 	 */
 	boolean validateSeriesActCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -169,7 +170,7 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() >= 1)'"
 	 * @generated
 	 */
 	boolean validateSeriesActId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -193,19 +194,22 @@ public interface SeriesAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateSeriesActSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSeriesActEntryRelationship538(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)'"
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)))'"
 	 * @generated
 	 */
-	EList<SOPInstanceObservation> getSOPInstanceObservations();
+	boolean validateSeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation539(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,9 +219,9 @@ public interface SeriesAct extends Act {
 	public SeriesAct init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SeriesAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SeriesAct

@@ -46,8 +46,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ConsultationNoteOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Consultation Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -79,8 +77,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +99,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +110,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteHasReasonForReferralOrReasonForVisit(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHasReasonForReferralOrReasonForVisit(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteHasReasonForReferralOrReasonForVisit(this, diagnostics, context);
 	}
 
 	/**
@@ -144,11 +138,19 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNoteComponent308(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponent308(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(this, diagnostics, context);
 	}
 
 	/**
@@ -159,8 +161,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -171,8 +172,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +183,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +194,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(this, diagnostics, context);
 	}
 
 	/**
@@ -207,8 +205,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(this, diagnostics, context);
 	}
 
 	/**
@@ -219,8 +216,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(this, diagnostics, context);
 	}
 
 	/**
@@ -231,8 +227,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(this, diagnostics, context);
 	}
 
 	/**
@@ -243,8 +238,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -255,8 +249,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2Id(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2Id(this, diagnostics, context);
 	}
 
 	/**
@@ -267,8 +260,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -279,8 +271,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -291,8 +282,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	@Override
 	public boolean validateConsultationNoteComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return ConsultationNoteOperations.validateConsultationNoteComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -321,449 +311,396 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentAssessmentAndPlanSection311(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentAssessmentAndPlanSection311(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentAssessmentSection313(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentAssessmentSection313(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentPlanOfCareSection315(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentPlanOfCareSection315(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentHistoryOfPresentIllness317(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentHistoryOfPresentIllness317(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentPhysicalExamSection319(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentPhysicalExamSection319(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentReasonForReferralSection321(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentReasonForReferralSection321(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentReasonForVisitSection323(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentReasonForVisitSection323(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentAllergiesSection325(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentAllergiesSection325(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentChiefComplaintSection327(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentChiefComplaintSection327(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection329(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentChiefComplaintAndReasonForVisitSection329(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentFamilyHistorySection331(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentFamilyHistorySection331(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentGeneralStatusSection333(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentGeneralStatusSection333(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentHistoryOfPastIllnessSection335(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentHistoryOfPastIllnessSection335(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentImmunizationsSection337(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentImmunizationsSection337(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional339(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentMedicationsSectionEntriesOptional339(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentProblemSectionEntriesOptional341(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentProblemSectionEntriesOptional341(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentProceduresSectionEntriesOptional343(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentProceduresSectionEntriesOptional343(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentResultsSectionEntriesOptional345(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentResultsSectionEntriesOptional345(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentReviewOfSystemsSection347(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentReviewOfSystemsSection347(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentSocialHistorySection349(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentSocialHistorySection349(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional351(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyComponentVitalSignsSectionEntriesOptional351(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyAssessmentAndPlanSection310(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyAssessmentAndPlanSection310(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyAssessmentSection312(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyAssessmentSection312(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyPlanOfCareSection314(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyPlanOfCareSection314(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyHistoryOfPresentIllness316(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyHistoryOfPresentIllness316(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyPhysicalExamSection318(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyPhysicalExamSection318(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyReasonForReferralSection320(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyReasonForReferralSection320(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyReasonForVisitSection322(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyReasonForVisitSection322(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyAllergiesSection324(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyAllergiesSection324(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyChiefComplaintSection326(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyChiefComplaintSection326(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyChiefComplaintAndReasonForVisitSection328(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyChiefComplaintAndReasonForVisitSection328(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyFamilyHistorySection330(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyFamilyHistorySection330(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyGeneralStatusSection332(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyGeneralStatusSection332(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyHistoryOfPastIllnessSection334(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyHistoryOfPastIllnessSection334(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyImmunizationsSection336(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyImmunizationsSection336(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyMedicationsSectionEntriesOptional338(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyMedicationsSectionEntriesOptional338(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyProblemSectionEntriesOptional340(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyProblemSectionEntriesOptional340(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyProceduresSectionEntriesOptional342(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyProceduresSectionEntriesOptional342(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyResultsSectionEntriesOptional344(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyResultsSectionEntriesOptional344(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyReviewOfSystemsSection346(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyReviewOfSystemsSection346(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodySocialHistorySection348(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodySocialHistorySection348(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBodyVitalSignsSectionEntriesOptional350(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBodyVitalSignsSectionEntriesOptional350(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateConsultationNoteComponentStructuredBody309(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNoteOperations.validateConsultationNoteComponentStructuredBody309(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateConsultationNoteComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteComponentOf(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteAssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteAssessmentSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteAssessmentAndPlanSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteAssessmentAndPlanSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNotePlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePlanOfCareSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteHistoryOfPresentIllness(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHistoryOfPresentIllness(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNotePhysicalExamSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNotePhysicalExamSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteReasonForReferralSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteReasonForReferralSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteReasonForVisitSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteReasonForVisitSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteAllergiesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteAllergiesSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteChiefComplaintSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteChiefComplaintSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteFamilyHistorySection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteGeneralStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteGeneralStatusSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteHistoryOfPastIllnessSection(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteImmunizationsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteMedicationsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteMedicationsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteProblemSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteProblemSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteProceduresSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteResultsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteResultsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteReviewOfSystemsSection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteSocialHistorySection(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateConsultationNoteVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ConsultationNoteOperations.validateConsultationNoteVitalSignsSectionEntriesOptional(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AssessmentSection getAssessmentSection() {
-		return ConsultationNoteOperations.getAssessmentSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
-		return ConsultationNoteOperations.getAssessmentAndPlanSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PlanOfCareSection getPlanOfCareSection() {
-		return ConsultationNoteOperations.getPlanOfCareSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HistoryOfPresentIllnessSection getHistoryOfPresentIllness() {
-		return ConsultationNoteOperations.getHistoryOfPresentIllness(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PhysicalExamSection getPhysicalExamSection() {
-		return ConsultationNoteOperations.getPhysicalExamSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReasonForReferralSection getReasonForReferralSection() {
-		return ConsultationNoteOperations.getReasonForReferralSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReasonForVisitSection getReasonForVisitSection() {
-		return ConsultationNoteOperations.getReasonForVisitSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AllergiesSectionEntriesOptional getAllergiesSection() {
-		return ConsultationNoteOperations.getAllergiesSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ChiefComplaintSection getChiefComplaintSection() {
-		return ConsultationNoteOperations.getChiefComplaintSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-		return ConsultationNoteOperations.getChiefComplaintAndReasonForVisitSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FamilyHistorySection getFamilyHistorySection() {
-		return ConsultationNoteOperations.getFamilyHistorySection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeneralStatusSection getGeneralStatusSection() {
-		return ConsultationNoteOperations.getGeneralStatusSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection() {
-		return ConsultationNoteOperations.getHistoryOfPastIllnessSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ImmunizationsSection getImmunizationsSection() {
-		return ConsultationNoteOperations.getImmunizationsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional() {
-		return ConsultationNoteOperations.getMedicationsSectionEntriesOptional(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProblemSectionEntriesOptional getProblemSectionEntriesOptional() {
-		return ConsultationNoteOperations.getProblemSectionEntriesOptional(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional() {
-		return ConsultationNoteOperations.getProceduresSectionEntriesOptional(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResultsSectionEntriesOptional getResultsSectionEntriesOptional() {
-		return ConsultationNoteOperations.getResultsSectionEntriesOptional(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReviewOfSystemsSection getReviewOfSystemsSection() {
-		return ConsultationNoteOperations.getReviewOfSystemsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SocialHistorySection getSocialHistorySection() {
-		return ConsultationNoteOperations.getSocialHistorySection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
-		return ConsultationNoteOperations.getVitalSignsSectionEntriesOptional(this);
 	}
 
 	/**
@@ -793,17 +730,17 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	@Override
 	public ConsultationNote init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ConsultationNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ConsultationNoteImpl

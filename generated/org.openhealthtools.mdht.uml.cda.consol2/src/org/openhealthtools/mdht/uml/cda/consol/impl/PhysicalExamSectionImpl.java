@@ -30,8 +30,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Physical Exam Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -107,14 +105,11 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservation(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionEntry174(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionEntry174(this, diagnostics, context);
 	}
 
 	/**
@@ -122,11 +117,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionEntry176(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionEntry176(this, diagnostics, context);
 	}
 
 	/**
@@ -134,11 +126,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(
-			this, diagnostics, context);
+	public boolean validatePhysicalExamSectionEntry178(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionEntry178(this, diagnostics, context);
 	}
 
 	/**
@@ -146,9 +135,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<PressureUlcerObservation> getPressureUlcerObservations() {
-		return PhysicalExamSectionOperations.getPressureUlcerObservations(this);
+	public boolean validatePhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation175(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation175(this, diagnostics, context);
 	}
 
 	/**
@@ -156,9 +144,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<NumberOfPressureUlcersObservation> getNumberOfPressureUlcersObservations() {
-		return PhysicalExamSectionOperations.getNumberOfPressureUlcersObservations(this);
+	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation177(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation177(this, diagnostics, context);
 	}
 
 	/**
@@ -166,9 +153,8 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<HighestPressureUlcerStage> getHighestPressureUlcerStages() {
-		return PhysicalExamSectionOperations.getHighestPressureUlcerStages(this);
+	public boolean validatePhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage179(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage179(this, diagnostics, context);
 	}
 
 	/**
@@ -178,17 +164,17 @@ public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExam
 	 */
 	@Override
 	public PhysicalExamSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PhysicalExamSectionImpl

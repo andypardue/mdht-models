@@ -24,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directives Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,10 +54,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
-			this, diagnostics, context);
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2Entry1174(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2Entry1174(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +63,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirectiveOrganizer> getAdvanceDirectiveOrganizers() {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.getAdvanceDirectiveOrganizers(this);
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2Entry1176(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2Entry1176(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +72,17 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdvanceDirectiveObservation2> getConsolAdvanceDirectiveObservation2s() {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.getConsolAdvanceDirectiveObservation2s(this);
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21175(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation21175(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1177(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer1177(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +93,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +104,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -112,20 +115,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptional2Operations.validateAdvanceDirectivesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -135,17 +125,17 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 */
 	@Override
 	public AdvanceDirectivesSectionEntriesOptional2 init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AdvanceDirectivesSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectivesSectionEntriesOptional2Impl

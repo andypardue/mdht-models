@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Activity Encounter</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	@Override
 	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 */
 	@Override
 	public boolean validatePlanOfCareActivityEncounterClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterClassCode(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 */
 	@Override
 	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(
-			this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -102,17 +97,17 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 */
 	@Override
 	public PlanOfCareActivityEncounter init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public PlanOfCareActivityEncounter init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareActivityEncounterImpl

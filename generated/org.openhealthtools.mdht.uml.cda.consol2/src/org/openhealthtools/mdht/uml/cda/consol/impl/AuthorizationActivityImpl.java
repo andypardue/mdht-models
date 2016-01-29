@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Authorization Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -99,8 +97,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	@Override
 	public boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(
-			this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +108,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	@Override
 	public boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasClinicalStatement(
-			this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasClinicalStatement(this, diagnostics, context);
 	}
 
 	/**
@@ -123,8 +119,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	@Override
 	public boolean validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(
-			this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +130,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	@Override
 	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
-			this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -146,17 +140,17 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 */
 	@Override
 	public AuthorizationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public AuthorizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AuthorizationActivityImpl

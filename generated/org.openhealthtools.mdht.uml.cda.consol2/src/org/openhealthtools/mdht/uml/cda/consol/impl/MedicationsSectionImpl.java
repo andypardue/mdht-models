@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionOper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -87,9 +85,8 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationsSectionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionMedication(this, diagnostics, context);
+	public boolean validateMedicationsSectionEntry132(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionEntry132(this, diagnostics, context);
 	}
 
 	/**
@@ -97,9 +94,8 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public EList<MedicationActivity> getMedications() {
-		return MedicationsSectionOperations.getMedications(this);
+	public boolean validateMedicationsSectionMedicationActivityEntryMedication133(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationsSectionOperations.validateMedicationsSectionMedicationActivityEntryMedication133(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +106,7 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	@Override
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSectionOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -121,17 +116,17 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	 */
 	@Override
 	public MedicationsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public MedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationsSectionImpl

@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Smoking Status Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -104,8 +102,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	@Override
 	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +112,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	@Override
 	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -145,8 +141,7 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(
-			this, diagnostics, context);
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(this, diagnostics, context);
 	}
 
 	/**
@@ -193,17 +188,17 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	@Override
 	public SmokingStatusObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public SmokingStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // SmokingStatusObservationImpl

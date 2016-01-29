@@ -13,8 +13,6 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationUseNoneKnownOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
@@ -57,27 +55,23 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationUseNoneKnownTextReference() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownTextReferenceTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationUseNoneKnown target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationUseNoneKnown target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+				target.init();
 
 			}
 
@@ -95,28 +89,27 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationUseNoneKnownTextReferenceValue() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownTextReferenceValueTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
 			"validateMedicationUseNoneKnownTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationUseNoneKnown target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
+
 			}
 
 			@Override
 			protected void updateToPass(MedicationUseNoneKnown target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -134,37 +127,27 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationUseNoneKnownReferenceValue() {
-		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownReferenceValueTestCase = new NarrativeReferenceTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownReferenceValueTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
+			"validateMedicationUseNoneKnownReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(MedicationUseNoneKnown target) {
-				target.init();
 
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
 			}
 
 			@Override
 			protected void updateToPass(MedicationUseNoneKnown target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
+				target.init();
 
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -186,8 +169,8 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationUseNoneKnownTemplateId() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownTemplateIdTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -220,8 +203,8 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationUseNoneKnownClassCode() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownClassCodeTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -254,8 +237,8 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationUseNoneKnownMoodCode() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownMoodCodeTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -283,7 +266,7 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationUseNoneKnownId() {
@@ -300,7 +283,7 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(MedicationUseNoneKnown target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -397,8 +380,8 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationUseNoneKnownEffectiveTime() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownEffectiveTimeTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -434,8 +417,8 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationUseNoneKnownStatusCode() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownStatusCodeTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -471,8 +454,8 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationUseNoneKnownStatusCodeP() {
 		OperationsTestCase<MedicationUseNoneKnown> validateMedicationUseNoneKnownStatusCodePTestCase = new OperationsTestCase<MedicationUseNoneKnown>(
-			"validateMedicationUseNoneKnownStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationUseNoneKnownStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -537,7 +520,7 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationUseNoneKnownValue() {
@@ -555,8 +538,9 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 			protected void updateToPass(MedicationUseNoneKnown target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("182904002", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
+
 			}
 
 			@Override
@@ -573,7 +557,7 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateMedicationUseNoneKnownValueP() {
@@ -591,9 +575,6 @@ public class MedicationUseNoneKnownTest extends CDAValidationTest {
 			protected void updateToPass(MedicationUseNoneKnown target) {
 				target.init();
 
-				// must exist as the correct type but the code value is not checked
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
 			}
 
 			@Override

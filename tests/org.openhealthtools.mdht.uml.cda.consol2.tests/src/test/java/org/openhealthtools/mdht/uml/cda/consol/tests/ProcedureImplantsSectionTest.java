@@ -52,8 +52,8 @@ public class ProcedureImplantsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureImplantsSectionTemplateId() {
 		OperationsTestCase<ProcedureImplantsSection> validateProcedureImplantsSectionTemplateIdTestCase = new OperationsTestCase<ProcedureImplantsSection>(
-			"validateProcedureImplantsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_IMPLANTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureImplantsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_IMPLANTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

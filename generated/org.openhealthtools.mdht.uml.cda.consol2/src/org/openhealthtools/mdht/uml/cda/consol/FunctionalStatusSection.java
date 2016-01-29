@@ -52,7 +52,19 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionTitle FunctionalStatusSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.14' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional status assessment' constraints.validation.info='FunctionalStatusSectionFunctionalStatusResultOrganizer FunctionalStatusSectionCognitiveStatusResultOrganizer FunctionalStatusSectionFunctionalStatusResultObservation FunctionalStatusSectionCognitiveStatusResultObservation FunctionalStatusSectionFunctionalStatusProblemObservation FunctionalStatusSectionCognitiveStatusProblemObservation FunctionalStatusSectionCaregiverCharacteristics FunctionalStatusSectionAssessmentScaleObservation FunctionalStatusSectionNonMedicinalSupplyActivity FunctionalStatusSectionPressureUlcerObservation FunctionalStatusSectionNumberOfPressureUlcersObservation FunctionalStatusSectionHighestPressureUlcerStage'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionTitle FunctionalStatusSectionText FunctionalStatusSectionEntry80 FunctionalStatusSectionEntry82 FunctionalStatusSectionEntry84 FunctionalStatusSectionEntry86 FunctionalStatusSectionEntry88 FunctionalStatusSectionEntry90 FunctionalStatusSectionEntry92 FunctionalStatusSectionEntry94 FunctionalStatusSectionEntry96 FunctionalStatusSectionEntry98 FunctionalStatusSectionEntry100 FunctionalStatusSectionEntry102' templateId.root='2.16.840.1.113883.10.20.22.2.14' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional status assessment' constraints.validation.info='FunctionalStatusSectionFunctionalStatusResultOrganizerEntryFunctionalStatusResultOrganizer81 FunctionalStatusSectionFunctionalStatusResultObservationEntryFunctionalStatusResultObservation83 FunctionalStatusSectionCognitiveStatusResultOrganizerEntryCognitiveStatusResultOrganizer85 FunctionalStatusSectionCognitiveStatusResultObservationEntryCognitiveStatusResultObservation87 FunctionalStatusSectionCognitiveStatusProblemObservationEntryCognitiveStatusProblemObservation89 FunctionalStatusSectionFunctionalStatusProblemObservationEntryFunctionalStatusProblemObservation91 FunctionalStatusSectionCaregiverCharacteristicsEntryCaregiverCharacteristics93 FunctionalStatusSectionAssessmentScaleObservationEntryAssessmentScaleObservation95 FunctionalStatusSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity97 FunctionalStatusSectionPressureUlcerObservationEntryPressureUlcerObservation99 FunctionalStatusSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation101 FunctionalStatusSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage103' constraints.validation.query='FunctionalStatusSectionFunctionalStatusResultOrganizerEntryFunctionalStatusResultOrganizer81 FunctionalStatusSectionFunctionalStatusResultObservationEntryFunctionalStatusResultObservation83 FunctionalStatusSectionCognitiveStatusResultOrganizerEntryCognitiveStatusResultOrganizer85 FunctionalStatusSectionCognitiveStatusResultObservationEntryCognitiveStatusResultObservation87 FunctionalStatusSectionCognitiveStatusProblemObservationEntryCognitiveStatusProblemObservation89 FunctionalStatusSectionFunctionalStatusProblemObservationEntryFunctionalStatusProblemObservation91 FunctionalStatusSectionCaregiverCharacteristicsEntryCaregiverCharacteristics93 FunctionalStatusSectionAssessmentScaleObservationEntryAssessmentScaleObservation95 FunctionalStatusSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity97 FunctionalStatusSectionPressureUlcerObservationEntryPressureUlcerObservation99 FunctionalStatusSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation101 FunctionalStatusSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage103'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionFunctionalStatusResultOrganizerEntry constraints.validation.info='FunctionalStatusSectionFunctionalStatusResultOrganizerEntryFunctionalStatusResultOrganizer81'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionFunctionalStatusResultObservationEntry constraints.validation.info='FunctionalStatusSectionFunctionalStatusResultObservationEntryFunctionalStatusResultObservation83'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionCognitiveStatusResultOrganizerEntry constraints.validation.info='FunctionalStatusSectionCognitiveStatusResultOrganizerEntryCognitiveStatusResultOrganizer85'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionCognitiveStatusResultObservationEntry constraints.validation.info='FunctionalStatusSectionCognitiveStatusResultObservationEntryCognitiveStatusResultObservation87'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionCognitiveStatusProblemObservationEntry constraints.validation.info='FunctionalStatusSectionCognitiveStatusProblemObservationEntryCognitiveStatusProblemObservation89'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionFunctionalStatusProblemObservationEntry constraints.validation.info='FunctionalStatusSectionFunctionalStatusProblemObservationEntryFunctionalStatusProblemObservation91'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionCaregiverCharacteristicsEntry constraints.validation.info='FunctionalStatusSectionCaregiverCharacteristicsEntryCaregiverCharacteristics93'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionAssessmentScaleObservationEntry constraints.validation.info='FunctionalStatusSectionAssessmentScaleObservationEntryAssessmentScaleObservation95'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionNonMedicinalSupplyActivityEntry constraints.validation.info='FunctionalStatusSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity97'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionPressureUlcerObservationEntry constraints.validation.info='FunctionalStatusSectionPressureUlcerObservationEntryPressureUlcerObservation99'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionNumberOfPressureUlcersObservationEntry constraints.validation.info='FunctionalStatusSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation101'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusSectionHighestPressureUlcerStageEntry constraints.validation.info='FunctionalStatusSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage103'"
  * @generated
  */
 public interface FunctionalStatusSection extends Section {
@@ -75,7 +87,7 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'47420-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'47420-5\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -106,29 +118,15 @@ public interface FunctionalStatusSection extends Section {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer))'"
-	 * @generated
-	 */
-	boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionCognitiveStatusResultOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry80(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,11 +135,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusResultObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionFunctionalStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry82(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,11 +147,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusResultObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionCognitiveStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry84(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -163,11 +159,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusProblemObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionFunctionalStatusProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry86(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -176,11 +171,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CognitiveStatusProblemObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionCognitiveStatusProblemObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry88(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -189,11 +183,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::CaregiverCharacteristics))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionCaregiverCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry90(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,11 +195,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::AssessmentScaleObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry92(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,11 +207,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry94(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,11 +219,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PressureUlcerObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionPressureUlcerObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry96(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -241,11 +231,10 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry98(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -254,119 +243,166 @@ public interface FunctionalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::HighestPressureUlcerStage))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusSectionEntry100(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer)).oclAsType(consol::FunctionalStatusResultOrganizer)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))'"
 	 * @generated
 	 */
-	EList<FunctionalStatusResultOrganizer> getFunctionalStatusResultOrganizers();
+	boolean validateFunctionalStatusSectionEntry102(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FunctionalStatusResultOrganizer)))'"
 	 * @generated
 	 */
-	EList<CognitiveStatusResultOrganizer> getCognitiveStatusResultOrganizers();
+	boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizerEntryFunctionalStatusResultOrganizer81(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusResultObservation)).oclAsType(consol::FunctionalStatusResultObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusResultObservation)))'"
 	 * @generated
 	 */
-	EList<FunctionalStatusResultObservation> getFunctionalStatusResultObservations();
+	boolean validateFunctionalStatusSectionFunctionalStatusResultObservationEntryFunctionalStatusResultObservation83(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)))'"
 	 * @generated
 	 */
-	EList<CognitiveStatusResultObservation> getCognitiveStatusResultObservations();
+	boolean validateFunctionalStatusSectionCognitiveStatusResultOrganizerEntryCognitiveStatusResultOrganizer85(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)).oclAsType(consol::FunctionalStatusProblemObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)))'"
 	 * @generated
 	 */
-	EList<FunctionalStatusProblemObservation> getFunctionalStatusProblemObservations();
+	boolean validateFunctionalStatusSectionCognitiveStatusResultObservationEntryCognitiveStatusResultObservation87(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)).oclAsType(consol::CognitiveStatusProblemObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusProblemObservation)))'"
 	 * @generated
 	 */
-	EList<CognitiveStatusProblemObservation> getCognitiveStatusProblemObservations();
+	boolean validateFunctionalStatusSectionCognitiveStatusProblemObservationEntryCognitiveStatusProblemObservation89(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CaregiverCharacteristics)).oclAsType(consol::CaregiverCharacteristics)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusProblemObservation)))'"
 	 * @generated
 	 */
-	EList<CaregiverCharacteristics> getCaregiverCharacteristicss();
+	boolean validateFunctionalStatusSectionFunctionalStatusProblemObservationEntryFunctionalStatusProblemObservation91(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleObservation)).oclAsType(consol::AssessmentScaleObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CaregiverCharacteristics)))'"
 	 * @generated
 	 */
-	EList<AssessmentScaleObservation> getAssessmentScaleObservations();
+	boolean validateFunctionalStatusSectionCaregiverCharacteristicsEntryCaregiverCharacteristics93(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity)).oclAsType(consol::NonMedicinalSupplyActivity)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AssessmentScaleObservation)))'"
 	 * @generated
 	 */
-	EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities();
+	boolean validateFunctionalStatusSectionAssessmentScaleObservationEntryAssessmentScaleObservation95(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)).oclAsType(consol::PressureUlcerObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(supply->exists(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity)))'"
 	 * @generated
 	 */
-	EList<PressureUlcerObservation> getPressureUlcerObservations();
+	boolean validateFunctionalStatusSectionNonMedicinalSupplyActivityEntryNonMedicinalSupplyActivity97(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)).oclAsType(consol::NumberOfPressureUlcersObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation)))'"
 	 * @generated
 	 */
-	EList<NumberOfPressureUlcersObservation> getNumberOfPressureUlcersObservations();
+	boolean validateFunctionalStatusSectionPressureUlcerObservationEntryPressureUlcerObservation99(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)).oclAsType(consol::HighestPressureUlcerStage)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)))'"
 	 * @generated
 	 */
-	EList<HighestPressureUlcerStage> getHighestPressureUlcerStages();
+	boolean validateFunctionalStatusSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation101(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)))'"
+	 * @generated
+	 */
+	boolean validateFunctionalStatusSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage103(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -376,9 +412,9 @@ public interface FunctionalStatusSection extends Section {
 	public FunctionalStatusSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection

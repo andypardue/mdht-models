@@ -17,9 +17,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedInterventionActOperations;
@@ -27,9 +24,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,51 +44,51 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActAuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Advance Directive Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActImmunizationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Immunization Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActProcedureActivityAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Procedure Activity Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActInterventionAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Intervention Act</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActProcedureActivityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Procedure Activity Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActProcedureActivityProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Procedure Activity Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEncounterActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Encounter Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Instruction2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Non Medicinal Supply Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedAct2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Act2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedEncounter2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Encounter2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedSupply2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Supply2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNutritionRecommendation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceDocInstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Doc Instance</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceGoalObs(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Goal Obs</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActHandoffCommunicationParticipants(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Handoff Communication Participants</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedImmunizationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Immunization Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1548(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1548</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1550(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1550</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1552(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1552</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1554(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1554</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1556(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1556</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1558(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1558</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1560(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1560</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1562(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1562</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1564(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1564</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1566(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1566</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1568(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1568</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1570(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1570</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1572(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1572</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1574(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1574</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1576(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1576</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1578(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1578</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1580(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1580</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1582(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1582</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1584(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1584</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1586(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1586</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryRelationship1588(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Relationship1588</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActReferenceExternalDocumentReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Reference External Document Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getAdvanceDirectiveObservation2s() <em>Get Advance Directive Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getImmunizationActivity2s() <em>Get Immunization Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getMedicationActivity2s() <em>Get Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getProcedureActivityAct2s() <em>Get Procedure Activity Act2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getInterventionActs() <em>Get Intervention Acts</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getProcedureActivityObservation2s() <em>Get Procedure Activity Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getProcedureActivityProcedure2s() <em>Get Procedure Activity Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEncounterActivity2s() <em>Get Encounter Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getInstruction2s() <em>Get Instruction2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNonMedicinalSupplyActivity2s() <em>Get Non Medicinal Supply Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedAct2s() <em>Get Planned Act2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedEncounter2s() <em>Get Planned Encounter2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedObservation2s() <em>Get Planned Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedProcedure2s() <em>Get Planned Procedure2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedMedicationActivity2s() <em>Get Planned Medication Activity2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedSupply2s() <em>Get Planned Supply2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getNutritionRecommendations() <em>Get Nutrition Recommendations</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceDocInstances() <em>Get Entry Reference Doc Instances</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getEntryReferenceGoalObs() <em>Get Entry Reference Goal Obs</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getHandoffCommunicationParticipantss() <em>Get Handoff Communication Participantss</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#getPlannedImmunizationActivities() <em>Get Planned Immunization Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Advance Directive Observation2 Entry Relationship Advance Directive Observation21549</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Immunization Activity2 Entry Relationship Immunization Activity21551</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Medication Activity2 Entry Relationship Medication Activity21553</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Procedure Activity Act2 Entry Relationship Procedure Activity Act21555</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Intervention Act Entry Relationship Intervention Act1557</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Procedure Activity Observation2 Entry Relationship Procedure Activity Observation21559</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Procedure Activity Procedure2 Entry Relationship Procedure Activity Procedure21561</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Encounter Activity2 Entry Relationship Encounter Activity21563</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Instruction2 Entry Relationship Instruction21565</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Non Medicinal Supply Activity2 Entry Relationship Non Medicinal Supply Activity21567</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Act2 Entry Relationship Planned Act21569</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Encounter2 Entry Relationship Planned Encounter21571</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Observation2 Entry Relationship Planned Observation21573</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Procedure2 Entry Relationship Planned Procedure21575</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Medication Activity2 Entry Relationship Planned Medication Activity21577</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Supply2 Entry Relationship Planned Supply21579</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Nutrition Recommendation Entry Relationship Nutrition Recommendation1581</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Entry Relationship Entry Reference Doc Instance1583</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Entry Reference Entry Relationship Entry Reference Goal Obs1585</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Handoff Communication Participants Entry Relationship Handoff Communication Participants1587</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct#validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Planned Immunization Activity Entry Relationship Planned Immunization Activity1589</em>}</li>
  * </ul>
  * </p>
  *
@@ -110,8 +104,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActTemplateId() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActTemplateIdTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -144,8 +138,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActClassCode() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActClassCodeTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -173,24 +167,24 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActMoodCodeP() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActMoodCodePTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActMoodCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				// only checking attribute existence for this test not value
-				target.setMoodCode(x_DocumentActMood.EVN);
+				target.init();
+
 			}
 
 			@Override
@@ -207,7 +201,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActMoodCode() {
@@ -218,14 +212,20 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-				target.setMoodCode(x_DocumentActMood.EVN);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				target.setMoodCode(x_DocumentActMood.PRP);
+				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(PlannedInterventionAct target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionActMoodCodeP", passToken);
 			}
 
 			@Override
@@ -242,7 +242,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActId() {
@@ -259,7 +259,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
 				target.init();
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
 			}
 
 			@Override
@@ -351,25 +351,27 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActStatusCode() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActStatusCodeTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
-				target.setStatusCode(cs);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				target.setStatusCode(DatatypesFactory.eINSTANCE.createCS("active"));
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
 			}
 
 			@Override
@@ -391,8 +393,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActStatusCodeP() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActStatusCodePTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -425,8 +427,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActEffectiveTime() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEffectiveTimeTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -457,23 +459,25 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActAuthorParticipation() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActAuthorParticipationTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				target.getAuthors().add(ConsolFactory.eINSTANCE.createAuthorParticipation().init());
+				target.init();
+
 			}
 
 			@Override
@@ -490,762 +494,7 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActAdvanceDirectiveObservation2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActAdvanceDirectiveObservation2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActAdvanceDirectiveObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createAdvanceDirectiveObservation2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActAdvanceDirectiveObservation2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActAdvanceDirectiveObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActImmunizationActivity2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActImmunizationActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActImmunizationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createImmunizationActivity2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActImmunizationActivity2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActImmunizationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActMedicationActivity2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActMedicationActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActMedicationActivity2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActProcedureActivityAct2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityAct2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActProcedureActivityAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createProcedureActivityAct2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityAct2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActProcedureActivityAct2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActInterventionAct() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActInterventionActTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActInterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createInterventionAct().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActInterventionAct(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActInterventionActTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActProcedureActivityObservation2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityObservation2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActProcedureActivityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createProcedureActivityObservation2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityObservation2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActProcedureActivityObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActProcedureActivityProcedure2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityProcedure2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityProcedure2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActProcedureActivityProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActEncounterActivity2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEncounterActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActEncounterActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setEncounter(ConsolFactory.eINSTANCE.createEncounterActivity2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActEncounterActivity2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActEncounterActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActInstruction2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActInstruction2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActInstruction2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActInstruction2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActInstruction2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActNonMedicinalSupplyActivity2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActNonMedicinalSupplyActivity2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActNonMedicinalSupplyActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedAct2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedAct2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedAct2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedAct2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedEncounter2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedEncounter2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedEncounter2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedEncounter2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedObservation2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedObservation2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedObservation2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedProcedure2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedProcedure2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedProcedure2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedMedicationActivity2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedMedicationActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedMedicationActivity2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedSupply2() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedSupply2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedSupply2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActNutritionRecommendation() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNutritionRecommendationTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActNutritionRecommendation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createNutritionRecommendation().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendation(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActNutritionRecommendationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActEntryReferenceDocInstance() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryReferenceDocInstanceTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActEntryReferenceDocInstance",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceDocInstance(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActEntryReferenceDocInstanceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActEntryReferenceGoalObs() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryReferenceGoalObsTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActEntryReferenceGoalObs",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createEntryReference().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceGoalObs(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActEntryReferenceGoalObsTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActHandoffCommunicationParticipants() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActHandoffCommunicationParticipantsTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActHandoffCommunicationParticipants",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createHandoffCommunicationParticipants().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActHandoffCommunicationParticipants(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActHandoffCommunicationParticipantsTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedInterventionActPlannedImmunizationActivity() {
-		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedImmunizationActivityTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedImmunizationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(PlannedInterventionAct target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedImmunizationActivity().init());
-				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedImmunizationActivity(
-					(PlannedInterventionAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedInterventionActPlannedImmunizationActivityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActReference() {
@@ -1256,13 +505,13 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				target.getReferences().add(ref);
+				target.init();
+
 			}
 
 			@Override
@@ -1279,27 +528,781 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1548() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1548TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1548",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1548__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1548(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1548TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1550() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1550TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1550",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1550__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1550(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1550TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1552() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1552TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1552",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1552__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1552(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1552TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1554() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1554TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1554",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1554__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1554(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1554TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1556() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1556TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1556",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1556__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1556(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1556TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1558() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1558TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1558",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1558__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1558(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1558TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1560() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1560TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1560",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1560__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1560(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1560TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1562() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1562TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1562",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1562__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1562(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1562TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1564() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1564TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1564",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1564__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1564(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1564TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1566() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1566TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1566",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1566__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1566(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1566TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1568() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1568TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1568",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1568__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1568(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1568TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1570() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1570TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1570",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1570__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1570(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1570TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1572() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1572TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1572",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1572__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1572(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1572TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1574() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1574TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1574",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1574__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1574(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1574TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1576() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1576TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1576",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1576__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1576(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1576TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1578() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1578TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1578",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1578__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1578(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1578TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1580() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1580TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1580",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1580__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1580(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1580TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1582() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1582TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1582",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1582__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1582(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1582TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1584() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1584TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1584",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1584__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1584(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1584TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1586() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1586TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1586",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1586__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1586(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1586TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidatePlannedInterventionActEntryRelationship1588() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryRelationship1588TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryRelationship1588",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_RELATIONSHIP1588__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryRelationship1588(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryRelationship1588TestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActReferenceTypeCode() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActReferenceTypeCodeTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				target.getReferences().add(ref);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				for (Reference r : target.getReferences()) {
-					r.setTypeCode(x_ActRelationshipExternalReference.REFR);
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1316,27 +1319,25 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidatePlannedInterventionActReferenceExternalDocumentReference() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActReferenceExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(PlannedInterventionAct target) {
-				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				target.getReferences().add(ref);
+
 			}
 
 			@Override
 			protected void updateToPass(PlannedInterventionAct target) {
-				for (Reference r : target.getReferences()) {
-					r.setExternalDocument(ConsolFactory.eINSTANCE.createExternalDocumentReference().init());
-				}
+				target.init();
+
 			}
 
 			@Override
@@ -1356,11 +1357,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAdvanceDirectiveObservation2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getAdvanceDirectiveObservation2s();
+	public void testValidatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2_ENTRY_RELATIONSHIP_ADVANCE_DIRECTIVE_OBSERVATION21549__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation21549TestCase.doValidationTest();
 	}
 
 	/**
@@ -1368,11 +1393,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetImmunizationActivity2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getImmunizationActivity2s();
+	public void testValidatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_IMMUNIZATION_ACTIVITY21551__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActImmunizationActivity2EntryRelationshipImmunizationActivity21551TestCase.doValidationTest();
 	}
 
 	/**
@@ -1380,11 +1429,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetMedicationActivity2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getMedicationActivity2s();
+	public void testValidatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_MEDICATION_ACTIVITY21553__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActMedicationActivity2EntryRelationshipMedicationActivity21553TestCase.doValidationTest();
 	}
 
 	/**
@@ -1392,11 +1465,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProcedureActivityAct2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getProcedureActivityAct2s();
+	public void testValidatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_ACT21555__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActProcedureActivityAct2EntryRelationshipProcedureActivityAct21555TestCase.doValidationTest();
 	}
 
 	/**
@@ -1404,11 +1501,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInterventionActs() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getInterventionActs();
+	public void testValidatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT_ENTRY_RELATIONSHIP_INTERVENTION_ACT1557__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActInterventionActEntryRelationshipInterventionAct1557TestCase.doValidationTest();
 	}
 
 	/**
@@ -1416,11 +1537,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProcedureActivityObservation2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getProcedureActivityObservation2s();
+	public void testValidatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_OBSERVATION21559__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActProcedureActivityObservation2EntryRelationshipProcedureActivityObservation21559TestCase.doValidationTest();
 	}
 
 	/**
@@ -1428,11 +1573,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetProcedureActivityProcedure2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getProcedureActivityProcedure2s();
+	public void testValidatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2_ENTRY_RELATIONSHIP_PROCEDURE_ACTIVITY_PROCEDURE21561__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure21561TestCase.doValidationTest();
 	}
 
 	/**
@@ -1440,11 +1609,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetEncounterActivity2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getEncounterActivity2s();
+	public void testValidatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2_ENTRY_RELATIONSHIP_ENCOUNTER_ACTIVITY21563__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEncounterActivity2EntryRelationshipEncounterActivity21563TestCase.doValidationTest();
 	}
 
 	/**
@@ -1452,11 +1645,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetInstruction2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getInstruction2s();
+	public void testValidatePlannedInterventionActInstruction2EntryRelationshipInstruction21565() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2_ENTRY_RELATIONSHIP_INSTRUCTION21565__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActInstruction2EntryRelationshipInstruction21565TestCase.doValidationTest();
 	}
 
 	/**
@@ -1464,11 +1681,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNonMedicinalSupplyActivity2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getNonMedicinalSupplyActivity2s();
+	public void testValidatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2_ENTRY_RELATIONSHIP_NON_MEDICINAL_SUPPLY_ACTIVITY21567__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActNonMedicinalSupplyActivity2EntryRelationshipNonMedicinalSupplyActivity21567TestCase.doValidationTest();
 	}
 
 	/**
@@ -1476,11 +1717,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedAct2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedAct2s();
+	public void testValidatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2_ENTRY_RELATIONSHIP_PLANNED_ACT21569__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedAct2EntryRelationshipPlannedAct21569TestCase.doValidationTest();
 	}
 
 	/**
@@ -1488,11 +1753,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedEncounter2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedEncounter2s();
+	public void testValidatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2_ENTRY_RELATIONSHIP_PLANNED_ENCOUNTER21571__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedEncounter2EntryRelationshipPlannedEncounter21571TestCase.doValidationTest();
 	}
 
 	/**
@@ -1500,11 +1789,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedObservation2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedObservation2s();
+	public void testValidatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2_ENTRY_RELATIONSHIP_PLANNED_OBSERVATION21573__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedObservation2EntryRelationshipPlannedObservation21573TestCase.doValidationTest();
 	}
 
 	/**
@@ -1512,11 +1825,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedProcedure2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedProcedure2s();
+	public void testValidatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2_ENTRY_RELATIONSHIP_PLANNED_PROCEDURE21575__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedProcedure2EntryRelationshipPlannedProcedure21575TestCase.doValidationTest();
 	}
 
 	/**
@@ -1524,11 +1861,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedMedicationActivity2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedMedicationActivity2s();
+	public void testValidatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2_ENTRY_RELATIONSHIP_PLANNED_MEDICATION_ACTIVITY21577__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedMedicationActivity2EntryRelationshipPlannedMedicationActivity21577TestCase.doValidationTest();
 	}
 
 	/**
@@ -1536,11 +1897,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedSupply2s() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedSupply2s();
+	public void testValidatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2_ENTRY_RELATIONSHIP_PLANNED_SUPPLY21579__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedSupply2EntryRelationshipPlannedSupply21579TestCase.doValidationTest();
 	}
 
 	/**
@@ -1548,11 +1933,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetNutritionRecommendations() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getNutritionRecommendations();
+	public void testValidatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION_ENTRY_RELATIONSHIP_NUTRITION_RECOMMENDATION1581__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActNutritionRecommendationEntryRelationshipNutritionRecommendation1581TestCase.doValidationTest();
 	}
 
 	/**
@@ -1560,11 +1969,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetEntryReferenceDocInstances() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getEntryReferenceDocInstances();
+	public void testValidatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_DOC_INSTANCE1583__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceDocInstance1583TestCase.doValidationTest();
 	}
 
 	/**
@@ -1572,11 +2005,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetEntryReferenceGoalObs() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getEntryReferenceGoalObs();
+	public void testValidatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_ENTRY_RELATIONSHIP_ENTRY_REFERENCE_GOAL_OBS1585__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActEntryReferenceEntryRelationshipEntryReferenceGoalObs1585TestCase.doValidationTest();
 	}
 
 	/**
@@ -1584,11 +2041,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetHandoffCommunicationParticipantss() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getHandoffCommunicationParticipantss();
+	public void testValidatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS_ENTRY_RELATIONSHIP_HANDOFF_COMMUNICATION_PARTICIPANTS1587__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActHandoffCommunicationParticipantsEntryRelationshipHandoffCommunicationParticipants1587TestCase.doValidationTest();
 	}
 
 	/**
@@ -1596,11 +2077,35 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPlannedImmunizationActivities() {
 
-		PlannedInterventionAct target = objectFactory.create();
-		target.getPlannedImmunizationActivities();
+	public void testValidatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589() {
+		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589TestCase = new OperationsTestCase<PlannedInterventionAct>(
+			"validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY_ENTRY_RELATIONSHIP_PLANNED_IMMUNIZATION_ACTIVITY1589__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(PlannedInterventionAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedInterventionAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedInterventionActOperations.validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589(
+					(PlannedInterventionAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedInterventionActPlannedImmunizationActivityEntryRelationshipPlannedImmunizationActivity1589TestCase.doValidationTest();
 	}
 
 	/**

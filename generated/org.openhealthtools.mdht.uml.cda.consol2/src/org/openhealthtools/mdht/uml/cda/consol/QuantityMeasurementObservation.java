@@ -26,7 +26,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getQuantityMeasurementObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='QuantityMeasurementObservationTemplateId QuantityMeasurementObservationClassCode QuantityMeasurementObservationMoodCode QuantityMeasurementObservationCode QuantityMeasurementObservationValue' templateId.root='2.16.840.1.113883.10.20.6.2.14' constraints.validation.warning='QuantityMeasurementObservationCodeCodeSystemDIR QuantityMeasurementObservationCodeCodeSystemDICOM QuantityMeasurementObservationEffectiveTime' classCode='OBS' moodCode='EVN' constraints.validation.info='QuantityMeasurementObservationSOPInstanceObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='QuantityMeasurementObservationTemplateId QuantityMeasurementObservationClassCode QuantityMeasurementObservationMoodCode QuantityMeasurementObservationCode QuantityMeasurementObservationValue QuantityMeasurementObservationEntryRelationship552' templateId.root='2.16.840.1.113883.10.20.6.2.14' constraints.validation.warning='QuantityMeasurementObservationCodeCodeSystemDIR QuantityMeasurementObservationCodeCodeSystemDICOM QuantityMeasurementObservationEffectiveTime' classCode='OBS' moodCode='EVN' constraints.validation.info='QuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation553' constraints.validation.query='QuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation553'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolQuantityMeasurementObservationSOPInstanceObservationEntryRelationship constraints.validation.info='QuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation553'"
  * @generated
  */
 public interface QuantityMeasurementObservation extends Observation {
@@ -135,20 +136,22 @@ public interface QuantityMeasurementObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SPRT)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateQuantityMeasurementObservationSOPInstanceObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateQuantityMeasurementObservationEntryRelationship552(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)).oclAsType(consol::SOPInstanceObservation)'"
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation)))'"
 	 * @generated
 	 */
-	EList<SOPInstanceObservation> getSOPInstanceObservations();
+	boolean validateQuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation553(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,9 +161,9 @@ public interface QuantityMeasurementObservation extends Observation {
 	public QuantityMeasurementObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public QuantityMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // QuantityMeasurementObservation

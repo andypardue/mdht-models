@@ -52,8 +52,8 @@ public class ReasonForReferralSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateReasonForReferralSectionTemplateId() {
 		OperationsTestCase<ReasonForReferralSection> validateReasonForReferralSectionTemplateIdTestCase = new OperationsTestCase<ReasonForReferralSection>(
-			"validateReasonForReferralSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReasonForReferralSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -121,9 +121,9 @@ public interface ExternalDocumentReference extends ExternalDocument {
 	public ExternalDocumentReference init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ExternalDocumentReference init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ExternalDocumentReference

@@ -11,24 +11,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentScaleObservationOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,13 +45,13 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationAssessmentScaleSupportingObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Assessment Scale Supporting Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationEntryRelationship560(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Entry Relationship560</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationReferenceRangeObservationRangeText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationReferenceRangeObservationRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Reference Range Observation Range</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#getAssessmentScaleSupportingObservations() <em>Get Assessment Scale Supporting Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation#validateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Assessment Scale Supporting Observation Entry Relationship Assessment Scale Supporting Observation561</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,13 +62,14 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationCodeCodeSystem() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationCodeCodeSystemTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationCodeCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +80,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.1", "", ""));
+
 			}
 
 			@Override
@@ -104,27 +97,24 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationInterpretationCodeTranslation() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationInterpretationCodeTranslationTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationInterpretationCodeTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservation target) {
-				target.init();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
-				target.getInterpretationCodes().clear();
-				CE ic = DatatypesFactory.eINSTANCE.createCE();
-				ic.getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
-				target.getInterpretationCodes().add(ic);
+				target.init();
 
 			}
 
@@ -147,8 +137,8 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentScaleObservationTemplateId() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationTemplateIdTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentScaleObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -181,8 +171,8 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentScaleObservationClassCode() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationClassCodeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentScaleObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -215,8 +205,8 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentScaleObservationMoodCode() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationMoodCodeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentScaleObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -281,13 +271,14 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationDerivationExpr() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationDerivationExprTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationDerivationExpr",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_DERIVATION_EXPR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -298,7 +289,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
 				target.init();
-				target.setDerivationExpr(DatatypesFactory.eINSTANCE.createST());
+
 			}
 
 			@Override
@@ -321,7 +312,8 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	public void testValidateAssessmentScaleObservationEffectiveTime() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationEffectiveTimeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -389,13 +381,14 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationInterpretationCode() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationInterpretationCodeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -406,7 +399,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
 				target.init();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+
 			}
 
 			@Override
@@ -428,8 +421,8 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentScaleObservationStatusCode() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationStatusCodeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentScaleObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -465,8 +458,8 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentScaleObservationStatusCodeP() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationStatusCodePTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentScaleObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -531,13 +524,13 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationAuthor() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationAuthorTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentScaleObservationAuthor", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -548,7 +541,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
 				target.init();
-				target.getAuthors().add(CDAFactory.eINSTANCE.createAuthor());
+
 			}
 
 			@Override
@@ -565,13 +558,14 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationReferenceRange() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -582,7 +576,7 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
 				target.init();
-				target.getReferenceRanges().add(CDAFactory.eINSTANCE.createReferenceRange());
+
 			}
 
 			@Override
@@ -599,13 +593,15 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateAssessmentScaleObservationAssessmentScaleSupportingObservation() {
-		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationAssessmentScaleSupportingObservationTestCase = new OperationsTestCase<AssessmentScaleObservation>(
-			"validateAssessmentScaleObservationAssessmentScaleSupportingObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateAssessmentScaleObservationEntryRelationship560() {
+		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationEntryRelationship560TestCase = new OperationsTestCase<AssessmentScaleObservation>(
+			"validateAssessmentScaleObservationEntryRelationship560",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ENTRY_RELATIONSHIP560__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -616,55 +612,41 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
 				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setObservation(ConsolFactory.eINSTANCE.createAssessmentScaleSupportingObservation().init());
-				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAssessmentScaleSupportingObservation(
+				return AssessmentScaleObservationOperations.validateAssessmentScaleObservationEntryRelationship560(
 					(AssessmentScaleObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAssessmentScaleObservationAssessmentScaleSupportingObservationTestCase.doValidationTest();
+		validateAssessmentScaleObservationEntryRelationship560TestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationReferenceRangeObservationRangeTextReference() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservation target) {
-				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setText(DatatypesFactory.eINSTANCE.createED());
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
-				target.getReferenceRanges().clear();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setText(txt);
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+				target.init();
 
 			}
 
@@ -682,37 +664,27 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValueTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservation target) {
-				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				or.setText(txt);
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
-				target.getReferenceRanges().clear();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setText(txt);
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -730,48 +702,27 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue() {
-		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValueTestCase = new NarrativeReferenceTestCase<AssessmentScaleObservation>(
+		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValueTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservation target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
 
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
+				target.init();
 
-				// add a reference to the section text
-				ED txt = createEDWithReference("Some sample text", "#1.2.3.4");
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setText(txt);
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
 
 			}
 
@@ -789,32 +740,28 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationReferenceRangeObservationRangeText() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeObservationRangeTextTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationReferenceRangeObservationRangeText",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservation target) {
-				target.init();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
-				target.getReferenceRanges().clear();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
-				or.setText(DatatypesFactory.eINSTANCE.createED());
-				rr.setObservationRange(or);
-				target.getReferenceRanges().add(rr);
+				target.init();
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
+
 			}
 
 			@Override
@@ -831,27 +778,25 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateAssessmentScaleObservationReferenceRangeObservationRange() {
 		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationReferenceRangeObservationRangeTestCase = new OperationsTestCase<AssessmentScaleObservation>(
 			"validateAssessmentScaleObservationReferenceRangeObservationRange",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AssessmentScaleObservation target) {
-				target.init();
-				target.getReferenceRanges().add(CDAFactory.eINSTANCE.createReferenceRange());
+
 			}
 
 			@Override
 			protected void updateToPass(AssessmentScaleObservation target) {
-				target.getReferenceRanges().clear();
-				ReferenceRange rr = CDAFactory.eINSTANCE.createReferenceRange();
-				rr.setObservationRange(CDAFactory.eINSTANCE.createObservationRange());
-				target.getReferenceRanges().add(rr);
+				target.init();
+
 			}
 
 			@Override
@@ -871,11 +816,35 @@ public class AssessmentScaleObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetAssessmentScaleSupportingObservations() {
 
-		AssessmentScaleObservation target = objectFactory.create();
-		target.getAssessmentScaleSupportingObservations();
+	public void testValidateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561() {
+		OperationsTestCase<AssessmentScaleObservation> validateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561TestCase = new OperationsTestCase<AssessmentScaleObservation>(
+			"validateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION_ENTRY_RELATIONSHIP_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION561__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(AssessmentScaleObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AssessmentScaleObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561(
+					(AssessmentScaleObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAssessmentScaleObservationAssessmentScaleSupportingObservationEntryRelationshipAssessmentScaleSupportingObservation561TestCase.doValidationTest();
 	}
 
 	/**

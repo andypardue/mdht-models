@@ -15,15 +15,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CoverageActivityOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,8 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#validateCoverageActivityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#validateCoverageActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#validateCoverageActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#validateCoverageActivityPolicyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Policy Activity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#getPolicyActivities() <em>Get Policy Activities</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#validateCoverageActivityEntryRelationship236(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Entry Relationship236</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity#validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Policy Activity Entry Relationship Policy Activity237</em>}</li>
  * </ul>
  * </p>
  *
@@ -52,28 +49,25 @@ public class CoverageActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateCoverageActivityCoverageActivityRelationshipSequenceNumber() {
 		OperationsTestCase<CoverageActivity> validateCoverageActivityCoverageActivityRelationshipSequenceNumberTestCase = new OperationsTestCase<CoverageActivity>(
 			"validateCoverageActivityCoverageActivityRelationshipSequenceNumber",
-			operationsForOCL.getOCLValue("VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CoverageActivity target) {
-				target.init();
-				target.getEntryRelationships().add(CDAFactory.eINSTANCE.createEntryRelationship());
+
 			}
 
 			@Override
 			protected void updateToPass(CoverageActivity target) {
-				target.getEntryRelationships().clear();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setAct(ConsolFactory.eINSTANCE.createPolicyActivity().init());
-				er.setSequenceNumber(DatatypesFactory.eINSTANCE.createINT());
-				target.getEntryRelationships().add(er);
+				target.init();
+
 			}
 
 			@Override
@@ -158,7 +152,7 @@ public class CoverageActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCoverageActivityCode() {
@@ -175,7 +169,7 @@ public class CoverageActivityTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(CoverageActivity target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCE("48768-6", "2.16.840.1.113883.6.1"));
+
 			}
 
 			@Override
@@ -192,7 +186,7 @@ public class CoverageActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateCoverageActivityId() {
@@ -203,12 +197,12 @@ public class CoverageActivityTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(CoverageActivity target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(CoverageActivity target) {
-				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.init();
 
 			}
 
@@ -297,39 +291,37 @@ public class CoverageActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateCoverageActivityPolicyActivity() {
-		OperationsTestCase<CoverageActivity> validateCoverageActivityPolicyActivityTestCase = new OperationsTestCase<CoverageActivity>(
-			"validateCoverageActivityPolicyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateCoverageActivityEntryRelationship236() {
+		OperationsTestCase<CoverageActivity> validateCoverageActivityEntryRelationship236TestCase = new OperationsTestCase<CoverageActivity>(
+			"validateCoverageActivityEntryRelationship236", operationsForOCL.getOCLValue(
+				"VALIDATE_COVERAGE_ACTIVITY_ENTRY_RELATIONSHIP236__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(CoverageActivity target) {
-				target.init();
 
 			}
 
 			@Override
 			protected void updateToPass(CoverageActivity target) {
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-				er.setAct(ConsolFactory.eINSTANCE.createPolicyActivity().init());
-				target.getEntryRelationships().add(er);
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CoverageActivityOperations.validateCoverageActivityPolicyActivity(
+				return CoverageActivityOperations.validateCoverageActivityEntryRelationship236(
 					(CoverageActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateCoverageActivityPolicyActivityTestCase.doValidationTest();
+		validateCoverageActivityEntryRelationship236TestCase.doValidationTest();
 	}
 
 	/**
@@ -337,11 +329,35 @@ public class CoverageActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetPolicyActivities() {
 
-		CoverageActivity target = objectFactory.create();
-		target.getPolicyActivities();
+	public void testValidateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237() {
+		OperationsTestCase<CoverageActivity> validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237TestCase = new OperationsTestCase<CoverageActivity>(
+			"validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_POLICY_ACTIVITY237__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
+			@Override
+			protected void updateToFail(CoverageActivity target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CoverageActivity target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CoverageActivityOperations.validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237(
+					(CoverageActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCoverageActivityPolicyActivityEntryRelationshipPolicyActivity237TestCase.doValidationTest();
 	}
 
 	/**

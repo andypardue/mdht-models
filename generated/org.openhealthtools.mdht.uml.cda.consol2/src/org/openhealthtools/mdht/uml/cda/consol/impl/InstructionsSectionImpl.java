@@ -28,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Instructions Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,6 +96,24 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInstructionsSectionEntry524(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSectionOperations.validateInstructionsSectionEntry524(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInstructionsSectionInstructionsEntryInstructions525(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSectionOperations.validateInstructionsSectionInstructionsEntryInstructions525(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateInstructionsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionTitle(this, diagnostics, context);
@@ -109,38 +125,18 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	 * @generated
 	 */
 	@Override
-	public boolean validateInstructionsSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsSectionOperations.validateInstructionsSectionInstructions(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Instructions> getInstructionss() {
-		return InstructionsSectionOperations.getInstructionss(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public InstructionsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // InstructionsSectionImpl

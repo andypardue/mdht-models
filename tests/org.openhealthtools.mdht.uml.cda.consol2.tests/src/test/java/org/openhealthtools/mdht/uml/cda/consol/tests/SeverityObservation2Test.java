@@ -122,15 +122,16 @@ public class SeverityObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateSeverityObservationTextReference() {
 		OperationsTestCase<SeverityObservation2> validateSeverityObservationTextReferenceTestCase = new OperationsTestCase<SeverityObservation2>(
-			"validateSeverityObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -158,15 +159,16 @@ public class SeverityObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateSeverityObservationTextReferenceValue() {
 		OperationsTestCase<SeverityObservation2> validateSeverityObservationTextReferenceValueTestCase = new OperationsTestCase<SeverityObservation2>(
-			"validateSeverityObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -197,15 +199,16 @@ public class SeverityObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateSeverityObservationReferenceValue() {
 		OperationsTestCase<SeverityObservation2> validateSeverityObservationReferenceValueTestCase = new OperationsTestCase<SeverityObservation2>(
-			"validateSeverityObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -270,7 +273,7 @@ public class SeverityObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	*/
 	@Test
 	public void testValidateSeverityObservationCode() {
@@ -281,14 +284,16 @@ public class SeverityObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(SeverityObservation2 target) {
-				target.init();
-				CD cd = DatatypesFactory.eINSTANCE.createCD();
-				target.setCode(cd);
+
 			}
 
 			@Override
 			protected void updateToPass(SeverityObservation2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("SEV", "2.16.840.1.113883.5.4"));
+				target.init();
+
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+
 			}
 
 			@Override
@@ -312,10 +317,11 @@ public class SeverityObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
+	* @generated
 	* This attribute is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	*/
+	@Test
 	@Ignore
 	public void testValidateSeverityObservationText() {
 		OperationsTestCase<SeverityObservation2> validateSeverityObservationTextTestCase = new OperationsTestCase<SeverityObservation2>(

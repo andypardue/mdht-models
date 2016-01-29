@@ -19,9 +19,9 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EstimatedDateOfDeliveryOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,8 +52,8 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	@Test
 	public void testValidateEstimatedDateOfDeliveryTemplateId() {
 		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryTemplateIdTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
-			"validateEstimatedDateOfDeliveryTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEstimatedDateOfDeliveryTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +86,8 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	@Test
 	public void testValidateEstimatedDateOfDeliveryClassCode() {
 		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryClassCodeTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
-			"validateEstimatedDateOfDeliveryClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEstimatedDateOfDeliveryClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -154,8 +154,8 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	@Test
 	public void testValidateEstimatedDateOfDeliveryMoodCode() {
 		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryMoodCodeTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
-			"validateEstimatedDateOfDeliveryMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEstimatedDateOfDeliveryMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -188,8 +188,8 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	@Test
 	public void testValidateEstimatedDateOfDeliveryStatusCode() {
 		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryStatusCodeTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
-			"validateEstimatedDateOfDeliveryStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEstimatedDateOfDeliveryStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -220,7 +220,7 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateEstimatedDateOfDeliveryValue() {
@@ -238,7 +238,7 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 			protected void updateToPass(EstimatedDateOfDelivery target) {
 				target.init();
 
-				TS value = DatatypesFactory.eINSTANCE.createTS();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}

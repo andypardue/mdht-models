@@ -50,7 +50,7 @@ public class TobaccoUseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUseEffectiveTimeLow() {
@@ -61,15 +61,13 @@ public class TobaccoUseTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(TobaccoUse target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
+
 			}
 
 			@Override
 			protected void updateToPass(TobaccoUse target) {
-				IVL_TS ts = target.getEffectiveTime();
-				ts.setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.init();
+
 			}
 
 			@Override
@@ -191,7 +189,8 @@ public class TobaccoUseTest extends CDAValidationTest {
 	public void testValidateTobaccoUseCodeP() {
 		OperationsTestCase<TobaccoUse> validateTobaccoUseCodePTestCase = new OperationsTestCase<TobaccoUse>(
 			"validateTobaccoUseCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(TobaccoUse target) {
@@ -352,7 +351,8 @@ public class TobaccoUseTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return TobaccoUseOperations.validateTobaccoUseStatusCodeP((TobaccoUse) objectToTest, diagnostician, map);
+				return TobaccoUseOperations.validateTobaccoUseStatusCodeP(
+					(TobaccoUse) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -362,7 +362,7 @@ public class TobaccoUseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUseValue() {
@@ -379,7 +379,7 @@ public class TobaccoUseTest extends CDAValidationTest {
 			protected void updateToPass(TobaccoUse target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}
@@ -397,13 +397,14 @@ public class TobaccoUseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
 	public void testValidateTobaccoUseValueP() {
 		OperationsTestCase<TobaccoUse> validateTobaccoUseValuePTestCase = new OperationsTestCase<TobaccoUse>(
 			"validateTobaccoUseValueP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(TobaccoUse target) {
@@ -413,8 +414,6 @@ public class TobaccoUseTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TobaccoUse target) {
 				target.init();
-				CD value = DatatypesFactory.eINSTANCE.createCD("", "2.16.840.1.113883.6.96", "", "");
-				target.getValues().add(value);
 
 			}
 

@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Description Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	@Override
 	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +77,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public boolean validateProcedureDescriptionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +97,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public boolean validateProcedureDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -112,17 +107,17 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public ProcedureDescriptionSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public ProcedureDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureDescriptionSectionImpl
