@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2Rwq0BSVEeGGzu7fmW9pXw" name="AssessmentAndPlanSection">
     <ownedComment xmi:id="_2Rwq8BSVEeGGzu7fmW9pXw" annotatedElement="_2Rwq0BSVEeGGzu7fmW9pXw">
       <body>The Assessment and Plan sections may be combined or separated to meet local policy requirements.&#xD;
@@ -3417,4 +3417,137 @@ Instructions are information or directions to the patient. Use the Instructions 
     <ruleId>CONF:1198-32750</ruleId>
     <ruleId>CONF:1198-32751</ruleId>
   </CDA:CodeSystemConstraint>
+
+ <MDMI:MDMIMapping xmi:id="_gySIoL-6EeWoV-fDNleHag" base_Class="_2PWQFxSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_gySIob-6EeWoV-fDNleHag" businessElement="ReasonForReferralSection" modelElement="_2PWQFxSVEeGGzu7fmW9pXw" businessElementId="361014c9-b524-4c85-8722-31675b343285" modelElementPath=""/>
+    <elements xmi:id="_js9xEL-6EeWoV-fDNleHag" businessElement="ReasonForReferralTitle" modelElement="_HMSJsCzpEeG29eivM7bhbw" businessElementId="0a65c03e-1243-4c2c-906d-ce09a40f42ba" modelElementPath="title"/>
+    <elements xmi:id="_lzh08L-6EeWoV-fDNleHag" businessElement="ReasonForReferralText" modelElement="_HMPtcCzpEeG29eivM7bhbw" businessElementId="44051191-171d-44bd-9768-44406d3770ff" modelElementPath="text"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_0QTEYMEWEeWXu9YzgahA6Q" base_Class="_2KKOBhSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_0Qc1YMEWEeWXu9YzgahA6Q" businessElement="FunctionalStatusSection" modelElement="_2KKOBhSVEeGGzu7fmW9pXw" businessElementId="fd766bc7-febf-42ea-be92-2261b10a0e05" modelElementPath="" condition=""/>
+    <elements xmi:id="_3qfTUMEWEeWXu9YzgahA6Q" businessElement="FunctionalStatusSectionTitle" modelElement="_2KMqQBSVEeGGzu7fmW9pXw" businessElementId="459dc8c1-49f9-41d7-84a9-113750c1ae08" modelElementPath="title" condition=""/>
+    <elements xmi:id="_ME5iAMEXEeWXu9YzgahA6Q" businessElement="FunctionalStatusSectionText" modelElement="_2KNRUBSVEeGGzu7fmW9pXw" businessElementId="b3092720-8497-45d5-bd31-8f09a04a1581" modelElementPath="text" condition=""/>
+    <elements xmi:id="_wxgz4MEXEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultBatteryID" modelElement="_A3Tx8Ob0EeGINOJ_SD9_dA" businessElementId="1f107244-2f1f-4c57-905d-2a3312129659" modelElementPath="functionalStatusResultOrganizer.id" condition=""/>
+    <elements xmi:id="_0_kIsMEXEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsBatteryCode" modelElement="_A3Sj0Ob0EeGINOJ_SD9_dA" businessElementId="45e59a06-8891-42b5-a8f8-a5844f26e519" modelElementPath="functionalStatusResultOrganizer.code" condition=""/>
+    <elements xmi:id="_i4MPcMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultBattery" modelElement="_gmf20ucQEeGINOJ_SD9_dA" businessElementId="70544a04-0889-46f6-ad2f-87f3c49cd365" modelElementPath="functionalStatusResultOrganizer" condition=""/>
+    <elements xmi:id="_rBB-0MEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultObservation" modelElement="_aWvu0Ob2EeGINOJ_SD9_dA" businessElementId="d6bf581f-2606-4a13-b804-d5685e9382f7" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation" condition=""/>
+    <elements xmi:id="_vQ8U0MEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultObservationId" modelElement="_nm5IiebxEeGINOJ_SD9_dA" businessElementId="0f7574b9-ac84-42fe-8b59-6ed9baab0ea6" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.id" condition=""/>
+    <elements xmi:id="_zkxhgMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationCode" modelElement="_nm5Ig-bxEeGINOJ_SD9_dA" businessElementId="685b6eb8-604d-4be0-972e-b2fa3e94cd99" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.code" condition=""/>
+    <elements xmi:id="_3zoHkMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationText" modelElement="_nnC5hubxEeGINOJ_SD9_dA" businessElementId="3e88a44d-23d5-43dd-aace-87d7e704055f" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.text" condition=""/>
+    <elements xmi:id="_8uh7UMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationStartTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="6cecaa87-4747-4a91-8c6a-f0decac13488" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_BdlrcMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationEndTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="4dbbaa74-91f3-4b3c-bb52-05485db82b0a" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime.high" condition=""/>
+    <elements xmi:id="_FSbPAMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationValue" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="71415e1f-33a7-46d5-bdb7-e8303cfb4442" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.value" condition=""/>
+    <elements xmi:id="_I6eTwMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationInterpretationCode" modelElement="_nm5IjebxEeGINOJ_SD9_dA" businessElementId="771d3b22-65e8-4751-8e29-192e1c06466a" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.interpretationCode" condition=""/>
+    <elements xmi:id="_M-4kYMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationMethodCode" modelElement="_nm5IkebxEeGINOJ_SD9_dA" businessElementId="88496743-0a96-4f91-9287-c1b76275123a" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.methodCode" condition=""/>
+    <elements xmi:id="_Z7zt0MEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationTargetSite" modelElement="_nnC5gubxEeGINOJ_SD9_dA" businessElementId="5ac8ed31-4165-40a6-b5cf-03747ba0ea80" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.targetSiteCode" condition=""/>
+    <elements xmi:id="_BpetMMExEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultObservationAuthorFunctionCode" businessElementId="3a3d6067-7c90-4702-8d8a-feeb4a4b35a8" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.author.functionCode" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_nlsDoEofEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_NgmFIMExEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultObservationAuthorTime" businessElementId="2e8d153a-27cf-4497-865c-339e79560649" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.author.time" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_TdGqYMEyEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveBattery" modelElement="_iy8gQucQEeGINOJ_SD9_dA" businessElementId="aaf0fc79-b1d8-4c4a-99d6-a5fd56be994c" modelElementPath="cognitiveStatusResultOrganizer" condition=""/>
+    <elements xmi:id="_dsqOoMEyEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveBatteryId" businessElementId="57084762-d3f6-477c-8440-76676c995e73" modelElementPath="cognitiveStatusResultOrganizer.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_Dku5ZuZjEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_mqDncMEyEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveBatteryCode" businessElementId="840892aa-47b2-49b6-a665-b96ec0d92cb9" modelElementPath="cognitiveStatusResultOrganizer.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_Dku5YuZjEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_6mBxMMEzEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveResultObservation" businessElementId="b8c2717a-ba55-45ba-8166-f922eec873ef" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation" condition="">
+      <modelElement xmi:type="uml:Association" href="consol-cognitive.uml#_0aKXMuZjEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_CxNC4ME0EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveResultObservationId" businessElementId="a4ff5817-d5ae-4cfc-a256-4787c3aeb0ce" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.id" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_rPRcWeZgEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_USA8UME2EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveResultObservationAuthorTime" businessElementId="82bf3953-1cd8-4f2a-b5ff-ee487ccfedfe" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.author.time" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_nMgQYME2EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveResultObservationAuthorName" businessElementId="6d50ded1-ca0d-472e-9bbb-cb0e00cdfbfa" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.author.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_RRGosME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="54ebb14a-2bd5-4123-a4a0-e92a6022404f" modelElementPath="functionalStatusProblemObservation" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_gOXSMME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusNotAProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="8ac58ef6-814f-49d2-8a4d-83a754e1ebe3" modelElementPath="functionalStatusProblemObservation" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_T92tYME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="c65b2314-4171-4e58-9a32-6c2bb9b3d879" modelElementPath="functionalStatusProblemObservation.id" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_p4jDEME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationEndTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="7250074d-cde4-42d3-a51a-652c565ae4a4" modelElementPath="functionalStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_xSyAAME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="3a39e4e1-29a9-488d-92fb-59bd0815b850" modelElementPath="functionalStatusProblemObservation.value" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_4lk4MME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="18380f9e-f5d8-4855-ba6f-0a255f69eb6d" modelElementPath="functionalStatusProblemObservation.methodCode" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_M23nIME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationStartTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="0600362a-d7ee-4a73-b0e1-552de7d48508" modelElementPath="functionalStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_lH7-UME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_zd_d4ME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemID" businessElementId="8d9f9cfe-f865-4c97-a67b-5ff15b16a9c6" modelElementPath="cognitiveStatusProblemObservation.id" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_Wz-ekME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="10b6c301-2ab1-461e-87da-aa1c8a72a603" modelElementPath="cognitiveStatusProblemObservation" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_e1A80ME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemId" businessElementId="a3af6e96-5677-4d3c-b825-19d7a7765a26" modelElementPath="cognitiveStatusProblemObservation.id" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_nEwlcME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemText" businessElementId="8936cec4-2a7a-4a4d-a7b5-1a22fa5a5bcf" modelElementPath="cognitiveStatusProblemObservation.text" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_Xr1MQMFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemStartDate" businessElementId="39c38f53-0d76-4b80-82c6-672cf62c3e22" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_bOhP4MFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemEndDate" businessElementId="edc05113-203e-409f-8e5f-14ae95b89956" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.⁬high" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_g2ZOIMUAEeW9tdwyrRMXHg" businessElement="FunctionalStatusResultObservationAuthorPersonName" businessElementId="c3e6ef3b-5504-44a3-95ac-394c06d04549" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.author.assignedAuthor.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_H_etAMUCEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveResultObservationInterpretationCode" businessElementId="76ec4438-63e6-407c-b974-66c5c576a161" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.interpretationCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_rPRcXeZgEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_MQJ4AMUCEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveResultObservationMethodCode" businessElementId="6c817bd4-b48e-4dbc-8576-085977dac34c" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.methodCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_rPRcYeZgEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_RsT-sMUCEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveResultObservationTargetSiteCode" businessElementId="2c3fa2ea-7e20-4c43-8f92-c9873a7ad5e6" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.targetSiteCode" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_rPamQOZgEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_ZPe1MMUCEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveResultObservationAuthorFunctionCode" businessElementId="f49516a2-1e16-4b08-b713-0c8062dc5671" modelElementPath="cognitiveStatusResultOrganizer.cognitiveStatusResultObservation.author.functionCode" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_nlsDoEofEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_NXdSwMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="functionalStatusProblemObservation.text" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_ziqCgMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="899b9ded-2f4f-4dc2-80cd-2d277831acb5" modelElementPath="functionalStatusProblemObservation.id" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_3IoqsMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="dd4d7181-6b06-4312-aacd-fe8994e9f3d4" modelElementPath="functionalStatusProblemObservation.text" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_5m-VYMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationStartDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="b48ed957-196b-4170-824c-fd73edd85876" modelElementPath="functionalStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_7cGrAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationEndDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="ebc0bac1-da5c-4743-85cf-5c0ff7c57f4f" modelElementPath="functionalStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_9XFxAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="5d6f8330-8a73-41ea-8edc-145ce13f9eb6" modelElementPath="functionalStatusProblemObservation.value" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_-_eEEMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="50a44c50-b723-4990-9c48-650e32108984" modelElementPath="functionalStatusProblemObservation.methodCode" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_CjwYQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationId" businessElementId="e5013c68-aae5-48a1-afd2-f3f6ef38ab4f" modelElementPath="cognitiveStatusProblemObservation.id" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_ElC6kMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationText" businessElementId="094e879c-cefd-48b5-bca6-5608d4a83d9e" modelElementPath="cognitiveStatusProblemObservation.text" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_HCud8MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationStartDate" businessElementId="72a014ed-a1bc-4f48-81dd-9c48fa25325f" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_Izep4MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationEndDate" businessElementId="a10cf335-ba40-49c5-b460-e1c7cd27d894" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_LHPcQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationMethodCode" businessElementId="0a89f929-c8ec-4f66-b620-5ee65c76b6c1" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueTuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_M7zKIMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationValue" businessElementId="294e95e1-85da-44e1-ba3e-75bb3b8f5c88" modelElementPath="cognitiveStatusProblemObservation.value" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PROZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_DnYjAMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_PLgtgMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="10b6c301-2ab1-461e-87da-aa1c8a72a603" modelElementPath="cognitiveStatusProblemObservation" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_zLzr8MUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationId" businessElementId="c552c008-e9d7-4df0-9fbc-e249b657339e" modelElementPath="cognitiveStatusProblemObservation.id" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_1k5DMMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationText" businessElementId="90bbbc0e-54ad-4ccb-9a68-73c019c43480" modelElementPath="cognitiveStatusProblemObservation.text" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_3kVycMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationStartTime" businessElementId="98cb9193-4c22-4d53-9429-6e7b12a180f6" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_6JDK4MUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationEndTime" businessElementId="91dbb12a-9cbd-4454-92ce-40259e634802" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_8DmzEMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationMethodCode" businessElementId="27df59b4-754b-4edf-9b6b-9798f25ff228" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueTuZcEeGINOJ_SD9_dA"/>
+    </elements>
+    <elements xmi:id="_91rNoMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationValue" businessElementId="e8fde44a-be02-417c-b2ff-caf3139fd41b" modelElementPath="cognitiveStatusProblemObservation.value" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PROZcEeGINOJ_SD9_dA"/>
+    </elements>
+  </MDMI:MDMIMapping>
 </xmi:XMI>

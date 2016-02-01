@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2LSPYBSVEeGGzu7fmW9pXw" name="ProblemSection">
     <ownedComment xmi:id="_hb8PkCAnEeGetMjKLkqR8g">
       <body>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.</body>
@@ -1556,4 +1556,31 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
     <ruleId>CONF:1198-32848</ruleId>
   </CDA:ValueSetConstraint>
+
+ <MDMI:MDMIMapping xmi:id="_J8SSQL7_EeWoV-fDNleHag" base_Class="_2LSPYBSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_J8SSQb7_EeWoV-fDNleHag" businessElement="ProblemSection" modelElement="_2LSPYBSVEeGGzu7fmW9pXw" businessElementId="4b655929-8602-4317-9773-3c150b0dc7db" modelElementPath="" condition=""/>
+    <elements xmi:id="_OkCggL7_EeWoV-fDNleHag" businessElement="ProblemConcernAct" modelElement="_uvodUyf1EeGO5_JBy9h6BA" businessElementId="74848045-870d-4cf7-ae23-6e7d5751621d" modelElementPath="problemConcern" condition=""/>
+    <elements xmi:id="_RPuDoL7_EeWoV-fDNleHag" businessElement="ProblemConcernId" modelElement="_2H-csxSVEeGGzu7fmW9pXw" businessElementId="c313e009-5743-4dcd-ba20-9aa262b2205d" modelElementPath="problemConcern.id" condition=""/>
+    <elements xmi:id="_V4Ze8L7_EeWoV-fDNleHag" businessElement="ProblemConcernStatus" modelElement="_2H_q0BSVEeGGzu7fmW9pXw" businessElementId="dcb24f5a-3e8f-43a4-8a00-e219ecbf87b9" modelElementPath="problemConcern.statusCode" condition=""/>
+    <elements xmi:id="_v0dYUL7_EeWoV-fDNleHag" businessElement="Problem" modelElement="_1CFA0hUzEeGbmN_W114JUw" businessElementId="31a49b96-715d-4fce-b592-b10b8fe3ef1c" modelElementPath="problemConcern.problemObservation" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_43MkIL7_EeWoV-fDNleHag" businessElement="ProblemObservationId" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="d8d7bfb2-b024-4049-9c87-efc36897e8f7" modelElementPath="problemConcern.problemObservation.id" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_9V3H0L7_EeWoV-fDNleHag" businessElement="ProblemType" modelElement="_6-UyQBUyEeGbmN_W114JUw" businessElementId="71fd64ec-7f9f-4027-a701-f6326b5750f6" modelElementPath="problemConcern.problemObservation.code" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_FQ654L8AEeWoV-fDNleHag" businessElement="ProblemConcernNotes" modelElement="_zGbQJCAuEeGetMjKLkqR8g" businessElementId="c3d9a923-8c9c-4611-b8bf-a8e7456c2bba" modelElementPath="problemConcern.problemObservation.text" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_I-0H8L8AEeWoV-fDNleHag" businessElement="ProblemObservationStartDate" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="08125e94-89b3-4a83-b227-11927df7981c" modelElementPath="problemConcern.problemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_L5aQ0L8AEeWoV-fDNleHag" businessElement="ProblemObservationEndDate" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="d92b010d-cea9-4065-960b-39d79c1c24bf" modelElementPath="problemConcern.problemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_SJUvsL8AEeWoV-fDNleHag" businessElement="ProblemObservationCode" modelElement="_zGb3MSAuEeGetMjKLkqR8g" businessElementId="90a0b23b-525d-4977-8c5f-d2012dd04da2" modelElementPath="problemConcern.problemObservation.value" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_WwfIEL8AEeWoV-fDNleHag" businessElement="ProblemAgeAtObservation" modelElement="_2EqqCxSVEeGGzu7fmW9pXw" businessElementId="e22b4f96-a35c-47f5-bd8b-a086f49d00fe" modelElementPath="problemConcern.problemObservation.ageObservation.value" condition=""/>
+    <elements xmi:id="_eZ2GIL8AEeWoV-fDNleHag" businessElement="ProblemStatusValue" modelElement="_g9B5cCA8EeG9GZYpu7WBOQ" businessElementId="8be01b45-bbc4-44f1-a7e9-78498e4cd063" modelElementPath="problemConcern.problemObservation.problemStatus.value" condition=""/>
+    <elements xmi:id="_6-XagMNpEeWkP5CUCbnCrw" businessElement="ProblemSectionText" modelElement="_NSzLQlGkEeG3H6xvuD7Z0Q" businessElementId="d33c1f71-efbd-40f0-9ff9-53e8914a40f9" modelElementPath="text" condition=""/>
+    <elements xmi:id="_E28CIMNqEeWkP5CUCbnCrw" businessElement="ProblemSectionTitle" modelElement="_NSzLRlGkEeG3H6xvuD7Z0Q" businessElementId="dbdd2663-65b8-4634-8a26-5a5c4181a299" modelElementPath="title" condition=""/>
+    <elements xmi:id="_YFzDsMNqEeWkP5CUCbnCrw" businessElement="ProblemConcernStartDate" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="1aede9e6-52f7-4e6d-9ce1-7e419fe4eea6" modelElementPath="problemConcern.effectiveTime.low" condition=""/>
+    <elements xmi:id="_am2EIMNqEeWkP5CUCbnCrw" businessElement="ProblemConcernEndDate" modelElement="_2IBgABSVEeGGzu7fmW9pXw" businessElementId="42d7d933-e2c6-41e7-85bc-28487b29a8d6" modelElementPath="problemConcern.effectiveTime.high" condition=""/>
+    <elements xmi:id="_1GGCwMNtEeW9tdwyrRMXHg" businessElement="ProblemNotaProblemObservationId" modelElement="_6-ejQBUyEeGbmN_W114JUw" businessElementId="209c023a-d4c0-4efc-8880-ba1ae8e9cd87" modelElementPath="problemConcern.problemObservation.id" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_CKIEUMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationCode" modelElement="_6-UyQBUyEeGbmN_W114JUw" businessElementId="ae4cabae-4f2f-46f5-b700-bb56f981578e" modelElementPath="problemConcern.problemObservation.code" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_FeR8sMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationText" modelElement="_zGbQJCAuEeGetMjKLkqR8g" businessElementId="44094c74-cb02-4093-8a41-6bd1468fad34" modelElementPath="problemConcern.problemObservation.text" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_Iz6bwMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationStartDate" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="4f3b7657-1d58-4176-ac40-b34d2c63c88c" modelElementPath="problemConcern.problemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_LvI2wMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationEndDate" modelElement="_zGapECAuEeGetMjKLkqR8g" businessElementId="9d561cb4-5086-4ecc-bf21-d26a60f8091b" modelElementPath="problemConcern.problemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_O7uHgMNvEeW9tdwyrRMXHg" businessElement="ProblemNotAProblemObservationValue" modelElement="_zGb3MSAuEeGetMjKLkqR8g" businessElementId="744fe1b3-2266-4cbd-9905-151fc48e15fe" modelElementPath="problemConcern.problemObservation.value" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_BX8_gMN6EeW9tdwyrRMXHg" businessElement="ProblemObservationHealthStatusValue" modelElement="_2ExXuBSVEeGGzu7fmW9pXw" businessElementId="264b4b9c-5206-4ae9-989a-3fa12376ed4c" modelElementPath="problemConcern.problemObservation.healthStatusObservation.value"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>

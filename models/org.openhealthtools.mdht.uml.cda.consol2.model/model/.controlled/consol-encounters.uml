@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2LWg0BSVEeGGzu7fmW9pXw" name="EncountersSection">
     <ownedComment xmi:id="_2L7IkBSVEeGGzu7fmW9pXw" annotatedElement="_2LWg0BSVEeGGzu7fmW9pXw">
       <body>This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</body>
@@ -652,4 +652,90 @@
   <CDA:PropertyValidation xmi:id="_caAz0K15EeS-n_bBhdNjYg" severity="INFO" base_Property="_YFMIoK15EeS-n_bBhdNjYg">
     <ruleId>CONF:1198-32323</ruleId>
   </CDA:PropertyValidation>
+  <MDMI:MDMIMapping xmi:id="_uOXZUMOWEeW9tdwyrRMXHg" base_Class="_2LWg0BSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_uRDg8MOWEeW9tdwyrRMXHg" businessElement="EncounterSectionFreeText" modelElement="_mUbSIFGjEeG3H6xvuD7Z0Q" businessElementId="27989bb3-2926-4782-95f4-d99f56e18085" modelElementPath="text" condition=""/>
+    <elements xmi:id="_wwn6sMOWEeW9tdwyrRMXHg" businessElement="EncounterSectionTitle" modelElement="_mUbSJFGjEeG3H6xvuD7Z0Q" businessElementId="6dd55256-d5be-4346-9eab-f59a899bf700" modelElementPath="title" condition=""/>
+    <elements xmi:id="_FsEZ4MOXEeW9tdwyrRMXHg" businessElement="EncounterActivityId" modelElement="_2LayTxSVEeGGzu7fmW9pXw" businessElementId="a4d930f5-6e49-4da5-ac9d-5bda2d49f770" modelElementPath="encounterActivities.id" condition=""/>
+    <elements xmi:id="_Mok5AMOXEeW9tdwyrRMXHg" businessElement="EncounterActivityCode" modelElement="_2LayUhSVEeGGzu7fmW9pXw" businessElementId="00b1f01b-476d-4ed2-b451-b1c1001bead8" modelElementPath="encounterActivities.code" condition=""/>
+    <elements xmi:id="_YtRZ8MOXEeW9tdwyrRMXHg" businessElement="EncounterDischargeDisposition" modelElement="_0IhGsJAOEeKDcJPVSJHobw" businessElementId="83e9af33-e6ba-408b-a9a6-9f3317e87bfe" modelElementPath="encounterActivities.sDTCDischargeDispositionCode" condition=""/>
+    <elements xmi:id="_jTX18MOXEeW9tdwyrRMXHg" businessElement="Encounter" businessElementId="3e1aa1cc-1758-4b7c-9471-e51132045e1d" modelElementPath="encounterActivities.serviceDeliveryLocation.addr" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nD7_0B-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_ehcikMOYEeW9tdwyrRMXHg" businessElement="EncounterActivityServiceLocations" modelElement="_2Lg44BSVEeGGzu7fmW9pXw" businessElementId="88204788-db91-4342-8023-8d40cd713a6e" modelElementPath="encounterActivities.serviceDeliveryLocation" condition=""/>
+    <elements xmi:id="_rFEbMMOYEeW9tdwyrRMXHg" businessElement="EncounterActivityServiceLocationBusinessPhone" businessElementId="b24eeb00-cbf0-488a-8ef2-d468523534df" modelElementPath="encounterActivities.serviceDeliveryLocation.telecom" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_nEARQB-YEeGtfPlBCjHWkw"/>
+    </elements>
+    <elements xmi:id="_wAlS8MOYEeW9tdwyrRMXHg" businessElement="EncounterActivityIndications" modelElement="_6DavkhU6EeGbmN_W114JUw" businessElementId="0ee2df62-6740-482f-aff1-fee38670ce8f" modelElementPath="encounterActivities.indication" condition=""/>
+    <elements xmi:id="_H3VssMOZEeW9tdwyrRMXHg" businessElement="EncounterActivityIndicationValue" businessElementId="a0737a4c-00ae-4a34-b8ab-3b7cefdf5465" modelElementPath="encounterActivities.indication.value" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MmWNRUSEeG6PvUxSTZnaw"/>
+    </elements>
+    <elements xmi:id="_RgTyEMOZEeW9tdwyrRMXHg" businessElement="EncounterActivityEndDate" modelElement="_2LayUxSVEeGGzu7fmW9pXw" businessElementId="0a5f30e2-4ce0-4051-b1b5-dcd4a15d80e9" modelElementPath="encounterActivities.effectiveTime.high" condition=""/>
+    <elements xmi:id="_UjWFQMOZEeW9tdwyrRMXHg" businessElement="EncounterActivityStartDate" modelElement="_2LayUxSVEeGGzu7fmW9pXw" businessElementId="d000def4-a025-460d-818a-a9425f24c5dd" modelElementPath="encounterActivities.effectiveTime.low" condition=""/>
+    <elements xmi:id="_fxeKkMOZEeW9tdwyrRMXHg" businessElement="EncounterActivityIndicationCode" businessElementId="dc3a1856-7e01-4693-823c-8b2f7252381c" modelElementPath="encounterActivities.indication.code" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMQhUSEeG6PvUxSTZnaw"/>
+    </elements>
+    <elements xmi:id="_ijp-UMOZEeW9tdwyrRMXHg" businessElement="EncounterActivityIndicationStartDate" businessElementId="15eb2197-fd06-408a-bc9e-f40640952de2" modelElementPath="encounterActivities.indication.effectiveTime.low" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMRBUSEeG6PvUxSTZnaw"/>
+    </elements>
+    <elements xmi:id="_lF__QMOZEeW9tdwyrRMXHg" businessElement="EncounterActivityIndicationEndDate" businessElementId="442b43cc-9a3f-42d5-9fa9-11b9646bb373" modelElementPath="encounterActivities.indication.effectiveTime.high" condition="">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2MdMRBUSEeG6PvUxSTZnaw"/>
+    </elements>
+    <elements xmi:id="_--OhgMOZEeW9tdwyrRMXHg" businessElement="EncounterPerformerName" businessElementId="0c8ec0a0-e279-4df2-a6be-0fdfc9629387" modelElementPath="encounterActivities.encounterPerformer.encounterPerformerAssignedEntity.assignedPerson.name" condition="">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_Y2pGgMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosis" modelElement="_2UHo4OM2EeGfv4R-kzpM0g" businessElementId="f3771829-e7fb-4f7e-962a-2e9d0a93f7d0" modelElementPath="encounterActivities.encounterDiagnosis" condition=""/>
+    <elements xmi:id="_dRxOAMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservations" modelElement="_lWEzYuM2EeGfv4R-kzpM0g" businessElementId="f8d01e4c-2314-4cc1-bd5c-ee42efc1e440" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_gqL7UMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationCode" businessElementId="d737efb7-2a63-4b05-8084-84f0c49c9685" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.code" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_6-UyQBUyEeGbmN_W114JUw"/>
+    </elements>
+    <elements xmi:id="_i_tBMMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationText" businessElementId="81001a20-ef5e-4ac4-a11f-c1ce9f0b4a4b" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.text" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGbQJCAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_nRMrkMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationStartDate" businessElementId="2197441d-5bab-4599-a6c1-2944f7149ff5" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGapECAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_p13nwMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationEndDate" businessElementId="c5154b35-80b7-4580-a17b-85b2641ab231" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGapECAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_seZwQMVGEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationValue" businessElementId="d587b0dd-26fe-4f52-bdd2-804bc0c1a564" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.value" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGb3MSAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_3StK4MVHEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationStatus" businessElementId="fa242e30-2449-4285-bf9e-2616d70dd74c" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.problemStatus.value" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_g9B5cCA8EeG9GZYpu7WBOQ"/>
+    </elements>
+    <elements xmi:id="_60BVgMVHEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationAgeAtObservation" businessElementId="f252c835-4722-41fb-b1de-c4f5cc340f96" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.ageObservation.value" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_2EqqCxSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="__J37cMVHEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisProblemObservationHealthStatus" businessElementId="d331da28-78f8-4803-be29-d66416c8158e" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.healthStatusObservation.value" condition="negationIND = &quot;false&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_2ExXuBSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_5EbKsMVIEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationId" businessElementId="bbe35902-0d82-41ee-990f-ae70a4718712" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.id" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_6-ejQBUyEeGbmN_W114JUw"/>
+    </elements>
+    <elements xmi:id="_79vhMMVIEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationCode" businessElementId="df89f551-11e0-43b2-9d40-7d0ee3878fcb" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.code" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_6-UyQBUyEeGbmN_W114JUw"/>
+    </elements>
+    <elements xmi:id="__F1TgMVIEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationText" businessElementId="212307e0-d0c5-44ed-aa83-0b44bd3fa53b" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.text" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGbQJCAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_C8FzYMVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationStartDate" businessElementId="1d94659b-b32f-4831-af01-290dde72a2ed" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGapECAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_FPojUMVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationEndDate" businessElementId="6d6c1c85-70f1-4509-bc64-82b41fc985d2" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGapECAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_IGh38MVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationValue" businessElementId="3aeb0265-28ec-48f0-b642-94aa0f8d5399" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.value" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_zGb3MSAuEeGetMjKLkqR8g"/>
+    </elements>
+    <elements xmi:id="_KYpEgMVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationAgeAtObservation" businessElementId="7ae7bc97-ee6b-4de3-88ee-eaa7bd6cf057" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.ageObservation.value" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_2EqqCxSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_Nj3DUMVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationProblemStatus" businessElementId="16bd8fdf-919b-43b5-9b8d-bb735266e9dd" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.problemStatus.value" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_g9B5cCA8EeG9GZYpu7WBOQ"/>
+    </elements>
+    <elements xmi:id="_Q8OGQMVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservationHealthStatus" businessElementId="6ddcdbbc-bf0e-4105-b599-ee51178e93b0" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation.healthStatusObservation.value" condition="negationIND = &quot;true&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-problems.uml#_2ExXuBSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_tUpUYMVJEeW9tdwyrRMXHg" businessElement="EncounterActivityDiagnosisNotAProblemObservation" modelElement="_lWEzYuM2EeGfv4R-kzpM0g" businessElementId="df955eb5-28ca-4485-b749-fa419dad6374" modelElementPath="encounterActivities.encounterDiagnosis.problemObservation" condition="negationIND = &quot;true&quot;"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>

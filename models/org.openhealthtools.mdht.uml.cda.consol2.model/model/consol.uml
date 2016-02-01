@@ -2683,6 +2683,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
+    <profileApplication xmi:id="_HRXwkKWXEeW6KNciAYqeJQ">
+      <eAnnotations xmi:id="_HR_boKWXEeW6KNciAYqeJQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://org.mdmi.uml.profile/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDMI_PROFILE/mdmi.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
   </uml:Package>
   <CDA:AssociationValidation xmi:id="_BqgsMD2dEeG0sO4MiUmR4Q">
     <ruleId>CONF:7905</ruleId>

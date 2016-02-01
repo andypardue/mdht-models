@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2NP-QxSVEeGGzu7fmW9pXw" name="PlanOfCareSection">
     <ownedComment xmi:id="_2N0mCRSVEeGGzu7fmW9pXw" annotatedElement="_2NP-QxSVEeGGzu7fmW9pXw">
       <body>The Plan of Care section contains data that defines pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only, which are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed unless constrained due to privacy issues. The plan may also contain information about ongoing care of the patient and information regarding goals and clinical reminders. Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and health-care quality improvements, including widely accepted performance measures. The plan may also indicate that patient education was given or will be provided.</body>
@@ -4403,4 +4403,44 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:PropertyValidation xmi:id="_DjRFoADcEeWNGdLwd_3YGQ" severity="WARNING" base_Property="_CWg-oADcEeWNGdLwd_3YGQ">
     <ruleId>CONF:1098-32327</ruleId>
   </CDA:PropertyValidation>
+
+ <MDMI:MDMIMapping xmi:id="_mjjOEMXYEeWCquoDViU_jA" base_Class="_2NP-QxSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_mjjOEcXYEeWCquoDViU_jA" businessElement="CarePlanSection" modelElement="_2NP-QxSVEeGGzu7fmW9pXw" businessElementId="409d5f35-22f1-4699-8cce-22ce1ae25e6f" modelElementPath=""/>
+    <elements xmi:id="_vjvcMMXYEeWCquoDViU_jA" businessElement="CarePlanSectionTitle" modelElement="_jNy_oOMzEeGfv4R-kzpM0g" businessElementId="7ba0c0ed-1011-4ff1-95d5-855c2a366d38" modelElementPath="title"/>
+    <elements xmi:id="_xWl54MXYEeWCquoDViU_jA" businessElement="CarePlanSectionText" modelElement="_2NWE4BSVEeGGzu7fmW9pXw" businessElementId="27a3dced-791a-4381-95da-93e68b890c66" modelElementPath="text"/>
+    <elements xmi:id="_LJ7qMMXbEeWCquoDViU_jA" businessElement="CarePlanGoals" modelElement="_2NiSJBSVEeGGzu7fmW9pXw" businessElementId="2c6b9512-41f4-48e5-9471-25d4478a92f7" modelElementPath="planOfCareActivityObservation"/>
+    <elements xmi:id="_OyxZIMXbEeWCquoDViU_jA" businessElement="CarePlanGoalId" modelElement="_2NcLlhSVEeGGzu7fmW9pXw" businessElementId="ede04232-d0ec-4879-adea-4f7e08ac7917" modelElementPath="planOfCareActivityObservation.id"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_VG2mUMXbEeWCquoDViU_jA" base_Class="_2NcLjhSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_VG2mUcXbEeWCquoDViU_jA" businessElement="CarePlanGoalText" businessElementId="00680582-6493-45db-83df-dbeb792a095b" modelElementPath="text">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_Yrw3gMXbEeWCquoDViU_jA" businessElement="CarePlanGoalStartDate" businessElementId="7d2bbc8f-02d9-49a8-b532-f6cb591fb129" modelElementPath="effectiveTime">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_awbd8MXbEeWCquoDViU_jA" businessElement="CarePlanGoalEndDate" businessElementId="4d06738f-109a-4e50-8d22-68ddebdbbc32" modelElementPath="effectiveTime">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_dMpBsMXbEeWCquoDViU_jA" businessElement="CarePlanGoalPriorityCode" businessElementId="a3f5c0f3-684f-47d8-8209-c0d5e4e9eb65" modelElementPath="priorityCode">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_gGlDQMXbEeWCquoDViU_jA" businessElement="CarePlanGoalEndDate" businessElementId="4d06738f-109a-4e50-8d22-68ddebdbbc32" modelElementPath="effectiveTime">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_iS_QcMXbEeWCquoDViU_jA" businessElement="CarePlanGoalPriorityCode" businessElementId="a3f5c0f3-684f-47d8-8209-c0d5e4e9eb65" modelElementPath="priorityCode">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_mpA1gMXbEeWCquoDViU_jA" businessElement="CarePlanGoalIntpretationCode" businessElementId="fe7d0ef8-f755-46e8-b8c4-a5b7704bda67" modelElementPath="interpretationCode">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_vdMn8MXbEeWCquoDViU_jA" businessElement="CarePlanGoalCategory" businessElementId="1144675a-815b-4390-8151-3d78cc9f5b4a" modelElementPath="code">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_W1SsAMYFEeW7-umL47rx8A" businessElement="CarePlanGoalId" businessElementId="ede04232-d0ec-4879-adea-4f7e08ac7917" modelElementPath="id">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_hZbZIMYFEeW7-umL47rx8A" businessElement="CarePlanGoalText" businessElementId="00680582-6493-45db-83df-dbeb792a095b" modelElementPath="text">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+    </elements>
+  </MDMI:MDMIMapping>
 </xmi:XMI>

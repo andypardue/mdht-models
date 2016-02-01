@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
   <uml:Class xmi:id="_2NIpgBSVEeGGzu7fmW9pXw" name="MedicationsSection">
     <ownedRule xmi:id="_2NJ3tRSVEeGGzu7fmW9pXw" name="absenceOfMedications">
       <ownedComment xmi:id="_2NJ3thSVEeGGzu7fmW9pXw">
@@ -2866,4 +2866,46 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1098-32908</ruleId>
     <ruleId>CONF:1098-32909</ruleId>
   </CDA:EntryRelationship>
+  <MDMI:MDMIMapping xmi:id="_UkrREKi1EeW7nImA73vXpA" base_Class="_DpoGkBUUEeG6PvUxSTZnaw">
+    <elements xmi:id="_Ukyl0Ki1EeW7nImA73vXpA" businessElement="MedicationAdministeredStatusCode" modelElement="_ThIPFBrYEeGo461UQq-B1g" businessElementId="333e512f-80c4-48f0-9e65-1426e4138f00" modelElementPath="statusCode"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_qdlyALJhEeWqI-MGhXmBew" base_Class="_2NIpgBSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_qdqqgLJhEeWqI-MGhXmBew" businessElement="MedicationSection" modelElement="_2NIpgBSVEeGGzu7fmW9pXw" businessElementId="66b674e8-01c3-4eeb-8677-ef4c2636b555" modelElementPath="medication.medicationDispense.quantity" condition=""/>
+    <elements xmi:id="_uhiIkLJhEeWqI-MGhXmBew" businessElement="MedicationSectionTitle" modelElement="_2NJ3phSVEeGGzu7fmW9pXw" businessElementId="4735944c-b380-44f6-b5f7-508f108fc605" modelElementPath="title" condition=""/>
+    <elements xmi:id="_8zDGYLJhEeWqI-MGhXmBew" businessElement="MedicationAdminstered" modelElement="_2NJ3oRSVEeGGzu7fmW9pXw" businessElementId="3a55586d-b8ac-4596-804e-83818f921f91" modelElementPath="medication" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_IGJLQLJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredID" modelElement="_2GkugxSVEeGGzu7fmW9pXw" businessElementId="c288c2b4-e001-495d-9cd9-011dcb4c2da5" modelElementPath="medication.id" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_ODhvsLJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredDosageRoute" modelElement="_2GHbvhSVEeGGzu7fmW9pXw" businessElementId="8fe79500-d0bf-43f3-a6b3-246b75656043" modelElementPath="medication.routeCode" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_SzdpkLJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredDosageSite" modelElement="_2GHbzhSVEeGGzu7fmW9pXw" businessElementId="117ffc37-696b-4d72-8aaa-0d04e7f3eba1" modelElementPath="medication.approachSiteCode" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_WMIOgLJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredDosageQuantity" modelElement="_2GHbwhSVEeGGzu7fmW9pXw" businessElementId="6fed602a-ba96-4e20-9606-09d963ca4aff" modelElementPath="medication.doseQuantity" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_Z5t6kLJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredDosageRate" modelElement="_2GmjsBSVEeGGzu7fmW9pXw" businessElementId="7c16bb80-4d41-4592-994f-b373a6b56b7d" modelElementPath="medication.rateQuantity" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_ixlTILJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredNotes" modelElement="_yhVYwB-vEeGKirKJsFylGA" businessElementId="e8b737cc-12bc-4dcd-a0a5-650654055fab" modelElementPath="medication.text" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_nZ7-ULJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredDosageUnitCode" modelElement="_2GHbxhSVEeGGzu7fmW9pXw" businessElementId="0d00c8b8-b802-4d2e-b42f-8b681db9df5c" modelElementPath="medication.administrationUnitCode" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_2gqs4LJiEeWqI-MGhXmBew" businessElement="MedicationAdministeredMedicationCode" modelElement="_Dh74wCANEeGKirKJsFylGA" businessElementId="271b979b-7064-46cd-b0ad-3d43224499fb" modelElementPath="medication.consumable.medicationInformation.manufacturedMaterial.code" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_dEr6YLJlEeWqI-MGhXmBew" businessElement="MedicationPerformerOrganizationTelecom" businessElementId="6349542a-57c7-46e4-bab9-87c69d939940" modelElementPath="medication.performer.assignedEntity.telecom" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_jA-SoLJlEeWqI-MGhXmBew" businessElement="MedicationPerformerOrganizationAddress" businessElementId="c92faf9c-4e64-412b-a283-1b08655e38ac" modelElementPath="medication.performer.assignedEntity.addr" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_nS3loLJlEeWqI-MGhXmBew" businessElement="MedicationPerformerEntityID" businessElementId="f35845a3-636f-41a3-9b37-cf302e706eb7" modelElementPath="medication.performer.assignedEntity.id" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_BZRb4LJoEeWqI-MGhXmBew" businessElement="MedicationDispenseID" modelElement="_ThHA8BrYEeGo461UQq-B1g" businessElementId="f87d540d-8aa1-4a0f-b6f3-ec275b4400a6" modelElementPath="medication.medicationDispense.id" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_MrNqMLJoEeWqI-MGhXmBew" businessElement="MedicationDispenseOrderRefillsRemaining" modelElement="_ThIPEBrYEeGo461UQq-B1g" businessElementId="923094ec-cfe7-4977-bdab-e20ef37276fe" modelElementPath="medication.medicationDispense.repeatNumber" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_Qz5W0LJoEeWqI-MGhXmBew" businessElement="MedicationDispenseOrderQuantity" modelElement="_IQt9EEIwEeG4bZAl2IGXmQ" businessElementId="32519ef1-9dfb-4948-bc5b-2b91b54ca932" modelElementPath="medication.medicationDispense.quantity" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_EkrvQLMpEeWYEejH_uvbsA" businessElement="MedicationPrescriptionContainer" modelElement="_2NJ3oRSVEeGGzu7fmW9pXw" businessElementId="c95c7f80-c5ff-4b05-b02b-da48c51e248b" modelElementPath="medication" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_kdMlQLOzEeWYEejH_uvbsA" businessElement="MedicationPrescriptionID" modelElement="_2GkugxSVEeGGzu7fmW9pXw" businessElementId="17b72f19-0ba2-4f45-ab20-7070769fda2f" modelElementPath="medication.id" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_sqkPULOzEeWYEejH_uvbsA" businessElement="MedicationPrescriptionDosageRoute" modelElement="_2GHbvhSVEeGGzu7fmW9pXw" businessElementId="6756b16a-be99-4e38-bece-47d3e92d55f5" modelElementPath="medication.routeCode" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_vqC4MLOzEeWYEejH_uvbsA" businessElement="MedicationPrescriptionDosageSite" modelElement="_2GHbzhSVEeGGzu7fmW9pXw" businessElementId="49d36b42-edc8-41cb-bac2-a41fe726bb61" modelElementPath="medication.approachSiteCode" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_3S9KULOzEeWYEejH_uvbsA" businessElement="MedicationPrescriptionDosageQuantity" modelElement="_2GHbwhSVEeGGzu7fmW9pXw" businessElementId="1d72d4ec-fbb5-46dd-b9a9-3c3ca878929b" modelElementPath="medication.doseQuantity" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_7C_GYLOzEeWYEejH_uvbsA" businessElement="MedicationPrescriptionDosageRate" modelElement="_2GmjsBSVEeGGzu7fmW9pXw" businessElementId="cd36f619-6ef7-4b17-ba35-7ef9f171ab61" modelElementPath="medication.rateQuantity" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_WxRyYLO0EeWYEejH_uvbsA" businessElement="MedicationPrescriptionMedicationCode" businessElementId="1523549b-ecb2-45f8-a6b5-01618ce2ad78" modelElementPath="medication.consumable.medicationInformation.manufacturedMaterial.code" condition="moodCode=&quot;INT&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_M3s_QEo5Ed6c3qsAxlFHaQ"/>
+    </elements>
+    <elements xmi:id="_o--R4LO0EeWYEejH_uvbsA" businessElement="MedicationPrescriptionPatientInstructions" businessElementId="aa868a93-92d8-4887-86f2-c204e5842273" modelElementPath="medication.instructions.text" condition="moodCode=&quot;INT&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8iABSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_ZgaEkLZFEeWF56peAChi6w" businessElement="MedicationAdministeredStatusCode" modelElement="_2GlVkBSVEeGGzu7fmW9pXw" businessElementId="333e512f-80c4-48f0-9e65-1426e4138f00" modelElementPath="medication.statusCode" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_iO9VcLh8EeWRosu9Gctomw" businessElement="MedicationPrescriptionStatusCode" modelElement="_2GlVkBSVEeGGzu7fmW9pXw" businessElementId="d16d1fb5-528f-441d-bb65-88be2919125d" modelElementPath="medication.statusCode" condition="moodCode=&quot;INT&quot;"/>
+  </MDMI:MDMIMapping>
 </xmi:XMI>
