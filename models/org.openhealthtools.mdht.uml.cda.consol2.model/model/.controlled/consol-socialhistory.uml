@@ -1252,9 +1252,9 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:CodeSystemConstraint>
 
   <MDMI:MDMIMapping xmi:id="_tBVfcL-6EeWoV-fDNleHag" base_Class="_2JKvgBSVEeGGzu7fmW9pXw">
-      <elements xmi:id="_01oiML-6EeWoV-fDNleHag" businessElement="Pregnancy" modelElement="__3ADghVVEeGbmN_W114JUw" businessElementId="207914bd-6744-49d2-92af-cbe90598e1b3" modelElementPath="pregnancyObservation" condition=""/>
-    <elements xmi:id="_SPJ0UMMFEeWmlcrklXzfkQ" businessElement="SocialHistory" modelElement="_2JKvgBSVEeGGzu7fmW9pXw" businessElementId="0d98de46-d0bf-4b4b-8336-7d8c4f20b9e2" modelElementPath="" condition=""/>
-     <elements xmi:id="_nVzogMMGEeWmlcrklXzfkQ" businessElement="PregnancyObservationStartTime" modelElement="_WJgwIBrkEeGJ_KU17uNyeA" businessElementId="a6bc75b6-aaa2-4aba-aaa9-f36437166ac5" modelElementPath="pregnancyObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_tBVfcb-6EeWoV-fDNleHag" businessElement="SocialHistory" modelElement="_2JKvgBSVEeGGzu7fmW9pXw" businessElementId="0d98de46-d0bf-4b4b-8336-7d8c4f20b9e2" modelElementPath="" condition=""/>
+    <elements xmi:id="_01oiML-6EeWoV-fDNleHag" businessElement="Pregnancy" modelElement="__3ADghVVEeGbmN_W114JUw" businessElementId="207914bd-6744-49d2-92af-cbe90598e1b3" modelElementPath="pregnancyObservation" condition=""/>
+    <elements xmi:id="_nVzogMMGEeWmlcrklXzfkQ" businessElement="PregnancyObservationStartTime" modelElement="_WJgwIBrkEeGJ_KU17uNyeA" businessElementId="a6bc75b6-aaa2-4aba-aaa9-f36437166ac5" modelElementPath="pregnancyObservation.effectiveTime.low" condition=""/>
     <elements xmi:id="_pVDjcMMGEeWmlcrklXzfkQ" businessElement="PregnancyObservationEndDate" modelElement="_WJgwIBrkEeGJ_KU17uNyeA" businessElementId="75c84610-c529-4172-b092-a7be8b693c4f" modelElementPath="pregnancyObservation.effectiveTime.high" condition=""/>
     <elements xmi:id="_2I30MMMGEeWmlcrklXzfkQ" businessElement="PregnancyEstimatedDeliveryDate" modelElement="_lcxCQBupEeG0YIoJCEsKqA" businessElementId="3e6b980e-773c-496d-a728-2143bd5b585b" modelElementPath="pregnancyObservation.estimatedDateOfDelivery.value" condition=""/>
     <elements xmi:id="_A6uNMMMHEeWmlcrklXzfkQ" businessElement="SocialHistoryObservation" modelElement="_2JLWkRSVEeGGzu7fmW9pXw" businessElementId="07861e9b-b6a3-4b37-a8b1-39fb418d7390" modelElementPath="socialHistoryObservation" condition=""/>
