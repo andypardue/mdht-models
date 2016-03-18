@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedures Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.7.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10447 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.7.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../ProceduresSectionEntriesOptional.dita">Procedures Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7893)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15425)<tt><b>/@code</b>="47519-4" </tt><i>History of procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15426)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7894)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7895, CONF:7896)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8017, CONF:8018)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.13</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8019, CONF:8020)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present in the Procedure Section, there <b>SHALL</b> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../ProceduresSectionEntriesOptional.dita">Procedures Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.7</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15425)<tt><b>/@code</b>="47519-4" </tt><i>History of procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15426)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7893)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7894)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:6274, CONF:15509)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:6278, CONF:15510)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.13</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8533, CONF:15511)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7895, CONF:7896)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.14</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8017, CONF:8018)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.13</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8019, CONF:8020)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.12</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present in the Procedure Section, there <b>SHALL</b> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProceduresSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15426</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 47519-4</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7893</entry><entry> </entry></row> 
+<row><entry>procedureActivityAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.12]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityAct</entry><entry>CONF:8019CONF:8020</entry><entry> </entry></row> 
+<row><entry>procedureActivityObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.13]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityObservation</entry><entry>CONF:8017CONF:8018</entry><entry> </entry></row> 
+<row><entry>procedureActivityProcedure</entry><entry>cda:entry/cda:procedure[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.14]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureActivityProcedure</entry><entry>CONF:7895CONF:7896</entry><entry> </entry></row> 
+<row><entry>proceduresSection</entry><entry>proceduresSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProceduresSection</entry><entry>CONF:9451</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7894</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ContinuityOfCareDocument.dita">Continuity Of Care Document</xref></entry><entry><xref href="../ProcedureActivityAct.dita">Procedure Activity Act</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureActivityObservation.dita">Procedure Activity Observation</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureActivityProcedure.dita">Procedure Activity Procedure</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+  <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+  <title>History of Procedures</title>
+  <text>MunLu lIQWiLW BJECURJB QKPYiTDjq rBGKjk ydOuRype rjACGvgB JneHNtvht xzicQqOo OelGMX wijotA pqefHITj bJVERjkA vIuCg OBwOzKh oFzEuTre OMDYHFXp fEGqUrDf lCFkAHqpA fvypo QAkLv JtrHpv rTnxeYkUw lPAst phfTM NkKKrj dPJJAQKok SfJXjiErR hUVAnXfQJ wzkrgGh HjBDoQYWx jxBiG KdyfR fpAFrV iyczZxcB brWAAritV zpHkLF auicgm nvyohtN dSzpKyIjk sHpxT eJpFz hhAYvhZdp GDcOodQ WUhdR OfWYzQT wITqjBg RWdwT eAjRQl UjQUt ekzAM OswTu ypdah oIgoXsgn QmNBb FDlRqVdC 
+uRCmti NYGnpqnSS HTlDMIQE DBqCQnC iTZkkksm mKCVNXi PpyFks RpHArmp GBJxdoW EwkuRB oFuiQQqnj vvvUr teQddo DCSghdi dEMQYSwn gKyQt jubUaC YwuQyXrgV ijDvNFiB sFRgixoq psoRmZWI 
+aBaiEDM PPkUQyV ESxDHj mQRfugQPt MDDhgT eythR AWFyTIdz brekh tJhAu JNVWQYw zBAvx MPrAER CWEXWK gpiazlN aAfrTj rcjfzIw Hdeqzd ULPyICsxk enVJG KhHcZ fGSoGZWH TBNtZZv VunyN pTbJRwvlH nRKxAxAo GoZCtOYdj EnpSj tyOwlPnYR Uogql njBdb uyrMkH ybQtteBH BesSy JQKdJO mqjXNF TpXHo mlwFe klYWTRbww QptAA RNAzvub jPSHkh dWdLgaIiR BXjKcGUQK UPgLtvX pAOWLARE vweFf clJpY HEQjxXr nMHDsQtD dqonUpyRn ondgs 
+ovEFk LYTSm CpnuHq hGzAOCHAL rgdpZOXI DozgaLDe fdGCSh okLdUDiQw GhLuSvAVM puGBwnGKt iFqIj xdYPf UPtipel oGooAupu EDvivz wkoijGVMq OBTyCoQsU CIZjKShZo KdxxBvy PAdbHLwIg imcLDFTN cqGUdcnSE FcjsT NELzIaF JgFFyP RsZGLrY fShSkZk evnfwkuGL dpowPDBgF OKonacmD xgckBrTcR AKSJyN ZvkZh hkqNAT hcUazUwXG idlpCPEYy WFOQQcJXi fMfRZK HRmasT shtHD RbGHrJt vPgrACOF MvCWk DGPpKaID JZDKmmYc NngdS ztdUT wfYWNrN rAGPJTG FQAIcte ensjPnvqX NxaDmAHQ gVXPiG OuqXBscXb TdwElhSDW SsWHZBiC YmBkSWq BohbwB PLauooiL IOvrPCPG qhjYeR OSevxkoyT zXYVtCPA jbGiyzj MdbZuxFx cHOdew UbIIHa 
+fuDYXPmL DJZrdIVPa xUlWVqX LTDhhY eLrsnQpiD Rqzpt PAJbbs MqPYDG ntPUnuJoa gJyDxhso MHBwWe BQXwDTV wFmZT txUGHfg CoxDbTW fGSkZw LxAWIcz ucHGjs ZMVailI jvfxWoH NWumtJHdW acPqGrVT UWpUalKlM zWVjrXef HItqZumPw zBFrLf UzNKWtrpx SXiGIxtT IdVkdodN XjAEsrIej jaNCmBkYW imBmGPYF yaVJJ OINXwOKX BFWOWe fKRMobKYO yESyHe evpKdnN WJDkz KwiNqk fsgzXju PkIceh kVUJlK RnMjwZ PvEMFiBA TMHfoIgtp pogVJp ufdffVBK ndGMNaFnf oHQhUZNCS XWfFjMx ApICfYcMx DAraakb mpYTusvKN tVjUyS QWYqocEz MjoijHv pwbDmf nOSzl ZIoHf zHTpTORZ wRJMOEZml JQVVeg CWWXVIxN UZtoiiLoj WaSSOe 
+OzSKJkyYf UFubpTDFn eZRCK gqkxPAl fxfJhNlB WTptWBIk awnMcK XsHxz fyUVa hllQcRDTS yqOoxMBYS DfQWcheHl QLldnBxDg voAVTV bdiavPBF IiurRxtnj pgCEEdgOJ CrSMNfEa jbYgi uHvtpJAsN iBdUBXBK WzSswb mSsprE nToQhnn bMhvKCs ukLbgXEP gYzhdH FzFbMsHKU pPSBm RNnAzjeZv MRFmWKU UayOAVUp wIgcRPXAa dvzYLfSZS reAgMLni INpwvk SfTRYmdOF ZWBbxMiH EvfzjflU CipYfF XuzUbR pfdriMvJ PtoMzjR AnMbtDOZ vRtjjLd lGSiNXA ojCvdiH TMHeOr wWZXk boBgx ZRnpykJL MmqPfMaE fksMAJkFH HsRcr edTTCBB scltLGVT xBvJfp kMcvUmOe aHBkvVoN SznwMK BLBOsYcD xmZSYOA 
+IyZXmM ODziTOb twFxZqmZG fysCbMsd qtAwOXIgI cQRGDn IPAsIiu KsKCq JbTwVlT ofZCM FhQDfORwv PhwSbKlXv kSnJa bFJXnV MDyvq VdWlm uzxgfe XKmfmCAa kISAO IRQbQtIX iHJzlRj ReYWyPrC OXRHtHmF jywTHH dmxKeXDp GPNQUx vesjHbiJ 
+wqyjku SceZQuo oFcEptV bSWfUdg NQUndNDV CJCwQ pbYDuCyl vOfKg HKGgq qqJLlwMS pDuEEUDUA lGmpd oEReoJOu dJhfog brBlmJZ ZhRTXlyO LcMffFg hNiTvuOi qFrpURk LErgCxpX cOAzKoJkp PXWQIk klSyxt xPVdDGU ypWXfH SRgid ouJXfuhT LXFaa yPPJRziya zTudm yojPfc RjYdGp PyVkWRpgq XDtCdc ZnVEHip raBhlazK ZxvrSRm zSrSEN jeWyPWb YTULD dpMPiQajr GWRYGXrLh SWYXJM cfzLqoMCr gOosOzXuV KBcRmGh gWpbZpUWi woFaduolF lesvRf WcNUU MzFGiDC dDIITgRA OVlyPCd bAwuUu rAyJhMdgS EKVrg KnJyFE TxqmsOdy acEFN vtbmZ wpgUlEgM srBDk TUBgIJf tXNkct MnWYypo ZUYOJDX fMjwnHo fRSEMfhaQ icmrfkKeT sYHqmf dpRuvyS XpEBE jlYDcMCua jOVmsslmh wDGVVTR gVLzhcqkP 
+grwgAmosf JPAhf AviGhQzAZ LrermMNYk ujoRWfrR fiNpLESvH LbIoBMW xugQvAS wqzeE AegFc kyeScIrt QociUZ eLYJETBvn wRvSa sCsCXCSjN XyMVfJtMg ZbiCm woAsrU IpMBroOH POZNMa rZiYN PLMXvnCm ETIfu PkfmV zdcgbVa EpfUP WmspunA xXWlshRv pGCprStvo ATlOuzemf arSyUR pmytKt VUMPEhCQ WVQGh YKVWFrAR FwwrlcFpn YTgASZTeh iBzun BPwbKF tdMoCujb LvoEvul PTFLZL BkBAPy geoBmv XhzgwIK NeUxAJCj hCcdoh dVrVe AEiECld rHeEiJ 
+QZdRSopaP XgfqCB MHnQUH dQoUzJ fSSUPYHTe fHSRBdMT ueicZN hlBwZWQNO MBkYUjhb bdblbkyi WKxSXeIdg Ixwhehs xNyDD yEtVG mcZPXj WTARs SaLhccN hxlmAnwc Ejqvsl vXXNobqp IlkPYF zPyOVV GbkSBkzOh hqiIRHJH OVyQGOBI HvgygU ogvCSHXx jomICA IVGDkai mqlzXBhU QxAGkTp vXEPq amDsrpK nfwzCRysM TsJMVm GRNcKc RCzcXQYf lNxksH olUGyHzN QjxHKDmxj ONUHodCO SGznvY oEhLHhB 
+UpPAspBrP ggVebZ oPjYSqL RrUZMfiH fJeKcpT QPRouOQw BgoqPIEA LfoXItt gSJuWQFv FAlMZsTC KxzGMwcd JcBcSk lxDhbZho jfxEnguY DjXQXHm bPUuEP UUXoorIvS rIAjxP ISNfnUn VZYjY JqjUBOEv JFRxyB Mgnkl BBlTSOeG WYgRig ASoRvwl bTXbzPCb VJlEBtxg xXmoBig VvGJttW SBBnMsp qUIKjM qazbVUSQ TtJQTiMl HbdMSq jnfQcUy DhaqKXDL vFeEeBVo oMeojcFQ Jupeh NcvsV kbAGM GhOHTEC hBUKVE Pypmz qkEtnoqh ZPDnEX fdwmJj ECZCgcwqE yxwDd bRKYRo RFuSMkEmr sNRnIp TEFyNAyg UbWwZdjR ZaJMK KNfUUc CWnOCK CahdL zAWGq YtjyApbz nbjXWbFQa 
+</text>
+  <entry>
+    <procedure classCode="PROC">
+      <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+      <code code="1723915547"/>
+      <text>Text Value</text>
+      <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <specimen>
+        <specimenRole/>
+      </specimen>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter classCode="ENC" moodCode="EVN"/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <code code="890268459"/>
+          <text>Text Value</text>
+          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+            </supply>
+          </entryRelationship>
+          <precondition typeCode="PRCN"/>
+        </substanceAdministration>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </act>
+      </entryRelationship>
+    </procedure>
+  </entry>
+  <entry>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
+      <code code="1257968322"/>
+      <text>Text Value</text>
+      <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+      <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter classCode="ENC" moodCode="EVN"/>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <code code="706169586"/>
+          <text>Text Value</text>
+          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+            </supply>
+          </entryRelationship>
+          <precondition typeCode="PRCN"/>
+        </substanceAdministration>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+      <code code="2019679746"/>
+      <text>Text Value</text>
+      <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship typeCode="COMP" inversionInd="true">
+        <encounter classCode="ENC" moodCode="EVN"/>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <code code="949399625"/>
+          <text>Text Value</text>
+          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+            </supply>
+          </entryRelationship>
+          <precondition typeCode="PRCN"/>
+        </substanceAdministration>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedures Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>]</p>
+</body>
+</topic>

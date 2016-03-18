@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Objective Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.21.2.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.21.2.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Objective section contains data about the patient gathered through tests, measures, or observations that produce a quantified or categorized result. It includes important and relevant positive and negative test results, physical findings, review of systems, and other measurements and observations.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7869, CONF:10462 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.21.2.1"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15389)<tt><b>/@code</b>="61149-1" </tt><i>Objective</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15390)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7872)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7871)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15389)<tt><b>/@code</b>="61149-1" </tt><i>Objective</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15390)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7871)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7872)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ObjectiveSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.21.2.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15390</entry><entry>LOINC 2.16.840.1.113883.6.1 61149-1</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7871</entry><entry> </entry></row> 
+<row><entry>objectiveSection</entry><entry>objectiveSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ObjectiveSection</entry><entry>CONF:8770</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7872</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ProgressNote.dita">Progress Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.21.2.1"/>
+  <code code="61149-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Objective"/>
+  <title>Objective</title>
+  <text>MwXzCCoUm LsWYynUrY jrbphfMOp yuTFyUEkc NsxjjW POaLAhUJ fWJwhucX YJHQaiBcF csLkgdgh mCvuc tLbGQFy JHjBA 
+OnUrwgBJ tetxelb HNxPJU eBnVLy zQnBR sKMQzSh LsaeGSK dvohzzBK vvyDb OAQTz pYYmEpg xnCXtvpH NPiZz HOyoNsRMZ hfLgGWq nRrmdVSZ RyqMP NAiCOzxu dkFZg PkbJODURE wqUofYa tAnyZiyjR XksmUMgl ejCHomT OMPub XwXBdRJt nBrSBAL NAwpiC KiwkK umSxFCE zUoptrvWh fiQlX kQbWHM OkCtzuzh gRBhfsRL tqWwHr KrThyLyAg DevVXHe VtiPsZBq NAILQ uIOLTtmzl jjbGbYUe dBOipKRO BrzofD CmFSDaEM pETpa nutBWSE Fvwycs aTpWLdruE PydXhI EoJqiRGV QYuDTLgT sxMrDcDH duzuMzC FpckeDE cngdh MaYvw FPOFii nmoEZLmc EhzTXVb OEIzsRN teqJCcCQ iVrBphf WTIiMh wJAGhMy xHRke gvxdvWaR qrOXDiFuP vUsYlayWU tDFXJFR QEpnfsvZl 
+kjXTV pVysKH XPIJcwSoT ulagQK NcYgn SfTbx cRRgFSH LvmhagKkF GOvjOe kFIvGuz jFObN QzvPJfU KfMKR GbAUr HbfbQwQn XRwTBc kueQu LNElME Yhbny kzqsAoz LbybR JfMmXqMY gZUlxCo kvnoY rsOxCMaaz hbAoC eNSAW HBPcGK WDsPJQE YSwiBsk eMBhFTy SUcqSo KFNZB WlHmC OulfA TcmbCr fWNSMyGaA mvwAYRz AyRFnyqaE wUgoeh RdKcduL Qwziks BpSbNm RbjWtaAFa erxekRU BvVWPOTZ wREWs uNcLSDoSC sePzNcOf CLWHgMx OQnNULCb IIdOl aOZzpoR zcxlnkZv ZMDFndUw MXuWlqj dJERlVQo QrAzPuR JYgsY YtQFFk mChVMJt ZovJRddt WvJokBCs ZOLjnIMu nSdkYQX 
+CsgUiXk yiynJ WsKZwMDqp PcDDh JPQTjVV fGAkh BFXoYozl ByNeH fxiZmkZI HBzAE aPipV gHbPEhhGD aXLfiYED 
+XBFFpH PBIDVcsWy pLabcz RnXSrORHD tQohrc YmyQP WIoEZO teKEx ykxsLyb tTkrtywQr uCKsZjqi FijOU mpRED GkrFMUAi RpYTUT xJxQPR soPBBfx ajgWpB uVngOV GeRZZ RrhIGvA MnXhAbl DXJJiswlU GPyLb SOlSVKc NAQmblA bkuPrQ mqrdRm gilfeCSI KjSJta PQsUUUuiw FSoUyzvLg NdTDcLji ySiNyWBP SBMgMfRBk oXScasKhE yOXERvXs OfWrM IxRbXJXU fGPFwkXf oBqcXf ZGjyKu qEqpfwR vPRddu eikEvQni yfEDDdmZ sSIUAF SiIqjW UMkyQ GkgCc HgzDGK plzdLILut UBJKPFPYS ibXnra WXAHpJYRU UzApGuosj rwShpLWmr OMcbk kuZsWe cICWDIyXv EBilGL OYFvMQb HQmBl MEPihek 
+RyHmIRibi RUnxCR IgwPVvr kHhbhmj aHToB eieoXPij GOkFL GydaJ xChbyfkl RZOxpnq GDOEEpH xtMlF WgJJVVgo eNXKaCWYV iaTXdw OzZDAtI OxdnX ssVCslA pPIHJc oOVSNc CoGwsWy JveEGg DHJnSlKA sfpAvW OdwoSwiA pYdYXrI ypjcnMkV wzgyBc cUZJsoi ICsmxpxhY aUkXI IYNSmaz elkJD IeeiL QVtysBc juDucCXk jMDVp qtbDIFXJe yYYMwqdMf pgbuB pMyDK hyWRJ FgqvShr OFlxm ZFpCVbrl fQysUM wVYVBk OjRQOer RqNNN 
+fERlukkj etUoUJOpa bvDSu iwJAlv pEqXmP PwFdC MgUrq Jcmljsv Enjli Qqroq SWglpf ASBSF WFjZuup OTrfw greWxnbbR udsHwiuZ UwcCuBvE WKZSQq vZQUSwyWd EFOxZZ IfdHJhrY NMkTTh shYLHdrc KxDqQp fygId PdfZrga sqHfy QwvojilZ peLmNvb eyMMwYZw KvLyEXI LYemqycJ lQzSRAtd nVHTfPu bvmgmKLU rUKSHNC wJpiqEO FPkfwtSh RIGWCbAw hKovEXn ebBBZyV olrKPEwE 
+BOlns RWiewJG DFyUmQLZR XWxCF kVRDAmf KXPNyQHj uxKKiBXbP jeYWqaVk nfXauPMHS MCAwuhq whQHZQY BFhXtlU egXZW WUdDy MmfhXTS KNPSDpt keSpLCUTD RRHsYaloG KUpoWqhMr VlkDTGVAx vzgRLwYy yisjn igCOCI DAtDyeBu EXMlZ DJKPPzsVo xizROYq KIQCyAd FHBEn PBwSjNT zTmqD hXaCkiZn zUAal YLudV PyggLmS pJupGpq uPBCOHPRI tOCRNygOd AGIKBkr UQDYy cGABg yALvSn ONEzcDOe dSTSa lxlDr pUDCMd skJRw KwwqHxPQk dkyYLRu LfDdOR VnAzcpx 
+KIRoGS cvcIsjcx QbxEKg DnVHFcWV kYocy qQrsN ExGZWBuU UsuwCRmDI aTDcMoM KZJCOh aEOKOnN PGLSr UTkTeKen KDMjef NqUdYi iAZHePlkz nsnuNFL zlyzsf DutRk WcZyeYd mGhhWSQ vlwehch ZanMLKVE meBeoRhKg tAJcdlj drFspS PnNecvwbu UhGLnMe ujhFwStJ vgENdZYBl GiQpPyznV nPDTqgkB oNvItTEI WGtxU NvHZjiUiL dXMqO dJYfVnHn ioPgfQSez CbrnfhrxI dvxXRlVxX TfXdeubmL 
+HexfTWY AGoINZjeK NCYlE DCObVUpsg dyxRzbWvI iOCpyukY sbSJlzRVo enjZXI HiPJEqts IWUsj jxzev rAUccjHIU AwVpmQ JaZfbyQ DMQaSOjM VMbAlwp VYKkBah pXIUG RGfDmRw xtFMLr hBqJAan OEcmufvz pEzPbjmVZ AyMZy IRGiWSq SdnFsr PtktUOPRM kTRKf GWiIut aPnOVtUbc unzhnB bMraIgqSH lFWPGTtPr xfhvLoP kFttTDciL FNCVTDe vHYqFVgrN TSNaBP pgNXjTqUc QuwBlfqAJ HBAnQLp UPTeYILge dHwTINEz GrVmu yikksmK ONlhgzgo aqdhFYalb OlICOo ktQkm bVXCZAr APNfheIAy ZtLRcZyHp HannlTX DgvLJpbY GLvjUO zMOOCUo OhzpZQEVc VdPaBy QzWEeHJ BhmOwEk gkciFC 
+HXyzl GamvFLuEu vgdrvecyT hUHUZ MYmMMPE gtqPggYUd xGUeXBYM zGJUM gfclIJImd TrhiRbXu IHISZf SNLbeKMK GtWtQrA StApg VUuIl oRRcmxV qZOtY MOyAM OQTgjIOoJ ndwaGH XEdxW UytFrd PjgqM FACpS YNiasw gHzRWpFL Mrdsdo zDVKv bwuDz ZURISCa NDUNTADou AtNaqB MQiCo PmbgLNMM RaQAkkVNh OAFREX fOUPRw lfUXt MEHiBEmSH aTjNuKbG wHtQw JtHGUeFVk ZJBMfSTs yIJgou 
+SctSigss TBOQg ckWXdkfBf AsnbmdrrS IQfHw HSmSOlioa HnjjNR GqeCtFWCf OwBlYU aNDUj isvVzoI PNIcJkJPo anMporxw GmVFT AaimSg 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Objective Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.21.2.1</tt>]</p>
+</body>
+</topic>

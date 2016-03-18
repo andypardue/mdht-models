@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Encounters Section Entries Optional - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.22</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.22"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../EncountersSection.dita">Encounters Section</xref></p>
+</section>
+<section id="description">
+<p><lines><i>This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10386 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.22"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15461)<tt><b>/@code</b>="46240-8" </tt><i>Encounters</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15462)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7942)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7943)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7951, CONF:8802)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterActivities.dita">Encounter Activities</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15461)<tt><b>/@code</b>="46240-8" </tt><i>Encounters</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15462)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7942)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7943)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7951, CONF:8802)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EncounterActivities.dita">Encounter Activities</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.49</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::EncountersSectionEntriesOptional</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.22]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15462</entry><entry>LOINC 2.16.840.1.113883.6.1 46240-8</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7942</entry><entry> </entry></row> 
+<row><entry>encounterActivities</entry><entry>cda:entry/cda:encounter[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.49]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>EncounterActivities</entry><entry>CONF:7951CONF:8802</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7943</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry></entry><entry><xref href="../EncounterActivities.dita">Encounter Activities</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+  <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounters"/>
+  <title>Encounters</title>
+  <text>SsggLglkh vUkUfF wUXcYy TjtlwH CQcLhhax OeBsnM PamfvaR arXaSkE WpQwv wLWHTnIj koYJAb yIXFcZr dEEmPOqsx nwsuXBOas UJGndKRl WEKiFm lIiglWVz oIsImEY wrhkh EJCxPtkG PmxHPXN iCvtmMTY KpfpDLvU hGEegGjP rbXUU TTIqRLh SvOJcz LJAwGa LzxEGpR TrfTKt bXHXA kCIaWIY KSFuSrYen NatZlVPRl dthKz RhbVIPJVJ pBJoYWQQy KydkBSLQ KHmhvmkB xKvdeuWOR UeUFXO QBKnZtrch cSNKKSOE eRsoBwdm fvtyCDxO NrWPFxRFD vAGKfkb wFnNol UqtZrAa HjelxXH QkPZyp kYsrOX SPlTMa oLVrxYWZ QIOTO ZbSKTnuAg rfHxaof SoIElgx traMrH vzCPJLVl HdTurGD PWHaSin GSkAW CrcAY yyFxll CpQcyib iomaKjpY JTsxxZJlo czQwHtgG 
+uLIlUeHZJ upysWZnQ yDVSfNYKf IboYEHD unFkJd xrevywpnU IsYSxT yEStO zIrkQZnp gwVoEa bQGdj ybTsxqB AQOOVRK 
+wPJHe yeRUM HpEAxvG tDYnnFKOz rLNRpSDg IMKzHmr QHXecrO nemEgTiW USROMbdhb ZsXlVtkY bRNYNK yomTGDmA QsjFoplum AvTudgt AghKW CEuFfO pnLeYyMAy IxalkvwlJ NbHmz xXDfGEP UlzdwOju hMLDi KWaoO ILgYSlw RVcIiDLh rjKptH xGYdQJdh VGbmZTvcE qCdImyvG ZGZoO CFXPXS AZUaEWd ZbMQQrOmE VCBkgivvv FkAnSwlu ZhCxGB IoFfFzCU YjYHkE pEisL xoNslZgQY AAJIGJpOJ WeaqJS aVnNyere KGCgvnkWp YtuDYz SeGpx tpCDpJPKs fyaEw zLPxec zRyIt 
+yzYdJnAs pXVGbZ mHYyKU XUspm nWcJBf LHdcFzB JTNtz gENcRaa VeZeW ldEyM lUDVsGIIv xXypbPuQ ssXtJ hrkAOjVZ YQFXnrXnF sfcpy dNWcGdxyU 
+dduLzl orifokb WCPAqX iRRkWuW dHAxI DFEuz qJqXAk nSnDcM PyYXI Aqizm oOmxGJ cBqsNtJ RXNpg EuiCSrV wLufl YPUFaQpxV zkmHbZ ulaJSV ZAYofI CEPJZtl DBxrT Nndxjb wHrwt nVWKkJ HGcMJy IaHCO wrCOn zQcgpEi ZTYLYeikW ZQQQapH tDiUuRImA KuOklsb GqDlB aqyhkuxp 
+YZeRdpa qSKNxGfk fdxnmUsA xlLex ZiwWgmSH RvQtbtn vFCLvdHTA jvuOFqD VKyFFl QOfzMyNME GJBjsw oiWWOAG phqctt MOzbz 
+GXgnaCwFJ RoxcXEj tTCcF CExKUk pTEscnecY WCwNfnFRL UTTZkww kEMUyenj SXifpuP DwiEDL TTrWxLEV zxhHlzmH sFMEARH FmvoVsWR JVNKIo MEmGays NveiPNACq aFXNKFcCh cEuQe UMXoVtP gEFDXhzz HMKkmO ODapaLFzD sIbtvWdou VLOhKtM GmyajZ IJWnfsZV VbSqURdly hmHom xYjfrl azmTbGi efBAm drsJBbZ sHcpGZ mAItRccwa MTmsfxYu aRMQsWLEl tBzVHy mkyDH VvcBaCzFm sHwYKSFeX rIzjPFs KURiWJAH TGGYIAB sjdpvAl OokrCnzP JxmGNRlj SktYed EeEPPrQwD GeekCO PoEwcni pSYKG OYHjw kDLhu wFYeE otiaKZWS ZbLSOTmgW BvtFrJKY wnQEkwOTo OtoEomY aVjPIbE lEGBlcKr VgtleYYka tueWaOR aeAsU VvKcCy WMmdjXA nEmAiSCVV 
+DIFUKPTes LaUrMDEOn bfsxbsU dYewoechK SsKtXd EICIssrE bBcMnlNGW eXiAJW DXGYYLamO YGlud JbNZHBi PGBkWykQg cFqZT DHnRUgrK bvxJpuq mQDmMygRj gxHyjaehO ClDuHm WJVfydxC SKyEPh SSUPZHg YEdCUep QDyrbTOfW vxmqg JUbjSQA abAZlXN LEcCktMk jLXoZhgH teiLKF FbBHQ SHdjpK GhkvFVPml awGacekb iKqkPB LWmZyX YthUJQGQ dATDzt KudPCBmJo ogvcsbYa BQFYDGhzk eIHPc oYqGkrmbl hgwahUeBU kaYBbZkNq MiCoMNubZ CYfqTpqo MtDCPbp FJeWW PuCQMWeCy OlUbKzdAY wxIkVjKx QDzlhZc NmueKiFL 
+ZcICcImOf hAzowII lypzuyB PDSKUJuJ aWrSJ JiitN gOACcMcMH qcKArwaM Dtwvo QqKxoJyM rQPgdIsk gIYZpSc vLMLBn PwpPmdV HauRofv 
+RACjBRUs UETzX hDtBr BJPakAm UHaiF xUGEKVyQy wrwLqL KVLvG WXMBu VgmGMSZnY OXGZrL NedYiy xIzVUDQKH VNsbS oGGFvTdpr hjVEOKBvq FZGPTlT IeYcFsHD aWPsSDNrg uXVFn YGaeHfhJF xNmms jjqEgXr xpFrnO inLkss pSGcQ Tokoo eKPEWAGtI GBPBwQSoi fsNGFnk YVeyTAz uoRpAr aSDiTjN 
+GWIOiplG GiWzyU NjvfD AoTZC rFivxz rUjClPji rbABbB qkVsd zaYHrWwu qwVOZy scfLrj WisQJSjb bRLaoSN 
+LnWTokunx txRZPIW wtKMQUV MOCeXi zalOoM IUAgAYa ESlZjAsdX nKQDL SxbwXm aRSdONxrw aUsZcHfyF kqXPT FTPgrBR hJOEh OoyhRtb TGAqfy GhQRakjrt nYpdTzcR fvOEDPg MIiOJ ysCXJ EJRDIFvwK lwYsyRA puGeTAKV KFwnyU RoVCt mFrkfBJz fUmZspU yZhsronR ndXHKQ MshIGGw QCDTApTHm aUMsjZUo oQPJKPzAV iQQUVG yvVNK yxjnOcwXc nZYBm uMmCEGX wqmkDM nFQtpe gEsAPhoK jdgXD KhONlIdpa eRncDr TWtAx QApXEHCJa kEnXcLcd UnhXvNycO vcJwPmB ohUIRczcF nWzQq kXKzPdUkw dodEFfU eHzipZnM mNxgVrw pBECqS 
+deTLmZVB bMBNle BgKxHkbKz GTuBT Aogfi KJgcWdk OIkEDJH BAacztEW ikyJt CjVRwPm xlxqX UUNnCI CcYxoKjJ kWKTLwg TCzOSN ruuqTzgdp InDCzqc kmsZN PSDdSQ PxGxiUL dzdMo FuRJVfBHw SFuDdtqUY WktWzPFlT WGnoWIn FwQJd qdgHAnOA MngglYs FELZcSYXj vcniNJaf BwLlxfkEK adFaj RFqUeo mWjolfu kcMLMzn jTwltzMa miJKXNQme ZdiLoyJ VGZIWgwQ luDnxEgUF XKArfZZ trgfxIIih xyqNoa 
+RpOMuIlR fKpaSGu rzINDkZpo nfgqr koWCOG CSukLmmN NLWDxLaxj ltpDRibBV IOaahDD fFGHnv cveLWilr ElvXC RuKLpP sxGcrNUkC tnMOa NRMclT osCRML JXHGAcd XDcIihbt kgLbLqK ADWFCNO JtJeSQB xLwyLBpXf RevcXUR bCHhlr nzQpEFn uCkje OoYgk lZaMIUmVp WqbDNk OyTaoYuj UxSJOv yCxCZPm gzyou mEdJbg ADdSKsA mNowVh VOiGqBHoj jCBJMUyLg uXtNqDEmm wQZIJNZ cAzJJVOP FbItj uDgNo OJBRWzNYA CKPksupj JBfZGMkm uiPuXVun aqnTe nRTXp cBFhBRB fLcir UtuTrVU hlaaI KwVsXfuj aSurwTmF sBONeUo sAZpIsA QGxts zapUOc zglnEVg xZfhCJvzm Kncnt LqzAhcec CUxAP wzjeXVa FzRRBlOpK 
+</text>
+  <entry>
+    <encounter classCode="ENC" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+      <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+      <text>Text Value</text>
+      <performer>
+        <assignedEntity/>
+      </performer>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.80"/>
+          <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosis"/>
+          <text>Text Value</text>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+        </act>
+      </entryRelationship>
+    </encounter>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Encounters Section Entries Optional</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.22</tt>]</p>
+</body>
+</topic>

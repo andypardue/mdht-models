@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Preoperative Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.34</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.34"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Preoperative Diagnosis section records the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8097, CONF:10439 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.34"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15405)<tt><b>/@code</b>="10219-4" </tt><i>Preoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15406)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8100)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8099)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entry</b></tt> (CONF:10096, CONF:10097)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosis.dita">Preoperative Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.65</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15405)<tt><b>/@code</b>="10219-4" </tt><i>Preoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15406)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8099)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8100)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entry</b></tt> (CONF:10096, CONF:10097)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosis.dita">Preoperative Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.65</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PreoperativeDiagnosisSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.34]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15406</entry><entry>LOINC 2.16.840.1.113883.6.1 10219-4</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8099</entry><entry> </entry></row> 
+<row><entry>preoperativeDiagnosis</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.65]</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>PreoperativeDiagnosis</entry><entry>CONF:10096CONF:10097</entry><entry> </entry></row> 
+<row><entry>preoperativeDiagnosisSection</entry><entry>preoperativeDiagnosisSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PreoperativeDiagnosisSection</entry><entry>CONF:9888</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8100</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../OperativeNote.dita">Operative Note</xref></entry><entry><xref href="../PreoperativeDiagnosis.dita">Preoperative Diagnosis</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.34"/>
+  <code code="10219-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Preoperative Diagnosis"/>
+  <title>Preoperative Diagnosis</title>
+  <text>GfUWiWto MXotd yqMHr KAQqcEApa XzCRmyPE YDRoVypaQ PSFWbJEa VTOKnWGWx LAhEbnnH oeTFBHvuQ LSKWkVI QCuyCQUNF FbfdEOIJ HHwzuJRF RItsfVJOc xpVKYoN LYlWGkTft cLgRps XTxxiSAeZ YsAggYGw ZBsuixT acCBXZM HMfxjPU OHGXkwEa zJOkWs Ekkse axEwukI nNSeljw yzRFrkAUB wHfthBot TSrhP tmSayzfX bVckuSr omdcg HZkUb MAYPJx blCFhFxd SezKD gpCkf JSKaiGqk trrYSGErH RIhPcCm aDENSH kaqerv PFNFHUmHP FVaiJfkfq dwCkAvF QkNTkrUlK GverjBiL WAtUQh iZpJexkT bPqBxccS QMqMJi ViOkI CueFoStdJ aYPATy QtsfmOCXx zdGZIy kyqgN SkbsjWDXB CVfKIia eGeVdZtp SHiKWDDO oHXUIM YKdCqap AkXiFdKY DaiFOlyV MWxyoN CSKRo 
+maOdphk hmdCW nQjZjel XZqCiTgtO fLDMm nSsROk wySxc bBPUZ PETMa YrcgQC vAQby cuVNuODA NMyzmjFz exXqiLi vhmhu couzEKObW GARTW ZUDMamzH CyTnYWROx kBRuAxY ejAawalk elHWBGIOk ETvzAWP ZOTciUcJr zfibJD RPcZMwE qOgms GRRPAPVoh NqvFqMnJ FUiDlGroN iRPTry ivEwl wXGfezotV VbpWcYuaL QNuazXQ ECqZqMt lIsXjcWKG LgBOpE seJzHXAbO pEtSrgcPq goqRBi AbuCYGm vzIxrgOk uyODONv qfureh vybrqGQvf oqYwUIND ptGpDBQl vQpBrpng 
+WDEswEm GQQedCXpA ISWmE EjMvp sgAKFuIR rpIzEgCX MWNXNWWHH HnWMJzuqy tiKbMe vrPXXjzj BElTwA BgUOWl sRcKZNw VPSLGlE xyjmwQDbk POBJgxae qfRZs avwGOKW apjhHsSX StJrltJP JGlwSIvd NEetKJUK tPsKdLzR KRopI sIwDE FuJPBnyK dGMXUJqR tbZovI TBbAWDo HZiASwk ojhtrId DSlzoXbP mnZfsfPy NzpTgiZ wDvAS gmYWkA bzefriyPD QuPQTO GovSaM MCfap EJgiAEPc upDYzOfVT VtZmIV cEiGeg iXXeiZN HwMBu AGatauz Ovsccom WwcBFk DWHlHsnB ewVBUv ZJTwN YQzKGsyHg 
+iHHTExjp ZiMYzDuU uFjiTOo mkVsEqOMH XLTZKJPmY ZmAZxpDoq whbblV auSvPX FdUyaIUVt OzHtmkrJ YTdTwuOQN HezAg mnGysl zPJcFl AJiuP KkunlfYXn oAZciu 
+VVAByrWqM wtgxFBquK lahWTS ROYHUi yLpYTauBG PxaKZyDHF EBktHEBa mQqCNPzFS pquNywdjK Tfvner FjnCi vtUxIstdq GqPHRHul PfdGZxlH yRYhk KmmTZlJx nPAHoKKa OxWcIR wuVoKDPFy QjtdqeBAy GulcdTH KCUkkJqbB dnULMkvhO lHjdwrd JySQh PgAdOXH mvmVONiY xCLrSu iymSs edrVqhtSY NxNRccFJ lpLehoM omftMUC WmWfvP EKfyCyZZ NioRJeMXr HglQcdiAi MkSCNM qXXNrO AXAeT cFbzyW pkLRPgv ghmXgNmoD ZCITR twpgo rAoQvB ULCUm kPVzxB JeRPc jvhLf dUDIPvV MNAxu QRaZk gRFKxQ 
+lMEzbk eykQgIugf OKmXygN yhUAVK QTntc BCYEvSWkD QoZhJNWP wnBGpLT UQefnUhV fgdrsDfxk llefkR WYvfOZTII sKXqFYWL MELdS NgzSRgEkh RzxUWsj hUyqVU dxLfbhwA ioADYP kcaFwYIy yjoAGxnH plAOhoAZ gRRizNyNa PSdDmYjOT 
+wMpdhhS kZoIQx rJRPNmC fXnjF rFBwyWeJ DGfRggcs YIMSd URsElKtg tNPmsh ZtkJUOcJu QMXahGQxj BXalrGUrb sZfahVQ lpMkNAn yhQTb WdaiAkrr IKkcUC WUDYbX kpAcdPh qaMKP cnMDj AqFKdu KSftvpiwk tpRriOW RZpdeNjCO HTknhuXLk PSlSTp BPZel SqXFXR XSOSgHX hWcaAR lDcOcKk YoSldHdHO dsRvCDnQo qiKihbz qvJlnn NtQntGqRN SsQIOL eOrKmz 
+TwxmBZ asTpeuPx JkWhDHdaZ BrmuHyv ZAOUT YyOiyrD YJMTGybV wyrfHXwcW gqfVZ nhJzcZys LwpaUuHfw IpSgn gAjMnUb 
+pwhbZ PWpNVgVt RNEvaPH nMdUQq eJnxY IJwjpDCTK rntVl GGrLfxeRF GKwdMMFxc YkufimMpg fjQPmRjv bAffcl nJjGT LfPUZj sDVcp rJvWwb xNmDVETo uqMfnj srLRLBXx nESYPCWCl GCkhN iSPZyd BgFDG lkzvXTWz Tlzkp haYMbgxQ hrMzvw SmNOFlupW ANypr pyhJCqfb boXqUVO EgaJTtxej UVGJmLWXF NdjVaeH GAIOExsq amowyKp gNWWyHFlb aKzlHRsG NQVdeNEy AKRLP CZQtTAGL biXyqwgc MLHUusZ yKMrPXF FCqkIdBn FAmMC gJjflurK wXgaYuIk RdKTxq btFOiqPa ZVnKjc NgxcUCyrE lJFwpxa KgtcPQMz ngAOnu MsHgDTdNB gWjamOKn aLnzTWGO KDXVwAyoT kzIKcLlh RJBibS DBXpDDk 
+jbNWtsic yVWUW jthdfTEGF RqdoNYqrr ENjCCe pzMuFdlV rwicsBdJF GfpEqeNHQ NUKoGsx wfUbt iYEAvHJPy aisfM wzklseK oTdwFdDTh oFzGdbhVh gKXMk kbDPlXuC IFxAm NkXPKoe bqYiScfZb FanbIkGUo BXGtIQ TTLDzz esLowt FziaZqWKk fyqeF PBHUSCgI dkLWi xXlgwL aKVJar sLTYIbdQC dZUdbv bJLJmN lhEPVw wPoGMfxU aWwhNKbq 
+vIJaRBo JatTQYtl ghYcxoK hvAwl gQdFJguVD bWJns sxoJPH rxfPW sMxJt yGWPbT yRouxPBu diFVioZ axxni vZJFNHXmT CnaSLnLK xlwesV XelDMVwe zfAdCLZyb mYUyMC FFSqwCQ 
+mrLitvXv kbBznUmDe gDbMShhi PtRlNcgml UzNDtQNpm djJwd DXnwX BRmNnxdDt bYGTvHFiw zoPghGkkf GGdSI fKRJDy pIrstTbF lfMLAfqb MxUHslgDa HIcjhMW noJbZvyDL Nispxi HfdZwnfth MizaaDZ sokRkIWN rIGiq RsuTH eRzmZmal xGCrHVZ BFhamF ZqtInQk SZTNI JyrKfVYZ LzhQJ yYgrhYBs ScdwPoqmn LQgTUAU vLIJgL JzpXTBvv cOIEiocv rRZTkNd OKDIOpOWl ebuOscI JpaGfRd IIPQlp zmGWebK ArzyT AClASCvTo pxgOxv FynOMkkcK WnKbKTuS OeMRb GCRLgg bPuDp zfolF dICUh 
+ZSEbbYHoV oikhWV fQpUgBRuz TvGHIaU netmW OJZSltzD nmbyqSWZs UNGQd zmxVeS GCtlWg RmEws qTKmqx YjukXohV gYAwtbS NHlmMnZ ejnzcdbm JDBss QMAQsJ TctTJj mubZjH MjFgAYOiQ oKGzGD DxPQE Dztgf dhtQe GQZaZrWEb ZvlhtADsk ghQtFxusD hiVgrhY yshBpFHNF vqBkZVciO ydbzAj usLGmVXeY TfeCFJ BUBezyt rILNB 
+KFAEviUBo GueXwk IdfwmFXyM RaBnIkVo vraYm OtmVGQ PLXLtwa xBrQjN zTCHfqCz YjrcZbN XFiRik RhnFGJmcD IfDxReOD wlWtn KaSLUprzI ICeadKlly 
+fTsdSG cysTrT dhzNr WEnIw qzgyz dRZMf TGCxn kLUiPEvIQ esRypARSA fJeKSTVW nyMORsM LRDKx xslAeAnzL YCAlTvjL KnYGVrcmx imOqkF chGDcf UrrWuV ofHpcZ oSQBh ZrQVD DSTaSXAB iYBUAzlV YNuWaLzSc diivTi fOfebpPQo DbTwP nMEluqsMv xfiDYb oHElhm ygpyN WFuWwQwX rgqvillO kmaOad qrsbnW IzoyF aagMpIdRk dkqJBqK GopZXfmr bcgpeVvL wlejEepy ovrnw dvAJZX wCOiopz HyoSIZds IZeFvEi kZXqQ DaTDV JbIknq lNfnLu hCFRIefS HvMKjzi OEuDEU CMUQfbU HLnEZNmX gUmEmm prCRVr ibXfHJ YNSvb AftdNpY OrTtECuwg TMbZKHUN yksHgk 
+</text>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.65"/>
+      <code code="10219-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Preoperative Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.34</tt>]</p>
+</body>
+</topic>

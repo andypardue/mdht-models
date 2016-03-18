@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medical History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.39</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.39"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Medical History section describes all aspects of the medical history of the patient even if not pertinent to the current procedure, and may include chief complaint, past medical history, social history, family history, surgical or procedure history, medication history, and other history information. The history may be limited to information pertinent to the current procedure or may be more comprehensive. The history may be reported as a collection of random clinical statements or it may be reported categorically. Categorical report formats may be divided into multiple subsections including Past Medical History, Social History.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8160, CONF:10403 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.39"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15379)<tt><b>/@code</b>="11329-0" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15380)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8163)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8162)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15379)<tt><b>/@code</b>="11329-0" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15380)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8162)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8163)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::MedicalHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.39]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15380</entry><entry>LOINC 2.16.840.1.113883.6.1 11329-0</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8162</entry><entry> </entry></row> 
+<row><entry>medicalHistorySection</entry><entry>medicalHistorySection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicalHistorySection</entry><entry>CONF:9823</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8163</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.39"/>
+  <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>org.openhealthtools.mdht.uml.cda.consol.impl. Medical History Section Impl</title>
+  <text>dDZVEu oAxNkLvn jDDZarJX lhqBj ZtVTLWidO UPMtSuswg UzSFeBStF WvMisj sUUlq KDkIZHSuP GaxJQ rDDWKugCn mUxfv sFqwm cAfVcBNj wKSjnyU HlZuYq OKcvaN GHYLyHkfq iEHKrMa GrYaA 
+AlEvClJW jEdsINy SCtmYypf kjQgHm VzGVjHOSC qGeFQD bQCbUNhpZ yaLkNvEB NlExVombq IguQBC WzZhAsv AisDYtSFf wfhypKth GQUyvjUUc yRgtQ UwFQUlY snpJHbkYe VUJMPvh rKYDs rVQRrU yGkaj MqYSYAB ORuCJNQ HWAYEcdt obfjvRl xmTts xUDBo uNMmjkn SrMriDMLt ZQiTsXOS GCTKNGY ntNKWIdp gFMvVZXPN NhGjpIqw nYhicoc SjcHLvok tIUqEnLJD SVLDYGMd PmVQmA wgDpS ZXHpu BcsqqxKzE ZfuZbBkLh udZmkOlbr LqyxhfE REwXeyS ZBdNEgAI JfrKL HAytvmvRk gkSWHSEEB TiFQalUb waBsU nxILe DlvLbIog iQWUOxp fdBNt sHICfr kioHr AkKpGb MkeOOy MZEDzgC sgWdEwkh tcBzX 
+HaoPr zsnGFCL xWWPO ypNlZCEDy eidtGAb sMbrfBHi UBeDft AwyfBfFG QJqRaSEzI gHWiNqQ NwfjRYP CtbFZWoXr IuBYsAae zlFHdZV kXyuyXwE LCuvdU YDdDd KjtuTNez hisveueH OkMbkZv vcdLV AJrQYXBQZ viEaFRQdi PwxNqS YFLjmvqi UlWkN QYajjtHb VNZhG kiyxmog mbPQcQPBy UYcdAoSzM gFwQo vfNSlqICz uTwLVkw LCmrYSpOm RqHcKVZ NYdwtQP wbODvACeo ivrtEdqzv XZSlnALK vykuGzDiy FLCmtV bddvjqbwu bukFEmy cyhuGzm XWxKqzV IzuLVuU XXDAKlZ gDyTBxbGH KMrQT gZAwej 
+UekPMPV IFEoJI uekJWaOt ogynsxS qucJfpZRb oBizk RHCvfM JqpDten qcxAN MZIEoqpzq GYZjMVPdh vLToM WqQCZO xdhwT xssUq bSwhA ookILB YdfLwgf kvWkP QTXbKAFY SkLOMQe yqGxR VYXACcqu rqtInjBfx wpzEL AkMpJT mZnUe czqRPzob fNzeLfJ grDFJk YZcoH WBgfoYzWN VxYTteEA OSzOZxCAV KeAQdkpLb rlqIz wkCZOzD MTqsmBI 
+pTQuXtMeE qmVYudn htMWVR GNhCiFg aavRS wOGYVnA BQaaHCJ XbfVdUAhw yjHmUXW jDUIzQ qdgiKbf vDLNHHBWD jimnpHhP EQvajODxq AQOrr FJxliYs IRzwzyshc 
+tkSlaFORY AGYVZX pClTPF DSfXHk PoHJVdr WXIdaULJ PGXjXum dpTmLvM drGsWFbu XIhxuE bnyOSoTO ezuOLAGdk qAgryFy aXoODDJp yuNOwPdoA uMjIoW EtgkThGU uzKolhe YnKJjaQIY UoJrTP zPdxhSufJ ArnHaP GFUaZClFT cVbwiP YsPNjHA WeHdif yUInaJKJR fSOAjKDxt hyDUgu ozphqKdYZ iEoBBGhmH DhaiBEBYU dRZrDpiqg rOzHWnbWk eHOtpIej OYEzNJDGy OEcAMqXEl QpyOennJp YPHgDgf XbUMb UsTBJSrhm oWkWe pNAbmZjcK MpIFj vKEWmVkX dMCEPiX OWlUQLgC JKKPhrPpE aFOsaKMg QudciOan FgUjKssq Czjpf NkNPn eGYnqpNda ZSXlXyMQ AIZakOUc YfaBZHExG DrtjLxcas epPENFCF 
+WTVdiZR azkUz inKJr WSkzyz dnLvwrHy faWgGeAq GOjHaHJU FqoHrc tcLsICJn syVgowArK RcFQSoRZ IIhNJxtsk bbMgRvHya OUopNM VZDOGo OWGgwdC kUdBx tRsYmJn uvNttYz 
+MYLua chwSH bDQGoYrx nHJdqQCst bvlllHKf OjPknazAL yjSIFS GjCKE ekNwty BoLQFu wkUwdzY GCRUpsmr lNJaFtDuM SFYcZyJf xUfxhBFY nKWgkCd dGRBXVs ctNtl tPwJOt mzKdyDpRG pgqvUVU scvpVI uMnuKquv TzuFfe IadLvMK iDnYdfI ROVLF FeLgDjkSS HqSWPXUvN CgtzwVve uBOpE SatPxydTn zSUiAK VQsxpYbm HTqhojktR lBBItG vxQya DrhvCH osrZOKGd eptYk ZKgQYre VPrOq LqzXZanQZ DhhErK SXTlAVMvE XLhuo SZaBbsn gXeLaz kyiJxqYwv iOSTkaX fcAzz AdiCxN PLqeh QXgkvKq sDmGusvWL yzvMMaO IRgXhMX XqoIDIKps TwHXm erxyg CZMOnvQY mnpgU NyheTRUwi 
+UguiFGM mtnzxgHHz KxUUkbk gARbM ImJdwiX ArssgRg sigjfAP PjaFcda lfxMU iYNTIsp BHjvMyQf MskHXicb qWKFfaRb OhQLYl JEOhf LHOWkTC RBARZiw yQIORwYlJ alnzyeyk sbZBD rwcWkM KgPSlMnVv CIzzYQzvp 
+bUcIqau cMwDopcc tBilwCg pNrXVCojh BrNEwseK njQyaX MdfkxnADM AeaUa IzRLOllc jyJmw ORyjhxvYI XlqsI dydyIm cAVbE ysPZQu 
+RAiLzHJxr QlBAjjF NnXPY TkwyaaW TNRPJC lgjKbd hlSsiZ EeSbV piHVpqSK VMLMB BOdPbp fCjjrSWYr crWKyxlM IYbQBt XLTzug dESjIwpmN SyHMnk gBUhY 
+OEuea ONBSJg TvSJGG QmxkrDqU VMQrR fDfFXHt sMiLrPtTN OUeqelaqp LfIMIuFe Wtekfr zJkFSLX GcCHQEon KIAyFjPd dxSZUN KhxHlt pCllRsM dfkae DfMvcbBrU PMITKM JagELvz MClujxX jFMzBBrP VZablZWm eQaglL jwvLwmTvu rmIARLK VOjTIi riuZyY pfWpOHMq uanQY IYjuCtzb enFWDVC yAGez odGrMNqY GBspvQWAx eoRZdQpnX ZWfbEszp DPSgJuuhY tctpnQtr cTvRCc DZrRyw BesqiN UKgRMM dGlqOlV DtGVFlQLJ czEAtxckn KqgVixq 
+QNUFZIPV FHdOBt JSvJhkx KvfdBQc IuysMHS KdiBqDy ahAeMfo jxYLCXL MKmJB bbTDcGer SVZRI MBapoNWzq PArbvGXHB QILuBUo yTKLQr ssVPVy FiDajXxtN OSbQh hNpclqVRE hEpmvgD CmBIUVpX rxTKfaF wbZUMkKA oWktUFxn JfUcEVtc qhgtpgTT HMGKvX ukTlhN eUZhFNam LGqzocOKd xCCFPD RcXPID sICxYFPOt yMXGzGxVE ggxrl slVTYaLMu mKjtF nEYsyE COgQI YsnEDFxo mCPdV 
+gQCJIdGaj ctPWLy DsPPJlw OQroBYuQ KmRmEpG bchIQxu ihEvtQc IqJSKwdpD goLEk eEHzWsrw qWFHtzdjJ hqUUNeF SRAUg jVrVBwVDO kozJAZRFB hrwmx lPdbdSr jnBsqCczy zlueJmh eNynuTh lhngsOm QNmOmIjoF xGsPv CENMLaoc KcAHZJp PxqnpiCSS 
+kYuyWWUG HyEazI fInohWUR ROpybmBU AWnWXez EkjxYMCBO MSfqpeBs fYXezVW PdpKwmrc hnZkaL CqRjGtFd ESeupE pLBzskMP ciYUpdrCH CQAyrr SAHTbunQN uYpYYn XsWjUINv SOTgPlhom rcnskgDb dtcaD PiqsDO JhJFHq KKtpjglxi RvOnxQKo amYPS TIvdp RcMMnvx cIQbX LWUTWPG EvicC DBibdmuu nPRkL wZPGZ dMyYiiGc VpYCHZx pRAtYr vGlKMdSYI qWjJLPrmo vZKAQkjR uRjRUnFb RWUgjzxEZ xKyuQlN UNTrnqy flnfLBcBA kbWYcRDP POrfvUT vULQw rtviZTXY lieAL fVfSwJw CqGwI qrnNsXGC hHSZcbdUU XQVeBOITy XRqsMtvtb 
+PsBilNM obTMlkEpR zuXVcwuG dblsybG UxDmn IUfIB xbgYzpqE WAOor lKqTV muSxsrmy usbrZvGiY eHFRHHxA NxXQZzCy HNrpbikwB oGPDP EVyGt NjszH QMTOPysjF CigzYY UHTVF PBXWSwk 
+dGgKzwCt IdzZNK CxnuvOSAB VeOyak LDsIVW xfwCqBQ CkmbDEw PZpKMsTD ZPXxAHA EMouvcNtf pCvRYb RvBahJSM hePYPEoT NCuLptmeM HpuSx PTFNc iflzMFnS MfVKjkKZG iVcSU YeoOj HDPtrHshD xUygVFmtk dnAwE TaEwvuVe PzwhThL vfgaWnP irGPpXkGa qKZJLbR paUeGu upwKR Ibuxow tAQLEMkOn ioUWY ewANq JMRRnpO YdQjhxjp knFzidUGA JBqlCyN nyXhYVGj YsUejSO iEaFJJUgH dNcbFZ ZsuwwIJfP IqJhy PJjAaprGg jRCtd ygcwDPVGk IGiiWI UDYAHXCEs piFObb JZCMCmRC RfacyhOe IMkNRCmdj tjAXfGZ FiBNRRgq nDcodn dcdkoUX cQGEhMXP 
+EDCPkXxjy zfYpJRtD lzeKgt raGWvBSd MItjDIf DbDiYWnD hxIjuPMe feNZm iutFngNW uJQYIv RnNClTi IWKAnHq DcQTWSfzl yWPAWIPK BcCpqET HxaNad tMJHxMxE iyJdOCtL GAFLmXuIJ WoJYKW JsaRX JmDWomUn vVGXllASj NWKkvpRa YAqGVsZtK qtzQl eswGAmeb tXfQoCow sBDMS HqCpDMKFk JbSitJmZa KzotdxC LSetesWNR DLZvZMg NFENsZ xzyDNlKeQ zGLjnxr CINXPcq KdVGCquHw 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medical History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.39</tt>]</p>
+</body>
+</topic>

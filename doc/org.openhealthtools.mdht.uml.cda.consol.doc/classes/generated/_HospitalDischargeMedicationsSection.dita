@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hospital Discharge Medications Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.11.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10397 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.11.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../HospitalDischargeMedicationsSectionEntriesOptional.dita">Hospital Discharge Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.11</tt>)</li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> (CONF:7827)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DischargeMedication.dita">Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15361)<tt><b>/@code</b>="10183-2" </tt><i>HOSPITAL DISCHARGE MEDICATIONS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15362)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7825)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7824)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../HospitalDischargeMedicationsSectionEntriesOptional.dita">Hospital Discharge Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.11</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15361)<tt><b>/@code</b>="10183-2" </tt><i>HOSPITAL DISCHARGE MEDICATIONS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15362)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7824)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7825)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7883)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DischargeMedication.dita">Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> (CONF:7827)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DischargeMedication.dita">Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::HospitalDischargeMedicationsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.11]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15362</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 10183-2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7824</entry><entry> </entry></row> 
+<row><entry>dischargeMedication</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.35]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>DischargeMedication</entry><entry>CONF:7827</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7825</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry></entry><entry><xref href="../DischargeMedication.dita">Discharge Medication</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.11.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.11"/>
+  <code code="10183-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL DISCHARGE MEDICATIONS"/>
+  <title>HOSPITAL DISCHARGE MEDICATIONS</title>
+  <text>IrsMaZnGH TKaySsq JKLRRumu xoeqDn xjxYVX ZWKbKs DXzZazm TxVQQmOU jMlnZ cwEzgMEF keZvn rFLdRj ywfgO dPfQCPxic zxJxFL JZWVq NUmDBzR pagNtG oBIwjvG xPqmlJ PwoUsYj oIsFruA pZVuhg jZgoDN rDKTCDH dzcIaZe GePftAKWi LWpovRNn vKsgKh SJQXKY BsnYy DzQZkSCPw DvydDhvd VymBgsu dszWPd gXdxFTqN ZiNqQhMY alfxxN 
+CJqwX wzrxZuPl PKLHdxfG MDfvGJ BmluOQ bkjItKdcJ VVUgk TwpqtNww mjCYfF uuShlSgxP FVSMnPR cdFFhaf CnAiRV ZfuvrWHfC ybiHCAlp xtjSN VfacJxJu JHxwqxi FohwXf LeWFY gHXowS mzhHqwloh yyuWkNL qrRNrzi piBtNNe oFzhIgxqQ spdqhoHNH ThGyqqV ebAnRnxI QYgpypOj YHEpfqPp ZcWvPN COsFAVH hgGpHSH 
+azmDqM UqDZW hSArbHvE JYwtl eyMFNy iZBok MHATlN RmwxkZA clQzxoBzR mzXrWPWju ZHRWpmM PLfozwsBp GeXLdI UHyMcNbBT nBNVNGCzj tCEDyMpxG duxJG 
+DSfcYxB BWcJF ABAfIT oAGHqCKVG SXynG AKJNFlwcK ZREBEo jhWRNrb ghzosAX eTfAyWeg KCNLgKV AenJpoUTU xSSro vToePIQ GChALlsLh mtcglhS ODscUITNL DaQYyT qiaJlIf uripoYR qVYwrFUp xFtUfb tEfPzPd CtzkDLhPG fpHPWI HcWmA cOSOdTYh ZjCMqDgQ ccXmVQ bGoRUrWRq IqVCkPI 
+iyJTO TpIjAg AoBzmMSk tiXgbqwnw CovjMGzlA GRiYv xEeHtlvbQ YbYHatB VCULbT BBbWrhf oxGYHg UZqvmTJuB NlBsreyT lshpS jzGIUrs GFxDuS ZVJWBOvb HjiKWB ZYCVJEJ rmyAt WRyGlD QBJFKWPB anWyyV CGFwX QAWTVIvv mRcktHRYg AUaGx YxZcxW ERsLe jnkLnx NDSLoIPI QpGWzC zilhDa RULxhNa wmXwbvu FiOduREF HZWQnxkm QZgmy LXgkJPJ jULwcHCsB vYXEyPO JwnYg LGTvrKAq wawwPOAwA WGrky lyIdc tUzfpEQfC iRnbSH zWRioELtc wPkYxqRaT EPYTQCiAw CnvtVygqc LMNuzwe berdBVI iIWvI IoMyr CMgEeJ YshBdcR AkgniHiZ CmWxqz pLwIlWDcH VdrdLwCm gPLpaB xXdaUE XmPQc JQCQau UPHPxZ CAirqs bbPvRSzb ICMvka 
+jxekQdU kuueNG zDGpy HbMmtaO gpglVam jNqJlH EVeQq SpeVznAA yPISBhpXb yrPIUPsT jouHRQ xdHRf lxajSxSht HoInryV MNODt VMtmS ofGjt UxJXvVb rnvOND YqjBtffG oTVaNDYb PTOUl rUavsZeXL EBweYs itKaH PNmvjo JUsneFb IKjGEMfDV oeVgPiLrx EnEnY hWSDLh dUvWLkJ ogxOWSn sfJJeaSC XCNanK ULxxGRBvZ ReDZLmx XULLJvilP KjvzZtuno jWjQj HPQxDIsSW WLGfkn gsnHLnc DosAyEP DkOGnhAWA JkpOVL lpIAMG sHzzal fkaPS lojhxTx ZNAkq nisCALRD zFESJLNd DtCvhUWG UTAgw KFIioqUY HMasYQU jQKsRFcGI ZVxZsl UywOUwbv kGdmjN YbnAdco rgfBZ UAAtD svsJejej 
+ciQTqKX RcGpaXREA jkKSicrv ZbVTqpKz JcqWDraG bVWFZF BUeiw MKNGrilW IzAjHBeFh XMUjSxHB gtArzRjV EasYCstOt QZWMpFGr ZrvrKy WbFnk iaihAxE CThHFnvE AcnmSKB nedDPSAyM WgcCHRG pfHAZ LQwjrN FwacgLH vOVcfNv xHDcaFyV RSpEDRZf ZntUL jBZNbZEIc oxIcoBAkX fsFMoJmHn PFlKW lxdDIAgt GDtun naUsh QsqSf epKUG VOfMreNK gyaLYH pPBnaRH KGdlTuD PJymqvUdm PjPHf VCKEG vahBsTgZ SFgNBO HYlLnqM hRVcDR aWwRmhm yIfDub 
+GczvuZb wxCmce Dksvp BdYDXAv PINZyXtSI xUuNCvg kBxPmv lzRhVNL pUWvxwEdX AeIDBuMN KvJoGMBUt yeGgJEBP caIYPf rPHtit iVejb 
+EpwVsz MYuZji gMyWlpba uqrWX jikOjf mhePROOMP eRXuFal WbUEmbkQ IuQySp kEaqiK poozeYoX KyKYoZpO tsGWuOnW HmmDoqTW AZunTA OESwx FrPgdu xtgwcK XJaYmyqO nwsSPbKm HOSip mSZZq CrAnJkQS pihODENv VHoRfpoD LsBzV mblnJzi EVHXJ GHTAGcxR HWnwFgkn SJCwPbs fcOWVb bskoauYcj whDRGyVG VHHIgjqTF DGYULJKYK IospNa IqBZPw yTiuTQAOl 
+sTHKIso AmMtaUx zwLgr LCVNZGii rNOYQ zawBoxINb aNpBy kPLzcjKTE kcBmXZkr TfnWSX VJuMrNWph JKjwzyGL LYbUxGpqA lxgHGgZp yagyzZp hmfKORoE GzwNaSqug btRQFsc zfiVqc IaDLPDDzs QBpVI GeIamChff lmlbqlNdx luvCTji sILnrjdB NrzIwf vVsqQpdnk hKUcI WkFsaey WnteHZT TrXdEVclw CHoEko JQCrnGJ nVZOXqGaR iAhpZyMM uXatpGjJ bMIeza tDzHAUXg YWsQYPiP zGYMfgA AXsOg VrRxJ sgEkj SidzKB 
+aevwCBBR ZDSxK UXkLoE kJqeaMbyp iQiAmLs eKVTtQgp xliLtdLj guZiSL qZTJicdq oODBB xPBYXAQ nlCxMkj FWVCt JlbjB XOobHjdiI jVOlM ftTzOVCB aAWYErE mkroQArF XWGIYU dzTKiJn MPHuaf UBANmst IezRiTGf mbxCAcNoU ksOKDsXBT hfGzF ZIOBsJ PMtaHi trbWFG CplHGFmX qNFRysDOp oVexHi zoirBeS gcNosnp PslTb aYQTqZTMp vVdLTAM jHWXfC bCifUc lzMHht fHFAoUHk HnWXz HukjzZ XDHkYts tJQkzglTW IedxETK mqaoEd DBKUlwoR MduBmBIAK FLiyotNUY UhwDwg UAJZHUeh elEJyqZg FtFGmXAY zlDFu XGWZrfe qNRPkzyw THGBQW izzTes XrBXW wczpDGp bQHzMtG jLkanHT XuLQH TvrXMDrKu MAzVo PaQMcYpty VexWpvvP IWQNr yRfgErCE duVsCiOtm VHgDBX wlcgdmdY 
+WQFAIOilh mpOPC HRYdj yxLRMbV shhNDcVs IqcwrcE RUBce RAbVEL ksERVTklJ hzZpF PeghPgy AwPDN ZFjVFS yYnFFV uGrJCR vVmdV YwDXDMCYP mRaLTWMx jxKuWkKc rklwZ TxrJqYgRB KRXpSR CJVHQip WbaLksaQY CFcleo OinXnQ ibwsHVb rLNVX kPebhmzDm IANhbe EBgEXbE rlZOKmpDq qqjCy dUsdbSnR jECYDeY TINEhe ztfcWwYaO NsEFE qmGGSpCXY QJtOgopDL HFnvg veIKNex sQTmC lHrEWCOzJ NcdVus ZXUDaePoX zYcxnqJ UdeBIZHn BQCoqpM OUNzAPKL JmDDXZPR XIaRBZsy kgVGfXXWs qIHoQpL UxUSuhX VmhfGQRd qwvol iCGTcTLdd DXyzoTT 
+Arepquc PFizp XgXxZVT TCpyhBFyF dVoEm emzNOqpeN qtDWQ xhAiMBdP nmEVOrkhY nlbuJ TzZUvcz GbZir xshbwl aiDJJjNhU aVWVmje mayuq zlQWqYLzZ fZTXPVf fxXMhQE VGMxk dwQmToj DCwuwUeI tJpptn XbJfaMEOQ CXPlygZ wiQUE iZXBo xLXuKCMN WeqJNdc JFadqvKIx YMZis uNYTYku KCovWGsDF RNlPg MrKkJeqBb 
+Kubdqjf zGEFbvHt EDHYblgz rzzTbufG bBcnibAI rRbFACnS pgfpewbCK ntqqRmBv YSOKF bONREK sCkmmy QPENFQeNz aybJj WvlhuP opJdIc wfpJTZG TdFkdosU hcMKXhhA XTzoE uITaLNZ HJzaF pDsLEtq ALvcQcfT exVEPP hGtLO PVpRlSv hrNIkflQX gUCtccYD ytWhC QNfyTzvFP hyoHXnEt CJGXjKt LgmLCvQJ Ybripd lEEngvCO FcaNL MmRDxoZd wWtIN YTYim whvYdKJs zxUHzBQx xifIrAL pRHSnP mcvnDG UHPnR VLUKtb CvDJfT CwfWxs UILHYG HLwPYVkFj xJhXIZq KSyCN zCiFqDlz mMbsaB BMTWxq iIFfrgbnZ ikVuyBdZw bYJIIVYDl hejnoJX tzMPyzMoh jzPmHzt 
+RhTbYEP vSDDOQAiM LNuCBggHb ylPuMiAU nIlfwv ulNbQkbG aGBOBO HVvIh pKyxOatb jQXmIkVTX cMFGQ CXWdx YUCOluN bFdQQ WhgHoH XJOjSN YHrZnMuY vjZXp LvLDfe nKsLRGPcS SFYZbFBDm GaHxYxMH AFPcaKrp ondDos RrGnuqqa AZYEasylX ODaRic DSgJaW sliGpMj QeGvvWRlz iKBKVYoL xJlSgm LTuDiRdnZ BdYKm hEkWGj IlYOC lrjdzI DIlISb WmSUh lZslaey ovhNF nrsIbPnd dnXOwB etmvkck FOldOpBuY WpKCmB EMCXQuaj QYlJIgXWB AQQekZ EWElyYNkR nDseg AkZtkOFSN HzOFcAPhH KSuUEnNzJ rXadCbj mHIKQRwR OSZnIA ACzVuF PXRPOtgis CcChSBECi lQLpZBds OTUXA ohqrX Oolak FtRypeYn wfyLKcuz MrKpDA DikOwLAzy vsARnFV 
+XHjMyOx oZqIgmZJg vcYhT lHFFzqbl fhJYTL HHTma PqlXf kmUpqLOCa kaZrcjdA vITmBecr YnAZzllHj fcAcXIk pnLrVUn VRcfYGZf doOfY FBcvGBtHQ FMSEbPKZW nityJGnp rcsoursXT gcBKvWYq UjXLnAkI HeMvE hAVhF ezKKU qrxQzKX pjzwl wxaDKTZ levCfi NFzboNJ AXFOXG UhCkSm DTJLlu kqNDQwA DHgLfRT qmbRuAtJ LcUjiKnJF jQcXVXgck ehsdNloH omOTkDHU FGeMPMlh 
+Ohjrbv zvjJPn oPSlyeVmk GoLxbb ZirZCG COMBJ dAZVtxrx YVNdre qVUyCVa LqLsXic LmOOV AUnrM JYLJfzOf WwNvUROQ bzIxGziu NckgC hYoBaqm IOvStVQQ KwwcsTZ jxetvStK nreHbx nKbsxw gTnKJokxN SMTJH XLzDDE EnnGeQ PmxtmAfbn 
+</text>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.35"/>
+      <code code="10183-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Discharge Medication"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <substanceAdministration classCode="SBADM">
+          <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+          <code code="939709924"/>
+          <text>Text Value</text>
+          <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+          <consumable/>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+            </supply>
+          </entryRelationship>
+          <precondition typeCode="PRCN"/>
+        </substanceAdministration>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hospital Discharge Medications Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>]</p>
+</body>
+</topic>

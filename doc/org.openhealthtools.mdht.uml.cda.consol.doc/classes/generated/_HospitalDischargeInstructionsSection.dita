@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hospital Discharge Instructions Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.41</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.41"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Hospital Discharge Instructions section records instructions at discharge.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10395 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.41"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15357)<tt><b>/@code</b>="8653-8" </tt><i>Hospital Discharge Instructions</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15358)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9922)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9921)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15357)<tt><b>/@code</b>="8653-8" </tt><i>Hospital Discharge Instructions</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15358)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9922)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9921)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::HospitalDischargeInstructionsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.41]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15358</entry><entry>LOINC 2.16.840.1.113883.6.1 8653-8</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:9922</entry><entry> </entry></row> 
+<row><entry>hospitalDischargeInstructionsSection</entry><entry>hospitalDischargeInstructionsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HospitalDischargeInstructionsSection</entry><entry>CONF:9926</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:9921</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.41"/>
+  <code code="8653-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Instructions"/>
+  <title>Hospital Discharge Instructions</title>
+  <text>TahTXfI VUYICV MCVbNk AKsQxQAhq xKeZHgd LoXbWfoX WiSWEM DPjqWjqao UEcpzU ZoClGkr cqcBRLa FFUMyeFM YSdbNc RBBzW nWAkBAbbB qobiCiTNN Twdpq cUFvt JyQFuBfTj heEcpWqfH LaURktK 
+trqmOUzL karCvYo ntKwNQ EJNWMLJS DiRHzmOay zvHPyAIF nkeOZEwrY HLTufMP JXmNdyKr JTPtWPmTb EwoAouvb dWGgq nhpgFRw qtpRODiYq XnfktLdo qaxujUmw DoeeSAD NbEJNfs NxKhgSmh bdPmL bFxVNoBp gMotfvOX 
+BTKrelqal RAkTmwt ZroowTaGy LjANhUbu hetBpGsrW gLXDkPf zoOgPLF GRQMZXUwz ItWiHTS RBjIFLrp yofvu VeJuzOha ntKJnlcp xwYHkQx pkRQU VxElO UmDZs SUGkjoZq rkZuNdlbI ofVpxB vubkAu XSZOrJi znoCwpxG DnNqV XXjdOFrx IJJGG ZmNQLKv fBwia fUfLCNhA YmVXjaRhw IHPxOZPDZ GuFZsACWq tIqULz AiHiY rGXvDDz TlPphjXK KkHtYD yaCPBpi qyJarX OzTUBD sSmHnXS OBLyYC KRpIpUCJm lLbJOXl NLrjste VimjKw IngyqTR umNbsNSI nzessYJJ qMCBnG aXycDFJ lZOaxIP vAfJbgk UgbSmUdKT AxafgQd ROJfYiVyJ aEWYY QFSIECUW XHjPlsrf dkZcs hHmid BHVkppid 
+UaGlbjWL rDficfCKH KuynU wRDXGZ OtaDCM ZLsCrTwH hRVQHL TroZnQSjD PcaUZXCmn ILxYE DcrGqfkSM pShNmXAAV puhiElo RtPItx dtSTFH oeglCdu csMWfpqmb npLRR RyAlaFqF PeYeCjWa NHTSfLQ fWCpKeDqU zBFiSYxd cFSdf pHgdHdVu VjLYlsMe uNvSBsuh jymppb RFSQR pnHArXdEk ooUGMqVx BTtauA dPOUiOyYj sYNcbfiL wRgyE ZvAVMTO kLRdyQr hRKjH sDAwLAPC fppuUBu 
+dNsmR FPbLKdGZn dgOpluU vlyUQWqDd mXxsLH ZYhfpJwD tBtAxn gqPwrMlmx lPLXN IRRHedNR afCYqfMM sEvyNRC heNQUss KxOZslaFz eSXkpPoOf WfFDbSM XMxhXFB HUXBQC UQDemc fTVbAzR aLskG VjoXDN kkgIGkjz NuZWwlLI CBzob WdydCozz UAQCCqnGP tjfMmAwMA ElsGDP mzXHycC iVMbS uHBLRp jCRLo kwaDYbwYN hTehnBWCf aGYzPPFND OpNbb IRGQY YlVtybZ cYIqogJv 
+rPMDiyW tlVVU RceSfjy hEsZzHUG FaEbAK jZLFss IShHCS lHCaLo qdaUZHpX YwGyAsCMr oCcYe TEyXXxmRn PwlHq lxEjTBN yABqXVrwg BbyzSXmY KwLyky 
+gHXxsLHqA CGbNdHpPq KsiaDMSC mFYJwckR QljVE JozecF aUKGZXr lRDKa JsNRx OmtjN XoVSIv wpjoGNXk ErKjkDE hUjhVdVpC uAsiisr tUGAeKrZ tcKnb BWKdjspj jootksm vRrDjL hQoUT UWBvVSl FDUJO sqapAJX bMNiOBOzU NgGCyQuTX ISgAWBb cdctC GcaConhQn lpBjFxCI HBrsNL HuKpttbfw AiHwSmiMC OwwbzZes ZAIlrgl uxqKX YcixIAjIj kmzhsr YHlptZMFO PARkN EyLDAQ zIUfUuEBx frDUzMIt vpnUYgUK LATGjzQhB mvgsiJ hwFHSgEaO JbbAInji EgfOKSpC ZxBTf DocXO leDgXV FTjSOWk FqfSJ GDSQtF rFDumOp eXfTg veIgkN sHeoohb ikZfa rdQZcrk wRWluaT AgqRXoK aSMRq RnOEHALE wvCwQMjuG OssLOTI Jvuruu XvTZI sRrIu QgSeQNzCn lvCUhQ 
+LDCmz vMmBR jfiXGGs ZVCibnyH KCfiDmRB kJKvnBvVu naozO QudZcemAk iRvbUwzh SOnXt uamzEduB tlLWTFo AlrMnC TRGsuuJU JkIPdVPbS surWZipk aeikrDiMy zvCZwrDcI hmaIRSe UYoufRV rigSrja rlwrMgUfq lJggmBDb gCnYizO sbFICA yRypMDt hbtQrY qPqjmEJP HBBgYF xwFOrA zLdXOh kBoTT sJROXW bjuVgSV NUYpwfg OWSyZh 
+OrZnvOIz SkgHOIl fNctkAVy cZUJwqH xhkZdtTLW zQjAOF mvYMqrsm PQEvgljq atNaeh AqzTTKGM uvqinYVJy RnDYoqe tToJMQcx ScATqRj ZXAznd ShhkbekNq IRjyxUGGw YtLYseJUx VMJmKsm vKnGEckB mhtmR yiADFFi lNyEYrs ohyFx nDHLNcjXE fRsrc QNywxU NMuvGZ RYnqNAWRF DsNVQtAd sleeBqZ fKoPzM hSuWTclgv FLRhcNA xADdRhz XVhJCkw NJDEPR tUTNpB krvIJpC HUeGls INIfOMOO UyNsLUv ecNzIn dBohwKT fmoVgj bUxuNKmh kDIdVqrf DKEXZj wXzAewvwr gYlKCg jmHwPt dhUnKvE aUUFgAd 
+XQhSWB xaRSXQy stjFGyXZJ LRQjSphd uVxdTq kkIao kFXsf zefBO zyoPDIPpG kqZFPR VvFnuIBc UvhvAj ZIMTxEf rYYSuu KpGEi blSNIE qirsoD DssfqEl zgnIHalhT hDYKUY FYqrXqZi TaLHUGT ziYuStcFz SrCqXle OjYXytBRE sBvAkrP ljlwZE eeFOBXUn ikjQZgm VggMat 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hospital Discharge Instructions Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.41</tt>]</p>
+</body>
+</topic>

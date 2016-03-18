@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Tobacco Use</title>
+<shortdesc conref="generated/_TobaccoUse.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_TobaccoUse.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_TobaccoUse.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_TobaccoUse.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_TobaccoUse.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_TobaccoUse.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p audience="Examples"><b>Tobacco Use example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[
+<entry>
+						<!-- Tobacco Use - This is optional -->
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.14"/>
+							<code code="69443-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Did tobacco use contribute to death"/>
+							<value code="373067005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="No" xsi:type="CD"/>
+						</observation>
+					</entry>
+]]>
+</codeblock>
+</body>
+</topic>

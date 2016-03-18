@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medications Section Entries Optional - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../MedicationsSection.dita">Medications Section</xref></p>
+</section>
+<section id="description">
+<p><lines><i>The Medications section defines a patient's current medications and pertinent medication history. At a minimum, the currently active medications are to be listed, with an entire medication history as an option. The section may also include a patient's prescription and dispense history.
+This section requires that there be either an entry indicating the subject is not known to be on any medications, or that there be entries summarizing the subject's medications.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7791 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.1"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7792)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7793)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7794)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7795, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10160-0" </tt><i>History of medication use</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7792)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7793)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7794)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7795, CONF:7573)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+<li>If medication use is unknown, the appropriate nullFlavor <b>MAY</b> be present (see unknown information in Section 1)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::MedicationsSectionEntriesOptional</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7792</entry><entry>LOINC 2.16.840.1.113883.6.1 10160-0</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7793</entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.16]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF:7795CONF:7573</entry><entry> </entry></row> 
+<row><entry>medicationsSectionEntriesOptional</entry><entry>medicationsSectionEntriesOptional</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationsSectionEntriesOptional</entry><entry>CONF:9521)</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7794</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry><xref href="../MedicationActivity.dita">Medication Activity</xref></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row><row><entry><xref href="../ProgressNote.dita">Progress Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+  <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+  <title>History of medication use</title>
+  <text>YxPTh PkKpJ mktHMoRVe TpZZiN EGnJr pFqMcFvx HBjvZhnmh IKdnC GXQCe qkTqrjr RFILr xrYJXy dIbXDTKF OFvghKcK PUvxn ckYzxUOB uOAEWciqe OWljEo sbwSJoci djQLW LBNiQo hQuAO hmnoy bbblAX TRdyFanJ soOrYgJKd YmuwGmtK kEtfvwq zqYDjTbH spoMloE EdEtjUJ twOaYDNcr iAKMOvF zRADKAsH DruetY tvPsL muxyDPW TMRDymx oXgnBs ZiVGuV jaRUydnk YTeuRVcG xktoz bgmWzL dFZjTBRB zUKSj KFlHb XgJHEJqj cpHbdz yyNFs vKEtVVw tqwNlZya 
+wcVml fHACtpOdR osnvZ vwPKphcbZ FGxAmWD wXbInB vlInyoAxL wdYgsDJ YwDWkDWX kKbrA IzwBrJut hMOPg dobNRvu kfNuW DLOMOwlLl wbJHdO LifkhHf PexZh dcxmbXLz zDDWPoz GSSCb EPUdI wpQyiKgep IaJGeMq iqgSIvJ wlMDms EiOLfiUJ uBomcXhkC ReuqPYx oSDyiliXM gUdblK gDHoOlkp CisHmta QPQOxqSWK qxuTZG IoECRB pZbHKEUA uEIlOF QwmKwhcsA ebVRQJfbT pieNT ZzzYNxCln HbHowveK WnUcexwN NazAdAZj orOqRMhNE mHawQ hHRwR xSVOHCj biuiiguW PcdkwM HUCpdNOXK sJTaAXqmI QPsIY PSZZiys tEUysd dDPkdIvBQ RujGZXE LBSSS 
+ZqAAYEOuc lGmfGtg DQwCH riXJJwxMO hUXOqVnF BEqER WIApYEGx uCMVEeAE WKginehnf hYgxy xGgNXAviM ZGckVR ufvSegoe DUOtC nogSer BvqCgSsK OCxliTg ojdut NofuFa UWNwsfc WjpDka XCAUw lXnYl sJpkvk qnsYtA nuugLbK hYcIDh CpnDOgAk MyeAIs HXBeZlko RQucATpz PqjSOcBhQ tXLXu ywYZs iBBtPqVh hVfNaJXo hCtVJI xAWCs wXhpOVe ywKIayXY vcuxaUaZ ZRjCYu sDzMYBFN lLlOqOCVU JeVSsL OUCVLQd eIrdVz MyuoVe rKPWDwL jTlzZ eBbmonpO aLwgqJoo rdiyomVrX OtHwYagX gnSDfhneW TxDto ztbFjo HWxlVlAtb idfSLvl ybgPg TvCmVWehy knhLWFTT HLMFuIYX uTdCGbeWI JyCGcZzJo 
+AxPagGjQw YWsijS kDAVWpXk SiGYsHBn pPjnSwr hvAmaE zdHMR GuqJHfu ZBZNrMkI XXueayBmN cuBVBR jLBHeTMrW nvrazcShb uLrGSQ HFWrPyV iFxEZ vaBEvV nyODmpQYq uZfND FOOMpw ukjFQIa TBhzby IHddbpLY kTgbMPCq JBfAWOKsa IdnCC IXraxZpE Sdhxq WtAokXzPx kwxsN roEfO tWmBKHsFU 
+AgBVAuW XeIcnEJR tSuts rgUErvrtM nlcIN iusZG tgYcUA gpSzXw vgiTYeYg vdUcrX FvIUT INPyq PaviKTq LIyPt fUlfLG CeAOjQgri SFzpGtAvw ZIoesiu VkeVlroL BZVlQdG DUKicqI MMXDV pOLhB xyhWfUIXI CTqyBbv IxfIEtey KYTlnkR AuPpfjSkK JAAIt YWqdVCqnr dmgJJTx TJpOYS NMugNiGkN dkAKa ehPRSRtS erDElriMu sObwni FLUBlF yZPCMtC MlElhVlnv rilujMSM BpwZs IUSFpzt XADdEIQK gbJypOOJ ODAFgcPS XkxtQS jDQDlFiG nVmDRgFxN DgrorzXUu 
+AJMfcgjAh WWdWXeWUH UcLmtsMI NDLWVwQCX kGWkWg jNygdAvf wzUHr VzwRCXFAM oqiEiexe UgVLow FPOFy xcXpwaS oNwAkzpdD WtGiFIP oYHprGgxL ZPbGZE wZDfszKD XmtQt qKdXk aCMCqrtq TyWSqrm sOwKBhh aForKHYwh SrSIgqpz oFDJPtF wQhZeNFX HayejaMuF ViauFimUd XsYrymNAI KHtQpLP sYdJUu jaehyAPp eUMiXNLsP LdRTY mLCQZA VRGzxS qZhVXEN KqKmPMSU EDhSl ubRmxuWw hTHLp mWTvoaK ZzDmDB qlWUjBm EeTTbe sOslTkt coFjvvU nmcNz qPkgRPmfq lFmMt HBUQfBCS PYuWTYAP YPQAcpXB vrYYUTGc CCLJIda GjlMW NPPOHO DYbosSgdr pnuhLFhiC Psupm GWGEEw 
+sLHaOMOq kwFsp qLluZuOd TNMTC fdbvcGk lbfMCc xWxQI UZrfGSz stxFNw TuXcckUiA cDLllZfp wQSnimJ awWaZHnfg WDEPdHPP 
+cnKGXY RvymMJr qtAweeEh jxphHW qHvEDKST OXFbqvpk gLvDsM TGGFKIp BkjsQtl tUNdb hvNsVDjCP BcPPbJtDH ykrLudZzg UoInLD tWsNQQUl NpwnHsj fazhDlqqb qslqq ihgbll EZDBJ qJdglYZV awpLgijZC omlwxtT tEsVlfbhy hjftsSbUF XLJbx pbDjOh OersOvw lJtxDnIAh sEekhnU laywa QhflI KsPXTQWso PNCixLM bRKWh hdjTHpFEY hloHU qlpmYqnT iBpZXpT wBiHJ wtZPhYZzu KuUjtQ DxBgc lDVENOfl JnUSvyFQU cejUvQx HQMQw jFgeV Ovomqxxv XAnGQq zvBnJDmV eTaXqJ TnDesi FVJFDTiT nGvLyf PFvSoXczv BHLPcXmQI KchtujFhZ fFkswqiwA OQVQf IjCBrn khNsowYoe zaXVANre HOVdTzki ZLdvPhu dPzfmwp TSBphn laqAq DQTtmWiH UsRgJCOtr ZNnHO QvGvO 
+</text>
+  <entry>
+    <substanceAdministration classCode="SBADM">
+      <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+      <text>Text Value</text>
+      <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <consumable>
+        <manufacturedProduct/>
+      </consumable>
+      <performer/>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+          <text>Text Value</text>
+          <author/>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+          <code code="405654162"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure classCode="PROC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+            </procedure>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </substanceAdministration>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+          <text>Text Value</text>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <precondition typeCode="PRCN">
+        <criterion/>
+      </precondition>
+    </substanceAdministration>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medications Section Entries Optional</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.1</tt>]</p>
+</body>
+</topic>

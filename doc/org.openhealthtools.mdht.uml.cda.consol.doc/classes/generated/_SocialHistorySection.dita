@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Social History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.17</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.17"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section contains data defining the patient's occupational, personal (e.g. lifestyle), social, and environmental history and health risk factors, as well as administrative data such as marital status, race, ethnicity and religious affiliation. Social history can have significant influence on a patient's physical, psychological and emotional health and wellbeing so should be considered in the development of a complete record.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7936, CONF:10449 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.17"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14819)<tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14820)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7938)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7939)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.38</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PregnancyObservation.dita">Pregnancy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.8</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:16816, CONF:16817)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TobaccoUse.dita">Tobacco Use</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.85</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14819)<tt><b>/@code</b>="29762-2" </tt><i>Social history</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14820)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7938)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7939)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7953, CONF:7954)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SocialHistoryObservation.dita">Social History Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.38</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:9132, CONF:9133)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PregnancyObservation.dita">Pregnancy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.8</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:14823, CONF:14824)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.78</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:16816, CONF:16817)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../TobaccoUse.dita">Tobacco Use</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.85</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SocialHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.17]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:14820</entry><entry>LOINC 2.16.840.1.113883.6.1 29762-2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7938</entry><entry> </entry></row> 
+<row><entry>pregnancyObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.15.3.8]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PregnancyObservation</entry><entry>CONF:9132CONF:9133</entry><entry> </entry></row> 
+<row><entry>smokingStatusObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.78]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>SmokingStatusObservation</entry><entry>CONF:14823CONF:14824</entry><entry> </entry></row> 
+<row><entry>socialHistoryObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.38]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistoryObservation</entry><entry>CONF:7953CONF:7954</entry><entry> </entry></row> 
+<row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SocialHistorySection</entry><entry>CONF:9582</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7939</entry><entry> </entry></row> 
+<row><entry>tobaccoUse</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.85]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>TobaccoUse</entry><entry>CONF:16816CONF:16817</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry><xref href="../PregnancyObservation.dita">Pregnancy Observation</xref></entry></row><row><entry><xref href="../ContinuityOfCareDocument.dita">Continuity Of Care Document</xref></entry><entry><xref href="../SmokingStatusObservation.dita">Smoking Status Observation</xref></entry></row><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry><xref href="../SocialHistoryObservation.dita">Social History Observation</xref></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry><xref href="../TobaccoUse.dita">Tobacco Use</xref></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+  <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+  <title>Social history</title>
+  <text>lXbrCXDM JvJgqKcY gVAcVRwj JwRnTXRl QzejcOqlU gQUsb dZuQCg RrXzbdOAn fxrRV zxvxA QHIZXLIf CXvrfkc utYQYVo RpPUG gDHCsCnKM nRFcqSda JXMuf pddyhzJ Wnvyqrg yhZbH VjWaEyu jmQrPvOXx osmJqkHMn FPsuHB CcaDfrV mePBgbME NbDSWXD GhOnOd RZzDYJLDp jyMqU GjlstAN pevvyd mzVSCPcV YnUOSxY 
+ctTNcXTr NcJpHQ toniWG XvotFS FBJPaD NSGaOCzb GvXWNV zPpoNoXR UrmqVi zVVpfRO zrnLdTGiS ewLiW AMLnV hIGaXZC KwksOw vbmxgeN JDYmE yHqeNKhzt bgMib OUiqNbuWt umYReN RWthiTj MaTtBZAj sarttSh FpIfVCo oIpvax JqcWN dJNxblIdk TrkBD cNfCYC ugFWspo gUniaTpA DDTTmO qjrWeAVg ZdIau PODTomjL keirSjk LdWXw xLIHCZew 
+pkUFOmZVI gLnIRkz RYeZXRrR AoXRa QgITsOET mEVlmthZm YWWHwQ ekEVE BgyNL rnotm KQpSDJ EsWiGzuL bVvDlv PPamsQS GLDPRe fQXKy noxae uerxsJ PONSDJWfu EkbDEGNT DKZXOlI QesHw OfbEZuf yuTxCBhcG lyPoPkDa iclMJLli cuikzny oBMmplq aQOFWqDwk YdFwT sytrBi DdurGiD TxHTCFRyd ovXecOXpq YpHWoMJnG KmMio xCpBb OWJij yMqksTfm xgUodH gWfyL cZtSlJIuW hWYUy RNOeaXqMO gDbbptgl xWDMdyJ RyvXellun nzeUvWqTN zSTAFyL bDsXyOoA dqFrhwnG FlGMj fpwbPZAO hBNjmW WgDqPPrB bwjwaxwtj EuffUWl MszEVS sqRUdtZHS YmuRLnuqG gzOnTuZ veTpnC eTxNCeq CzUHKIBA BhtRlzMXN QKtNuBcm PoAdGuJz gIFYIVI vUoHXaOh edUJhPQlh dmyfRb 
+YxasAtnj paqaOvam czeAV DpPvYs DTyuPF eYXgmra MJKSQnp CIyqScQ PTKQmnv lVhcrbaE hEOpb OIRomQgt UJtcsDQ RyoYFmzo lsAlrSOaa XRCnDsqVB WLfxNER SPnXvo SpsaNx rwtdoikE gFSJSWYGS EljSX RPicI wBmnYzFnA YZDEtR XfpZj kEZAYkkF dAktU MPBHMcq djotjX WomrVCKW wrzTOFh QIEWinat iYteuJ wxBtVS qDlewsNyi mtqcuH AUgzXNyCI CQAaWAk GGLlNLZ tqnsWI LQBVZky gXzjK ToWNIUHz yNNFxqGej AveWI MeJQk NfdSyXQl RngUQjXIY WtOxB MZrvA CMwwVD JeowzYH dBOpvsAs hBbdeRMq fhFDu sZDZMBw bBbtWiKpM rGbxx vgZdkpXb nDVjeehb tqLCDFY byxxtQ IzMqByv HGzcD 
+OWaZXpO PrZtmFk JKsXL qNojwiho eGdafwh kPDXeYg YLcdjVtyR HNjaajhu kJExDCP PTeMRWUj jBGiMT OhjGEbJrj fffOVcvqV SYnVAaF IfgCkm GcaVP dAvWtc WpHeguQuc odDJgZOQX dLseBigd aCCbydCp dzGSEVVdX Vogpp XPneCq HNSKw aggGATRvb XrCQgFiJy xUIQX VXSzDHyM zsuGO oOmtu gEOuL JQkPFaJlk sdXeVp EHXVU SmQEQ lMuZvwH KkLnBRa AlbqhESup zxVRKyqP gAsrjgh YrpveIR vBaQifvoX OrNGE BWXqc JyRuCFD LxNGeO 
+AxfoFsy QJlWfJWDL wpPRQnk lgPsF aytaxfsN meDjQn WcMUYlJfL pfvRnxd JfrRQVvlz XBkiNCvj EVRMPSzwb PKTOdlmzS eJrTvAez hzPwqyztg dUTBLfT 
+EXahskB UlOQLkv AKJYrpj ytbTeLE RiDnnk gwjNdBQ OyZvHSvm ThsPTyXU oICwgLDh cLCAFhDC gNBjf ZMfmMPwV cfyjejDb rFeFWeiQs OHshcDesA 
+PZoWocEtL cxJRo BxtyMX leJjPTumE ICeqg SfqYXh phcoWlbDf oFZWhn NSEMeMn ZOzWMUCdD ctkFUjITe XLLurxb RHTFRrRxm wegTT KcYNyMG LNEMUdCBv JrghYY gSLfclr etmTRDvF aaaXTZJcG ENgnqW WXvwph AJsABaZ BdWRmPd QhtzkfT lqHDc HaqRdHoX 
+OLLNvWEY IuFgYOmU jPxTWyCR EcDGCAS CZxYM zqoJwxMG VAipRwo RSfwzOAH nWxKABdQK EuZjHfw lTqeXTf uNZASQW LnZmskHdF htKisfkwF WXKDWwjX LRIxmggZf UArRU DLQwndCd vPlrT vGfTBYIn qjBIcPA uOQcMH EcvJgYc RBkqi cAkBfHJ QMMIENCn ScVmCrAE suKJMu pHDqzvggK gwZTpFqx MlEmPzhmN DbYmEn iwJSHirLR zhcsk GRVcCgZ qbwtstMV GABmjXKh IfrUXFdV ZaeNoxrKO twBfnRyF dTYZZ yxtfxb dplPhlX MjgtcK dwaSMJ cmlidf GsQeh nUPqBy eQFFLPNdv WBZFwHfk hGFILi pqKWeBouE puxkeFoKZ wWLCoWr hBGik LVEwvxL EgHoUE GvkVqUH 
+AeGNQFKA ZXyRsz NjMqnT hEZpben TnNhb vlAXPcWkS xrZcXZ BWfrY iKvoFf PpkJJa JQqstv SAIqAjD YOqWsyOc ClAcsygBj UuKXaK vRCGBvSe aLBwPueP plksA CmaYVyA Gvlpe ZKRelQA RtNNpuClC AnBgElC sNPinIgw ctTYtWcRB JRgpYZCxP msmBQIYtI kfYRNyfiz HIonNFes trTiYBQZ NeGgyBdlr PTcAnPP IFIHSUWW XTjDszNsM XVSzgecd xOAChaQ TDVQfOAJ 
+rAKfHwhdH itUVYTyH uwmCzJ UvQTXzY EIWlYeZCs fTveMxXNf KuYKn KHBBkzF ljeqnK WIUFxwI laOdzjyub yraAlMoK BfunZDrhq CUnSiHr McYfIgSt fSoQMgw LUtltBqn QWGDFKa vSIYwK JoPQDC NecPRe ipAXakPO aohXzEZB ldvwOxK xRcqNKcge lSlPuVJG rTozp TpWwKShUd mwKAa txqKNGzY VrnQWV hDLmew NbVXHTX wLWivS eBuSM NNkqDO MrXGYadHl WsBXTTvbG jZmvshZ qYptYG OWpYUmmO chOAoDdnp JhnAdlYff VnLJsVLn nycoQCBG Lfejart nHeCsrCrP oziBJ kCnSg MSOeZWMFt jvRrQI eaceFHqm IHNHYZF WpmWiRz LMIhwYfs DBPAKlRgK 
+xEukOisP TvLZOY eSWsQO vISOSe AAjbrA wXxqjHYP mfGpfAng eMhJB ZPmmPloHs BuaxfH TtUjiCe emexMIqs ICatSvdNZ XkjYko zzEoH BPigolnwb WKbNSTwXR FHXKuBir sKMMrkvI iIeQyWPUA TecFhsvR rwkyHi NzTmT COsBLgf eZMJmTZ CyWDN THCMpB FsoeQE SPqrbjvxn VxvunEfT yXoDKXeTC BZTekztNF BdCojY zkMdK TOmhYUS VIOpQucw Biqdw VkBFqF uBRYBH FgJxmzUZ NFuAtqK qBDlBFB jQXpssf cfYYoGaPM Uakkg nNWywZ zaQAdZKOD oWADWb SszsMyf YdKbxzMew HpLgOONF BEPfaTR hmCXqhWpf ousmI OaGYLP bLMWrqFG zDBtxZBDO uQJFcMJHw apVHLQM oLJllJZ ZbwiVHAp GpaCiEDKT NekACax WCazi DKauu vkSIYMZHX RprFl hQCcUzY xfXioKD DHsMILX XEFVGl HfCWGZo cjwARlJMS lBNmIx ZnbKAIKYn pQTvLmHvj GPzAcn DaKsyO 
+ynMAmS zXDVG lKoFA SBKALfks jgojuNhI XeAnoUrjI ToCmnqI VLfivvFc wHchPnKi lCkSYiOMn fFnqYpl HigsZAd UtOXZFCk zXxfUdPv NxtLJ SpqIWVPnF ZCFZY WQHhnPnTr rwvCzGPzZ iUXWoS tUeMV mKvQVCJwt SStqSBePL pSUBhFRl wXLGiU 
+FEyACBJ NtnZNt zrJvApLc izbUsXOm LBXcoDTH ADxcVIElb zvGTmyUk vwNtruUt aqkck WIrtOY GlwaHxLlI crQyOLZSD aVlfhOFyR qpaXNHb IkiPNMV ZkSCrPZG lMxpiNI SRSvUg bnhTBEhlX AyhvPok AhQtJbN ObpwMvz ExPxkrO xPbyjUQ wgkYMVzLP TbbUImxj kBDJxS wsUytOXDe ucviw cZOaPWXq LfiSVsafv lywgZBPE GjqUmsQ VsVjzkbs hLONdJE cBEUUPV tlghKK ozHRBVmu KWSraC iWcdiCLeq gHDaWjbgH EXVzdIaYx SMNarV dRQgzQbza MbLUbE WRbkRGF jzByP YaTtTR pZZvUns opOnLlSjz 
+gNojTpTLr EtpYY hurhSwn kMEboF WCsKHQGgn FIFsU yWXjqkhqe hJpPuxiqG XnPWQ noZuGNS UtWHv mUIrqTC bHLHBNdqf cbjuBO zdhRMJQU tUHPeDerZ VOYJmdFZn HkuHwVnDa nCRDGZG WgaxiSFq nVQegKr iKwpc fHvJg plFCwTHCu PRFnQqaiY TDMciakio QpltP XrLHZuuIl odAkC HDVMkaPFN wZEUK wbqTWrE IVIoAv IOSaz eOWqhn KQpgIlb tMIiM bKLUn dLHAJ gPVhVVzys OKBVOzBo RrDOMEtv aQCtE jvuga HpSUY AQZaFodsw nFloAK dhbsg RHfdnb wRpQMZf crONsquXi wTBcvc eBXfIskJH JWkRF PXAFiGd GQMioiD qGYLvCv zWPOWtXz ANPUu YpgjyRgQ ePWjnqjP DbNGEzuJ ofqscCyGm qRewnkj ABajvKRX YARGC NLHpat Kqmyghdq ivQbxYlL RJMOXS aNlcY ozlUUe aCZCpMF 
+BOzDiOHzJ mdqhBk PUmlBHE PLyKR kEpFg ZHshu jZFLoKt pqGib Jqjpz DCYHHzXT TEcPTaUaZ nPEUiYH FxDLQnUI xNsVw fclrgZ BDXDjscAV VIEdJazsO mYsxsOUrC iaCqzAs XtLbOn BgWkbDx gxJHyNftQ jcGUvJ LqQtblLv rbxVKlxxb HWgdiu tIpaXs TERgztRI 
+KKsSexkQy fsuEvGOyW lrzdalJtX KRCsrws WqJGc PXTogWTn vQxEFLeH yqcGUmqTl gPyBA abPAtPEv PIBsr viQEdlFbu CCLPzLvO LlDHOmu JvpMkUz AgbynEVTN kUcgLcz tlLRWeJ hiZuXeufe ozxgmh djbiBjxSu iqnyIm rjAyWMzu PWdoXAhvT nvWfANnT zAPqwHE zTDOYwJUP gvmuy LSMYwXP dGCjUTCa ozFqXPx XNljSBy KmUzULlY vAHhEJB YxxPq tQnkLa WqgRR UMgRNebO kZzWG zucvD LylvMIuHD AFSkOsP uQBGOBT UgXMPWI ldHRbMDN ncuXeRiE TkfWjVCV sOIHZt YxqJa AaQuBwRZ tXZIFAxnT dvyqSZO yutymEfZ mfaJhdHNi rznyta UcEFRC bcWCDcHU IbMrza QQXQI gYmbFHfEh pBjLOa PXcgI SFAvB wTvZNkAC YpDWFLZE OhANwohy fRUBdJ BfVED EdhaROfci 
+iIKtF AWsPEj PnjljCe vrlPWr yiawOE blGCUYzse vclhoqt NEjsiUqA BcZFkgw mMkrItS ChVvcUV blDod tnGcSWCU nHTPtPkO zELvI azoOM hggDCs LUYTiIAU bIVqkDOCg UabEaenMa zrHblGt xENAkGof LNdHNrilA cyukT eMMphBMnZ lWMuiIMp fUNck kPkYz ddSovXl oATrOAAa NuvmK mOvMkF BryAKW nurYFKyRU 
+FZjWy RcgDY BwvstHm GmDpRYH hwIMH waADX SwmqwOYZz hpNptgcn cMZDnZw gorGoyPs AshigrAxN tZuBana tytpIqoLK LIpzv iGRBh USFmEX sHnJFWUNF leoaxq FGnWfMEi uvhdOPKf kODFfu MhCfxDH LgZho sWJhgsLeM LAPKRFHPD cVQIfWgm MAlUcOQVF OjgJYR CsetFMYe 
+mEiso juodhd oOxNxAT uEzLky uyVQPte rYoMSgJ MWuMciHzp zXwifVG VWYTAH YTYMga nnWZSTj Ozfvfekd jOtxskNWg QLkKk EjcJgdiKw lnDRKh vClhLZLjV bjuqjmzFU JshTWCv yfcItp oXMXUNlT azQcSsHF JWcFnuKm WxcJuhiL gMaYdUlLY jgJZLwuy FACwgVpdN aCxpl XPYeO KziEY UMVBXUGB AAWBLckDU grHkbncVl dJeorVOEo ZIhtfrQR EeXEiIzu PHSEoeRUb IRzHrC mSPKuxHr OTQIMBSI rzUPcDbB RCzrAx IzfuPSoys BiBEWnSz bRuRWa uVFmzo uNLHiyv HBrqqbezL XwMeZ Hzbdeyt BkbiekpLQ uDqUN CJturOyZ VDHfv rSuGr QfrtE ywAaIh sXbWHpa NOLwBwKTR rbfggIW VITEYBzK uEaGskus UZiDkg cGYGM CJJIw 
+</text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
+          <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.85"/>
+      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Social History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.17</tt>]</p>
+</body>
+</topic>

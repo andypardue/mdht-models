@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Assessment Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.8</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.8"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Assessment section (also referred to as impression or diagnoses outside of the context of CDA) represents the clinician's conclusions and working assumptions that will guide treatment of the patient. The assessment may be a list of specific disease entities or a narrative block.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7711, CONF:10382 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.8"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14757)<tt><b>/@code</b>="51848-0" </tt><i>Assessments</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14758)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7713)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:16774)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:14757)<tt><b>/@code</b>="51848-0" </tt><i>Assessments</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:14758)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:16774)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7713)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AssessmentSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.8]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:14758</entry><entry>LOINC 2.16.840.1.113883.6.1 51848-0</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:16774</entry><entry> </entry></row> 
+<row><entry>assessmentSection</entry><entry>assessmentSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentSection</entry><entry>CONF:9487</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7713</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row><row><entry><xref href="../ProgressNote.dita">Progress Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.8"/>
+  <code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessments"/>
+  <title>Assessments</title>
+  <text>OULcZCU ZUaoKBFyd JFkZRQ OVKBvP pLqia AKtFKaB cROBRvH wxtfuugfS Mnrar ZClRRRolm SaXbHnl mMwAXfLCr hxIBNk cWfDC MHPmZN tOvKWbwuU olNYnJxEJ OuBHJqNbX dMMpV rSgfE nahGN asFJm IRGFtK amcwopsH McxyWSHM qNLyxSDn FBfMeEc CeZXpgLZd WxckuEyVU gOZDasd GjYnjs aQtbmQhku tlcgQnalK EcIEp kWIBS IGGCzIhR nnsnmEiy TsZIQh IXOHF rSSKGkQTf bEWSraAOy FbSPVBOy xEVgJ eCaqO uvsQdtE nAbua OqsHn xYJVTYKCP eNotJPXDR fpQzUK 
+chWzc mVPQDUq PojUOmI hxNmwKR amwmXmeQ kotTLRpxh ksGmQ ceBZuhM PIojvFc cYNDGf AFvfotF GhgSLWj IVZQkZAD YVBUA yOkrug WSVEm wjlmJg RMrBU mNkLXyNE oCfLIpjkB EzuEItMHx tgrycsV IPVms Aizdt UsNYrZx souARajEg 
+fXSUKnAq FJrKPZH qOHoPcDgT lrpvcXVhJ yaZsaRNpc ogrQLv HQmBWdXA hXApMa KFTnN mwgScw jcTGgQH gKxSp qYjLqopny ljNTYby KOczo CDPMTGc nMGjI JmeRMCFQ JeuXko qmhRGZdN PKRUIK KMmiiCrO XcOkQ GRQtH TNHajLFas hnuOwyc LWpNpIoEQ XNcBopn CsnLDZLtB FLAsCLi NlmSqKj DfwxnBFhU UKKufClz zACKcQkkF mZDFy wccINC HdRuKNS ZhqQX ESLbzs kvIFGJa blIwfSE HIitlRg mVGrnD uGeJi imFLvYj NpzxyYh RmmOUrg AheyiSH oFbXl ANhPS YzVhxpMOx TeqogFic dPhmuQi BFZqMR XhQqFimd WBCDBZLsk NHNjMuDw xGUhKo kiKEOiOA IiRHep ypQcHEhYa DipaaYpt eqKvy 
+AEfbccnpF WkaSh QGuGu rlqPLx hrmBLoO cKCxbPYNA WRMbRI TPtEBaC HwrbcEL Zzhzp dbRMvSrnf GnYwj sEqivN pMLvdw UlmZBp yzkMeC EGzKcKZnn CqFVSM odHkiFQ UGQJUyWFt QAujHxl wkCxeO nXadvFId ZmKhXwRxs XIUvpET PpMbratY wlrYcJ ZkEzaChcb OGZskZL MbtSeirG YcYKyuuD GPRDSt FsLHXhQ oqKash ciDDgFLo CJvVeNMrB FpUIX SMlkX HTyYDdaJ cyLKCCfU jKNCUAMCV lzWnktLbG UZRKjtrq TMGnwun 
+vRfMTytR SWjmZJL tNOHDu cEDfaIO AnWwLSKA vXIJEsM pIESvf Ilpxv QZQrbcJ CFXgrXT DYpgl YXYjoMG Lxvnur XWbGlx OJVHv jdgRMMV WRKnuFge ADtypuxwC cSmnZGAK VAnYKH vSxQQL lLPkpwfKD NNyCy BuMZvfWv KcJGmXQEC IjIwRlAl aYukLWRHM egKdgGiB FrSYE GezHM ZaPokBnV NgxEKoBO NfEcmoIZ fDHgodw OUfxZ HNpvMyw XHWis aBiOrsJ jHvDGDdTX FJulYxD kiwVa uBBiUJ XKQtnNb ovtPyNzm gvBGVc qNpuMzM tHAuP YVsICqHpV twkkTl EeFyba bqciJ vuRbhb KmeSLqwss aFxjYRj eKeZIMjxO pwZdczhCo InTVIC aXASSI ErjaGB QJQrLO wDySHPKn uYVvRTk sUtLyxoYS RgjBuFyCW WtoMOekE TzgScP FmeChJcE sGanUh fUVWOefMZ slkIftKjv vKGVgehXl wMvinhxjH 
+IoDuPoc emfayi QWnIN hTiUbkXIH NFKFSy lIxiU itDJGr oNxeuHxPi MckkTyX lHmkr tbXIBE KGeGDf nDNdFh ExMHaFTSH EMslmwlE wlBjz zAyxDUmL XSLMx IUFmcua NCHkTrPDw WeSsbYbI nCoIULTtl NzQImRjql dPANPT mZRvKBh qFKZTpGE mbMLzvQPl WYkftJvt ahQYaLgIF bFKeLmJ XbugTA lCgHOnLMG glRDCJDsj VBNvPRbO JypXY ZveSFsm tdRYc WAEcmtzKx CSNDfqJrH OcupGuXE PWkiu lEUbEapQG hKDfFnT BVTuh sgbSAZB nLwbPsJuJ VUqVgKm FZiph lYBHnjfpu zzEXR SfDkFwOS BUPGMIOOv Keytdl bhkAEH udktU 
+flHrKLGBB DAavO ZnsvoTfW iYNScPgFD QFldXzf sOZqH LUCFj bevjAMZV mNHLQST vdhnH zsVhmC iEGlQ IPgzuvCb TMXWInzsy iJrCCba hVOcEe fGEkvZ bbqAJp HmlrqNh VIEvxD TgECyau HFLIfcIxn WtmmfOQ YbPDsN TQiNZBZVW XPmwBUvif UMOFG gJaJIoN DzYuh CQChzDdT uwxepnTHu pMCsDN QERgKVGry lInbe vzaRkswnO sonCub RrkvfYlm JoDCPEuKC bWYzAsVCa CCwZJJUec tyfpb XpoudrCES wKuRsDxMu YMPeBYPd tdFoyAd HLJcZ npwhJnhK NwLaH 
+MKbzBoE oNoKozuj dwIPonm lizzjsuz hvldfi DyfYDXyR SgjlS wEOxrAF AZLACsjU YYIxZ rVSJEjtV wLZPL vthVgRKMy DUFBZSLs jjDDdXwk bYZimWA rVrPpUTY DrkaQKP wuHGqSeAc bMepnQA chrYsJ hujwP ORKqtiCeg AACGb rcbvmGh iSNGhp pDwPk nIzcCLG 
+VKRUo MWIUIZNYz GjoLVCc TZFaSfg bggMgzww iLOnHFqw fAkwDg CjUBQ EWHUmapaY fApqgRce yuXIONGvG lpUcF BBluhe ORNWya GlextSu TNYDOMrEd lyWRtKA xgvDbfrP HlDaQLAwM fSRRpi wRIohe wTCrQ bhgVrvY iAiHRkZp wbAWgKY LrNKnmNHJ yoFSKlr KMNhoU mSCJAW mGhLJyQoB AnHjOsl EGegmq 
+xyISqAdG gzLCkkfN LjXShCHrS fFzwBZxC dqKqMViT HpfQeIuFL XTRwA lQOOmKSN DNdojli viPjUtxO GyspZ ujnuyhQ jRTGk bGudENhS UPkHSSa cnJTMx shIeN DQKxw DISGe vIUrNspU oJbrBfg izmKAw weicdtkN YKbUIMm SGxkZuoj RbsuI vJDHJtqK YFvrEDQJ SeChPf IvkaeG AwdYWt UeAUEa WVBTY yvrhkpUWN dyszvOg DnIhdQW Qkqsz uXlKZqBN Suqdss VMqrE VIHkvUnak 
+ZGLvME vguctmwKH YKwRVGVaX hGfQyCch eBzuSRwe aCcfJWbz iRJEVri UHAVMLmD IkBXml Cbqer qBzYPnmIy EipjItQ kDLyhZty ZocnExQV sPXfApF YWOIFCZA qPpgZsWw bThPRvdS zfsed CJFINOTX MSElaPhk AaeIqpG SoEoTa KOxpdzp hrsbkbmkJ UWtIlTdk CSJhc DwWkDsW 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Assessment Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.8</tt>]</p>
+</body>
+</topic>

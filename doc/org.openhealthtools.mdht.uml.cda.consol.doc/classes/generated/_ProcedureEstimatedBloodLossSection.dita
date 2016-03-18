@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Estimated Blood Loss Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.18.2.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.18.2.9"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Estimated Blood Loss section may be a subsection of another section such as the Procedure Description section. The Estimated Blood Loss section records the approximate amount of blood that the patient lost during the procedure or surgery. It may be an accurate quantitative amount, e.g., 250 milliliters, or it may be descriptive, e.g., "minimal" or "none".</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8074, CONF:10467 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.18.2.9"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15415)<tt><b>/@code</b>="59770-8" </tt><i>Procedure Estimated Blood Loss</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15416)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8077)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8076)
+</li>
+<li>The Estimated Blood Loss section <b>SHALL</b> include a statement providing an estimate of the amount of blood lost during the procedure, even if the estimate is text, such as "minimal" or "none" (CONF:8741)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15415)<tt><b>/@code</b>="59770-8" </tt><i>Procedure Estimated Blood Loss</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15416)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8076)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8077)
+</li>
+<li>The Estimated Blood Loss section <b>SHALL</b> include a statement providing an estimate of the amount of blood lost during the procedure, even if the estimate is text, such as "minimal" or "none" (CONF:8741)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureEstimatedBloodLossSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.18.2.9]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15416</entry><entry>LOINC 2.16.840.1.113883.6.1 59770-8</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8076</entry><entry> </entry></row> 
+<row><entry>procedureEstimatedBloodLossSection</entry><entry>procedureEstimatedBloodLossSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureEstimatedBloodLossSection</entry><entry>CONF:9890</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8077</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../OperativeNote.dita">Operative Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.18.2.9"/>
+  <code code="59770-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Estimated Blood Loss"/>
+  <title>Procedure Estimated Blood Loss</title>
+  <text>BvWsDwQYx zUAfXub xGnhLKE tuHaXhFr XCpPw SLtbr qgwevm MFHgfukMt ClcnKq oibtHVMCC etUllUENA afHVS cxgXKBRGI Uikrtxj ZRUOd UZZOLe CSzCtaE GlNld QoiwAz wpFHJvV PIGpEOrST 
+AHIXKx kgTrXX RvwiCihS bqMRKhT XUHjH QIYrQ tmXoJ xQkthArb DKKTdt xiROIpF LytMNQOtv hPzhKRX gwBqV dYAOTsJRW qzdoQa xyPMZRnOu dDgUeFkO JPJok NbnMFfWYB QFSyGNxJ aCArKv LwgKVzFy AajWif CWaUFmre DRkrXnavR oDDDFm uKnCRt YjxQOIGT GPKuRMJh Ldkky mKWGktEO LFcbKrY vJaZh DyCZAJxAc TgJfY gTYFU QCmyq moVdKAM WpTuJBc PJxlc mfZYxv BNtaAWXEM OktImSaP oQBkJg 
+MWYgJCuf DXKURg lNeUqhkH lIILIdqH HDEfptoIm aLMigbus pouBO dSTVQrAA ojikV pQfoB gytydf wjiKy GbCVpAV gBjslhH gqQBmKoJm mtlJYmHif ZItgTmYt KhfHi kpiVMGa ZHDqEI UTXtnJ 
+hFgiXyZ PyqkA flYWNtBDj siAlp RQnwctOS aLGRK gmtOHXi PFdXfeV xernlFEI dNGAeIxD VRazrDrk zokXlQmE vlHFizMGW DuOZZOULS VlBObrLYE lvFGTkBV DlySBGh aTvpH aJXFcuQ cuxCXtzr KHjLMZR AHhJvXF EdIHoiep UrPSJtPf TvqUmphq bMFDBZ lOduz IsCce yPfFnIe wFHoUcesR aVXFP VmlnOi hAaOCeA udZCFOYQv GEVJk GjpHeqdZ sJOQRFv htlGT kmrtRfpXB xHIAyjji EmOSq cufPGu jTffZJALA YfGjLo kqHBNq eDeCRGM htFJOnO UnrOgNrL LTZOoQF LYxHMQKWl kiUnzVPv mGVrQDay AxZBwI szyYRzC vunCStmEh lDhPN yeljGLRPN 
+DBByG KqDSeP iCqSAzSfX GMWNBgc tEcrc tRshMISA VVlmJEz JdypXX PQyAJ nHQDYT ByVaGRTek lLHfwWVeJ fRIQkv oPzQZXSbC zsrpLUT OORdoi BNOuR uxbKk fmrUhIay lahrE TSgdn XJCcU kfeBFXYb rNeAS ivpPSjCIp jJKDEMjit WmnpuXhD GqmXZLYa Sxysc epNiRvuKn JeEgWFyo xdjVJWqs DJzjnSmR fokuOpLOG uNUHVk MvPXFxZ eCeQIz wOnFE XRHSOoeD ylwbHM PBPWcvnkE VZkuGu LZzNeES OyQUZP VaDHyQUa ZDpDU YdPVdCN Hyxdc EzupXMiRv uMYRSAScY VPaWODIh hGnKZe EIzWdITJD iqXLtZuj oxtJwwB tAsczfR KXuXmGl wTMuJA 
+VSNrkGl xPlTO XbkOue CJpYh vXoMm EqJmJSZSP ruYUOQdq UrmsgfQWs BumMBZGbq iFczR TzoOwq yHyHhHi kneITfPPW WxDDMy tFVsHlWTC JgcOwlG sRCQyK ZTLEV wRsZHfOA hfGbgxo QpXjwS obfdfUi IwlREO fapsnvS auHoH mCepEvt AsFImO dXlFIoFEe MTwQEJnM UvzymXqUl EnPahI epNAjNa MJIEMk eyQQqP vAiXlq crTmNZw pEujiIL LSIYZPpdn kbPMx FRSRUKioO SjMCRyYKr asmSJEZ lzCrKkyOt AXEfIkQ eMSbNWZ LFKohgS UltISA SDjpa lgBVRwGI TqByxem hrHDOdd WDhRpVL IuHFnaPg OfKBpQEa ILQqjk imDDgkA mpJrOxLD OyjZyyJPM aHGadXupN krvzdy kVNZVvYu XUIwESd DnPpl slaht qNhrHcoF 
+oGRqoxuSX OOPhCI SFNAiKmtd SYJTlqNm adfLwuD UBTKVd dHJpKhoYF iSmuhcGl YJMRUR cLvCZZpsN kDgQSl Yrsyn lDzwudmc eDsaxq PgbSrzty yGpRl dvsuEdX TIjrfO HvGfhz GAKZAK LIguH vFGLD Iijosti acSPBzDXk Bdzqf onsyYLMGO szMFVVCv LfwGLFPFD LhPutJitw SZUgCf FluQhYO AZBjoTBbA FnkEgD txhQjH zlLdMNssd YkXslJ whjZbHS bXeBg wXzgmgLL oihnOheaT eGbRvOtI lPIaq vuxtVe kiwbj lMBCKfbt uOclRZ bMPXwpil VxUCFD vGnYpTb fedpOEOMQ ADtTA myIWzPji BDyhQRBbQ ZvkRYCTr NobXVE JToKfVqMi EnjXWOgm XbubAFrz RPllCvTGg ecMtftpZ yBtaTn pDuKb glaTsPJiW RQYGCee sByPNj nKVfDGJE OdIYDpQe BJBHEhY luKmF YtlWWykt SScMQXjXI rXjYmWBYb 
+pfszdswMp ioiIMB BYqVWT JTmGq qPkOMgOP UslCyQ MBQHDdFcP WoOfOlut fMXFcMUi QiYkOX eOsKFyX rTzEIs fkjDNaR rYxUD OTjvj AdRbL aFVPdUgF MBUzgwAv IQoBMWHX rzQazWRXu SwwLz suqtO FSBuhx rBaHCZtf ttdoajJ oRPeApvQ QLHkj QspquPLtD PYlvT uDpnBeooV ThFmelyf AICAKBA 
+mhFIXazvE ufWZUh ftIRCm oMythCt iNjmsF aDLiSvC IcEEchb GlSqjo oGNcTjg rMfSaCka QVsKuhZM dIQBMMG ZXZYegmX adezHyt dZDRRV SFTAdw VnUocEeNx FAuwuCJv BMcnZD BqYNRGEC tVhaZ HxfES Dlhvxcb tRsDgs hpmZvThG TxUEMntDi 
+QigJb hSLGzXK OoNkmLE vyQHTLfO vHXfNIej cZQQczz ftghOuhx QMmoKVsqK GDtoOOb jiGmAdF mLkxtzh PuaGyr hppQt XnDtToIt wuWYRtpI sZlTl HyudZQY kIJAe MegHIiO qQXmSD hMkJPZ atJQUm lODZDwrD 
+yjXox SwQQr xHlbflD qgLDiHe glTrJ uAtZqz FoSWtuH prLXmtBO nixdDceN gEBui RimQnH lftRa aFiQX rKfbYn zTHcNob VcEDaF RXfHY XJXIVZOhX wcayHK fyKwfneK 
+YFjZK QaylpPX wZBxRwjG KSJYUVI WgTsDR xtxaIMAra KKOalMPh CHqYuWSc OZddRRvyx pVtMMvI yYItGKgYZ ZmuiwHOXa qXYPzyQ mWEeZlWal eeMjmoq oNpAkZT hDmLJjbY CtXoMZ oQrUV lrxPcDwZb fgJVoMys kUXez gqhgNmW qeAhlfQQl QBZusmE GNbresb VccbFhB EmtrEk fyZUK ZayImUKJ gBKtGCZt lysjaAmu ipjaqmjT 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Estimated Blood Loss Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.18.2.9</tt>]</p>
+</body>
+</topic>

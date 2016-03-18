@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2OfUcxSVEeGGzu7fmW9pXw" name="VitalSignsSection">
     <generalization xmi:id="_px07IBVgEeGQCvUGzi1kDQ" general="_bRH8sBVeEeGQCvUGzi1kDQ">
       <ownedComment xmi:id="_GRGhIBxREeG8X6LmnKJ43Q">
@@ -217,10 +217,10 @@
     <ruleId>CONF:7300</ruleId>
     <ruleId>R2.0=CONF:1098-7300</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7301</ruleId>
     <ruleId>R2.0=CONF:1098-7301</ruleId>
+    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7304</ruleId>
@@ -402,7 +402,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:ConstraintValidation xmi:id="_pIQzAOJvEeG3cO7ebC3QuA" base_Constraint="_cfXY0OJvEeG3cO7ebC3QuA">
     <ruleId>CONF:15945</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_4iF6IL86EeOS5KuvmCHHew" clientDependency="_PvyIwL87EeOS5KuvmCHHew" name="DeceasedObservation2">
+  <uml:Class xmi:id="_4iF6IL86EeOS5KuvmCHHew" name="DeceasedObservation2">
     <ownedComment xmi:id="_A79IEL87EeOS5KuvmCHHew">
       <body>This template represents the observation that a patient has died. It also represents the cause of death, indicated by an entryRelationship type of 'CAUS'. This template allows for more specific representation of data than is available with the use of dischargeDispositionCode.</body>
     </ownedComment>
@@ -428,7 +428,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:PropertyValidation xmi:id="_tcWfUL87EeOS5KuvmCHHew" base_Property="_tcTcAL87EeOS5KuvmCHHew">
     <ruleId>CONF:1198-14853</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" clientDependency="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation2">
+  <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" name="VitalSignObservation2">
     <ownedComment xmi:id="_PYxNUPM4EeOUvapeh9bVvQ">
       <body>This template represents measurement of common vital signs. Vital signs are represented with additional vocabulary constraints for type of vital sign and unit of measure.</body>
     </ownedComment>
@@ -532,7 +532,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:AssociationValidation xmi:id="_ueCmwPM5EeOUvapeh9bVvQ" severity="WARNING" base_Association="_tt_C0PM5EeOUvapeh9bVvQ">
     <ruleId>CONF:1098-7310</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_dDupoPV2EeONioZkBKP8eQ" clientDependency="_vMY4IPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer2">
+  <uml:Class xmi:id="_dDupoPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer2">
     <ownedComment xmi:id="_jK-7wPV2EeONioZkBKP8eQ">
       <body>This template provides a mechanism for grouping vital signs (e.g., grouping systolic blood pressure and diastolic blood pressure).</body>
     </ownedComment>
@@ -609,7 +609,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   <CDA:EntryRelationship xmi:id="_D-WxkPfwEeO297ryy8ptVg" severity="WARNING" base_Association="_AngxkPfwEeO297ryy8ptVg">
     <ruleId>CONF:1198-14868, CONF:1198-14875, CONF:1198-14870</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_8LkzYAFTEeSmasYc71ZgMQ" clientDependency="_6SqUgAFUEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional2">
+  <uml:Class xmi:id="_8LkzYAFTEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional2">
     <ownedComment xmi:id="_MeZhoAFUEeSmasYc71ZgMQ">
       <body>&lt;p>&#xD;
 The Vital Signs Section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&#xD;
@@ -645,7 +645,7 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:AssociationValidation xmi:id="_W2oEQAFVEeSmasYc71ZgMQ" severity="WARNING" base_Association="_TrHxkAFVEeSmasYc71ZgMQ">
     <ruleId>CONF:1198-7271, CONF:1198-15517</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_D3010ALzEeSM0Jd2D1FgKw" clientDependency="_ZW8CwALzEeSM0Jd2D1FgKw" name="VitalSignsSection2">
+  <uml:Class xmi:id="_D3010ALzEeSM0Jd2D1FgKw" name="VitalSignsSection2">
     <ownedComment xmi:id="_KuBRkALzEeSM0Jd2D1FgKw">
       <body>&lt;p>&#xD;
 The Vital Signs Section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&#xD;
@@ -720,8 +720,8 @@ Vital signs are represented in the same way as other results, but are aggregated
     <ruleId>CONF:1098-7307</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
-    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
     <ruleId>CONF:1098-32886</ruleId>
+    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
@@ -840,8 +840,7 @@ Vital signs are represented in the same way as other results, but are aggregated
   <CDA:EntryRelationship xmi:id="_WoJ1EOZlEeGINOJ_SD9_dA" severity="WARNING" base_Association="_U5AysuZlEeGINOJ_SD9_dA">
     <ruleId>CONF:14868, CONF:14875, CONF:14870</ruleId>
   </CDA:EntryRelationship>
-
- <MDMI:MDMIMapping xmi:id="_BiZpQL7KEeWoV-fDNleHag" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ">
+  <MDMI:MDMIMapping xmi:id="_BiZpQL7KEeWoV-fDNleHag" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ">
     <elements xmi:id="_Bi2VML7KEeWoV-fDNleHag" businessElement="VitalSignSection" modelElement="_2OfUcxSVEeGGzu7fmW9pXw" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath=""/>
     <elements xmi:id="_EwsxQL7KEeWoV-fDNleHag" businessElement="VitalSignsSectionTitle" modelElement="_5h_p0B0XEeGYy5bW_e08gQ" businessElementId="bed98adb-cb6d-4254-877b-0cb68d3d7e70" modelElementPath="title"/>
     <elements xmi:id="_Iq-OcL7KEeWoV-fDNleHag" businessElement="VitalSignOrganizer" modelElement="_2PD8IBSVEeGGzu7fmW9pXw" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="vitalSignsOrganizer"/>
@@ -853,5 +852,17 @@ Vital signs are represented in the same way as other results, but are aggregated
     <elements xmi:id="_i6i5sL7KEeWoV-fDNleHag" businessElement="VitalSignResultEffectiveTime" modelElement="_2OxoTRSVEeGGzu7fmW9pXw" businessElementId="19d8e099-b3b1-465c-a9d5-27657dcde133" modelElementPath="vitalSignsOrganizer.vitalSignObservation.effectiveTime"/>
     <elements xmi:id="_mvmfsL7KEeWoV-fDNleHag" businessElement="VitalSignResultValue" modelElement="_2OxoUhSVEeGGzu7fmW9pXw" businessElementId="2b45bfcd-b0d0-49c6-b8a5-f376297c8e36" modelElementPath="vitalSignsOrganizer.vitalSignObservation.value"/>
     <elements xmi:id="_pmoXML7KEeWoV-fDNleHag" businessElement="VitalSignResultIntepretationCode" modelElement="_2OxoVBSVEeGGzu7fmW9pXw" businessElementId="60f64b90-2803-465b-ba6d-79e55c7a45c1" modelElementPath="vitalSignsOrganizer.vitalSignObservation.interpretationCode"/>
+  </MDMI:MDMIMapping>
+  <MDMI:MDMIMapping xmi:id="_62LOwNT3EeWqHOHsDZliBA" base_Class="_2OfUcxSVEeGGzu7fmW9pXw">
+    <elements xmi:id="_62UYsNT3EeWqHOHsDZliBA" businessElement="VitalSignSection" modelElement="_2OfUcxSVEeGGzu7fmW9pXw" businessElementId="1344bbb0-bb05-44df-9d86-b90bd60ac951" modelElementPath="" condition=""/>
+    <elements xmi:id="_A5BiANT4EeWqHOHsDZliBA" businessElement="VitalSignSectionText" modelElement="_2OlbAhSVEeGGzu7fmW9pXw" businessElementId="82e45334-0929-45e2-a9da-048e37a13e0a" modelElementPath="text" condition=""/>
+    <elements xmi:id="_DBts0NT4EeWqHOHsDZliBA" businessElement="VitalSignsSectionTitle" modelElement="_5h_p0B0XEeGYy5bW_e08gQ" businessElementId="bed98adb-cb6d-4254-877b-0cb68d3d7e70" modelElementPath="title" condition=""/>
+    <elements xmi:id="_IolOsNT4EeWqHOHsDZliBA" businessElement="VitalSignOrganizer" modelElement="_2PD8IBSVEeGGzu7fmW9pXw" businessElementId="7ae54db7-4e6c-4350-9e00-226a4c2f7d9a" modelElementPath="vitalSignsOrganizer" condition=""/>
+    <elements xmi:id="_YyyzgNT4EeWqHOHsDZliBA" businessElement="VitalSignBatteryID" modelElement="_2OlbHhSVEeGGzu7fmW9pXw" businessElementId="f224b8aa-6871-4bf4-a697-dfb47526ab6f" modelElementPath="vitalSignsOrganizer.id" condition=""/>
+    <elements xmi:id="_oN858NT4EeWqHOHsDZliBA" businessElement="VitalSignBatteryStartTime" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="bc2d65ee-cae9-4f92-9c39-1f6b4c87b4a2" modelElementPath="xxxvitalSignsOrganizer.effectiveTime.low" condition=""/>
+    <elements xmi:id="_qT3dkNT4EeWqHOHsDZliBA" businessElement="VitalSignBatteryEndDate" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="ca75e617-9ab9-47f1-a8ab-7c68d3da5687" modelElementPath="xxxvitalSignsOrganizer.effectiveTime.high" condition=""/>
+    <elements xmi:id="_8Qn-ENT4EeWqHOHsDZliBA" businessElement="VitalSignResult" modelElement="_2OrhohSVEeGGzu7fmW9pXw" businessElementId="e6195bbe-badf-4ff2-8609-a01dffade5ae" modelElementPath="vitalSignsOrganizer.vitalSignObservation" condition=""/>
+    <elements xmi:id="_XB8EkOb5EeW5Oax7LpOkcw" businessElement="vitalSignOrganizerEffectiveTime" modelElement="_2OlbEhSVEeGGzu7fmW9pXw" businessElementId="2f41b56c-baae-4edb-8ce2-bccb53ab80da" modelElementPath="vitalSignsOrganizer.effectiveTime" condition=""/>
+    <elements xmi:id="_dvNN0Ob5EeW5Oax7LpOkcw" businessElement="VitalSignObservationEffectiveTime" modelElement="_2OxoTRSVEeGGzu7fmW9pXw" businessElementId="52a9373d-8c8e-4128-a75e-0efdb21d5443" modelElementPath="vitalSignsOrganizer.vitalSignObservation.effectiveTime" condition=""/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

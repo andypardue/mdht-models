@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>My Document</title>
+<shortdesc conref="generated/_MyDocument.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_MyDocument.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_MyDocument.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_MyDocument.dita#classId/description">
+</section>
+<section audience="contextTable" conref="generated/_MyDocument.dita#classId/contextTable">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_MyDocument.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_MyDocument.dita#classId/aggregate">
+<li></li>
+</ol>
+<section audience="tableconformance"  conref="generated/_MyDocument.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p><b>My Document example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_MyDocument.dita#classId/example">
+</codeblock>
+</body>
+</topic>

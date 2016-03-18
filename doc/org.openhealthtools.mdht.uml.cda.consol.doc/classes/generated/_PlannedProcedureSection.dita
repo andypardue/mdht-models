@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Planned Procedure Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.30</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.30"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Planned Procedure section records the procedure(s) that a clinician thought would need to be done based on the preoperative assessment. It may be important to record the procedure(s) that were originally planned for, consented to, and perhaps pre-approved by the payor, particularly if different from the actual procedure(s) and procedure details, to provide evidence to various stakeholders that the providers are aware of the discrepancy and the justification can be found in the procedure details.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8082, CONF:10436 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.30"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15399)<tt><b>/@code</b>="59772-4" </tt><i>Planned Procedure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15400)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8085)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8084)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8744, CONF:8766)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15399)<tt><b>/@code</b>="59772-4" </tt><i>Planned Procedure</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15400)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8084)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8085)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8744, CONF:8766)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.41</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PlannedProcedureSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.30]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15400</entry><entry>LOINC 2.16.840.1.113883.6.1 59772-4</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8084</entry><entry> </entry></row> 
+<row><entry>plannedProcedureSection</entry><entry>plannedProcedureSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlannedProcedureSection</entry><entry>CONF:9906</entry><entry> </entry></row> 
+<row><entry>planOfCareActivityProcedure</entry><entry>cda:entry/cda:procedure[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.41]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityProcedure</entry><entry>CONF:8744CONF:8766</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8085</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../OperativeNote.dita">Operative Note</xref></entry><entry><xref href="../PlanOfCareActivityProcedure.dita">Plan Of Care Activity Procedure</xref></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.30"/>
+  <code code="59772-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Planned Procedure"/>
+  <title>Planned Procedure</title>
+  <text>kbFECZWIB RgzBDqW SeGCDoq XPJCuUvbn PiPKm oHLQlDx gfzSTMiV PQFWfFq cHtHBgpP YtUZErt hZZNWvwo rVHMDr kxTpXvvFF OvcMK flbbRmfzc GEzTW NpZvnIOU hcOdhh bCIrd pWiQQC nWRTlS WgZFbS sXNcswQOQ LzKXozPg LOuQr XXWZob YKMnl OznZhxqBz GRcOn FzeIiZGo lgQjdD CeLxb nYNtI OBfWQn wIjSgCkYC bakaYveZ HIhmIOhaa jnHoBZZz XhGZgvFrS BfgyLlEwF UjFHwn OSrnoxo bjojIYzV ofLieLz eYRmvY bBnYpo xvuFOtD etsgcjiUE eIrVNChDt lGITtAbae vKtIZqFGL TskkdQW nhfmTlUj Oaaufq EikUuhG dtkEKP euKqPt jelYLWi kyihw iiBsuxs rYqjcOuQ PnGqpd VFPidXaxz EKJNYg 
+vZLoASh iGykYVWVi rgxYwYnm gNkDWpvuV HyWqgjqV tkkxRtBKs oUdDapq GRRIObhJ lBFXR jBKEcLt QZivti useLWMu TPBfdFWNE EUZkHOogS SXFeU BuGzII vrjqbBlQX FNlQIefZ bqzTON zVBUsRd zvRKsu dlBZth DdRgU IOZZuM XtKyLFi alxjJIC rTsCIZ mboKXRa KqYzCNIW RrrfdtaQ cInHrVp nWCKiYD UmxmIYkWM mufBMpgO cbJXCrHt CDzuqk FswLqQLH OeeUvj ySRCxNA moztfuHaG 
+nrfzKu HDRrI Dhfds GARJj IrPIWQwRv LHnqVJRG XBZMlDEiD JEAEiLO ypoyZF qTSUWW rmbEEVyK QrYeA wgCiKj AVtBDaQG WCYbUnX hmIXF CWkBHXTy gghDGeXbC eYPpk VZMOuD ZzPOuyh JwoDO NDEidaX qzgSi yOdxW XErymG 
+JjfIOGW SjCDbmWAk SbfAaExo GyfrxTb rcOsd WTEsdKD lqsCYaFjV TXjKPQv tvtqZ YijtVCXF KeSgBiVMn abuVsQVi PwmWk MGePqrdFS hoRMe grnbDBeg mttJCIUdw kHaxrxkPn ZpuQSW xwpAbrHZy lbCpNldjS DQyCqDLo jIrnsP GyRWTH LphaM ZhphF VAFFh EezPZ YhhXT dxKKVW GtArpTY mjwTLvZ bNZrc EBXweMzE dtVPE fHaCGnlnP hDyFmwEZG OXMVFkSl kAjdtewsI NqGmzvUSc pLiHtyLLO aimugX gZLYLmmAk qzzWGW VXkMY ohwhrcqB kFmAyu nmLQZpJj bMObsWKyx fPkYpbYl AykADNq GDZaCe uobxuxd MhpTj Jtqsp vFruuR ruJrCEnM nDoNQsA xHVDIqit AxUSMbl lOMPoa BSPNhjMr kEKICZz tmeTqyDc NGENEgwG tyVtSsB ZMRDmUxF FGmDQDce hyxRwHS ehxEzde 
+RSiVkOt pFudtTU MFerQX qqeQySQ VhDRq QyylRASa ZzQVmlu LsKFngR tZfqC TMJVFnZZh hveAywnYa UYFYE UTlea dbHTRxHd RGxyWen SUmZJq EIYRSwiM SFebE qZrbhAJ WndYJdh xmkdNVoyP HQXlrQm FlmFRDCet LMMURYjwB QLyHknI VhDGlQlkE gVSSV LEQVPz HZWRrEmy XIyKUr WFWplFky hAZwfZ 
+qJqlgRBSS FfIFc mavooYNu SQzKcGdv RMmeN CRmvA NTDfB hkMqldFQG dCLGq cOwsHx BaRAdl juePHU tWvDfLZSy HMZUsiBWl vUKlJ fhdFpUMN NbBhMJd RmEqcl EDKnNH nUolSH YBSvZEV OOtIdbdeX sVImhlk dHXZWs LwRuxaJE RpxlAa OpeaFGIml RCFXFiry AzFRB HZzsrQLvU tTdAlFPu oqvHQ zCdBRuVDi DxWXHwS xkjuMzc feqDsuF ZAuZLJ ypkqd pmATSC AGtcHO BNnfghfq VFtgzCrK SAuobNuEo AlPIlcQVT omWcbUOYY TOgZSGQnI HPdrzW Dqmbo wFDTUbNx lfIEdeT udveJOVQC COaULwZrY gAjyu nYCgnho OkIzCc FHMVGOL JykGw sOeVGT KNkyvL 
+JBVWl lBcjnaY fTbBQQUK CaflM HMOcw NtarK OhIKZuad QAqSgfrr cXyIqynew cIHfarl AxdPRmA yANmxV psyqYj IyzAEhzkS xqOsm xwIUnnIIb QTtobhlwo qowAVM uwmcukVBE CmObJUwU ABbAAgFu dHHlprx ThEnrvHng UGJAKVIa ZhvgInndV SadYe oRyBNV rXUZN XoexMbgk gRuryuooA fbDcuLFql kxuIjBIaG szKPXIJ 
+esPOjdyjn ecqYC aXvGiKXU kWZbtvZjs WbIGyhXt JAmNcAJkB nWUNbWw wqMYKvtpe BXZCB WTrPvv OSIdytr WftbGVtQ ySuqAldx edqOQuH rJKvuRGag JjOKQDF iZkcMrKN zBtTE VCTSbbqtG NDgUHCZ lFZIFGpgz YuzqYGf tikFZuyji WLzRZF SnrdnYD ODQxICDt ormSuf VMFrIqMXY dAWPq nlXIA sOgRvg HblUrXUcQ CTgarVPv RXBYO majPnCZj XEUOLQo Sihntoe Tznna XUPnwVQ JfFFiNCO gOwZU ixGNZEya wUONkuCJH iIJWVYM rwJbcO iCMOUInP eUpgYwgOS UbnfwqJ UoldX XtrKARE PDTEteiqN KsZNtR gPuDhnbt KSKRUXGmc CynNexwVQ wVWHi TKfDU gdddxeup tuOlU pHIebGlx NlLFjl uyqrx HBQyr PAnrtKP vGBUWWRwj gdiWky gwopzlW trjsmtQT CVABSPLsc upCQs 
+aNwLUDX aklFL AWPUHzse nFtTs EorjzoN zbMnKSJj wYxWX hRDgclp UMoeccMNh vGYtlwGW BwuliLzrM LwXgcK GOwtE KwSJAl kyyiNId HVsVULqP MCGjz XHuSclovA BNiPGld dLnQQ jncymw MNrxDyXt XwixOUWG LzSNPxaC AUPiU IVqRreDPr qbiOhbkt VTbEaol HxqQpROs psLDx AQirA ufwyrdsC bdEfgcZn MhARG nsQaA CJtFqFbu AAEtHGQ jZApAmk haaau HuNbcPa pBenh RJhLa PjkUQMxN VGiriuy PXOOsHNJ QhzeO AlfwgxQ YADSSxLk lKhenTu xPARqMBTt HMfQr zjXlMqVr uUsFCpoTn rHanf tHjZQnrJ NOnONV SLmBJUgmx VtdPZUoiy BJosv prciRY czobgB WNubKBm wqoWG SDErE RCotfRoAK WTKDd NCMiVSpHd toQMI RCiynJXxD VBJDBDjD edLNGC 
+QVgnAntV bjAJTbarb cbgHI kyTTXPdi zKcjU eKwosx eauZqW ICPNoDLi zwVEIY fpxpbH nPJUxW FhByBua HljIW nXfqRYw BgmMIxN OEdirXlhE awYDSKKzt fgFyt VIVPAxCt ltUnrZSH yItEi zLcVTXSTe GrdFxo SKuTKD eoLNMZCn OhPdD JUMMhf HAuvp oAgduW caSuhDy BfYiWrQTb cjtUg puaYX NepIuoVY soGso FNomnIB OwibgBqd fYKDsAvK MSNGKe lJudqR gBniwYJG mnKnFH JjeBoW uKymbFT TvyppHyzw SsJcBpHb FwJch tFxCxlwO TBbftoq uJINy gLFBBQ eOoAb xNSZDTg ACkYyckwe RgFPJ 
+ghJIdU SpZMUQiE yDQcjBVgv rqAgCah IZPsI kAAZlVBDK IDUTgE gzItwp MtONXG SZnwwxTg LTRreeZn fClHipCiU BRwySYc KRUnViHV wRIooWcwA IkaFNQIMW xvIVEI QvbdkuE lDWki dzRXg cCqPRWKLy GAHJw kWxRN tWoaiFQAB ArVcVd tRtFGpVXw bqqiU kHPdZ YRSaAJEo VsNEQu TFlguMbe MMjGlM nSIgbf TmLqoiO CnEuXNAiL MbUVIHzg XRJaxl VQGDIzDe WmbhL lDjLUOLTP nckXkw bhAxRz ZYhtKhti ialMsnM nMCeAd ngOWDLk dlsCYIAF jXDESu MkfnFnk kJnXbNo hMRrLu 
+QsRxRp FokXMSz cgAOcpeGT OtaSMo qCZcUmcfv iLLlMfl rSRDP ePlVPG xvrhsHE eHtLSjM YmdBBYZy mLzmou dKIAnSmX iqEtONj CSnfRm TBdLJ TAKrq MfcGUQL hjgILpcl qOwjgRW aysSMz NLJlw tBOEWXh AhWVOl arNdY IngwBZ egHanCm 
+dddtVBpP FvOfPa qvEmVHyjk yPzWvSiA qOOAnZpqj zKlmZy OQJpOffd dlhxFH ZGLCg QdsYC gHTzZXI uXRej FMvHIs ebMjjw YbpAPug QlzHUq dTfWnh HqolQUi GZrBjKY lErHFYA pTxZFoNYR nBsicbBy acPSKjgYp OssgxDYhL gqyjQmo bXpkBOAMF HDtqvzu rGBkpG UPjrzfQ IXfIBWD MiDsSZXel nYrUxDlU WtryLf rqLuRPW zGjcJui OcmkjbN QBISZp avtOgg zRXSyxRkq kMdjfVTCQ NnMRAuHY gWFZyBbH ZJIMw nnpUP jaEqlbfZN bRPRQphOe wtkLa NKMjwdG JRbANRo MhuQHvivO rpAKlo BeImx LbtteTCnd HBVcEHDSR VFHpYy gAOQsJ uXWkgZIAL TWFcvL lZutkYA sVHcN SSlsfA ALbLwhD yiYRP JknAi 
+</text>
+  <entry>
+    <procedure classCode="PROC">
+      <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+      <code code="542489379"/>
+      <text>Text Value</text>
+    </procedure>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Planned Procedure Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.30</tt>]</p>
+</body>
+</topic>

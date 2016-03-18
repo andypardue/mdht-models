@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Immunizations Section Entries Optional - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.2"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+<p>Known Subclasses: <xref href="../ImmunizationsSection.dita">Immunizations Section</xref></p>
+</section>
+<section id="description">
+<p><lines><i>The Immunizations section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7965, CONF:10399 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.2"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15367)<tt><b>/@code</b>="11369-6" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15368)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7967)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7968)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7969, CONF:7970)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationActivity.dita">Immunization Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.52</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15367)<tt><b>/@code</b>="11369-6" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15368)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7967)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7968)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7969, CONF:7970)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ImmunizationActivity.dita">Immunization Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.52</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ImmunizationsSectionEntriesOptional</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15368</entry><entry>LOINC 2.16.840.1.113883.6.1 11369-6</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7967</entry><entry> </entry></row> 
+<row><entry>immunizationActivity</entry><entry>cda:entry/cda:substanceAdministration[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.52]</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ImmunizationActivity</entry><entry>CONF:7969CONF:7970</entry><entry> </entry></row> 
+<row><entry>immunizationsSectionEntriesOptional</entry><entry>immunizationsSectionEntriesOptional</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ImmunizationsSectionEntriesOptional</entry><entry>CONF:9572</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7968</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ContinuityOfCareDocument.dita">Continuity Of Care Document</xref></entry><entry><xref href="../ImmunizationActivity.dita">Immunization Activity</xref></entry></row><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+  <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>org.openhealthtools.mdht.uml.cda.consol.impl. Immunizations Section Entries Optional Impl</title>
+  <text>ZJpBDUv ZGHdM wcuNnVrCJ HQgqJAX OSdNX gmRUT EcSWvritZ UMXDWWkb lTScAarP JWJQNw FcGdc CZpFdY 
+fNNYyE RVAPp WRmGMU QswVprcah cLwCD tRseQNNw HqUCx XaPnuIFAA VpcHtsOX PxADqKDz cHZUJQb CXpaJopif rEOcwcXRQ NDWjwo qwgpi GAGyUJt QoYIZnU LsyEmboo oHUsnHLf vtZCMzfqY zlpzNu ReDBbvy eIgYpI JekneMlps wcdcRnaz MPAJbg WUKVbKea yeReVt fuakAfrM 
+oOReHt THmlMdHVR BqYVh NgixQG BYZtgVFC oebFwdJEa oYSRLK uVvBvfts zvCBctlA HXINlIS atRAoE eWveTrMF orAVVeF IbceDsLw pXtRwh WbueR CUEqHxe 
+jShhiAjg ExMiBlufJ UdkdHIveY XYqyrpPcJ pMJmEkSO iYaOlxbEy zQNiCbz yReMdVvEm lavabvOq VtJSThTx tYblhzYfw nchoBCZF yOlBWoyo uGUTHJmz fkxVPeKDA abGglGVTt xQuhTedWy zbHOao FrEsYTZ GNVcKjl YhnEsj knfSiXT rYXjgb QbiAXb zZTRQ BOFcrKI XHpxxCbCY qMRVZMILC CclkTK AHWnACNA fZspWSAL UsoWF QVqKgGczo gKHfXVX snydjrU jprYuGJtU sXkTkpON dDwNxf skEZEyNB rZyABjgIv ygiQC RmsLJRdDC EgRnUcVF unIvh IIQZW QFNJoeixT RsYvH ycPfgmf jdKkVPE HMmgdB TvJQcORcJ WqRWEb ZjheM jTeWUDTDN zoYXct xZpyxf gwpVKlIlb jbeaCT wxmKw 
+JpAYOUH alFmDN fqRgJtUih AEbfRfYLa tvSBj XjJBkWd dPqtPq LyUbfJ OBuBa LlosqxAHC GIUKnokzR bmDmr blvRGkU DYoXOkgWi bwOaQzs IIEGK MfZJkEnL KrNOm HWzIt GQugS lYbrUU lwRrqj IkaJr nryfC OByxuz wvZgxr AGxaoVQT 
+rcjpa NTSfnR GlGDk AoKWtrfDp aRruptPiW upptSrzdI ShwLouVwA JabezVqG IrzTzohS XJhLJo UOcEktaFJ jlVlLvv tcfKJnT CtteSh iVWWN KkNQjWlo nJoWJ soGgz QbHgMUJGa wgrxl bfWKi uOwtpXYE xifiYI uDwNMt bsGZkVSES HVNJK eZvkar ONBDucz rWjZOvAG dEprm OvFkAYbK NSoYk YHoMHjTG lDBrnWXAB kmwKwv jwkqubi LZxUA BJxaCwsC bZTxg lCzhFxK SlTwSG hNGlDXk IHdod hzevi NiOFgbBf AcTYeFr vCazLk VOFnzV BgijNnP BtnGSYug aFDCbQmby dwphC FwnHlKUO vFWzEN HMmVqWGu JfcFIyY TJzpGzz EyDxOCy UQpVFNO XUCXgut xBLTB hablz UiqwK fAPMuyZ zULFOmX CcbVHmNL tZqbAZcU UqOoN ONcMHJA WIzMWKovu 
+EdZhRIw iBwuWNVjB hRiWgA xovFoA hpHUe FOsRVYkWu bzuSmZjmy WUuzhePh cUdCVqC IxtAGieTX bdyEBCE WpAcV mFwNhJyyv lEUKm VmBTrS tnJfThLp trZWa pvCoDNmr QcIxYIgK dnCQaqneO MjaMUNI dEXVdfQF 
+LgELNESfK fqylCK LrugLa WKjsWfb FAFiOFl jhXMc WFQMiaUas tgZvvYTKU YvSEiZEw LAQdHKr nfXiHDG ZQiljrxuV LVsfM lGhySQMoO FJULPHq VxwEeDtvJ MsSzmkUbP qyAtuQFAi wHpHcZWgg XeiLCmhdS YZOKzEDg IZFKqK otoAmbF QJzVKp szJNWQ vLOozOP MPlTHcngw hsFOfp aNjhju mvoxRrxV wZxITCrmt ZPDnOlYWv 
+NjTFZvHYJ pFRSQnLRH AobNNgtDv zOKzkA vVXWKN eOreX NZXiOXFE BvDRzPOA KQfLcT XJpuycE qCVPCQM gsjnOdRm FNpPx GWOtuBxgc ftKEkH MljeB NMPUMSu eoyUtY MTBeNYGi ywsAbMa tVORo oKnporb JVQgZdpSn tGxEJoH jAcAfemEv bxtOgUdGO veYjPVhwN izzCiXj aJAID UypzKSc AJeFC CYvRGZz yHCSvFml hQEcuh IbPOvp rxKQzx wKIHWUI YijmgGz aQQLzQ ruWvzMa LCcJMyqW DsHIYOHjL RrEZGVuX ZAYJrn uqMsKXqd VCJAjwh BMjBAekO ZrFacooTU vzugUkQe jxRdMp cZsiRFmA JKBOKWd SgSQsPlTf Nkamn uobab 
+QlmOKce UvveW ErCsecLx bBmeU ZzFBA cvgeZVQb HQKiWdm KmZTDt bBCUt dpVFH Rxewi tSXGAFls DDKsq ZsQrHZ QxSleVr RfnWiMss jTpHcO lnZItxauw URciZnSQo ETxtu JHKXowbWR rpmUyL aMEsUvh rhkNJiPZL mTJuctV UUlsRbN XMFRC GscMHEGc fZYaCS KwptSO SqKhdTssA stbmZcgB qOMygz LdBfM fMZnnaARP zgrKG kcSIhiU rkpJMh aXomSkng gVZayYug 
+VSnOLwCv enLHS NjDtN CnIcxzC YvqsjaJ gqwsGYmfg qEKYJkO gsxfi gGoExob IjCUkFtZP eFuBPDQ xdHNGH NDeJMq qvCBtrGDR tWwiycS 
+lFCKXq cUOtglV NynPu jqOFxgsi KCIHF rqzIQVKz rIYiwM clEWNNKZ fOxYqAlxz PEDjo GkIDs zVJopI oyXQNeTaK AUclgGzNX ghVurKBx SijsTe DqWLXa KZthb qHTaHtBDd VWGcuDFk HhvGIkdI vrDCz FxAHFIpy kMKja HSTOazLi jtZlP jaYcEtiyO KieYlASI OmqzswNB RGqdV iZnKPPiSR YJCBiV HyMwKtWp 
+</text>
+  <entry>
+    <substanceAdministration classCode="SBADM">
+      <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+      <code code="1565553887"/>
+      <text>Text Value</text>
+      <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <consumable>
+        <manufacturedProduct/>
+      </consumable>
+      <performer/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+          <code code="718474084"/>
+          <text>Text Value</text>
+          <performer/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+            </supply>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+          <code code="1774441275"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure classCode="PROC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+            </procedure>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+            </substanceAdministration>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+          <code codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+          <code code="1840932263"/>
+          <text>Text Value</text>
+          <author/>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <precondition typeCode="PRCN">
+        <criterion/>
+      </precondition>
+    </substanceAdministration>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Immunizations Section Entries Optional</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.2</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Postoperative Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.35</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.35"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Postoperative Diagnosis section records the diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8101, CONF:10437 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.35"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15401)<tt><b>/@code</b>="10218-6" </tt><i>Postoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15402)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8104)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8103)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15401)<tt><b>/@code</b>="10218-6" </tt><i>Postoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15402)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8103)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8104)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PostoperativeDiagnosisSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.35]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15402</entry><entry>LOINC 2.16.840.1.113883.6.1 10218-6</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8103</entry><entry> </entry></row> 
+<row><entry>postoperativeDiagnosisSection</entry><entry>postoperativeDiagnosisSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PostoperativeDiagnosisSection</entry><entry>CONF:9913</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8104</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../OperativeNote.dita">Operative Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.35"/>
+  <code code="10218-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postoperative Diagnosis"/>
+  <title>Postoperative Diagnosis</title>
+  <text>vrWyuSN wLjNcuK SqbgO cksGanbeX vTstngl IqeDgb AFogHbrc UeTQgHI lemSDRD DibrPmf cKXYGe eWHNQEhky UtpRYEkm AnZHKMl cPXDOSrtG QxmuKzwZj YxNhTZANZ wjuwdGGDc iSegVbUsJ kJxTmWt orfTF FkUoa SzpuRR RQjWMEZhl CVTCKmXpU cvuDJYJc LGBXL XjJNODFoL NCEqj loQizFAmw nzqQI CbMFmwDFx ksMZUVM AETcuEiC VtgLIV LWtGUh WeNZqnRak DcSClMLr SszCqGJLC hVGfMkLWY WRqIz XGHXemAIM EilzvzaZo fcuLE pAyTmoxHF mxjKeaxl DwBaFcscp iqbDlP oKrdldfWK fCMUzbTUW MRrPEyx 
+JKOtbiAH YrPbUec gVvWczI VotpSIZF MSVEZFBfC kivPPZ qFjjw eELMMpNrn dIZYNjtC Djisrec JBbuZpQ iIXDJGe TAporYx GCGebVS fcacnwlY rIxkLe QuJTK iqDDTP rpmsUlEDK hqiTKe sRcRPd ytFnCDybF PQWPZuVh BofrIgR GbjLlCX wgLny vDvfi prSwx UqWGRj nocScyFiK OCWNtf UqVLPJ STnDsHlC oKLVH hEmNh goUUSffs IwCJa EUtum yGUTfXQCC qQSvNFhX RynTmoS LKfPygl pkUKXX WOcKTy vMMlMZS wNlwN zBhPB Lbcxk pmnhKO RkaOPZLJi ngyxDTF EYsoHPflJ RSAbApF SCUQJ NnZwbJkj nhfusjyN zRHOR hauLHlqa iGkgGvYkr dsGLYA wYnvw OhVSVk xElqjlr koQPzv MZejCU YclKlU 
+UZzIPUBnN OggjoyI NTwhvZK dbXHPlq iPFKA LKInkWFQB SOTLD HtIRfwkvt YZDRL cGPTvUlaH yCLLENIZ ljNHTqmSg dUKdSje NibRGja lFsbRj Xbmkd TdQlReDH VzVYQBfJA rcGYv 
+XZdmuX ojCOeX dTMiftZ rmHMCfZNK azlGN mjzXH DLBMUz MkOSLtkH XEjcQff XfNmzqf BBmjBXn TMxhwRw RGBas XJdDpEWE UUFRYAYjW aAoTDJGKc KnzScG wxggI zKTZrrK OnuzbOqV pjttH ktNWgvioH woKoiCP HXTockzr XFlAZ iWsZIehcf UOAySqqSp 
+GlAIn OWYEUTuEr KWGrJIwh zZgneCaUx AfpkYN KNOjMl taphGeLh DHdaHCHib PHzCsmv IXLUtJWzj jYKoE ByxGi hDRRV TdsMNH wUKWga EQRgQeWm CbbdWHn VBymyUojc PzvHCn PDmkVs DvkJd BVxqud NxEQL pFHjhz gwYjxiV JxDLu PvQEcd vTZuzB yJejY EBZgxzAt iCaFqtsW qGIIAphJ lZlWL FUYjOJ uEmcCNhd eyYJwnmlK WBvGJx jjzZqTBSN brOcxQlen iHeoG LLBVL IdYKlKq BozCOb VOfmvjC IKRpeG Rwrrljiff JAgVd vsJis DyrzObH CFeACu pQmrYr ffOrMzjJ kKZBuV 
+lTIrNQs NslBVNBpR WrbNiRVgV DEpCFDGj zlTzTH oNlSEUG mRlzVx QZtcIyHG ZYxYiu IZZoCaofk jxpHoYb cPdUVRmLg CzXuLWudw FFpbywKa OPkkkzKPX awPnjc gxstoHIzB dMKDv XXHnsf wTGPtYVv rNfaPuYz GuAoi 
+sSCHtq evIvQnk IfwLLrOz XJgatV TVmmsMk lZYMVUrB FjFUkPpT OfZAvq FXasvBvZA uuPsCIKSx XGPlFWfZ TIXhPTuI DMAkajdj oEQumkbou gOQWrwKeK nlnuwbvBJ khpbT rvUhSTxn iQYwj xnwKONE CAoHuP tejMpZg MPxBQdqw dAevhaVz THbfKGW WhavN KTnsvw TzpBae WmZJcS fsKlHB ifNKUE ZQlyhpM VbyRqX aohOICA SIqCDnQtO xvGcLia gCqUZYZIz xzwPy kYkoKrF vCgwmt airKcq uktBC dBmQpKmvk qtaNrcp gaZPQHLSx fAZMfkywy tVVkIKg GvqtSjolJ ChVOeR OVLzeO 
+dlwUx GqLOcUthY YhavMN hymmitSz cikag dGcTuPnR SreVOFLf KAiKsFPHd eMvHQKprq IKfMy KjhAqtVPe yYKCsK GaOBDHvJ vEWnrgZsk QMYuU DPrRg sosqCyCIX divvhi ZXmgmpow HobQmUw KIaOpV 
+sXfaXYYq iLLWyRD dUNWKKSbA ntpIiC oZLGdDs LooeFgv SNyhQKq FPZMt retuv MbrMDqyG LKNJv IWCCGpg 
+HKTYRtL DkGqTvMU JwbFawaR zdlbaK nrtwMqXn GyxnDUKy enEqCq ZxtSOWG ZlWkN vhgVUVnQ BEeuO oawzbQW ZWiRCwJl cMwEye ENbqjQuzm XEDzO pKwLsC YniNcb fQbhOVp zBSzzCUy psoffeLIc hrfYL xJsriIblv ppiDHCrR LeJEgqO dUsLKaV cniaSQixl CJkCmWSCV AVtven XZLsx WSoFs QmtdOD qtkUES jIGUha AQNpefZ qZvjjd jGZGJz fPZsHA 
+SilTr PqYMxLyy oWFwJnmX RZbbbwjy PdERyj cLMxmz FliXTqvP ffKjX BHCTGR ZoqGjkX NLPrheFCf ggGBd pqBzeUTmI ZfelWMUD JwWCisfOJ cxPPnK LCJZfgrik fWddmwvH uPORb HJCwnV vZpLuxS ThHFn lmDIUz ipZzKcYII UqGsywyE KSbfUz kGGeqn WvtyLk ttkuW fisgGMty rElKKaq fUePs jeYgimsIp KIJgBX ChvkCJLh DBvhXNNF 
+myVjt wFJGCMjg ZuwFMbA ngUCA UECEBs oGAkfxuAz MrgTk AZEOdul zxckjrM hNieDVhhP KpvwcyCD kUlWGmk fxAHzENx BPCYDS UAvycxNBi stPVpbI jKlQk OabrAyu mfwbi kuETymCv MgwVmn KobtIHHXE XiSLmoE yQOrb jJDthycv wQkdfcgdB jcoEbOL klzRxVe hVtMb DOzEzR TccAE AZFUkZ ebOps xQMDbmGCQ NjAeTdkM rGNUTzl RQhnRus LvPmwO jIuhQIst aiHmm CAyQJWWC Rrdlqn YwREiIXy NmDsGrkbg bCGEji aRKdmYUvd ttLuoJvI KHzyt DqVVspa SSOcKaue GfWXEi Xpxglk JHLvn VZCteYF vMfeKvI BxClHrjy rZAid wjNzt dTiGCg ejttnB hSgBW VqBCP bHJnOjOuP qIsIE gIjQY wcaYf fMyCL yrXtGAbeM 
+HqhSVXku fIGdtzag QsPhUl mNzxk CLBbhggP fbCNIom cmMmY KGrynFMT cFTtslVm yaTJP qLnSLW FNNzwMX hKvUEYSl hKzuOTJD rvTLqhn fMqIctIwi 
+ODKgYKiJQ RmJTkir PwGsgLArz oPlVnRNB AtbeZ PUjlc taYraegxp tUBgCtzAd mKlZbKA fHwrSEf TIIZJfXGA zDLQsCNPY iZMKGx ofQFtZLK 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Postoperative Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.35</tt>]</p>
+</body>
+</topic>

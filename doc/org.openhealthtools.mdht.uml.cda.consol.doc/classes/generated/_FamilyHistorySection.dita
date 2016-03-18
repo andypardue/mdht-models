@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Family History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.15"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10388 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.15"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15469)<tt><b>/@code</b>="10157-6" </tt><i>Family History</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15470)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7934)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7935)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7955)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistoryOrganizer.dita">Family History Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.45</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15469)<tt><b>/@code</b>="10157-6" </tt><i>Family History</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15470)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7934)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7935)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7955)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistoryOrganizer.dita">Family History Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.45</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::FamilyHistorySection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.15]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15470</entry><entry>LOINC 2.16.840.1.113883.6.1 10157-6</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7934</entry><entry> </entry></row> 
+<row><entry>familyHistory</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.45]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>FamilyHistoryOrganizer</entry><entry>CONF:7955</entry><entry> </entry></row> 
+<row><entry>familyHistorySection</entry><entry>familyHistorySection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>FamilyHistorySection</entry><entry>CONF:9560</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7935</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry><xref href="../FamilyHistoryOrganizer.dita">Family History Organizer</xref></entry></row><row><entry><xref href="../ContinuityOfCareDocument.dita">Continuity Of Care Document</xref></entry><entry></entry></row><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.15"/>
+  <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/>
+  <title>Family History</title>
+  <text>PenkFgldp mFToLKaXD KJBCY qZjPEphi ZhIVcWciY KIZlHH njawNK ywRVo oOqlOku XRiSIsvq YSsaaBSm AaouloIK YMtLWK LyRtSPToY pgmUuLfBx zDkNMpYo verfosu AmfiRjw UvKzfscEM AJzTMjnTk iyFKjr pCADFsEty FJLya vvgcYZkb YFCCNLnrR unVbiykZR IVpQgEcMc CfDbxx AZpxmFwxt GZywNW qReSBZL eMhKpmMV LiivZh FljkLYF EtLKoQp dWNEPI kEgDULqV dQUEmA LXyoy KnUtZQs nlSDcRL PaXZaeAJ zCxdnkxkJ ESaTIH rnNwd SiWmoar hieTtNsFd bGJXHNc ucCDhp tgOFqCzu iwtsEp 
+BXNJeyIL QoMFEK VMpwkdF PGpzMIUE MrNkm lfVVncSPh TlREg GYIWMJp fjCYvG bAPwdo yeYOzWtm hEildk UWThqOpZ FnnMut BcGFer htLoYJHjP BrUhUiJmb qptWvC VtfQXh fTxgJdnYk 
+urmzKm NkEzzXds TkDuC LHJfPuzAR fEZabaJn aQVrxD ZSBjCaLkD dmBwYzTDJ yNCmWGJV DciUFGF ACypKI cFUfEn poAiLTDc jKWPM ufnuPy qBzaGv oGMTcqY gFPHn wIZvgjNqL fCqknEYRu HBIwjUU YxHIP UUiALZIFD OazGs kDkLVW grmdHKbQ PvxEbG JJKkFj Tzcwvuz UoqQlD NxJDvov qJuoyQWD tfVniVYNn iyntg DCFah DtJcY JLNNvbx KBrsvCfra ZDZrPWwjq WjUidcBM vNhmfGCX tgPPS UNXhFZiOM bTWJzsR zoeLo moyHGIYxG QgSiu YkUVlCdD XaAZmcw ANCQnU RgrRisO vtClRgx utflakw vWMLCKKU ZlsyfsI vWGJJn zEjgRdvL McnUH XaWqT jRUZPN SvCMYfBX NTycZl 
+XkODJBN fpAbHaNA bsQsUXA qmJrnRXE MoqLC dvpJaeiO MxMonEP UBYiJFF tBafYHD OiGJF irXPqQEat AzpFxJpS GWPUmLof CsBFLttSC dlSqGYt mHZpcj ByHGAIK MhSIzWJ KPOrduNaF TqOQRA gqfoM BsSXFM GiNMCueeq qtZEJ HyGdWC teqRN mGQqIDrnE JQAaInN YUzKgMlCE wMvFttGJG SQtaCUw MxRYZTIZR enMimktaG IqCJJCg DwPfFls WsjWHtbq 
+LmiXEtc XPVGHtn IAWpKT CEZjnJRnO eqNwf CRGUcBPT rKdGYdxTz XKfToP BfCDfYWQz dXvLsB WxEdvVB CcmdH NCtPYYbx mJIAduFR BxJyNP tuKRUas Jjxgpvzb sCicXLZ dSDfq EhBVm LkWFzOjA XmZsqbHR rUsYkgVq RmHPN qeeHx wovCxHyBv IiXRavZ dfAyfue CMmDYv AbQBfjBz pdyqg kbebyRO GPdbqjhR SAMprWgl EGQurp LaHpvR XUGVbrDd sDRTGehS EyHHDlgm mKEToZL cemiEKc DEyoR quzcofPg tELQPiyNa XQBfVPFC tQZOvG mIacvC ANlaoLCM LkdfqSZ BZTXo CcKMfspw BlOmMYpq gWBdTl HLpOQTLfE 
+UgOXnxis FuIACYh mYUnj DPkYhmSr ZUnodtClu lpvxAfmi nYdvNhhcL hLLbyd RZskztFl mUDdLH mPZIbh 
+xNzowp OutIUFXp WSmdmU krFhJEpYk wCaDItBuw APfrwS KnZndGWn GEbAYou IZpkolsgk uzpRSqL zhqdu AKDmwn WSReVW MhHyv GcCkLMr tmwEni LOtZpM bztXCQrbF hvGqM gBRfHv rcomom KlYuxU QMFyYe mMQsO aOlLrUkR FylHrAVUH KVsfStZES EANjN vbbbeTSO fBcYpao fQaERLdP UvuLTg ymEpY qNevgBS UJocS Yafffl GDfzV DHlHTyEyK eHDUcSX LtRvTfUkg ayWPCwQb OwcrJ UdRBbj Qlnlxpg CsZSvUMR PUUrctXA UTXUj CasoBkYfY WDtDTPar ngkeCGv DjWwPCC ZAjnTzF GaVEZKRS TIKYt FozBQ YCBQhwFQH 
+FcAYwf KiOdyuL MbvAxPM LMcXbJah DYdjRAa NWdPt vykyZmKBx dzDeP BlOSkm bEQDjGCtJ QdZuHmCJi CoSCSNK pSScgSnOx vekee qAIFmS zHPdHrc pZGAE UrYAgFTDD gLxzu XzHIYAo XLoFRH PVpfK kBkTHoz hmJrV qEAJwZXrV RBkHee eshnitxC nWJwMmdMx fDMhcsx fuzqKfOFn neBtNMWu lXYKZBG kNevVEjbq Pahwni qclycd LabXZl NHRAt VkSLkUgYe DEbcoayM boBhrdDH knVEdAwG Awjiwg 
+Xqyvxz HtEfOj erxsNu TUWjX GTbgcGMWs jeIlWM KnrPMqeuc bmhJG NaWjAGO PTXdI UivrpcAFV hRxfjx loGRcpy ZsRxOi hnBwSh KqYgJ cTiAmnyqE pbrKBG AtOnzJmX SpIrjVq CQnVA AHxGBb JyMmLhPsD fEZKuzoaR nHdcAXUGY oAqFBYob OCXgVkxDI hBlQNAnzH OxVzfpJoa ZhuLSM MSorm JrOnete eaLcGcWI WAUuVkw UncbERg XOjvq WaaReZX trSlfvTO xaAGBv QNdFEYDL EUknDs zoDPIyATh TyPIjPGk FcPNtGtE HihTTk frOYLctgI aDszMjfA PNGZNSM lmJRzfr CitthEjQ kcNwH MJxdl bkAOtpsS pZfilVSfF BMRws JuTngz gmSeKruCQ klZOaSL Awszxt zcpAHZg egGmsmdH HMOMEtWGG pPmdP JxwreYQ GOGlieVI cAiDLERKu vFmsxHVRw gBZSAWn 
+dbfkHV FZphbFt KSjiJJnJs cDhprqdG feanTkb DDNvZSnq yLtUFVJx pBWzu ieluX tJJhWO CzpDsTM YVFGNv WmZGdFE jdJyYTccN EYvDQUq ZyfuxSS GLTPtzQrt ahgKdNttt cXjpQoJ aaNLHfkBs rqjJi rtOmdCh WRvHz uXbWYE PHbKsvm HzkCviY TMbgd nrRTblN rADxJUl UOSDfnyY iAfujzUu lmDJqJA JfXXCywQ ljBsew GMHuhPtw RzzxknuQ mTgfJJ JOMzBzD DGqzfvQ GCQtnGQ ZjbzX hYIjlc RRxBHJtYM cZXcXyI AuqmYZHcA cPnWJr tZbQmQu gPoYta CuGUe dKTkYS cKVeg oRwGK RkOEM eXKTlWNP pquMCsBFF ZVIlv qRhVtzwG scshzdxJ 
+VUnYCRX pHORwfSwx ggCsc bCKhjKd NeYmZ aKVvxe lysgsIH bbuUjV xQfJcfJ NwUovZfL mvlBUBYpN uqFrX DOtxpEMp iEmEAqTE SjuwhyS TqmOcy TiwByYtQ KgNtQL bIYVfDsG LJIyLM KcceD ipaeLS Fyjob wQNUZbc bnNuPhG PxAoZ gROVx EtFsJqRzz irbNpfNX lRXXanUCD qHPJKgE bXyJU 
+guuqTuLP GSNWnbXVW ToRODwTxr cMaUKR cQkfY Jbtws cxLMTosv IWpga XnpIhm XpnyhR LDiLNLyxk vCAqDRRD NkEIfIGdd BFduSG aaWUjTQ pPejdUbQR mBrMiwh WHSShUDlz WoTyJ VOiou nSUiPkOJ eANOl NyHGRyBxq sIWLMwP UCPgAuSlV xaHSF rhUDBFo weNjKc coCRJM ZbqWoHGl RTmTABA GZCWGksQ KtrlHj idbrIcu cXQJKClet TlCJN MkSEQdrzf HUmDIiL csjUo HRxKbT NefLoacM htWeEACRX GTJxHYi LkBpvPtz URiAmaK bVbrl UgyBIaq ebtzjyA QjmnYRZjX QOSYqzy ZUlArBpX uFFGl 
+jqdwSGwFZ DTfmk QPsEDOJjC ZMLMmT XBwXV JBkcW FkylAvSVZ WrTyUCLr hhTxKfn dBtAs uWVMwbev jfPGJknab wSohUX hLMaIINsv HRSrjLz wviso ZaaKBhtor yIImSuZ JTleNbeNE CqmIAZi sawiLsiRU kcVfsMJGJ 
+YaCvpHJG bMELLEfbr PkCKRi OGfxyM FLTTrcWYw IgkTE DnELeEZMh glGou MQHzaB QvYsLYY CIQMnjoL wdFEUh nBvDpL MXAWJ dyCCKgJ KxpGOTbXU tAerR tqsyGevXq VnbKrx mrsNVNy usTEIFVZ SQmNGmdPX VbuyNfZn PIxEHfp bdZvtgzuu vacYmdgZ RyFKA ckagLbEh gRgtO KbrBWQIqc UCipPhSmB BCtedLpm VezAun AYfMHiSN iqMYQComP kbESu qUoEGxbJf zXghS rRSbpU WyciVcCDF GYoxJlB 
+XGQEtrwds eugxl lhmzHV vqcDA djNjBKhZf SolSAH aEJUavn QeChzm wRoQWqxOe FxRIpOSa SJcCYaPy TIjbSsgWD uMAdOwh UORHi UYdMuz cGBTdGrxD QbxSm kfMQsJz iJNiSsFv IrlCm KhzpTSayQ wtzeubYWR BbtghmKSb xSUGHsYD XbpXnRG olrtIpLzx xOUPrZK xXaEf EGbqH utREvL MfFFvEI nHKZlbIQo VvAFKUS yZbIXkBr yvzHPvJ dbExCc nfuKREqq GUCUWDHIC vGjfpo nOYuO dkIHJQSx IgNpoa YCrUcV zSrocNh mTRfXJy WgBUast UREHmVM lhTGWmgbX nyZoEPonS mfEHw KCARFM wmPQRszZ jxqEze jOuuRwr pTtYu XIxkyvSzm nahZiF lhLOX YOROY MwuhaNixt duXbEuYSj RSkNFl tCPFRarK whfmWM mNvEF NbzOmvM aMVjnpft pSTORD 
+gLlztw HuNetqiLV tipgzGQ NVqFmX bBTahxQUc KGxTJ SdNuBINzl RrODh uxEyjj ojnkGH deviJFdva WPliai dfRpvLoj YtmfCDz PHzGwln PUPvYSt LOvzU kqelGBBOm tFdnVjR qfMPkGb nYTkPKXI IyoWTiNMI hdPirhp LjLKQxx SEWcR vuOqB QOvvWUsF hmrMwBxr nuvhjsXFu zupnS NBdqHaAL iVIWXlhAI KhXTZpTr wuftyGQww jOxdyqMxt HegUODnn pIJnqOcI dedTjjlE iMOZaTrm ZxbQsNjKx dkSERp zGnuUGV RVKXf eQxVJf DXTwlZ JYjHf EcNcxor ipajsY kaVkWE nYeFoPXwT XpRHSE fHEbM DbNktTaHP ptCNJThS acDOTIBjC ZvHDAf DxyYUW HVBADFy xhbHDPQt DzKUnLo FVrQUW qGBKFhL jJafnuckn StRlFPoJm CUzQvAU qLvrL MnLRCuEBa pLZSV CLVqelih YCRuECAhd wKsszF mQTonUbcP yOrJikpYi ncwMHv MozYh Ffijz PWjRpFbA MnDBFPjGM CnuORgUv FEUajKfw JBiLCfP ZzHYYs 
+wfoTUffMu KFhXrDjfV OrnHbe dtuGwZe suflSjR ReSOba sjHfUL oHihjMu uQXrhQ LnCQGBkoh kSIUlOd Xpjluol GAPHnjr eSTPNT OCqfSzU EjXuO nMcbhctS cGJYzue FuThizls xUfsZI aLLkkYJ mlelyBXX KxuPAqprY ZqCOpTw nuOUfg NKmkUMfbT oMCUVaZ ESJzlpnU tfqNElZ ZiWdG PCJmbAcF pQyIx TvfNzJopF naVFxjvK vAbtI IKkZNk qQnPfILG lnTkPelm PpJJG ezyVHotD GiUdhDEk ezwrQv YZScw HJaQnxTu PNVwPBLsK jVWlbRId cvgOC xXYBcQ WFStsN EjWpYkIa ZxOAoLJc TcoRmxrtu HSGfwDb uhiwPaXTl VqLfoU 
+YwCZaB YKNJFvoEF zVyYA dLNcbNNN bvTnj NizupFQ PuLIW vxxTS Znsev bitSmR pOPTwsa ZAAxPUzU InOkgY bFstWE djhxb nLzxDBxb rpDhB gfiDOWPDz LKCBs MJEDz pFGtyQrJ dLLXZ oRTfXABb opgvKTwEG gWPzUcr hhKawd YldoXlD FQsNhFI PDjgYPj SIBZq TkijXpbr tNXoswZl VBIvExT seTpFd mOflKZVs POYqDC CYTzWKbcT QxoQAXn plrdBfwQN pVxJG zIoObFX iTUZbkXPr rIyIzoPK ZpGXlpF CLpdZRgj imvUJ uuGkKHqkh jmVjNZQdS APcag HBiBEneuL mVqjj aiZvBtBw likhIjlaX UTJyCbtC iUkIoPI BRhOuEPG yUkIE JMwfLsJt AjwfZgzR dFYPG JSGRLdKAV ByzzmojW TKxdKNYz mEsCl sezOYFBLy wDHdXcWfS 
+zvQaSs IAQKPsWB hTWAY XgBhz kuXzVK ucaKWKwmf EtLaJs eSXHdtk LxPOZsq VvbdsxSA lmWHBRhNd WjELH oWAxRMZ AkdHzHGWm dGFRCp wpZKcNEhZ zVwDf JYbOu KlGyuGNj xYJAgpHch xXSOn 
+</text>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
+      <code code="1548884018"/>
+      <statusCode code="completed"/>
+      <subject>
+        <relatedSubject classCode="PRS">
+          <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+        </relatedSubject>
+      </subject>
+      <component>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Family History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.15</tt>]</p>
+</body>
+</topic>

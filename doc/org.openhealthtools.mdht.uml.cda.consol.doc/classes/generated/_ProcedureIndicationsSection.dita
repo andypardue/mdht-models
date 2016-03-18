@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Indications Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.29</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.29"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Procedure Indications section records details about the reason for the procedure or surgery. This section may include the pre-procedure diagnosis or diagnoses as well as one or more symptoms that contribute to the reason the procedure is being performed.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8058, CONF:10445 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.29"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15419)<tt><b>/@code</b>="59768-2" </tt><i>Procedure Indications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15420)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8061)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8060)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8743, CONF:8765)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15419)<tt><b>/@code</b>="59768-2" </tt><i>Procedure Indications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15420)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8060)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8061)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8743, CONF:8765)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureIndicationsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.29]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15420</entry><entry>LOINC 2.16.840.1.113883.6.1 59768-2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8060</entry><entry> </entry></row> 
+<row><entry>indication</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.19]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Indication</entry><entry>CONF:8743CONF:8765</entry><entry> </entry></row> 
+<row><entry>procedureIndicationsSection</entry><entry>procedureIndicationsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureIndicationsSection</entry><entry>CONF:9910</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8061</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../OperativeNote.dita">Operative Note</xref></entry><entry><xref href="../Indication.dita">Indication</xref></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.29"/>
+  <code code="59768-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Indications"/>
+  <title>Procedure Indications</title>
+  <text>GXDGdX QnNStSJLJ QjizZC duzJcSKY MubAM LaAkfTxAq dAMFADVgi sKLkbRyna KdnXS mrHyn WBHsLfaRh dvtRa YwkDXEt MMDIFiJV rWVuZ qBqqZlj mKWGOh CpzwdK Zwdkqgn NYsvF nGQIBlh RGeylREPM cqUNJW VLIiwkWR sbwnKeJS uTrTE nsNxuMt IUcUTTC WISQDzO YTBmjUq ltCUqu pKmude uTyStqYGA MVdNmzu xSENpp VMQWy DADvLoh aTsMjq TfkTb gkKONtbc oauhze pGEjkMPo JKkiJ GGDVBsZFj aUgpkwmI zuoTv fJgpy sBbXvLKnK OqmrEt BenxNj DmJsSqub TZLClWQEu mZJrZ tSChkDSDF RjSaTZwt vlgyphMzV sJrKkn nqqvDpDY aEupjhZqL kvcpUQs 
+ESYlvjq mWsWZCYI XmNDNwrim SzPhOu RvyCgo BtZYEUAxS MbJHX ihwoidjHk aVAPh rMlYke fcUoFTxkF kwoifcow qqgLs TNBsuTmW GwfgwjTE OyyvGsSrI lblAamqIP qMJKFF UXLmb riHLPPCz ByMLR vYxNdw IwsAj gthopNoux yiYeig zXstvfjo aPSatCD qyTCYx unbkkG sxbQtnDg WxIHLkb xvcegdvli okcPIYj NmuQCaBV XxdZdP sAlwpgD SfsSSNQK 
+</text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Indications Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.29</tt>]</p>
+</body>
+</topic>

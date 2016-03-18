@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Autopsy Results</title>
+<shortdesc conref="generated/_AutopsyResults.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_AutopsyResults.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_AutopsyResults.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_AutopsyResults.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_AutopsyResults.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_AutopsyResults.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p audience="Examples"><b>Autopsy Results example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock>
+<![CDATA[<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.3"/>
+							<code code="69436-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy results available"/>
+							<value xsi:type="BL" value="true"/>
+							<entryRelationship typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.3"/>
+							<code code="18743-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy report"/>
+							<value xsi:type="ED" mediaType="text/plain">A text string with the autopsy report content.  Note, alternate media types may be supported by implementers.</value>
+							</observation>
+							</entryRelationship>
+						</observation>
+					</entry>]]>
+</codeblock>
+</body>
+</topic>

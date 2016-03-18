@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Allergies Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.6.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.6.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7527, CONF:10379 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.6.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../AllergiesSectionEntriesOptional.dita">Allergies Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.6</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15349)<tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15350)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7534)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7530)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> (CONF:7531, CONF:7532)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyProblemAct.dita">Allergy Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.30</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../AllergiesSectionEntriesOptional.dita">Allergies Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.6</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15349)<tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15350)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7534)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7530)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7804, CONF:7805)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyProblemAct.dita">Allergy Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.30</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> (CONF:7531, CONF:7532)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AllergyProblemAct.dita">Allergy Problem Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.30</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergiesSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.6]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15350</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 48765-2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7534</entry><entry> </entry></row> 
+<row><entry>allergiesSection</entry><entry>allergiesSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergiesSection</entry><entry>CONF:9445</entry><entry> </entry></row> 
+<row><entry>allergyProblemAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.30]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergyProblemAct</entry><entry>CONF:7531CONF:7532</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7530</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ContinuityOfCareDocument.dita">Continuity Of Care Document</xref></entry><entry><xref href="../AllergyProblemAct.dita">Allergy Problem Act</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
+  <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+  <title>Allergies, adverse reactions, alerts</title>
+  <text>stwAXVu lVgxoN bSrgMp dJgxV TjBQEWSz rqsJrrN QttLuRrq hcMUKVo pReebatB iWeXRMANp eXuOyvu VFYOpWy dHenvgkw KwSagUu MulWc BMaUQJx BsfNRodD NGHSwxV DKUzULYj Lxohq GWzKfEUP eQmJi FBfTJ gGfBOSwWK cyJgDph qSRDyrsUu jdeITx rxtjy rAHUzmw VLpkLb iKecvgEX YCknfgdFY pHQCXXX bxtogHM avjKWIGiO TNRhEwaa ymRKcJBp XdWDI RZMxHAp seIZmXjxE KLpDdGkh ohdMKcLpz CSotfTRAu NhydQd KiIzt hnFBk IntLvTZ sNkCz sCLdgTEld FoUZXp NWrdn KDUpG AbcVqYqI yaBxhIH MrkbUZPiZ grfyIywp RUUBHEW jyizuVz lHrZU yKCazJ bSMOlQb mueFRcbY BIMalOgVI IGJqs VaFrayc oqYvjLLM fBuSqxpy gAmaFtIUZ jWHaJXM RvHBGif CyajOJQJ LXwuX HdGPUvn QNoatI KiJug hhjfQtq hcopZAN SOkvfw ipLpPG RNPfm 
+UrCsl TSmgAPg LfZWYRkw aIsRwkg baRNIFIWR FgTXsRDoz domMRX zfDeyRR cRmQrmcW HvdKMu uZRDhMuA DwpPQfGga dHYtRbhh KRjQGeQlt fIHhYj OALTSe XjskSy xLDyZQ iXWwxl mNIqDQGZ essJhG CdbJFOg sWPDqM EdjZaf mdrkVJ zipZPWJlf axmjTy yMZYrCa FAzOM odxwVfwV zHiDD hMuQT EVboNnj oSnVdb WaaWUHOAc VXZvZkIhA sMAanBr zlsoiA tmgLbCxKT bGtBL BZJdOk pZSJUUFR ZHRloXpbn KtBXoEA dPsFb emUtf xmfkPqvFE KeuJMo qyvEBKXO loCAIcRK NvkltLixh UHXQPZob pppHM ZDepEQ YAGaZpiLu xtjOkSt phzsKWY IWOuqNB pceyB SzOcp dTJNEvJY VAyHMnB RcVaBrMC DxyZDx GShnnVZf 
+UWNCp AZxpYDVlt NEbZMRyLF cwQJnoOrI ZnfqnoDu zvEPO DYMrAuaU UdISPSgHi idLNf TJpJZwNPN YJxsPq JtYRPd nwmAhyz OYOWSI qLeuAf luKsK hXkvwU vANZm KtPQd VcXHQi BmnHJ tbSCRhRt qcuxaXe 
+bdIkZVy RXTEI bSPifnZ QIylic lsaNlMF VNSUXHVqg crswSkWF Bjypn xDDRJXt jGCER zKJcQvb irxwoJCM TxyEHH WAXHKZGc FhJaq yChhftoW azNVaCLC anUzlXaj SIkFTqfBw lvYxYZb WyivMuWYY hRwCfYDRp BxsaNJu aJlruz eFdmnI rAqZjsTQx ATATvFK qacRn DShEjto LDPUp kWOyQr IMIZr svifcvLS ekLkkq StjCNg dJzOrEBIa 
+lZlgNrbz uEOvEB fQOHe GWPlc gUuFy DIjJOVx wJzcrQq OhyxjTW ByMyt dTETcv RlSFGLZ ngLLSCDD eqFnc XOpYBQQiw iDKgY OqkQx tMMiVe eroTvYCd oXxlN yWWKR YgtFYL OepVH fvBuvYhq NteriuaqW VdPkF bmFDcHU nGJyqmk eiWXpN iisTGDaug TmbRVFvc udlMJwIz eowhY NPOfTsj gxksPnuBl AwwAFwWOP zMAILCNr gOGrmK sXpgwnokY iWCTYPIc NBcTTsf xdcepudTy IfRVW fsVkRVRQ BdJKlEsV zHKtW eSNlLakiM sZfzibihD rTaFA kJVtu RUrpORELn GVVyVD SCpBe swRTWJG 
+kTawfrEUT XDHDZjG oCpFGPx Kjlzn TALQIfdP TUuGWaoT ArKxJsb ypQnmWXg xvkiXYE Pljsl FQPFume YGpqJL oRfVhCUS ABOAkzTSZ 
+sWRCFme nnFsHprom fHwdvpp JjmIfICe DIVeBnDTX uvGZE LIuKBGOS yOikSCch uNpgOkTTV RYCrddPc fzyHnFE ehzYlyuZ alDlA NFYPOMF BvskUcKBr DKUDpf DJzqdrKG EfCYSlPQw uHSZnOHB AcLit eVIhdyOLX pSvhfsk xIgnNhhz XFQGBXrBN OLrgOQiwa zaXXnJ QYFfFMzEo zfntXjFWo yGGjgCbd qBuQzj uJiWXQJ dxiEDilT pEfkNoNOv hZVku VOIvUy gdWwl zcJlcfqQ McsYFkLy UyZmg NmhPYKTGz TKDtpD eYrWIrQr LUSEoNYm ZeHye OwQrfoSMd uypop 
+csgxOCcP GheIu yqnyyYBq zPHXuTj RnkWczr raxmXM gTQyZk VHnNJmqQl PlAFHWUil WKSuCB nPxjtC wPVjk UIylk lSHFUgo bPCZlH YJlkgoN qZZFZbv ySBpljyZW 
+UJFUGyvk Tthrtd WMXuG MpFGgjiS RCWzGV vputN YynhY KQlEtDnp ttkUn PboMAj wFOoytw reoQumv xZatK qKdKQaBlp FAbGpE FZaJAd zaJvh ptbhXbk GnjjyL CyrpSkY DuJzPlIse hResitaDv EXJpfRCmS nVIsp zXAmNsUx IWBhryv GneJGFM bUOBV cUEHj OCpURFWBY lIRpFBOwd iHfEx URdqsbKgY sYLkBpj uzBpcUcO eFRqdhGK vGkTUMlfM CzFqwLPbV ssThHYJS ynSyFI LyFolVk QVxEB VMKmCG hCOzDIQKY CmAOikmoJ vGYdmQy 
+HLYqx kYrbx rJdCJO yDEcsbBx XNHTlIR UfcIryPv rVUlBs tNioK sKhXadj SZrtZJ aRoeKf IgZMbmITO XLzkXGw xHXBSMX ZdhFRdgL ntQYJU WUlrYBu aWNjlQ IrzEzn XoWCUKys pnAVR OsbVcl NfnSF xFwzkeK JGUeBNlmz gfXiLTosU HemBfDJE OvEBJn QYCbA qzzcbxPjU UOVaV LhCwYNH aUlEz FxYQruD YDJREaX xrQAT HzEjH ddVuW VScGcDfH PzMNPJ zGEVyTpQ XcRMLEMi nJSJA lkCiG UJvGsctrY qAenCpEu xbkoIv kGIsgdX bqeLWbHv jeRtbno rbJOQQu wMFOXiUmj KrxHyhW VjVvBLsi fbqXrVyWE IHFWTjFoT HedzK stVKYbR cABOHr ljHVlkKJp SGMkrEkW KtHrFGtn bUHPdQZL RKfebHie ArSGiKiD TflnzoQXc gsvyOtjg CLtJjgSHP GCOKlyWl rGlXmT TXRYjP OudRDv RUUozNQ GLHWWMWBj 
+</text>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <participant typeCode="CSM"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Allergies Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.6.1</tt>]</p>
+</body>
+</topic>

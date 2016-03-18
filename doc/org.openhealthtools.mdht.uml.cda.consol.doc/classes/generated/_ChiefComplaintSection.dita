@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Chief Complaint Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section records the patient's chief complaint (the patient's own description).</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7832, CONF:10453 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15451)<tt><b>/@code</b>="10154-3" </tt><i>CHIEF COMPLAINT</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15452)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7835)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7834)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15451)<tt><b>/@code</b>="10154-3" </tt><i>CHIEF COMPLAINT</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15452)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7834)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7835)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ChiefComplaintSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15452</entry><entry>LOINC 2.16.840.1.113883.6.1 10154-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7834</entry><entry> </entry></row> 
+<row><entry>chiefComplaintSection</entry><entry>chiefComplaintSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ChiefComplaintSection</entry><entry>CONF:9554</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7835</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry></entry></row><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row><row><entry><xref href="../ProgressNote.dita">Progress Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+  <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CHIEF COMPLAINT"/>
+  <title>CHIEF COMPLAINT</title>
+  <text>OHEhC ZLtuaa ElNHd DCWZu pkjrWzRX iyAGy PGjNKij jphNl ihxDxd RPIEG QWWGo jTGhGlMH EMEWn ndWgn WCOekZSh HGGqRwpdh eldhxpW pftoANy tkStwq uuiEAGLbY MOEyW eiYIgvzNL MghpCaX OiECqWO huQEvLJat fpXkTO rwLqV ICgwKZP QClBBhdAd IgBhB CAeyS rwVMJ TblNWfi nBsSxbui 
+dYolnMZTa LDjDYN bEccYnF TDGUbu nZBhr ZorKSjB uurQSQim GqKWS JIbPDefmB odNnfWHuF yGkSe lVLoMguF KOCkJ kBAcxb uZfOXZ IXlgJXl GHaVnA cJHDAt MsbMjZ zAmWyhxn IPlKraWe LsNCk FdAAvH rAKOA eEFFIsQp SRPBI atrEcDx MKsOeWocj qwRJVjrXV KnldZmj txBycnOnE WwxDQhZfj XYPzn MMGnGa lJkjQbbnq YtOFmpX rqzKD rzwOg PoZZVvjNM GNgmzGze PstwVuA ffxuTX cVDltdO MYpjvfvf BmRkq VecmCJN dwCuxko NxPgebF gHmWYDQ KegFQwcs axVALH 
+FSqcHV zvKDIG RljOsffQ VXylC VeQugEO KrlPg lSWII ioxRssq lgPYlQij XBCqFAc LnuXhQ MQSTKY hVrpC tOmbNVQ sOiJou opKxJa ZnqeseEq wDNYP QwRhCncnM cbRfxs Xjhhig dCWjaIlB rhbMlwKu udOvxM CHVKv GUGFCsogl rqaJLPOhY PgaZSqLks lKhuazy aWOlXSEdV fpBiu ElgLpjf fQqbDWHw jUgIGbNG 
+lYLgAC ZpfINxfW UIRdjxrhb gbRIW gCBDsmzw kivspP LIYxPdyP ziZEqrpmO vwgsE TEeFc AHlUyfy DVgxX FfZeFvU rwBulen NrzoTlTkl EPrqZh UveSfi pusFD gsqkD Uqssvrlfq JueYIQpPP TWKjLuz Sbaggsz SumLn pKJySI HfWPYlZ BtNUn yyxsnk QjXUYRT olOxUR qxffN vUfRQii eYEkld usNpIDVBO uHLvNZ mwoolSSI rMknB GeOWgC cTlgrqb qkQNgPd DErUihI fzVilZex ilLwsdq KUolD MhmxSLQ QSYtMyYCM 
+uDoKzW BEhOJjRh MdQOYDW KYRwF HpHzj qDzUuCo VywKCNgqw EDCJEfqK CFaBdO WkVkcgd MGnOJ TqZQpM SQlXiHfK JvqIwLg PntvgunXP qMNXTl htcwLp rOhUKJSoc hvfqUR vVRgKKSFz SUbZYeE OAjmr NHemWX fuiCUQvi jiiPNS rOvaNFfR jnNxbArzN BhvxnHQ hETlCi urSNg JAdumaLb ApMvSMK EIlbY nxtkw QVkIwRO HnWjuNi wsEHaO ValHZxw lRcMk URRdxqCD yefLCiG DXkSsf UqFOtjow kbmWQX MowqJrIUV hpjaUVeJh nxFDOW gPLqUry BFxosi whcqT VDeZW 
+NTfuv QxojkFfE BbWwfhJ PUqpYc AAUwQSPaq MSUDy HHUNKgvF JGCsVd jeyTNlWOc rEpaVXGJ sPoDhRN wkUsA mKlIHr bYGzp ObsbvxiP vjOaszwm MEpfguY InanfIfu BDlsUd rmejAJt FCuLYHCPt MwGjEDJ zQxIQB opxDLBd jOukJCly MgiYk EkVRvUFB rmQHW gBhDVF mZiPnMOL hRvTAs dioKkkIA GTTnDhxR oHfnldFqK dFsXVb piiXaN SJeQsNsD FwUNdVAdI feAbqgqTy DGloErnXH wgBVtPg HdTEVra havYC tPOcNa JRIgtbyEU NqNqD minWqt OIxqcQgv ZBwImLEhv vGPuPL tKDid GMPPhUFd MUujK DQZTygc PGzikiYp zQAmgi kphwNTb RhVvaNpo ijKgUhVcb vMjeuvz rEeEmj cAfxb kDHImAPm YnWUaqw MNlHcmB dlYnGQ zqHYllP Bqpvy hxKZm RuustxMYW 
+Zsbkjarn rDiHz nfHSMig xNIoKUsr vHmydFlDT GXUTbXd NqHzyfCm PSlQAjjK DNrpDnkY cAorRs vWoxPsECQ ZJxbTm TXaezdu YUuiEXsJ XjuaNOaB GJYjfrT TxzkdE GCrZgSYVv MdPKnpsA KMClNn pEctHT 
+WmeBBPdFd ShkOC RkmMon ieJUAmD xkGsgLHVB YCSavh HxdYFzto evhwzuRuy qkmACnZxD fdiQEFW cUlqXOlF zKjxra KOoLqZfU InKTjeuE zCSnmbc 
+fYZNitry pmQSgUp eoNanTRtn tRlzIf BUfFF jGVYtSC sxtpHsvfP pzQVikpAm AhiDYte HeDeHhie DEylZ OZIZy RVfHvmlyX bdqrkDpi kGKrajzWU HzjbV njyTuQR vEybRQaR bAdeIuqY IPfZLVBM ePxMoQm HQeaktWm GEcAmEPt LCYcp eziCIBUoW fTPhePyC EhLbN hqzsbF hcueDr ZaNLEzx bnhHdwRfg 
+wXomdI WNZJgBJo zQxIbK CPaPIBU IQNOGptH rRzsh RwhWDu LjCVcYazV GRjyWcjPD HyUFpgQ SsgzPKsXQ dMPdifQAr FzSiWd KOPszxKMx OoSdws vRyhUYwpe ZYcdePx qOYLfxVdH tVpRDMZRV FEBhPzzta mNnDkJdF gEhfDJudh phWdJET sXkpOZw JbyTGMO Gfpqzjx AOUPioMA lWPqT cVySe jfWFqCKwG sENZDrHU RNLFL IxmaAAW KNZMi AVqXmBH WTUqfrDMP rkwsb AbkCOmS iPczGI kFJIsdOO zeXmcm gYlnf aRgkRwxZq 
+hPYEWT cOPpVw PhNDiNq VtwUKz LdJNEE phuXMljz okMBdM OLhmaK NMCRqpYVw ndxGLyRzN YscmYsq QWrMDe ixZnSSGtJ LZhBiE oHlZjBnY Olbxz IpnsqKi wNYIRGXB RTApMAqO WShGxny zsRUvAj nWVmNsCHY iFcGMlSbh gXMcz gdTggngGn uDVqzfJ EcZIrnY DiUjm IEXnVpQJ ppCCF nLAudmY NEuWzm KyEWF CqHWv AExVfUzh 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Chief Complaint Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>]</p>
+</body>
+</topic>

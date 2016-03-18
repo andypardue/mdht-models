@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2OAzQRSVEeGGzu7fmW9pXw" name="ProceduresSection">
     <ownedComment xmi:id="_2OfUahSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
       <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
@@ -1109,8 +1109,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>R2.0=CONF:1098-19206</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_4Aw5EBrREeGxIZCGAXKxsQ" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:7661</ruleId>
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ"/>
   <CDA:PropertyValidation xmi:id="_EHrjYBrZEeGrncRpaMCqdA" severity="INFO" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ">
@@ -1121,8 +1121,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7683</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_LFtFcBrZEeGrncRpaMCqdA" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:16082</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_nZdHkBrcEeGrncRpaMCqdA" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7775</ruleId>
@@ -1139,8 +1139,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedEnd xmi:id="_VDZHURq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_VDZHUBq9EeGYcL3NfEQErA"/>
   </uml:Association>
   <CDA:ValueSetConstraint xmi:id="_e6YP4BxEEeGIELeDlfT77A" base_Property="_2OTHIxSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:7653</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_wonhUBxGEeGIELeDlfT77A" base_Constraint="_tJGGcBxGEeGIELeDlfT77A">
     <ruleId>CONF:7890</ruleId>
@@ -1162,8 +1162,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>R2.0=CONF:1098-8289</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_R8Hp4BxpEeGXP8PxDYviDg" base_Property="_hPwGlBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8290</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_YBfFoBxpEeGXP8PxDYviDg" base_Property="_hPwGkBg4EeGs5a462vYX5Q">
     <ruleId>CONF:8292</ruleId>
@@ -1190,8 +1190,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>R2.0=CONF:1098-19189</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_46eU4BxpEeGXP8PxDYviDg" base_Property="_hPwGmhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8298</ruleId>
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_MR3AUBxqEeGXP8PxDYviDg" severity="WARNING" base_Property="_LJu6oBxqEeGXP8PxDYviDg">
     <ruleId>CONF:8299</ruleId>
@@ -1216,8 +1216,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>R2.0=CONF:1098-8282</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_aAWMwBxuEeGXP8PxDYviDg" base_Property="_NMUNfhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8237</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_tDr60BxuEeGXP8PxDYviDg" base_Property="_NMUNdhg4EeGs5a462vYX5Q">
     <ruleId>CONF:8239</ruleId>
@@ -1243,8 +1243,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>R2.0=CONF:1098-19201</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_1RgbYBxvEeGXP8PxDYviDg" base_Property="_NMUNhBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8245</ruleId>
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8S1wIBxvEeGXP8PxDYviDg" base_Property="_NMUNjBg4EeGs5a462vYX5Q">
     <ruleId>CONF:16846</ruleId>
@@ -1266,8 +1266,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8250</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_ZtFAkBxwEeGXP8PxDYviDg" base_Property="_NMUNiBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:10121</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_s0jAsBxwEeGXP8PxDYviDg" base_Constraint="_oJm7kBxwEeGXP8PxDYviDg">
     <ruleId>CONF:8266</ruleId>
@@ -2200,19 +2200,19 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8769</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_je4HoG1KEeGCevFpokwODw" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
     <ruleId>CONF:8300</ruleId>
     <ruleId>R2.0=CONF:1098-8300</ruleId>
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_lYCBoG1KEeGCevFpokwODw" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
     <ruleId>CONF:8247</ruleId>
     <ruleId>R2.0=CONF:1098-8247</ruleId>
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_m6mnoG1KEeGCevFpokwODw" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
-    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
     <ruleId>CONF:7668</ruleId>
     <ruleId>R2.0=CONF:1098-7668</ruleId>
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_uFpBsBxbEeGXP8PxDYviDg" base_Constraint="_qp5TkBxbEeGXP8PxDYviDg">
     <ruleId>CONF:7704</ruleId>
@@ -2482,7 +2482,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7736</ruleId>
     <ruleId>R2.0=CONF:1098-7736</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" clientDependency="_Yau9cOwvEeOqa975IP2wug" name="PostprocedureDiagnosis2">
+  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" name="PostprocedureDiagnosis2">
     <ownedComment xmi:id="_Lz0gQOwvEeOqa975IP2wug">
       <body>This template represents the diagnosis or diagnoses discovered or confirmed during the procedure. They may be the same as preprocedure diagnoses or indications.</body>
     </ownedComment>
@@ -2508,7 +2508,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_QAn-AOzWEeOnE-G4kptBiw" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
     <ruleId>CONF:1198-19151</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw" name="PreoperativeDiagnosis2">
+  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" name="PreoperativeDiagnosis2">
     <ownedComment xmi:id="_JXHzEOzZEeOnE-G4kptBiw">
       <body>This template represents the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
@@ -2559,7 +2559,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_vJegwO2kEeOchpob7ipcww" base_Property="_g1PmIO2kEeOchpob7ipcww">
     <ruleId>CONF:8309</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_CFMuYPDbEeOKPKE9au0oug" clientDependency="_XEa6UPDbEeOKPKE9au0oug" name="ProcedureActivityAct2">
+  <uml:Class xmi:id="_CFMuYPDbEeOKPKE9au0oug" name="ProcedureActivityAct2">
     <ownedComment xmi:id="_NivvwPDbEeOKPKE9au0oug">
       <body>This template represents any act that cannot be classified as an observation or procedure according to the HL7 RIM. Examples of these acts are a dressing change, teaching or feeding a patient, or providing comfort measures. &#xD;
 The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy).</body>
@@ -2692,7 +2692,7 @@ The common notion of &quot;procedure&quot; is broader than that specified by the
     <ruleId>CONF:1098-8330</ruleId>
     <ruleId>CONF:1098-15602</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_QoLWAPDjEeOKPKE9au0oug" clientDependency="_0EhS0PDjEeOKPKE9au0oug" name="ProcedureActivityObservation2">
+  <uml:Class xmi:id="_QoLWAPDjEeOKPKE9au0oug" name="ProcedureActivityObservation2">
     <ownedComment xmi:id="_bm2DAPDjEeOKPKE9au0oug">
       <body>The common notion of procedure is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy). &#xD;
 This template represents procedures that result in new information about the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs, and EKGs.</body>
@@ -2847,7 +2847,7 @@ This template represents procedures that result in new information about the pat
   <CDA:ConstraintValidation xmi:id="_GUbcAPDoEeOKPKE9au0oug" base_Constraint="_GUa08PDoEeOKPKE9au0oug">
     <ruleId>CONF:1098-8274</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_fCVOQPDqEeOKPKE9au0oug" clientDependency="_1Ji9APDqEeOKPKE9au0oug" name="ProcedureActivityProcedure2">
+  <uml:Class xmi:id="_fCVOQPDqEeOKPKE9au0oug" name="ProcedureActivityProcedure2">
     <ownedComment xmi:id="_mlXh4PDqEeOKPKE9au0oug">
       <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g., splenectomy). &#xD;
 This template represents procedures whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the patient. Examples of these procedures are an appendectomy, hip replacement, and a creation of a gastrostomy.????&#xD;
@@ -3008,8 +3008,8 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-7683</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_sOzaIPDrEeOKPKE9au0oug" base_Property="_sOyzEPDrEeOKPKE9au0oug">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-16082</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_fXeF4PDsEeOKPKE9au0oug" memberEnd="_fXc3wPDsEeOKPKE9au0oug _fXeF4fDsEeOKPKE9au0oug">
     <ownedEnd xmi:id="_fXeF4fDsEeOKPKE9au0oug" type="_fCVOQPDqEeOKPKE9au0oug" association="_fXeF4PDsEeOKPKE9au0oug"/>
@@ -3037,7 +3037,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:EntryRelationship xmi:id="_9ODu8PieEeOXlK95I8tUew" base_Association="_3HIM8PieEeOXlK95I8tUew" typeCode="SUBJ">
     <ruleId>CONF:1198-10093, CONF:1198-10094, CONF:1198-15605</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_aetyEPu_EeOyiMEKhdqMGA" clientDependency="_6Mw4MPu_EeOyiMEKhdqMGA" name="AnesthesiaSection2">
+  <uml:Class xmi:id="_aetyEPu_EeOyiMEKhdqMGA" name="AnesthesiaSection2">
     <ownedComment xmi:id="_n-ZDQPu_EeOyiMEKhdqMGA">
       <body>The Anesthesia Section records the type of anesthesia (e.g., general or local) and may state the actual agent used. This may be a subsection of the Procedure Description Section. The full details of anesthesia are usually found in a separate Anesthesia Note.</body>
     </ownedComment>
@@ -3086,7 +3086,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:PropertyValidation xmi:id="_PyDgcPvSEeOyiMEKhdqMGA" base_Property="_PyCSUPvSEeOyiMEKhdqMGA">
     <ruleId>CONF:1098-15351</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_6M-msPvXEeOes-3T-2HryA" clientDependency="_zLsf0PvYEeOes-3T-2HryA" name="ComplicationsSection2">
+  <uml:Class xmi:id="_6M-msPvXEeOes-3T-2HryA" name="ComplicationsSection2">
     <ownedComment xmi:id="_Ol6OsPvYEeOes-3T-2HryA">
       <body>This section contains problems that occurred during or around the time of a procedure. The complications may be known risks or unanticipated problems.</body>
     </ownedComment>
@@ -3134,7 +3134,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:PropertyValidation xmi:id="_iqyc0PvZEeOes-3T-2HryA" base_Property="_iqwAkPvZEeOes-3T-2HryA">
     <ruleId>CONF:1198-15453</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_dz0ZwP49EeO_F_2qLv6FWQ" clientDependency="_nL_qEP49EeO_F_2qLv6FWQ" name="PlannedProcedureSection2">
+  <uml:Class xmi:id="_dz0ZwP49EeO_F_2qLv6FWQ" name="PlannedProcedureSection2">
     <ownedComment xmi:id="_qFPvIP49EeO_F_2qLv6FWQ">
       <body>This section contains the procedure(s) that a clinician planned based on the preoperative assessment.</body>
     </ownedComment>
@@ -3172,7 +3172,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-8744</ruleId>
     <ruleId>CONF:1098-15502</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_MLNngP5BEeOmw9RN80Tpig" clientDependency="_78uxQP5BEeOmw9RN80Tpig" name="PostprocedureDiagnosisSection2">
+  <uml:Class xmi:id="_MLNngP5BEeOmw9RN80Tpig" name="PostprocedureDiagnosisSection2">
     <ownedComment xmi:id="_r8KQoP5BEeOmw9RN80Tpig">
       <body>The Postprocedure Diagnosis Section records the diagnosis or diagnoses discovered or confirmed during the procedure. Often it is the same as the preprocedure diagnosis or indication.</body>
     </ownedComment>
@@ -3205,7 +3205,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:AssociationValidation xmi:id="_1TwcsP5CEeOmw9RN80Tpig" severity="WARNING" base_Association="_zMcK4P5CEeOmw9RN80Tpig">
     <ruleId>CONF:1198-8762, CONF:1198-15503</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_JFd3MP5EEeOBnLkJOVC8NQ" clientDependency="_UH8GIP5EEeOBnLkJOVC8NQ" name="PreoperativeDiagnosisSection2">
+  <uml:Class xmi:id="_JFd3MP5EEeOBnLkJOVC8NQ" name="PreoperativeDiagnosisSection2">
     <ownedComment xmi:id="_OTT1EP5EEeOBnLkJOVC8NQ">
       <body>The Preoperative Diagnosis Section records the surgical diagnoses assigned to the patient before the surgical procedure which are the reason for the surgery. The preoperative diagnosis is, in the surgeon's opinion, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
@@ -3238,7 +3238,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:AssociationValidation xmi:id="_uLQeEP5EEeOBnLkJOVC8NQ" severity="WARNING" base_Association="_tinwwP5EEeOBnLkJOVC8NQ">
     <ruleId>CONF:1198-10096, CONF:1198-15504</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_lLOykP5FEeO_r7yO9mhwnA" clientDependency="_xzFD4P5FEeO_r7yO9mhwnA" name="ProcedureFindingsSection2">
+  <uml:Class xmi:id="_lLOykP5FEeO_r7yO9mhwnA" name="ProcedureFindingsSection2">
     <ownedComment xmi:id="_vk8YYP5FEeO_r7yO9mhwnA">
       <body>The Procedure Findings Section records clinically significant observations confirmed or discovered during a procedure or surgery.</body>
     </ownedComment>
@@ -3272,7 +3272,7 @@ This template can be used with a contained Product Instance template to represen
   <CDA:AssociationValidation xmi:id="_k9tegP5GEeO_r7yO9mhwnA" severity="INFO" base_Association="_j_5LYP5GEeO_r7yO9mhwnA">
     <ruleId>CONF:1198-8090, CONF:1198-15507</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_5_O94AByEeSjnfOPJpFg3A" clientDependency="_JROhQABzEeSjnfOPJpFg3A" name="ProcedureIndicationsSection2">
+  <uml:Class xmi:id="_5_O94AByEeSjnfOPJpFg3A" name="ProcedureIndicationsSection2">
     <ownedComment xmi:id="_EH_WkABzEeSjnfOPJpFg3A">
       <body>This section contains the reason(s) for the procedure or surgery. This section may include the preprocedure diagnoses as well as symptoms contributing to the reason for the procedure.</body>
     </ownedComment>
@@ -3310,7 +3310,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-8743</ruleId>
     <ruleId>CONF:1098-15508</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_80dMoAB0EeSLOb2O6vSPzg" clientDependency="_f0SMkAB1EeSLOb2O6vSPzg" name="ProceduresSectionEntriesOptional2">
+  <uml:Class xmi:id="_80dMoAB0EeSLOb2O6vSPzg" name="ProceduresSectionEntriesOptional2">
     <ownedComment xmi:id="_IbycIAB1EeSLOb2O6vSPzg">
       <body>This section describes all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section should include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM), therefore this section contains procedure templates represented with three RIM classes: Act, Observation, and Procedure. Procedure Activity Procedure (V2) is for procedures that alter the physical condition of a patient (e.g., splenectomy). Procedure Activity Observation (V2) is for procedures that result in new information about a patient but do not cause physical alteration (e.g., EEG). Procedure Activity Act (V2) is for all other types of procedures (e.g., dressing change).</body>
     </ownedComment>
@@ -3367,7 +3367,7 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-8533</ruleId>
     <ruleId>CONF:1098-15511</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_N6wUUALoEeSBA9s7kRnaEg" clientDependency="_ZybF4ALoEeSBA9s7kRnaEg" name="ProceduresSection2">
+  <uml:Class xmi:id="_N6wUUALoEeSBA9s7kRnaEg" name="ProceduresSection2">
     <ownedComment xmi:id="_S_JbQALoEeSBA9s7kRnaEg">
       <body>This section describes all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section should include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM), therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures that alter the physical condition of a patient (e.g., splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (e.g., EEG). Act is for all other types of procedures (e.g., dressing change).</body>
     </ownedComment>
@@ -3469,8 +3469,8 @@ This template can be used with a contained Product Instance template to represen
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_kd-XsALqEeSBA9s7kRnaEg" base_Constraint="_kd9woALqEeSBA9s7kRnaEg"/>
   <CDA:ValueSetConstraint xmi:id="_jppO8B5NEeSAEtTUKjFlSA" base_Property="_hLqEgPDlEeOKPKE9au0oug">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-8250</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_sUrSIKcVEeSFQp5MpGZ8qw" severity="INFO" base_Property="_q6MRIKcVEeSFQp5MpGZ8qw">
     <ruleId>CONF:1098-32876</ruleId>
@@ -3506,8 +3506,8 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-19190</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_MPp1AMnIEeSr1c1X9ACWbg" base_Property="_MPpN8MnIEeSr1c1X9ACWbg">
-    <reference href="../consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
     <ruleId>CONF:1098-32364</ruleId>
+    <reference href="../consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_cinGIMnIEeSr1c1X9ACWbg" base_Property="_MPpN8MnIEeSr1c1X9ACWbg">
     <ruleId>CONF:1098-8298</ruleId>
@@ -3537,8 +3537,8 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-19202</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_k7YScMw6EeS1kaU6ESW4Lg" base_Property="_k7XrYMw6EeS1kaU6ESW4Lg">
-    <reference href="../consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
     <ruleId>CONF:1098-32365</ruleId>
+    <reference href="../consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_li-d8Mw6EeS1kaU6ESW4Lg" base_Property="_k7XrYMw6EeS1kaU6ESW4Lg">
     <ruleId>CONF:1098-8245</ruleId>
@@ -3582,8 +3582,8 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-19202</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_FCb6wMzFEeSLqosJ4F90vA" base_Property="_FCbTsMzFEeSLqosJ4F90vA">
-    <reference href="../consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
     <ruleId>CONF:1098-32366</ruleId>
+    <reference href="../consol-vocab.uml#_QKXXEMnIEeSr1c1X9ACWbg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_GkQS0MzFEeSLqosJ4F90vA" base_Property="_FCbTsMzFEeSLqosJ4F90vA">
     <ruleId>CONF:1098-7661</ruleId>
@@ -3615,7 +3615,6 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-32475</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_KBl24BUHEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_ykBmYPvZEeOes-3T-2HryA"/>
-
   <MDMI:MDMIMapping xmi:id="_Wv4U0L7kEeWoV-fDNleHag" base_Class="_2OAzQRSVEeGGzu7fmW9pXw">
     <elements xmi:id="_Wv4U0b7kEeWoV-fDNleHag" businessElement="ProcedureSection" modelElement="_2OAzQRSVEeGGzu7fmW9pXw" businessElementId="b7a63343-ca32-4394-88a2-0f4cd2c2aad6" modelElementPath="" condition=""/>
     <elements xmi:id="_Z8cXcL7kEeWoV-fDNleHag" businessElement="ProcedureSectiontitle" modelElement="_2OAzTRSVEeGGzu7fmW9pXw" businessElementId="b53ae5e0-c044-4695-a3af-7de38f13695c" modelElementPath="title" condition=""/>
@@ -3623,8 +3622,8 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_Dp8e0MXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalId" modelElement="_2OTHJhSVEeGGzu7fmW9pXw" businessElementId="5816cae0-adad-4f89-8a0b-055ba7843cc5" modelElementPath="procedureActivityProcedure.id" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_Fl84gMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalCode" modelElement="_2OTHKhSVEeGGzu7fmW9pXw" businessElementId="e63ad412-d1d8-424a-9ae1-19338c1238b0" modelElementPath="procedureActivityProcedure.code" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_LGtLUMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStatusCode" modelElement="_2OG6CBSVEeGGzu7fmW9pXw" businessElementId="960724e7-1dc8-4e92-be32-640d1b4763d5" modelElementPath="procedureActivityProcedure.statusCode" condition="moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_Nj_GEMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="1d26f6c8-4b8c-469b-af3d-e7afaa826f84" modelElementPath="procedureActivityProcedure.effectiveTime.low" condition="moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_PLzYcMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="8ce18fa2-ef45-4778-bc5a-455248b5d610" modelElementPath="procedureActivityProcedure.effectiveTime.high" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_Nj_GEMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="1d26f6c8-4b8c-469b-af3d-e7afaa826f84" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.low" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_PLzYcMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="8ce18fa2-ef45-4778-bc5a-455248b5d610" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.high" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_RKM-0MXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalPriorityCode" modelElement="_ozsKlBrUEeGxIZCGAXKxsQ" businessElementId="6aa203f6-6fd1-49dd-a4e3-9085abcd6ef6" modelElementPath="procedureActivityProcedure.priorityCode" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_TFkfUMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalMethodCode" modelElement="_ozsKkBrUEeGxIZCGAXKxsQ" businessElementId="ff055858-7834-4213-8605-b23d80f39be0" modelElementPath="procedureActivityProcedure.methodCode" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_U7llwMXAEeWCquoDViU_jA" businessElement="ProcedureOrderedPhysicalTargetSite" modelElement="_ozsKmBrUEeGxIZCGAXKxsQ" businessElementId="2ace2e94-939d-4406-8ca5-bae0b53040aa" modelElementPath="procedureActivityProcedure.targetSiteCode" condition="moodCode = &quot;INT&quot;"/>
@@ -3632,8 +3631,8 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_MxxJgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalId" modelElement="_2OTHJhSVEeGGzu7fmW9pXw" businessElementId="f23632b4-de3d-4a10-9881-ceff3b0d6a20" modelElementPath="procedureActivityProcedure.id" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_OgiYcMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalCode" modelElement="_2OTHKhSVEeGGzu7fmW9pXw" businessElementId="0932b27b-b833-4525-9f3a-ee99a88261a7" modelElementPath="procedureActivityProcedure.code" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_QRWOwMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStatusCode" modelElement="_2OG6CBSVEeGGzu7fmW9pXw" businessElementId="9c40c0fe-59b2-4c50-90c0-decc9d04d39d" modelElementPath="procedureActivityProcedure.statusCode" condition="moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_R41J8MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="412327c9-e3ff-4f3c-b629-99a11918404f" modelElementPath="procedureActivityProcedure.effectiveTime.low" condition="moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_TSfEgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="c6b67a5b-5214-4a51-87e8-69a4a4a8f6d5" modelElementPath="procedureActivityProcedure.effectiveTime.high" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_R41J8MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalStartDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="412327c9-e3ff-4f3c-b629-99a11918404f" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.low" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_TSfEgMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalEndDate" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="c6b67a5b-5214-4a51-87e8-69a4a4a8f6d5" modelElementPath="xxxprocedureActivityProcedure.effectiveTime.high" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_VBnf0MXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalPriorityCode" modelElement="_ozsKlBrUEeGxIZCGAXKxsQ" businessElementId="f587acbd-3be7-416c-86e2-5072e0c038f8" modelElementPath="procedureActivityProcedure.priorityCode" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_W4dFoMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalMethodCode" modelElement="_ozsKkBrUEeGxIZCGAXKxsQ" businessElementId="c1bf56e5-c17a-46b8-9646-6adf0d3e40ca" modelElementPath="procedureActivityProcedure.methodCode" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_Y8-iIMXBEeWCquoDViU_jA" businessElement="ProcedurePerformedPhysicalTargetSite" modelElement="_ozsKmBrUEeGxIZCGAXKxsQ" businessElementId="dbe0f0a1-50b8-4d9d-9118-2f3bed08cca5" modelElementPath="procedureActivityProcedure.targetSiteCode" condition="moodCode = &quot;EVN&quot;"/>
@@ -3642,7 +3641,7 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_Z0aD8MXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedId" modelElement="_NMUNdhg4EeGs5a462vYX5Q" businessElementId="07d3f57f-4ba2-41e6-84cd-e70d0fb87797" modelElementPath="procedureActivityObservation.id" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_bNv1cMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedCode" modelElement="_NMUNcBg4EeGs5a462vYX5Q" businessElementId="6b2799df-b0ec-45bd-9c02-03aa1ab27973" modelElementPath="procedureActivityObservation.code" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_dBrRMMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStatusCode" modelElement="_NMUNhBg4EeGs5a462vYX5Q" businessElementId="7f77591b-c8f7-493b-8bfd-2f68fb55d705" modelElementPath="procedureActivityObservation.statusCode" condition="moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_k4ifwMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="f08d6cb6-a225-4cb3-9ede-90091559123f" modelElementPath="procedureActivityObservation.effectiveTime.low" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_k4ifwMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="f08d6cb6-a225-4cb3-9ede-90091559123f" modelElementPath="xxxprocedureActivityObservation.effectiveTime.low" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_mTfa0MXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedEndDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="d3729d9d-4ada-4896-accb-418d597657af" modelElementPath="procedureActivityObservation.effectiveTime.high" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_2KwOcMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedPriorityCode" modelElement="_NMUNgBg4EeGs5a462vYX5Q" businessElementId="9275d867-188f-4771-9fc9-190133689a74" modelElementPath="procedureActivityObservation.priorityCode" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_4AqnMMXCEeWCquoDViU_jA" businessElement="ProceduralInformationalOrderedMethodCode" modelElement="_NMUNehg4EeGs5a462vYX5Q" businessElementId="ec7aa9b9-61f6-43ef-9f7c-b4e871875a1e" modelElementPath="procedureActivityObservation.methodCode" condition="moodCode = &quot;INT&quot;"/>
@@ -3651,8 +3650,8 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_mgEMUMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationId" modelElement="_NMUNdhg4EeGs5a462vYX5Q" businessElementId="d8453f83-4317-42b9-8b31-c66a49636797" modelElementPath="procedureActivityObservation.id" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_oHHpsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationCode" modelElement="_NMUNcBg4EeGs5a462vYX5Q" businessElementId="408b342d-1cd8-4f98-9aa5-40508da56bf7" modelElementPath="procedureActivityObservation.code" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_qmyKEMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStatusCode" modelElement="_NMUNhBg4EeGs5a462vYX5Q" businessElementId="a5844077-e227-4586-8149-279caceed9b2" modelElementPath="procedureActivityObservation.statusCode" condition="moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_sF8PsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="1acd4b97-aa48-430a-9308-515da73e8530" modelElementPath="procedureActivityObservation.effectiveTime.low" condition="moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_tgpTIMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationEndTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="e7131c27-c05c-4853-aaf9-2d9affee79f5" modelElementPath="procedureActivityObservation.effectiveTime.high" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_sF8PsMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationStartDate" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="1acd4b97-aa48-430a-9308-515da73e8530" modelElementPath="xxxprocedureActivityObservation.effectiveTime.low" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_tgpTIMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationEndTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="e7131c27-c05c-4853-aaf9-2d9affee79f5" modelElementPath="xxxprocedureActivityObservation.effectiveTime.high" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_u7I7MMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationPriorityCode" modelElement="_NMUNgBg4EeGs5a462vYX5Q" businessElementId="e6ed0a7b-e75b-40b4-a5f2-8e20f83129b9" modelElementPath="procedureActivityObservation.priorityCode" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_wiy1gMXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationMethodCode" modelElement="_NMUNehg4EeGs5a462vYX5Q" businessElementId="7eb848de-837d-46ee-8d9b-85e422a31385" modelElementPath="procedureActivityObservation.methodCode" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_yOb38MXEEeWCquoDViU_jA" businessElement="ProcedurePerformedInformationTargetSite" modelElement="_NMUNiBg4EeGs5a462vYX5Q" businessElementId="a1eb6d4f-5c51-4f99-923a-661678822ea5" modelElementPath="procedureActivityObservation.targetSiteCode" condition="moodCode = &quot;EVN&quot;"/>
@@ -3660,15 +3659,21 @@ This template can be used with a contained Product Instance template to represen
     <elements xmi:id="_iKVswMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherId" modelElement="_hPwGkBg4EeGs5a462vYX5Q" businessElementId="6fa1de87-ffbc-4173-ae6d-e6356db9558d" modelElementPath="procedureActivityAct.id" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_jp-TgMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherCode" modelElement="_hPmVkhg4EeGs5a462vYX5Q" businessElementId="e15ba4dd-dccd-4ab1-a6ee-549d68ea791d" modelElementPath="procedureActivityAct.code" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_0WEdYMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStatusCode" modelElement="_hPwGmhg4EeGs5a462vYX5Q" businessElementId="a4431aa1-04af-4ae1-8a28-da884c117769" modelElementPath="procedureActivityAct.statusCode" condition="moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_2HG9MMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStartDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="c71613b3-ab25-4954-ba08-20ce3d9d77da" modelElementPath="procedureActivityAct.effectiveTime.low" condition="moodCode = &quot;INT&quot;"/>
-    <elements xmi:id="_3h110MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherEndDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="59975f16-9464-493a-9916-9626b528adec" modelElementPath="procedureActivityAct.effectiveTime.high" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_2HG9MMXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherStartDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="c71613b3-ab25-4954-ba08-20ce3d9d77da" modelElementPath="xxxprocedureActivityAct.effectiveTime.low" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_3h110MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherEndDate" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="59975f16-9464-493a-9916-9626b528adec" modelElementPath="xxxprocedureActivityAct.effectiveTime.high" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_74oP4MXFEeWCquoDViU_jA" businessElement="ProcedureOrderedAllOtherPriorityCode" modelElement="_hPwGlhg4EeGs5a462vYX5Q" businessElementId="8ebc92e7-78df-4352-932b-4c930080e2a5" modelElementPath="procedureActivityAct.priorityCode" condition="moodCode = &quot;INT&quot;"/>
     <elements xmi:id="_6ZVx8MXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOther" modelElement="_FzYqguVsEeGpoIKFyl7L7w" businessElementId="add5cedb-4744-4543-acd5-2f7a8c890f63" modelElementPath="procedureActivityAct" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_8ErSYMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherId" modelElement="_hPwGkBg4EeGs5a462vYX5Q" businessElementId="4b813b99-0ed2-4f70-8842-81e0cb12d389" modelElementPath="procedureActivityAct.id" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_9p0EMMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherCode" modelElement="_hPmVkhg4EeGs5a462vYX5Q" businessElementId="3343d8f6-218f-4d73-8aa7-ea373846e272" modelElementPath="procedureActivityAct.code" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="__uJTcMXGEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStatusCode" modelElement="_hPwGmhg4EeGs5a462vYX5Q" businessElementId="f3bf5eed-2f89-4193-b04f-047e2982a09a" modelElementPath="procedureActivityAct.statusCode" condition="moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_BXa-YMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStartTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="4e853986-9f61-4c60-a68b-e87f7fdca443" modelElementPath="procedureActivityAct.effectiveTime.low" condition="moodCode = &quot;EVN&quot;"/>
-    <elements xmi:id="_CkX5sMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherEndTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="43765df6-65d9-4202-971e-54db6a39ecbd" modelElementPath="procedureActivityAct.effectiveTime.hign" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_BXa-YMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherStartTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="4e853986-9f61-4c60-a68b-e87f7fdca443" modelElementPath="xxxprocedureActivityAct.effectiveTime.low" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_CkX5sMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherEndTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="43765df6-65d9-4202-971e-54db6a39ecbd" modelElementPath="xxxprocedureActivityAct.effectiveTime.hign" condition="moodCode = &quot;EVN&quot;"/>
     <elements xmi:id="_EEwuYMXHEeWCquoDViU_jA" businessElement="ProcedurePerformedAllOtherPriorityCode" modelElement="_hPwGlhg4EeGs5a462vYX5Q" businessElementId="05a50c5d-7bfa-4169-8ec8-4f2bf69f1fdc" modelElementPath="procedureActivityAct.priorityCode" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_PIv4kObqEeW5Oax7LpOkcw" businessElement="ProcedureOrderedPhysicalEffectiveTime" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="0436bc7a-cb75-4c24-be4e-42bf3dca1536" modelElementPath="procedureActivityProcedure.effectiveTime" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_rFPXoOb1EeW5Oax7LpOkcw" businessElement="ProcedurePerformedPhysicalEffectiveTime" modelElement="_2OTHLBSVEeGGzu7fmW9pXw" businessElementId="398efc17-f453-46bd-b9f4-72c45842f82d" modelElementPath="procedureActivityProcedure.effectiveTime" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_FJkcMOb2EeW5Oax7LpOkcw" businessElement="ProceduralInformationalOrderedEffectiveTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="b9f91a9d-4bdb-4020-91da-10f3e249c643" modelElementPath="procedureActivityObservation.effectiveTime" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_jnk2wOb2EeW5Oax7LpOkcw" businessElement="ProcedureInformationalPerformedEffectiveTime" modelElement="_NMUNchg4EeGs5a462vYX5Q" businessElementId="7d843325-a4d6-4b8c-8e59-39c7402bcd46" modelElementPath="procedureActivityObservation.effectiveTime" condition="moodCode = &quot;EVN&quot;"/>
+    <elements xmi:id="_foRTIOb3EeW5Oax7LpOkcw" businessElement="ProcedureOrderedAllOtherEffectiveTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="973c62ce-fdc6-41ee-9258-38a6ecf2d536" modelElementPath="procedureActivityAct.effectiveTime" condition="moodCode = &quot;INT&quot;"/>
+    <elements xmi:id="_jKO-AOb3EeW5Oax7LpOkcw" businessElement="ProcedurePerformedAllOtherEffectiveTime" modelElement="_LJu6oBxqEeGXP8PxDYviDg" businessElementId="407570a7-16d8-451d-a92f-63d4af2cb302" modelElementPath="procedureActivityAct.effectiveTime" condition="moodCode = &quot;EVN&quot;"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

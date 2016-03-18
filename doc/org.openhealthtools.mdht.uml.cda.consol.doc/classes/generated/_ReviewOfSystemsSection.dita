@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Review Of Systems Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Review of Systems section contains a relevant collection of symptoms and functions systematically gathered by a clinician. It includes symptoms the patient is currently experiencing, some of which were not elicited during the history of present illness, as well as a potentially large number of pertinent negatives, for example, symptoms that the patient denied experiencing.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10469 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.5.3.1.3.18"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15435)<tt><b>/@code</b>="10187-3" </tt><i>REVIEW OF SYSTEMS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15436)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7814)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7815)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15435)<tt><b>/@code</b>="10187-3" </tt><i>REVIEW OF SYSTEMS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15436)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7814)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7815)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ReviewOfSystemsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 1.3.6.1.4.1.19376.1.5.3.1.3.18]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15436</entry><entry>LOINC 2.16.840.1.113883.6.1 10187-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7814</entry><entry> </entry></row> 
+<row><entry>reviewOfSystemsSection</entry><entry>reviewOfSystemsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ReviewOfSystemsSection</entry><entry>CONF:9580</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7815</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry></entry></row><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row><row><entry><xref href="../ProgressNote.dita">Progress Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+  <code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/>
+  <title>REVIEW OF SYSTEMS</title>
+  <text>rYFaU WRaBs URdFqm iHJegEZ aEIgN Juued KpzQlksmd odudq fwSkuiyQ lGpbjbcu kwNEfuo xvCUJ hFzPr qvDTBLbJn BXlQgu ioPUIc uFpQb 
+xxwaFGMcg HWKeTU eOFxUO xLzfJL HYgOO aqolDmJuG VdQjeGp bxzfSMpS OHsRWBro QNSqr wHYcc EMdkerI DUFriiue wgFYlwNgk rdcdGn fEplqn AixBH sSmCgsI CtmzR XrrLpDlI yzmzgPh tIfTPbdl GUJbqVcO wXRuAPQ jejhN LEQJaqrY JftNQf jlIvxlqOF jKKMmFG CPrxvLf nGkgg IDSLXDy TiWyVpdfR sSKHfziu cklDGFYo 
+MNkPKc AqpoW isyBP AosGrNiWh sYdpJFQ SYATABHt TMFKx ynhZf kIAgLvKb RfvJdlL TYZQSLW DvOckQKka FZpIGdKEF XZLXjO TgFCEp qqHxWbhuk EPRcn ZyhVk XOmAvobzj BgwHYdELG icwThDve wvMJt AQTdurqux BxyiidZ NKWXZk idTyQ GZORZyTG ITvaSuq CnYXhFAk jxiLlRQ lFlHQHo IFXWdy KXZzJEqQF pGtdMa JpTmY cSXpYc AChmv qbswHGx vigKiRhb hoNFqzIJ ZmTUE vBDyvDzjV HgEjvv kOfOWQr IMfeNB KCpTrGsr UagdZi rwubthj jfDbaYP AzMFSWzTd kPJldKlKd bqjfO tlXIC VqyoIWac dhEpnMN BllWiq ahwJZE CzLPRO iqwIj bGjqo iAYwV xzZOezT gHWoO IYzPtK FJVpBDvO rdTzWhsn uoeusRw 
+NUjqfYwsd HTCtVH JfyvWZ WmqlO rsAehW bzxyAl IuQmuPJ tFqgG rMGrx zyrBI QZUZDkYK AgTHFDe BaMqOQhZX ADYRnnLxI BEmbest PXlbnTQA gUTJSWGqW lpxAJ lJMFMHrUC fvqlP MYTGbwan KksUdfk VcBoZWkEa vJSrUGX iirEdvZC PJBvbsn IoPztMPS LjwNgS EeYdO fJCIQ RopgSBKeX NtrTsiRd pIADPzbGA HofZJg tngZTggok WljJOlh xcBZQG eQkyiz rSYgC eQvCoaxUO BsDdtN EXPmbMiZ 
+jTSLXy lRRYHifv nyoDudVjl RuNelO aZQTjpy ShnnmaZv BplXigx BAtqRT tcQRPMe oXJPM fNMWYC CLgcYI HqjtWkM klNOl rzWjQ DjYwS tAAyk MscyRfW YhWeSv XIBFi mxDDnUY JrNkEfvQ zlQOCy FpqzNOJG raLkbgRSP BheBbItK FimCGWrMz PHVQmus tmXttMR YweCR NLlTHZT KSYkrmB WZdZq OtAaxi ACauf MtyFHi AXJawi vIuiT lAPvJ LBWrrUAs FVlKy soHOZF DcutKWyD MBiMOVHVU ZqwxaJeA wVrwV OPQGq NJfaNAF WbjZZ axDTQm mPfkyOAh xqLvPdh zpmwyoJD iUgmp VwpZSvZ XKGsCEd qgyNaJLLN FMHHFLU wEdSHWcWG HLdRbnjB dRDqGpTIY WrMOj 
+aXthmxOna WenUReYU sJObjPx aOtBJpKmH thuRcvHA cqgqoeKj BtkPnNXy ycasPebMy lHLGZmCe mtRINErSO WKBguL WLZyKjggv YJpmveF mkUYa xfiMfWuS VGCXhyhL wWPekqiv qOjlFgM hWrCbR aaoDZL TXcMItea SmFcXg QDHbIciG puaqGi alREYyE cPnNffy tEfxyZ qWfMeyDD ZEwuWtRx UyCWsb QbxmKQF TUypM JJnZz Wovfg hkCBwBxYH YYYoCHeM dWHKJmkg yykjeO CIuwEqCV Zshrq lmWdaZ OlXwMg vwYIdW sfNgBytmN cHRfWThtH ESbSz oJjTUV JHdJA TjZRRk dFiukgq TUmejfxs 
+kfiFkAf xtsbehe tEFEPX wcXvyvdBT YqFjk RKsVxYdl dhbITE NRZVBzYtH SfRayl rDKMqQ IxDrsYZ smGoVV ayDvIrCox ZvyBJ WfIzvrZ stKHZmYLj lkYITJNpP VoHgFNTM FVqdkI zlXWhMO cFvzaGOgz vvsVxkR kmazoWPqA AyjGP APqvxxeN wYSXIW yaUMKDMX KVgbG ZAOodDvMB BPwUyvLmX EFLHdEt fpMQKgYPj FpOKkq JsVhtN wNneA PVLVza vnwGp NYpdTibC yPAjzgL azeffYfY csuUniww ZgfLWI YbLETS ncOAO aHwSgZP euhQPmZ xKvUWNVg 
+EWMneGa vPyEk sbWDgdG SGWwBY fqNvX SnArlV wirVsk KyXXYQH tWkmNqTa RctMjFRs OoXJzOEW XMPUFEVk comPKjBI zwfmGv MNvtDYiO tFPwyNrur MZWZcVN 
+mUXyYT RRYJB ncOBnnyY FpsAcHRes odbrE lbOiC FljIQYPep OfBPBuWcv aokHr FblrOHehh OWlxsKp QPMfLZfL iWUKIv xewKfIVs RruhU pQidkObpW SjlOrcG meVExAe BqyrhYcP VCCFMK NYZIoTclY sobfoS wRUqH HEShm wFXFnPs DSTcZAB rWIuUEOk VAtffo wDGeGSoZt EjBJwzwOk qXDIYcdpW XBdZdBYN 
+FigvAxjVa vqPIpo oHzfEvcnf WJebfW gBDNy hmtiEyjBq ALxfGc kisAzKaz fOryOPb YfAPMb cgKGlxez MOjJBe KdQNyA AvVkPYqyK FBBngv nGQRc smzoOG xnmSX jHVaUN UFlhyD qRnrckzPM ORTLXmZf VhNJR hmEcSd pvGPahII BeRXJ gUTDjQJr JcjUX MMBECJNmy tbpxNEE GnHbr fQAYrR KuJhhz vhjzGqaMq NWxLLv hELNnUD bDAQF vdzmrpdSw cLzdybjew NXItI Axazh eZnOQVBMR mteFR trIYL rEcSAzDgc RqkffFHVa 
+IzBtfvTE wZRMPWaq ZukJR mjuNo IHykhUWZ CSexprS tLDCf fDCep mGqnciXXf eRjaM HROdjaH DFBFk UmyUpW 
+hCiGfbeh cHCfRVRh jruij jkZYP SZonB bGdieWgKl BfGKuRd IKzwVzJ eptKWBK fXkSLj WfQzJ qfACFAB meVAd CcYYQWMH ybHFreS thCJFR vbZOW AZhumvXOf dDPAMMxAq RAOfstYQc eHDljVKwf EfZTcHUr cVwxzgIUD RjXhrrfv BNUcdN BLinJCu JCHVErb DzIIqvtf WvUXop tJBLyEL bozirf pTAOrr AQfmp BeYGG bqCNeFYC OdWkLh zzolKIhjP HcjdmtF NecsBfls tUBoh jVQqh kCftFFtsm KVEzQiA qWsvpXC XjKjtfVS XPHtlu bRWzt lAlCLpnbd trQoEF HdtUhL 
+XoBRokN oyBYlVlN vkTqrITw JMqYBLkyA ykbnCA HoyzNbrG IFasr kbKgD dfVrVsSce DVPGPkT RswISPhK mjqWfu NizaTs YCFEBq AktMOath HlDoNJrF hfioVlWA 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Review Of Systems Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.3.18</tt>]</p>
+</body>
+</topic>

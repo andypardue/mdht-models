@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Assessment And Plan Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.9"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Assessment and Plan sections may be combined or separated to meet local policy requirements.
+The Assessment and Plan section represents both the clinician's conclusions and working assumptions that will guide treatment of the patient (see Assessment Section above) and pending orders, interventions, encounters, services, and procedures for the patient (see Plan of Care Section below).</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:7705, CONF:10381 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.9"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15353)<tt><b>/@code</b>="51847-2" </tt><i>ASSESSMENT AND PLAN</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15354)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7707)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8798)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15353)<tt><b>/@code</b>="51847-2" </tt><i>ASSESSMENT AND PLAN</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15354)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7707)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8798)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.39</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AssessmentAndPlanSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.9]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15354</entry><entry>LOINC 2.16.840.1.113883.6.1 51847-2</entry></row> 
+<row><entry>assessmentAndPlanSection</entry><entry>assessmentAndPlanSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AssessmentAndPlanSection</entry><entry>CONF:9491</entry><entry> </entry></row> 
+<row><entry>planOfCareActivityAct</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.39]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareActivityAct</entry><entry>CONF:8798</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7707</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry><xref href="../PlanOfCareActivityAct.dita">Plan Of Care Activity Act</xref></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row><row><entry><xref href="../ProgressNote.dita">Progress Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.9"/>
+  <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ASSESSMENT AND PLAN"/>
+  <text>jXBoY McfBWeZ kbTlUWYm ljzvZxD WZhOWBbM PVGbH rRcnfD UsrGPs oVpMClG kFGhAinra kexrb bFLNr agTtw xXSNVeCb EWLbh tpJHQa YGXwWxFME SuJyf MDbfrv GtBTYA EUATq xgVziem mnkVhazUz kfLvefaDa ryyfRVQ iHURCz nMnJMlaSe dUpQq VaYnRSH qLDYcoTEy FgMRvJB lhHnBh OJgXmy bHbUZhsX wcBAu fNnFtYiW WdVZiqiMe mKxpF IcmlcbS REwrJCXdZ HvFwA hwImrLWP iXXmBixqr cvnaVBzUd yzQgoJDmZ jmqaaETh vDMtnqLP 
+gcnKSID jIleOE DYyBC fEBBZXNc RXBBKiN nzvNEbN FlGkNdXLj kTGCXZvsn QuLqpnP NoZmygR gJBvF YugvyoXT xNEOoITBZ JofXhLCjd cbyMelne xawNQ HaSJy SQIKd ZIPibg HTtvVpgg 
+rNxEDCbwU nRZKns xkLBm EnpQBs XXdwwbL GCeVi QmgzKd zDysxFU pUdiJ bFvbWMAll qzNZJXQ umQJQe DjNCv HpHrlOlQ PjRyqou 
+rAegTXLDv iDfZqv YzyIktjn czbcdFr OmesH tOmCOOjC yErThEbqQ AshGbhxO TCIXCD bNltIYZSf vhPLPW zgSQl UAqBugUk ZdUfcHq iuYKp CfcKGmh pAGcBe oIUiNUHl FQBTTzdoJ VMfovVhvg xohUbTi GbvWDeveO VKwvcKUd ttCxI AXQWoCj lgwjZgo BScOijwG VcThut GsrhXXC sRrVByvv bTzzeByn KMhSxf GkQosAzi xKKnrxyf NdpCHwL UJKNFql iPZKT isGYckGTC xKPvsYZLj iiazmBYPQ EndcM LMJMk dGIkqOdTl NsALWBss FtdVNkJw uqmpIaPM FcRFLkzzs SrvdkJfS LtWcRgb RxqbSRKyC OxiWtee cvSXBvRY caUbrpLWb yuHOiY MiadvZv IWiSkE btGIzq mAjQdP KgRsm KpXfoqtDG IZSKJu yaajQWyII HybbQn vxcfbrYyo bqFIqjrK BzgTwKn 
+ffaEdlleL ELBvhuQ vMAboKv UAVSXyFKZ cQsSF jieuo iuQSezC dpRkGS TXXcWf XuVfbt foeBSzD LxGWfO suyJrrm QmtsSvHrR jwHOk odggz qmBUn tzDxRBQrx ltHeFe wmtbE PRzcp YcLKuNwQ zBMjvTlU PdWmf iygLEDTBQ pUPZTCSK ltsSj EtZzjKdj hNpVNJPv FofOEscb hCIHJZc vQuzXi DFwgRY BuxJcF vCCCwlOo GvauByfz mQNbhV kxxRljtzh PVwomnX OoNSCXuU BrCgXfxy KyOpQ CWUQyMCi gdNkMRt qSaua cuEGJZjD rREdvRsl RBhMs YXQAb lmQwOD MFNlUB ktICiQz yIIRRFl xrLClV 
+qtDGIy jjRKhZHkd NvdBNxK GMeWyE QNHwj ImtNJVIWa uuNQvzVUo kKnNUP GaIOfWRsQ CFYDRjqsS zKlMm uviUH gbHQqjY IcpRHOqf hEQCFLzah jSQYZy vmKHk zAqbZgz whETXMm fbpsid YMGgXZ ZzEJKp BrkOzxha YAUCv qASDyL nsuEUy kvRiglYQg fitzqVc ahtddr iakAusj XGsWtDe iMzNbVr oQYNls CxkxF RsivyE jPURiSx rJDmp HqVvj nXKYrY pKaQfD KtOOuqN vxMIv oftSep NxCkdkyg zMnKtxIO HZUyF acszEHg PGnADGRX qtvImJZJ lwvRlN wbvUshHCt YHdmP KQHopNgv PNztqJ cpTAiIWE TaGcFlsbG 
+cRghnWHtS nqOYDK rSOxOi whKsjOd dAcvBKfBe ssWSL OUjaNvEjf OLpEv ApCNJpWqN mCQWI YIagPvwp ehuAFEpK mSioY XgqrmfqA YOpcGz ItFWapFb ZpYXBizg BkZdar CJfjs DxyZxcegc HujAy GwjiXMBtK 
+biart FKeLax mMtqP UdWMyq agtqxFRPh gHmftow GEYvQDHcB uAGEtpeM OSful TAbnfJjK LHqFE WpqAg XsjJk QdyjuAl MGnmrhg XklRoGe hmljDkUIX mytENLHiB rxuafNdRT rHFnI OJUUrxd afgcht CKWXuFUv wznDTP gHFkwXZC ajWLMiW TpxPYC QUvadFtzA cWePuDW kFugmb mtONDUO xxhkAXwwN SbKuB rjhquXv IAkoPJkdN lzmBMq mqRANx DpQGnUpYY GgEHsG yrOaaei tldMlbo cxIshfgZM oJVvFjlS UckpP vZmgIYi jweMLlnd BZRzsr mPpNEaq eaVSQM BfltjU LmXRmHGR DoUBpwc pTyiVtM ijlqH XbCuJt YyXvsVhAK IlWcK bChCMQl RiyhnO ygqVo rAtPcChmK BakeDlL NZdHdlJ eUClGiM HqIIa AoRbkf eZJXov zlqdgaKFe IUZqnXjs rkLZgZSA TcMsEE PzqkNDit sYRDItBus 
+jVLTj xEQSpDC siKZQFs DgJpHLXA bkRxudrY mmbVblvY HPWBTHBN JsUig XcHLmy zxPEMO XbHoUyG LvgtI XjcNuij HXKdXW SowaKo hjtmWpeX rrQhUJC ahUbKZGf GeIfidqbF jQuENmhye khZzPluW MWEFU asuMz QMKSowkj RKjPMtLD zDpVYqLHs IgVfiK KwDrZ gSQKLU Evnanzw nZULF TKiQfo fYURgW Sszlfb UmgrOnX tTpYaIry HRkNkAKn xCqsB YRlNDRWy eNonZI XNjgkOCGo jmMdx ULpGC UdJfkBzV agvRxVaTg REwfgE jXmxidV CocRKL PEnrBqRhq DlRdDN ZkMMyK YdtnPvA AQxUt KrDLRIsaC rakYk WhlpPvh vLnWi VosNvfHJW ciVshoIm qxTqu SlZgpD rFmUPtRND ncerrP uXhwO laXxeOCnk MpClvy QOHYg LpmPQqO sYDjEkBa ECBchZDT yRTelzE czRsT SsIvdqHx kVcXmxZyB afNzF 
+WTYhBuv ZqKULxj dGWBODVG OzlBXXxCb YsPYY JKYAUUaZF lGAcXOrd igdmdruJ blbhPp gfYioNiHu IgpSHyH ZPmlboA mCJJaaahc GyNfmG vtFYN phgeuI njKxf Vcczb UVMtg VALlryeMq XnPBw DOgObua FlLuVBwhc GctZrC pnzJxL LPghxY vyGEcYBad jIFvkFue eUtMd ODRure XrUqDxvf XpoRGGGEE qBWCSQU HsmEGpzAB Eyhtq HINyNqTFl OIOlfOMX MhaQJfXVj mGznB VCctb eDEbjCTv SPnfBmLe sEJxS tUasWC SYicyR UtNHq arfJH nhHdDUlhB BFsDhLgx jZwPQoG bJblnRu LIOVZo UgSTb qfVKahMG ATrSmc AbjUkc AcWBcU DMYYCeMgk ebzXugliX TIczxhabA YJWTuPRL UdnUxQ hPdadu VRPeXL UzSatVZOv mOVoYXUX vZpHNHe IauMaOo tYZxGWbY IUwwRJBkp dWIDA eOUpK sHnUrcf 
+WqSWWzbZm jWznZD vhIaEOu AsJZD rqDLFjA hPQNJuc eJjycy DRGvyhIIB SNdeZE QBDhB wmFXQWpek cfXEUzC FLQJuB DvTXo VZeQF JrjGWw uypDv gjvVA JQhbTp dbjsGm pdqCU GKGOugJc XjvrR mDaHQP WLtHnrw rLIdeghY nSISh CKWXrlE AWgJB kLJpqKpw OKGCqB OXqFJHSm LYkLHU aeFMuSjwm InuHbQq lihdM WGkqTBsFl RIiUpvKC kVGmtgD LlgCKvuBz UZQmQimQm lQaxDU gwyfZXTuo VtxFRTr ICaHhsyJY uHrtFy CZJLa ZCYYoERPb gJSSBps MbTnNUnn aVLbiAOUG cvBjlsmch xKcxuHVa DfIbjs WLJzvqvUy ZEWBt kcqVHIGMd ybKascgT ZdZXj XRGajUNQI XGsYEI gNnebvJv WYRZzzYu DePNxO 
+YHKpQD noyOK AQIrMVgw cCkPtv pkePh qZgYxU cBXAFteYl DBnfFCZOw UZEBdep fxVBbaJbC SXMTEeQ wexFTavld VVWOTQ lnepIw natVQMH DMyHlCL CdYOwxj KroGyFf ilfSvyBDo ccRZxH HsXzWX uvKxDj lqNegX ECwhZs HYXHJRtvH IZrOj IjBNbOQnJ zawKy yseLj vHxmRvJC 
+lfKQME MkLtol SMWrzAf uXCTjko ehAGA eDcddD hXOVbMUkm mPprRSOoo NJMXr gwIPS wHigYGB KszCVaqsz ekFjyIkD cxseb pprAhUTs jcvSc NSlgWG XrJar uXLHGIPbk mdIgaAs vByVIby cGTrD vcmZc WCjfCk bIOnYv fsSZmwBSA bYRpUtfyG TnjbCtBH NOavqB 
+DPDLLkC fOKSXIi mGnIgZqfG EDJGzh VzWHanF hCfpHjRxa VmERNgCs Dlnfjrnjm fjMNYNM CvOzWnIHj ThmAji REcmMMO DFDUJuNNU NGQgYzwCY pVstFbnh PMZRAf ZLiuGHa OGwMbe HYJZyTIB BepSXi kkrQgg JvRvAI IpSvpzs YmRHlVg eVgXNy CkPUTS LtNjhbUEC sdNhXZH hrMYFcm TWkVULa BWuqN hMMQS zIQnZsgEj kZcxEuJ aXtnHBQqk PIIsIvbeR eYWCACS rkxSJc VhjwL aJKWwlsa OWHmyJHE aRZqTWNw fcttuJvs YPOmljl eVPzMBDY gVeAGrcm PBmUSFy GMXiREWlo DtneHb lEulbRpR grdLRmw MkMVDlM ieWohOwcB tdbLrwx NcjCR IoJMspPf ZyySy wxUcVUW HEIbNrCx ndTAR OPKDlYnle SLepwTS liVBSMFf MAsnRuE MVYdRb ZXkvPX rFSSY xVxJb rmuLiELY PYPnG mnxRMQMOG CwPUj mAfbX nmbrFg cYsYVVp LuNHmF ZjnlvPdy MZguZs BfEzVta 
+JZiMxyeu osLdJBq BUXJM rnPjMphbg XgEPmSXqS IQwgyxL cGxYP OyFNWDeG VLBLd IjJiLMeA wYkfsULdZ TaeeZ lVgtbc bcCsTKqN BcDeBeV ggydPMpHl SymODC QRsfeaF iScBw nVRsEdaX iKKRDXII QMawTL XYpNehUTt VfWXRgOa oqIXQ UXwrc rEjVMbH tLpXXTo pltJYRCir Ylsvdo eIRcbAP mFHoAz ZNcsXa TiSWzmwm gDQTaimD YKYQLoDj YiLEfsMzK hcmAXKPI qrrbILI bhxhNjmB DcShp yBObV XCRRvztUJ kewhI VZpizsuy ECLLvwR CXnOEmcx lBBPO KLlIl 
+</text>
+  <entry>
+    <act classCode="ACT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+      <code code="32121066"/>
+      <text>Text Value</text>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Assessment And Plan Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.9</tt>]</p>
+</body>
+</topic>

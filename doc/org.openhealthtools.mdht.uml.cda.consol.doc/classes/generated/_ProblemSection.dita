@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Problems - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.5.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:9179 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.5.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../ProblemSectionEntriesOptional.dita">Problem Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.5</tt>)</li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> (CONF:9183)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemConcernAct.dita">Problem Concern Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15409)<tt><b>/@code</b>="11450-4" </tt><i>Problem List</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15410)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9182)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9181)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../ProblemSectionEntriesOptional.dita">Problem Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.5</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15409)<tt><b>/@code</b>="11450-4" </tt><i>Problem List</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15410)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9181)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9182)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:7882)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemConcernAct.dita">Problem Concern Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li></ol></li>
+<li>If section/@nullFlavor is not present, <b>SHALL</b> contain  [1..*] <tt><b>entry</b></tt> (CONF:9183)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemConcernAct.dita">Problem Concern Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProblemSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.5]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15410</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 11450-4</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:9181</entry><entry> </entry></row> 
+<row><entry>problemConcern</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.3]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProblemConcernAct</entry><entry>CONF:9183</entry><entry> </entry></row> 
+<row><entry>problemSection</entry><entry>problemSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProblemSection</entry><entry>CONF:9449</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:9182</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ContinuityOfCareDocument.dita">Continuity Of Care Document</xref></entry><entry><xref href="../ProblemConcernAct.dita">Problem Concern</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+  <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+  <title>Problem List</title>
+  <text>qCHzjUtF PDjWacnkX yBqGmY ijnDA zOLdeZ uNSaXjHA JhzXeV YNzOf jzjJivc OiLthPlZb JQjrUtCg HAkntVF yTaPEze syoeoBp 
+lLAWXYg endGsd LajkCK ZbfFmEd iGvbn vMjZOBAr gbJpm mkQut mxAXqJNJN NDEmRU yaKafOxVd fhMiGBuF bjPhIuKZS tFLJntaUz lphbNshT KKugiuj cogXVoCt VaeHzaO UOeFhil FBajrMl tLzYCO PdKqFhYD CxHNgxFtO pnQAoc TDbYCXy bAWgWtLa XbzAGzEg zQMKl QHIJVk mDbAoH MghDAcf SNMmdOW hGZLW EYdggjlbx KNGBOL VTqPRhehR zjZFpgNU qpMItyema uwKBRli RKeXwluyj MwyElxDZ MgAycJ YbfACze LcrgeY MViyJMm uhFML ItwUzn AMmwleTrx OnPagqQH YWOKMtfEH UBTQLHJ tukNY lGnyrDL JrXam yxFnC BmNJjrllW MyDmaA tCDIcPTbs INXqb xPKTqKgJg KSeGtdeK GqqAKuj lrrWjpkdR pBIrBigQ cGpWNtOsp zwlzXzbHz 
+rAjeExFI SYkVnjcwV mwjGfVu bYCTIVcz MRozJF hNjunA ZDOxETX MbDpHMdO QnhDJ rUFnjZ euedu qhNFKAbEy kmEgGmF AKPrr eMHAZD vXNFA tkjgeA wOhhCSkf gMXhkpXOy mToMonMv uzFTgZOcM kivOwqbjH cuIuNd OVGIVgg LRBdBEd MRLtCpl TtgBEG Fiskzp oUhxQfvz SiaIvODY qqMSQJoQ IKMHrLwsk gMkSoBw AQYJpx inepR zKVmrYjCC eBkVDyPv kUGLZP kZmdlHbJa vhRFNzc elwgb ALLxcxYSW EKefF KOXVnY uhDqTr ivUpX dKGPgKcP SmUfr XFbNBMSKh xFfOf BdSrC MOnJV SYOxdASWF CzvtVJ RhmjTKmN absWCu 
+lvsrMzo iaPzESA jVXHjjg FUwif MuTPzlYdy TwIwkQX LSEcyo bdoow eFvKb obazrDs jIbSt mVULtif AYuDR wOpBmqh dQWED DFistheGn oqAkDwQn lrvsr BiNRl AQCYcH uILIzg LPMNCdhQP KUOWqYp uOfpp HdNlggJs YHXqdL mNFpRFvNd MBKBDycF htTZpLl uvBDGXaCP MeXLtBAhU VpQkxebde sjjEDmc ToCZfa gdjDLq MzGymlwU OTypPJ tJCCe RyTmLav CtqDPT NoQaJMWM GcpNRo rJaQS FjcBSp ASgEvUM eTlvVTp rPfkDYWPU 
+bxXvIhJ QAeQlk rhLNCGgW KlHxkzT FPUfHnPn aUMnu FedtGi spiToVDk NLhuruF GkYsYFU rbiEHfxJ QMhFOO YJZJcLeJ qZvLxEdY FoNvolVIA IgFBA VLWqLE hkelNy dlCgWtlHG fOspv CsxRy nsbEIqEf fACFejTA gVNNx FQnwlDfN CknpBlTx iBbco tFAgbEQ CpVWO wMWla KadLMMdQ tqvBJT gJXSV RPmVGk nWDBVA UJMLjH 
+CGGuhaEtn yMbZg xqlHM MBKkTT AjfLrpAic MquzbmK WRnZwmU qfugA VOtCCvF DqSejT jMmRRRh SnLBelJS aqkNh oFWvLzq NIrCcKdyM FTjltlCZP rHwljIWts ECESemKbi uEKExVcJ adWocRvcu vwXvPdkXD KDjXFQ KHrOmllS cePRQ onQSD hHMapT IhSMmh oPQVRa ZqutW PbwqZ ovwfFJcH 
+czMcCxV qCrbDS AaSPsMMVP YDpHRnx BJKvr ldYjfOhnb SeAgInvJG oPLdc XBbLWBJJJ hOslGnhPX DrTprfhEI eskgOPG XulVZZ ievZo sJCFmd OYKaoRKLB boYhJxr OoyqRRuWl xvHPKFt Xadazb mEeNArd DIBfRKRoc tCcZnQSnG AQyMf JGxEAr PvvzOTvKD ipIAvs sosPnnm imnBaEw ICKorn cwRgjaqc UYTWxMPCG jdgvlK VHDsYMoa jnbri snpqWZ ysbFX acfkroW RwtOOWcZF gdCFaN eFzWy qXiFSLAQ CQsPn ycyWzjegB KtOIYFgg vEIpGzMH pnWkV ejoAcFJt rYTxv UCELHD PaQAwodDz IQcyNv vQwYyTGXX 
+NiCNAgv JndXbdokD ASfASByNM FeXWSw aynWhkPK ZusIRd KADCx NfeqqNX xYJwQ CeXuOcggV CNoWFq gYspQ YHIwYDh AquWglWn UqHKerS HLFYwDxbB aWnzAhA wfRiAih rbLocCJ KyrRXS oEVoeg JdRGZl GkSmFxLw fjhUvvIh ZFRsD DcgKcH ypBfTgou KlaaUmB LSyKnLTw DmnBwiWU HtWJLlGI DKtbMEAX qBWALA vOKsPKN ahVJpHWpW FvXPkIj URsMtN zUDPlpByE fZOrF srTaNnKPP xFAhhbX xGIoKy LGFkRUZrU FJkfJuu UUzbB HnXKxgO uZJvN CbvZovWR uHprOJZx hmxJDVxT wSUMFUj mYEajYOl UexKbYy BccpeYXY SbVNHhcf SNLVwEbtk aNepS qUDnAgQby 
+</text>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+      <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problems</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>]</p>
+</body>
+</topic>

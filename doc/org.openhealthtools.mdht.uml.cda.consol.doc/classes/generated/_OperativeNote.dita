@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Operative Note - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.22.1.7</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.1.7"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Operative Note Fluids section may be used to record fluids administered during the surgical procedure.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8483, CONF:10048 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.1.7"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:17187), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SurgicalOperationNoteDocumentTypeCode.dita">SurgicalOperationNoteDocumentTypeCode</xref> 2.16.840.1.113883.11.20.1.1</tt><b> DYNAMIC</b> (CONF:17188)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>documentationOf</b></tt> (CONF:8486) <ol><li>Such documentationOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceEvent</b></tt> (CONF:8493) <ol><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (i., CONF:8487)</li><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8494)</li><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>primaryPerformer</b></tt> (CONF:8489) <p><lines><i>The performer represents clinicians who actually and principally carry out the serviceEvent.  Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.  The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.  There are occasionally co-surgeons.  Usually they will be billing separately and will each dictate their own notes.  An example may be spinal surgery , where a general surgeon and an orthopaedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.  Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</i></lines></p><ol><li>This primaryPerformer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PPRF" </tt> (CONF:8495)</li><li>This primaryPerformer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10917) <ol><li>This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8490, CONF:8491), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderType.dita">ProviderType</xref> 2.16.840.1.113883.3.88.12.3221.4</tt><b> DYNAMIC</b></li></ol> </li></ol> <p><lines><i>The performer represents clinicians who actually and principally carry out the serviceEvent.  Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.  The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.  There are occasionally co-surgeons.  Usually they will be billing separately and will each dictate their own notes.  An example may be spinal surgery , where a general surgeon and an orthopaedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.  Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</i></lines></p></li><li>This serviceEvent i. The value of Clinical Document /documentationOf/serviceEvent/code <b>SHALL</b> be from ICD9 CM Procedures (CodeSystem 2.16.840.1.113883.6.104), CPT-4 (CodeSystem 2.16.840.1.113883.6.12), or values descending from 71388002 (Procedure) from the SNOMED CT (CodeSystem 2.16.840.1.113883.6.96) ValueSet Procedure 2.16.840.1.113883.3.88.12.80.28 DYNAMIC. (CONF:8487)</li><li>This serviceEvent The serviceEvent/effectiveTime <b>SHALL</b> be present with effectiveTime/low (CONF:8488)</li><li>This serviceEvent If a width is not present, the serviceEvent/effectiveTime <b>SHALL</b> include effectiveTime/high. (CONF:10058)</li><li>This serviceEvent When only the date and the length of the procedure are known a width element <b>SHALL</b> be present and the serviceEvent/effectiveTime/high <b>SHALL</b> not be present. (CONF:10060)</li><li>This serviceEvent Any assistants <b>SHALL</b> be identified and <b>SHALL</b> be identified as secondary performers (SPRF)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <b>SHALL</b> be precise to the day (CONF:10136, CONF:10127)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <b>SHOULD</b> be precise to the minute (CONF:10136, CONF:10128)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <b>MAY</b> be precise to the second (CONF:10136, CONF:10129)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, <b>SHOULD</b> include time-zone offset (CONF:10136, CONF:10130)</li></ol> </li></ol> 
+</li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9883)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AnesthesiaSection.dita">Anesthesia Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.25</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9885)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ComplicationsSection.dita">Complications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.37</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9913)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PostoperativeDiagnosisSection.dita">Postoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9888)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosisSection.dita">Preoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9890)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureEstimatedBloodLossSection.dita">Procedure Estimated Blood Loss Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.9</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9892)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureFindingsSection.dita">Procedure Findings Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.28</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9894)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureSpecimensTakenSection.dita">Procedure Specimens Taken Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.31</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9896)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureDescriptionSection.dita">Procedure Description Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9898)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureImplantsSection.dita">Procedure Implants Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.40</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9900)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OperativeNoteFluidSection.dita">Operative Note Fluid Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.7.12</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9902)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OperativeNoteSurgicalProcedureSection.dita">Operative Note Surgical Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.7.14</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9904)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9906)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlannedProcedureSection.dita">Planned Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9908)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureDispositionSection.dita">Procedure Disposition Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.12</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9910)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureIndicationsSection.dita">Procedure Indications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.29</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9912)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SurgicalDrainsSection.dita">Surgical Drains Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.7.13</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt> (CONF:16791)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt> (CONF:5361)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:5363)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:17187), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/SurgicalOperationNoteDocumentTypeCode.dita">SurgicalOperationNoteDocumentTypeCode</xref> 2.16.840.1.113883.11.20.1.1</tt><b> DYNAMIC</b> (CONF:17188)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:5254)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:5256)
+<ul><li><p><lines><i>Signifies the document creation time, when the document first came into being. Where the CDA document is a transform from an original document in some other format, the ClinicalDocument.effectiveTime is the time the original document is created. The time when the transform occurred is not currently represented in CDA (CONF:9995)</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7BasicConfidentialityKind.dita">HL7 BasicConfidentialityKind</xref> 2.16.840.1.113883.1.11.16926</tt><b> STATIC</b> (CONF:5259)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Language.dita">Language</xref> 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b> (CONF:5372)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>setId</b></tt> (CONF:5261)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>versionNumber</b></tt> (CONF:5264)
+</li>
+<li>contain exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>recordTarget</b></tt> (CONF:5266) <p><lines><i>The recordTarget records the patient whose health information is described by the clinical document; it must contain at least one patientRole element.</i></lines></p><ol><li>Such recordTargets <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> (CONF:5268) <ol><li>This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5271)</li><li>This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5268)</li><li>This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt></li></ol>  (CONF:5280)</li><li>This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> (CONF:5283) <ol><li>This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdministrativeGenderHL7V3.dita">Administrative Gender (HL7 V3)</xref> 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b> (CONF:6394)</li><li>This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt> with @xsi:type="TS" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> (CONF:5299, CONF:5300)</li><li><b>SHALL</b> satisfy: precise to year (CONF:5299)</li><li><b>SHOULD</b> satisfy: precise to day (CONF:5300)</li></ol>  (CONF:5298)</li><li>This patient <b>MAY</b> contain zero or one [0..1] <tt><b>ethnicGroupCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EthnicityValueSet.dita">Ethnicity Value Set</xref> 2.16.840.1.114222.4.11.837</tt><b> DYNAMIC</b> (CONF:5323)</li><li>This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>maritalStatusCode</b></tt> (CONF:5303), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7MaritalStatus.dita">HL7 Marital Status</xref> 2.16.840.1.113883.1.11.12212</tt><b> STATIC</b> 1</li><li>This patient <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> with @xsi:type="USRealmPatientName" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>family</b></tt> (CONF:7159, CONF:7160)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>given</b></tt> (CONF:7157)</li><li><b>MAY</b> contain zero or more [0..*] <tt><b>prefix</b></tt> (CONF:7155)</li><li><b>MAY</b> contain zero or one [0..1] <tt><b>suffix</b></tt> (CONF:7161)</li><li><b>MAY</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:7154), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EntityNameUse.dita">EntityNameUse</xref> 2.16.840.1.113883.1.11.15913</tt><b> STATIC</b></li><li>US Realm Patient Name <b>SHALL NOT</b> contain any mixed content other than whitespace (CONF:7278)</li></ol>  (CONF:5284, CONF:10411)</li><li>This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>raceCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RaceValueSet.dita">Race Value Set</xref> 2.16.840.1.113883.1.11.14914</tt><b> DYNAMIC</b> (CONF:5322)</li><li>This patient <b>MAY</b> contain zero or one [0..1] <tt><b>religiousAffiliationCode</b></tt> (CONF:5317), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7ReligiousAffiliation.dita">HL7 Religious Affiliation</xref> 2.16.840.1.113883.1.11.19185</tt><b> STATIC</b> 1</li><li>This patient <b>MAY</b> contain zero or more [0..*] <tt><b>sDTCRaceCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RaceValueSet.dita">Race Value Set</xref> 2.16.840.1.113883.1.11.14914</tt><b> DYNAMIC</b> (CONF:7263)<p><lines><i>Note: The sdtc:raceCode is only used to record additional values when the patient has indicated multiple races or additional race detail beyond the five categories required for Meaningful Use Stage 2. The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the additional raceCode elements.</i></lines></p></li><li>This patient <b>MAY</b> contain zero or one [0..1] <tt><b>birthplace</b></tt> (CONF:5395) <ol><li>This birthplace <b>SHALL</b> contain exactly one [1..1] <tt><b>place</b></tt> (CONF:5396) <ol><li>This place <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:5397)</li><li>This place If country is US, this addr <b>SHALL</b> contain exactly one [1..1] state, which <b>SHALL</b> be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</li><li>This place This addr <b>MAY</b> contain zero or one [0..1] postalCode, which <b>SHALL</b> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li><li>This place This addr <b>SHOULD</b> contain zero or one [0..1] country, which <b>SHALL</b> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li></ol> </li></ol> </li><li>This patient <b>MAY</b> contain zero or more [0..*] <tt><b>guardian</b></tt> (CONF:5325) <ol><li>Such guardians <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol> </li><li>Such guardians <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:5326)</li><li>Such guardians <b>MAY</b> contain zero or more [0..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:7993)</li></ol> </li><li>Such guardians <b>SHALL</b> contain exactly one [1..1] <tt><b>guardianPerson</b></tt> <ol><li>This guardianPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li><li>This guardianPerson The content of name <b>SHALL</b> be a conformant US Realm Person Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:10414)</li></ol> </li><li>Such guardians The guardian code, if present, <b>SHALL</b> be selected from ValueSet PersonalRelationshipRoleType 2.16.840.1.113883.1.11.19563 DYNAMIC or ValueSet Responsible Party 2.16.840.1.113883.1.11.19830 DYNAMIC (CONF:5326)</li></ol> </li><li>This patient <b>SHOULD</b> contain zero or more [0..*] <tt><b>languageCommunication</b></tt> (CONF:5406) <ol><li>Such languageCommunications <b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Language.dita">Language</xref> 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b> (CONF:5407)</li><li>Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>modeCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HL7LanguageAbilityMode.dita">HL7 LanguageAbilityMode</xref> 2.16.840.1.113883.1.11.12249</tt><b> STATIC</b> 1 (CONF:5409)</li><li>Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>preferenceInd</b></tt> (CONF:5414)</li><li>Such languageCommunications <b>SHOULD</b> contain zero or one [0..1] <tt><b>proficiencyLevelCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/LanguageAbilityProficiency.dita">LanguageAbilityProficiency</xref> 2.16.840.1.113883.1.11.12199</tt><b> STATIC</b> (CONF:9965)</li></ol> </li><li>This patient If sdtc:raceCode is present, then the patient <b>SHALL</b> contain [1..1] raceCode (CONF:31347)</li></ol> </li><li>This patientRole <b>MAY</b> contain zero or one [0..1] <tt><b>providerOrganization</b></tt> (CONF:5416) <ol><li>This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5422)</li><li>This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5417)</li><li>This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5419)</li><li>This providerOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:7994)</li></ol>  (CONF:5420)</li><li>This providerOrganization The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:9996)</li></ol> </li></ol> </li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>componentOf</b></tt> (CONF:9955) <ol><li>This componentOf <b>SHALL</b> contain exactly one [1..1] <tt><b>encompassingEncounter</b></tt> (CONF:9956) <ol><li>This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:9958)</li><li>This encompassingEncounter <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9959)</li></ol> </li></ol> 
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>author</b></tt> (CONF:5444) <ol><li>Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5445)<p><lines><i>The content SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:16866).</i></lines></p></li><li>Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:5448) <ol><li>This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5452)</li><li>This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16787), which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita">Healthcare Provider Taxonomy (NUCC - HIPAA)</xref> 2.16.840.1.114222.4.11.1066</tt><b> DYNAMIC</b> (CONF:16788)</li><li>This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5449)</li><li>This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:7995)</li></ol>  (CONF:5428)</li><li>This assignedAuthor contain zero or one [0..1] <tt><b>assignedAuthoringDevice</b></tt> <ol><li>This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturerModelName</b></tt> (CONF:16784)</li><li>This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>softwareName</b></tt> (CONF:16785)</li></ol> </li><li>This assignedAuthor contain zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li>This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:16789)</li></ol> </li><li>This assignedAuthor <b>SHALL</b> contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice (CONF:16790)</li><li>This assignedAuthor If this assignedAuthor is an assignedPerson, the assignedAuthor <b>SHOULD</b> contain zero to one [0..1] id such that it <b>SHALL</b> contain exactly one [1..1] @root="2.16.840.1.113883.4.6" National Provider Identifier (CONF:31135, CONF:31694)</li></ol> </li><li>Such authors This time <b>SHALL</b> contain exactly one [1..1] US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:5446)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>dataEnterer</b></tt> (CONF:5441) <ol><li>This dataEnterer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:5442) <ol><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5460)</li><li>This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9944)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5443)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:7996)</li></ol>  (CONF:5466)</li><li>This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5469) <ol><li>This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li><li>This assignedEntity id <b>SHOULD</b> include zero or one [0..1] @root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:16821)</li></ol> </li></ol> 
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> (iv., CONF:5519) <ol><li>This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedCustodian</b></tt> (CONF:5520) <ol><li>This assignedCustodian <b>SHALL</b> contain exactly one [1..1] <tt><b>representedCustodianOrganization</b></tt> (CONF:5521) <ol><li>This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5559)</li><li>This representedCustodianOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5522)</li><li>This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:5524)</li><li>This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt></li></ol>  (CONF:5525)</li><li>This representedCustodianOrganization The id <b>SHOULD</b> include zero or one [0..1] @root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol> </li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>informationRecipient</b></tt> (CONF:5565) <ol><li>Such informationRecipients <b>SHALL</b> contain exactly one [1..1] <tt><b>intendedRecipient</b></tt> (CONF:5566) <ol><li>This intendedRecipient <b>MAY</b> contain zero or one [0..1] <tt><b>informationRecipient</b></tt> (CONF:5568) <ol><li>This informationRecipient <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5470)</li></ol> </li><li>This intendedRecipient <b>MAY</b> contain zero or one [0..1] <tt><b>receivedOrganization</b></tt> (CONF:5577) <ol><li>This receivedOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:5578)</li></ol> </li></ol> </li></ol> 
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>legalAuthenticator</b></tt> (CONF:5579) <ol><li>This legalAuthenticator <b>SHALL</b> contain exactly one [1..1] <tt><b>signatureCode</b></tt><tt><b>/@code</b>="S" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.89 Participationsignature</tt>) (CONF:5583, CONF:5584)</li><li>This legalAuthenticator <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5580)</li><li>This legalAuthenticator <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:5585) <ol><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5589)</li><li>This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:17000), which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita">Healthcare Provider Taxonomy (NUCC - HIPAA)</xref> 2.16.840.1.114222.4.11.1066</tt><b> DYNAMIC</b></li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5586)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:7999)</li></ol>  (CONF:5595)</li><li>This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5597) <ol><li>This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5598)</li></ol> </li><li>This assignedEntity The id <b>MAY</b> include zero or one [0..1] root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:16823)</li></ol> </li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>authenticator</b></tt> (CONF:5607) <ol><li>Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>signatureCode</b></tt><tt><b>/@code</b>="S" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.89 Participationsignature</tt>) (CONF:5610)</li><li>Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:5608)</li><li>Such authenticators <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:5612) <ol><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:5616)</li><li>This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16825), which <b>SHOULD</b> be selected from ValueSet<tt> <xref href="../../terminology/HealthcareProviderTaxonomyNUCCHIPAA.dita">Healthcare Provider Taxonomy (NUCC - HIPAA)</xref> 2.16.840.1.114222.4.11.1066</tt><b> DYNAMIC</b> (CONF:16826)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:5613)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt> with @xsi:type="TEL" <ol><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt> (CONF:8000)</li></ol>  (CONF:5622)</li><li>This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:5624) <ol><li>This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt> (CONF:5625)</li></ol> </li><li>This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996)</li></ol> </li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>informant</b></tt> (CONF:8001) <ol><li>Such informants <b>MAY</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt> <ol><li>This assignedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:8220)</li><li>This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:9947)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9945)</li><li>This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt> (CONF:8221) <ol><li>This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li><li>This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier</li></ol> </li><li>Such informants <b>MAY</b> contain zero or one [0..1] <tt><b>relatedEntity</b></tt> <ol><li>This relatedEntity <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt> with @xsi:type="USRealmAddress" <ol><li><b>SHALL</b> contain exactly one [1..1] <tt><b>city</b></tt> (CONF:7292)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>country</b></tt> (CONF:7295)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>postalCode</b></tt> (CONF:7294)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>state</b></tt> (CONF:7293)</li><li><b>SHALL</b> contain at least one [1..*] <tt><b>streetAddressLine</b></tt> (CONF:7291)</li><li><b>SHOULD</b> contain zero or one [0..1] <tt><b>@use</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/PostalAddressUse.dita">PostalAddressUse</xref> 2.16.840.1.113883.1.11.10637</tt><b> STATIC</b> (CONF:7290)</li><li>State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10024)</li><li>PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <b>MAY</b> be present but <b>MAY</b> be bound to different vocabularies (CONF:10025)</li><li><b>SHALL NOT</b> have mixed content except for white space (CONF:7296)</li><li><b>SHALL</b> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li></ol>  (CONF:8220)</li><li>This relatedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>person</b></tt> (CONF:8221) <ol><li>This person <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt></li></ol> </li></ol> </li><li>Such informants <b>SHALL</b> satisfy: contain exactly one [1..1] assignedEntity OR exactly one [1..1] relatedEntity (CONF:8002)</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>supportParticipant</b></tt> (CONF:10003) <ol><li>Such supportParticipants <b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:10004)</li><li>Such supportParticipants Such participants, if present, <b>SHALL</b> have an associatedPerson or scopingOrganization element under participant/associatedEntity. (CONF:10006)</li><li>Such supportParticipants Unless otherwise specified by the document specific header constraints, when participant/@typeCode is IND, associatedEntity/@classCode <b>SHALL</b> be selected from ValueSet INDRoleclassCodes 2.16.840.1.113883.11.20.9.33 STATIC 2011-09-30.</li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>inFulfillmentOf</b></tt> (CONF:9952) <ol><li>Such inFulfillmentOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>order</b></tt> (CONF:9953) <ol><li>This order <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9954)</li></ol> </li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>documentationOf</b></tt> (CONF:14835) <ol><li>Such documentationOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceEvent</b></tt> (CONF:14836) <ol><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:14837)</li><li>This serviceEvent <b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:14839) <ol><li>Such performers <b>MAY</b> contain zero or one [0..1] <tt><b>functionCode</b></tt> (CONF:16818), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.88 ParticipationFunction</tt>) (CONF:16819)</li><li>Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:14840)</li><li>Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:14841) <ol><li>This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:14842), which <b>SHOULD</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:14843)</li><li>This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:14846)</li><li>This assignedEntity The id <b>SHOULD</b> include zero or one [0..1]root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:9996) (CONF:14847)</li></ol> </li></ol> </li><li>This serviceEvent effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:14838)</li></ol> </li></ol> 
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>authorization</b></tt> (CONF:16792) <ol><li>Such authorizations <b>SHALL</b> contain exactly one [1..1] <tt><b>consent</b></tt> (CONF:16793) <ol><li>This consent <b>MAY</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:16795)<p><lines><i>The type of consent (e.g., a consent to perform the related serviceEvent) is conveyed in consent/code (CONF:16796).</i></lines></p></li><li>This consent <b>MAY</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF:16794)</li><li>This consent <b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF:16797)<tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:16798)</li></ol> </li></ol> 
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>documentationOf</b></tt> (CONF:8486) <ol><li>Such documentationOfs <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceEvent</b></tt> (CONF:8493) <ol><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (i., CONF:8487)</li><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8494)</li><li>This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>primaryPerformer</b></tt> (CONF:8489) <p><lines><i>The performer represents clinicians who actually and principally carry out the serviceEvent.  Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.  The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.  There are occasionally co-surgeons.  Usually they will be billing separately and will each dictate their own notes.  An example may be spinal surgery , where a general surgeon and an orthopaedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.  Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</i></lines></p><ol><li>This primaryPerformer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PPRF" </tt> (CONF:8495)</li><li>This primaryPerformer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:10917) <ol><li>This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8490, CONF:8491), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProviderType.dita">ProviderType</xref> 2.16.840.1.113883.3.88.12.3221.4</tt><b> DYNAMIC</b></li></ol> </li></ol> <p><lines><i>The performer represents clinicians who actually and principally carry out the serviceEvent.  Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.  The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.  There are occasionally co-surgeons.  Usually they will be billing separately and will each dictate their own notes.  An example may be spinal surgery , where a general surgeon and an orthopaedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.  Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</i></lines></p></li><li>This serviceEvent i. The value of Clinical Document /documentationOf/serviceEvent/code <b>SHALL</b> be from ICD9 CM Procedures (CodeSystem 2.16.840.1.113883.6.104), CPT-4 (CodeSystem 2.16.840.1.113883.6.12), or values descending from 71388002 (Procedure) from the SNOMED CT (CodeSystem 2.16.840.1.113883.6.96) ValueSet Procedure 2.16.840.1.113883.3.88.12.80.28 DYNAMIC. (CONF:8487)</li><li>This serviceEvent The serviceEvent/effectiveTime <b>SHALL</b> be present with effectiveTime/low (CONF:8488)</li><li>This serviceEvent If a width is not present, the serviceEvent/effectiveTime <b>SHALL</b> include effectiveTime/high. (CONF:10058)</li><li>This serviceEvent When only the date and the length of the procedure are known a width element <b>SHALL</b> be present and the serviceEvent/effectiveTime/high <b>SHALL</b> not be present. (CONF:10060)</li><li>This serviceEvent Any assistants <b>SHALL</b> be identified and <b>SHALL</b> be identified as secondary performers (SPRF)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <b>SHALL</b> be precise to the day (CONF:10136, CONF:10127)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <b>SHOULD</b> be precise to the minute (CONF:10136, CONF:10128)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). <b>MAY</b> be precise to the second (CONF:10136, CONF:10129)</li><li>This serviceEvent The content of effectiveTime conforms to US Realm Date and Time (DT.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4). If more precise than day, <b>SHOULD</b> include time-zone offset (CONF:10136, CONF:10130)</li></ol> </li></ol> 
+</li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9883)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AnesthesiaSection.dita">Anesthesia Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.25</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9885)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ComplicationsSection.dita">Complications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.37</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9913)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PostoperativeDiagnosisSection.dita">Postoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9888)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PreoperativeDiagnosisSection.dita">Preoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9890)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureEstimatedBloodLossSection.dita">Procedure Estimated Blood Loss Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.9</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9892)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureFindingsSection.dita">Procedure Findings Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.28</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9894)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureSpecimensTakenSection.dita">Procedure Specimens Taken Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.31</tt>)</li></ol></li>
+<li><b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:9896)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureDescriptionSection.dita">Procedure Description Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.27</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9898)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureImplantsSection.dita">Procedure Implants Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.40</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9900)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OperativeNoteFluidSection.dita">Operative Note Fluid Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.7.12</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9902)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OperativeNoteSurgicalProcedureSection.dita">Operative Note Surgical Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.7.14</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9904)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9906)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PlannedProcedureSection.dita">Planned Procedure Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.30</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9908)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureDispositionSection.dita">Procedure Disposition Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.18.2.12</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9910)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureIndicationsSection.dita">Procedure Indications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.29</tt>)</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:9912)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SurgicalDrainsSection.dita">Surgical Drains Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.7.13</tt>)</li></ol></li>
+<li><b>SHALL</b> satisfy: [DEPRECATED] The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.
+This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime 
+element.</li>
+<li><b>SHALL</b> satisfy: The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset 
+is provided, you can make no assumption about time, unless you have made a local exchange agreement.</li>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @root="2.16.840.1.113883.1.3" (CONF:5250)</li>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @extension="POCD_HD000040" (CONF:5251)</li>
+<li>id <b>SHALL</b> be a globally unique identifier for the document (CONF:9991)</li>
+<li>code <b>SHALL</b> specify the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note). (CONF:9992)</li>
+<li>If setId is present versionNumber <b>SHALL</b> be present (CONF:6380)</li>
+<li>If versionNumber is present setId <b>SHALL</b> be present (CONF:6387)</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::OperativeNote</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = 2.16.840.1.113883.10.20.22.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:17188</entry><entry> null</entry></row> 
+<row><entry>anesthesiaSection</entry><entry>anesthesiaSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AnesthesiaSection</entry><entry>CONF:9883</entry><entry> </entry></row> 
+<row><entry>complicationsSection</entry><entry>complicationsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ComplicationsSection</entry><entry>CONF:9885</entry><entry> </entry></row> 
+<row><entry>documentationOf</entry><entry>documentationOf</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>DocumentationOf</entry><entry>CONF:8486</entry><entry> </entry></row> 
+<row><entry>operativeNoteFluidSection</entry><entry>operativeNoteFluidSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>OperativeNoteFluidSection</entry><entry>CONF:9900</entry><entry> </entry></row> 
+<row><entry>operativeNoteSurgicalProcedureSection</entry><entry>operativeNoteSurgicalProcedureSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>OperativeNoteSurgicalProcedureSection</entry><entry>CONF:9902</entry><entry> </entry></row> 
+<row><entry>plannedProcedureSection</entry><entry>plannedProcedureSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlannedProcedureSection</entry><entry>CONF:9906</entry><entry> </entry></row> 
+<row><entry>planOfCareSection</entry><entry>planOfCareSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PlanOfCareSection</entry><entry>CONF:9904</entry><entry> </entry></row> 
+<row><entry>postoperativeDiagnosisSection</entry><entry>postoperativeDiagnosisSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PostoperativeDiagnosisSection</entry><entry>CONF:9913</entry><entry> </entry></row> 
+<row><entry>preoperativeDiagnosisSection</entry><entry>preoperativeDiagnosisSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PreoperativeDiagnosisSection</entry><entry>CONF:9888</entry><entry> </entry></row> 
+<row><entry>procedureDescriptionSection</entry><entry>procedureDescriptionSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureDescriptionSection</entry><entry>CONF:9896</entry><entry> </entry></row> 
+<row><entry>procedureDispositionSection</entry><entry>procedureDispositionSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureDispositionSection</entry><entry>CONF:9908</entry><entry> </entry></row> 
+<row><entry>procedureEstimatedBloodLossSection</entry><entry>procedureEstimatedBloodLossSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureEstimatedBloodLossSection</entry><entry>CONF:9890</entry><entry> </entry></row> 
+<row><entry>procedureFindingsSection</entry><entry>procedureFindingsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureFindingsSection</entry><entry>CONF:9892</entry><entry> </entry></row> 
+<row><entry>procedureImplantsSection</entry><entry>procedureImplantsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureImplantsSection</entry><entry>CONF:9898</entry><entry> </entry></row> 
+<row><entry>procedureIndicationsSection</entry><entry>procedureIndicationsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureIndicationsSection</entry><entry>CONF:9910</entry><entry> </entry></row> 
+<row><entry>procedureSpecimensTakenSection</entry><entry>procedureSpecimensTakenSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureSpecimensTakenSection</entry><entry>CONF:9894</entry><entry> </entry></row> 
+<row><entry>surgicalDrainsSection</entry><entry>surgicalDrainsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SurgicalDrainsSection</entry><entry>CONF:9912</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry></entry><entry><xref href="../AnesthesiaSection.dita">Anesthesia Section</xref></entry></row><row><entry></entry><entry><xref href="../ComplicationsSection.dita">Complications Section</xref></entry></row><row><entry></entry><entry><xref href="../OperativeNoteFluidSection.dita">Operative Note Fluid Section</xref></entry></row><row><entry></entry><entry><xref href="../OperativeNoteSurgicalProcedureSection.dita">Operative Note Surgical Procedure Section</xref></entry></row><row><entry></entry><entry><xref href="../PlanOfCareSection.dita">Plan Of Care Section</xref></entry></row><row><entry></entry><entry><xref href="../PlannedProcedureSection.dita">Planned Procedure Section</xref></entry></row><row><entry></entry><entry><xref href="../PostoperativeDiagnosisSection.dita">Postoperative Diagnosis Section</xref></entry></row><row><entry></entry><entry><xref href="../PreoperativeDiagnosisSection.dita">Preoperative Diagnosis Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureDescriptionSection.dita">Procedure Description Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureDispositionSection.dita">Procedure Disposition Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureEstimatedBloodLossSection.dita">Procedure Estimated Blood Loss Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureFindingsSection.dita">Procedure Findings Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureImplantsSection.dita">Procedure Implants Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureIndicationsSection.dita">Procedure Indications Section</xref></entry></row><row><entry></entry><entry><xref href="../ProcedureSpecimensTakenSection.dita">Procedure Specimens Taken Section</xref></entry></row><row><entry></entry><entry><xref href="../SurgicalDrainsSection.dita">Surgical Drains Section</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.7"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <id root="MDHT" extension="322513012"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>org.openhealthtools.mdht.uml.cda.consol.impl. Operative Note Impl</title>
+  <effectiveTime/>
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
+  <languageCode code="Code forlanguageCode"/>
+  <setId root="MDHT" extension="6fcabc14-fa46-4e62-87eb-6d97b6e4ca52"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <typeId root="2.16.840.1.113883.1.3"/>
+    <patientRole/>
+  </recordTarget>
+  <author>
+    <typeId root="2.16.840.1.113883.1.3"/>
+    <time/>
+    <assignedAuthor/>
+  </author>
+  <custodian/>
+  <documentationOf>
+    <serviceEvent>
+      <code code="1846487416"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <performer typeCode="PPRF"/>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.25"/>
+          <id root="MDHT" extension="1160999514"/>
+          <code code="59774-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>org.openhealthtools.mdht.uml.cda.consol.impl. Anesthesia Section Impl</title>
+          <text>rgKWO pILBf ryNaE vlBJbGPCs UjaQZ pkifPqmCG uRoKMq giHDdC rFGGB feOLN KGyNhOqp FQCCZnA cbevwhH cBXqFIrd forKYX XyrsyvIWu nGyIzs PBjsRo CQnRrXIyL GMeLEqQ zBoALLSi wAOIQwB vNCOnAB qOKxR uHbRsW vSrsCg eOOfm VmWuMwjGm HSvnhL tMRrgGP wekbAFr lStZAIl zNuvh KNsdgVy LhJMmPkI bCDGMN PtaThCUbO 
+QDOdpx ccULMmTPW loCErtl SMxGAlQuV Upcrg GqpiL LscZEJjI KeLhQvvWz CJggpU Fksvif DXKuL jwPvrqA EuwsI odAXkiZU YxoyXi VipGuBwQF jzaLDoz HePOJ IucJVJWH ioIpSCcv LTLPA QgdHDyGwI GCtoA eJKrmy fvYXtRO KFNjulap LbpGwc zkoXu wKxBmvzS SJVvKm bqNttBkTj mDsJdX nROsDgBWx hwLHMcEO BJVYmEdwH zZOHn GKDKayHeV YtEIN GmKsPaQnW OBaRtO UMMELgU TGXzheGlx SDoTnBZL JeKGHorV GpWSI iPTFjFEv ddhqwJqMe GeXvrvO xsSHNCJSD HSbAqF UMLjHF gyUjM qcxHlUc TMzMzhp qwIIcHVDN iMpQcEx yqpcQBTI VowqC 
+pvsgsgaQ RvMtIxQS VbtDrT PeUJgB rtquto ZmTuUzLDE clNtPzFh WNahte yTYop jJRpsUEYY PJBcZFl roaWoF nqoDqxYJU SibLUNb TsXxBYx LgDOagYgp jEHEFOPr wLLlHAiIv cUpEmx RgnEog TRNdTSM pypglwD NyiMMsSek JFPLXsSfF xkFkp ggbCFlyu ReeOLdZc rgkuWavZ RBexONxl vFzzKdib RSYdJUr RUsTgUr MEwvh axKzwpyI amRca uPBtah GfhBsPWQb yUpayez tVEAnyUdp boHUh loKma hivUju zSMFcBw yoBSSe 
+IldItNDI YdPjOwXDU uhqssin QxYXU ainxJVNdL LtegOD xghIof bEfTpA rORDYnBT cBpUlhO YGSQrUC KxNjobne GEcXIQ oNCehUmXD acNZxQ fqcpuj ptZawXlzN DHVchHVsH ZKhtnALp FwHNzU gGDfBrh bhnMvSe zArjwy NosjltS qStYqRfS GRCvdcr FDygC AHKrHgCCa NcgZYL miwEA DrVxXcx lxDlW RFFrq HsuiEx UYeqEGa lkLikXnc NUuPJ XwQbSTRvC GXZvHlI wnBzjQ DOBaVFdh alOETqw DZKUt 
+GAeDSDQro nZOgypx HrmLKntz lRATxiXI BdeiHztV FOwfX aDPTz NlXjnBk BVYlOfC dwRGsTr eVDGYCZ tdieII cNTYQI bTxmJ clpNlkFX mvyzxU AYbbGMJHL WGRSd nvIuH qOOXVzH RpWyalQo AhYVMoTym QqaFcsiB gJLpwB pmTtk IJuOE SbAqFi VLUOoZN sZcht aEVZxJZhJ xXyRm uXySN rPnZUsG Cmddshy mcJJT qfOOuWVU anIdCNUbM qFLjzyRc jsZio MqyfHhpV mTsKpS DxzNTpuEi bdvRymjpd 
+KwKRo EQwtBv bsfEnU HByxbO MABhIqOT RyAVDtu ugTIkx CLAQbGNWe OYVSwWgu UOLpn lsWffNX oNHQxs RoIMHmyu AoyfZvd jsVEr POwJNpkJ WRlsGEEIC FgcFqeh gQuxiCY MkzSTKVK tDVNuewG BcpIEi gbudGjj ASQbw cNnHQ XzXbUva uqKBcExr NfcCBgFv FddxCYmk pxvTok bCRbvfhf zAlKvGFD hhbipMW hzqLvcW qyNCA rxECbSJtP hXnloMlEM oAYSD 
+sBOJLQ sUBCtS iHMnh AwbnFsM bbYiGFv bXuHYfsW dQaxJUOI FWGhHJdx eHJvpA SyGisMGO mqDuL jbvrFbV AsiGR UlawmLJ PjQkWIQ uYyhpkGxd WOecKtDO LcFlKMP KGMescN Vpbskf MkLaB TPCYivF DZuIx DePdEbRWM ymxAziRKv gAKCt rrYLBX GQiKU SpkQZ MPhSdSM IJlBIwmY QDZNZUqK FLXKIjEZj ADIdgOO MboFI ZVmVsgNua eUjbEo QURFeO LCVvVgm YhsgkHknz Dweuwd mvpfCdBk Wqsbbbx csiAd sYoWnclA COcRGkBUt lLPhbEl HiTWKvL xZpRL ZQAmZMfX ZhsGJBs DDopYGi XdfKtMP MKDNMKVXQ NftNdMCLX NCMWoHB yDmfJR wcsCJDs tXBSG oxcLe moPYN oLkhPlou oulLnYkHl fUgXfZnf OgpMSrOe sLGPe nHZFkDl fDMPyu KksnU drTRwXc CikqopogO hSqIN HoGMbpqo EJFrY CuBlGGh lWxrrB oWMZhaL smxUWpLP 
+zrkFX ajKHfGRoX kXznWG MgydUBkhr wkwsO PFgEAOb CCcQB xofoLHY jopvfl taTcuSfQ wYlqDuwP GHmpVHDs GnTEotQ 
+iHvmVxN qrWCNAvM PlVlbR FeisIbM ZyaUfzto uMtcpe SrqxKMTIM BhREMtbK EfKdl fseyLtgzq iEKJPjOa PshDKpPo GUgDEpLb KzLPKDNu IijaPBzc kFKuWa NVDah CEGCB ONIFuygrz CHzQbKw XFxnH aHeVihobf UqLmNG aLIlQuVbF yzEnqN EiWJvBUOw TYxEM hTupLF MXsxHo KJERbb CkThH AwqwvRa RuPPtYNDR ddcwpAMU pNqLiDXX ffvCEfxJ AjFexT mnGZU RgfBKiaWu FgJYocsL gXLHu 
+</text>
+          <confidentialityCode code="447662994"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <procedure classCode="PROC">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="MDHT" extension="197710094"/>
+              <code code="2056322856"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <priorityCode codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"/>
+              <languageCode code="Code forlanguageCode"/>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <specimen/>
+              <performer/>
+              <entryRelationship typeCode="COMP" inversionInd="true"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+                  <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+                </substanceAdministration>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="MDHT" extension="879321493"/>
+              <code code="1153953393"/>
+              <text>Text Value</text>
+              <effectiveTime value="20150902"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable/>
+              <performer/>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                </supply>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                </supply>
+              </entryRelationship>
+              <precondition typeCode="PRCN"/>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.37"/>
+          <id root="MDHT" extension="1208653245"/>
+          <code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complications"/>
+          <title>Complications</title>
+          <text>EYHkVkbA FoCUWuK iWMDNCfp hHZcFCx HhanSXOB TMoEL ALUiK nFImzibf SlMEFct rzCFkhtFO FvIDdQ KuhWb bAEjU MuoVCyQa kcwmJZGY KwsfT MoxWp CFqQrm UGMDXLx xIsBqaq PgwYkYw hgiOPMbIL BBRUJfY pUqJRvOg XJolMZ IXFZYmbo OlxKMEi NxZiXKW umNGqBvUD SYCSDY cWhEPQo IxYdU AoHYXj gikAR mQsrYjq TlTQgyUq gBpoSPLp jIFzZyH XBytqimrk gwOwlZja JxRpYbHN pjPbfh ryKmNaiLf baOLuA oCjNK fQfYTl BxtBwlBsf WTfqUkwGo ZtWxn EEtzZ zuEuSvdz XXWwrrWL eedlhGJm FaBinoewO KSzLaXWB rrHzxeU 
+wTcIpslpB hTbvhYHLg qCsYyFJa AnlCpME vckfVoevK vNTKdISOb fxbeCjtme veLpvKu ZokxXD uRyKXr kFJnMrbP EYiIX JaqfoI tDrXY dGRDLQ xTviGwf AUTjfqn iFcKxBN odyOhR OpfFUkF gxjPeQjpb hHTHRq ppruN ZQvCRxMMu ZRoTWK ASOvnaL JHQEN UGrvDf wqUWSMGQJ ChxoIWLr YUbQx JFccPL rVIhj xxeSMcM sGnPp cLQDgzQ HwvWJH elvPkWOW gPelaG SnGELsHx WLLRySTpU UZEZtFFZ yyRxIG uAdFU xADls WiKVBZP hKQlN vqjSwjN MATyAd dHQdBfDp dFUwTRZ PgvYOe xfbJDZ eYnalXgN wNPezDE jrQiQh fhUMViCJ bWfKop XLqHnV oNiKm ECcww 
+</text>
+          <confidentialityCode code="1909748449"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+              <id root="MDHT" extension="13789042"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                  <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.35"/>
+          <id root="MDHT" extension="807233443"/>
+          <code code="10218-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postoperative Diagnosis"/>
+          <title>Postoperative Diagnosis</title>
+          <text>AWcNv CcggJzF IZzYA AWljM mNevoav bWsbl HcToBEL WRghELAPT MomKRMMRk FCkwUpHi LAUxqN yswZXk SpQeqpQc ljIbNz oiSnNAl irucTiEpo nNoZp DMrtT AsuWha dzVZuiCV fSbaehDiY HOyJM sTsoweK wVlFUKG XogAFJQp BRCsSuUS YzwDIZ EbjaOqec Iyleck ClKDITav sfUqWAvnD StWQBq xObfjUrOe zqIzL ZBPjZJeEK qdUtKpy HMdADcj ALKUu TLJrlcky SGUug sMjMntusv pOvpDTD VpWDFxHpK ZjTGX ILnClTmSF FPoZNe ndmwGOwVP wgfdL trWetL YpUnDcTXd GzRWryRM 
+tnIQMeH kZFIs CgWORw XfXmh wTbFBnY HYSaWHHa jsodU ZzlczPO zZDnxobo vyjLJtwX BUbyz oCvtmCDS ggoEzf upTwtvrX GVusA zUTInr rWZNFDWG xuLvqVxE ARxfI Rkafgu LHpNrtdr DtRgR KTKrkOfqG tCnnZL lzHPbMNik wbNexsK ZhhgzUM MJRnyf GOCCKe uUwrDX lCkYGv dwewBgg 
+UHtfsEnWd oWqdQLQiK nuOuvS ujVCKNY sWUwVHggj cEruYRa zqavypEvx uzoWDF tyKTD HtNZBbMsx YxtODzLQV DCSnA DCCYxO gTkXdt zCEsiz xdkvbzU bMDlIeDEx XdkWO nbxtdJ BkePLg Zlogty XhPcfctl FujJYr Dcdfbs dWcoH RaUFr CFNPtw yJPQaWIeG WTDLVf fyCctzz RUjkziLC wXdxB BVdPvF pRJhcQVk TJjtY OLgDWrzF pBoUVrR zHYNLKV WRsiApQI ErOxC RPygyF ErLDB KjkxqNC uJUJMqi IKMfMp CEKtF SzSVnUQ lqgKoi SWIQpy YhMdaazbA cVODwoz JZrmFu BtifFAS rksOxqyfo sXINeEYbv YuEevvERf viDBkHaaW FYNqfMK jfPqAakME MolxkB SyNSkeSd gTlfSlI KiXKGGpfS gbTra hvUtGEiql GqbRmvXi IRWhzWLO MxEhvuw ZJnNRjT kUUtvP muIBHW PmouZdwq PbKuRM 
+XmkRVOC setOy GyyGdNAq sIruUGcY GkHkKDl MPsmVTJs TNWlWh RsyVy HTmum bfqltUBRq nmlYkw oieVCAwRb QbGTcunR FmYfDN mwYLGOrxG oWLHf lLDrSthx qNJHzJibb cwnjrU PgYaBQ 
+</text>
+          <confidentialityCode code="1531237049"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.34"/>
+          <id root="MDHT" extension="764984473"/>
+          <code code="10219-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Preoperative Diagnosis"/>
+          <title>Preoperative Diagnosis</title>
+          <text>ZYvoDw xKhvWucJa FQRJjqTj aNpGlGt ScLuASewC ejElTL jPVDCcE sCRUJAm NWSfPFSUu QwRxKDV OGpAQ XXcwUtQO ibQgh uHKmOko 
+yUbBfsxC eRebz VdibBX RWkZpYDa ZotPz hhWTxh vaEjK qtAxV aCqTL lZMnCl WBrAVEV sbokSlPn kcyNO vRCxa QQpybZk dHMQUr zISrFnPV hZbpI LWpwQiiz lmJvub sTSeXaEwz ztMyKZtax iCxddXVL asCKobZt IZadYYEe cLJoioqi JhhRB VDdpPUxpM jLvUHEaP DCeMCChfZ spVgH txRdud tglTaEG wljnDGbe LDvmZn pepWeC Vjxfzbz dfKbx oHQTBM 
+bwrPpSBpJ YgTxcob EVFbr BgAHNrSYx xLeXnX DFPDZAS kkhZbE htwvSo izwnITh ZYytH rdjdPmTCb IyGVs HcqLlYBs ymybZTJVk LUpes ZvUkFi TNAKI ZtpMPpN CYpTKt mBvddOVie RaiGKtNEv AozIi GhNyy gVtZzg nlNPoZj KqKGPA vLjhWsaT YLAFn yeKjO AvekhK MUDLuRxwd ygXNoOwWy SugnPZ byEEZEZg EVoNz cpQzshrx jvNTHOz pHvOHmEmQ PtJSMcleI wOIDIwrx gYfsvDE qNrwKMv IsJbyR yWWrA kDNZEQ nmQXw CwpBRa YnrbGcQ gkQLmM idVZfEHa sghaU maMWqGooh YNiBBw PLkZwNZU JfYWRPXf YRtKjX szSzkEm dkHCOOyl 
+cFyEToKA fwDJow XuPkjrWAI iqkdhF ZRGUU beWsdGK efzVJ SvtnQ PwIbYtXAk LzzBVrJOU oBafq BIfMjuKX VdmPLvSj RyMWXgvb fImIbp IDzydyN jIvqsBVz VOWyTpH UkTTWyXc jtDSu DeLPZlCC Zhleyo qNSYTSjfS EHXLmWXry lGecYAb IcJTk hAKoHRRn pABFC mPBmWpVO EWRgyxmQ TxUQRQocT bLLHvIo jCOzss nXwSi qNvtUW UQpPHn XVvgUluTB eyoMy EXNBFR KAKSCMJA FVJJYgmn XUSGa 
+jOwjsmd GtbmAP lSdbkeFw sLREs dgwzcAAZ ciNUFHNl fRjoHzUg uFSPMspQw nfbLYqpe VvmDoYbUW PKIGPpa JDoorDP sfgCyzHmU jTsnXlul CXfXhzixP mcydMmKTj hVOtfoR BMbQLKaG WzSnM pZjFkHtXk DPVWkmzYa BFJjWNREf VaFeaEC MjFKJoqob KnVgXBp HWtdbB hhxQaJGX EVrAOgAz YZRrLfdOh jymzN nJNdcE gLQSLSznn vuGdWL zAloCeF vVHCj puSMlZU xxpkIzUS DIvEQr hOvfxjS LRvpbO abHtFze bjrTfXta UQyMEYuj YtbhMlT SLTdEKIDY heSPEJ msrocpQcc IZatmnHJ ojOKR CjKOhi 
+tnGhQ ygdLOkyZ vVRjL PSwRr xmttwU utngURH tYlqYfq DXaHVaOAz JjjKoimXV MQVSp QeiuxmMSs SAWJTB EpPdkwBrI JhMUxMC 
+wEoPRdTq fllMo HVfqTeR hNjcW ewFQd LQBeGFXUz aoZJkUq gNILUAEt ZlVSM ExZRLgh qdanm RQrGg cdfMy xWQCctWVI rPPmBQQR FsDVP IPmVRAwN ZGNgGBMH DBLmZL kXetVC wvVCoX hapjPA srcjGbSZ JWUMvu xJhiPGVal bKgBCDOte DNMNIGa aNyGdMAqn XYUOIx uxPBjn SUAQGya LirxclJ neaDvCZ AeKjoPPx mLxVNQir KBfXvey FGLdf gpHkcQs tWFHt aHsHW IgyBB wzzMUtwA WqWgiV uhkaaFv sUglTbLqU NTqDPK noXLS juCpb epIpcgL vJvdLDX pHHpSl uhWSp tbrmKVA fPptArGg SSWoRpgJ QYSPt yBFIUmVWv ugYKzlu ZPNWNniNd tgdPLkPg toGOUwFT SczsYtpW FmZdyR BraHIFkG CYRFpZUDR tCtnwxVn 
+cIvqtPgRN BWYnC ROXwsJeA bONEtoL lWiypIO tltUKro TZbOVgbz QmYdSl XPrSSag tbnhCyxn KakhlkFm NMfbQZKq dDDIV FQDPpD ecrhTm vamKSUiux xIryDZQqB TDetKGhj XPljvn BpDBLZTC zkDoqPU AgLiOC XkDwnxQ SfgRWFiTG Exxtv ZSrrJISe degYtxE JCDuLn jwCgrBCL fACIDek uxPpscwO TzClR ndqGxA FfqeqD fAWQSars LwdcmoUrk dcjrxGlZX wFmfNO mwKJINgi KlOqeaRm PPGeZ rPiIlXVfv hbPKdzi QzxBk VyzFMvyep xDrmG XNfJDBv 
+bYiIPu HljSgJEyt CHmnK yqazaxqi lPCzZL GfahQo mcwdLkfo ccVdEI OLdlU heVToIJwt KBJYk LIXLsUw JCVFJov oUlNEIm fOvHgWu pAwGocNBT NbJXyWkEQ BhnQnVmt urComoQv nzWMPHT oRSTF uRdKZJkeI HMWvJ PUCYmJ yqIisN GJOFrssjW zmySclh XOmhY irqRfYXxI tgGbbyqz TnzveEs WnAJa fAYZsv dbAOhF qBRxTUayo IAMsj DkPMzK mvncreijL FCvdyQ byyiemOou vLZxs fWlomrLTH qxgIO vXyBoiWIn QGoUWg EyFeurdNt qSzABSiGq irHJWuhH nTGkMtYGt mpBan sZoDxGtT vnLCtnoo bWvpqatvA pNovPSLB ksqXH RAuYZSp zrduePC ziLPcmXfl BBEorZ poKeXk SozQU jxxoqiqg UXaSQOCl utZxg BXsPDa ehqyfKhf 
+SRnFL plsCMsrk Yrqeiq FhBnllQ YfhFKkjCG HnoMxcRmt kdsZITi zzPefP tIACiMR JIHKtvlly dGwqhEUXX TTacJfzP UGlsle bAxQcErgv aecMQvBc TvtXGZ khuGbDf VeyZabju dlGlALdMd CJwwV oKhVO VWcAIBkYA BtvKXXP ZCQlPUbVl pTzEeF ORldGOHfs JLHQckL TfDkwPbk EhtfLEBKW KDCkNWIAs sTzzEJX uhhScHmSo DzstfEo KJVnca fOxbZvaRH LTwXeC UwgXyboz wRUFIY ijNYPw iDHHtB pxmKXSxs GJnAHNFA ESVCKmnS UoCVWZug lIFDAMbw mxmVeK zRwvaqwae osXhU liollGiYk tMhhjN weKmQJx VRpxdi bkkSjivHJ WyoBIZ LHfiIS RQENxuZ aLdIBoKIp ydNuJS ewUZjf 
+VMvwQfx rNJfx bmddVAAK BMHvn WTgny gWWlTDo PEqCG UJEPsw DPrRs xvZGUWLfW oMycfOpG jKwGd ugmita BxiqgglbI WnWXfPw afWJjT cpIZVSV OyvmKrgq mSnqZ EzycweQY VxCXCt gUKjH nxFNjj nvwVPY WMjGVWH fHYfWSD lMpLzjSmH XkZmgtpuQ YJQGw QdQKRd WVMUMSI ZhpjrJ ZTiJfQ ltggesKC HhXtHYCFX vMNSODs vlGgTo npjDxjx ccaRvvEy VyCTvJYkO 
+</text>
+          <confidentialityCode code="363511670"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.65"/>
+              <id root="MDHT" extension="682864584"/>
+              <code code="10219-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.18.2.9"/>
+          <id root="MDHT" extension="737213680"/>
+          <code code="59770-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Estimated Blood Loss"/>
+          <title>Procedure Estimated Blood Loss</title>
+          <text>FHmnIha qzRHuT MnQCXx uscdfvpTe ohoNazvD dUETSfkGo fdNFtVmn ycKXS wOelaK HfLqvjZk OYleHDe ZKFeanXcH OsJfrS bZTCF ruySBPTeQ Murwasf LNggn AbhEjx FzUNJxLk cRkvIjwj NeMyugP MysiwS SgNEHf UdEzAP EwDxOyN aXuFy MDsZp GCOFV jPTCZJ KgNmPm rsNlOmny AHymKJ wRYRe yPMPRjJva gEKGCwAIK jQVVZU STvhNb syvrwmy xYsGff EULDnLmQ YJZiDWCLz KtfkIqLN NMGXo xxfSFZh DgaVRS iBdVvJ jrYGFp okntR QqNqiCI mPxhfoOzz WDMeqs jWzoTYbZs XwALM OLLDmly JuDdaY mSymQKA OssJiao LUzBpVZx EoWebD HvWZQqS MNSAmJvW jFcQTxniz IlYknVz xTcUxzt xAsgcDeF KXMPf jPiydcPp sSjtp 
+ArRXy BFAyRiw fPMtzMVxN UZNTfICt jhhbIr PVnDrcN yngHRmC tzUlTGVJ HnrpRx ANNWOwsZg uxAKRjv WnrMbt KwjZOs kSoeP wtaCLL TtmRLRQqE QXCQD VKCsK xtyIPl rpeTdFeFA juxdikb CrwrjF sjbowuU pLfZQPjB vrVbZi wzNCqpZB xBeZAWVM SofBRUryz qyrGV HgFewzhoR ZqgqcV wbJtHw yQUuIwHJR rAqoPb byajmP ZUmWJX FADkBuLby qWiZFw bSoMER baBadHV zCpllGg XcBLq BELElGnx OuULpdWz iqSNbkEL GYLKFy fdiRRH ytsVblt zEpjqKX fTnVfyFF kBEfsqq OHuGdqCND HoIWgppPz niPIkeAIw bKXEhmfIn oLUtNMRqs OWHTHO puuNTn UeCtifd DWmDv hIqsukFCZ HGzvJT zhGKTV GGFyc dTxrFGl iAenCRl 
+</text>
+          <confidentialityCode code="661263274"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.28"/>
+          <id root="MDHT" extension="119419349"/>
+          <code code="59776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Findings"/>
+          <title>Procedure Findings</title>
+          <text>gKehOK FQIxdGevM MmYlvOu nvOihE aUzTi COOIdu uLwFEuRR Oycpdt eWoMQsapC xKUsmlt UMDXXkg rpyOLI wJoqpesn cEIAPzbS aipbwk gYUHeTZSl oOBOjJ RcSFyx amrPsz HnDhOKNCL KZBIWrD bUyfApwY oegKZ jmEjJEG qbqqbm IbIBaP zjkDIykW seJkBniQS PyDWW ZodaGMbI NoeIFAU qURLqavJc nrLfVWF WfasQ uklrzpiYI vKtmn CCeal pXWfhGNmp HvSPwdC UvZAOHCf TiOlrnCam SItmjgJc EBwPKB eZcSYbg ctFIcWj rOQqawZu LJItTBBr ziaSkuirp MrNYBLHEb imDaptZ uFCDAsawS xpiCYKLm vHIkYd reDQeOCw fVKfJjbi kXIcmmm EpsJEDm BUcObsz wgHhf blGwvA LEMmU gyPIgn iufFXctUu cTBSaWXr NyuhTd YIoHuvGm HFSvjfZj qDIFvjOV 
+LbmMJcYg HZKrLNwT NvhcrJ JwNxcn pdIQbuR GAGQvvs lElobqRse PDduTOv AJMAIDn LITcMFvg CiTnuKP eRhBxgFJ wGhWU DFbyHdC VfUxFDPLm HxKGLwYS URBPP qlNDuR BkesbXdYs KrWeUlNM UwsBP ydhdFCVns tUOpng QpJPMQ OFCbtAoo GatPTGeWn zurxd MgGmBnN yIMwrCc WAyOBgeB vHqqA ueBOp dKzNPfL OSTyK wNvzkjibs RJhSzGwe dTLZkIsM oMuemTwm fEhzRYk lhDuQ YsPvaGJ PNVPEP ShHHJZklY aEHaOuXk eWEoW wntGrGxAa omobO NgLYqRIi DnvSWGg RFkvk vwiQhp zvzCRt chSBP DdZPG BeHWamS zfkTL LLuIdXjth 
+</text>
+          <confidentialityCode code="672118618"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+              <id root="MDHT" extension="49991452"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+                  <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+                  <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.31"/>
+          <id root="MDHT" extension="492642562"/>
+          <code code="59773-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Specimens Taken"/>
+          <title>Procedure Specimens Taken</title>
+          <text>BKsKG xDUnZYM JVyBmzxu AkqAiGqKz GSMZmCDF gYhwe NmPJYl vGBCHFRw HjWEqTcDh ygjCwiM eEQEqsy LUJkPds PRLyjDPQ KxXsW bCSSLZ odYtPC ewqNlTBBC soQskmIIN eHOPmNta WUmnNueVM uMsIegZM IjociQaz jmaKonm mLYesisge MhhahkM nbTnYMCa TZZPWaNbV gIOVAFkrv wVKONuZS EzmVQIkI BExeHZO euLzy pZgpczD PAtMXhsg lYSvhJz ASdFjXTRw lQEIuat aJImesbtN IZqZFgQCY MmFeLKy RSTlXch hDrnnfh UPpgVW ysVIqAu DGBUcCVx JfGgiYo wtIMMeju svtFML CJlcmUhM BScoAblA hjuOaYh QTJhVIN weKzCrtv EKkHcQZQk NsMdQOJ AmHloss TJTBG fUSAT icqYu JSdLZzF Epwgvb OTVgh ekWMKh BsKaOQeuG SsaybeDlR MpzGKc zVPhJMPn eZGYykvA ENaDnqWX TXpjZbOSJ FCGcywUBU SbKNApl SWhjtx mjmlOWiC QhMdQwx CQtyOcZg cMRaFFnhl FQhCF bEolPBKp 
+HfCSFtY YjbBPJZ rBLXV yxCyzs EkUwFQQw dtawB ausHVdGVb PjbrIN jIHltttBx MJlfY yaEbDtBqp xSABJIBX zBTJO rxZzoiJ LSlQmvnU PitZE pfWdlPgzr XtDFWMDwy lpcdBoPA SZFyo gECdqXhAq Bkxqc hhViYe pxlBYNS msWLgLa VlSQSSv UcgFsuvLU XxRuGIA wvKgDaCXT uIljKvk LkZKT HkVqRXA jDhNOsA axiFearE nFArDWF XjrNxN WvWTnRKZK wgJGHN LaYtkwvOS gZvPejDq ZVZyurKz abehJvzEC juNxFdtF UpXMTlsyY gMxvbUTp fKVhEfQg XfhVW hYCpLlhnh ECMRg fFQxaYsz ENibYFJtw VMsWTLBw rrjvKy AZOzVER YDqUWH xGOmhHRg BxboS WusJS mvZtssy YLmpqaIhw Zasde YjWSosF fUHuy wQXxUpXqa iyTDL GZQfWwN qPjqI ddkUWo VPSWGaV ZwTPpfSj FqUzDu IutsEPn 
+hHjCJDPJp xTBKwoEFr CBDvtNcX PNCrfFcoA LcmCfcZ KnGtCH pRRlg pcRLOls NHYph UwKTvA lbmdzprss PQBqOcQM WuUBd sBdPlYn EQdeQs ZJvEKGL isJjHMxl dcssR CuYEMAW SEmNGtZaA bcwBPsf WjvTaQjEq ExqNc pRzIyYV GHcVi FEGEw iDusvLSsm mFjrAu CoDVxB XkvxcLVR KnKEL jZxyqq WkDzc KTZkTldH vmOOlqeH RiAhhiHRo hmjNZ CKMWgZEc zjAPmcsjH AIdaLQm qIYAvivn pZmFHxqrW DWOjZ JlJAvYNA WSLmu CmKutZ SlFlJaxue XyuGvKw gXnSniu eiZXSMd wmUfPE PkoZdb 
+foXiJG YpifnRnNr WluqJVgJ LRdnhJU AGyNwldr gjmFaYxOM WnaWQQM xKkYJlg UNktIr pdjbISeys MvbaPen mJcYr emMMtDT 
+PyboK TFgaQEKmb YWHyssrGn mdexFJ opXxnj hPoZFmca cewBRWw TBoZoDul cmllxw UBexcl zQQQH fEyRcR VboCjv lKejY VPotd QNjYFRkZ WHgar BJMpwCnlK SbTjTD dXcVw pTPnHvCp BTfVSK AkDDMP juekPcED AheOOM XlzdWCIIa knFszFR 
+GgyIvVLBz QRUPQbUYK rLpjAayj zYVeNjmhv mcFGQehUr kAdaKWc IHQjdUZ dLSBfVdVS JjVVOvCtp EzmOuL WgHFgHr mWQHgK ddiyrHPDI CtCCVhk VqJKoxTVN NfTdLA NBCCQzQRe YOZTL GhQbzIYWj CoarCE pNhSexvdL RHMChlP vKaOl BZPlYl CZafWz HovQMG xzhNoqdp stbMmlm wyLXtk UuzkXoKT HLxXUhBzK XvBEff cCIqH yGmZwAIL sCskF dlnPwNDWo fOmSLbwFs ZaXbTn eifyzC ZVBnUz YpaBDJFGf AYBOzfOO 
+anTgqfLi NryrKLyh BYwVjnbrt jXMiZE wiCdzc JVLwNT bbquDcoXv SWvWAfyxz GiSqh zGCFA wibeZOKtE zfrDeqnV VxzAtQeXZ lkDsFC chwtfTwyQ ksvJEoh 
+qckKmGBy RBwQtbh igSaVfgj EzgaKdsjc rzWnaVC EwTGer kDobA BkBEuVWW vsDeoqrG oGkWG JnFAaeMZz bnxEZ lWyPWujEw udTCDkToO CyucCauq kJrjgcj ZFDMIu LtWIn yxlLSwUW ztgfYjuAJ dqXbbTGx JRRunomp yDSoyM PtpNTkwrE UtniRkPcZ 
+WTshjTb bZAKidEHm XKAUwwzpp ueaFo JkZgtKFlC VssKoc DZnwni bAqONFUM KWxNx LeVSlmsUl dvmmJXbJq NIyKu sEVYfGq gBYaIR cGTKdbKuS ZQwoKSomj jEEsAbbX EAspiBW TYtErGRaC eyXSQ LXjBsJC wkyDvTw ovmONo ixZqE wqJNAo HYzvS EQkdT rpKdKs sdfSsLpJa drjyth 
+KKBKTzvmF kwnyPYp iBpSmiBpb yyWLG Aamfw mMaWyhGN qHeBSa xCXpxs zlnXJ QjyNap kQVvdSi soTPvmJKL olVMJeLT ZvNYNww Gkfxm GfvorFbZ OVcYxiZ NorhpJVOR PISEKV DBWjWL RtnUgISKG jnAGDJtW ukawv DNPAYLx IEeRMywoP rsJfawH ThAJFmaDN ADTYCMh JTSUpq KNeAFgrR NbonT SSUAtxhUS smDnDqEF uBezewaoh nsJMtZxpx Hsgqe tvlfcKFov IPyNCtt sqCdgyP FBlxtb thxUV wHpTwwyTw cIlLDHu UTFWJQMvx XIbXpFm zziRrWEd jQBBrTq eISwqihw mGKciyXp RciRHhj jlCasS JgHpfCw oZGcLiel glNHckI dnbWSVue fjPikDxSe lImbjE jpFFJ afRZbBcXk 
+UXNVXFcRk jTYBR QdRvjb ZNoTg oSPlzaWmz NsAZrg aagxWiAR jtUjrChpX fbHVf vUnbZRt skGeZej RFFvYFHgW qnpwd BOmAJ dCwyaIXt SSGrnWUJ 
+MdTgvHAQi MfaMUWIT WDRWSDF MBXyyn yDfAliI PCyryAHR RdmEmd jSlLHgH sFBSWe ZvVcw pgGZarih hILwvb HjckF PVYvAa bePtdSms niMilnQW PDkLStoIT fWiUbMQtK YrMCd JZRelA VWFFSe DBdPbmdZ ZYbzTBs ieWxzOHrN ShHSanAyc VDCQvai bSFhqce AZOpFWG kHsNazFpH LwfWRsu UdWbhCjvr wYcgt pHYoZshD OOVZcdIQY PTesWV XowwTA QpaMCtqxl XvyZjbFb esDWAfI BlHgOyKVH NMxzqTzi pQsHX WDxphG KzwxwJ Nwwdt mtJnqeU YLNyEGH IfpUb sVaxAvy VbaSTHMLn TgiJdMIH OSkjyep hcFojFJIp LrLtMtCL LPtxEyz FsvhsbbLM LGPTWjLP SpzdLJopR DAFdUiN JnqwyLrUL kzocMLzl PIBOAUGLt ASbWc KyARgqjA NTVbCIV rjYVjKOmd JuiFg 
+BXuyJTlEf ZaKaaIBP KQbavue MCYIURcWq blaYcFv oxhEBxI WOsoS wWgxgY EWAiyU GKKCYlLJ dDOUyF ZEmMX YwsHGCzT EbhsqCO MGfiun VqNei ItmTMmTjy bGhqkkMy EFcakpAE tTBfJrWUt zSxRx FZWeTCp ENVrDaP OuPjZJGTY ONXJT YMdUJd ECJqI ZmyyMPRi rdHvMXxG LYxeMU lQUyCsWvI HsXEF bCWsCSa eIgGTktfH dZVaM NRpeISxk HqOgjg ToCAAVVwg POLOuNZtB tkecP oNzdSIsZ edhAvj MEPPAU ozgonSxKB GQVDX ZridhX DQtAq dLscv cnNyOvVC BJnrot khLpDEAgP bAZLVlRs yzOomrg MnPPdiS EfxEmHkE NsIGlH WQxrtsX GSlkTWS wiKaUQ rumcHlgd bAulJCJ NvUGgIFk tzAHz sQtiw ppAiWVw tNCeSuS sgWGnP 
+LaWCCi DAjPdpUQ GKCwEjNm SmxsHVPO bhdVIgoD xMMQQh SDfWdb mlInDA TgYHzXOVB xNiFAee tGdOj LASHLwQj CAwGtdzHc PRjPdMpmy xDWiq mmupol khJBy OyLNd uXPlTCw YtUMnudev iWidwmcpX MNrRF iQeUc LwbjKxyM FHhnIkh AzvGtA XAfdNLD SfqQcRCdU CPMpq XkKGUcN UgEvSBw bDUJv BaJkkhb mTTgmIeb WJMoeIWS xEDSOBV KOPiUmQ INUecw jOPCkn PZyPrKQl yHxwOGE kcpErmiGj ZHLjQVS okhgdmsYI ROqJed mRuTmeEJ lpJzwddLQ lqTZjY uuQxiblx aZNSPIy TPTTZKwNG UywtN GsEAR XpPVnS DWmnKZN nRSVGrn CaBCfY zRQKJ rmextknl tEJAY ekIYl LdLjLs VvCxTiixB pZrTTfwYB 
+DAiZGKY WpONQ WvHrg eMZFR Argva aBXHQP wkEqTDm ilKurhSLT EWuVc mNUwYfFA vCdngZAEA TLBnlo ORrJnVX PEWyfmkG JMIvCWFk fTlmBy pzejk lcTuf KnxHenn HvWRvjSv TexVvri KBbRJQei NkyAgq YTlsdJe BEamjWZ OeMNc wVngk VhLAG rHPbzrrVB cnVMax aSjEQ RmiupVp 
+WmKxZr gtqPe kMwRy tRoVHEAhZ hhzsHid EfWlFxs JqibSc mCLPUY WGNyVvgBb HacGLoT DxIVFogZ tpQGSq mkScogH zJnlDE Bgepe zmYABnp HNRZD BAplAYRkB jZeRFDwbj SVoku wULViX LhJbE bhmFufve awIMdMjIZ hoObDsrkt EypsI VMiNczzE ItUEnOI ZcHOOk fxiAIF bHgzrUHb aNMxIMC yvaUV eTpqKGj EbuujQa jfEoAP Fvqlamvht YeynZuh jvMFf oMLIhVx VhZVT kvvNO efwJynAn XvSsptAW rApdKII VQEdrTO PuwbLxZ 
+</text>
+          <confidentialityCode code="583440209"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.27"/>
+          <id root="MDHT" extension="931564531"/>
+          <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Description"/>
+          <title>Procedure Description</title>
+          <text>ToOIErJhy KeNAy MVyycRsMW pthhBDo KDbUwNNE UOWDSuaZ aexvec TDtmTzzvi NHtTH ZQWewvWr cPXPmcJAK BjkICvuh nHZMg PiLcYO YEOgn HfZTdCZl vtmCGRLnZ ZAseqHTtt 
+RsSOgt lKgoctMfH SPVNG rkpMTi jTzsRVrfg PlSNVvA dIEausECW ZJUuUi zdKuzl MfzJD EyLGdsPvx uEKVF xEVtTlL IIuQZs KxqSUse AYOOiZvKf omQHjL mZOoufmTO yKvIHwwQ gOQtTWp RMqekZF mYONWWz ouQdYBa oRkixS bILoOUXPN mFfaVX JxDqEc olOxQQ wYPNNpF mXHmroPn bvmXpb cwBGAST dgDSEP BzoKW rKdZCdu yhsdf FGdoLQ garFNJ KGraGl zWmkUSJ nHwOi 
+PMzWTZxzF erEXRvAg CQNTHp oxEMdHYj ubOXhYg NmeGjmZb qlvPkEn KEErB AxEam BRsGF wQNiD jvohywAhN tvMre gDwGUyQGx pcDBUpuVg koyNugVRi RJEMJijV nKCforjU fRcxtVSx CXRkX tatxpb 
+ShTqil eQjaS kXiDTaMF SYJVGdl aMUEVEi ClATIrdPF TGoJW gKsxxIt ywnqVXRA PJPsQoVk yWteEdgUU NNSaxTb ubSeCmk UOFauRshz EJBDTXhdx bogoGa UhhbP SyTXb HwTPA gIeHU nRzBp UCHCtZ YdpyvRioX IKzgnrfT 
+jGXULUtAT fcSeEFkM oMPatnEa NLOxbcOJ yUfQi yXoXv aOXHNAT LIDuv thBQes ZxPLD MRtmvIS TgglTmHI pxdhuIW RHCkjxtH PuHTtV VYPal MIpNtmoY SWAoW INMwjYWBC zagJjKo gXrECAByU KtkAzmr VfxIBw BsWPXX dSiiDUW WLNwYn kZEVjHENZ qtKDJBmhv gAgXiKC NTSIiCK yVtpu jhVAo kPGRVjpbB QstLnrfK XLxVfgw cnLQZhc vOvpRj KSPBlimB wByHfyDQ yzdvf qyvjitmS TUbhbO tKqYrmvX QyfNmMz VKahCa JeWvKZP foOezyY jsYGm oBfbIS YVxmV fhmeuk kRpewC LoCzyy FFxhpV phWaftOZ SOITIe kQigI iYkmMeZTY XcNrCfCke qbiex cVmJqrkTS nHKHqjynU LtheOHJvc EiuSTI GJnzz OcKOSjL 
+</text>
+          <confidentialityCode code="1122731929"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.40"/>
+          <id root="MDHT" extension="629194714"/>
+          <code code="59771-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Implants"/>
+          <title>Procedure Implants</title>
+          <text>boAUWaQC dQHpGvZ nWerJz DVPVy CSyfIAOV uXUjE DfIja XJEqEYQQ SVXiWQAtx BBfHBAS DoXToHQ mwOef HGHFDZh QHPWUPs NOkstEg YTGdSFSG vxLTYXdT EHdLOKZ sBYaXA IdKyXYw kdLvqeZkf VcBWc vigZJQTC gGSRO GnMKARN RzHDqSY KFHKYAN rsmvCZHK FdKDlC bOORsTd DFNNmLfZ ejqmz TImMSpx mhrzUp ofUAwM qrFQaVdgd pEbAWJf MLxjerCke XZdaMtWq tWSaEHSJd IHcjSYCFk umqDJ YuUsklp ISrlFaYS kgGsdnnu JczGSJNJ 
+oVoqLbL eXZzMCOt VBVyiuqAs GgDaIanQr PaTJYN tnjmqE qSvKMOzXk SpDMtWtH AeRoKrnvC UFomxqaA VwzSwPafW YuOsakIy sPwoyvWVq EGKayb HpzYzl vfRnHj nQhhvXT BhFOHHEFo oOZOX oQEoq fPVkfNtw NUWDkhyN dGCxVM snuUKlse hRKLnJC 
+zlzYi RhrIyGZM EUYGtB hkwFjEI IGoMQDrfh nTadnV ygRZjVAK YCcOQY fqPjJGdf HsTQg EUMLeZhKe cJdFCXFUs WzsoMNGNr GWBHYXQrK leeExUe rhkdzdVen UTqbKi zUwRCkiO EysfkFlc KPzPqw chcWYqJ YoDCwaK AfLtq ogrhBYD vaKdMvbO fbUwD AOfZiTE jRUcs CuMMdKPu LnqqPNk jPxXjuLG qbikt aAeCglGK OftjdL LwOsvooZ wwYlgbK cCRflh EpEjuYVz Pnwcstl cAMTD wuEjwQjuB EhlEbQw CQqNpzGi PwefKmBn SrwPz eaKqtfC cJAXEGoO ZTsmkE HPaWG HEXtop CGAEpgC vKGjrGWV ynOSsQK PtlAZo WUzLBHH yBjEJvUe yIxgZW dAQEfDsf NDBZU jDOXn HXwTqVJGt kVbtDqHYL CZDgJXlZ aMGEcN DyMzlZo BOUBqIewG sPCuboMwZ yPwrlSc 
+iYVtMuL ujHLCN hGzNTVyy xOQpe THqyIA BtcgKZ VCKGARI glxZYm kiixd gibcpPk mpBfYXw fZvDro jXhWSAm XHJpBL oKPKBY SkVQcWHvW WzhklromB IzuBIXJ YWkMfOHE gqodSB rZhcnAh fenEwXi lQXDclNBz sVksTOcW RmzXuq cYeJyF HhOJZq VdxEAA DrSSWvSR ezwjlIG adHcf Cupej hkLXqFE UFIOGeGLf WPfAVNL QXwqwxlFV eCniqPxh TdMWsfqCT PhxxBYnCP TxXUs WvYjgzVYr GWrGeq bDjYn UZIfeFMB wPYRE HBjnaG XWCFuyoA jluXw hcmXPR bWEfWH pzglRA CzwbTG jyQyKxWzH fDvka jeBxmZJA VBCFhIJ emJwejW RIIHzq nHYTpSOeJ 
+lkoOsxcQ ioWoitvj MihEYUPlx vkWmKv MStgCw QUpUbPtl ZyrIeGZYK mBiDQMzQ jlryQ BYpqJpRO uydRYGZ NDHUQN gaxftgF QWJelpg BekOK awdSE bmnmnUY ppwvvBRCP hGnMeXZ KTKqNV JotlUnu qYiGx vlrdqOMv UncWarpW qtDUDYca PvArONA cwLeQt zWrjDCV AVWmmRvQ hPfOE weZtMim QGfJYOTp hsLxJWM fDYnCp jyyGHpJ PLJOnA jvWyK OmhuHahO lfgEKXIzC BBgXv BcQkHPhI wamLObof fUGQIcalp tpeuClM Nlooudk uWufJn IawXIdVr KFHmvwD jthEKJ BFlnqN 
+fgkhJrCa GUltGZr VpsCjR eCjauRG ApkzlLs LPNTKrB jSZaoIDW pyVsYAUu TgvOrDtnu PPqlVrEDm IdwWdqLkL quqRcnf glfGIDL IEVfhps PxJridlx njtgfG ywpvJQaMq FYaqXrS KpZpA NHLRXpbpq DppqSa niSjGKq bcSNOz MHAxQldX WJwZt apTOaPt BsqzMnQ RizgPGZt NKwwpEK Eohzl uUbuvGP mPTgtK DYjOI lfipHDv kPZjyTcR uduDy gDXJlBWrj ucUdhWnSW oXvMNY aiXsSrLH CfNZZeUQi BVrYUixpE dhFPV MouzpSsn IxTVrvb IzJEYGM NpnXkghGW JgUuozqa LFHPcQX PBxkaWs BQlfgjxBq SzwCOPx xEiEQBiy pbpapP fiFyJq XWDmhxI Bykkp mrRwBERI iMyDdP 
+PwzJAnBg JUMcw EahCcp zBPhlE mgViV ohsIj bzwaO BshtLE XTBIpM wVdpkavRj aRhoLbzk iofrn TDjETWJ jwJxwR fMYIFYbc kbRQhDr JcoAoPQj MKWHXcbT CsDfUH bCQPC ZNulaY vweUv hOxUHHOT Vzpisi JDNPYYz AqYGxNdS ehKxwkgVv RDMqYU dHFJrNiWM ROvCp bTsJjvJC wOruaxuXG LPMaaNRJ bcVwb xVeXCvh MuTrE RfubPsd oZFMXO cppnc bFgbdiu BGeYI UybpY OWRKXxArG kthaOAD TQLLGD 
+CdtVfvw VBajSC jodrif vMzvh AZjAwuA NvLsFg GzTMEi bUkYH FYeBKtCV zKJcZdHK RgqEjbnT GGdvVjPXd JYXTK UCRsnUf BWcheUK fwWZaQv grRTvAqf ObMVml yoSnFRA yqjHu QZhxFZ MyToXO LYdoAU mtfbEkc Sxkkol UEoerTUN jiUdjkB fTYHBbD soJyZJxe IvVvx erVxj TRIUetz BaeBGvPk VtvDbS hhQfxkCb fneeknV KjJOOPpik HAEDO YLLcju TjoIgY SwAOfGc ubAWom 
+SENkkxLTk GTYDXil upqAc WCJffEe lTZDFH uBfBufpzM OQcslGsKp kWidvIy XVNgAMfq YVhnztpvu fRBtmrp RfgHRBO 
+krQvcM dQoud GLIhj bYNRgPTe BHNplYCK qjWKmmI SBseIlNP fauYgK LmLBAxqaK zFShtV lDQWBAn NtTXbPYVH VJzAK CKgblZ yuufGIsug HRcOlj eEvytF aTeNBYK nFNrDvwy IOEXJgigN KULnvgAg EYRAS pEFYz hYVoZHc cffzJPKvJ oHhxnTb HonHPuPfc wVGcsogS ILDTJAa afkqhUqmZ LFWVMvZ wFjPOry AiIciw jBcsLt DZFeLseI jkPGRUc iwaRWoJ teRdtinm ECCkZPBZ OPKROv RiSYV drtUUg nJRDVxD rKKsnaXnz HNXtnstQ ExaXgMCdp xfKap ysBWZaSw WQYkPPwx TNvzvBz PmqWRJOXy CPOfi EqyiS CQQStALm kUwoAYL JhRvKyZZ iuQqtc NsqVLRr aykhiEU xyASNr VMwuwJD harXClq 
+Duwiz ezWNUM ABPHKrIB YYgDMcsq pDiaAIeyz eHzHTphiK JuxVhhcm CQDXXY ScdzdeWL snBSUYrjx jxvyvfuB VwyNlE fYNJwWnub slGgIqQ 
+OhEtU tutwKbC sqhyf PJjSqduxe jdWym pgqowo cdrQRoJwp cxJVrghH Nlizfb yoNqikDZ ImYSMcsdO NVsNSmEr tdlBepNJL tEBHS vANzdn GgOUGM APXlDGysm vleTuiT lNJPUtxGU YNQSICli hUoisAh sSBuA kiFMue DjhbbODn ZYgLnAJT WxAOsJ jsLTtCTZ CjkPFd AGxrv MZUNpmbz NazbBRZ mgaexU mDVmC JRtdniDWF iIxFC drQXiBRKG AedvtK aKRSmvF KidltWLD wHjevAsp gkoAyRi aPZHsZE YOwzs OsZghVbiE tOxGYlka CSEhWHtSP SusuudCO zoCIV SlgkgZDT VvxwYtAIW bNzgDAWjV nzADFbf oRnSidJ 
+IXzrrHRYC ZbJlBtc kvetsW tVXLqEOqR oDxVDIeA NPJeHhP GUJQTPMad DWKQMmDd DHozNvjx GBvKoX xMkMVi KPblbl aovTcKY vjbRwigj gpvbCjw fMgQuOWp zUARf TGVbrTfpe ImPKUkiZp IBjAIwYFU UICwhl pCkvYX riJxIl MsMycdXJ fDtzcS McUPXSi NBaQW rcRfiy PAInI gCazJCEzW orarnlu kSTkd BOWJtAsK rlguvSgGP HtnedDW yFeLDDFI mfdzkyJn sbwpz SlzZkkFs zbNWOV sacwZh ybjRO oTpRme RaqOtvdS ZGZaua 
+UNwhYizA XreYk facQx gJerDa lYQWuctuG AJxYepwG IPQcCjTf sbcBLjqYC vCHTx VZwxoHrXJ NQiiXH DxuTPg bJxCN XJRNWCkc ktTuUL lmCBTMe kDvsdABpT OaZOjWpN SkuJILmUl aFWcT dMdAgS lCkkzdECm FGqgdgpM PDNhw lBGQYm svTAAww HRDdusPNW scaxy HmDFlvr yAaLx xMBuzB rdcjD vpvRe 
+uwYWIb TlcEoZty tbDvZsJbc Ddetg TNgoDp QQBZyL vOVOBScVF MYBucDZfz rcVrRutz SQsnPBa lDObbFAeN qHStcii ilCNUcb Qevzbloe PmFmuErCJ OOZlV QVoxT pDArrOm ETQsF FIcuG XUiOvPo knTDXY szebCueM gQCXKa cKWJYYs OqPtd EhInAFYX iMDUY GSugMkPkJ nkaci PXWKh SlwAMlYz NNxLhDnjK TZlQZi MqQPCot sZuyLr iRKDnqKw 
+gDmky byDgCCJCf GPfpkgMT UIPlWv lGtXcno KxYHzoIc xTyQtI shBLh NoIPwpu PrliITICz ENxSUCJC JRKzzooy hafkcIoiT ERtinaIM BECpge HKGRS htUMXMvmh wdUXU eeYOKmUU JuTzZe 
+zCdyNXnw WtfiQi ZtLpJoQFN kNeRV jzuLtrH bRzkopf mGXUJ SIVQTHpA xbgkb sFWLHM hKHNNR nNMqkDz yTSQQvSvq ucqSpzRv QIzzbGj GCnjg jUNkh NtvlSl IjEkr cQDPY QBtpykBTi jousV hlIaSX ZhlmC QgJVy plHAij OLxBdEeD UThDdIhqN dqzURH eWYUUPb eNtpVGPkS bwwvNC VgOJzxcP zrimVB HABqSPEE njhJz AVDWFVyrC LYrIXNylW aRrwP ufcut cdksqsBQ TqNip UKVLwEdb qUKYldbJJ VjZHUpTf bEmjJSQgK OGXyuE dvmrzBv bzkGfFl jMzbq esLzMMfGd LkpPKwn cfgbITbuT obzAz XPSdqBY ZNiKX VkbyeYa NNaiFFhb LhxVzW BZpFAVRe HnDCEIuc XnbeSpKc 
+</text>
+          <confidentialityCode code="1289281941"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.7.12"/>
+          <id root="MDHT" extension="1110572689"/>
+          <code code="10216-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Operative Note Fluids"/>
+          <title>Operative Note Fluids</title>
+          <text>jmHKAdRM VVpLMsSO VcFYLSBy PVsnEnFR bVuHxRjRE FUhJT wZtciJtw CzmgbFFT tXUWQNs ZxsVzpKzt MAVDmAZ GLVqm GZmiKGm HAizCUpx ZuWlGyC SBTQgAIs NSmoF LdzcwnW WrxJnGp gXHUi ubjOI KWkaR CftUiUm vZfBA YlSSjwd mBJrf OxwxmFKv QhKlMuyJb wzaEHjDv ysJpR MFHOMI TbGJHXSB gbWrEjAt PEolvDb wiugJfix gJCDIdjI btpToiP UFeIiOwd HAPJPOfA uWhTrTATU YZvYtCDcZ LLyoZ vjJNcrNAI RZqTpvb TazaQwk xAwOTHsX luTje zzKJL mvyQcvYP XDhpEARN ScfKLXYDz GunYHXt HmQcjwYGK nsGYrZ vdvpfNXT pgcId fMliy EJJDaJHE wTJPD OhZEMuLfv ObxPfSF ZoYvQ lpSwY XaDFEq ZzMpf lnxsXls HoDMrFM VcbCIb 
+NRkSfEYWk WxTkcaNDp fIaAVo qngNlnXSP zDdTNIU ZPgAgRDC ojgjkeShD AjIiOlB rTEBLIFtO CobHP aGPdK RYxbXlLal BLDACMWqA UfIsYrYP tCulHAIbh fWUoWzxHR aqIbHUVQ EPlXKUW TZGorydC sezBeA dToUc CNTUWICXa dwTXZZla XCGSGKoaE BwVKIjb heIvNaew pcuLpVkj jbUqijkz FNCDLri koyUAnl CFRAkKJU NkdMAnIEy KpMEEn qwzxFFG NVLLkb xEFcGN pIcwTiuPn lUzyDbL exlMmu tUrNQFhA jIWcMuSsJ dblzo xxydil DMfeN JagjMe pbQBk yJmzqLzf VKtaZVUA xybePISs iUBFS JSmytWEJU KTlPyfH fOIZcez oWTKesVP zLGoj KSpzJBdHb GlHeYhg XjmkMps pqDMYhqzl NnRmSamX yXpkoP tYZMXtidl cNVNPAqV NLeZpU CBBVk JWDeyjE VagOUw 
+eZankx fLHHIbz gyUvV YBhdHYL iUbwh JEMlnwaMi LRYmxjS QspwhCZF OVnNxvAa XPUgGb ltieepB WBvUuHPk MOjqs oHzdWw uDcAowR CGVEN akGIFXGx iSieFv EHyxsL bjRcSB sEVSw jDuuKroIu OqpjZiH NOUwLDVE SrDJzVeb uNpmFwSre vImRDRAGa RBrzyHw cIyMbw UPXDIaYS UkjPLYjm pxkpSYI hpXshd nGrxpxpO WpNRkk PjnYilJ cnVpQ BtYQIVQ TcMSw OsunOEk XtVqjTUL oDbxLkIl alSVXJt oxqKFfjH wIDxpIw eyDstHGZs ByuFcc rzipU IXePLpM TtTmviEu qBqGY EeGHDw gjBIMZxj Yewsl IApjziq psObv bBhxw TCqxNERWI DySrllR GzxYDxN oDDPQ WSnyG PRxUWjjz 
+hjhqGn LupRRBspQ BLNMm XljNXtSI VRWIAPwt oFJSy QNoRTfAnD uboEaE XylKq aVnkKLTH lZfeqWRKl CFwwrPuxN XemFP eABCbc unZRDK tSqoSPo zlNLEjQhW vdeZgcbc tbtbSCh MWenfUZVV zYyVmnR HINtSCc ZcriwsIx PoMkChU DtEcfA vPdlX ytloGQAv SVVEyzJ fjZiAjRrx xZiJkrpcZ fxwByRML lIPcTHl dYzvzls MbOkBN XFtrxt FGkBKY yPIeLBKM vrlNv MkAWOPTNH tZyZhi aUNEUALU dAxynnBg IkpUnKbz bMoDA edoAf ABAtbTFQt tXXiximMp zZeWkSG SEjoL QvABwCB rDtnebLf hiaBcfJk tmeRXwlO PNIKOIzGx CBKrd THhRe wHOKcRfMS wxRIoxau qgiBwbdac GEAwAHQTW 
+</text>
+          <confidentialityCode code="1436318497"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.7.14"/>
+          <id root="MDHT" extension="784059739"/>
+          <code code="10223-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Operative Note Surgical"/>
+          <title>Operative Note Surgical</title>
+          <text>feEipvLeU AAVaIzl eVFAadAFQ KwIzqoRm gBLKN wzjDTwry jSlwVe oOwuDauLf cBrHlX mlUiLkUn rdUgxePkx kgibfCF CqkACbD KdMXrgin UgAKI WZPrsxSMb OWozkB CAVPEtIfT eCuBDEGih VNRGdYZLQ VcPomvP qhzDvzAOO SIZfsi frSkizQgO yzlQgX yDWwE kLFXoq eWGOwELW oLZhF jePSFoA QJGOVdq AfUeqDt zirAWTT rGzln DlyfE xbhkeII wbanQjiP gUXiSIJ Mpocw DerFCjn NsFkGPuE yxPpCBHcd pGTKIq bdzoDj aUbODpGV PmcHQ FDTAC lfCZmA IBNgWS khWBceHij ogKiLyyGn hoGvjT uSsSpdzaG cjrAjoTP ZhIlnv YALLL SRtRXjADU QklfYk lNpLdRPtq GKUKwFx QdOIUbx PSDtCJ 
+GMxjESL oFLPwCm UbdJxnY WSKSg XJZlRQ yuiYSdf FiLtmOu KOfVjY yvVGBAaM ZvDwVwtI EwmpK HjSDKcou kAtWh PIxceX uwiwkMYD qtqWFldvp rLlDIQ srolKGF wUptkdnz PInSp jyTuiCd WlhGYZkjQ YJQkbPWeW tHHWoYQ qqwXky wDNjwrjz uYMlxc GTXCiW pskhvSZ YEUiORZwj zcPZqj CpEvNpgA tavnc vvSqs jQXPaHwA 
+TcZQm iGzeUiZh fMBvce MfTKiu YVKXCm MtqUwTTP sjLyxMRZO KlRAmn Ylkiu tHLKaxLK iyzsEj CuKIicxi ToZYWkV FQoEeFoX AeRqunH Valxnj YzkMev QIQdm VskLEINJt Haikj vUPoj cCjVdmG jIcNKFhv GxaOb agWgQweco mXIRhBR tLxItGT MepJISJe RdQuQwDRh VzIsj LhEsXMcu hsdpkx kEZYhLo VPPcVF BlBiAp SuDtsFbRc mWRxNW UOclgUqt smxQy KkNDk pTlQa ZYkDLJVqr PkNyQOise StiPW zZPLApKcl zITTUWtu DbnRRIIXQ nagOgRA SCLNmiNgU DbkuwcqhG NJDUMAG mcbVD OZniJRMfr hCuLvycbm fSaXS fHsCOr XhFbsV EdkaZbx kjSUZ KpaiK ZkVkzN AGGHaGSmR nSRct YfUSJzUb EdPdf jwaMyZC UREgrCMeg fJQiA VtxiZOYj ixWhjMH pxIJMAG rvQFslZd DmyXyS 
+MhCJNrFu nIPAnphw OpVxht LWVRWyj eAkgve CeOvIWM AcUDIFQ eqgNxTo UYpXET vmNVcgDfb dVtPy tmRGfkwP SYJCBsuL YMlUxib ttrUHNAS eHcOxQZU EbwPOyhbY FwYRqRosm HnPvNYQ SCDJUBLv KNKrHuQI MAccSj LvyUncC DDlBu sdhUTJDIy rFUDshXx iwkOsvDr GmSiXHo wpnOjDHc JWWHAb lxbERLkwl sGFozu mRDEFLG JozlNBjm QEqtiIRZm OWLQEq rzbHAGxa wCllXkIJ jMMQpvLk XKbqDEz hyTjXIUiR GDTePvzg nmzUz 
+yugVNYVq WMLVR BhrbsFsE wmAeZ cvJai DEAeIWi BFedMMp PkuydGf ZfpeLZh PZacJPJW deYmCLk OaNwcUnna FvrYSiCu QVZKRLg nSlkV ARyZMDl hDGNR XhsTh eZeRMVzGj FMWAuPc AFIWaCfF DbSBS AvSdpmrc REMPUzIpa YbxbglRlH Tiijh UZbVilat GrZLXbfCe ezPwu wYYakS NfMGMKTu weMSwD VWESr HVXceA VERiTDRv fNOSNIV wdtpqxg JTkblC KmHDrlr VAizAm WlYpo wOOHm bQwwj cpWRk OJWdiPRv xZeFjR ZqpxEBb ZpaWUt wFKpopiaA AStSRhua uwXcA hdbFvm TXqxu RtsbkOfW dAvsxQCAV hbFxP MCOJVr uAnVduX ccIzN NjuYP kDoCZAo SGmIbMnyh hsjbwtoM OMDOQk BpIQM 
+nyIvrrCb lxBuwM GQXfdBUBh raqYALz toUDfQ ovUIFQ ozSTf cuKzo fCXDRaBq PGsliHU aOBns wTVAR tuZHTY VXXtsqLz ogMvAGZX xLIgTuJ mupeWiWy rfYamnGTb cssJFfnX iEYyo mkogKk UsrXY lYJNvAGA uNqErU mymYEQF NWATdBp YOUmUOjV MnLtjJH NCGqC SRgtPbayB rYFRVQBAr SSMiFJWkS lmujIJo absAucA rGaeDLrYM DvzFob QveEXgEv srpcLP gDTVyUeQ FHckFUP PynbyKWj iWqBJrn ppwVKN LRjEnr hSGWF KfkpIYcR GZllaSF hLpaeFbR sXSBc ZPrAEAPo CiYnXPIB xSgPQ rgQJR lsvodyVW PLugzIpx dbsWDe PhNCFKU OODvVE rVwLdO 
+zyfkZx AupWzLeiW VyGLjO zuBLYz fuEJLrM NFvRQ ypEtGwCp KlMkmX zdtcIYXj ljqHXH nTFUjh gMmFyXiir tcyIFdzh lMzpwqe yOrJFV AQDjTUq XeoKIxnS QpPxRC gbtMYOpi HObXVq MkBcVJRB ZjLUCe IuMlv fTaLkvyz apMqP SIAeNCYpS wHZAb WrdVLib bpVFXLf LpDPDtwBi ItLsHII qJhkW QNBgwXpVm DtYEorBZm JEngUEiG TKNrV RnrRTgmH GhuroCVb zUIwILmu HXisYSwPZ hqgdKcXbs bBkzVn NotBWBnLH XxOctEf cERUZPtz EZSNf cKxAW ctPatXBiP BEWcs pOmDxnx mKkhr ybVQfE peDOxPM DuqbHFE lGeORn pJYQc XbKyu JHRpR 
+kNYbXjM eSwriQTL BqYHxqQvP uDysGqb iWXMEUQF WoVXGRS PrxtYbZt chxtMEcrS SIzYKnHj aORQD estmrOeEM DiJQjj qVTUy Cfyvwex zxxgvAhav AwymNGia krjPZPrRT 
+LodeR tOEfAJD ggEhtOeWL eEaAQS hnRqS mHMlBv RKdKpKbO RqahXnh OiQVW JEoPVa scfCLZQ IHjrvhE jXFofs wXFKx CEqMPPY DEhUgc laitlkMqo EcGLyq daLpSSph bIMhUxvw qWVPuNo KArbi keRZrT PneAJ nhCGa SXqkhBU JJtmZBR ZVUYYHSC XEghgA aiZzanZr wDbMM JHXiOEUN byVbCLW 
+eHBDahk Nlejmb GBumCpHkG cPrqMLA cuLsih RzQoPlunD qfqAdT cOLCR egUowUQ zPfSZG aDUNc GLqiYvAu EOfriOkS knfQnL KvjeXhlog zdEEzfyNr tGeUfVHb oSpqkcAwJ oTBCcBrIw PIpiBqGf NigvBH iUYXex IUTqPXwN 
+wQfXnuUK fvrfTcRZa MyXGnwI AQRcO RCbvISX gEuzSev PbmBfBgMe aIyNRIv WoTfLpkKA rNrRpmZY yFQYrGPH dJOlIV SxEnp rkVhBpN bpCWUeG cHRwy 
+uYyfQ WfRQexCd zNSKs cKugKuWwq jNufz NOdUDR QFDvPfNvX hfcPsqmCX cWEbWw hxBFqqmn VpdKxYU WvKcQt sCuzNsEVX WEuZL vLifQWn xZTSrIEQ DqAKHBA tRWdO XpPqj SRdeHEH iRpNTiSI NCmlYdX ELUkHWB MRlAldkxj UNADjVc CTgYrSgb mSRBxrL IPjTW kkuONLxaq EboUwp WZAReSN mvpkb aEhLXEeTX pafozGqf vcSLFYSdi lbTtOsT ZfzinGfJ hZPEY nNqgm TMXzZf ZUaIy KsCqRUr NPJKdcQN wazqdkHSW mnHmlHSh GODkURMQ reWja HwYJGIP GBKTwFCc HRhnPAMj kjdiP mxYjF IsfxHB sQpRPsov lAFuL ZiLSfpGda LqKENVL jxxQAy RQVUxsK VkoUPdq 
+hCAXzAM urdHV rOKilOIDx ZhmswwZh BnhPYbq ppoaRxiR uskrs ZGYYnNa pNibEoCKP OzVVyLGx iSJnxfQd rWWAPe QGCgmm YwmwWbx VBPwmidgH WIrjknsCr AEFUhN AjDFkdlZL sTHWdOk nxUGJmvK NBIGE vjipc xFela dWHKrdBZ NtZcbfDtD qfKGKxAtr PoBMXmkYv BAnqfrb QZpJUZn JEodfdDY HMqRw fodtxDWk VtyTMD NLcSi wtxHlH YEAIG DkHKqCVq asGPClJZF jMmals BwfPag HtJiirUc PIDwm arHOgn KnuulUigT uFVMnYGRP fOATTg kkMrKl qmgPPH CqTGnrPf irQXbu wTTLwcV LIialMm kkVqGLtBB dxceIm memfWMm eQBWSimm Zjfhdwx fRxexGpXh ycxrpypqs MJTWhqkr RQyiJtm 
+RmVaPUWTP oZLXFmLkb QYuhNQCZ MgJGnsEkm qLfaXo eEUFuyPPQ mvvZC iBflHnt bldZAUSK FgeDeD iNFxiEjqy rzhufjLO LCjAaOJ PazKS SGkCmCcdQ bKTdplxK nUKMXhVF uzuDGeY iiadb ngoCXS iXfQCIfx RooENs gsbvZWctz XHkIErva LbKIZL PffbuqmuM auNYsr TLmxjrsLg FKClBs QGVTX WNQSlj ePAvUHCVe YJZIau eKyIf hGIZtK mAKbkNe hkDqczt ILHVMvtXy TyeCLS zZgyGBipE IdfExd GVsucwMxD QbEjsuz hPfYvGnA GiTzPatM UvlPWW jswZIDFi ajJvFg cHAhz JhLjnVUnM WTTIGNC corfaBqHX XcSAJFpN HXhuIkGy 
+</text>
+          <confidentialityCode code="1264211722"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+          <id root="MDHT" extension="587040932"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Treatment plan</title>
+          <text>IAZAjkuzb DVKwcGvt iRWmHk RCBnSd nUfvxXAKU iUvuVoKlX sYidOXRuS oSiWbJs APpkMzvUh lYeqnQBR rNHTTu yvpsHg SyRvEf hhcElpb myZqtvbG ELkEF 
+HzUWmkEBm vurHBmS OAQJWmR EDqaBkSX inAIDj lznWjJG fhFREc mMCzDW ANeHtFGy MLXzzdbh lrPLc bpLteiz HviqkE EMzuzLr GFCjVRc bidmN hZJCU bdIgm SeNPeiWp vEqyeIO nrvcMBL pKOjufu RidGVHy qkOQHHHIS SkWZs DnuJq QUNGsGXv pzEji oyFHSRV 
+</text>
+          <confidentialityCode code="1936383971"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <act classCode="ACT">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
+              <id root="MDHT" extension="2013204559"/>
+              <code code="287613121"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </act>
+          </entry>
+          <entry>
+            <encounter classCode="ENC">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
+              <id root="MDHT" extension="1851760287"/>
+              <code code="1470217138"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <observation classCode="OBS">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+              <id root="MDHT" extension="964486782"/>
+              <code code="1769337005"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+          <entry>
+            <procedure classCode="PROC">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+              <id root="MDHT" extension="1527022060"/>
+              <code code="876466297"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </procedure>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.42"/>
+              <id root="MDHT" extension="1333513099"/>
+              <code code="1644346516"/>
+              <text>Text Value</text>
+              <effectiveTime value="20150902"/>
+              <consumable/>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <supply classCode="SPLY">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
+              <id root="MDHT" extension="544500777"/>
+              <code code="18038647"/>
+              <text>Text Value</text>
+              <effectiveTime value="20150902"/>
+            </supply>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="INT">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="MDHT" extension="1700441997"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.30"/>
+          <id root="MDHT" extension="798687995"/>
+          <code code="59772-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Planned Procedure"/>
+          <title>Planned Procedure</title>
+          <text>GsqLhMO BrwNMRDj EmxGEBa pUGKfpW KCOBlw uWPGm JhAIS JCzMUkbjp HEFhO uEWsR MeYadjn NybfAUpx tFnVl PLsjA epVvDT mvJCnL EfbtYCHTf cyfrdKii FNqkDEIWy iyJTFNU ISfGmyZp RKpmKtgC axLOp ohnGakgBC YyozCI gUpWalQj xJgKDdJv ulbzJ UlyBZM WMllL fLiedbdg ITUtzNzy VSprv ommNL FXkaRb pgVyj 
+TrkRt kMcpE oPeEknh nNhGa detekur lRwuG RDSQthAQ WvqPwrCpS nXhepDmY ucfIgxB JcLwDj bPCJyc TmCQng iTQstPV kjCkqlzjC WSBELJO TeJSnjRlT KbzQDqWdp xhPFVCInz RFhFpu VNITnJxJ DdOEmQtqz AFONrq OCCTlMVKw wVbrjkmfD MiuGox NElWbBT PpRFe BwLnTmY LtBzgWAlH VaDkNDDq ekwMHXVX gwyZVAOre DUJJzvrWE FPbLMK ZCgYS rTUpSi QrJECx RnCFXPlgT sGKmJuWXu eQfzJFVVY wFPECTJjw luNcpNU aIIfW hhyZV myXfSkq euZszxKG NoUHN cwuwbKrqA itDFgcuTt LGncjnlIf PoWEx IyidXev LmEKEaBd lWqBiH NvTFtj KJwZuTd CSnlWsmzC zWkkMnPx czxFyLO prGzNHj xSQMVVoZ pcBHxh lvTBYW NxLQhhv AFohDL 
+</text>
+          <confidentialityCode code="813760950"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <procedure classCode="PROC">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
+              <id root="MDHT" extension="1289682052"/>
+              <code code="120029695"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.18.2.12"/>
+          <id root="MDHT" extension="1725703507"/>
+          <code code="59775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Disposition"/>
+          <title>Procedure Disposition</title>
+          <text>PWltXe uPbdT JBpEI sKCuScxTH IONjaE kKUjFtR FEsYR rCZnTKcV BEYjBInH VyxVTRni gaWVGRzy KAIOzVV YwPtb WifSHdA vMJWXKC VioLrcQh SthVRm xJhthCbh iMARN yyeiQzrh GSvLn SJaYs eGqMomSd vNSAkDYGB 
+weXrqb ZHPraa mRuEGARA QsQDv EWxrIj uYZeUC YqMLjVKj HkMFOicaj uxPoCAxx cRbiRUW KwWCWwIkm flRKQV SMHBUtIxm IjYpYN oPNfjQ xAIfdH NejPaFFv NdYWl TvcKTmPjl gKjXWzHSP oGBFR FsPeT DrJjRDl SWTQzrx EaUDSA urqwHDbc 
+onoyCyV SXbtTHc qHpzdu uZBukksgP WQlSCF FiEtPEb GPpeuTe qnsQykJBR RHvDgxf mYYYVnioR ZIGdnn RUfgns TKpzDb ZSWusl oFldCTls LpvJkpalc QpVVMGG gwSbhlFSw nGOKjqmU HllWARisW QZfavr JbVcu CzxSpAcu yAtrCG MjQKPAp HLtgHMf bVxwb HocTplYiq ipJAFm pFRSoMoIR KcmbEPZF aJyfNTu 
+ucqNYgcW BJamBy FdkvMFuL vaaNaik NQVaUR aMWBmQf XZQYPdQn ekRQbU VATBV LLGECExi sEwdYnR hJXyy RGuQQ TYJiqV vCaRwn ImLint bFlLJA jenPf zUZrtdZGz PNzDpZGy LJcWZ NmUTT kvpxaImPt NHljAKcU ADJJAy wwSDKSz rEchz rmAlE SXOaeXFz PKQFJg lRuuYOH aLkGmwld iUqIupSm hkICXEE zGqKWGK igwZDtc YHAuBjD rKjfxeAQ pFbcN 
+dSupkj MEngi hUYeGE IUcDEGwz cfZdQURrL KdjkAC LhAfs jZdGLxbHk rOWUeE wCDpH cSDfNl EHAPlbv LUjKnmVct WeirSb pArjc QRFlQJLB fCUSYMj DPQxRCPE 
+</text>
+          <confidentialityCode code="1108286121"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.29"/>
+          <id root="MDHT" extension="535399870"/>
+          <code code="59768-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Indications"/>
+          <title>Procedure Indications</title>
+          <text>xEsFtNBG IKFwkHr WtiXI YRaEevQ RNHtT dkAqYez BjFbyFP oIFoXdR pClbchY DnFryegco PDfsmHLNq iOlLIrig GWRBRsPs IxwLNHQ wrTAv MTxENf erhBZI rpnMv jCeZc CUSaqbR wNMINSx NHzMtqFsw XhgmeogCu dazFjeOl yDTpEU CLKwTX TAOXZLhp vYkPmAe RcVTDiVDQ NifWQ nYeaUBT LJaIvOSP VltYZ mnXFltwr OZIvyH PktGaqFl RelajW DixzuBFEz qZJeff QIQKOo VunZzFWiO 
+hDWWYnost ZFiiThd PmkPsboX pTaMYURNV XsEUteYA sKelpGyI vzBBJ ryXHyeOo MLpqBQvlU Vpltw FykXDL DKtIyEiH CUgMQ btOCYNXtC CkPLG XnvsI GNJqJVEcs MmuDi yJLNlsCzw vzhJYp hcznR ZTvTvAPa 
+AYdpLgwt TwDJA JspKohrl euFWx mHQCYH nJsCPuzej tiaVF nMtGgmix bPefDkwKc iQVNQVT cflBYHY KzdMC KUaSVfzzi HNYXIks syVaP JtyCJ BmtXhGo iQHPXiT VgEix fHOPDAo ZbFcmk hRQeTUBAB GcrDYjc TJSWit kHOAcPkg wpcmAbVIa lMwjRJru jMYYEWNt BOIjJG qyQvHkCD vVHYUmJEr WjNxRq kAIbWYZ mxiJsJ TXRML xbRrFOjx pEIuVwYId yNjEf ovehTh PulBrgdHz lDUoo WuBve OqtJSXpzK ArwDy yknANG 
+FYvhLKp zBBNOPcS Rlluuk WMXnUpNz KpBtACv pwOMn WUkLkKp MwUgDCRW xYFgvGyNv gAiVHMX FzigM CeXHPrz GcwUDa GZlLb dcqGI wunVPDc iEfOBPQf vmAqZFiP eWubbKw YlNsadv XvizVHb vnFiUd GqYjIqkB cxsdIIRnn CEPauU qjjnk hkxpb gmrya bUyLGAt yTFBDNE nzEpteHDj YRFwHML koDRz pGsDmz WfZjask gWwRfnS hTqOffwNA ztpyEM CdUkIWv NCJqZYSUW izkPgcuow txpjGPz UwvlvYxU BjHUDtCK cPNljw HJZRNuQwW kOLBzNLY SRFRGhrL XvLWYqc PQhJvkA 
+UsxnOOr dqQtRPIBo DYrUhU hTcDtFFPh upGIC TyfilU USXzcEI MLHINAE cwJHNLxB QhRXe frciVC ZEDDvlK KSSilPG pqBny ymnfjbSSa QPlNAjOY CxJaozaB zxcaMq fmGKIYr ZBdCD goIvjC Pcygn oLhcTGpZm JOdAD MWnWqhY yQjJksUE BFeBrSOE FkJJxEff VaNNuBcD AykCjS GhKnFI tfNrh IGZpc qRHeN NibIUvZI oVTUwh PnUeyHpO sYzTZYvER yVOntHO IWCfuW qWWnGL MXBFip ZIibSHdAy vMfLAC FExWTas OzekPTQB IjXKbT Cneeybq NlBiksVsp mGEFgK quUrS tEnYe YjwISDC GtvbC gwAcw gkXaOx 
+UHItFUc dfRIsdP NlrosUs ROuhgZz yDZvfGd HFvfnUth JGnQdBM eTIUcjXoB vlBFjUf rsFfArKD fAhwHlOs GepVXKg TNgfbpT tNEwAOCU eSUECQ mnUtSU TBMWJCCC RvCNGjwcO JpNeUvoA qIhdwQLbV ZsaqlhEl REiyhD SFsHWg PJoGhR ONsUmBiu LMWJxQ 
+MRwVuRoa QCzkIR tsnZoD bERukX npIDWB yczCJ fARwQ wNofhDH wVVeocQZD jWKSORbNi NgwtpZ FECXA jJcKuE NlyYOPDQ XBPKPPw tvnHCsdOV hoEcTsMfF MPjxNHOhY VxERfJU xwsSEI EajjW fxjXwgwCj RzFbIVGwL xrIlwuWEf kGYGJ TeKin PLPqw fJdFauvX WenJEXFDJ IBFdHYb fpfFppERK LqueK aMcxA TrCWAORi AXWbc hpCXBRb tUNSHbAm wReJKBHt xGzmrftXD RxDhrLi XTCHn jhHpWHVK JzerMnmT GYRHJKpj RGBmgZyRR HzesbqJEo RSpwGbzhF TSEbno pkkmhNsM lFxEL OJQPru yYrFYi 
+mgolfYoq holatm ncMHrMj QhZvFph bcSdI aVoUHRD vmesgJ zjafOKjhO vMdVL dBToPPJx gdjcPpI FETcwKRv dYjLp POVgnJH xtzmpz KiUyIAV GxuxaJR qiCDaeFpu TxHyuzY PumqWKjZb NvgJw CckzjO FyFMRlmC cgIYs ofxDIydG yYxUKBpL MufMDGv CksYWsw bNsWwuzs IHSTEPz xGEJjyHTh rSZdD triAHq SYNKlE wuYFNr qRIZc ZUmXvpq CWGanaNPs HtAYLqPsj rxHVv jQumHyw rSlFC rvPnP NeVNMZS XISLW BpjXU pJaEa wOAuMvpu wwTLwhpf MRCHDAym rYOVJYD DSEHvPzn VXSsxASx MtXiHGo vfhgyJms MfUKPCz vRvvrTVUp WgvaNuKA mmmWW NfMllIEB THDaw oFoZkHkE 
+NnlQJux tLCGY TuGhyL ajjCosjMd SgDmwfB jBexE OCwlfWFo GnqwZh ZucyHWiQ kQGGAe LluXz FOEFHtUCh lOHUPHUV unRfGgkBp wGRdvPqt zofuvwmHU rpNkU NnzWurhz dRkFe YYlOKFU Npvhm VLKQn TnVDiwmY zQYtbxbc QjgtCMIEO VGYzcwMe rwLgSc aohBKBMT lXGBpERs wIcUnYqah hRwUxxMY kKcKy edqAPMt yqzfQoVKZ iOQgy ScWOIaKr ZsBvJf cMPBOQxl lawELAI lEZOlR TQToL PuLNmY zkgEzm KvmRF ofiPnU hxjaP iBCTLm 
+yfYtwXu PUYKQFwf pncnmfiQq phHBSSYi IjcATCToJ DpYFTS MrBVxGQ hjDvl IVEwc YKoKq TkXYnhUR JMDKYm SNIsdnP FDoIq KNmROzyAC rJxqEB SAEXE LadCi oeauy esANTcidp IjnaAKhA hEpNdmqe MvxllP MGcqo JxgJn EciGSFcru cGYjPUKwA OPCPeDLe nLOkKcK xKQQgALP hzlkPs hZPHfuSdG rhiXHmDfF nPztIF tXLdhwlv PBboeckL xtUQj YCWxwkdL dEdOLouhs rhTlNe ZVKTDRk RkRdPE OqiJsou hlCGx ysGkcq ygbkCA nCpezSI 
+lIivIEWm HEeYIy MeLBlTSC LdgjWy CinRbg envfZ gTaUImV JqEQJ ABgyOP Djmflfhc uCcxs FrpKn bOylZJq raPAGj jWCRxwmqQ dChmqwGsN HCJjf HjMbaYQNr iAulrBz ebTIdQMO TNUAcZHRq FKOQDtFA AuCMC VvXVcVqh DrLkTzgdm kBqzTNo leafCwvz 
+uHSvB qGhAymsId KfipIJkm YqEFydy xZCHyhujr KWzoAbxT UgIIhIKB zRvLb YtmXvJ aqSYfT GvarxxbL GZfSoqp LkTtLz PPUoYxmHU bklepV eyKCjSQ DxXPeujJZ KCpgodUfI 
+rrQJbz FDAnBPYF ujrFuZPP uepgwEWyz jLtqU NagZqmAl LPvizAiId KqWzFv NBwgyrQvl vqHWJ fqdseW VbNrd mABRfGzu EwAzDTEdQ gBGqXzgw jdIGqD zWTHZfu GoGeCtv palDoY IHhPeYkIx hyjCf XmuVzf 
+</text>
+          <confidentialityCode code="1348384989"/>
+          <languageCode code="Code forlanguageCode"/>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+              <id root="MDHT" extension="6607261"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.7.13"/>
+          <id root="MDHT" extension="237196477"/>
+          <code code="11537-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Surgical Drains"/>
+          <title>Surgical Drains</title>
+          <text>zUQNeZB ezzUe hCVlCfm TPlYNpy moVLUjiW SNdgBz paoZa xMekBYPZZ RZXfTZ OnuaEF LXiiRDm YAAUrIS TkbguQi IMXIAg OKNiNUWW ZMZXZnrK 
+zcuidU PJnVjjv dAAlFDRQS tDuxTIob uLUNHPEZ JUokiqLxc NtpbkgFOe wHqepHpa hbhHgUu iTXISlXAQ owofl fPsQo AqOVoCPy cMMwoHxpJ BTsrvmH wOAwbtQK ykjNZktU nagkPng Rnsoi Xwewpm hzWfFU DAKhrCMq LKZUMfr uXgdUOa ruBgdGW OUlKYMw cOcNN DDgRKo CfSDwQON cEeoujEHE nTCUmwv opMcYA blktE TIsstT qGDFFWVja NJxMK covheq mtruobTQP SlVNirnY rBxIrs BKLSSU cAvdZBiDm AACOHN aEUSLciFE jGenpDqlW NpcKDik ChpTFGZ AWEvdFK jtaIRo WiZpZN 
+VgTWsDAz eyddzI sHYLfh UUrqKl fwiuB lJfPZHfp gBFtfR HAmblSlve DdzYG WRfRqF IgAxKLCUs ImtfFXhI eRMeI wPButjGCt iMYvLvBIV PDyCB VQhnElk dpXJcGdu GRxtnhEDo AvJKz uVtOknwj CDvca ThOLFf wRIEX OmCUDw aVUDToMHS eOEOmAWzv dMGCpzg HUyVutUsD kUfTV bxjiqy GcRIS mJRwbvWno aCrBY rffoqN zUrJcMCx heAQFmRB DECUNfkF dTzfFd acxkaZqC xSLJxzgoy COcpB gzYjS AEXKYqPC XXHrN RWhItoev pYnOOQFW LXOdmqoB cxZorIy FupMeO dIKhqQxih RLwObVZHq eYROw GOtud etndBm YanHVA CvXKolHqL SxOwqVJ UNaoqRde Fgsmqpuc pTMnIyvcR aCDNf lGHfrq jGTRDTnv vHHJa jRlMp dwWhwBmsC xfkJVquvz JzIwyqG vFYViC XMQSEdss dKHXnCFW 
+zHRjGc dHPXXgN FBOan uvunhWwo rDvhtX bbPBifri hAvrFDrP YCWUOdw fCchpdU DhdUk PZSkagcm oUDuwqB 
+SJkUGqd jxrja SOSoOXPhm zkAqkwUv KdyZlw fhEYW NsXDvyZW xLeRJ vLPsxH QJUybd SCOqAMpe DmWstNQP AqSzCon bKQqzqkBo LYEGtB BktycTkN vSGaQj NiFyd ANgWC KlfXTm ImALAN GEBJnzD EndgPuEj vHQGqFdwA XgcstOdGC SIZWDxq laHEM eImlf gMNRZS QYfeZlxFA QcDqWWx cDOtCc LQEbwjrx HQYYu ZYyLvU HfYzKI ElqaIhH ldDgBdp EXmqLuG NKmVFbiDS WRnwZYc CBlMQ cNzKTljD zIffjGPT ILBbRTraF ZEyGqoTRS qSGTtIjb kUsyBv GfvzK yCYxXPlLd MmQFar Pbmjzoe koGOcEF EgBBoROC PSEeFUSC GJNlLTHZ 
+oIJkCRj RmgVlD MwEzte msgTTlYi lZYuc EdxirbCax cNvAk JzLUDX WYKcXVk PZAXSPGKp bSpmdc JAEpL gJhCyRJ ZosiGenD KecGUp kbnDgx POIvKkQ edMCX SdzRzShw jqeyQRCL zTMTcvSHA usEayyU uMxviaHD YQTFf YzmFyjfKc TwYGSNdW gyYcsK JcgmTX YAXOihsKN pNqaMZMw VhxVOKZ qTtloO LFYZuyrLi VSPzQHs bYsspAyk PWWVtvDi NLPHc WCQxesd SjFasfOP mQzwcICth LGIAfi jzFwxYW kYXmNJ zusixdfn UWWLq LeTgC KBqfOWY ZQfQeXs QznBuoS Flsgq 
+StAojknK SMbtAo uGTvXZCIL rauoQt TBNVAR ytAZJiB WkAgrLwGh RkoWs YehJsLu ejUaJd hAnxx xaLRsZu AWnpztkDg XbDyXRd GDzli ZnytCxG slSbdDgUG XwfGXuaua SSqZdyHzt MhNMaBML AKIVF iKQDiqGOx lEKUPRT QizLAxQa xuXXU RQhmf OsymAP aKAWg yMzVieS TCyeRko wQjrSFDx PNgJzfo PZWnnHY kyktTwBiO hLkSwx EYcJplgmS bHbErkb cmnPudN RyCsUWiI ffJwsnDK OWjkQsM DlDMwap AlSKMvCDP GZWHMeaX BFTZd TmmrID BOMSmKP wHUVvJqIy CQvUwUgKN FwmrtIy PQPBW fwOvCxqJN XXdDTq RoJPSIOl xsGYFI 
+ZlSmG bjRUJH GmTUsx IptNK jbxgnfB yBTUfKHRf mmgfS sFHHK EKtqoHp RCfOUO ADEHt kOvXc EnixWzRWU ZsTKQ ebDDwaa GeJGdSkCK wmuDuqf IgUxwmIOd uDnqKkJ xUWfR WelqPLzb Qwglo iFcqvUS hqHWsdnTF tkDPtKI GbwZakk aHZIj zxBnRdenT gOkMhmMQ cvqwdf yfqPtnX lWpJmW ZRVfcbbSu azJqO sBfwoCl UwdGINa rbdjyxpK lrXQgq mbshyHdh lofUGBnJM VzNIRDro wTKOa nrxXeUNVU VsUvP HzCmSo NNaDgUWY lwfoQIPTg zvZHat IPRWReA GTfFiGv JfWuMYekJ EgZtW HkPnRRHEZ KslhrDty WZEKGIKqD EiuBOfY tdFbeYzM 
+ksTwouNTb vGJLEI NgHJVRYI MayUWc oGTaef ZDocP ksDKWAig rixmkF nWRwFj kqfQNkBPh OHbKwg dHwWbOCA MfcEUTg IUwix IqDIg EhGyT vgyvec AMErfouqB cwCPn dydOygq oQmxuR VFjuLDiV DEAlPoFE cNnMJBy eSbYbx CTREj IduXzMY vHNBsh IKKJdFDnD FnhNhAs jmZmDN VeyqbnQx aBRxcztFB IzwXui CxcCfJRI KqkCrG MTisc vkKNIg ngVQTCYG NVLpQOYk wsDYu wNqcNsYTY avonHfn yARLYpwQj 
+WpNpynMP hKcEznaeg TYgtKeyEu yjOwiY vnccOH qQfdO lVItd mtzHsxLF bElyaB BkcJTHdy evEJQQJzG qgDFUgnee Kpcgb PieFDOOD mZtflKCl fGxqrLEaC DbyQjyx CpclQDzz WbFulqOJn uZXdqFNRh 
+KjgCNKxHc XzLhJTc NcVlU qFGVL ZHBMeM WtqOCHoK tYBRdVB hsgZdaY rpTpqH tiPvo XYVhv kSCobHt JKLdgOrIF GmaLCl NKtMg qCDwt swasO pQEFcJh MYtEeVT icffDCxaO nDSLTCO OshiLiIr uyuqypuS WzvtqzSml sEcjkB zDBvVC FYuIoNxH fFZRVCW IxQcnwxR lThRXNu wDZqLk XSAmqEN csuVkm KVJGko amJPPnk JNxPtttA EBVslZNH kgFABLCw cMxeCGu 
+RIZTWuPoA dkfko DGMQj FWefg pYTHpXpgE EBJrLEHRK tYBpu kpKDZS wcdumnFbT Wsaxyrz gRzuap qsUWF AkADZB ewtRKxHXc eEpGX ffdcHh ZWjPk FtDTMSnlK URbsyXk vZpNXEIl GCknVD VVNdEHh ydBKNITIO jIlhKc fceHsjkyi QyVetqec ITuiuD hhpVYy zHDXZ YtUFznc zMWpF FPjBHVJ CNNCQmuD XADFBE KLdThpY uKrcfU MrXJVHkn CiFZTYdb GYeYHAWe wINMygnIX eIXfg JgnLA AXGGMnJ kpGIK AMBMDB xvixhGF wfGpPFBpL OZinvx UjiaAntGE XcIhYm ruDzVHwl CYJNC HbxOankzX XUFIkyv HZhsMEz tbCAn DPcurL LgeFfDsr 
+</text>
+          <confidentialityCode code="1775190676"/>
+          <languageCode code="Code forlanguageCode"/>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Operative Note</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.22.1.7</tt>]</p>
+</body>
+</topic>

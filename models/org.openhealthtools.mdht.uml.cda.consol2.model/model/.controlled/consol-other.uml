@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2Rwq0BSVEeGGzu7fmW9pXw" name="AssessmentAndPlanSection">
     <ownedComment xmi:id="_2Rwq8BSVEeGGzu7fmW9pXw" annotatedElement="_2Rwq0BSVEeGGzu7fmW9pXw">
       <body>The Assessment and Plan sections may be combined or separated to meet local policy requirements.&#xD;
@@ -702,9 +702,9 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:7481</ruleId>
     <ruleId>R2.0=CONF:1098-7481</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" base_Property="_2MdMQhUSEeG6PvUxSTZnaw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MdMQhUSEeG6PvUxSTZnaw">
     <ruleId>CONF:16886</ruleId>
+    <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Gb3E8Bq3EeGo461UQq-B1g" code="completed" base_Property="_2MmWMRUSEeG6PvUxSTZnaw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -719,14 +719,14 @@ Any deviation from normal function displayed by the patient and recorded in the 
   <CDA:PropertyValidation xmi:id="_O7wpcBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7489</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
     <ruleId>CONF:15985</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
+  <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" severity="WARNING" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7394</ruleId>
     <ruleId>R2.0=CONF:1098-7394</ruleId>
+    <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" displayName="Completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -759,8 +759,8 @@ Any deviation from normal function displayed by the patient and recorded in the 
     <ruleId>CONF:7761</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_B4zJcB-ZEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
-    <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
     <ruleId>CONF:16850</ruleId>
+    <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_bC3lMB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_U1PlUB-ZEeGtfPlBCjHWkw">
     <ruleId>CONF:7762</ruleId>
@@ -1498,7 +1498,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
     <ruleId>CONF:14358</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_r1Ki8Ob1EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_A3WOMOb0EeGINOJ_SD9_dA">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_cHvLUOb2EeGINOJ_SD9_dA" base_Association="_aWvu0Ob2EeGINOJ_SD9_dA">
     <ruleId>CONF:14359</ruleId>
@@ -1996,9 +1996,9 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:PropertyValidation xmi:id="_5lm5MObjEeGINOJ_SD9_dA" severity="WARNING" base_Property="_5lgylObjEeGINOJ_SD9_dA">
     <ruleId>CONF:14287</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_5lm5SubjEeGINOJ_SD9_dA" base_Property="_5lm5R-bjEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_5lm5SubjEeGINOJ_SD9_dA" severity="WARNING" base_Property="_5lm5R-bjEeGINOJ_SD9_dA">
     <ruleId>CONF:14291</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_HLJTEObqEeGINOJ_SD9_dA" base_Property="_5lm5R-bjEeGINOJ_SD9_dA"/>
   <CDA:PropertyValidation xmi:id="_ZM4aMObqEeGINOJ_SD9_dA" severity="INFO" base_Property="_5lm5NebjEeGINOJ_SD9_dA">
@@ -2275,8 +2275,8 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
     <ruleId>CONF:1098-31026</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_pUdB4I0fEeOB0eBUISUB4Q" base_Property="_cHp7U40dEeOB0eBUISUB4Q">
-    <reference href="../consol-vocab.uml#_nHn0V_5-EeSoDZvueq4eYw"/>
     <ruleId>CONF:1098-31029</ruleId>
+    <reference href="../consol-vocab.uml#_nHn0V_5-EeSoDZvueq4eYw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2T8XII0fEeOB0eBUISUB4Q" base_Property="_cHpUQ40dEeOB0eBUISUB4Q">
     <ruleId>CONF:1098-32136</ruleId>
@@ -2407,13 +2407,13 @@ Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy
   <CDA:PropertyValidation xmi:id="_fBuzQJm0EeOLJeQez13EkQ" base_Property="_rBipoJmzEeOLJeQez13EkQ">
     <ruleId>CONF:1098-31389</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" base_Property="_rBjQsJmzEeOLJeQez13EkQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_dxy_8Zm1EeOLJeQez13EkQ"/>
+  <CDA:ValueSetConstraint xmi:id="_4QZJMJm2EeOLJeQez13EkQ" severity="WARNING" base_Property="_rBjQsJmzEeOLJeQez13EkQ">
     <ruleId>CONF:1098-28153</ruleId>
+    <reference href="../consol-vocab.uml#_dxy_8Zm1EeOLJeQez13EkQ"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" base_Property="_rBjQspmzEeOLJeQez13EkQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_BciakZm1EeOLJeQez13EkQ"/>
+  <CDA:ValueSetConstraint xmi:id="__ImXIJm2EeOLJeQez13EkQ" severity="WARNING" base_Property="_rBjQspmzEeOLJeQez13EkQ">
     <ruleId>CONF:1098-28042</ruleId>
+    <reference href="../consol-vocab.uml#_BciakZm1EeOLJeQez13EkQ"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_KTrEAJpdEeOK6dzbL4VoTA" name="SubstanceAdministeredAct">
     <ownedComment xmi:id="_tU2HwJpdEeOK6dzbL4VoTA">
@@ -2648,7 +2648,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_Q0DdsKr5EeOxqJAXCMXUYg" severity="INFO" base_Property="_X2UcAKr4EeOxqJAXCMXUYg">
     <ruleId>CONF:1098-31481</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_3WqogMzSEeO93sHu8pHB2g" clientDependency="_UB0lYMzTEeO93sHu8pHB2g" name="FunctionalStatusObservation2">
+  <uml:Class xmi:id="_3WqogMzSEeO93sHu8pHB2g" name="FunctionalStatusObservation2">
     <ownedComment xmi:id="_OemNYMzTEeO93sHu8pHB2g">
       <body>This template represents the patient's physical function (e.g., mobility status, instrumental activities of daily living, self-care status) and problems that limit function (dyspnea, dysphagia). The template may include assessment scale observations, identify supporting caregivers, and provide information about non-medicinal supplies. This template is used to represent physical or developmental function of all patient populations.</body>
     </ownedComment>
@@ -2761,7 +2761,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:AssociationValidation xmi:id="_h0WhwM7vEeO6qNoyVDglCA" severity="WARNING" base_Association="_ezYEEM7vEeO6qNoyVDglCA">
     <ruleId>CONF:1098-13936</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_yU2tgOD0EeOmBMTtnrPqww" clientDependency="_PjB34OD1EeOmBMTtnrPqww" name="FunctionalStatusOrganizer2">
+  <uml:Class xmi:id="_yU2tgOD0EeOmBMTtnrPqww" name="FunctionalStatusOrganizer2">
     <ownedComment xmi:id="_8KWzAOD0EeOmBMTtnrPqww">
       <body>This template groups related functional status observations into categories (e.g., mobility, self-care).</body>
     </ownedComment>
@@ -2838,7 +2838,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:AssociationValidation xmi:id="_yJfKAOD_EeOmBMTtnrPqww" severity="WARNING" base_Association="_xJoPgOD_EeOmBMTtnrPqww">
     <ruleId>CONF:1098-31585</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_GM6icOEIEeOmBMTtnrPqww" clientDependency="_kW7qAOEIEeOmBMTtnrPqww" name="HospitalAdmissionDiagnosis2">
+  <uml:Class xmi:id="_GM6icOEIEeOmBMTtnrPqww" name="HospitalAdmissionDiagnosis2">
     <ownedComment xmi:id="_XfoAYOEIEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses identified by the clinician at the time of the patient's admission.</body>
     </ownedComment>
@@ -2874,7 +2874,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_RqgVMOEKEeOmBMTtnrPqww" base_Property="_QFF2kOEKEeOmBMTtnrPqww">
     <ruleId>CONF:1198-19145</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_PrEOIOHoEeO04sHNODkHmQ" clientDependency="_uREHEOHoEeO04sHNODkHmQ" name="Indication2">
+  <uml:Class xmi:id="_PrEOIOHoEeO04sHNODkHmQ" name="Indication2">
     <ownedComment xmi:id="_b-DpwOHoEeO04sHNODkHmQ">
       <body>This template represents the rationale for an action such as an encounter, a medication administration, or a procedure. The id element can be used to reference a problem recorded elsewhere in the document, or can be used with a code and value to record the problem. Indications for treatment are not laboratory results; rather the problem associated with the laboratory result should be sited (e.g., hypokalemia instead of a laboratory result of Potassium 2.0 mEq/L). Use the Drug Monitoring Act [templateId 2.16.840.1.113883.10.20.22.4.123] to indicate if a particular drug needs special monitoring (e.g., anticoagulant therapy). Use Precondition for Substance Administration (V2) [templateId 2.16.840.1.113883.10.20.22.4.25.2] to represent that a medication is to be administered only when the associated criteria are met.</body>
     </ownedComment>
@@ -2935,9 +2935,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-32570</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_rCn1IOHoEeO04sHNODkHmQ" base_Generalization="_PrE1MOHoEeO04sHNODkHmQ"/>
-  <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ" severity="INFO">
-    <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
+  <CDA:ValueSetConstraint xmi:id="_2HieoOHpEeO04sHNODkHmQ" severity="INFO" base_Property="_2Hh3kOHpEeO04sHNODkHmQ">
     <ruleId>CONF:1098-31229</ruleId>
+    <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2HkT0OHpEeO04sHNODkHmQ" base_Property="_2Hh3kOHpEeO04sHNODkHmQ"/>
   <CDA:PropertyValidation xmi:id="_b5JCoOHqEeO04sHNODkHmQ" base_Property="_b5IbkOHqEeO04sHNODkHmQ">
@@ -2946,14 +2946,14 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:PropertyValidation xmi:id="_zCrKAOHqEeO04sHNODkHmQ" severity="INFO" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
     <ruleId>CONF:1098-7488</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" base_Property="_zCqi8OHqEeO04sHNODkHmQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_zCsYIOHqEeO04sHNODkHmQ" severity="WARNING" base_Property="_zCqi8OHqEeO04sHNODkHmQ">
     <ruleId>CONF:1098-7489</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_ZepfsOH2EeO04sHNODkHmQ" base_Constraint="_SA2RYOH2EeO04sHNODkHmQ">
     <ruleId>CONF:1098-7483</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_D62NwOH7EeO04sHNODkHmQ" clientDependency="_CuJUoOH8EeO04sHNODkHmQ" name="Instruction2">
+  <uml:Class xmi:id="_D62NwOH7EeO04sHNODkHmQ" name="Instruction2">
     <ownedComment xmi:id="_2laBMOH7EeO04sHNODkHmQ">
       <body>The Instruction template can be used in several ways, such as to record patient instructions within a Medication Activity or to record fill instructions within a supply order. The template's moodCode can only be INT. If an instruction was already be given, the Procedure Activity Act template (instead of this template) should be used to represent the already occurred instruction. The act/code defines the type of instruction. Though not defined in this template, a Vaccine Information Statement (VIS) document could be referenced through act/reference/externalDocument, and patient awareness of the instructions can be represented with the generic participant and the participant/awarenessCode.</body>
     </ownedComment>
@@ -2985,7 +2985,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:EntryRelationship xmi:id="_tu3ggPgDEeOYeZoWJF5yyQ" base_Association="_rHJ3YPgDEeOYeZoWJF5yyQ" typeCode="SUBJ">
     <ruleId>CONF:1198-7674, CONF:1198-7675, CONF:1198-15535</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_q_8twPvVEeOvZJBdQKQrqQ" clientDependency="_BvuRUPvWEeOvZJBdQKQrqQ" name="AssessmentAndPlanSection2">
+  <uml:Class xmi:id="_q_8twPvVEeOvZJBdQKQrqQ" name="AssessmentAndPlanSection2">
     <ownedComment xmi:id="_8BIW0PvVEeOvZJBdQKQrqQ">
       <body>This section represents the clinician's conclusions and working assumptions that will guide treatment of the patient. The Assessment and Plan Section may be combined or separated to meet local policy requirements.&#xD;
 See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and Plan of Treatment Section (V2): templateId 2.16.840.1.113883.10.20.22.2.10:2014-06-09</body>
@@ -3022,7 +3022,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
   <CDA:PropertyValidation xmi:id="_tEY1QPvWEeOvZJBdQKQrqQ" base_Property="_tEXnIPvWEeOvZJBdQKQrqQ">
     <ruleId>CONF:1098-15353</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_8rMFkPyHEeOozpLKXSm5NA" clientDependency="_DZvg4PyLEeOozpLKXSm5NA" name="FunctionalStatusSection2">
+  <uml:Class xmi:id="_8rMFkPyHEeOozpLKXSm5NA" name="FunctionalStatusSection2">
     <ownedComment xmi:id="_vTMUQPyIEeOozpLKXSm5NA">
       <body>The Functional Status Section contains observations and assessments of a patient's physical abilities. A patient's functional status may include information regarding the patient's ability to perform Activities of Daily Living (ADLs) in areas such as Mobility (e.g., ambulation), Self-Care (e.g., bathing, dressing, feeding, grooming) or Instrumental Activities of Daily Living (IADLs) (e.g., shopping, using a telephone, balancing a check book). Problems that impact function (e.g., dyspnea, dysphagia) can be contained in the section.</body>
     </ownedComment>
@@ -3127,7 +3127,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ruleId>CONF:1098-16779</ruleId>
     <ruleId>CONF:1098-31011</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_sZlggPyhEeOC19UEcu7MOw" clientDependency="_GtzbMPyiEeOC19UEcu7MOw" name="HistoryOfPastIllnessSection2">
+  <uml:Class xmi:id="_sZlggPyhEeOC19UEcu7MOw" name="HistoryOfPastIllnessSection2">
     <ownedComment xmi:id="_9w3VYPyhEeOC19UEcu7MOw">
       <body>This section contains a record of the patient's past complaints, problems, and diagnoses. It contains data from the patient's past up to the patient's current complaint or reason for seeking medical care.</body>
     </ownedComment>
@@ -3159,7 +3159,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
   <CDA:AssociationValidation xmi:id="_gZeIIPyiEeOC19UEcu7MOw" severity="INFO" base_Association="_ehbocPyiEeOC19UEcu7MOw">
     <ruleId>CONF:1198-8791, CONF:1198-15476</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_ctJgAPylEeOc0tW1-DpN-Q" clientDependency="_zXi0UPylEeOc0tW1-DpN-Q" name="AdmissionDiagnosisSection2">
+  <uml:Class xmi:id="_ctJgAPylEeOc0tW1-DpN-Q" name="AdmissionDiagnosisSection2">
     <ownedComment xmi:id="_mqyN0PylEeOc0tW1-DpN-Q">
       <body>This section contains a narrative description of the problems or diagnoses identified by the clinician at the time of the patient's admission. This section may contain coded entries representing the admitting diagnoses.</body>
     </ownedComment>
@@ -3202,7 +3202,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
   <CDA:AssociationValidation xmi:id="_ZKzTQPyoEeOc0tW1-DpN-Q" severity="WARNING" base_Association="_W3a7YPyoEeOc0tW1-DpN-Q">
     <ruleId>CONF:1198-9934, CONF:1198-15481</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_k8L2YP1HEeOVx4YMwgfjlA" clientDependency="_BgsYsP1IEeOVx4YMwgfjlA" name="InstructionsSection2">
+  <uml:Class xmi:id="_k8L2YP1HEeOVx4YMwgfjlA" name="InstructionsSection2">
     <ownedComment xmi:id="_4mmykP1HEeOVx4YMwgfjlA">
       <body>The Instructions Section records instructions given to a patient. List patient decision aids here.</body>
     </ownedComment>
@@ -3249,7 +3249,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ruleId>CONF:1098-10116</ruleId>
     <ruleId>CONF:1098-31398</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_YCS1AP1WEeOW-qBXb0kbTA" clientDependency="_sxyi4P1WEeOW-qBXb0kbTA" name="InterventionsSection2">
+  <uml:Class xmi:id="_YCS1AP1WEeOW-qBXb0kbTA" name="InterventionsSection2">
     <ownedComment xmi:id="_k-j3IP1WEeOW-qBXb0kbTA">
       <body>&lt;p>&#xD;
 This template represents Interventions. Interventions are actions taken to maximize the prospects of the goals of care for the patient, including the removal of barriers to success. Interventions can be planned, ordered, historical, etc.&#xD;
@@ -3304,7 +3304,7 @@ Instructions are information or directions to the patient. Use the Instructions 
   <CDA:AssociationValidation xmi:id="_IuHq4P1XEeOW-qBXb0kbTA" severity="WARNING" base_Association="_H9dC8P1XEeOW-qBXb0kbTA">
     <ruleId>CONF:1198-30996, CONF:1198-30997</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_Ya0H0AB5EeS20Pddu0dxVw" clientDependency="_wLGGIAB5EeS20Pddu0dxVw" name="ReasonForReferralSection2">
+  <uml:Class xmi:id="_Ya0H0AB5EeS20Pddu0dxVw" name="ReasonForReferralSection2">
     <ownedComment xmi:id="_kbRpAAB5EeS20Pddu0dxVw">
       <body>This section describes the clinical reason why a provider is sending a patient to another provider for care. The reason for referral may become the reason for visit documented by the receiving provider.</body>
     </ownedComment>
@@ -3417,8 +3417,7 @@ Instructions are information or directions to the patient. Use the Instructions 
     <ruleId>CONF:1198-32750</ruleId>
     <ruleId>CONF:1198-32751</ruleId>
   </CDA:CodeSystemConstraint>
-
- <MDMI:MDMIMapping xmi:id="_gySIoL-6EeWoV-fDNleHag" base_Class="_2PWQFxSVEeGGzu7fmW9pXw">
+  <MDMI:MDMIMapping xmi:id="_gySIoL-6EeWoV-fDNleHag" base_Class="_2PWQFxSVEeGGzu7fmW9pXw">
     <elements xmi:id="_gySIob-6EeWoV-fDNleHag" businessElement="ReasonForReferralSection" modelElement="_2PWQFxSVEeGGzu7fmW9pXw" businessElementId="361014c9-b524-4c85-8722-31675b343285" modelElementPath=""/>
     <elements xmi:id="_js9xEL-6EeWoV-fDNleHag" businessElement="ReasonForReferralTitle" modelElement="_HMSJsCzpEeG29eivM7bhbw" businessElementId="0a65c03e-1243-4c2c-906d-ce09a40f42ba" modelElementPath="title"/>
     <elements xmi:id="_lzh08L-6EeWoV-fDNleHag" businessElement="ReasonForReferralText" modelElement="_HMPtcCzpEeG29eivM7bhbw" businessElementId="44051191-171d-44bd-9768-44406d3770ff" modelElementPath="text"/>
@@ -3434,8 +3433,8 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_vQ8U0MEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultObservationId" modelElement="_nm5IiebxEeGINOJ_SD9_dA" businessElementId="0f7574b9-ac84-42fe-8b59-6ed9baab0ea6" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.id" condition=""/>
     <elements xmi:id="_zkxhgMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationCode" modelElement="_nm5Ig-bxEeGINOJ_SD9_dA" businessElementId="685b6eb8-604d-4be0-972e-b2fa3e94cd99" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.code" condition=""/>
     <elements xmi:id="_3zoHkMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationText" modelElement="_nnC5hubxEeGINOJ_SD9_dA" businessElementId="3e88a44d-23d5-43dd-aace-87d7e704055f" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.text" condition=""/>
-    <elements xmi:id="_8uh7UMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationStartTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="6cecaa87-4747-4a91-8c6a-f0decac13488" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime.low" condition=""/>
-    <elements xmi:id="_BdlrcMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationEndTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="4dbbaa74-91f3-4b3c-bb52-05485db82b0a" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime.high" condition=""/>
+    <elements xmi:id="_8uh7UMEeEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationStartTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="6cecaa87-4747-4a91-8c6a-f0decac13488" modelElementPath="xxxfunctionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime.low" condition=""/>
+    <elements xmi:id="_BdlrcMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationEndTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="4dbbaa74-91f3-4b3c-bb52-05485db82b0a" modelElementPath="xxxfunctionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime.high" condition=""/>
     <elements xmi:id="_FSbPAMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationValue" modelElement="_nnC5iubxEeGINOJ_SD9_dA" businessElementId="71415e1f-33a7-46d5-bdb7-e8303cfb4442" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.value" condition=""/>
     <elements xmi:id="_I6eTwMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationInterpretationCode" modelElement="_nm5IjebxEeGINOJ_SD9_dA" businessElementId="771d3b22-65e8-4751-8e29-192e1c06466a" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.interpretationCode" condition=""/>
     <elements xmi:id="_M-4kYMEfEeWXu9YzgahA6Q" businessElement="FunctionalStatusResultsObservationMethodCode" modelElement="_nm5IkebxEeGINOJ_SD9_dA" businessElementId="88496743-0a96-4f91-9287-c1b76275123a" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.methodCode" condition=""/>
@@ -3468,10 +3467,10 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_RRGosME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="54ebb14a-2bd5-4123-a4a0-e92a6022404f" modelElementPath="functionalStatusProblemObservation" condition="negationIND = &quot;false&quot;"/>
     <elements xmi:id="_gOXSMME5EeWXu9YzgahA6Q" businessElement="FunctionalStatusNotAProblemObservation" modelElement="_rcrWMecQEeGINOJ_SD9_dA" businessElementId="8ac58ef6-814f-49d2-8a4d-83a754e1ebe3" modelElementPath="functionalStatusProblemObservation" condition="negationIND = &quot;true&quot;"/>
     <elements xmi:id="_T92tYME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="c65b2314-4171-4e58-9a32-6c2bb9b3d879" modelElementPath="functionalStatusProblemObservation.id" condition="negationIND = &quot;false&quot;"/>
-    <elements xmi:id="_p4jDEME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationEndTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="7250074d-cde4-42d3-a51a-652c565ae4a4" modelElementPath="functionalStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_p4jDEME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationEndTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="7250074d-cde4-42d3-a51a-652c565ae4a4" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;"/>
     <elements xmi:id="_xSyAAME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="3a39e4e1-29a9-488d-92fb-59bd0815b850" modelElementPath="functionalStatusProblemObservation.value" condition="negationIND = &quot;false&quot;"/>
     <elements xmi:id="_4lk4MME6EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="18380f9e-f5d8-4855-ba6f-0a255f69eb6d" modelElementPath="functionalStatusProblemObservation.methodCode" condition="negationIND = &quot;false&quot;"/>
-    <elements xmi:id="_M23nIME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationStartTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="0600362a-d7ee-4a73-b0e1-552de7d48508" modelElementPath="functionalStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;"/>
+    <elements xmi:id="_M23nIME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusProblemObservationStartTime" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="0600362a-d7ee-4a73-b0e1-552de7d48508" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;"/>
     <elements xmi:id="_lH7-UME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemObservation" modelElement="_tJSB8ecQEeGINOJ_SD9_dA" businessElementId="0a9229a4-8d9b-423b-b98d-05974304bc29" modelElementPath="cognitiveStatusProblemObservation" condition="negationIND = &quot;false&quot;"/>
     <elements xmi:id="_zd_d4ME7EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemID" businessElementId="8d9f9cfe-f865-4c97-a67b-5ff15b16a9c6" modelElementPath="cognitiveStatusProblemObservation.id" condition="negationIND = &quot;false&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueSuZcEeGINOJ_SD9_dA"/>
@@ -3483,10 +3482,10 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_nEwlcME9EeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemText" businessElementId="8936cec4-2a7a-4a4d-a7b5-1a22fa5a5bcf" modelElementPath="cognitiveStatusProblemObservation.text" condition="negationIND = &quot;true&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_Xr1MQMFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemStartDate" businessElementId="39c38f53-0d76-4b80-82c6-672cf62c3e22" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
+    <elements xmi:id="_Xr1MQMFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveNotAProblemStartDate" businessElementId="39c38f53-0d76-4b80-82c6-672cf62c3e22" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_bOhP4MFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemEndDate" businessElementId="edc05113-203e-409f-8e5f-14ae95b89956" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.⁬high" condition="negationIND = &quot;false&quot;">
+    <elements xmi:id="_bOhP4MFAEeWXu9YzgahA6Q" businessElement="FunctionalStatusCognitiveProblemEndDate" businessElementId="edc05113-203e-409f-8e5f-14ae95b89956" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.⁬high" condition="negationIND = &quot;false&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_g2ZOIMUAEeW9tdwyrRMXHg" businessElement="FunctionalStatusResultObservationAuthorPersonName" businessElementId="c3e6ef3b-5504-44a3-95ac-394c06d04549" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.author.assignedAuthor.assignedPerson.name" condition="">
@@ -3507,8 +3506,8 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_NXdSwMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="4db1369c-dfc2-48a6-84b1-21543dd98c2c" modelElementPath="functionalStatusProblemObservation.text" condition="negationIND = &quot;false&quot;"/>
     <elements xmi:id="_ziqCgMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationId" modelElement="_5lm5MebjEeGINOJ_SD9_dA" businessElementId="899b9ded-2f4f-4dc2-80cd-2d277831acb5" modelElementPath="functionalStatusProblemObservation.id" condition="negationIND = &quot;true&quot;"/>
     <elements xmi:id="_3IoqsMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationText" modelElement="_5lm5Q-bjEeGINOJ_SD9_dA" businessElementId="dd4d7181-6b06-4312-aacd-fe8994e9f3d4" modelElementPath="functionalStatusProblemObservation.text" condition="negationIND = &quot;true&quot;"/>
-    <elements xmi:id="_5m-VYMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationStartDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="b48ed957-196b-4170-824c-fd73edd85876" modelElementPath="functionalStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;"/>
-    <elements xmi:id="_7cGrAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationEndDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="ebc0bac1-da5c-4743-85cf-5c0ff7c57f4f" modelElementPath="functionalStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_5m-VYMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationStartDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="b48ed957-196b-4170-824c-fd73edd85876" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;"/>
+    <elements xmi:id="_7cGrAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationEndDate" modelElement="_5lgylObjEeGINOJ_SD9_dA" businessElementId="ebc0bac1-da5c-4743-85cf-5c0ff7c57f4f" modelElementPath="xxxfunctionalStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;"/>
     <elements xmi:id="_9XFxAMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationValue" modelElement="_5lm5R-bjEeGINOJ_SD9_dA" businessElementId="5d6f8330-8a73-41ea-8edc-145ce13f9eb6" modelElementPath="functionalStatusProblemObservation.value" condition="negationIND = &quot;true&quot;"/>
     <elements xmi:id="_-_eEEMUMEeW9tdwyrRMXHg" businessElement="FunctionalStatusNotAProblemObservationMethodCode" modelElement="_5lm5NebjEeGINOJ_SD9_dA" businessElementId="50a44c50-b723-4990-9c48-650e32108984" modelElementPath="functionalStatusProblemObservation.methodCode" condition="negationIND = &quot;true&quot;"/>
     <elements xmi:id="_CjwYQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationId" businessElementId="e5013c68-aae5-48a1-afd2-f3f6ef38ab4f" modelElementPath="cognitiveStatusProblemObservation.id" condition="negationIND = &quot;false&quot;">
@@ -3517,10 +3516,10 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_ElC6kMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationText" businessElementId="094e879c-cefd-48b5-bca6-5608d4a83d9e" modelElementPath="cognitiveStatusProblemObservation.text" condition="negationIND = &quot;false&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_HCud8MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationStartDate" businessElementId="72a014ed-a1bc-4f48-81dd-9c48fa25325f" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;">
+    <elements xmi:id="_HCud8MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationStartDate" businessElementId="72a014ed-a1bc-4f48-81dd-9c48fa25325f" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;false&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_Izep4MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationEndDate" businessElementId="a10cf335-ba40-49c5-b460-e1c7cd27d894" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;">
+    <elements xmi:id="_Izep4MUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationEndDate" businessElementId="a10cf335-ba40-49c5-b460-e1c7cd27d894" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;false&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_LHPcQMUPEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveProblemObservationMethodCode" businessElementId="0a89f929-c8ec-4f66-b620-5ee65c76b6c1" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="negationIND = &quot;false&quot;">
@@ -3537,10 +3536,10 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_1k5DMMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationText" businessElementId="90bbbc0e-54ad-4ccb-9a68-73c019c43480" modelElementPath="cognitiveStatusProblemObservation.text" condition="negationIND = &quot;true&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PQOZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_3kVycMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationStartTime" businessElementId="98cb9193-4c22-4d53-9429-6e7b12a180f6" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
+    <elements xmi:id="_3kVycMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationStartTime" businessElementId="98cb9193-4c22-4d53-9429-6e7b12a180f6" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.low" condition="negationIND = &quot;true&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
-    <elements xmi:id="_6JDK4MUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationEndTime" businessElementId="91dbb12a-9cbd-4454-92ce-40259e634802" modelElementPath="cognitiveStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;">
+    <elements xmi:id="_6JDK4MUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationEndTime" businessElementId="91dbb12a-9cbd-4454-92ce-40259e634802" modelElementPath="xxxcognitiveStatusProblemObservation.effectiveTime.high" condition="negationIND = &quot;true&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aFueRuZcEeGINOJ_SD9_dA"/>
     </elements>
     <elements xmi:id="_8DmzEMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationMethodCode" businessElementId="27df59b4-754b-4edf-9b6b-9798f25ff228" modelElementPath="cognitiveStatusProblemObservation.methodCode" condition="negationIND = &quot;true&quot;">
@@ -3549,5 +3548,6 @@ Instructions are information or directions to the patient. Use the Instructions 
     <elements xmi:id="_91rNoMUQEeW9tdwyrRMXHg" businessElement="FunctionalStatusCognitiveNotAProblemObservationValue" businessElementId="e8fde44a-be02-417c-b2ff-caf3139fd41b" modelElementPath="cognitiveStatusProblemObservation.value" condition="negationIND = &quot;true&quot;">
       <modelElement xmi:type="uml:Property" href="consol-cognitive.uml#_aF4PROZcEeGINOJ_SD9_dA"/>
     </elements>
+    <elements xmi:id="_a0mv4OYzEeW5Oax7LpOkcw" businessElement="FunctionalStatusResultsObservationEffectiveTime" modelElement="_nm5IhebxEeGINOJ_SD9_dA" businessElementId="a3b0717c-11c8-4822-94a9-6e0d967bce70" modelElementPath="functionalStatusResultOrganizer.functionalStatusResultObservation.effectiveTime"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

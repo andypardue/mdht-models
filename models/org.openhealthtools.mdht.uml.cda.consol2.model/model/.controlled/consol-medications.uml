@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:MDMI="http://org.mdmi.uml.profile/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2NIpgBSVEeGGzu7fmW9pXw" name="MedicationsSection">
     <ownedRule xmi:id="_2NJ3tRSVEeGGzu7fmW9pXw" name="absenceOfMedications">
       <ownedComment xmi:id="_2NJ3thSVEeGGzu7fmW9pXw">
@@ -370,14 +370,14 @@ Medication timing is complex. This template requires that there be a substanceAd
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GJQsBSVEeGGzu7fmW9pXw" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7514</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GX6MBSVEeGGzu7fmW9pXw" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7515</ruleId>
     <ruleId>R2.0=CONF:1098-7515</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GKe0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2GHbwhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7516</ruleId>
@@ -988,8 +988,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7451</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_JbIaABrZEeGo461UQq-B1g" base_Property="_ThIPFBrYEeGo461UQq-B1g">
-    <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7455</ruleId>
+    <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_j3aTQBrTEeGo461UQq-B1g" name="MedicationSupplyOrder">
     <ownedRule xmi:id="_iZPioB7lEeGEaLkc3UAsAg" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
@@ -1159,9 +1159,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7496</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:7497</ruleId>
     <ruleId>R2.0=CONF:1098-7497</ruleId>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
@@ -1220,9 +1220,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-8745</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:8746</ruleId>
     <ruleId>R2.0=CONF:1098-8746</ruleId>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:15498</ruleId>
@@ -1392,8 +1392,8 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
   <CDA:ValueSetConstraint xmi:id="_W_OvoNuhEeGaiuMcT06VUQ" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:7412</ruleId>
+    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MB6gQNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_GyKRMEIsEeG4bZAl2IGXmQ"/>
   <CDA:ConstraintValidation xmi:id="_M2SjgNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_WONKoCANEeGKirKJsFylGA"/>
@@ -1605,7 +1605,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
   <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" message="This playingEntity SHALL contain exactly one [1..1] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1098-28669)" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
     <ruleId>CONF:1098-28669</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" clientDependency="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication2">
+  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" name="AdmissionMedication2">
     <ownedComment xmi:id="_qsCkoK-1EeO8duI_7f6kZw">
       <body>This template represents the medications taken by the patient prior to and at the time of admission.</body>
     </ownedComment>
@@ -1637,7 +1637,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
     <ruleId>CONF:NEW</ruleId>
     <ruleId>R2.0=CONF:1098-32775</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" clientDependency="_C9_R8OLBEeOc7-TVP7Wi6w" name="MedicationActivity2">
+  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" name="MedicationActivity2">
     <ownedComment xmi:id="_oiDlsOLAEeOc7-TVP7Wi6w">
       <body>A Medication Activity describes substance administrations that have actually occurred (e.g., pills ingested or injections given) or are intended to occur (e.g., &quot;take 2 tablets twice a day for the next 10 days&quot;). Medication activities in &quot;INT&quot; mood are reflections of what a clinician intends a patient to be taking. For example, a clinician may intend that a patient to be administered Lisinopril 20 mg PO for blood pressure control. If what was actually administered was Lisinopril 10 mg., then the Medication activities in the &quot;EVN&quot; mood would reflect actual use.&#xD;
 A moodCode of INT is allowed, but it is recommended that the Planned Medication Activity (V2) template be used for moodCodes other than EVN if the document type contains a section that includes Planned Medication Activity (V2) (for example a Care Plan document with Plan of Treatment, Intervention, or Goal sections).&#xD;
@@ -1942,12 +1942,12 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32360</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
-    <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-7519</ruleId>
+    <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_N3hTYOLZEeOc7-TVP7Wi6w" severity="INFO" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w"/>
   <uml:Association xmi:id="_OvExAOLaEeOc7-TVP7Wi6w" memberEnd="_OvC70OLaEeOc7-TVP7Wi6w _OvFYEOLaEeOc7-TVP7Wi6w">
@@ -1971,7 +1971,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
   <CDA:ConstraintValidation xmi:id="_GsKcUuXAEeOkFcFJ9uzEEw" message="" base_Constraint="_GsKcUOXAEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-7508</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" clientDependency="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense2">
+  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" name="MedicationDispense2">
     <ownedComment xmi:id="_zoMZIOXgEeOkFcFJ9uzEEw">
       <body>This template records the act of supplying medications (i.e., dispensing).</body>
     </ownedComment>
@@ -2036,7 +2036,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
   <CDA:ConstraintValidation xmi:id="_VWi7YuXnEeOkFcFJ9uzEEw" base_Constraint="_VWi7YOXnEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-9333</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" clientDependency="_L3zMMOXrEeOkFcFJ9uzEEw" name="MedicationInformation2">
+  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" name="MedicationInformation2">
     <ownedComment xmi:id="_RV3XYOXrEeOkFcFJ9uzEEw">
       <body>A medication should be recorded as a pre-coordinated ingredient + strength + dose form (e.g., &quot;metoprolol 25mg tablet&quot;, &quot;amoxicillin 400mg/5mL suspension&quot;) where possible. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack).&#xD;
 The dose (doseQuantity) represents how many of the consumables are to be administered at each administration event. As a result, the dose is always relative to the consumable. Thus, a patient consuming a single &quot;metoprolol 25mg tablet&quot; per administration will have a doseQuantity of &quot;1&quot;, whereas a patient consuming &quot;metoprolol&quot; will have a dose of &quot;25 mg&quot;.</body>
@@ -2128,8 +2128,8 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-32579</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_MeYOkOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw">
-    <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
     <ruleId>CONF:1098-7412</ruleId>
+    <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_QyMNIOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw"/>
   <CDA:PropertyValidation xmi:id="_eEksYOXwEeOkFcFJ9uzEEw" severity="INFO" base_Property="_dVFJIOXwEeOkFcFJ9uzEEw">
@@ -2138,7 +2138,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:ConstraintValidation xmi:id="_5CwxIOXwEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_4LnGsOXwEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-31884</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" clientDependency="_azwWQOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2">
+  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2">
     <ownedComment xmi:id="_SYVCEOZ8EeOmzetP5oaH3A">
       <body>This template records the intent to supply a patient with medications.</body>
     </ownedComment>
@@ -2223,7 +2223,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-7444</ruleId>
     <ruleId>CONF:1098-31391</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" clientDependency="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2">
+  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2">
     <ownedComment xmi:id="_vkE70OaCEeOmzetP5oaH3A">
       <body>This template represents equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs). Devices applied to, or placed in, the patient are represented with the Product Instance entry contained within a Procedure Activity Procedure (V2) (identifier: urn:hl7ii: 2.16.840.1.113883.10.20.22.4.14:2014-06-09)</body>
     </ownedComment>
@@ -2319,7 +2319,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-7474</ruleId>
     <ruleId>CONF:1098-15606</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw" name="AdmissionMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" name="AdmissionMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_hnpR0PyqEeOlg_Cnc5bODw">
       <body>The section contains the medications taken by the patient prior to and at the time of admission to the facility.</body>
     </ownedComment>
@@ -2350,7 +2350,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:AssociationValidation xmi:id="_-48zQPyrEeOlg_Cnc5bODw" severity="WARNING" base_Association="_9ZvqUPyrEeOlg_Cnc5bODw">
     <ruleId>CONF:1198-10102, CONF:1198-15484</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
+  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
     <ownedComment xmi:id="_GwZnsP1cEeO5Hq-yrsJSmg">
       <body>This section defines a patient's implanted and external health and medical devices and equipment. This section lists any pertinent durable medical equipment (DME) used to help maintain the patient's health status. All equipment relevant to the diagnosis, care, or treatment of a patient should be included. &#xD;
 Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template.&#xD;
@@ -2410,7 +2410,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-31885</ruleId>
     <ruleId>CONF:1098-31886</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" clientDependency="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2">
+  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2">
     <ownedComment xmi:id="_cc_vkP4jEeOwFalSp0fRiw">
       <body>The Medications Administered Section usually resides inside a Procedure Note describing a procedure. This section defines medications and fluids administered during the procedure, its related encounter, or other procedure related activity excluding anesthetic medications. Anesthesia medications should be documented as described in the Anesthesia Section templateId 2.16.840.1.113883.10.20.22.2.25.</body>
     </ownedComment>
@@ -2445,7 +2445,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-8156</ruleId>
     <ruleId>CONF:1098-15499</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" clientDependency="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_R4TW0AFaEeS0nNJt6oyOyQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring.</body>
     </ownedComment>
@@ -2488,7 +2488,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-7795</ruleId>
     <ruleId>CONF:1098-10076</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" clientDependency="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection2">
+  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" name="MedicationsSection2">
     <ownedComment xmi:id="_w0ZgoALQEeS0YMHMf4rRtQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring. &#xD;
 This section requires either an entry indicating the subject is not known to be on any medications or entries summarizing the subject's medications.</body>
@@ -2554,7 +2554,7 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:PropertyValidation xmi:id="_zErHgDhBEeS1WeMhbm6GZw" severity="WARNING" base_Property="_thJ0kDhBEeS1WeMhbm6GZw">
     <ruleId>CONF:7369</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_XA96QDhDEeS1WeMhbm6GZw" clientDependency="_9o9TsDhDEeS1WeMhbm6GZw" name="PreconditionForSubstanceAdministration2">
+  <uml:Class xmi:id="_XA96QDhDEeS1WeMhbm6GZw" name="PreconditionForSubstanceAdministration2">
     <ownedComment xmi:id="_ro_uMDhDEeS1WeMhbm6GZw">
       <body>A criterion for administration can be used to record that the medication is to be administered only when the associated criteria are met.</body>
     </ownedComment>
@@ -2587,8 +2587,8 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2fqgUzhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw"/>
   <CDA:ValueSetConstraint xmi:id="_7o8uUDhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7369</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_qeq-MDhFEeS1WeMhbm6GZw" code="ASSERTION" displayName="Assertion" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
@@ -2639,12 +2639,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7514</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_smFv8MNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
-    <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
     <ruleId>CONF:1098-32361</ruleId>
+    <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_33ADgMNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7455</ruleId>
@@ -2656,8 +2656,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-7432</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_e9LkEMOGEeSRNKqIviDQAg" base_Property="_bgxuoMOGEeSRNKqIviDQAg">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32362</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Hv6hU8OIEeSRNKqIviDQAg" severity="WARNING" base_Property="_Hv6hUMOIEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7434</ruleId>
@@ -2666,8 +2666,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-8749</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_vPRM4MQSEeSt_63yiINGSw" base_Property="_oW6N8MQSEeSt_63yiINGSw">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32363</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_YauMIMQUEeSt_63yiINGSw" memberEnd="_Yas-AMQUEeSt_63yiINGSw _YauzMMQUEeSt_63yiINGSw">
     <ownedEnd xmi:id="_YauzMMQUEeSt_63yiINGSw" type="_k_C20OaCEeOmzetP5oaH3A" association="_YauMIMQUEeSt_63yiINGSw"/>
@@ -2678,12 +2678,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_07H3UMhCEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_JAJr4MhDEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7519</ruleId>
+    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_WpUWIPpdEeS-CfvNxekztA" base_Property="_WDsGYYqvEeOoMZgUoTghIg">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32358</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_pHwjUA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_so0iEOZ2EeO97uF_XMEmeg"/>
   <CDA:ConstraintValidation xmi:id="_pldL8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_cKGQYOZ3EeO97uF_XMEmeg"/>
@@ -2820,8 +2820,8 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1198-32754</ruleId>
   </CDA:TextValue>
   <CDA:ValueSetConstraint xmi:id="_eS9XoDsBEeWD4MX6K2c_gA" base_Property="_HkAI4DsAEeWD4MX6K2c_gA">
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:1198-32771</ruleId>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_BH7ycDsCEeWD4MX6K2c_gA" code="76662-6" displayName="Instructions Medication" base_Property="_Hj_h0DsAEeWD4MX6K2c_gA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -2907,5 +2907,73 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     </elements>
     <elements xmi:id="_ZgaEkLZFEeWF56peAChi6w" businessElement="MedicationAdministeredStatusCode" modelElement="_2GlVkBSVEeGGzu7fmW9pXw" businessElementId="333e512f-80c4-48f0-9e65-1426e4138f00" modelElementPath="medication.statusCode" condition="moodCode=&quot;EVN&quot;"/>
     <elements xmi:id="_iO9VcLh8EeWRosu9Gctomw" businessElement="MedicationPrescriptionStatusCode" modelElement="_2GlVkBSVEeGGzu7fmW9pXw" businessElementId="d16d1fb5-528f-441d-bb65-88be2919125d" modelElementPath="medication.statusCode" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_QsSagNS4EeWqHOHsDZliBA" businessElement="MedicationSectionText" modelElement="_2NJ3qBSVEeGGzu7fmW9pXw" businessElementId="8aa0553e-d060-4bd6-a120-baf136e3b9af" modelElementPath="text" condition=""/>
+    <elements xmi:id="_ad5pENS5EeWqHOHsDZliBA" businessElement="MedicationAdministeredDeliveryMethodCode" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="c175ac9b-a773-4da7-a7e2-f335e2f383ef" modelElementPath="medication.code" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_eP8-YNS5EeWqHOHsDZliBA" businessElement="MedicationPrescriptionDeliveryMethodCode" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="efcd64f0-1f58-4586-b6fe-d85a0c94d916" modelElementPath="medication.code" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_Jw9qUNS8EeWqHOHsDZliBA" businessElement="MedicationAdministrationEndTime" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="3a3f7e86-8496-4bfe-b839-b307dcf8ff96" modelElementPath="xxxmedication.effectiveTime.high" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_srcQMNS8EeWqHOHsDZliBA" businessElement="MedicationAdminsteredStartTime" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="f4613e2e-219e-455f-b215-9519e60d9288" modelElementPath="xxxmedication.effectiveTime.low" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_N3MqcNS9EeWqHOHsDZliBA" businessElement="MedicationPrescriptionEndTime" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="b86d6914-3645-489a-bc2d-d742d29f33f6" modelElementPath="xxxmedication.effectiveTime.high" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_f8FMMNS9EeWqHOHsDZliBA" businessElement="MedicationPrescriptionStartTime" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="7cdb0174-d819-4fa2-8e41-07bf03e2c4df" modelElementPath="xxxmedication.code" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_pxIlwNS9EeWqHOHsDZliBA" businessElement="MedicationPrescriptionStartTime" modelElement="_2GHb0hSVEeGGzu7fmW9pXw" businessElementId="7cdb0174-d819-4fa2-8e41-07bf03e2c4df" modelElementPath="medication.code" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_J366ANTUEeWqHOHsDZliBA" businessElement="MedicationAdministeredPerformerPersonName" businessElementId="02c1ac46-295d-4ae9-83c8-a7f67003118d" modelElementPath="medication.performer.assignedEntity.assignedPerson.name" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_NHU1QNTUEeWqHOHsDZliBA" businessElement="MedicationAdministeredPerformerTypeCode" businessElementId="a620a097-01df-4c55-b019-ecad340de1df" modelElementPath="medication.performer.typeCode" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_ELlCwErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_naVPANTUEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPerformerTypeCode" businessElementId="e68006a0-ddcd-442e-a632-718c4d65630c" modelElementPath="medication.performer.typeCode" condition="moodCode=&quot;INT&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_ELlCwErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_sq-CMNTUEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPerformerPersonName" businessElementId="86f14598-38b3-4738-ad54-e57ccb80b929" modelElementPath="medication.performer.assignedEntity.assignedPerson.name" condition="moodCode=&quot;INT&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_SvOxkNTXEeWqHOHsDZliBA" businessElement="MedicationAdministeredPatientAwarenessCode" businessElementId="9d0d562e-b3f6-4c35-9060-bfe3bc2a0441" modelElementPath="medication.instructions.code" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_Vz6qkNTXEeWqHOHsDZliBA" businessElement="MedicationAdministeredPatientInstructions" businessElementId="cd4a395c-1688-4443-a962-d059002dd916" modelElementPath="medication.instructions.text" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8iABSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_aCUksNTXEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPatientAwarenessCode" businessElementId="c862dde5-fc28-4dd5-ad24-d240e02a16f8" modelElementPath="medication.instructions.code" condition="moodCode=&quot;INT&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8h-hSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_dfgdQNTXEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPatientInstructions" businessElementId="aa868a93-92d8-4887-86f2-c204e5842273" modelElementPath="medication.instructions.text" condition="moodCode=&quot;INT&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-other.uml#_2G8iABSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_PVmG0NTYEeWqHOHsDZliBA" businessElement="MedicationAdministeredMedicationManufacturerOrganizationName" businessElementId="4c48d8b3-56ce-433a-99fe-5a0404bd0722" modelElementPath="medication.consumable.medicationInformation.manufacturerOrganization.name" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
+    </elements>
+    <elements xmi:id="_o6MQgNTaEeWqHOHsDZliBA" businessElement="MedicationAdministeredPreconditions" modelElement="_U-R84DhbEeS1WeMhbm6GZw" businessElementId="029e7bee-2769-447a-9d92-73f587d18c66" modelElementPath="medication.precondition" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_r-9pENTaEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPreconditions" modelElement="_U-R84DhbEeS1WeMhbm6GZw" businessElementId="46604b94-f3a2-428c-854c-4422f67dcd92" modelElementPath="medication.precondition" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_2ImykNTaEeWqHOHsDZliBA" businessElement="MedicationAdministeredPreconditionCode" modelElement="_thJNgDhBEeS1WeMhbm6GZw" businessElementId="e5d10075-1c5c-4e6c-a037-c28c2374967c" modelElementPath="medication.precondition.preconditionForSubstanceAdministration.code" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_8H3mUNTaEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPreconditionCode" modelElement="_thJNgDhBEeS1WeMhbm6GZw" businessElementId="8324e6d1-89ec-4b1f-a56d-8557f4d2ae66" modelElementPath="medication.precondition.preconditionForSubstanceAdministration.code" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_ZeYNUNTbEeWqHOHsDZliBA" businessElement="MedicationAdministeredPreconditionText" modelElement="_thJNgzhBEeS1WeMhbm6GZw" businessElementId="17d30b8b-afd3-49b9-8749-741d98e347eb" modelElementPath="medication.precondition.preconditionForSubstanceAdministration.text" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_enmJ4NTbEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPreconditionText" modelElement="_thJNgzhBEeS1WeMhbm6GZw" businessElementId="289e4c69-55ad-4c72-93e0-1b8711a2226e" modelElementPath="medication.precondition.preconditionForSubstanceAdministration.text" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_u4MDgNTbEeWqHOHsDZliBA" businessElement="MedicationAdministrationPreconditionCode" modelElement="_thJ0kDhBEeS1WeMhbm6GZw" businessElementId="379d2dea-7b83-4a84-a119-2364fea067d8" modelElementPath="medication.precondition.preconditionForSubstanceAdministration.value" condition="moodCode=&quot;EVN&quot;"/>
+    <elements xmi:id="_7frIcNTbEeWqHOHsDZliBA" businessElement="MedicationPrescriptionPreconditionValue" modelElement="_thJ0kDhBEeS1WeMhbm6GZw" businessElementId="3d753d84-34a3-448e-ba5a-23d7ec724fbe" modelElementPath="medication.precondition.preconditionForSubstanceAdministration.value" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_q3DT4NTcEeWqHOHsDZliBA" businessElement="MedicationAdministeredReactionCode" businessElementId="28c80c07-c7a5-4c2d-b80f-d815758910f6" modelElementPath="medication.reactionObservation.code" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FBPVRSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_QlVeINTdEeWqHOHsDZliBA" businessElement="MedicationAdministeredReactionText" businessElementId="bf912424-06a8-44f2-ad7b-a093d22ec848" modelElementPath="medication.reactionObservation.text" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FDEgBSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_UOD4UNTdEeWqHOHsDZliBA" businessElement="MedicationAdministeredReactionStartTime" businessElementId="f0befdf2-4844-4905-b610-26195c2f0a1e" modelElementPath="xxxmedication.reactionObservation.effectiveTime" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FE5sBSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_X1HekNTdEeWqHOHsDZliBA" businessElement="MedicationAdministeredReactionEndTime" businessElementId="234c20b9-920d-4cd8-b2eb-cfb9763785d7" modelElementPath="xxxmedication.reactionObservation.effectiveTime" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FE5sBSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_cAhvENTdEeWqHOHsDZliBA" businessElement="MedicationAdministeredReactionValue" businessElementId="c40e266f-61e8-4fcb-8876-fe5e8d169c5f" modelElementPath="medication.reactionObservation.value" condition="moodCode=&quot;EVN&quot;">
+      <modelElement xmi:type="uml:Property" href="consol-allergies.uml#_2FFgwRSVEeGGzu7fmW9pXw"/>
+    </elements>
+    <elements xmi:id="_lEdXQNTpEeWqHOHsDZliBA" businessElement="MedicationsDispensed" modelElement="_H7DfghUUEeG6PvUxSTZnaw" businessElementId="b93f09a7-7db8-4a1a-af3e-8ec5cf64533c" modelElementPath="medication.medicationDispense" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_sZ560NTpEeWqHOHsDZliBA" businessElement="MedicationDispenseTime" modelElement="_ThGZ4BrYEeGo461UQq-B1g" businessElementId="945d1a01-3d82-4544-9529-dcfc75be6648" modelElementPath="xxxmedication.medicationDispense.effectiveTime.low" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_yHIjYNTpEeWqHOHsDZliBA" businessElement="MedicationDispenseStatusCode" modelElement="_ThIPFBrYEeGo461UQq-B1g" businessElementId="ee2c991e-57fd-43f5-baaf-57be4acf665b" modelElementPath="medication.medicationDispense.statusCode" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_5Rx5QNT2EeWqHOHsDZliBA" businessElement="MedicationsSupplyOrders" modelElement="_2GjgYxSVEeGGzu7fmW9pXw" businessElementId="9529d598-c55c-4f31-80f6-4d647b6f56af" modelElementPath="medication.medicationSupplyOrder" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_8VLY0NT2EeWqHOHsDZliBA" businessElement="MedicationSupplyOrderID" modelElement="_z3ymoBrTEeGo461UQq-B1g" businessElementId="f13ef09f-f6d2-40c2-a90c-cebde9d5bc3d" modelElementPath="medication.medicationSupplyOrder.id" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_DqsN0NT3EeWqHOHsDZliBA" businessElement="MedicationSupplyOrderStatusCode" modelElement="_p1rogRrTEeGo461UQq-B1g" businessElementId="eecb90b6-cec2-4e20-aad9-a2e5dc644a22" modelElementPath="medication.medicationSupplyOrder.statusCode" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_HItz4NT3EeWqHOHsDZliBA" businessElement="MedicationSupplyOrderEffectiveTime" modelElement="_p1pzUBrTEeGo461UQq-B1g" businessElementId="df5206ed-9791-4d65-b112-dd1e20e97829" modelElementPath="xxxmedication.medicationSupplyOrder.effectiveTime.low" condition="moodCode=&quot;INT&quot;"/>
+    <elements xmi:id="_lZOlANT3EeWqHOHsDZliBA" businessElement="MedicationSupplyOrderRepeatNumber" modelElement="_p1rBcRrTEeGo461UQq-B1g" businessElementId="2e15dafd-2108-46a9-a1f8-af162b227505" modelElementPath="medication.medicationSupplyOrder.repeatNumber" condition=""/>
+    <elements xmi:id="_opI2kNT3EeWqHOHsDZliBA" businessElement="MedicationSupplyOrderQuantity" modelElement="_p1qaYhrTEeGo461UQq-B1g" businessElementId="79a20ed9-ec97-4d2f-a442-67a94d325394" modelElementPath="medication.medicationSupplyOrder.quantity" condition=""/>
+    <elements xmi:id="_FTsmoOZIEeW5Oax7LpOkcw" businessElement="MedicationSupplyOrderEffectiveTime1" modelElement="_p1pzUBrTEeGo461UQq-B1g" businessElementId="ee269c42-ee02-4309-adcb-81acfd030c90" modelElementPath="medication.medicationSupplyOrder.effectiveTime"/>
   </MDMI:MDMIMapping>
 </xmi:XMI>

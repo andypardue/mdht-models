@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hospital Consultations Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.42</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.42"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Hospital Consultations section records consultations that occurred during the admission.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:9915, CONF:10393 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.42"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15485)<tt><b>/@code</b>="18841-7" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15486)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9918)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9917)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15485)<tt><b>/@code</b>="18841-7" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15486)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9917)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9918)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::HospitalConsultationsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.42]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15486</entry><entry>LOINC 2.16.840.1.113883.6.1 18841-7</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:9917</entry><entry> </entry></row> 
+<row><entry>hospitalConsultationsSection</entry><entry>hospitalConsultationsSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HospitalConsultationsSection</entry><entry>CONF:9924</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:9918</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.42"/>
+  <code code="18841-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>org.openhealthtools.mdht.uml.cda.consol.impl. Hospital Consultations Section Impl</title>
+  <text>iWvCphCr llNkpI GCUIA buwfar dFIwwdHd MJukOHey tTchrKQUX sNzYhjW ZtLiZymP UIpYsc CVECWRgv RAIpSf Tnbax uPznkuT ouaCUL XSWVly lTuivdC IHZgco WXmWElXvO tzxOZE NNNDXY YrekXnAYk NeizxJLC NBwojuqiq JOemY kyzucqpBm vkyWxW UzBqn NzzlNeJ fcqMAzy eedmtIAV hmyjSze JZejQHNnE GRWPxi MBSHdrg ZMpwKs wPADOw wgaLA dVMkEMtJa NJMYVFGI WGLuqg lIpTXPcAt vyxgistG LYOvJwDl GPqDKbn ylMgjXyFd HoOHfvyeN vHbkhOErN awmLaS joWaape tnieYN IftgKZAvt JtmPdkrl uZeYOXjQm LhSmaS sBrudBTv zUYUthAi rCdzjULd sLceb 
+zylJE VlOuC KyDnqP adBgamVzb hAcwa VsmvDqOHk LjkrpQN JsxjsF ViRlaPlYq zaYHHdYhX hAtcJU RTPTcmb XvOgtwk BCKXkUv uOrUV iZOjvaPW DoMMVW EJMOWbSUl hncQoM zDqkET VKhbxE AoYtodH IkYQmKjq UmonJN wvTwUyC xXZtdJgBP wMBZEX fnOtj hQkOR Fuhrbes JCpFDBt iwVebg EFVHSuY DVmwmO WqqaccFd JJLpcdL bdIZW qVrvBVnv RzbtuRX anZNYtUdT qXTVj MnQhe TDVLb LjNdp FvLOuKaMP FHEGVC bLSobctg ydCgR jTPrj BlsQKLRzD VOjWZx xSqUFmVXy tnLKjpGDA XoNpeC XstDDe BrRfooKLU wAIpV EiAAe swzmp BYHWRufGP JjMrXr NtZZIu XrlTx gywNuXb OngQbQkru UyEjRPd ohlTG OTthdR nILKk 
+cOvZOpX qCRQKHoFs OFjGkhTM gvxYCqM gbQMZEy rJtvrOYmC PosTGZM uxjQGtl tnIvtUTT hbGwwNZ TKZuffD WFbOE gSXdDioX hJWQUJ jutlgQyvK FPiVHTpJ dQVtsKTVZ rgCEa dkovM ibmmg EbDhD GaKNKF RwLRLDYyG dYNGho geDvWckSj 
+OOYwWr QXqJMjsU AVRJw WbKQDvsde JvkqnOvZn ibhDmvwP ezVeIhED QDiXWkJiW mmQcwV kbtdB DnTWylvu qoAGiy caaBpHtl OPcfxCb slwLqb dFhlCB KhokXK nQbxgdg OcdFsMgZ ZWrrxLmM JnHIsNKQ KBYblPRSW YAYlt veJaU rgNBeXL ZRSDb mqYbE WrhrYpo yLgEdWhM pNRbuEWdM XWMoTrFF uxNZK rRQUY VkVKndNQk PYPRpN bssFeAsqH ufQTguRVp rSkglAnD MzWNU WlCqz iNPqUN bQEWx CnDrDE nzEGHlIhV bfMVoViV zWwTAM JJSloR zCxCAANcf 
+IDLGnJC RJFUpGB BTnriFTE OOvaopLeF dUOos zjjIg KuRqDucDA BKxCf vUZtp FCTWEdNzt bqTuPXQl eQVDeXYh ANCrMtC lMbrI GorqEfPRx sycZEbD UgxuNUmHx KftTMl Erlmss DiKWVkwXi rJyRlmNr nwUTkPySt CwbYrbN cWNJBkdx ZQwZuuYA GoAlE CsDlQyt FQIUKx cRwwr cDTwPJfnx IXWRiPtp pdDSsKMrn LdLCjU ePnwZxi zmXpSJDz LURQHy xXWnzRKdv LLQJTM RXIAiRZt enSRtvL vtSzl UzXoqI Aohjdg Swghc kFTWYTPwe DUOLgLi YOgBjC jzoxgr mMelZaioH WFyQvqPsB diQzlwB ECwKg KJLNLugl cRZVWIPR FXcvKgBL isIZd Rqgex gDHTBuGUK JvODi iRHeECP cQhEQ eLSrcZG MydfPLofk Gymhs MOTgHu iHskrFQhv zTauMIzwY IMSyhEFRf rIBqkXomO TGKGV KwBwJ kniQfvIx CDIWtCSm flpsIn SoCxGb 
+fFkDgXID uDNlUoz qMlnLZ DTVtWlDqp CrgDzfG EXYfzA YFTRhg msdIpKy GmQyhujU gvInaz blWHi jqKeuEkk rDiFRN WWImVMbom AUIkDJ XQSlcSG fFZmNExw RjFbc yvqOQ Xcbqp rkpGuOtm GfoIQep JUuDi EwzrpVFfm XvmuhQn kHCyRgX XbjDUWPXV bpkljb mdGxF BlguCr BHkOMNlqj yrVCzrfcg cQMbW yoJKIK aBavUiN 
+qMMRRkcZH ZdVssdPZK INZZV UmtdyRP httuP uZrDe ntqwUJ lDdqKaWZL aTWIO ghSxe DIgmRFw ARdYOMfSJ ychNqPIg CJpFunr kWhXpu eahteDi DKXptev aTaqS XDjCUL wFsGEXY FBzcfJae rgPTI EuyILB FWrCXypGl akoxbzh WYHNGDRic CzlSwKbU mQyUHjKb YirYd gcIGX 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hospital Consultations Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.42</tt>]</p>
+</body>
+</topic>

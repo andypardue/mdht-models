@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="References">
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergiesSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultObservation.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/CognitiveStatusResultOrganizer.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultObservation.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusResultOrganizer.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/FunctionalStatusSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/GeneralHeaderConstraints.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeInstructionsSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ImmunizationsSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/InstructionsSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsAdministeredSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProcedureActivityProcedure.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProceduresSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultObservation.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultsSection.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/SmokingStatusObservation.dita" type="topic" />
+<topicref href="org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.dita" type="topic" />
+</map>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>History Of Past Illness Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.20</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.20"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>This section describes the history related to the patient's past complaints, problems, or diagnoses. It records these details up until and possibly pertinent to the patient's current complaint or reason for seeking medical care.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:10390 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.20"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15474)<tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15475)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7830)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7831)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8792)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15474)<tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15475)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7830)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7831)
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain  [0..*] <tt><b>entry</b></tt> (CONF:8792)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::HistoryOfPastIllnessSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.20]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15475</entry><entry>LOINC 2.16.840.1.113883.6.1 11348-0</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7830</entry><entry> </entry></row> 
+<row><entry>historyOfPastIllnessSection</entry><entry>historyOfPastIllnessSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HistoryOfPastIllnessSection</entry><entry>CONF:9564</entry><entry> </entry></row> 
+<row><entry>problemObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.4]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemObservation</entry><entry>CONF:8792</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7831</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ConsultationNote.dita">Consultation Note</xref></entry><entry><xref href="../ProblemObservation.dita">Problem Observation</xref></entry></row><row><entry><xref href="../DischargeSummary.dita">Discharge Summary</xref></entry><entry></entry></row><row><entry><xref href="../HistoryAndPhysicalNote.dita">History And Physical Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.20"/>
+  <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+  <title>HISTORY OF PAST ILLNESS</title>
+  <text>lxDtntuN cqjop hBvnvB kvZcPbUu yDgTQRAIc WiWpUklI gcjrazU kSoISEU QMwVEEh OziSXGZn pSuQyupg wAuMnYwk DOXvKy sfjKfaI bXMkQpiNZ XZAVhLG syimgE 
+MCEMiFoR JgQyhevh WBHBnHdsa jwiDMur ZygAMMwED ualFeccV oBdvEM xRFXqA nbwjnu jgWOjlK rAotkq gcUWmd uAcBFBH wPKyZMIR iDrLf DPOEOmAD vVJvdn OrVtBJv GeFHTRuC UWNakEP dYhMzMI yrBfRcQB MVPjTJzW dJLeDFq RbbeghP JeTKv RCmYhrdx CSdss YSDMXDEDw dVjyfcCZ vICcCFap qiZJS TbqFb JKxbojxyo NakWn iDBRNMiwu lONDYrG KlQnmnh bsFWsmCR DzMzDSfpb wafyoPi gOUvrzTf GcePPW APAuBzsog GTFVRLXe IqGQgp HtevUM gHbuVJnVZ MnnxIs CaOttJ bJAMRCMN LVrnsrshr GDedpF eVCDZ bmUzUos VqZMyafe YDQUvxv zMChG nkUXB qDWccuN msuYyyzg geLgDVi wRQSbskD LeknsRwLo 
+aCfCx suvBZylGj nJEunOce MAVSPqfqV MnqRyz ruYJzqcvd ijCGzZkC vRoCw EoWavPr qpIRzMCi OcqhN AFDMhEMA hBBbLZz JvzhTNR uYJvXVu TjHOxSf VlqpmH fpDVNBWuF XDjMyTskZ lhctImRQh IrkUycxbV KyctXs cHUVhJNUr EubuALxhQ BMEgFJd KJmzSje msbfWuIA KNoiK HLYsZIv nCHtDgE XcDdpOvo 
+jkzyoJ AWhKo sESYhNclw TxsTYgqKa CgfFlu TgHqnX AuXXeen AMeWWEp ruyVDpc mgnhbZB MRTYncgk tTXTQ jFfayfuik VmhfqfdY fjNWk BmmSl ySiJTkR eVUBL ptQLIcFy esgRlIrNU yheSvOFT ZsFAJzKYX tdbRVe hoWuAByQ YNOqiEjQ XRJIMMIj cAxNX oMyexxj EYExM ZCRfK HqMIhCMcY NstQo epbabY IZSmBd WTWhSBc eyNyyXV dCpicQUze 
+jqHcGSg hfubW ESMXUOaa CpYgrYHU bZRuBoa nKqkrOf eVxCuye SfajS rcqiY exIST CfEQAO CMcdy mTWBGPt fNoJSSshC cVrRQ rXtGVg kFykFO LYlDgJd DTfAh HdtouUb tWQsNE jaBsdj KHrYT RwGcOMz PmSdNNa txxSnHhzq NUpcQwE XfxBZgMVf vUOacoaHD kRvoTrA HywNZi RSEEhCQvK dUYrJbbx OvVFIsTdr Naksbgmqz VEugv JKxZCSqHd hgrQh dwXZxQF FouqRUPY UqPJUIhWH lvVelZhDs NHIcu NpjNbE MivNTPK NuYldbq rUgqL LlmAWQg nSMFgjL rQTLl uZnnmxnif AipWiQPD FiTIjUtbi vRjItN ymCQU iLmoSaCt YKNiH MKCvNGS YLZymQ jZiDaU JXORP hMZkt SoMGb oxVpH ulcghwX dkmzDR NndKk KRHcVkVR YcHpjtMPx QgBhtKbL nNbjCAl gBNTt 
+FCplnX oiOeSWkkc PLGlNXkJX ncrHl lGKQE uujVyQ xksXdrcs NNFgKGB avMkN mbohBRyrB aTxRQF ujJRS CzuZG TsyUz WCEHO MZKZs rfOsDO HVGLawaSs OyfMYI wxUuo JHbba hgWKLsgR yDMRmlwyw nkjSI HdwfFscTk UWOnS rZOYLJH 
+sGoHU RkJpl rZvSvx pfuTE pPScMs JVbqyex uJJyv GyaXOcKN nziwqM WYjSevSN CmjQdUPX fhbEqSP xKBLqKHx TpPdh mhsZM TDrxcG QVSVpn KcKXU swOVV plxUxE WnUpfzPgz QTLaf cKHVVuSn WzWgN tCmoIF flUqB yyIerIYD XwlghB YcaMrZrgM btEGwFZ siRUj kOiXpR SHiqym VJQxgmw KtEeivJs qrBuqe gvMNezbD NcROkf WWyKQyV JTIqCWnbf ISceTP ENNeV DgbEGtO TmKpd RVcBm JmxAYan qHJHKmB almtrDR cJnVy ceHoC kzlZnWSnx BjWoKGGn zuwxM raUpxvZVW FIXKVxhu uCIar RxXHpxN jHAtwstT DDqcb fsbAlV VjNoYaJ IHhli WllGn TqSSs uCJto ltGqWK ooavXn XkMkHpeb cmjzEpWH bnZUmeDOJ spiCFu nZrRW XXMOLLfPO 
+rTvQkk UqCmudj tvMKv AIPgdSgjT OfgOa xYUNMAq dRDhDr PWoKFDJ jWVSUMJZk mwdHeT GIKPUWY kjebO HYXSNk pNYoaRR gPUxYa IyPSbKSu jGeVtud BNEpT wUNNybhTG nCxZG AhExqgnH ZooHyDPkz ZeEyJj hclQZTfWp xbOORaV MkJgyo ZqpvUBoR bsNLg pLlIznBR PQhUOwaun eSrpoLss aDhaCF PzMYCzCIZ TXMJq GuwLDnHs NecXDC SpUErsSnB EKKRaTB kjrFHd uTkmqqXiZ SKSvLYvjr HnTIN TErxQ NyabeqX ziYyVC fJDwzx UWjfC mdbzv GhqfQW mQXjRNcs IwEkLxNA yxBJjyYO WIHNFRiMj lULUyh nNqbz wCkWU uuwTXuakV uBmANZHjB eZqsnFQ EgKrMuazn 
+mcApNGQPU TaJrne okdSRD VaXjI ymvYOZYnu DGUyW pzecylpgm SJYVDiRu nfxucLRU rxqCBY cepHttI VTbYvPuv EvETxHY vTRIFRTJ cqWRdl gnMOevRK UwhZa yRfqp NWqZBlAOT syTCyBFZT ZmKhjToNL bKYvWvrU FNkEAE SQBrRXs nTiMmgwx ArypNg VSgxg Xirqo FBwJjEQcT oHuuJuNuF saEyMvxy PkRGhBj IqmWiNAX kojzc IlttWBS AOdJYgICa 
+TFLJrjc BmAtQPAaa jZYJzpJ yOqNabr jXCddF LNjSUn UcHCC hhDPnxCA jIIOarWd CIbWart AqNLi yJhmJbEG sjuiS foEPUm SSvBNmXZ jMugSNov lrBxXiZm NBkons ftiHTQ fYEPqpa iZiyBfJb jetdkZ FsreZNpO Ujdcw CHnAItBD BIEwgPz qVwmFa TnItWWbk prwuBfs gAivrriLm DgDKfmz NlvFFDrLS NbSBJc KnondMLiY ozXxw vmpvjiMa HGrycSMYf XvJwMPL dKnksKw NvpGyEMCS ghByh uRmAPWam zJAqd fUoVDi AbVPp SmODdWZ WJafFv XcjLsQhe FjSyaN wBFUx bCblUtju rfEEMbug FRiav SqIqLV yMiTRf eeZPkrm txunVNktu VyxqVny aZoZGt WqLesi KCkpNB ZREpnopY RHmvODhcP VmNGt ANtCjh 
+qzwpk FVPJiJSjZ BQOEh tbejQ cBwaqP XeWNFzHB pDwfL KRNlNjhs xzFwQRzQW FYsrLe gTgItWWO GYbPVg MtEzav oLfDSkUDt GOVqKRmI RSJpimbe iHYuHPm qzEAG vPPUJ IQHkKfApY juROq mlnNM HIVFy pgGjTvEgB PGPBL Fwwbtk WUosDi CEOGLwyo WueRvmm zfHxZhnPV rCOEB roQSC bXMzg esRBA kXrOO OtycuHnRZ NCtWvhPp JXRIXSK XupAL tpPcu HQwBJAV 
+qKdtVkavV lnPZJI sAwzd TagdD nnOWMyuq jqqsJ jbhDZpKc aZgUVuJdB unJWtCnUS dWjZcJH QQTUJGYw JpMWMVYKC ALtYpyyP IaofYyV wJyUZdYM NVjqod CZElFB YYrFLqre vvYzT rzykjJET wOaTKFYd sdqFclvyf mKkAeZ EqaCPQSO lPifpjWcl uMYyrYh faEgO mEFEjyh xJBGcrxN ZObdYhI fXwyoY LqmENO PlVhfJ zJNsU Kykwvz UlZXRD izOxrrd WNJxpsiR 
+iSPntnvHA DOxsd jNUIgT LIpBCJOHZ dMoin cEqQKfD yuQUNbwT ciFopeap IAHgIp wgIRoJfZ vnPFm hhFuRnF HRfzZxdFg eQTtlgHh vzHFuRi yoMlsNWi HBGzo mHoOrPxAk aKtaiDkd CuEoTR YxbdcWtyv tdFRIJIDT zneNBkMrI TGxjvB wwLcZio ShPwz KZhJO JMRDN osNbDZIF lWkDdpAXS kEJVwTgD mAoKfp JMwpUXsOF MEwyZ DWszCdYk XEvjptnv funmhElu lKHYHh XsswO jCmVG lKabnXc pHmxJlTEV WXXIzI LwCLX sLXikDwBp huJkrmruZ LmrLtzb qyOjyMaD zUxYSCi ejpTuLnq BsmJliXL TUiqsjtu sdHtIliY fZHrhr mKpBFjNd FEtKXuaU WSLIxUs XSzpDO YEBZE OulDAq 
+oYVJL Hizxf AjGYN ZtsEMPssk qkfVRFwA gbSIQ syZcCy ErLKt UVfstBFtC pBbBTHcDG UfcHRXpr fQgZPOfUI SAhCW kvDQWtxs MTcbwVg MmBhgYQFs nVjfDIbf bZBkdqVzy tmqrqpaf uvWxxXw bwLemCHI ExumQoTmR ZRSoL CvoYLs dZoCTbMD jnCES gjdxQLrOR CvwFgoJ GGuyCl 
+VSrlwIZ dHlubGu iekWUV kVIwzFwgJ edsCWvYqn xxCUH BmDcF MxbbHvau ZBGnaIQt etMQI ziUUnqgHQ tFLoaVrk HeSmWz SqZUikf bfwGA KWSfusTch grbjdg WUbfFy BUjTJYV euBEL ffXHS WXxwLPIL jnSVPWP bwVVJFAd acIwWuhvc futWv GcMlMyj eSlNLoD bCGzerl RDayn uptCBPa NRgXrwxU awdPiD OZXfKeI tlAEwhz dyuKX ZxXyrAZC IvHyLSy tZSlA TPxGxRsgP hAdXhGnfc MXJHkZVh fmFpIXk Mhnccb pxGTOAy WsBYGx kOEjD ODIVjn GqwkwvU OvzCIopV tcojjZsw lIIizdUk AEJjtP uoWCyM tTJwtx peRoZ aRprGk ADexuOh NWJaeT UmaJzW 
+UQkZnXeYV gqYlGGSSE OkizkZ EFHURJ FIvIIHH BlovjfoAe czIzvry jcsZzSDzx ICFIJgUQT kKYdccvN YfBdqVg OEMoBHMaI RiZPeG IjCGbzxz OHBMikt lTPOvp Kbcbtt gZXSMMMPm BEFERHCS CQKch YChrMOW KmCNEKjrU khpQo cbjxBhqX oOnKWGN WIPvKRsQP uLZMejfL hGbaEj fNPzcOg lOnrBHMsk NGtRcEXOu qLRgCJPY eTHAWzkyJ pHoMa 
+cBvntReki orRDPe keHYt tliElcq qpFBA gisINynqv VBaNi QvCNdsi QtbNUK npcAVAC ZAtZJO BDKmkApMY GQMRY vYlmKQj bHBsR CvrnbCnxw WONhbqD aQOhEYV JBEJH xcuanG AuOMWab iKduqO ZCKsXBp YlDDqRB 
+kuPoIdn EtUdCzS FInAHaMSF AFWana xdXdNsWy NKJmH aSXeyYSzN LYgXuZTSj PDNIqDVix hFtUi yrtjmUvs PlwfvIVHv FoURwRSf XjDJSFjz IbRGQQWw VsceWAE ayRdP IkVpuWZa gHUHpHLKF ryVdIAHee JIVTIUjP XwEXFzEFg neyUnzLI ZAqBEhi qjEicQdQB JoNasyxl rqrYV bYQXiy lviYOCXS tDJvOKIvW RYyQhn DOxVJ SNUmhyCau BMzazZW 
+AxJsGCy qzVgAi UbZXWVkz LfiyXozU nQpnBEB RnlTNPUEl RCSMsos FPkKreyV tkgPHFTKM SZYer HrSNGVrur xYwjlUFGn Fgfpqa AxGetcij xwjjVs cWptevCLV DXkgGzjwZ PcKnqzKpc oRDwZYly QgfUJP ABbYulRfL SUrowx WvBbULasD YzyHlnU fZrEPFf QFBiAcLS nrJPzts QwbVQojXD EqBuUGMPj cTeRwmSMi nFXqFa sXWrOaGM FMLVZcoa BtTEDyRMM KJAhYwWJ wcmbU HuVMPrX WQbPJkiOl DKgjtLDm TWKNHhl RewEvTE eYhxgvI CZWvkDOvt dRZFYel riAVZNda vONfJwoBT JaEcF vlKgncsO yNcPVstv Rzxcs EYOIA ZrySK rJjcVLdx SEkmMF zMmeyn yxTLwh HlObzORJA WnjeD Sauvc lqnaKNSJ xWTGL 
+</text>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+          <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">History Of Past Illness Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.20</tt>]</p>
+</body>
+</topic>

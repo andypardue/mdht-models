@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Postprocedure Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.36</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.36"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Postprocedure Diagnosis section records the diagnosis or diagnoses discovered or confirmed during the procedure. Often it is the same as the pre-procedure diagnosis or indication.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8167, CONF:10438 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.36"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15403)<tt><b>/@code</b>="59769-0" </tt><i>Postprocedure Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15404)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8171)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8170)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entry</b></tt> (CONF:8762, CONF:8764)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PostprocedureDiagnosis.dita">Postprocedure Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.51</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15403)<tt><b>/@code</b>="59769-0" </tt><i>Postprocedure Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15404)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8170)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8171)
+</li>
+<li>If section/@nullFlavor is not present, <b>SHOULD</b> contain  [0..1] <tt><b>entry</b></tt> (CONF:8762, CONF:8764)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PostprocedureDiagnosis.dita">Postprocedure Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.51</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PostprocedureDiagnosisSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.36]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15404</entry><entry>LOINC 2.16.840.1.113883.6.1 59769-0</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8170</entry><entry> </entry></row> 
+<row><entry>postprocedureDiagnosis</entry><entry>cda:entry/cda:act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.51]</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>PostprocedureDiagnosis</entry><entry>CONF:8762CONF:8764</entry><entry> </entry></row> 
+<row><entry>postprocedureDiagnosisSection</entry><entry>postprocedureDiagnosisSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PostprocedureDiagnosisSection</entry><entry>CONF:9850</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8171</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry><xref href="../PostprocedureDiagnosis.dita">Postprocedure Diagnosis</xref></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.36"/>
+  <code code="59769-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postprocedure Diagnosis"/>
+  <title>Postprocedure Diagnosis</title>
+  <text>pSGhpM MCNRIUjtq tvaJfETXU fMYmWIE CwIsUJ lmKLAk GGrBDa wQJBNmaWt wQjMAOwx MqclzEk mAAsRqacq DVuggb ImZMbCsHi XdnUN SlzqXJ CFNaSiB MxGAFPJti omRnq DGPPX QBZQMr UVDDXuIv KZXbd aMqWYF JyEbNKSV vFDDHaP VGKXe ydYtqTnq KDzSGu beipepzD eDWIP JukQxPXJ rReLMud JRcbFLj cSXCxuWi WuKQHW 
+pyzfKptY PQmGRVdE XacjKwf EuJqpsRn hAortcbP yVwJLqOBS fTHon wuEYcCEFc fpDgx CSAlqbK XHxJrGOpq TrkoQPAW gMOsS tlUZL VWQyzWP JOYWyZf SPqMPbxo LVxezrIgN IawltoWD oXAjati CGpOAYMd hNTqyP ijUTjlH etsqhC mLCyXVRD EcfcTqiT ZJusi ejCeZfbQS oulsjt AosAqaTs unrMpn lbVBuEuvr ianCWwf rhMKu rNAWpOl octrsSSTK NMXpI QtlsXY lcOqyprq uZEewqi AdaaLoird RiuGdRPv FuCtE JZVmVtvM uWoNl mTCwdZ woyBwQCE vpMRk IGDLFaK sSJdTI kZKDr PKVkjRm fVNTMRxJg 
+gKXiaAh bZkFjdGE zIySQQt vzQKDD chWULVxI bAuKL eqKkZ iHjrp yNWemqHM MPWRpHz qPtSLOh VTuyGBej BGSLbgTmh gghCWRt ASJxydvS vBdecDGn mDyNzYBy vAMuYrZ MLwaiaCRr fEMrJw UROIIuAyx tEzXANU zCRYcNTjq KNofXeo aJzOSXF wWMpnIVo GbSJWKXN EdNfLsS XUGcNMF brxjTo crMCSZjaj gYRtL ULptIr BfFJoJ xGidb VSTcaiih jPGNJH PvoJIEU LBHNk KiMmOw ZOEqtdCbL EcPAV lRyoXaYaR utqEzlKd bqaxZVXEl wOvXy Xvmqw rDJquXaIb fnYyr HvVlMLjsA mIcGWzhhw SSmsddRkJ yNKbmyJK ddFZNIh vcleoPWh OPYOusDG QefaYW SuoorPzk eUfgj FGwoYwaw XVrNv QhvdH OzfjMTT OcSLpqbk Jslot MkUkwYciA QrxiBwLR pRrujTva 
+BSyxI Sikesy TKOVv SbjIoOAYd TiyKj XoCtJ AXvCwtAu VtArOQKSO QDaRxDYU bkbdfLs iiXxvv GqtUix iJkOEuOB mqbSGRE RMxjkN jRjCr knDYtl IExLQOdDu QRTyAc aBKDOi MTejiB BTutix frsKdON OClzkP EPSvcutzZ eYEAgK JWkALlsNk KuebqXEei aRgbt fVhoF mJnCaim DVQTecPj sDYju bXBwn uqjRYjwji pgtllnPgo HbvxXLE wjdhaEhOu bVkWmJCz ufObs cxkkd ulnAmps ERvKWTl ifldUSXI lvDQra xUvTLlxtx JSdmZbsn RQqOmmb yzcwS oYSmOsU nPZSv ZeslnLuaX xLTlYxrrI EYSuKK AguSI mCmBeJCot eiNTIyH QUdVXyXua pXZnLh bOAWL 
+BzBZd UaCmJ qtCMMIo KpyRzxa JzVcPmqAC ZiDNXf ifzshH aZlaxl ASHRnFmog jnkNQqXXs TMBEew JhvHf TDWCaM rLCASje gwYPVm jpdazOxb vaBfCROv VZyesRpu JdJSaXk LhvAyT JsvftdHK CkKRROq fuLRdP UVgbRo rjyQyZIU 
+hqROcCT dZzFJUEt wttoMXMmS aWuzLl AmnUHZXYU kscGQgo yJztALotp tgSdUjt oCexkuYv EGTYSSlYb ZOqajYo kPAVUwaVy QirmzjPwh IUTinYb hePyS aMXXwZ QHOgXPJi wgsTtJ 
+mNFJZ xYktl ZIRyuk hNpBYcpW FOnePsiUm KHqAorNjj eqYYmT IwHqSgP yWdyfcNe psrAlpf DLBPDXO BreeEiajh fsmORgHN MCsIaUQ SEIJiSdeA OHOVUVSWy LigPw ibdiqf MFFRv jBKreESt CWZSe sbcnFKDB TkuAFI WAMhqZjMP GAEYsFOs KzPWR uGtgWtuCf dVVWTKY GlmxGij GaUIgkQ PcKETa kUQjSZ JPQMMZS jmqQb EIrGuEdS kUhNOD UICMGdcMC tawSX TgSyYW TYYYLha JmcOrfqG rhnrPT VquwOCyx 
+uMlOgyiyB VFLEAfsjm xmzGczEdi zuCKrb kzLzoQ FPBUxor YUXPpLm lrUvt qdjzAXv MlxWV PCzrvEY NJAEMoo aUekpsRHd MqbvhSB MICBqGw MtrMcHra ZaNsAeUFm YhJfK OeczUlCuZ vIVlBeyI UdHiR ewyxiRE ZrNogTQhn umwfWLEC AfZxDEi JZCZHtoeh ZHSGzeHxN GrfNzDQ yaoLGg fcDJLyXzE sfyoDdXw oyPgvYUE aqexv byvVZfpIl BSURtpeM yFeBYqx XBdvQ dadLa IpbicDJ qvWSCTekE cHVGukqmq NolzcodP IKLJHY JcDyY JmZpKrey zYLKlDZ LOwPDPQ YkOdqkq QhIWEpfr GjPPhkq UURUnUeR rJFbi BNnwQre 
+VcDRvH bQtgXKR ebpMvo fnGFLDZeE QWcpmXDs sXMCkJf iDtKxWQ TeXdtG VpwvfOK mlZXAqt xfVdPzZy enouX PPwNgwyex dUkcsjD fKMDWZv nVrQlDo hWiEagdq yCsmS jhxcLw ILPvgrJ hyrFcPXQ VsZyERN SiRvWx FIgWC FSdnvNyJ YMajGgkkM pUJlkLVjo jVTuKCGZ PTGcAXL pgOcEdPZW yznzEjnNH TGAVL uylBkANRD ZHwpPAYe FYKgUinJB VYGaN BjXIFxUN NlxcL BpHWP rlGULsZ BXvNcI lrizNtPz qyDZoKMrJ NalJxOfa XphYSFvfI tAqdP xXzCgoNik FhbujPG dnwEKtOk gHGutJFw yqmQAo HLniIOEon LVxRRACWn YHoKHFZ tcKUXM aiiCvUhw MALTrGVYT tlOjg qxJqAsU FhjQG VVojhn cRjWtlyu 
+</text>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.51"/>
+      <code code="59769-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postprocedure Diagnosis"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <statusCode code="completed"/>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Postprocedure Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.36</tt>]</p>
+</body>
+</topic>

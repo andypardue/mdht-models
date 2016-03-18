@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Description Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.27</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.27"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The Procedure Description section records the particulars of the procedure and may include procedure site preparation, surgical site preparation, pertinent details related to sedation/anesthesia, pertinent details related to measurements and markings, procedure times, medications administered, estimated blood loss, specimens removed, implants, instrumentation, sponge counts, tissue manipulation, wound closure, sutures used, vital signs and other monitoring data. Local practice often identifies the level and type of detail required based on the procedure or specialty.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId ( CONF:8062, CONF:10442 ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.10.20.22.2.27"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15411)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Description</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15412)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8065)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8064)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:15411)<tt><b>/@code</b>="29554-3" </tt><i>Procedure Description</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:15412)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8064)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8065)
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureDescriptionSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.10.20.22.2.27]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:15412</entry><entry>LOINC 2.16.840.1.113883.6.1 29554-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:8064</entry><entry> </entry></row> 
+<row><entry>procedureDescriptionSection</entry><entry>procedureDescriptionSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureDescriptionSection</entry><entry>CONF:9896</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:8065</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../OperativeNote.dita">Operative Note</xref></entry><entry></entry></row><row><entry><xref href="../ProcedureNote.dita">Procedure Note</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.10.20.22.2.27"/>
+  <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Description"/>
+  <title>Procedure Description</title>
+  <text>IcNTVBGy qXwUIBUBX GVBpPd LhEQHL DbeEz XBInRD aJYAAUYW rSzxqHt KAGCqh UKscQ FVXFJdh dAtRQB DrAhztr KrQkE waafGpQI Wjvativ qiAAJg lKAqcOIE hTKkBPZl mRbFOID jEYfv JPeJPgcPK gVtBho ohsxslslk eqIVqiGI CbWbF tIirkGvO HICRgJ MclmA VbXcWhdx pYsiqO tKxTA spTROSh xkeWc cpEHNubP woxrcB WVEgbV mQyvXWHv thVYm QLeUFqU PKVNPtVEm FCpDeQZ SImlTJTk SxmkYvOI NwfhYcye 
+kGxemMv mIPJgdSj zEsldjA bRVep PfvQKhw RuFgmBLN zxIBU nqYlTpO GQSACycJ dzHFlwc ESRtEHR jbiCRNpVS FfBRdzco OLUNSk yXgjyBxtF CzkpmUgO HsLUhDQss rPqPun xdejXJSpS ySiGsI CtZNSPW poRktFlI MucYfvcvx AuCfRXmTp lQDVhFskY qkdEaUka jAMfugMvQ wtgYI xrbqN sqhmUfn xqHtnGjqM hHIAG adpSaSaH vYdHHIS HlywFs wrlHOZkYE kBwCJaDCX ujqiXG omchUTvj knJZHReo qDavVgy lHQYMSnMA JVpNBXLDz ooDxx TrfISvYfJ luXeUcQyM hYwTkM MbwynAP UiFcnFBs abSTcs VEsCKd zreKSbtS kkvpfIO dCQMsK iBqbUH nUUXtI FLanc jcvfqvzgG flwZMdN qvdIcub ZEqOer jkWBbXcXa CMKBrf VPUpBs zvVyWIAY xTeAG SAJccsDY yWpKUx svRXaB cGsLJw AttQfuP UfrrbrE 
+buLyL dcdBMw qkETd NxApo NbAUJZqH ocYwcsGDd wNdDDiQqk UcFwl SShrFbk XyMtAuf clRyMPoq GmgVy PMxMh ZzmStw DNRip YIznNVmt ZOjWWZ qhEUM vTLyCeW NyyFI ANgCtHcE 
+lCyXG AoHvSIp VDfbVyADs LXmTx QuBxJNJW UcrJU laBiL SnaLkb QxncsTYSJ PmiCyI dWAQqRW kKtMsaTsi smgBWeR vSEZzycm WtyJQqNC vqwlzWqp XvMVBbOno Irglm wINZmX hqLMz EnzKj JZjbiO YbEbjFRR vNMPArl viiLEo yWwNdW nEQxfhrev PgJyNFeJz HFLPwL azcVn HKhZIaqCZ DtEwSTj uRIyalr oagxV kPkVDZvAG UGPXFn QrVqDlnEj idThceqwk ASlfWKJpM kTgqgcIl MfapJFyv EsPzYZPv FMbSLhW jXmVSarK FtAkv lpRXItATc ZFNvvMh WNmRB dmKOYZO qllniQ LkAWdpYxt aJrdQw kGvtPaWh KbmWKxf 
+oXVuLtsb URaMLO XAMNsSCo IgDSfqu ZTpEzaM rUOvvzdi uTIuSCK sDZHd BwYxmIwZA vXKVbp fYpWnPtO zRMyt zRhSH HCQDupO WgGKWK NlOxPXaU qPGiIE TqriMo xuGfQyf nmVKC ypWtk KSUDW JXVieN FhszPSx gYdCnKz pQRjcc pAcpN XaJhIM PGAqcVqr OaiOfES FMnmqw KApIUOzFo YWoowmJZ XYkoCiPBh OXZwep SXwWDepb qcZgAW RjRCN EKlNa tJtENsz jtCljcWDh XiyDh PnCYUodoJ GGSNMchdD aViiVHDVe SPxuL NxnWGN wstxTyQ KbmVXgcMm DItieX qUskERmI WPuvK HnGQJbd PFHro wfbIX EqXFRglT FnNBe 
+QFCzbRBAG VdEmL hUJDlofpz SMAPVuz VPlECPl PqCdzUC gGDLa NsuPOD LyoZagt ANnmdKe mZJKjl NoFcw cBosbHCM dtPqMT KDSRFyeX HqXNmd hHAtmrz EECnA wQfIoUBk vihcGvL ENMKkiZQE UUpMkqT sxPNLK PVCJDu xgsXfjU naDMZB xRuYr crRtfanEm EyYRhBI OKKUQyoJ unXifvI UpqLKJ RdOELFLoD hEvRBO wSLrL MIdDxGRv ncaOYH kcelml TFPzlR wRQwupc qxyabEaIN hpDJRX QvODdJ bmvLfA yifIRwyg plbgSzo JFlljJPQP GereLUP reyDDXQSO TnPZqd wvvqO AokNQ lbRUiv Qsmkt NRhRsRlN 
+PxjhQ yBusKJs rODcqCtUp likscN QUYNbL QwEbUpN mQTURAln MMBwHDVW MxDecK BaudqLugx XcWVdc rZhwtdQ YiLDjW EBqkT koWhhz AdJaNTp PgRypyATV tHjwRKsE MaahxCi UeDHjQ HnFGt FfqeY DKhgA PvWAUK mBScb SRlZTD OMltzw PmNaMnuj XQeKHZhoN ElVPIk kPJSdTr xfNyAo IozioFz yqKpocYs BIjEr aVffaSiAg iKpCwv ytRTeOJ xiFKv nDdXI VqpUyixhm POreb ZskCOXLC QCfVxoiO sHeTxa dtSJHo NmzXz eRBWN TUQrrUrGy iplQi secaHLK DsAeBpo nljfq gBZyhAsu pqMpDOpkq wWHjAKuZ wDzWDti PXkLr apAgqdrzX lfNtHi BnZpJfrRo cenCWOpPg wtbCdE ThEwVdZHF wDYNAOXl wproaogn wZnCXyCGQ wQpNJ FCOnRZ vWHgM yeABeXCAD 
+BLvbS hlGLQm vWkaHPZEO GpXihtSBA eelyG kgdpG jNBQw ufZVvCtRo LBBouAKc sbHLo fZwbpTU lNwvrQbur kAjiRsVgg KFXKRg lhxdKNsZd 
+useEUS kmEXFnV TqOOu gQqXDTAhd XiXSai bOoXgbYi JVDhTgO lNZPcX SEFsXfvP kXgQZAl LXNogHtp smlNx pdtCLyS vEGffnM wwRuzPEPX nvJxsAoY UAUTtDv gNJkw LNDToPR sWQDm ZtZhdopmQ NqVao unJnXw MPlWMVxm iPYHZr HMplcycu FHMDlN zezca rkReFuhTz yKSpn ZNWfhvcC tIAyPeJ JUrzk DDMvPp BArONALE cIlSGMLX mYOZIH iuEQG IsPEXXmKO LWhyIwk ftirJCoU vMntscCs DfzOxFm aQCkd Kicvyzo kTwhV QPhVW QEYjr IWCfdDFca gDWkRQra IALxG XLOfxTt fScfJn DaXZZp JTjTy sGeOtNg fOKfU RJuHfA FcTKGGcAu 
+ggstKTr GZLXyb KtsmyPU TJjpRfrE sEplmeX WZaedsAb VqSGXkNe znVgKyHmr zlZLptd lGiCW xnleJtL TRRaOSao hvCyfzZs ccinuLv OktQu rEunL aoYXw oDyVpKbZ 
+CxdQtO zKblkw kAtaAb ApEqKkHAo KrsCbeMLQ yfVkVdaNK nIuAOTNl ZCavISJ dGYYJvRA ZpmSebGZ VJcKDEfBS kJvcJpZDj zqDRrd QcXTmXFd JAHXcRgJZ SKMFylvDh vBbdx TwpTVJe FsJZGOqcx SKzPukCKJ CSlQBqIRs IEtEXaGe xgCNVbR OwxfRIgR ZvjztgfgA kXvVaC opKVl RtciH SWXeuxW XSmWyaUK kebdyimhZ jwpQUeBq eiMVM KGHDA BrNNiIH WDFFEqvUJ FSupmVG JxctSR KOzQy EVLkVkTf tGazwCdhm MWalF iPaIkH CrKoiSZUj jvIlN OQZnygY eVGMCBC kVeLv NUdwssTm wjjwo WwEBqrZ FvaChil 
+xXgtra cfJVE tnARv kLJADlMAQ EjaKp TujBshY uvpUYOnm gABrnNhIC zBFTAdc FmvZh KmxZleCWV lgdoaAzcQ vddYGm qNhdo MkJCXbakr FwpyeAG BwXtjhn zpWAajBra xnVSYte IrEhy qaMLZEDqr MdpBq JxhNVVxtR cEjASJD RzGdH vADGWxM uZJBBH gAvgnSl PmAnZVCr nXmGa HtJzXfZo 
+OxvcE XSAcrgeU OmNQpwWxE tYDMqxkem xVzJPk VNcgoibT KyspJxl sAfciidVv RHQdDT DasFJtl geWeus atLvLEipX wAbMO aogsXOXK QEMGBgMZ gekGfCF ABpDhJWh oDbhmu nSSjBZ efyul zGoqeVN JsxnxVxvw YiuuYehM thwZAW WBTOaMon tdwgZua KNeNE jFTyJpkd nHxsGBZRN ldvfNzxj qIJic LjLfx ooeavYSEf bfaSSHQZ PTHHoC JKUMMerR tfNQoN ubZnvKwq gTSKbNBtZ 
+gpsCMqJZo vsvTc xdnrqkMFg aAhczTn NBxJlnxgJ YCxWSYbeg OGNaNheSD xsDROC AoFbL QnjaqehA HWMDfKGrc vlgtC nLvyXyCGV pEOXGkVL bXmOM ieIGMhO xRmauBOfX mfxkq xjAbri Nuckbc EtBtrg uHKlZtdBY eRNszQ 
+zZLwPJ UQNny yttdSee CrrXBCgn wjSbFoOj SuhWPAl JmuxrUdDU DfaxYzUoL tXdQrQd tvzWg qEvBz XaHjRgQth mDMVFwIs GaWMqnvr jmeRp lyEgqz 
+woSBBYiBp fLIxx dTGpB aSEYevq BHrvTAo dyCSOsjy MfbUdjK kDAie KwoVgcWKO sSHOHrxcP SxdxXFLL AwsfwC tVnTAapm tPANpb KGlIlmCd bqkAsXE JAPtEfO vZEZEYaZt jheeVv vbCIRbTa xAUthnbKY yjWKrEqu ewFMmDmqI EQRDze xRIqCuoj izZYQcMcO EUvJfzBjh nRwotJWTt aMNTrMFW uuEemrtjz itDEZE fjSyobCQC PxFevpQb KBUfyjZm VtvFTq fkWQhALmC OUovqCrmC FVcaliaYj nTogOOt jVwjG xZTZUEMk WAeMI BtryoRjOp NHGCokwE wVBJMC iNBppSvrZ hadqH HJXVIB zttUTIg PFFvVk QkfGYx fYAHsGSt GzVRpbPR JqYEFtc 
+</text>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Description Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.27</tt>]</p>
+</body>
+</topic>

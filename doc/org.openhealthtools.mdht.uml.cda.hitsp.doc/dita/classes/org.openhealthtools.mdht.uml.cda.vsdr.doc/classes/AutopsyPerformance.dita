@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Autopsy Performance</title>
+<shortdesc conref="generated/_AutopsyPerformance.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_AutopsyPerformance.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_AutopsyPerformance.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_AutopsyPerformance.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_AutopsyPerformance.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_AutopsyPerformance.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p audience="Examples"><b>Autopsy Performance example</b></p>
+<!-- TODO: insert custom instance example here -->
+<codeblock>
+<![CDATA[					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.26.1.2"/>
+							<code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/>
+							<effectiveTime>
+								<low value="20121202100000"/>
+								<high value="20121203100000"/>
+							</effectiveTime>
+							<value xsi:type="BL" value="true"/>
+							<performer typeCode="PRF">
+								<assignedEntity classCode="ASSIGNED">
+									<id root="1.1" extension="1234567"/>
+									<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+										<name>
+											<family>Roe</family>
+											<given>Ralph</given>
+											<given>T.</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation>
+					</entry>]]>
+					</codeblock>
+</body>
+</topic>
